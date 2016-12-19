@@ -4,6 +4,7 @@
 \usepackage{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{color}
+\usepackage{titletoc}%Used for the mini-tables of content in each chapter
 \definecolor{marron}{RGB}{60,30,10}
 \definecolor{darkblue}{RGB}{0,0,80}
 \definecolor{lightblue}{RGB}{80,80,80}
@@ -26,8 +27,8 @@
 \usepackage{amssymb}
 \usepackage{geometry}
 \geometry{
-	tmargin=5cm, 
-	bmargin=5cm, 
+	tmargin=4cm, 
+	bmargin=4cm, 
 	lmargin=2cm, 
 	rmargin=2cm,
 	headheight=1.5cm,
@@ -279,6 +280,7 @@ facebook.com/OpaqueIndustries\par
 opaque.freeforums.net\par
 \end{center}
 \clearpage
+\tableofcontents
 \mainmatter
 \chapter{Introduction}\label{ch:intro}
 \newpage
@@ -392,11 +394,8 @@ abilities for degree of success or failure, this is done through rolling dice.
 \subsection{Basics of the Dice Pool}
 Rolls are simple affairs. You have a number of dice (a ‘Pool’) that you roll against a ‘Target Number’ or 
 ‘TN.’ Each die in the pool that surpasses this TN is a Success. 
-
-
 Most rolls will have ‘Required Successes,’ or ‘RS,’ meaning the number of Successes necessary for the 
-rolling character to win or succeed the test. And that’s it--it’s as simple as that. This kind of roll is called a 
-‘Check.’ 
+rolling character to win or succeed the test. And that’s it--it’s as simple as that. This kind of roll is called a ‘Check.’ 
 \subsubsection{Basic Check}
 A basic Check is where a character rolls a Pool, decided by one of their Attributes or Skills or some other 
 factor, against an RS. The TN for these checks is always 7. The RS is decided by the GM, who analyzes 
@@ -448,6 +447,8 @@ weight of a character’s equipment, always round down unless specifically told 
 the Abnormal Class/Wealth Combinations special rule, or when calculating asymmetrical armor weights. 
 Otherwise, always round down! 
 \chapter{Character Creation}\label{ch:charcreation}
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
 \newpage
 	\begin{quote}
 		\emph{“It is thus the beauty of Genosism that its means are its ends. Under such a system there can be no confusion as to the right course of action, no contrivance of the ends justifying the means, because you are not pursuing an objective the route to which must be interpreted, but exercising a lifelong discipline the very practice of which is its own purpose.”}\\ 
@@ -605,7 +606,9 @@ campaigns must spend 1 PCP in the Race Category, even if the only option is a Hu
 As \autoref{tab:campaign_power}: \nameref{tab:campaign_power} explains, no Category can have more PCP devoted to it than the maximum allowed for the 
 set Campaign Power. For example, if your Campaign Power is set at 'Gritty Power`, you may not spend 
 more than 6 PCP in any Category. 
-\chapter{Arc and Advancement}\label{ch:arc} 
+\chapter{Arc and Advancement}\label{ch:arc}
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
 \clearpage
 Characters grow over the course of every story. This chapter explains how your character advances their 
 own story, as well as improve their Attributes, Skills, Proficiencies and other qualities during gameplay. 
@@ -848,6 +851,8 @@ otherwise specified by the GM or the rules) take effect immediately.
 
 Refer to the chapters on Attributes~(\autoref{ch:attributes}), Skills~(\autoref{ch:skills}), Proficiencies~(\autoref{ch:proficiencies}), and Boons and Banes~(\autoref{ch:boons}) for more information on how to advance these by spending Arc Points. 
 \chapter{Attributes}\label{ch:attributes}
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
 \clearpage
  
 
@@ -1095,6 +1100,8 @@ Grit&Description&Example Advancement Threshold\\
 \end{table} 
 
 \chapter{Races}\label{ch:races}
+\startcontents[chapters]
+\printcontents[chapters]{p}{1}{}
 \clearpage
 \begin{quotation}
 \emph{"In the beginning, there was nothing. Then came He Who Came First, and The Twelve Great Old Ones. They created the cosmos, 
@@ -2933,6 +2940,8 @@ XXX
 \subsubsection*{Ecology} 
 XXX 
 \chapter{Boons and Banes}\label{ch:boons}
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
 \clearpage
 Boons and Banes are qualities and quirks that affect characters in small but enduring ways. Boons are 
 positive characteristics, such as ambidexterity, a knack for languages, or a particular aptitude for 
@@ -3003,7 +3012,7 @@ to 15 additional B\&B Points’ worth of Banes, allowing you to also take a numb
 During play it is possible to add Boons by spending Arc Points (except those marked as ‘Character 
 Creation only’). Any Boons bought must have an in-game reason, for example, the Allies Boon cannot be 
 bought unless the character does acquire powerful allies in game—allies cannot just spawn out of thin air. 
- 
+
 
 It is typically difficult to lose Boons, however at the GM’s discretion, certain events and situations may 
 render Boons ineffective. An example may be when a character has the Boon ‘Beautiful,’ but during play, 
@@ -3069,7 +3078,7 @@ Unless specified otherwise, a higher level of a Boon or Bane replaces the effect
 \end{table}
 \clearpage
 \section{Banes List}
-\begin{table}[!h]
+\begin{table}[!ht]
 	\caption{List of Banes}
 	\label{tab:Banes List}
 	\begin{tabu} to \linewidth {X X X}
@@ -3124,7 +3133,6 @@ multiple allies, and can be gained (or lost) in the course of play through playe
 A character can appeal to one of their Allies for aid, but that is no guarantee that help will come, or that it 
 will be sufficient for the task at hand. More often, Allies will be able to tie up loose ends, or swoop in to 
 save a character's bacon when things get too hairy. 
-
 \begin{itemize}
 \item 1: Minor local power. Crime boss, mayor, town sheriff, and so on. 
 \item 5: Moderate regional power. Baron, trade tycoon, colonel in the army, and so on. 
@@ -3929,6 +3937,8 @@ era, people often acknowledged the criminals of other kingdoms. Often, but not a
 	\item [15:] Alive, and to be kept alive. For a long, long time. 
 \end{itemize}
 \chapter{Skills}\label{ch:skills}
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
 \clearpage 
 \section{Skills}
 Skills represent a character’s acquired knowledge and expertise in a wide variety of activities, from 
@@ -3941,77 +3951,51 @@ works identically to buying them with Arc. These points can be spent freely on a
 section, barring those the GM excludes from the campaign, and up to the maximum starting skill level. 
 The maximum skill level attainable at Character Creation is equal to your Intelligence (INT) score. 
 
- 
 
 Skills represent a character's acquired knowledge and abilities, including things like historical knowledge, 
-surgical skill, and tracking. There are dozens of such skills, each detailed in the Skills section. Skills are 
-leveled up by spending Skill Points on them. 
-
- 
-
- 
-Skills 
-
- 
-
- 
-
- 
-
-The Skills chapter is one that represent most of a character’s knowledge, expertise and abilities, especially 
-in non-combat areas. 
-
- 
-
-Skills are a system within the game that cover things like how well and far a character can jump or a 
-character’s knowledge of the history of a neighboring kingdom. Each skill comes into play in the form of 
-a skill test, which uses a character’s attributes and skill level to generate a pool against a static difficulty 
-provided further in the book. Skills are used in “skill tests” where a character uses their skill pool to roll 
-against the situation’s difficulty (measured in required successes or RS) at a static Target Number (TN). 
-
- 
-
-Skills are different from Proficiencies and other systems in that they typically do not often directly affect 
-combat, but they are still very useful both in and out of combat. A knight has to know how to ride his 
-horse, an assassin has to know how to blend into a crowd, and a hunter had better know how to live off 
-the land. 
-
- 
-
-Skills List: 
-Athletics 
-Chymistry (Not in Beta) 
-Climbing 
-Cooking 
+surgical skill, and tracking. There are dozens of such skills, each detailed in the Skills section. Skills are leveled up by spending Skill Points on them. 
 
 
-Crafting 
-Drill (Not in Beta) 
-Engineering 
-Gather Information 
-History 
-Hunting 
-Intimidate 
-Navigation 
-Observation 
-Orate 
-Perform 
-Persuasion 
-Politics 
-Research 
-Riding 
-Sailing 
-Stealth 
-Strategy (Not in Beta) 
-Subterfuge 
-Surgery 
-Swimming 
-Tactics (Not in Beta) 
+The Skills chapter is one that represent most of a character’s knowledge, expertise and abilities, especially in non-combat areas.
 
- 
 
- 
-Table 3.1 Skills Overview 
+Skills are a system within the game that cover things like how well and far a character can jump or a character’s knowledge of the history of a neighboring kingdom. Each skill comes into play in the form of a skill test, which uses a character’s attributes and skill level to generate a pool against a static difficulty provided further in the book. Skills are used in “skill tests” where a character uses their skill pool to roll against the situation’s difficulty (measured in required successes or RS) at a static Target Number (TN).
+
+
+Skills are different from Proficiencies and other systems in that they typically do not often directly affect combat, but they are still very useful both in and out of combat. A knight has to know how to ride his horse, an assassin has to know how to blend into a crowd, and a hunter had better know how to live off the land.
+
+
+Skills List:
+\begin{itemize}\itemsep1pt
+	\item \nameref{skill:Athletics}
+	\item \nameref{skill:Chymistry}---(Not in Beta)
+	\item \nameref{skill:Climbing}
+	\item \nameref{skill:Cooking}
+	\item \nameref{skill:Crafting}
+	\item \nameref{skill:Drill}---(Not in Beta)
+	\item \nameref{skill:Engineering}
+	\item \nameref{skill:Gather Information}
+	\item \nameref{skill:History}
+	\item \nameref{skill:Hunting}
+	\item \nameref{skill:Intimidate}
+	\item \nameref{skill:Navigation}
+	\item \nameref{skill:Observation}
+	\item \nameref{skill:Orate}
+	\item \nameref{skill:Perform}
+	\item \nameref{skill:Persuasion}
+	\item \nameref{skill:Politics}
+	\item \nameref{skill:Research}
+	\item \nameref{skill:Riding}
+	\item \nameref{skill:Sailing}
+	\item \nameref{skill:Stealth}
+	\item \nameref{skill:Strategy}---(Not in Beta)
+	\item \nameref{skill:Subterfuge}
+	\item \nameref{skill:Surgery}
+	\item \nameref{skill:Swimming}
+	\item \nameref{skill:Tactics}---(Not in Beta)
+\end{itemize}
+
+Table 3.1 Skills Overview
 Skill Level Skill Pool Skill Bonus Arc Price 
 1 +1 Trained 1 
 2 +2 1 
@@ -4024,63 +4008,30 @@ Skill Level Skill Pool Skill Bonus Arc Price
 9 +9 3 
 10 +10 Mastery 3 
 
- 
 
 Trained: No longer count as ‘Untrained’ when using the skill. 
 
 
- 
+Teacher: Grants the character the ability to give another character one free level of the skill the teacher is proficient in. This ability may only be used once on a person for a single skill, and only a number of skills equal to the receiving character’s INT may be trained this way total. Using this takes about a month of in-game time, give or take at the GM’s discretion, and requires the location and materials needed to perform the trained skill. Multiple characters may be trained at the same time as long as their training starts at the same time and there are adequate resources and facilities.
 
-Teacher: Grants the character the ability to give another character one free level of the skill the teacher is 
-proficient in. This ability may only be used once on a person for a single skill, and only a number of skills 
-equal to the receiving character’s INT may be trained this way total. Using this takes about a month of in-
-game time, give or take at the GM’s discretion, and requires the location and materials needed to perform 
-the trained skill. Multiple characters may be trained at the same time as long as their training starts at the 
-same time and there are adequate resources and facilities. 
 
- 
+Mastery: Once per session, you may automatically succeed with 1/2 dice rolled for one Skill roll.
 
-Mastery: Once per session, you may automatically succeed with 1/2 dice rolled for one Skill roll. 
 
- 
+Skill Level: Each skill has a level (ranged from 1 to 10) decided by the character’s investment of Skill Points (at character creation) or Arc (later game). The skill level gives the character dice equal to their skill level for skill tests, as well as other bonuses at various skill levels. Skills cost Arc to increase. Upon obtaining a level with a listed Skill Bonus, the character receives the stated bonus.
 
-Skill Level: Each skill has a level (ranged from 1 to 10) decided by the character’s investment of Skill 
-Points (at character creation) or Arc (later game). The skill level gives the character dice equal to their 
-skill level for skill tests, as well as other bonuses at various skill levels. Skills cost Arc to increase. Upon 
-obtaining a level with a listed Skill Bonus, the character receives the stated bonus. 
 
- 
+Skill Pool (SP): A skill pool is a pool of dice used during a skill test. The pool is generated from the relevant Attribute at one die per Attribute value, added with dice equal to the character’s skill level in the relevant skill. Only one attribute can be referenced per skill test; if the situation ever calls upon a different attribute, it becomes a second test. For instance, when using the Climb skill, the character might be called on to make both STR and END based tests.
 
-Skill Pool (SP): A skill pool is a pool of dice used during a skill test. The pool is generated from the 
-relevant Attribute at one die per Attribute value, added with dice equal to the character’s skill level in the 
-relevant skill. Only one attribute can be referenced per skill test; if the situation ever calls upon a different 
-attribute, it becomes a second test. For instance, when using the Climb skill, the character might be called 
-on to make both STR and END based tests. 
 
- 
+TN: The Target Number (TN) for skill tests is 7. It is always 7. No force can change it from 7 to anything else. Anything that suggests that it is possible to change the Target Number for skill tests to a number other than 7 is a lie. Ignore those anythings.
 
-TN: The Target Number (TN) for skill tests is 7. It is always 7. No force can change it from 7 to 
-anything else. Anything that suggests that it is possible to change the Target Number for skill tests 
-to a number other than 7 is a lie. Ignore those anythings. 
 
- 
+Skill Tests: There are many situations in the game in which a character’s skills will be tested, such as trying to negotiate a hostile deal or simply leaping from one roof to another during a chase. Every test of a skill will state a required number of successes (RS) for the skill test to be successful. The character must roll their pool and get equal to or above the skill’s target number (TN), and get equal to or more than the number of required successes (RS) for the test to be passed. Skills’ tests have modifiers to the situation that affect the skill check’s RS, such as trying to climb a wall slanted against the character or knowing the history of a foreign kingdom. If the number of RS is ever raised above the character’s dice pool plus automatic successes the character might get from other factors, then the skill attempt immediately becomes impossible. Situational modifiers can lower RS as well, though it can never be lowered beneath 1. If there is a situation that a skill doesn’t seem to cover, the GM should use their best judgement to create a test based on similar difficulties to the situation.
 
-Skill Tests: There are many situations in the game in which a character’s skills will be tested, such as 
-trying to negotiate a hostile deal or simply leaping from one roof to another during a chase. Every test of a 
-skill will state a required number of successes (RS) for the skill test to be successful. The character must 
-roll their pool and get equal to or above the skill’s target number (TN), and get equal to or more than the 
-number of required successes (RS) for the test to be passed. Skills’ tests have modifiers to the situation 
-that affect the skill check’s RS, such as trying to climb a wall slanted against the character or knowing the 
-history of a foreign kingdom. If the number of RS is ever raised above the character’s dice pool plus 
-automatic successes the character might get from other factors, then the skill attempt immediately 
-becomes impossible. Situational modifiers can lower RS as well, though it can never be lowered beneath 
-1. If there is a situation that a skill doesn’t seem to cover, the GM should use their best judgement to 
-create a test based on similar difficulties to the situation. 
-
- 
 
 Untrained: If a character has no levels in a skill they are attempting to use, then they are considered 
-unstrained in it. Some skills cannot be used if the character is untrained in them: 
+unstrained in it. Some skills cannot be used if the character is untrained in them:
 Chymistry 
 Crafting 
 Engineering 
@@ -4142,9 +4093,8 @@ a situation makes more sense for a character to use their STR when doing somethi
 END. We provide the best examples we can, but it is your job to ensure what your players are doing is 
 represented as accurately as possible. 
 
- 
 
-Athletics (Various) 
+Athletics (Various)
 Athletics is the skill for moving, jumping, and performing other feats of physical prowess. Gymnastics, 
 sprinting, jumping, and other classic physical activities fall within its purview. Different attributes may be 
 used with Athletics depending on what the character is doing. Someone lifting weights, for example, will 
@@ -5031,10 +4981,9 @@ reaches 0 HLT.
  
 
 \chapter{Social Class and Wealth}\label{ch:wealth}
-
- 
-
- 
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
+\clearpage
 Every soldier who marches to war does so with the labors of a hundred other men and women on his 
 back. His pistol was made in Vienna, the frog for his sword was crafted in York. The fur for his cap was 
 hunted in Russia, the cowhide for his pack was herded in Scotland, his boots were cobbled in Normandy, 
@@ -5268,9 +5217,9 @@ Wealth Spent Asset Gained Gold Gained
  
 
 \chapter{Equipment}\label{ch:equipment} 
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
 \clearpage
- 
-
 “Imagine walking five hundred miles over the course of two weeks, carrying an arquebus, a bardiche, a stone of grain, another 
 stone of water, ten pounds of shot, your own armor, your tent, whatever amenities you want for yourself, and your lord’s favorite 
 dog. In the rain. In winter. With dysentery. Alright, are you imagining that? Now imagine that as soon as you’re done with that, 
@@ -9858,6 +9807,8 @@ Especially strong (feature) Ever move a piano up a staircase? Don’t worry, you
  
 
 \chapter{Proficiencies}\label{ch:proficiencies}
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
 \clearpage
  
 
@@ -10729,14 +10680,14 @@ Fling [Superior]
  
 
 \chapter{Maneuvers}\label{ch:maneuvers}
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
 \clearpage
-
 Maneuvers are essentially ‘moves’ used in combat. They can range from parrying a blow to firing a pistol 
 and swinging an axe. Most Maneuvers involve devoting CP dice to them, and then rolling these as an 
 attack or a defense against an Opponent. Some have more subtle effects, like changing the way a weapon 
 is held, distracting or blinding an Opponent, or maneuvering around them in combat. 
 
- 
 
 Maneuvers are divided into simple categories based on what they do, and when they can be used. For 
 example, Parry is a Defense Weapon Maneuver, because it involves parrying an attack with a weapon. A 
@@ -10744,7 +10695,6 @@ Lance Charge is an Attack Mounted Weapon Maneuver, since it involves a kind of a
 performed when mounted with a weapon. Most Maneuvers will require the character be wielding an 
 appropriate weapon, which is listed in the Requirements section of each Maneuver. 
 
- 
 
 Gaining Maneuvers 
 
@@ -13381,6 +13331,8 @@ Effect: Range Costs paid by opponents making attacks against you are doubled.
  
 
 \chapter{Adventuring}\label{ch:adventuring}
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
 \clearpage
 
 Environment 
@@ -13555,6 +13507,8 @@ Lighting
  
 
 \chapter{Combat}\label{ch:combat}
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
 \clearpage
 
 “If you’re an easy fright, 
@@ -15502,6 +15456,8 @@ Action. You may drop a weapon and then draw a new one in the same Action.
  
 
 \chapter{Injury and Recovery}\label{ch:injuryrecovery}
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
 \clearpage
 Wounds 
 The Basics of Injury 

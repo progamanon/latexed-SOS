@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/TeX Live for SUSE Linux) (preloaded format=pdflatex 2016.11.16)  19 DEC 2016 20:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/TeX Live for SUSE Linux) (preloaded format=pdflatex 2016.11.16)  19 DEC 2016 22:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -275,6 +275,10 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count89
 ))
+(/usr/share/texmf/tex/latex/titlesec/titletoc.sty
+Package: titletoc 2011/12/15 v1.6 TOC entries
+\ttl@leftsep=\dimen104
+)
 (/usr/share/texmf/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -293,8 +297,8 @@ File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 94.
 )
-\Gin@req@height=\dimen104
-\Gin@req@width=\dimen105
+\Gin@req@height=\dimen105
+\Gin@req@width=\dimen106
 )
 (/usr/share/texmf/tex/latex/wallpaper/wallpaper.sty
 Package: wallpaper 2005/01/18, v1.01 easy wallpaper formatting (MHFW)
@@ -306,8 +310,8 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count90
 \calc@Bcount=\count91
-\calc@Adimen=\dimen106
-\calc@Bdimen=\dimen107
+\calc@Adimen=\dimen107
+\calc@Bdimen=\dimen108
 \calc@Askip=\skip43
 \calc@Bskip=\skip44
 LaTeX Info: Redefining \setlength on input line 80.
@@ -335,8 +339,8 @@ Package ifpdf Info: pdfTeX in PDF mode is detected.
 \tileY=\skip53
 )
 (/usr/share/texmf/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen108
-\WF@size=\dimen109
+\wrapoverhang=\dimen109
+\WF@size=\dimen110
 \c@WF@wrappedlines=\count93
 \WF@box=\box26
 \WF@everypar=\toks17
@@ -344,31 +348,31 @@ Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/share/texmf/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen110
-\lightrulewidth=\dimen111
-\cmidrulewidth=\dimen112
-\belowrulesep=\dimen113
-\belowbottomsep=\dimen114
-\aboverulesep=\dimen115
-\abovetopsep=\dimen116
-\cmidrulesep=\dimen117
-\cmidrulekern=\dimen118
-\defaultaddspace=\dimen119
+\heavyrulewidth=\dimen111
+\lightrulewidth=\dimen112
+\cmidrulewidth=\dimen113
+\belowrulesep=\dimen114
+\belowbottomsep=\dimen115
+\aboverulesep=\dimen116
+\abovetopsep=\dimen117
+\cmidrulesep=\dimen118
+\cmidrulekern=\dimen119
+\defaultaddspace=\dimen120
 \@cmidla=\count94
 \@cmidlb=\count95
-\@aboverulesep=\dimen120
-\@belowrulesep=\dimen121
+\@aboverulesep=\dimen121
+\@belowrulesep=\dimen122
 \@thisruleclass=\count96
 \@lastruleclass=\count97
-\@thisrulewidth=\dimen122
+\@thisrulewidth=\dimen123
 )
 (/usr/share/texmf/tex/latex/tabu/tabu.sty
 Package: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
 
 (/usr/share/texmf/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen123
-\extrarowheight=\dimen124
+\col@sep=\dimen124
+\extrarowheight=\dimen125
 \NC@list=\toks18
 \extratabsurround=\skip54
 \backup@length=\skip55
@@ -377,8 +381,8 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box27
 \sift@deathcycles=\count98
-\@vwid@loff=\dimen125
-\@vwid@roff=\dimen126
+\@vwid@loff=\dimen126
+\@vwid@roff=\dimen127
 )
 \c@taburow=\count99
 \tabu@nbcols=\count100
@@ -386,15 +390,15 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \tabu@Xcol=\count102
 \tabu@alloc=\count103
 \tabu@nested=\count104
-\tabu@target=\dimen127
-\tabu@spreadtarget=\dimen128
-\tabu@naturalX=\dimen129
-\tabucolX=\dimen130
-\tabu@Xsum=\dimen131
-\extrarowdepth=\dimen132
-\abovetabulinesep=\dimen133
-\belowtabulinesep=\dimen134
-\tabustrutrule=\dimen135
+\tabu@target=\dimen128
+\tabu@spreadtarget=\dimen129
+\tabu@naturalX=\dimen130
+\tabucolX=\dimen131
+\tabu@Xsum=\dimen132
+\extrarowdepth=\dimen133
+\abovetabulinesep=\dimen134
+\belowtabulinesep=\dimen135
+\tabustrutrule=\dimen136
 \tabu@thebody=\toks19
 \tabu@footnotes=\toks20
 \tabu@box=\box28
@@ -410,7 +414,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTpre=\skip59
 \LTpost=\skip60
 \LTchunksize=\count105
-\LTcapwidth=\dimen136
+\LTcapwidth=\dimen137
 \LT@head=\box32
 \LT@firsthead=\box33
 \LT@foot=\box34
@@ -436,26 +440,26 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 File: lettrine.sty 2015/02/16 v1.8 (Daniel Flipo)
 \c@DefaultLines=\count110
 \c@DefaultDepth=\count111
-\DefaultFindent=\dimen137
-\DefaultNindent=\dimen138
-\DefaultSlope=\dimen139
-\DiscardVskip=\dimen140
+\DefaultFindent=\dimen138
+\DefaultNindent=\dimen139
+\DefaultSlope=\dimen140
+\DiscardVskip=\dimen141
 \L@lbox=\box36
 \L@tbox=\box37
 \c@L@lines=\count112
 \c@L@depth=\count113
-\L@Pindent=\dimen141
-\L@Findent=\dimen142
-\L@Nindent=\dimen143
-\L@lraise=\dimen144
-\L@first=\dimen145
-\L@next=\dimen146
-\L@slope=\dimen147
-\L@height=\dimen148
-\L@novskip=\dimen149
-\LettrineWidth=\dimen150
-\LettrineHeight=\dimen151
-\LettrineDepth=\dimen152
+\L@Pindent=\dimen142
+\L@Findent=\dimen143
+\L@Nindent=\dimen144
+\L@lraise=\dimen145
+\L@first=\dimen146
+\L@next=\dimen147
+\L@slope=\dimen148
+\L@height=\dimen149
+\L@novskip=\dimen150
+\LettrineWidth=\dimen151
+\LettrineHeight=\dimen152
+\LettrineDepth=\dimen153
 
 Loading lettrine.cfg
 (/usr/share/texmf/tex/latex/lettrine/lettrine.cfg))
@@ -465,13 +469,13 @@ Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 (/usr/share/texmf/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen153
-\captionmargin@=\dimen154
-\captionwidth=\dimen155
-\caption@tempdima=\dimen156
-\caption@indent=\dimen157
-\caption@parindent=\dimen158
-\caption@hangindent=\dimen159
+\captionmargin=\dimen154
+\captionmargin@=\dimen155
+\captionwidth=\dimen156
+\caption@tempdima=\dimen157
+\caption@indent=\dimen158
+\caption@parindent=\dimen159
+\caption@hangindent=\dimen160
 )
 \c@ContinuedFloat=\count114
 Package caption Info: longtable package is loaded.
@@ -537,7 +541,7 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/share/texmf/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen160
+\@linkdim=\dimen161
 \Hy@linkcounter=\count115
 \Hy@pagecounter=\count116
 
@@ -566,10 +570,10 @@ Package hyperref Info: Bookmarks ON on input line 4688.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen161
+\XeTeXLinkMargin=\dimen162
 \Fld@menulength=\count119
-\Field@Width=\dimen162
-\Fld@charsize=\dimen163
+\Field@Width=\dimen163
+\Fld@charsize=\dimen164
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -608,11 +612,11 @@ Package: amstext 2000/06/29 v2.01
 (/usr/share/texmf/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks22
-\ex@=\dimen164
+\ex@=\dimen165
 ))
 (/usr/share/texmf/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen165
+\pmbraise@=\dimen166
 )
 (/usr/share/texmf/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
@@ -629,7 +633,7 @@ LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box38
 \strutbox@=\box39
-\big@size=\dimen166
+\big@size=\dimen167
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count129
@@ -642,12 +646,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \column@=\count134
 \maxfields@=\count135
 \andhelp@=\toks24
-\eqnshift@=\dimen167
-\alignsep@=\dimen168
-\tagshift@=\dimen169
-\tagwidth@=\dimen170
-\totwidth@=\dimen171
-\lineht@=\dimen172
+\eqnshift@=\dimen168
+\alignsep@=\dimen169
+\tagshift@=\dimen170
+\tagwidth@=\dimen171
+\totwidth@=\dimen172
+\lineht@=\dimen173
 \@envbody=\toks25
 \multlinegap=\skip72
 \multlinetaggap=\skip73
@@ -670,14 +674,14 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@cnth=\count136
 \Gm@cntv=\count137
 \c@Gm@tempcnt=\count138
-\Gm@bindingoffset=\dimen173
-\Gm@wd@mp=\dimen174
-\Gm@odd@mp=\dimen175
-\Gm@even@mp=\dimen176
-\Gm@layoutwidth=\dimen177
-\Gm@layoutheight=\dimen178
-\Gm@layouthoffset=\dimen179
-\Gm@layoutvoffset=\dimen180
+\Gm@bindingoffset=\dimen174
+\Gm@wd@mp=\dimen175
+\Gm@odd@mp=\dimen176
+\Gm@even@mp=\dimen177
+\Gm@layoutwidth=\dimen178
+\Gm@layoutheight=\dimen179
+\Gm@layouthoffset=\dimen180
+\Gm@layoutvoffset=\dimen181
 \Gm@dimlist=\toks27
 )
 (/usr/share/texmf/tex/latex/base/textcomp.sty
@@ -842,7 +846,7 @@ Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 \MT@toks=\toks28
 \MT@count=\count139
 LaTeX Info: Redefining \textls on input line 766.
-\MT@outer@kern=\dimen181
+\MT@outer@kern=\dimen182
 LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
 \MT@listname@count=\count140
 
@@ -868,7 +872,7 @@ Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 (/usr/share/texmf/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks29
-\footnotemargin=\dimen182
+\footnotemargin=\dimen183
 \c@pp@next@reset=\count142
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
@@ -884,29 +888,29 @@ Package: chngcntr 2009/09/02 v1.0a change counter resetting
 ) (./LaTeXed-SoS.aux)
 \openout1 = `LaTeXed-SoS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 103.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 103.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 104.
 
 
 (/usr/share/texmf/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Try loading font information for OT1+pplj on input line 103
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Try loading font information for OT1+pplj on input line 104
 .
 
 (/usr/share/texmf/tex/latex/psnfss/ot1pplj.fd
@@ -915,13 +919,13 @@ File: ot1pplj.fd 2004/09/06 font definitions for OT1/pplj.
 (/usr/share/texmf/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count143
-\scratchdimen=\dimen183
+\scratchdimen=\dimen184
 \scratchbox=\box40
 \nofMPsegments=\count144
 \nofMParguments=\count145
 \everyMPshowfont=\toks30
 \MPscratchCnt=\count146
-\MPscratchDim=\dimen184
+\MPscratchDim=\dimen185
 \MPnumerator=\count147
 \makeMPintoPDFobject=\count148
 \everyMPtoPDFconversion=\toks31
@@ -944,7 +948,7 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 103.
+Package hyperref Info: Link coloring OFF on input line 104.
 
 (/usr/share/texmf/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -954,9 +958,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count149
 )
-LaTeX Info: Redefining \ref on input line 103.
-LaTeX Info: Redefining \pageref on input line 103.
-LaTeX Info: Redefining \nameref on input line 103.
+LaTeX Info: Redefining \ref on input line 104.
+LaTeX Info: Redefining \pageref on input line 104.
+LaTeX Info: Redefining \nameref on input line 104.
  (./LaTeXed-SoS.out) (./LaTeXed-SoS.out)
 \@outlinefile=\write3
 \openout3 = `LaTeXed-SoS.out'.
@@ -971,14 +975,14 @@ LaTeX Info: Redefining \nameref on input line 103.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(56.9055pt, 500.484pt, 56.9055pt)
-* v-part:(T,H,B)=(142.26378pt, 510.44243pt, 142.26378pt)
+* v-part:(T,H,B)=(113.81102pt, 567.34795pt, 113.81102pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=500.484pt
-* \textheight=510.44243pt
+* \textheight=567.34795pt
 * \oddsidemargin=-15.36449pt
 * \evensidemargin=-15.36449pt
-* \topmargin=4.55238pt
+* \topmargin=-23.90038pt
 * \headheight=42.67912pt
 * \headsep=22.76228pt
 * \topskip=11.0pt
@@ -996,7 +1000,7 @@ LaTeX Info: Redefining \nameref on input line 103.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 103.
+LaTeX Info: Redefining \microtypecontext on input line 104.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1010,14 +1014,14 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 106.
-LaTeX Font Info:    Try loading font information for TS1+pplj on input line 110
+(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 107.
+LaTeX Font Info:    Try loading font information for TS1+pplj on input line 111
 .
 
 (/usr/share/texmf/tex/latex/psnfss/ts1pplj.fd
 File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
 )
-LaTeX Font Info:    Try loading font information for U+futs on input line 169.
+LaTeX Font Info:    Try loading font information for U+futs on input line 174.
 
 (/usr/share/texmf/tex/latex/fourier/ufuts.fd
 File: ufuts.fd 2004/03/26 Fontinst v1.926 font definitions for U/futs.
@@ -1027,9 +1031,9 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <12> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 169.
+(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 174.
 LaTeX Font Info:    Font shape `U/futs/bx/n' in size <12> not available
-(Font)              Font shape `U/futs/b/n' tried instead on input line 169.
+(Font)              Font shape `U/futs/b/n' tried instead on input line 174.
  [1{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -1047,51 +1051,32 @@ Package microtype Info: Character `013' is missing
 
 LaTeX Font Warning: Font shape `TS1/pplj/m/sc' undefined
 (Font)              using `TS1/pplj/m/n' instead
-(Font)              for symbol `textcopyright' on input line 244.
+(Font)              for symbol `textcopyright' on input line 245.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.248 \end{titlepage}
+l.249 \end{titlepage}
                       [1
 
 ]
 LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 252.
+(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 253.
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.281 \clearpage
+l.282 \clearpage
                  [1]
-Chapter 1.
-LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 283.
 LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/pplj/b/n' tried instead on input line 283.
-[1
-
-
-
-] [2]
-LaTeX Font Info:    Font shape `OT1/pplj/bx/it' in size <10> not available
-(Font)              Font shape `OT1/pplj/b/it' tried instead on input line 341.
-
- [3] [4] [5] [6]
-Chapter 2.
-[7
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 453--454
-
- []
-
-[8] [9] (/usr/share/texmf/tex/latex/microtype/mt-cmr.cfg
+ (./LaTeXed-SoS.toc
+(/usr/share/texmf/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 558.
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1099,211 +1084,350 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texmf/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 558.
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (/usr/share/texmf/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
+)pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.29 ... {4.2}Advancing with Arc}{20}{section.4.2}
+                                                   [2
+
+
+]pdfTeX warning (ext4): destination with the same identifier (name{page.iii}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.196 ...er}{\numberline {7}Skills}{99}{chapter.7}
+                                                   [3])
+\tf@toc=\write4
+\openout4 = `LaTeXed-SoS.toc'.
+
+ [4]
+Chapter 1.
+LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <20.74> not available
+(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 285.
+[1
+
+
+] [2]
+LaTeX Font Info:    Font shape `OT1/pplj/bx/it' in size <10> not available
+(Font)              Font shape `OT1/pplj/b/it' tried instead on input line 343.
+
+ [3] [4] [5] [6]
+Chapter 2.
+\c@ttl@toc@chapters=\count150
+(./LaTeXed-SoS.ptc) [7
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 454--455
+
+ []
+
+[8] [9]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [10] [11]
 Chapter 3.
-[12
+(./LaTeXed-SoS.ptc) [12
 
 ] [13
 
-] [14] [15]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[16] [17] [18]
+] [14] [15] [16] [17] [18]
 Chapter 4.
-[19
+(./LaTeXed-SoS.ptc) [19
 
 ] [20
 
-] [21] [22] [23] [24] [25]
-Underfull \hbox (badness 10000) in paragraph at lines 1079--1094
+] [21] [22] [23] [24]
+Underfull \hbox (badness 10000) in paragraph at lines 1084--1099
 [][]
  []
 
-[26] [27]
+[25] [26]
 Chapter 5.
-[28
+(./LaTeXed-SoS.ptc) [27
+
+] [28
+
+] [29] [30] [31] [32] [33] [34] [35] [36] [37]
+[38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49]
+Overfull \hbox (30.26573pt too wide) in paragraph at lines 2146--2155
+[] \OT1/pplj/m/n/10.95 There
+ []
+
+[50] [51] [52] [53] [54] [55] [56]
+Overfull \hbox (8.27338pt too wide) in paragraph at lines 2405--2409
+ []\OT1/pplj/b/n/10.95 Judgement[] \OT1/pplj/m/n/10.95 A Pal-adin can chan-nel 
+the power of Geno-sus through any weapon|even his own hands|to
+ []
+
+[57] [58] [59] [60] [61]
+Underfull \hbox (badness 1237) in paragraph at lines 2647--2647
+[]\OT1/pplj/m/n/10.95 Tons of Mois-ture (snow, rain,
+ []
+
+[62] [63] [64] [65] [66] [67] [68] [69]
+Chapter 6.
+(./LaTeXed-SoS.ptc) [70
+
+] [71
 
 ]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[29
+[72] [73] [74
 
-] [30] [31] [32] [33] [34] [35] [36] [37] [38] [39] [40] [41] [42] [43]
-[44] [45] [46] [47] [48] [49] [50] [51] [52]
-Overfull \hbox (30.26573pt too wide) in paragraph at lines 2139--2148
-[] \OT1/pplj/m/n/10.95 There
- []
+] [75
 
-[53] [54] [55] [56] [57] [58] [59] [60]
-Overfull \hbox (8.27338pt too wide) in paragraph at lines 2398--2402
- []\OT1/pplj/b/n/10.95 Judgement[] \OT1/pplj/m/n/10.95 A Pal-adin can chan-nel 
-the power of Geno-sus through any weapon|even his own hands|to
- []
-
-[61] [62] [63] [64] [65] [66]
-Underfull \hbox (badness 1237) in paragraph at lines 2640--2640
-[]\OT1/pplj/m/n/10.95 Tons of Mois-ture (snow, rain,
- []
-
-[67] [68] [69] [70] [71] [72] [73] [74]
-Chapter 6.
-[75
-
-] [76
-
-] [77] [78]
-
-LaTeX Warning: Float too large for page by 16.35722pt on input line 3114.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[79
-
-] [80] [81
-
-] [82] [83] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93]
-[94] [95]
-Underfull \hbox (badness 10000) in paragraph at lines 3623--3624
+] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86]
+[87] [88]
+Underfull \hbox (badness 10000) in paragraph at lines 3631--3632
 
  []
 
-[96] [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107]
+[89] [90] [91] [92] [93] [94] [95] [96] [97] [98]
 Chapter 7.
-[108
+(./LaTeXed-SoS.ptc) [99
 
-] [109
+]
 
-] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119]
-[120] [121] [122] [123]
+LaTeX Warning: Reference `skill:Athletics' on page 100 undefined on input line 
+3970.
+
+
+LaTeX Warning: Reference `skill:Chymistry' on page 100 undefined on input line 
+3971.
+
+
+LaTeX Warning: Reference `skill:Climbing' on page 100 undefined on input line 3
+972.
+
+
+LaTeX Warning: Reference `skill:Cooking' on page 100 undefined on input line 39
+73.
+
+
+LaTeX Warning: Reference `skill:Crafting' on page 100 undefined on input line 3
+974.
+
+
+LaTeX Warning: Reference `skill:Drill' on page 100 undefined on input line 3975
+.
+
+
+LaTeX Warning: Reference `skill:Engineering' on page 100 undefined on input lin
+e 3976.
+
+
+LaTeX Warning: Reference `skill:Gather Information' on page 100 undefined on in
+put line 3977.
+
+
+LaTeX Warning: Reference `skill:History' on page 100 undefined on input line 39
+78.
+
+
+LaTeX Warning: Reference `skill:Hunting' on page 100 undefined on input line 39
+79.
+
+[100
+
+]
+
+LaTeX Warning: Reference `skill:Intimidate' on page 101 undefined on input line
+ 3980.
+
+
+LaTeX Warning: Reference `skill:Navigation' on page 101 undefined on input line
+ 3981.
+
+
+LaTeX Warning: Reference `skill:Observation' on page 101 undefined on input lin
+e 3982.
+
+
+LaTeX Warning: Reference `skill:Orate' on page 101 undefined on input line 3983
+.
+
+
+LaTeX Warning: Reference `skill:Perform' on page 101 undefined on input line 39
+84.
+
+
+LaTeX Warning: Reference `skill:Persuasion' on page 101 undefined on input line
+ 3985.
+
+
+LaTeX Warning: Reference `skill:Politics' on page 101 undefined on input line 3
+986.
+
+
+LaTeX Warning: Reference `skill:Research' on page 101 undefined on input line 3
+987.
+
+
+LaTeX Warning: Reference `skill:Riding' on page 101 undefined on input line 398
+8.
+
+
+LaTeX Warning: Reference `skill:Sailing' on page 101 undefined on input line 39
+89.
+
+
+LaTeX Warning: Reference `skill:Stealth' on page 101 undefined on input line 39
+90.
+
+
+LaTeX Warning: Reference `skill:Strategy' on page 101 undefined on input line 3
+991.
+
+
+LaTeX Warning: Reference `skill:Subterfuge' on page 101 undefined on input line
+ 3992.
+
+
+LaTeX Warning: Reference `skill:Surgery' on page 101 undefined on input line 39
+93.
+
+
+LaTeX Warning: Reference `skill:Swimming' on page 101 undefined on input line 3
+994.
+
+
+LaTeX Warning: Reference `skill:Tactics' on page 101 undefined on input line 39
+95.
+
+[101] [102] [103] [104] [105] [106] [107] [108] [109] [110] [111] [112]
+[113]
 Chapter 8.
-[124
+(./LaTeXed-SoS.ptc) [114
 
-] [125] [126] [127]
+] [115
+
+] [116] [117]
 Chapter 9.
-[128
+(./LaTeXed-SoS.ptc) [118
 
-] [129
+] [119
 
-] [130] [131] [132] [133] [134] [135] [136] [137] [138] [139]
-[140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150] [151]
-[152] [153] [154] [155] [156] [157] [158] [159] [160] [161] [162] [163]
-[164] [165] [166] [167] [168] [169] [170] [171] [172] [173] [174] [175]
-[176] [177] [178] [179]
-Overfull \hbox (4.69121pt too wide) in paragraph at lines 9054--9060
+] [120] [121] [122] [123] [124] [125] [126]
+[127] [128] [129] [130] [131] [132] [133] [134] [135] [136] [137] [138]
+[139] [140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150]
+[151] [152] [153] [154] [155] [156] [157] [158] [159] [160] [161] [162]
+[163] [164]
+Overfull \hbox (4.69121pt too wide) in paragraph at lines 9003--9009
 []\OT1/pplj/m/n/10.95 Halves Shock ef-fect from weapons +4 Blud-geon-ing AV Ig-
 nores AP Swing/Thrust X for Melee Weapons
  []
 
-[180] [181] [182]
-Overfull \hbox (1.79176pt too wide) in paragraph at lines 9272--9275
+[165] [166] [167]
+Overfull \hbox (1.79176pt too wide) in paragraph at lines 9221--9224
 []\OT1/pplj/m/n/10.95 The ar-mor suits them-selves are bipedal mon-strosi-ties 
 of steel and ma-chine, of-ten laden with weaponry
  []
 
-[183] [184] [185] [186] [187] [188] [189] [190]
+[168] [169] [170] [171] [172] [173] [174]
 Chapter 10.
-[191
+(./LaTeXed-SoS.ptc) [175
 
-] [192
+] [176
 
-] [193] [194] [195] [196] [197] [198] [199] [200] [201] [202]
+] [177] [178] [179] [180] [181] [182] [183]
+[184] [185]
 Chapter 11.
-[203
+(./LaTeXed-SoS.ptc) [186
 
-] [204
+] [187
 
-] [205] [206] [207]
-Overfull \hbox (2.20624pt too wide) in paragraph at lines 11060--11069
+] [188] [189]
+Overfull \hbox (2.20624pt too wide) in paragraph at lines 11010--11019
 []\OT1/pplj/m/n/10.95 BUTT-STRIKE [X] Type: Uni-ver-sal, At-tack, Swing-ing Re-
 quire-ments: Have a Polearm or Spear weapon,
  []
 
-[208] [209] [210]
-Overfull \hbox (14.8974pt too wide) in paragraph at lines 11233--11237
+[190] [191] [192]
+Overfull \hbox (14.8974pt too wide) in paragraph at lines 11183--11187
 []\OT1/pplj/m/n/10.95 MELEE SHOOT [X+Variable] Type: Uni-ver-sal, At-tack, Thru
 st-ing Re-quire-ments: Have a loaded/spanned
  []
 
-[211] [212] [213] [214] [215] [216] [217] [218] [219] [220] [221]
-Overfull \hbox (3.67287pt too wide) in paragraph at lines 11915--11923
+[193] [194] [195] [196] [197] [198] [199] [200] [201] [202]
+Overfull \hbox (3.67287pt too wide) in paragraph at lines 11865--11873
 []\OT1/pplj/m/n/10.95 Cover AV Ta-ble X.X Cover Cover AV Tall grass/hit the dir
 t 0 Hid-ing be-hind Horse Mount TOU+Mount
  []
 
-[222] [223] [224] [225] [226]
-Overfull \hbox (7.63388pt too wide) in paragraph at lines 12254--12264
+[203] [204] [205] [206]
+Overfull \hbox (7.63388pt too wide) in paragraph at lines 12204--12214
 []\OT1/pplj/m/n/10.95 DOUBLE FLING [???????] Type: Uni-ver-sal, Mis-sile, Throw
 -ing Re-quire-ments: Have Throw-ing Weapons
  []
 
-[227] [228] [229] [230] [231] [232] [233]
-Overfull \hbox (3.17569pt too wide) in paragraph at lines 12740--12745
+[207] [208] [209] [210] [211] [212] [213]
+Overfull \hbox (3.17569pt too wide) in paragraph at lines 12690--12695
 []\OT1/pplj/m/n/10.95 DISENGAGE [??????] Type: XXXXXX Re-quire-ments: XXXXXX Ma
 -neu-ver: XXXXXX Suc-cess: XXXXXX 
  []
 
-[234] [235] [236] [237] [238] [239] [240] [241] [242]
+[214] [215] [216] [217] [218] [219] [220] [221]
 Chapter 12.
-[243
+(./LaTeXed-SoS.ptc) [222
 
-] [244
+] [223
 
-] [245] [246]
+] [224] [225]
 Chapter 13.
-[247
+(./LaTeXed-SoS.ptc) [226
 
-] [248
+] [227
 
-] [249]
-Overfull \hbox (6.43309pt too wide) in paragraph at lines 13705--13715
+]
+Overfull \hbox (6.43309pt too wide) in paragraph at lines 13659--13669
 []\OT1/pplj/m/n/10.95 Combat Pool (CP) CP = (Adroit-ness+Proficiency Pool+Misc)
 -(Encumbrance+Fatigue+Pain+Misc) Com-
  []
 
-
-Overfull \hbox (15.93843pt too wide) in paragraph at lines 13728--13735
+[228]
+Overfull \hbox (15.93843pt too wide) in paragraph at lines 13682--13689
 []\OT1/pplj/m/n/10.95 Missile Pool (MP) MP=(Missile Pro-fi-ciency Pool+Misc)-(E
 ncumbrance+Fatigue+Pain+Perception Penalty
  []
 
-[250] [251] [252] [253] [254] [255] [256] [257] [258] [259] [260] [261]
-[262] [263] [264] [265] [266] [267] [268] [269] [270]
-Overfull \hbox (20.06726pt too wide) in paragraph at lines 15330--15346
+[229] [230] [231] [232] [233] [234] [235] [236] [237] [238] [239] [240]
+[241] [242] [243] [244] [245] [246]
+Overfull \hbox (20.06726pt too wide) in paragraph at lines 15284--15300
 []\OT1/pplj/m/n/10.95 Mounted Ad-van-tages/Disadvantages Mounted Char-ac-ters g
 ain the fol-low-ing ad-van-tages while Mounted.
  []
 
-[271] [272] [273]
+[247] [248] [249]
 Chapter 14.
-[274
+(./LaTeXed-SoS.ptc) [250
 
-] [275
+] [251
 
-] [276] [277] [278] [279] [280] [281] [282] [283] [284] [285]
-[286] [287] [288] [289] [290] [291] [292] [293] [294] [295] [296] [297]
-[298] [299] [300] [301] [302] [303] [304] [305] [306] [307] [308]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18319.
- [309]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 18319.
+] [252] [253] [254] [255] [256] [257] [258]
+[259] [260] [261] [262] [263] [264] [265] [266] [267] [268] [269] [270]
+[271] [272] [273] [274] [275] [276] [277] [278] [279] [280]
+\tf@ptc=\write5
+\openout5 = `LaTeXed-SoS.ptc'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18275.
+ [281]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 18275.
 
 (./LaTeXed-SoS.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 18319.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 18275.
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 18319
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 18275
 .
 Package rerunfilecheck Info: File `LaTeXed-SoS.out' has not changed.
 (rerunfilecheck)             Checksum: BB930F78FB16AF94C04C30870BC076B4;3516.
@@ -1311,16 +1435,19 @@ Package rerunfilecheck Info: File `LaTeXed-SoS.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 18319.
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 18275.
  ) 
 Here is how much of TeX's memory you used:
- 12836 strings out of 493091
- 185751 string characters out of 6142991
- 422112 words of memory out of 5000000
- 15426 multiletter control sequences out of 15000+600000
- 47452 words of font info for 120 fonts, out of 8000000 for 9000
+ 13012 strings out of 493091
+ 188404 string characters out of 6142991
+ 425025 words of memory out of 5000000
+ 15594 multiletter control sequences out of 15000+600000
+ 47999 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,16n,43p,1458b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,16n,43p,1468b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/p
 ublic/amsfonts/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/c
 mr12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/
@@ -1331,10 +1458,10 @@ ts/type1/public/fpl/fplrij8a.pfb></usr/share/texmf/fonts/type1/urw/palatino/upl
 b8a.pfb></usr/share/texmf/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texm
 f/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf/fonts/type1/urw/palatin
 o/uplri8a.pfb>
-Output written on LaTeXed-SoS.pdf (314 pages, 938098 bytes).
+Output written on LaTeXed-SoS.pdf (289 pages, 924640 bytes).
 PDF statistics:
- 2213 PDF objects out of 2487 (max. 8388607)
- 1737 compressed objects within 18 object streams
- 617 named destinations out of 1000 (max. 500000)
- 18385 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 2201 PDF objects out of 2487 (max. 8388607)
+ 1750 compressed objects within 18 object streams
+ 591 named destinations out of 1000 (max. 500000)
+ 18897 words of extra memory for PDF output out of 20736 (max. 10000000)
 
