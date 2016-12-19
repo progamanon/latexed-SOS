@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/TeX Live for SUSE Linux) (preloaded format=pdflatex 2016.11.16)  19 DEC 2016 22:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/TeX Live for SUSE Linux) (preloaded format=pdflatex 2016.11.16)  19 DEC 2016 23:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1199,235 +1199,191 @@ Chapter 7.
 
 ]
 
-LaTeX Warning: Reference `skill:Athletics' on page 100 undefined on input line 
-3970.
+Package hyperref Warning: Suppressing empty link on input line 3973.
 
 
-LaTeX Warning: Reference `skill:Chymistry' on page 100 undefined on input line 
-3971.
+Package hyperref Warning: Suppressing empty link on input line 3974.
 
 
-LaTeX Warning: Reference `skill:Climbing' on page 100 undefined on input line 3
-972.
+Package hyperref Warning: Suppressing empty link on input line 3975.
 
 
-LaTeX Warning: Reference `skill:Cooking' on page 100 undefined on input line 39
-73.
+Package hyperref Warning: Suppressing empty link on input line 3978.
 
 
-LaTeX Warning: Reference `skill:Crafting' on page 100 undefined on input line 3
-974.
+Package hyperref Warning: Suppressing empty link on input line 3980.
 
 
-LaTeX Warning: Reference `skill:Drill' on page 100 undefined on input line 3975
-.
+Package hyperref Warning: Suppressing empty link on input line 3981.
 
 
-LaTeX Warning: Reference `skill:Engineering' on page 100 undefined on input lin
-e 3976.
-
-
-LaTeX Warning: Reference `skill:Gather Information' on page 100 undefined on in
-put line 3977.
-
-
-LaTeX Warning: Reference `skill:History' on page 100 undefined on input line 39
-78.
-
-
-LaTeX Warning: Reference `skill:Hunting' on page 100 undefined on input line 39
-79.
+Package hyperref Warning: Suppressing empty link on input line 3982.
 
 [100
 
 ]
 
-LaTeX Warning: Reference `skill:Intimidate' on page 101 undefined on input line
- 3980.
+Package hyperref Warning: Suppressing empty link on input line 3983.
 
 
-LaTeX Warning: Reference `skill:Navigation' on page 101 undefined on input line
- 3981.
+Package hyperref Warning: Suppressing empty link on input line 3984.
 
 
-LaTeX Warning: Reference `skill:Observation' on page 101 undefined on input lin
-e 3982.
+Package hyperref Warning: Suppressing empty link on input line 3985.
 
 
-LaTeX Warning: Reference `skill:Orate' on page 101 undefined on input line 3983
-.
+Package hyperref Warning: Suppressing empty link on input line 3986.
 
 
-LaTeX Warning: Reference `skill:Perform' on page 101 undefined on input line 39
-84.
+Package hyperref Warning: Suppressing empty link on input line 3987.
 
 
-LaTeX Warning: Reference `skill:Persuasion' on page 101 undefined on input line
- 3985.
+Package hyperref Warning: Suppressing empty link on input line 3988.
 
 
-LaTeX Warning: Reference `skill:Politics' on page 101 undefined on input line 3
-986.
+Package hyperref Warning: Suppressing empty link on input line 3989.
 
 
-LaTeX Warning: Reference `skill:Research' on page 101 undefined on input line 3
-987.
+Package hyperref Warning: Suppressing empty link on input line 3990.
 
 
-LaTeX Warning: Reference `skill:Riding' on page 101 undefined on input line 398
-8.
+Package hyperref Warning: Suppressing empty link on input line 3991.
 
 
-LaTeX Warning: Reference `skill:Sailing' on page 101 undefined on input line 39
-89.
+Package hyperref Warning: Suppressing empty link on input line 3992.
 
 
-LaTeX Warning: Reference `skill:Stealth' on page 101 undefined on input line 39
-90.
+Package hyperref Warning: Suppressing empty link on input line 3995.
 
 
-LaTeX Warning: Reference `skill:Strategy' on page 101 undefined on input line 3
-991.
+Package hyperref Warning: Suppressing empty link on input line 3996.
 
 
-LaTeX Warning: Reference `skill:Subterfuge' on page 101 undefined on input line
- 3992.
-
-
-LaTeX Warning: Reference `skill:Surgery' on page 101 undefined on input line 39
-93.
-
-
-LaTeX Warning: Reference `skill:Swimming' on page 101 undefined on input line 3
-994.
-
-
-LaTeX Warning: Reference `skill:Tactics' on page 101 undefined on input line 39
-95.
+Package hyperref Warning: Suppressing empty link on input line 3997.
 
 [101] [102] [103] [104] [105] [106] [107] [108] [109] [110] [111] [112]
-[113]
+[113] [114]
 Chapter 8.
-(./LaTeXed-SoS.ptc) [114
+(./LaTeXed-SoS.ptc) [115
 
-] [115
+] [116
 
-] [116] [117]
+] [117] [118]
 Chapter 9.
-(./LaTeXed-SoS.ptc) [118
+(./LaTeXed-SoS.ptc) [119
 
-] [119
+] [120
 
-] [120] [121] [122] [123] [124] [125] [126]
-[127] [128] [129] [130] [131] [132] [133] [134] [135] [136] [137] [138]
-[139] [140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150]
-[151] [152] [153] [154] [155] [156] [157] [158] [159] [160] [161] [162]
-[163] [164]
-Overfull \hbox (4.69121pt too wide) in paragraph at lines 9003--9009
+] [121] [122] [123] [124] [125] [126] [127]
+[128] [129] [130] [131] [132] [133] [134] [135] [136] [137] [138] [139]
+[140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150] [151]
+[152] [153] [154] [155] [156] [157] [158] [159] [160] [161] [162] [163]
+[164] [165]
+Overfull \hbox (4.69121pt too wide) in paragraph at lines 8808--8814
 []\OT1/pplj/m/n/10.95 Halves Shock ef-fect from weapons +4 Blud-geon-ing AV Ig-
 nores AP Swing/Thrust X for Melee Weapons
  []
 
-[165] [166] [167]
-Overfull \hbox (1.79176pt too wide) in paragraph at lines 9221--9224
+[166] [167] [168]
+Overfull \hbox (1.79176pt too wide) in paragraph at lines 9026--9029
 []\OT1/pplj/m/n/10.95 The ar-mor suits them-selves are bipedal mon-strosi-ties 
 of steel and ma-chine, of-ten laden with weaponry
  []
 
-[168] [169] [170] [171] [172] [173] [174]
+[169] [170] [171] [172] [173] [174] [175]
 Chapter 10.
-(./LaTeXed-SoS.ptc) [175
+(./LaTeXed-SoS.ptc) [176
 
-] [176
+] [177
 
-] [177] [178] [179] [180] [181] [182] [183]
-[184] [185]
+] [178] [179] [180] [181] [182] [183] [184]
+[185] [186]
 Chapter 11.
-(./LaTeXed-SoS.ptc) [186
+(./LaTeXed-SoS.ptc) [187
 
-] [187
+] [188
 
-] [188] [189]
-Overfull \hbox (2.20624pt too wide) in paragraph at lines 11010--11019
+] [189] [190]
+Overfull \hbox (2.20624pt too wide) in paragraph at lines 10815--10824
 []\OT1/pplj/m/n/10.95 BUTT-STRIKE [X] Type: Uni-ver-sal, At-tack, Swing-ing Re-
 quire-ments: Have a Polearm or Spear weapon,
  []
 
-[190] [191] [192]
-Overfull \hbox (14.8974pt too wide) in paragraph at lines 11183--11187
+[191] [192] [193]
+Overfull \hbox (14.8974pt too wide) in paragraph at lines 10988--10992
 []\OT1/pplj/m/n/10.95 MELEE SHOOT [X+Variable] Type: Uni-ver-sal, At-tack, Thru
 st-ing Re-quire-ments: Have a loaded/spanned
  []
 
-[193] [194] [195] [196] [197] [198] [199] [200] [201] [202]
-Overfull \hbox (3.67287pt too wide) in paragraph at lines 11865--11873
+[194] [195] [196] [197] [198] [199] [200] [201] [202] [203]
+Overfull \hbox (3.67287pt too wide) in paragraph at lines 11670--11678
 []\OT1/pplj/m/n/10.95 Cover AV Ta-ble X.X Cover Cover AV Tall grass/hit the dir
 t 0 Hid-ing be-hind Horse Mount TOU+Mount
  []
 
-[203] [204] [205] [206]
-Overfull \hbox (7.63388pt too wide) in paragraph at lines 12204--12214
+[204] [205] [206] [207]
+Overfull \hbox (7.63388pt too wide) in paragraph at lines 12009--12019
 []\OT1/pplj/m/n/10.95 DOUBLE FLING [???????] Type: Uni-ver-sal, Mis-sile, Throw
 -ing Re-quire-ments: Have Throw-ing Weapons
  []
 
-[207] [208] [209] [210] [211] [212] [213]
-Overfull \hbox (3.17569pt too wide) in paragraph at lines 12690--12695
+[208] [209] [210] [211] [212] [213] [214]
+Overfull \hbox (3.17569pt too wide) in paragraph at lines 12495--12500
 []\OT1/pplj/m/n/10.95 DISENGAGE [??????] Type: XXXXXX Re-quire-ments: XXXXXX Ma
 -neu-ver: XXXXXX Suc-cess: XXXXXX 
  []
 
-[214] [215] [216] [217] [218] [219] [220] [221]
+[215] [216] [217] [218] [219] [220] [221] [222]
 Chapter 12.
-(./LaTeXed-SoS.ptc) [222
+(./LaTeXed-SoS.ptc) [223
 
-] [223
+] [224
 
-] [224] [225]
+] [225] [226]
 Chapter 13.
-(./LaTeXed-SoS.ptc) [226
+(./LaTeXed-SoS.ptc) [227
 
-] [227
+] [228
 
 ]
-Overfull \hbox (6.43309pt too wide) in paragraph at lines 13659--13669
+Overfull \hbox (6.43309pt too wide) in paragraph at lines 13464--13474
 []\OT1/pplj/m/n/10.95 Combat Pool (CP) CP = (Adroit-ness+Proficiency Pool+Misc)
 -(Encumbrance+Fatigue+Pain+Misc) Com-
  []
 
-[228]
-Overfull \hbox (15.93843pt too wide) in paragraph at lines 13682--13689
+[229]
+Overfull \hbox (15.93843pt too wide) in paragraph at lines 13487--13494
 []\OT1/pplj/m/n/10.95 Missile Pool (MP) MP=(Missile Pro-fi-ciency Pool+Misc)-(E
 ncumbrance+Fatigue+Pain+Perception Penalty
  []
 
-[229] [230] [231] [232] [233] [234] [235] [236] [237] [238] [239] [240]
-[241] [242] [243] [244] [245] [246]
-Overfull \hbox (20.06726pt too wide) in paragraph at lines 15284--15300
+[230] [231] [232] [233] [234] [235] [236] [237] [238] [239] [240] [241]
+[242] [243] [244] [245] [246] [247]
+Overfull \hbox (20.06726pt too wide) in paragraph at lines 15089--15105
 []\OT1/pplj/m/n/10.95 Mounted Ad-van-tages/Disadvantages Mounted Char-ac-ters g
 ain the fol-low-ing ad-van-tages while Mounted.
  []
 
-[247] [248] [249]
+[248] [249] [250]
 Chapter 14.
-(./LaTeXed-SoS.ptc) [250
+(./LaTeXed-SoS.ptc) [251
 
-] [251
+] [252
 
-] [252] [253] [254] [255] [256] [257] [258]
-[259] [260] [261] [262] [263] [264] [265] [266] [267] [268] [269] [270]
-[271] [272] [273] [274] [275] [276] [277] [278] [279] [280]
+] [253] [254] [255] [256] [257] [258] [259]
+[260] [261] [262] [263] [264] [265] [266] [267] [268] [269] [270] [271]
+[272] [273] [274] [275] [276] [277] [278] [279] [280] [281]
 \tf@ptc=\write5
 \openout5 = `LaTeXed-SoS.ptc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18275.
- [281]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 18275.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18080.
+ [282]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 18080.
 
 (./LaTeXed-SoS.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 18275.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 18080.
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 18275
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 18080
 .
 Package rerunfilecheck Info: File `LaTeXed-SoS.out' has not changed.
 (rerunfilecheck)             Checksum: BB930F78FB16AF94C04C30870BC076B4;3516.
@@ -1435,19 +1391,16 @@ Package rerunfilecheck Info: File `LaTeXed-SoS.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 18275.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 18080.
  ) 
 Here is how much of TeX's memory you used:
- 13012 strings out of 493091
- 188404 string characters out of 6142991
- 425025 words of memory out of 5000000
- 15594 multiletter control sequences out of 15000+600000
+ 13019 strings out of 493091
+ 188440 string characters out of 6142991
+ 425664 words of memory out of 5000000
+ 15579 multiletter control sequences out of 15000+600000
  47999 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,16n,43p,1468b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,16n,43p,1536b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/p
 ublic/amsfonts/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/c
 mr12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/
@@ -1458,10 +1411,10 @@ ts/type1/public/fpl/fplrij8a.pfb></usr/share/texmf/fonts/type1/urw/palatino/upl
 b8a.pfb></usr/share/texmf/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texm
 f/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf/fonts/type1/urw/palatin
 o/uplri8a.pfb>
-Output written on LaTeXed-SoS.pdf (289 pages, 924640 bytes).
+Output written on LaTeXed-SoS.pdf (290 pages, 925786 bytes).
 PDF statistics:
- 2201 PDF objects out of 2487 (max. 8388607)
- 1750 compressed objects within 18 object streams
- 591 named destinations out of 1000 (max. 500000)
+ 2232 PDF objects out of 2487 (max. 8388607)
+ 1780 compressed objects within 18 object streams
+ 613 named destinations out of 1000 (max. 500000)
  18897 words of extra memory for PDF output out of 20736 (max. 10000000)
 

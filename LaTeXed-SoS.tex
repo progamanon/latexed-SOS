@@ -808,16 +808,16 @@ into the plot in the first place.
 \begin{table}
 	\caption{Awarding Arc Points}
 	\label{tab:AwardingArcPoints}
-		\begin{tabu} spread 0pt {| X[c,m]X[l,m] |}\toprule %TABLE needs to be fixed, as the vertical lines are garbage
+		\begin{tabu} spread 0pt {X[c,m]X[l,m] }\toprule %TABLE needs to be fixed, as the vertical lines are garbage
 Arc Category&Arc Points Awarded Per Session \\\cmidrule{1-2}
-	Saga&0-6 
+	Saga&0-6
 
-	18 (upon completion of Arc)\\\cmidrule(r){1-2}
+	18 (upon completion of Arc)\\\cmidrule{1-2}
 	Epic&0-6
 
-	18 (upon completion of Arc)\\\cmidrule(r){1-2}
-Belief&0-4\\\cmidrule(r){1-2}
-Glory&0-4\\\cmidrule(r){1-2}
+	18 (upon completion of Arc)\\\cmidrule{1-2}
+Belief&0-4\\\cmidrule{1-2}
+Glory&0-4\\\cmidrule{1-2}
 Flaw&0-2\\\bottomrule
 		\end{tabu} 
 \end{table}
@@ -1101,7 +1101,7 @@ Grit&Description&Example Advancement Threshold\\
 
 \chapter{Races}\label{ch:races}
 \startcontents[chapters]
-\printcontents[chapters]{p}{1}{}
+\printcontents[chapters]{}{1}{}
 \clearpage
 \begin{quotation}
 \emph{"In the beginning, there was nothing. Then came He Who Came First, and The Twelve Great Old Ones. They created the cosmos, 
@@ -3968,13 +3968,15 @@ Skills are different from Proficiencies and other systems in that they typically
 Skills List:
 \begin{itemize}\itemsep1pt
 	\item \nameref{skill:Athletics}
-	\item \nameref{skill:Chymistry}---(Not in Beta)
+	\item Chymistry --- (Not in Beta)
+%\nameref{skill:Chymistry}
 	\item \nameref{skill:Climbing}
 	\item \nameref{skill:Cooking}
 	\item \nameref{skill:Crafting}
-	\item \nameref{skill:Drill}---(Not in Beta)
+	\item Drill --- (Not in Beta)
+%	\item \nameref{skill:Drill} 
 	\item \nameref{skill:Engineering}
-	\item \nameref{skill:Gather Information}
+%GATHER INFORMATION SKILL	\item \nameref{skill:Gather Information}
 	\item \nameref{skill:History}
 	\item \nameref{skill:Hunting}
 	\item \nameref{skill:Intimidate}
@@ -3988,11 +3990,13 @@ Skills List:
 	\item \nameref{skill:Riding}
 	\item \nameref{skill:Sailing}
 	\item \nameref{skill:Stealth}
-	\item \nameref{skill:Strategy}---(Not in Beta)
+	\item Strategy --- (Not in Beta)
+%\nameref{skill:Strategy}
 	\item \nameref{skill:Subterfuge}
 	\item \nameref{skill:Surgery}
 	\item \nameref{skill:Swimming}
-	\item \nameref{skill:Tactics}---(Not in Beta)
+	\item Tactics --- (Not in Beta)
+%\nameref{skill:Tactics}
 \end{itemize}
 
 Table 3.1 Skills Overview
@@ -4094,23 +4098,13 @@ END. We provide the best examples we can, but it is your job to ensure what your
 represented as accurately as possible. 
 
 
-Athletics (Various)
-Athletics is the skill for moving, jumping, and performing other feats of physical prowess. Gymnastics, 
-sprinting, jumping, and other classic physical activities fall within its purview. Different attributes may be 
-used with Athletics depending on what the character is doing. Someone lifting weights, for example, will 
+\paragraph{\label{skill:Athletics}Athletics}---\quad\textbf{(Various)}\par
+Athletics is the skill for moving, jumping, and performing other feats of physical prowess. Gymnastics, sprinting, jumping, and other classic physical activities fall within its purview. Different attributes may be used with Athletics depending on what the character is doing. Someone lifting weights, for example, will probably use STR, while a sprinter would use MOB. A long-distance or marathon runner would use END. Terrain will apply for running. Walking generally doesn’t require an Athletics test, no matter the rigor.
 
-
-probably use STR, while a sprinter would use MOB. A long-distance or marathon runner would use 
-END. Terrain will apply for running. Walking generally doesn’t require an Athletics test, no matter the 
-rigor. 
-
- 
 
 Note: The fastest a mortal person can run is their MOB x4 in yards. 
 
- 
 
- 
 Action Base Attribute vs. RS or other effects 
 Lifting 
 Lifting 10xSTR in lbs. above your head STR vs. 1 RS 
@@ -4145,21 +4139,12 @@ Encumberance (+1 at Light, +4 at Overloaded) +1 to +4 RS
 
  
 
-Climbing (END) 
-Climbing is the skill that lets characters scale mountains, cliffs, walls, and ropes. In some cases, climbing 
-is easy: climbing a stable ladder that’s at 90 degrees or less, or any dry, sticking, or bogged surface that’s 
-less than 40 degrees up is a simple climbing test. However, even a 10 degree surface will need at least be 
-tough if it’s covered in ice. Terrain can also be a huge factor when rolling Climbing tests. Failing by more 
-than your character’s Climbing skill requires a Stability test against an RS equal to the initial check, with 
-failing resulting in a fall. 
+\paragraph{\label{skill:Climbing}Climbing}---\quad\textbf{(END) }\par
+Climbing is the skill that lets characters scale mountains, cliffs, walls, and ropes. In some cases, climbing is easy: climbing a stable ladder that’s at 90 degrees or less, or any dry, sticking, or bogged surface that’s less than 40 degrees up is a simple climbing test. However, even a 10 degree surface will need at least be tough if it’s covered in ice. Terrain can also be a huge factor when rolling Climbing tests. Failing by more than your character’s Climbing skill requires a Stability test against an RS equal to the initial check, with failing resulting in a fall.
 
- 
 
-To properly roll a climb test, set the RS at the total distance that is to be climbed, (1 RS per 10 feet) then 
-apply the modifiers. Failure without falling can still get the person up the amount of successes, at the 
-GM’s discretion. 
+To properly roll a climb test, set the RS at the total distance that is to be climbed, (1 RS per 10 feet) then apply the modifiers. Failure without falling can still get the person up the amount of successes, at the GM’s discretion.
 
- 
 
 Action Base Attribute vs. RS or 
 other effects 
@@ -4198,25 +4183,9 @@ Only apply the modifiers for situations that make sense. Climbing picks don’t 
 
  
 
-Cooking (INT) 
-Cooking is an important skill in a world where most vegetables are grown in unsanitary conditions, and 
-most water is unsafe to drink without boiling. The rise of urban civilization made this doubly important, 
-as the water and ground pollution that comes along with large masses of people make the preparation of 
-food essential. 
-Some foods cannot be eaten at all without preparation--rice consumed without boiling, for example, 
-cannot be properly digested. So in a way, cooking allows for inedible substances to be made edible, 
-making it even more important in an environment where food may be scarce. 
-Cooks require ingredients to make meals. For abstraction purposes, each meal takes about 1 lb of 
-ingredients total per person fed (so 4 lbs for a basic 4 person meal) and needs at least 2 ingredients per 
-level (a fine meal, for example, requires 6 different ingredients). For every ingredient needed that is 
-missing, the RS increases by 1. If the chef is missing more than 3 ingredients, they cannot make a meal of 
-that level and must make a lower-quality meal. The chef may opt to have up to 2 spices act as ingredients, 
-but loses the bonus they would normally give. The meal requires at least one non-spice ingredient. Meals 
-also require 30 minutes of prep time per level, with a lack of time or extra time giving penalties or 
-bonuses accordingly. If the prep time is too short for the maximum RS, the meal cannot be made. 
-A “Meal” is here assumed to be enough foor for 3-4 people at base. 
+\paragraph{\label{skill:Cooking}Cooking}---\quad\textbf{(INT) }\par
+Cooking is an important skill in a world where most vegetables are grown in unsanitary conditions, and most water is unsafe to drink without boiling. The rise of urban civilization made this doubly important, as the water and ground pollution that comes along with large masses of people make the preparation of food essential. Some foods cannot be eaten at all without preparation--rice consumed without boiling, for example, cannot be properly digested. So in a way, cooking allows for inedible substances to be made edible, making it even more important in an environment where food may be scarce. Cooks require ingredients to make meals. For abstraction purposes, each meal takes about 1 lb of ingredients total per person fed (so 4 lbs for a basic 4 person meal) and needs at least 2 ingredients per level (a fine meal, for example, requires 6 different ingredients). For every ingredient needed that is missing, the RS increases by 1. If the chef is missing more than 3 ingredients, they cannot make a meal of that level and must make a lower-quality meal. The chef may opt to have up to 2 spices act as ingredients, but loses the bonus they would normally give. The meal requires at least one non-spice ingredient. Meals also require 30 minutes of prep time per level, with a lack of time or extra time giving penalties or bonuses accordingly. If the prep time is too short for the maximum RS, the meal cannot be made. A “Meal” is here assumed to be enough foor for 3-4 people at base.
 
- 
 
 Action Base Attribute vs. RS or other effects 
 Preserving food INT vs. 1 per lb 
@@ -4258,15 +4227,9 @@ Number of assistants that can be used is at the GM’s discretion. Too many chef
 
  
 
-Crafting (INT) 
-Crafting is a general skill umbrella that covers hundreds of potential artisan disciplines. Upon taking the 
-Crafting skill, a character should choose what exact sort of crafting the skill covers. A Shoemaker’s skill 
-is definitely different from a Clockmaker’s. A character can have multiple Crafting skills, each in 
-different disciplines, which are leveled separately. 
-The examples in this list are mostly a general guide. GMs are encouraged to decide just how hard a 
-particular test should be and what attribute to use, especially if it doesn’t quite fit the examples given. 
+\paragraph{\label{skill:Crafting}Crafting}---\quad\textbf{(INT) }\par
+Crafting is a general skill umbrella that covers hundreds of potential artisan disciplines. Upon taking the Crafting skill, a character should choose what exact sort of crafting the skill covers. A Shoemaker’s skill is definitely different from a Clockmaker’s. A character can have multiple Crafting skills, each in different disciplines, which are leveled separately. The examples in this list are mostly a general guide. GMs are encouraged to decide just how hard a particular test should be and what attribute to use, especially if it doesn’t quite fit the examples given. 
 
- 
 
 Action Base Attribute vs. RS or other effects 
 Make a simple item (dagger, mace, staff or pole, 
@@ -4307,27 +4270,10 @@ Assistants Assistants take test at $ \frac{1}{2} $ RS, they give +$ \frac{1}{2} 
 Successes, to a total of the assistant’s skill level 
 in the chosen skill, with Unskilled still equally 1. 
 
- 
 
- 
+\paragraph{\label{skill:Engineering}Engineering}---\quad\textbf{(INT) }\par
+Engineering is similar to Crafting, but with a more specific focus: Engineers plan and implement large works, like bridges, siege weapons, buildings, ships, etc. Essentially any construction task that would be physically impossible to do alone will fall under an Engineering Skill rather than a Crafting one. Even mediocre laborers can accomplish great things with a skilled engineer at their head, so the Engineering skill of the extra hands employed is not absolutely important (though it can’t hurt). Many of the parts an Engineer will want to work with are on the market, but many more will need to be custom-made by the appropriate crafter, especially for more complex projects. Engineers would be smart to make friends with crafters or learn to craft for themselves lest they end up unable to make what they want or need. Like with crafting, the examples in this list are only a guide. The GM is free to use their own interpretation. The time it would take to construct these devices is also negotiable--in some cases, it could take years even with sufficient manpower.
 
- 
-
-Engineering (INT) 
-Engineering is similar to Crafting, but with a more specific focus: Engineers plan and implement large 
-works, like bridges, siege weapons, buildings, ships, etc. Essentially any construction task that would be 
-physically impossible to do alone will fall under an Engineering Skill rather than a Crafting one. 
-Even mediocre laborers can accomplish great things with a skilled engineer at their head, so the 
-Engineering skill of the extra hands employed is not absolutely important (though it can’t hurt). 
-Many of the parts an Engineer will want to work with are on the market, but many more will need to be 
-custom-made by the appropriate crafter, especially for more complex projects. Engineers would be smart 
-to make friends with crafters or learn to craft for themselves lest they end up unable to make what they 
-want or need. 
-Like with crafting, the examples in this list are only a guide. The GM is free to use their own 
-interpretation. The time it would take to construct these devices is also negotiable--in some cases, it could 
-take years even with sufficient manpower. 
-
- 
 
 Action Base Attribute vs. RS or other 
 effects 
@@ -4349,20 +4295,9 @@ Time (Rushed at +1 RS, Hastened at +3 RS) +1 to +3 RS
 
  
 
-History (INT) 
-History is the record of events both human and natural as chronicled throughout the ages. History is a 
+\paragraph{\label{skill:History}History}---\quad\textbf{(INT) }\par
+History is the record of events both human and natural as chronicled throughout the ages. History is a patchwork quilt of stories, accounts, perspectives and guesswork that makes up the understanding that the present has of the past. How closely history coincides with reality is always uncertain, but it provides the foundation, the context for understanding current events and is thus indispensable, even with its flaws. The History skill allows a character to have or gain knowledge of a past event, people, place, culture, etc. When a character encounters something which they might’ve heard about at some point in the past, or upon which an understanding of history might shed some light or special understanding, the GM may prompt them to make a History roll at an RS determined by the obscurity of the event and the resources available to the character.
 
-
-patchwork quilt of stories, accounts, perspectives and guesswork that makes up the understanding that the 
-present has of the past. How closely history coincides with reality is always uncertain, but it provides the 
-foundation, the context for understanding current events and is thus indispensable, even with its flaws. 
-The History skill allows a character to have or gain knowledge of a past event, people, place, culture, etc. 
-When a character encounters something which they might’ve heard about at some point in the past, or 
-upon which an understanding of history might shed some light or special understanding, the GM may 
-prompt them to make a History roll at an RS determined by the obscurity of the event and the resources 
-available to the character. 
-
- 
 
 Action Base 
 Attribute vs 
@@ -4390,19 +4325,12 @@ RS)
 
  
 
-Hunting (Varies) 
-In Song of Swords, hunting has less to do with killing game and more to do with getting near it in the first 
-place. Obviously, this includes tracking, but it also includes knowing how to hide your scent, how to 
-control and entrap animals, and how to make and disguise simple traps to capture or kill game. 
-Obviously, these skills aren’t useful just for hunting animals. People have been referred to as ‘the most 
-dangerous game’ for a reason, after all. 
+\paragraph{\label{skill:Hunting}Hunting}---\quad\textbf{(Varies) }\par
+In Song of Swords, hunting has less to do with killing game and more to do with getting near it in the first place. Obviously, this includes tracking, but it also includes knowing how to hide your scent, how to control and entrap animals, and how to make and disguise simple traps to capture or kill game. Obviously, these skills aren’t useful just for hunting animals. People have been referred to as ‘the most dangerous game’ for a reason, after all.
 
- 
 
-In most cases, a Hunting test will take only a few moments, with the exception of making Traps. Traps 
-require ten minutes of uninterrupted work per RS on the skill test to make them. 
+In most cases, a Hunting test will take only a few moments, with the exception of making Traps. Traps require ten minutes of uninterrupted work per RS on the skill test to make them.
 
- 
 
 Action Attribute vs. RS or other 
 effects 
@@ -4446,40 +4374,21 @@ deadly Rube Goldberg machine +5)
 
  
 
-Intimidate (CHA) 
-The key skill of some bodyguards, a lot of bouncers, and pretty much every good gang enforcer or 
-commissar, Intimidate is used to control people through fear. Naturally, any actions taken with Intimidate 
-are going to be contested actions, usually against WIL. 
-
- 
-
-The effects of successfully intimidation can vary greatly upon the situation, but the basic result is the 
-target is much more likely to do what the intimidator wants. 
-
- 
-
-Modifiers can affect either the Intimidator or the Intimidated, depending on who has the benefit. It’s 
-important to note that the table below is an example of how the particular situation can modify the 
-Intimidate roll. Ultimately, it is up to the GM to confer bonuses and penalties based on the nature of the 
-characters involved. 
-
- 
-
-For Combat purposes, successfully Intimidating a character who doesn’t have the Brave Boon removes 
-their ability to declare Offensive either as what they are “not” going to Declare, or as what they are 
-actually going to Declare, in the first round of Combat with the party that Intimidated them. In combat 
-using the Intimidate skill counts as an action. 
-
- 
-
-Example: Gizka intimidates Goofus, overcoming her short height with the double-barreled dragon pistol 
-she has on the table. She beats Goofus’s score, and immediately attacks. Goofus cannot declare that he 
-isn’t going Offensive, but he also can’t go Offensive. So, he must declare that he is not going Cautious, 
+\paragraph{\label{skill:Intimidate}Intimidate}---\quad\textbf{(CHA) }\par
+The key skill of some bodyguards, a lot of bouncers, and pretty much every good gang enforcer or commissar, Intimidate is used to control people through fear. Naturally, any actions taken with Intimidate are going to be contested actions, usually against WIL.
 
 
-leaving him only with Defensive. Gizka declares Offensive, and gives him both barrels. 
+The effects of successfully intimidation can vary greatly upon the situation, but the basic result is the target is much more likely to do what the intimidator wants.
 
- 
+
+Modifiers can affect either the Intimidator or the Intimidated, depending on who has the benefit. It’s important to note that the table below is an example of how the particular situation can modify the Intimidate roll. Ultimately, it is up to the GM to confer bonuses and penalties based on the nature of the characters involved.
+
+
+For Combat purposes, successfully Intimidating a character who doesn’t have the Brave Boon removes their ability to declare Offensive either as what they are “not” going to Declare, or as what they are actually going to Declare, in the first round of Combat with the party that Intimidated them. In combat using the Intimidate skill counts as an action.
+
+
+Example: Gizka intimidates Goofus, overcoming her short height with the double-barreled dragon pistol she has on the table. She beats Goofus’s score, and immediately attacks. Goofus cannot declare that he isn’t going Offensive, but he also can’t go Offensive. So, he must declare that he is not going Cautious, leaving him only with Defensive. Gizka declares Offensive, and gives him both barrels.
+
 
 Action Attribute vs. RS or other effects 
 Intimidate CHA vs. RS at Target’s WIL 
@@ -4510,14 +4419,9 @@ Exploiting Fear (Minor Fear at -1, Major Phobia at -2) -1 RS to -2 RS
 
  
 
-Navigation (PER) 
-Knowing how to get around is really important. It’s easy enough to find your way around your own 
-home, but unfamiliar streets can be a nightmare, especially if you can’t read the street signs. Trekking 
-through the wilderness is even worse, but at least the wilderness often has landmarks. The open seas 
-rarely give you obvious clues as to where you are, and often, only the sun and the stars guide you. Clouds 
-and fog can take everything away from you. 
+\paragraph{\label{skill:Navigation}Navigation}---\quad\textbf{(PER) }\par
+Knowing how to get around is really important. It’s easy enough to find your way around your own home, but unfamiliar streets can be a nightmare, especially if you can’t read the street signs. Trekking through the wilderness is even worse, but at least the wilderness often has landmarks. The open seas rarely give you obvious clues as to where you are, and often, only the sun and the stars guide you. Clouds and fog can take everything away from you.
 
- 
 
 Action Base Attribute vs. RS 
 or other effects 
@@ -4541,15 +4445,9 @@ PER vs. 20
 
  
 
-Observation (PER, Opposed) 
-While anyone can look at something and see the gist of what’s going on, a good Observer can notice little 
-details that others might miss. They can spot the errors in a forgery, notice the lone person in a sea of 
-people who’s not moving the same way, or can see the glimmer of moonlight on the eye staring at them 
-from a nearby bush. Cooks with particularly good Observation can tell which mulling spices were used in 
-a cider or which breed of cattle their steak came from. A master smith can tell roughly the quality of a 
-metal object by its heft, its color, and how it rings when hit against something. 
+\paragraph{\label{skill:Observation}Observation}---\quad\textbf{(PER, Opposed) }\par
+While anyone can look at something and see the gist of what’s going on, a good Observer can notice little details that others might miss. They can spot the errors in a forgery, notice the lone person in a sea of people who’s not moving the same way, or can see the glimmer of moonlight on the eye staring at them from a nearby bush. Cooks with particularly good Observation can tell which mulling spices were used in a cider or which breed of cattle their steak came from. A master smith can tell roughly the quality of a metal object by its heft, its color, and how it rings when hit against something.
 
- 
 
 Action Base Attribute vs. RS 
 or other effects 
@@ -4584,13 +4482,8 @@ Hear through Barrier (Minor Disturbance at +1, Thick Wall at +2, Battle at
 
  
 
-Orate (CHA) 
-Talking to a sea of people tends to be pretty intimidating. More-so if that sea of people are really angry. 
-Orators, however, have a few tricks up their sleeve to make their message not just heard, but received 
-well. A good Orator knows how to make a crowd sympathetic, whether by using propaganda, starting a 
-chant to keep people from thinking, or in some cases just being sincere. 
-
- 
+\paragraph{\label{skill:Orate}Orate}---\quad\textbf{(CHA)}\par
+Talking to a sea of people tends to be pretty intimidating. More-so if that sea of people are really angry. Orators, however, have a few tricks up their sleeve to make their message not just heard, but received well. A good Orator knows how to make a crowd sympathetic, whether by using propaganda, starting a chant to keep people from thinking, or in some cases just being sincere.
 
 
 Action Base Attribute vs. RS or 
@@ -4636,25 +4529,9 @@ Disposition of Crowd (Supportive at -2, Agreeable at -1, Disillusioned at
 
  
 
-Perform (Varies) 
-Singing, dancing, acting, storytelling, and playing instruments are all ways Performers have entertained 
-people, likely since before recorded history. The Perform skill is used for many reasons: for some, 
-personal accomplishment is all that matters, while others use it to entertain friends and family or to keep 
-spirits up in rough situations. Still more seek fame, glory, money, or the eyes of powerful people. 
-Perform is separated into different specialties, like Crafting is. Singing, dancing, acting, and storytelling 
+\paragraph{\label{skill:Perform}Perform}---\quad\textbf{(Varies) }\par
+Singing, dancing, acting, storytelling, and playing instruments are all ways Performers have entertained people, likely since before recorded history. The Perform skill is used for many reasons: for some, personal accomplishment is all that matters, while others use it to entertain friends and family or to keep spirits up in rough situations. Still more seek fame, glory, money, or the eyes of powerful people. Perform is separated into different specialties, like Crafting is. Singing, dancing, acting, and storytelling are all individual specialties, while most musicians specialize in a particular instrument. They may, of course, try to play an instrument they are unfamiliar with if it is similar enough to their specialty (at the GM’s discretion), but they will suffer a 1 or 2 die penalty as it’s not quite what they’re familiar with. Perform uses CHA unless a particular performance would do better with another attribute: for example, an extended solo for a brass or woodwind instrument might use END as the character cannot run out of breath, or a fast-paced or complicated dance might use AGI. Ad-libbing something is usually WIT. Perform’s RS is generally related to the audience’s expectations. A family watching a child’s recital might only expect a bare success, while an actor performing for a theater full of nobles might be expected to get 6 or even more successes.
 
-
-are all individual specialties, while most musicians specialize in a particular instrument. They may, of 
-course, try to play an instrument they are unfamiliar with if it is similar enough to their specialty (at the 
-GM’s discretion), but they will suffer a 1 or 2 die penalty as it’s not quite what they’re familiar with. 
-Perform uses CHA unless a particular performance would do better with another attribute: for example, 
-an extended solo for a brass or woodwind instrument might use END as the character cannot run out of 
-breath, or a fast-paced or complicated dance might use AGI. Ad-libbing something is usually WIT. 
-Perform’s RS is generally related to the audience’s expectations. A family watching a child’s recital 
-might only expect a bare success, while an actor performing for a theater full of nobles might be expected 
-to get 6 or even more successes. 
-
- 
 
 Action Attribute vs. RS or other 
 effects 
@@ -4675,15 +4552,9 @@ Disposition of Crowd (Supportive at -2, Agreeable at -1, Disillusioned at
 
  
 
-Persuasion (Varies) 
-Where intimidation uses fear to control people, Persuasion uses trust. A good Persuader either uses their 
-own inherent trustworthiness to convince people of something, or they find someone or something else 
-that the person is willing to trust. Obviously, most of the time the Persuader will be using CHA, although 
-sometimes INT will come into play, or even WIT if the Persuader truly needs to think fast. They will be 
-opposed by the Target’s own INT, WIT, or even an Observation or Research roll if the character is 
-inclined to trust their own work over someone else’s. 
+\paragraph{\label{skill:Persuasion}Persuasion}---\quad\textbf{(Varies) }\par
+Where intimidation uses fear to control people, Persuasion uses trust. A good Persuader either uses their own inherent trustworthiness to convince people of something, or they find someone or something else that the person is willing to trust. Obviously, most of the time the Persuader will be using CHA, although sometimes INT will come into play, or even WIT if the Persuader truly needs to think fast. They will be opposed by the Target’s own INT, WIT, or even an Observation or Research roll if the character is inclined to trust their own work over someone else’s.
 
- 
 
 Action Attribute vs. RS or 
 other effects 
@@ -4710,7 +4581,7 @@ Time (Very Recent -2, Recent 0, Ancient History +4) -2 RS to +4 RS
 
  
 
-Politics (INT) 
+\paragraph{\label{skill:Politics}Politics}---\quad\textbf{(INT) }\par
 Politics is a character’s knowledge of current events, from the local level to the national to all of the 
 known world. It covers things from what nations are at war with each other, what nobles are courting 
 others, and other, similar topics. If it makes sense for the character’s background, it can also apply to 
@@ -4740,13 +4611,9 @@ by Few at +2, Guarded Secrets at +4)
 
  
 
-Research 
-Research is all about knowing how to find something out. Someone with low-level Research skill might 
-know how to find an alphabetically filed document or how to use a table of contents. A talented 
-Researcher can scan through a few dozen peer-reviewed journals in a few minutes to find that one 
-obscure article someone wrote about a really rare bone condition. 
+\paragraph{\label{skill:Research}Research}---\quad\textbf{INT}\par
+Research is all about knowing how to find something out. Someone with low-level Research skill might know how to find an alphabetically filed document or how to use a table of contents. A talented Researcher can scan through a few dozen peer-reviewed journals in a few minutes to find that one obscure article someone wrote about a really rare bone condition.
 
- 
 
 Action Attribute vs. RS or 
 other effects 
@@ -4771,14 +4638,9 @@ Familiar Subject -1 RS
 
  
 
-Riding 
-Sitting on the back of another creature can be surprisingly hard. Riding is how good a character is at 
-staying on top of his mount and leading or driving it accurately. It is a very important skill for cavalrymen 
-and knights. 
-Riding’s uses are, for the most part, detailed in the Maneuvers section, or alongside information on 
-different mounts. 
+\paragraph{\label{skill:Riding}Riding}---\quad\textbf{Varies}\par
+Sitting on the back of another creature can be surprisingly hard. Riding is how good a character is at staying on top of his mount and leading or driving it accurately. It is a very important skill for cavalrymen and knights. Riding’s uses are, for the most part, detailed in the Maneuvers section, or alongside information on different mounts.
 
- 
 
 Action Base Attribute vs. RS or other 
 effects 
@@ -4793,27 +4655,10 @@ Modifiers RS Change
 Untrained +4 RS 
 Encumberance (+1 at Light, +4 at Overloaded) +1 to +4 RS 
 
- 
 
- 
+\paragraph{\label{skill:Sailing}Sailing}---\quad\textbf{WIT}\par
+Ships are more than just weighing the anchor and hoisting the sails. Sailors are expected to know a variety of knots, which sails are used for what kinds of wind, how to sail upwind, and how to prepare a ship to weather the weather. Sailing is the skill used to operate all kinds of watercraft, from a rowboat to a ship of the line. This handles the physical acts of handling heavy rigging, moving cargo, steering from the helm, and rowing. This is a sailor’s primary skill. The officers and captain of a ship usually have this skill to use in emergencies, so that they understand their own vessel, and because most of them were probably sailors before they were captains or officers, but most of their work is done with Navigation, Tactics, and Engineering, while their crew takes care of actually sailing the ship.
 
- 
-
- 
-
-Sailing 
-Ships are more than just weighing the anchor and hoisting the sails. Sailors are expected to know a variety 
-of knots, which sails are used for what kinds of wind, how to sail upwind, and how to prepare a ship to 
-weather the weather. Sailing is the skill used to operate all kinds of watercraft, from a rowboat to a ship of 
-the line. This handles the physical acts of handling heavy rigging, moving cargo, steering from the helm, 
-and rowing. This is a sailor’s primary skill. The officers and captain of a ship usually have this skill to use 
-
-
-in emergencies, so that they understand their own vessel, and because most of them were probably sailors 
-before they were captains or officers, but most of their work is done with Navigation, Tactics, and 
-Engineering, while their crew takes care of actually sailing the ship. 
-
- 
 
 Action Attribute vs. RS or other effects 
 Avoid Simple Obstacle WIT vs. 1 RS 
@@ -4830,13 +4675,9 @@ Weather (Windy at +1, Storming at +3, Massive Storm at +6) +1 to +6 RS
 
  
 
-Stealth 
-Sneaking around is a good way to deal with one’s problems, as long as one’s problems have eyes and 
-ears. Camouflage, a soft step, and an eye for shadowed areas help characters avoid detection. It is also 
-used for hiding things. 
-Stealth is made using AGI as an opposed check versus Observation or Hunting. 
+\paragraph{\label{skill:Stealth}Stealth}---\quad\textbf{(AGI)}
+Sneaking around is a good way to deal with one’s problems, as long as one’s problems have eyes and ears. Camouflage, a soft step, and an eye for shadowed areas help characters avoid detection. It is also used for hiding things. Stealth is made using AGI as an opposed check versus Observation or Hunting.
 
- 
 
 Action Attribute vs. RS or other effects 
 Slinking without sound AGI vs. Observation 
@@ -4856,15 +4697,9 @@ Encumberance (+1 at Light, +4 at Overloaded) +1 to +4 RS
 
  
 
-Subterfuge 
-Sometimes, it’s not yourself or your possessions that need to be hidden. When you need to lie, bluff, or 
-sometimes just to keep your mouth shut in the face of threats, torture or intoxication, Subterfuge is your 
-skill. 
-Subterfuge is made using CHA as an opposed check. The opposer uses any skill that would give them 
-insight into the information being given, as determined by the GM. The player may default to $ -\frac{1}{2} $ their 
-Observation skill if they prefer. 
+\paragraph{\label{skill:Subterfuge}Subterfuge}---\quad\textbf{(CHA)}\par
+Sometimes, it’s not yourself or your possessions that need to be hidden. When you need to lie, bluff, or sometimes just to keep your mouth shut in the face of threats, torture or intoxication, Subterfuge is your skill. Subterfuge is made using CHA as an opposed check. The opposer uses any skill that would give them insight into the information being given, as determined by the GM. The player may default to $ -\frac{1}{2} $ their Observation skill if they prefer.
 
- 
 
 Modifier Effect 
 Lie CHA vs. Observation 
@@ -4877,21 +4712,12 @@ Believability (Very Believable at -2, Unbelieveable at +2, Near Impossible at +8
 
  
 
-Surgery 
-Doctors are well-respected members of society for good reason. Cleaning and bandaging a small cut is 
-one thing, but precisely breaking the skull so that the brain doesn’t get crushed by the blood filling it from 
-a broken aneurysm without causing further damage is another. 
-Perform Surgery: A lengthy process generally requiring tools, the character can attempt to at the least 
-patch up a wound. In order to stop a wound from Bleeding, and to reduce the Pain it causes, the Surgery 
-skill must come into play. A Surgery check made at appropriate difficulty for wound level Treats the 
-wound. Treated wounds have their Bloodloss reduced to 0 (unless reopened somehow), and their Pain 
-reduced by half. Treated wounds begin healing immediately. Healing time depends on the character’s 
-maximum normal HLT, and the level of the wound. 
-Once a Wound has fully healed, the Wound, and any remaining pain, are removed from the character. 
+\paragraph{\label{skill:Surgery}Surgery}---\quad\textbf{(Varies)}\par
+Doctors are well-respected members of society for good reason. Cleaning and bandaging a small cut is one thing, but precisely breaking the skull so that the brain doesn’t get crushed by the blood filling it from a broken aneurysm without causing further damage is another.
 
- 
 
- 
+Perform Surgery: A lengthy process generally requiring tools, the character can attempt to at the least patch up a wound. In order to stop a wound from Bleeding, and to reduce the Pain it causes, the Surgery skill must come into play. A Surgery check made at appropriate difficulty for wound level Treats the wound. Treated wounds have their Bloodloss reduced to 0 (unless reopened somehow), and their Pain reduced by half. Treated wounds begin healing immediately. Healing time depends on the character’s maximum normal HLT, and the level of the wound. Once a Wound has fully healed, the Wound, and any remaining pain, are removed from the character.
+
 
 Action Attribute vs. RS or other effects 
 Perform Surgery AGI vs. Wound Level, Stops (Removes) Bloodloss and half of Pain. 
@@ -4923,12 +4749,9 @@ assistant’s skill level in the chosen skill, or 1 if Unskilled.
 
  
 
-Swimming 
-Most characters will be from land-bound races. Swimming is not an instinct: a character must learn to 
-move through the water as easily as they move on land. Zells are naturally pretty good at this, but for 
-most other people it can be difficult, especially with harsh waters or heavy equipment. 
+\paragraph{\label{skill:Swimming}Swimming}---\quad\textbf{(Varies)}\par
+Most characters will be from land-bound races. Swimming is not an instinct: a character must learn to move through the water as easily as they move on land. Zells are naturally pretty good at this, but for most other people it can be difficult, especially with harsh waters or heavy equipment.
 
- 
 
 Action Attribute vs. RS or other effects 
 Swimming in calm water END vs. 1 
@@ -4943,32 +4766,14 @@ Encumberance (+1 at Light, +4 at Overloaded) +1 to +4 RS
 Arm/Leg unusable +2 RS per limb 
 Weather (Windy at +1, Storming at +3, Massive Storm at +6) +1 to +6 RS 
 
- 
 
-When failed: 
+When failed:
 
- 
+Drowning
+If the character is in danger of drowning, they must immediately make a swim check using their STR at an increasing difficulty. For each round they fail the strength check, their HLT is decreased by one until zero, where the character has drowned. The HLT lost from drowning is temporary and returns to the character once they are revived. All modifiers for swim tests apply. If a character makes a successful strength check, they can then make another normal swim check to make it the rest of the way. If they fail again, repeat the process. For Drowning, losing all of one’s HLT represents the character passing out and not their immediate death; if the character is pulled from the water within 5 minutes, they can be revived by a Medical test at RS 3; revival attempts can be made up to the drowned character’s total HLT score. If a character cannot be revived, they die. If the character is pulled out within 5 minutes plus half their normal HLT score, they can still be revived, but they must make a HLT check at RS 3 or gain the bane Brain Damage (major).
 
 
-Drowning 
-If the character is in danger of drowning, they must immediately make a swim check using their STR at 
-an increasing difficulty. For each round they fail the strength check, their HLT is decreased by one until 
-zero, where the character has drowned. The HLT lost from drowning is temporary and returns to the 
-character once they are revived. All modifiers for swim tests apply. If a character makes a successful 
-strength check, they can then make another normal swim check to make it the rest of the way. If they fail 
-again, repeat the process. For Drowning, losing all of one’s HLT represents the character passing out and 
-not their immediate death; if the character is pulled from the water within 5 minutes, they can be revived 
-by a Medical test at RS 3; revival attempts can be made up to the drowned character’s total HLT score. If 
-a character cannot be revived, they die. If the character is pulled out within 5 minutes plus half their 
-normal HLT score, they can still be revived, but they must make a HLT check at RS 3 or gain the bane 
-Brain Damage (major). 
-
- 
-
-Table X.X: Drowning 
-
- 
-
+Table X.X: Drowning %EXTRA table for Drowning
 Check Modifier 
 First STR Check No modifier. 
 2nd STR Check +1 RS, -1 HLT 
@@ -5251,7 +5056,6 @@ equipment and what that means for your character’s Fatigue is explained in Cha
 
 Chapter 9.1: Melee Weapons 
 
- 
 
 “Invincible Khan. We have exhausted our supply of arrows. We are out of water and the men are dying of 
 thirst. We are running out of horses. The rats are without number. They give us no sleep and they may 
