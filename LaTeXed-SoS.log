@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/TeX Live for SUSE Linux) (preloaded format=pdflatex 2016.11.16)  19 DEC 2016 20:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/TeX Live for SUSE Linux) (preloaded format=pdflatex 2016.11.16)  19 DEC 2016 20:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -884,29 +884,29 @@ Package: chngcntr 2009/09/02 v1.0a change counter resetting
 ) (./LaTeXed-SoS.aux)
 \openout1 = `LaTeXed-SoS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 102.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 102.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 103.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 103.
 
 
 (/usr/share/texmf/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Try loading font information for OT1+pplj on input line 102
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Try loading font information for OT1+pplj on input line 103
 .
 
 (/usr/share/texmf/tex/latex/psnfss/ot1pplj.fd
@@ -944,7 +944,7 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 102.
+Package hyperref Info: Link coloring OFF on input line 103.
 
 (/usr/share/texmf/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -954,9 +954,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count149
 )
-LaTeX Info: Redefining \ref on input line 102.
-LaTeX Info: Redefining \pageref on input line 102.
-LaTeX Info: Redefining \nameref on input line 102.
+LaTeX Info: Redefining \ref on input line 103.
+LaTeX Info: Redefining \pageref on input line 103.
+LaTeX Info: Redefining \nameref on input line 103.
  (./LaTeXed-SoS.out) (./LaTeXed-SoS.out)
 \@outlinefile=\write3
 \openout3 = `LaTeXed-SoS.out'.
@@ -996,7 +996,7 @@ LaTeX Info: Redefining \nameref on input line 102.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 102.
+LaTeX Info: Redefining \microtypecontext on input line 103.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1009,35 +1009,89 @@ Package microtype Info: No adjustment of character kerning.
 (/usr/share/texmf/tex/latex/microtype/mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
-LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 106.
- [1
-
-
-
-{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 109.
+(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 106.
+LaTeX Font Info:    Try loading font information for TS1+pplj on input line 110
+.
+
+(/usr/share/texmf/tex/latex/psnfss/ts1pplj.fd
+File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
+)
+LaTeX Font Info:    Try loading font information for U+futs on input line 169.
+
+(/usr/share/texmf/tex/latex/fourier/ufuts.fd
+File: ufuts.fd 2004/03/26 Fontinst v1.926 font definitions for U/futs.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `cmss' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <12> not available
+(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 169.
+LaTeX Font Info:    Font shape `U/futs/bx/n' in size <12> not available
+(Font)              Font shape `U/futs/b/n' tried instead on input line 169.
+ [1{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+] [2] [3]
 Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Try loading font information for U+Acorn on input line 110.
+Package microtype Info: Character `013' is missing
+(microtype)             in font `OT1/pplj/m/sc/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `013' is missing
+(microtype)             in font `OT1/pplj/m/sc/14.4'.
+(microtype)             Ignoring protrusion settings for this character.
 
-LaTeX Font Info:    No file UAcorn.fd. on input line 110.
+
+LaTeX Font Warning: Font shape `TS1/pplj/m/sc' undefined
+(Font)              using `TS1/pplj/m/n' instead
+(Font)              for symbol `textcopyright' on input line 244.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.248 \end{titlepage}
+                      [1
+
+]
+LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 252.
+pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.281 \clearpage
+                 [1]
+Chapter 1.
+LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <20.74> not available
+(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 283.
+LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 283.
+[1
 
 
-LaTeX Font Warning: Font shape `U/Acorn/xl/n' undefined
-(Font)              using `U/cmr/m/n' instead on input line 110.
 
+] [2]
+LaTeX Font Info:    Font shape `OT1/pplj/bx/it' in size <10> not available
+(Font)              Font shape `OT1/pplj/b/it' tried instead on input line 341.
 
-LaTeX Font Warning: Font shape `U/cmr/m/n' in size <46.23431> not available
-(Font)              size <24.88> substituted on input line 110.
+ [3] [4] [5] [6]
+Chapter 2.
+[7
 
-(/usr/share/texmf/tex/latex/microtype/mt-cmr.cfg
+]
+Underfull \hbox (badness 10000) in paragraph at lines 453--454
+
+ []
+
+[8] [9] (/usr/share/texmf/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 113.
+LaTeX Font Info:    Try loading font information for U+msa on input line 558.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1045,7 +1099,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texmf/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 113.
+LaTeX Font Info:    Try loading font information for U+msb on input line 558.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1053,57 +1107,6 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/share/texmf/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+futs on input line 133.
-
-(/usr/share/texmf/tex/latex/fourier/ufuts.fd
-File: ufuts.fd 2004/03/26 Fontinst v1.926 font definitions for U/futs.
-)
-
-LaTeX Font Warning: Font shape `U/Acorn/xl/n' in size <46.23431> not available
-(Font)              size <24.88> substituted on input line 137.
-
-Package microtype Info: Loading generic settings for font family
-(microtype)             `cmss' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <12> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 141.
-LaTeX Font Info:    Font shape `U/futs/bx/n' in size <12> not available
-(Font)              Font shape `U/futs/b/n' tried instead on input line 141.
-[2] [3]
-LaTeX Font Info:    Try loading font information for TS1+pplj on input line 160
-.
- (/usr/share/texmf/tex/latex/psnfss/ts1pplj.fd
-File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
-) [4
-
-] [5] [6] [7
-
-] [8]
-Chapter 1.
-LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 337.
-[1
-
-
-
-] [2]
-LaTeX Font Info:    Font shape `OT1/pplj/bx/it' in size <10> not available
-(Font)              Font shape `OT1/pplj/b/it' tried instead on input line 396.
-
- [3] [4]
-LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 461.
- [5] [6]
-Chapter 2.
-[7
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 514--515
-
- []
-
-[8] [9]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1124,7 +1127,7 @@ Chapter 4.
 ] [20
 
 ] [21] [22] [23] [24] [25]
-Underfull \hbox (badness 10000) in paragraph at lines 1140--1155
+Underfull \hbox (badness 10000) in paragraph at lines 1079--1094
 [][]
  []
 
@@ -1140,18 +1143,18 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ] [30] [31] [32] [33] [34] [35] [36] [37] [38] [39] [40] [41] [42] [43]
 [44] [45] [46] [47] [48] [49] [50] [51] [52]
-Overfull \hbox (30.26573pt too wide) in paragraph at lines 2200--2209
+Overfull \hbox (30.26573pt too wide) in paragraph at lines 2139--2148
 [] \OT1/pplj/m/n/10.95 There
  []
 
 [53] [54] [55] [56] [57] [58] [59] [60]
-Overfull \hbox (8.27338pt too wide) in paragraph at lines 2459--2463
+Overfull \hbox (8.27338pt too wide) in paragraph at lines 2398--2402
  []\OT1/pplj/b/n/10.95 Judgement[] \OT1/pplj/m/n/10.95 A Pal-adin can chan-nel 
 the power of Geno-sus through any weapon|even his own hands|to
  []
 
 [61] [62] [63] [64] [65] [66]
-Underfull \hbox (badness 1237) in paragraph at lines 2701--2701
+Underfull \hbox (badness 1237) in paragraph at lines 2640--2640
 []\OT1/pplj/m/n/10.95 Tons of Mois-ture (snow, rain,
  []
 
@@ -1163,133 +1166,7 @@ Chapter 6.
 
 ] [77] [78]
 
-Package hyperref Warning: Suppressing empty link on input line 3174.
-
-
-Package hyperref Warning: Suppressing empty link on input line 3174.
-
-
-LaTeX Warning: Reference `bane:Bad Eyes' on page 79 undefined on input line 317
-4.
-
-
-LaTeX Warning: Reference `bane:Bad Reputation' on page 79 undefined on input li
-ne 3174.
-
-
-Package hyperref Warning: Suppressing empty link on input line 3174.
-
-
-LaTeX Warning: Reference `bane:Blind' on page 79 undefined on input line 3174.
-
-
-LaTeX Warning: Reference `bane:Braggart' on page 79 undefined on input line 317
-4.
-
-
-Package hyperref Warning: Suppressing empty link on input line 3174.
-
-
-LaTeX Warning: Reference `bane:Complete Monster' on page 79 undefined on input 
-line 3174.
-
-
-LaTeX Warning: Reference `bane:Craven' on page 79 undefined on input line 3174.
-
-
-
-LaTeX Warning: Reference `bane:Crippled Limb/Appendage' on page 79 undefined on
- input line 3174.
-
-
-LaTeX Warning: Reference `bane:Dead' on page 79 undefined on input line 3174.
-
-
-LaTeX Warning: Reference `bane:Debt' on page 79 undefined on input line 3174.
-
-
-LaTeX Warning: Reference `bane:Dependent' on page 79 undefined on input line 31
-74.
-
-
-Package hyperref Warning: Suppressing empty link on input line 3174.
-
-
-LaTeX Warning: Reference `bane:Enemies' on page 79 undefined on input line 3174
-.
-
-
-LaTeX Warning: Reference `bane:Facial Deformity' on page 79 undefined on input 
-line 3174.
-
-
-LaTeX Warning: Reference `bane:Fat' on page 79 undefined on input line 3174.
-
-
-LaTeX Warning: Reference `bane:Haemophilia' on page 79 undefined on input line 
-3174.
-
-
-LaTeX Warning: Reference `bane:Hothead' on page 79 undefined on input line 3174
-.
-
-
-LaTeX Warning: Reference `bane:Honor' on page 79 undefined on input line 3174.
-
-
-LaTeX Warning: Reference `bane:Lasting Pain' on page 79 undefined on input line
- 3174.
-
-
-LaTeX Warning: Reference `bane:Mute' on page 79 undefined on input line 3174.
-
-
-LaTeX Warning: Reference `bane:Oath' on page 79 undefined on input line 3174.
-
-
-LaTeX Warning: Reference `bane:Old Wound' on page 79 undefined on input line 31
-74.
-
-
-LaTeX Warning: Reference `bane:One-Eyed' on page 79 undefined on input line 317
-4.
-
-
-LaTeX Warning: Reference `bane:Poor' on page 79 undefined on input line 3174.
-
-
-LaTeX Warning: Reference `bane:Severed Limb/Appendage' on page 79 undefined on 
-input line 3174.
-
-
-LaTeX Warning: Reference `bane:Sheltered' on page 79 undefined on input line 31
-74.
-
-
-Package hyperref Warning: Suppressing empty link on input line 3174.
-
-
-LaTeX Warning: Reference `bane:Skinny' on page 79 undefined on input line 3174.
-
-
-
-LaTeX Warning: Reference `bane:Technologically Impaired' on page 79 undefined o
-n input line 3174.
-
-
-LaTeX Warning: Reference `bane:Unhappily Married' on page 79 undefined on input
- line 3174.
-
-
-LaTeX Warning: Reference `bane:Virtuous' on page 79 undefined on input line 317
-4.
-
-
-LaTeX Warning: Reference `bane:Wanted' on page 79 undefined on input line 3174.
-
-
-
-LaTeX Warning: Float too large for page by 16.35722pt on input line 3175.
+LaTeX Warning: Float too large for page by 16.35722pt on input line 3114.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1300,7 +1177,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ] [82] [83] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93]
 [94] [95]
-Underfull \hbox (badness 10000) in paragraph at lines 3685--3686
+Underfull \hbox (badness 10000) in paragraph at lines 3623--3624
 
  []
 
@@ -1326,13 +1203,13 @@ Chapter 9.
 [152] [153] [154] [155] [156] [157] [158] [159] [160] [161] [162] [163]
 [164] [165] [166] [167] [168] [169] [170] [171] [172] [173] [174] [175]
 [176] [177] [178] [179]
-Overfull \hbox (4.69121pt too wide) in paragraph at lines 9119--9125
+Overfull \hbox (4.69121pt too wide) in paragraph at lines 9054--9060
 []\OT1/pplj/m/n/10.95 Halves Shock ef-fect from weapons +4 Blud-geon-ing AV Ig-
 nores AP Swing/Thrust X for Melee Weapons
  []
 
 [180] [181] [182]
-Overfull \hbox (1.79176pt too wide) in paragraph at lines 9337--9340
+Overfull \hbox (1.79176pt too wide) in paragraph at lines 9272--9275
 []\OT1/pplj/m/n/10.95 The ar-mor suits them-selves are bipedal mon-strosi-ties 
 of steel and ma-chine, of-ten laden with weaponry
  []
@@ -1350,31 +1227,31 @@ Chapter 11.
 ] [204
 
 ] [205] [206] [207]
-Overfull \hbox (2.20624pt too wide) in paragraph at lines 11125--11134
+Overfull \hbox (2.20624pt too wide) in paragraph at lines 11060--11069
 []\OT1/pplj/m/n/10.95 BUTT-STRIKE [X] Type: Uni-ver-sal, At-tack, Swing-ing Re-
 quire-ments: Have a Polearm or Spear weapon,
  []
 
 [208] [209] [210]
-Overfull \hbox (14.8974pt too wide) in paragraph at lines 11298--11302
+Overfull \hbox (14.8974pt too wide) in paragraph at lines 11233--11237
 []\OT1/pplj/m/n/10.95 MELEE SHOOT [X+Variable] Type: Uni-ver-sal, At-tack, Thru
 st-ing Re-quire-ments: Have a loaded/spanned
  []
 
 [211] [212] [213] [214] [215] [216] [217] [218] [219] [220] [221]
-Overfull \hbox (3.67287pt too wide) in paragraph at lines 11980--11988
+Overfull \hbox (3.67287pt too wide) in paragraph at lines 11915--11923
 []\OT1/pplj/m/n/10.95 Cover AV Ta-ble X.X Cover Cover AV Tall grass/hit the dir
 t 0 Hid-ing be-hind Horse Mount TOU+Mount
  []
 
 [222] [223] [224] [225] [226]
-Overfull \hbox (7.63388pt too wide) in paragraph at lines 12319--12329
+Overfull \hbox (7.63388pt too wide) in paragraph at lines 12254--12264
 []\OT1/pplj/m/n/10.95 DOUBLE FLING [???????] Type: Uni-ver-sal, Mis-sile, Throw
 -ing Re-quire-ments: Have Throw-ing Weapons
  []
 
 [227] [228] [229] [230] [231] [232] [233]
-Overfull \hbox (3.17569pt too wide) in paragraph at lines 12805--12810
+Overfull \hbox (3.17569pt too wide) in paragraph at lines 12740--12745
 []\OT1/pplj/m/n/10.95 DISENGAGE [??????] Type: XXXXXX Re-quire-ments: XXXXXX Ma
 -neu-ver: XXXXXX Suc-cess: XXXXXX 
  []
@@ -1392,20 +1269,20 @@ Chapter 13.
 ] [248
 
 ] [249]
-Overfull \hbox (6.43309pt too wide) in paragraph at lines 13770--13780
+Overfull \hbox (6.43309pt too wide) in paragraph at lines 13705--13715
 []\OT1/pplj/m/n/10.95 Combat Pool (CP) CP = (Adroit-ness+Proficiency Pool+Misc)
 -(Encumbrance+Fatigue+Pain+Misc) Com-
  []
 
 
-Overfull \hbox (15.93843pt too wide) in paragraph at lines 13793--13800
+Overfull \hbox (15.93843pt too wide) in paragraph at lines 13728--13735
 []\OT1/pplj/m/n/10.95 Missile Pool (MP) MP=(Missile Pro-fi-ciency Pool+Misc)-(E
 ncumbrance+Fatigue+Pain+Perception Penalty
  []
 
 [250] [251] [252] [253] [254] [255] [256] [257] [258] [259] [260] [261]
 [262] [263] [264] [265] [266] [267] [268] [269] [270]
-Overfull \hbox (20.06726pt too wide) in paragraph at lines 15395--15411
+Overfull \hbox (20.06726pt too wide) in paragraph at lines 15330--15346
 []\OT1/pplj/m/n/10.95 Mounted Ad-van-tages/Disadvantages Mounted Char-ac-ters g
 ain the fol-low-ing ad-van-tages while Mounted.
  []
@@ -1419,55 +1296,45 @@ Chapter 14.
 ] [276] [277] [278] [279] [280] [281] [282] [283] [284] [285]
 [286] [287] [288] [289] [290] [291] [292] [293] [294] [295] [296] [297]
 [298] [299] [300] [301] [302] [303] [304] [305] [306] [307] [308]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18384.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18319.
  [309]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 18384.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 18319.
 
 (./LaTeXed-SoS.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 18384.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 18319.
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 18384
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 18319
 .
 Package rerunfilecheck Info: File `LaTeXed-SoS.out' has not changed.
-(rerunfilecheck)             Checksum: F7D4D3417C24E738D818B988722EF9D8;3685.
-
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 21.35431pt have occurred.
+(rerunfilecheck)             Checksum: BB930F78FB16AF94C04C30870BC076B4;3516.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 18384.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 18319.
  ) 
 Here is how much of TeX's memory you used:
- 12928 strings out of 493091
- 187171 string characters out of 6142991
- 421925 words of memory out of 5000000
- 15497 multiletter control sequences out of 15000+600000
- 49699 words of font info for 132 fonts, out of 8000000 for 9000
+ 12836 strings out of 493091
+ 185751 string characters out of 6142991
+ 422112 words of memory out of 5000000
+ 15426 multiletter control sequences out of 15000+600000
+ 47452 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,16n,43p,1458b,567s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,16n,43p,1458b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/p
 ublic/amsfonts/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/c
-mmi9.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
-/texmf/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf/fonts/type1/p
-ublic/amsfonts/cm/cmr6.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr
-8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/tex
-mf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/publ
-ic/amsfonts/cm/cmsy9.pfb></usr/share/texmf/fonts/type1/public/fourier/fourier-o
-rns.pfb></usr/share/texmf/fonts/type1/public/fpl/fplbj8a.pfb></usr/share/texmf/
-fonts/type1/public/fpl/fplrc8a.pfb></usr/share/texmf/fonts/type1/public/fpl/fpl
-rij8a.pfb></usr/share/texmf/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/tex
-mf/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texmf/fonts/type1/urw/palat
-ino/uplr8a.pfb></usr/share/texmf/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on LaTeXed-SoS.pdf (317 pages, 979411 bytes).
+mr12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/
+texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/p
+ublic/fourier/fourier-orns.pfb></usr/share/texmf/fonts/type1/public/fpl/fplbj8a
+.pfb></usr/share/texmf/fonts/type1/public/fpl/fplrc8a.pfb></usr/share/texmf/fon
+ts/type1/public/fpl/fplrij8a.pfb></usr/share/texmf/fonts/type1/urw/palatino/upl
+b8a.pfb></usr/share/texmf/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texm
+f/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf/fonts/type1/urw/palatin
+o/uplri8a.pfb>
+Output written on LaTeXed-SoS.pdf (314 pages, 938098 bytes).
 PDF statistics:
- 2158 PDF objects out of 2487 (max. 8388607)
- 1744 compressed objects within 18 object streams
- 627 named destinations out of 1000 (max. 500000)
- 22505 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 2213 PDF objects out of 2487 (max. 8388607)
+ 1737 compressed objects within 18 object streams
+ 617 named destinations out of 1000 (max. 500000)
+ 18385 words of extra memory for PDF output out of 20736 (max. 10000000)
 
