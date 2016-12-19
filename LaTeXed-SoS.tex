@@ -58,15 +58,15 @@
 \def\headrule{{\color{darkgray}\raisebox{-2.1pt}[10pt][10pt]{\leafright} \hrulefill \raisebox{-2.1pt}[10pt][10pt]{~~~\decofourleft \decotwo\decofourright~~~} \hrulefill \raisebox{-2.1pt}[10pt][10pt]{ \leafleft}}}
 \makeatother
 
-\fancyhf{}
+\fancyhf{}%ADD a reset button in the footer, maybe linked with the leaf
 
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 \renewcommand{\sectionmark}[1]{\markright{#1}}
 
 \newcommand{\estcab}[1]{\itshape\textcolor{marron}{\nouppercase #1}}
 
-\fancyhead[LE]{\estcab{Fran Oldstyle}}
-\fancyhead[RE]{\estcab{History of taxonomy}}
+%\fancyhead[LE]{\estcab{Fran Oldstyle}}
+%\fancyhead[RE]{\estcab{History of taxonomy}}
 % \fancyhead[CE,CO]{\estcab{\decoone}}
 \fancyhead[LO]{\estcab{\rightmark}} % malo cuando no hay section ~~~ \thesection
 \fancyhead[RO]{\estcab{\leftmark}}
@@ -78,7 +78,7 @@
 \fancyfoot[LO]{
 	\ornimpar \\ \large \hfill \sffamily\bf \textcolor{darkgray}{\leafNE ~~~ \thepage}
 }
-\fancyfoot[RE]{\ornpar   \\ \large  \sffamily\bf \textcolor{darkgray}{\thepage ~~~ \reflectbox{\leafNE}}  \hfill}
+%\fancyfoot[RE]{\ornpar   \\ \large  \sffamily\bf \textcolor{darkgray}{\thepage ~~~ \reflectbox{\leafNE}}  \hfill}
 
 \newenvironment{Section}[1]
 {\section{\vspace{0ex}#1}}
@@ -3091,7 +3091,7 @@ your character creation attribute caps by 4.
 Unless specified otherwise, a higher level of a Boon or Bane replaces the effects of its lower levels. 
 
 
-\section{Boons List}
+\section{Boons List}%THIS section should overlap with the table, right now it's garbage
 \begin{table}[!h]
 	\caption{List of Boons}
 	\label{tab:boons list}
@@ -3130,51 +3130,50 @@ Unless specified otherwise, a higher level of a Boon or Bane replaces the effect
 \end{table}
 \clearpage
 \section{Banes List}
-Table XX Banes 
-Bane Description B\&B Point / Arc Point Cost 
-
-
-Arrow Magnet 3 
-Bad Ears Cannot be removed 2/4 
-Bad Eyes Cannot be removed 4/6 
-Bad Reputation 3/6/9 
-Barren/Sterility Cannot be removed 1/3 
-Blind Cannot be removed 20 
-Braggart 3 
-Brain Damage* Cannot be removed 4/8 
-Broken Limb/Appendage* Cannot be removed - 
-Complete Monster 10 
-Craven 7/15 
-Crippled Limb/Appendage* Cannot be removed 8 
-Dead Cannot be removed 100 
-Debt 2/4/8 
-Dependent Cannot be removed 6/12 
-Dire Past Cannot be removed 0 
-Enemies 3/10/15 
-Facial Deformity Cannot be removed 2/4/8 
-Fat 5 
-Haemophilia Cannot be removed 7 
-Hothead 3 
-Honor 15 
-Lasting Pain Cannot be removed 4/8 
-Mute Cannot be removed 5/8 
-Oath 2 to 10 
-Old Wound Cannot be removed 1 
-One-Eyed Cannot be removed 10 
-
-
-Poor 4/6/8 
-Severed Limb/Appendage* Cannot be removed 15 
-Sheltered 2/4/6 
-Short 8/15 
-Skinny 3 
-Technologically Impaired 5 
-Unhappily Married 1/2/3 
-Virtuous 10 
-Wanted 5/10/15 
-
- 
-
+\begin{table}[!h]
+	\caption{List of Banes}
+	\label{tab:Banes List}
+	\begin{tabu} to \linewidth {X X X}
+		Bane&Description&B\&B Point / Arc Point Cost\\
+\nameref{bane:Arrow Magnet}	&&3\\
+\nameref{bane:Bad Ears} 		&Cannot be removed &2/4\\
+\nameref{bane:Bad Eyes} 		&Cannot be removed &4/6\\
+\nameref{bane:Bad Reputation} &&3/6/9\\
+\nameref{bane:Barren/Sterility} &Cannot be removed &1/3\\
+\nameref{bane:Blind} &Cannot be removed&20\\
+\nameref{bane:Braggart} &&3\\
+\nameref{bane:Brain Damage}* &Cannot be removed &4/8\\
+\nameref{bane:Broken Limb/Appendage}* &Cannot be removed& -\\
+\nameref{bane:Complete Monster} &&10\\
+\nameref{bane:Craven} &&7/15\\
+\nameref{bane:Crippled Limb/Appendage}* &Cannot be removed &8\\
+\nameref{bane:Dead} &Cannot be removed &100\\
+\nameref{bane:Debt} &&2/4/8\\
+\nameref{bane:Dependent} &Cannot be removed &6/12\\
+\nameref{bane:Dire Past} &Cannot be removed &0\\
+\nameref{bane:Enemies} &&3/10/15\\
+\nameref{bane:Facial Deformity} &Cannot be removed &2/4/8\\
+\nameref{bane:Fat} &&5\\
+\nameref{bane:Haemophilia} &Cannot be removed &7\\
+\nameref{bane:Hothead} &&3\\
+\nameref{bane:Honor} &&15\\
+\nameref{bane:Lasting Pain} &Cannot be removed &4/8\\
+\nameref{bane:Mute} &Cannot be removed &5/8\\
+\nameref{bane:Oath} &&2 to 10\\
+\nameref{bane:Old Wound} &Cannot be removed &1\\
+\nameref{bane:One-Eyed} &Cannot be removed &10\\
+\nameref{bane:Poor} &&4/6/8\\
+\nameref{bane:Severed Limb/Appendage}* &Cannot be removed &15\\
+\nameref{bane:Sheltered} &&2/4/6\\
+\nameref{bane:Short} &&8/15\\
+\nameref{bane:Skinny} &&3\\
+\nameref{bane:Technologically Impaired} &&5\\
+\nameref{bane:Unhappily Married} &&1/2/3\\
+\nameref{bane:Virtuous} &&10\\
+\nameref{bane:Wanted} &&5/10/15\\
+	\end{tabu}
+\end{table}
+\clearpage
 \section{Boons}
 \paragraph{\label{boon:Allies}Allies}---\quad\textbf{(1/5/10)}\par
 The Allies Boon represents a character's positive relationship with a powerful figure, organization, or 
@@ -3497,114 +3496,58 @@ it, it's gone.
 \paragraph{\label{boon:Tireless Lobster}Tireless Lobster}---\quad\textbf{(6)}\\
 \textit{Only for use with Optional Fatigue Rules}
 You’ve gotten so used to wearing armor constantly that it’s basically a second skin for you, and doesn’t tire you out meaningfully anymore. Wearing armor for more than 4 hours no longer causes its Weight to increase by half, and sleeping in armor only increases its effective Weight by half, instead of doubling it.
+
 \section{Banes}
-
-
-Arrow Magnet (3) 
+\paragraph{\label{bane:Arrow Magnet}}---\quad\textbf{ (3)}\par
 You've got a way with arrows. They just can't stay away from you. In any situation where someone would 
-be targeted at random by missiles, you will be targeted first, and anyone making missile attacks gain a +1 
-dice bonus against you. 
-
- 
-
-Bad Ears (2/4) 
-Cannot be removed. 
+be targeted at random by missiles, you will be targeted first, and anyone making missile attacks gain a +1 dice bonus against you. 
+\paragraph{\label{bane:Bad Ears}}---\quad\textbf{ (2/4)}\\
+\textit{Cannot be removed}\par
 You just don't have good hearing. Maybe you worked on a howitzer range, or maybe it's congenital. 
-
- 
-
-2: You suffer a -2 to all PER checks involving hearing. 
-4: You're stone deaf. You suffer a -2 to all PER checks involving hearing, and if a check requires hearing, 
+\begin{itemize}
+	\item [2:] You suffer a -2 to all PER checks involving hearing. 
+	\item [4:] You're stone deaf. You suffer a -2 to all PER checks involving hearing, and if a check requires hearing, 
 you can't roll at all. You can only understand people if you can see their mouths, or through sign 
 language. 
-
- 
-
-
+\end{itemize}
 A character cannot have the Bad Ears Bane at the same time as the Good Ears Boon. 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-Bad Eyes (4/6) 
-Cannot be removed. 
+\paragraph{\label{bane:Bad Eyes }}---\quad\textbf{(4/6)}\\
+\textit{Cannot be removed}\par
 You don't see too well. Corrective eyeglasses may be available in your time period, but if not... well, 
 maybe you shouldn't be the one carrying the blunderbuss. 
-
- 
-
-4: You suffer a -2 to PER if not wearing glasses. 
-6: You suffer a -4 to PER if not wearing glasses, and a -2 to PER even if you are. 
-
- 
-
+\begin{itemize}
+\item [4:] You suffer a -2 to PER if not wearing glasses. 
+\item [6:] You suffer a -4 to PER if not wearing glasses, and a -2 to PER even if you are. 
+\end{itemize}
 A character cannot have the Bad Eyes Bane at the same time as the Good Eyes Boon. 
-
- 
-
-Bad Reputation (3/6/9) 
+\paragraph{\label{bane:Bad Reputation }}---\quad\textbf{(3/6/9) }\par
 You aren't a popular fellow. Perhaps you're a member of an unsavory group that people generally 
-mistrust, or maybe your personal deeds (real or attributed) have made you a pariah. Either way, folks are 
-less likely to cooperate with you and may even try to hurt you if they take particular offense to you! Of 
+mistrust, or maybe your personal deeds (real or attributed) have made you a pariah. Either way, folks are less likely to cooperate with you and may even try to hurt you if they take particular offense to you! Of 
 course there will often be people who don't care about your reputation, and some may even approve! 
 
- 
 
 In certain situations, the GM may choose to waive your penalty, or even turn it into a bonus. While 
 intimidating some yokels, for example. 
 
- 
-
-3: You're unpopular. You suffer a -2 to all social rolls made with people who disapprove of your 
-reputation. 
-6: You're generally disliked. You suffer a -4 to all social rolls made with people who disapprove of your 
-reputation. 
-9: You're nearly universally despised. You suffer a -6 to all social rolls made with people who disapprove 
+\begin{itemize}
+	\item [3:] You're unpopular. You suffer a -2 to all social rolls made with people who disapprove of your 
+	reputation. 
+	\item [6:] You're generally disliked. You suffer a -4 to all social rolls made with people who disapprove of your 
+	reputation. 
+	\item [9:] You're nearly universally despised. You suffer a -6 to all social rolls made with people who disapprove 
 of your reputation. 
-
- 
-
-Barren/Sterility (1/3) 
-Cannot be removed. 
+\end{itemize}
+\paragraph{\label{bane:Barren/Sterility}}---\quad\textbf{(1/3)}\\
+{Cannot be removed}\par
 You are incapable of producing offspring. Perhaps it is genetic, or perhaps you are a eunuch… or perhaps 
 you had an unfortunate encounter with a low-flying halberd. This Bane is not unique to either gender. 
-
- 
-
-1: Barren/Sterile. You’re simply sterile. No children for you (or no more children, if you already have 
-them). You may still feel sexual urges, depending on the nature of your condition. 
-3: Eunuch. You were made a eunuch before puberty (male only). This is a different situation from the 
-above, as this has a serious effect on the development of young men. In addition to all of the obvious 
-effects of the process and the sterility associated with it, you must also pay 2 additional Arc to level up 
-STR or HLT. However, as a side effect, you gain a +2 bonus against all manner of Social rolls made with 
-the intent to deceive, and a +2 bonus against Intimidation and Taunt attempts. 
-
- 
-
- 
-
-
- 
-
-Blind (20) 
-Cannot be removed. 
-You're stone fucking blind. This brings with it certain problems. While blind men have been known to 
-fight before, it is by no means easy, and few would recommend it. 
-
- 
+\begin{itemize}
+\item [1:] Barren/Sterile. You’re simply sterile. No children for you (or no more children, if you already have them). You may still feel sexual urges, depending on the nature of your condition.
+\item [3:] Eunuch. You were made a eunuch before puberty (male only). This is a different situation from the above, as this has a serious effect on the development of young men. In addition to all of the obvious effects of the process and the sterility associated with it, you must also pay 2 additional Arc to level up STR or HLT. However, as a side effect, you gain a +2 bonus against all manner of Social rolls made with the intent to deceive, and a +2 bonus against Intimidation and Taunt attempts.
+\end{itemize}
+\paragraph{\label{bane:Blind }}---\quad\textbf{(20)}
+{Cannot be removed}\par
+You're stone fucking blind. This brings with it certain problems. While blind men have been known to fight, it is by no means easy, and few would recommend it. 
 
 Blind Characters cannot make sight-based PER checks, nor can they do anything that strictly requires the 
 use of their eyes. However, they do gain a +2 bonus to PER checks involving sound, touch, and other 
@@ -3615,10 +3558,7 @@ Costs, which are paid normally.)
 This check uses the other four senses, and benefits from the +2 bonus to PER checks mentioned above. 
 Blind Characters treat all light levels as if they were Evenly Lit. Pages 202-203 
 A character cannot have Blind at the same time as the Good Eyes Boon or One-Eyed Bane. 
-
- 
-
-Braggart (3) 
+\paragraph{\label{bane:Braggart }}---\quad\textbf{(3)}\par
 You've got a big mouth. You can't help but boast of your strength, intelligence, or achievements, and you 
 also can't stand the notion of being shown up. Maybe your claims are baseless... maybe they aren't. Either 
 way, you get yourself in trouble a lot, and you're incredibly easy to rile up. 
@@ -3631,88 +3571,57 @@ making a WIL test at RS 2.
 
  
 
-Brain Damage 
-Cannot be removed. 
+\paragraph{\label{bane:Brain Damage}Brain Damage}\quad\\
+\textit{Cannot be removed}\par
 You've suffered an injury that has significantly damaged your brain. You suffer from decreased mental 
-faculties, and possibly some neurological failures (tics, partial paralysis of limbs, and so on). As stated in 
-Chapter 13, whenever you are knocked out or pass out from Blood Loss or excessive Pain, you must pass 
-a TOU vs. 2 RS test or you gain this Bane. Certain wounds may also give you this Bane. 
+faculties, and possibly some neurological failures (tics, partial paralysis of limbs, and so on). As stated in \autoref{ch:injuryrecovery}, whenever you are knocked out or pass out from Blood Loss or excessive Pain, you must pass a TOU vs. 2 RS test or you gain this Bane. Certain wounds may also give you this Bane. 
 
- 
 
-When you gain Brain Damage, roll 1d10 on the Brain Damage table and immediately suffer its effects. 
-Old Wounds typically develop on the head, neck or around the spine but it’s possible that they may affect 
-hands or joints (GM’s choice). If you would gain a Bane you already have, instead increase the severity of 
-that Bane, if you can. Otherwise ignore that particular effect. 
+When you gain Brain Damage, roll 1d10 on the \nameref{tab:Brain Damage} and immediately suffer its effects.\\
+Old Wounds typically develop on the head, neck or around the spine but it’s possible that they may affect hands or joints (GM’s choice). If you would gain a Bane you already have, instead increase the severity of that Bane, if you can. Otherwise ignore that particular effect.
 
- 
 
 For each instance of Brain Damage you currently suffer from, add +1 RS to all INT-based rolls. You no 
 think so good after getting struck on the head too much. 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-Table 6.4 Brain Damage 
-Roll Effect 
-1 Mild Concussion: This Bane fades in 1d10 days 
-
-
-2 Concussion: This Bane fades in 2d10 days 
-3 Severe Concussion: This Bane fades in 3d10 days 
-4 Gain Bad Eyes (or lose Good Eyes if you have it) 
-5 Gain Bad Ears (or lose Good Ears if you have it) 
-6 Gain Old Wound and Bad Ears (or lose Good Ears if you have it) 
-7 Gain Old Wound and One-Eyed (determine which eye randomly) 
-8 Gain Old Wound and Mute 
-9 Gain Old Wound and Lasting Pain 
-10 Gain Old Wound, Lasting Pain, and Blind 
-
- 
-Broken Limb/Appendage 
-Cannot be removed. 
+\begin{table}[!h]
+	\caption{Brain Damage Table}
+	\label{tab:Brain Damage}
+	\begin{tabu} to \linewidth {cX}
+		Roll&Effect\\
+		1 &Mild Concussion: This Bane fades in 1d10 days \\
+		2 &Concussion: This Bane fades in 2d10 days \\
+		3 &Severe Concussion: This Bane fades in 3d10 days \\
+		4 &Gain Bad Eyes (or lose Good Eyes if you have it) \\
+		5 &Gain Bad Ears (or lose Good Ears if you have it) \\
+		6 &Gain Old Wound and Bad Ears (or lose Good Ears if you have it) \\
+		7 &Gain Old Wound and One-Eyed (determine which eye randomly) \\
+		8 &Gain Old Wound and Mute \\
+		9 &Gain Old Wound and Lasting Pain \\
+		10&Gain Old Wound, Lasting Pain, and Blind \\
+	\end{tabu}
+\end{table}
+\paragraph{\label{bane:Broken Limb/Appendage}}\quad\\
+\textit{Cannot be removed}\par
 A broken limb is a serious injury, but with some time and rest, it’ll be as good as new. Right? 
-Well, in theory anyway. If a limb is used while broken, it may not heal properly, and repeated injuries to a 
-wounded limb can permanently cripple it. A broken limb cannot be used for anything (wielding a sword, 
-walking, and so on), until the Wound that caused it heals (a treated broken leg can be walked on with the 
-aid of crutches, but at 1/4th of normal MOB, and no intense movement is possible). 
+Well, in theory anyway. If a limb is used while broken, it may not heal properly, and repeated injuries to a wounded limb can permanently cripple it. A broken limb cannot be used for anything (wielding a sword, walking, and so on), until the Wound that caused it heals (a treated broken leg can be walked on with the aid of crutches, but at 1/4th of normal MOB, and no intense movement is possible). 
 
- 
 
-You may not choose this Bane at Character Creation, and it cannot be bought off. The Wound must heal 
-normally. 
-
- 
-
-Complete Monster (10) 
+You may not choose this Bane at Character Creation, and it cannot be bought off. The Wound must heal normally. 
+\paragraph{\label{bane:Complete Monster }}---\quad\textbf{(10) }\par
 Some people are cruel, petty or spiteful due to their poor upbringing, the rough environment they were 
 exposed to, or an unpleasant childhood. Their insecurities manifest themselves in antisocial traits 
 developed as coping mechanisms to deal with the pain these situations caused them. 
 
- 
 
-Not you. You may have excuses, but they're not legitimate. You are wolf to man. Maybe you're crazy, or 
-maybe you're just too sane. You view human social concessions as an idiotic charade, proof that the 
+Not you. You may have excuses, but they're not legitimate. You are wolf to man. Maybe you're crazy, or maybe you're just too sane. You view human social concessions as an idiotic charade, proof that the 
 people around you are just machines, automatons with no real agency in their own behavior. You're the 
 only real person. They're just puppets made out of meat. You can play the game, but your definition of 
 winning and losing is much more practical. You win if you get what you want, you lose if you don't, and 
 everyone else is just an tool to be used or an obstacle to be overcome in the pursuit of your desires. 
 
- 
 
 You also have an uncontrollable urge to kick puppies and steal pies. 
 
- 
 
 You gain a +2 bonus to Persuasion rolls, because of your superficial charm, and this remains as long as 
 the true depth of your soulless evil remains unknown. It is possible to retain a good reputation with this 
@@ -3722,90 +3631,48 @@ Persuasion against them. Characters may glimpse your true nature whenever you fa
 against them (context is everything, GM's discretion), but are much more likely to realize it if they 
 witness you actually behave like a Complete Monster. 
 
- 
 
-You also do not have a Belief Arc, and you cannot gain one unless this Bane is bought off. This Bane can 
+You also do not have a Belief Arc, and you cannot gain one unless this Bane is bought off. This Bane can be bought off, but only at double its purchasing cost ,A total of 20 Arc Points, and requires some sort of serious soul-searching epiphany. 
 
-
-be bought off, but only at double its purchasing cost ,A total of 20 Arc Points, and requires some sort of 
-serious soul-searching epiphany. 
-
- 
 
 A character cannot have Complete Monster at the same time as the Honorable and/or Virtuous Banes. 
-
- 
-
-Craven (7/15) 
+\paragraph{\label{bane:Craven }}---\quad\textbf{(7/15) }\par
 You're a coward. There's a difference between feeling fear, and being incapable of overcoming it. A 
 coward cannot bring himself to confront any sort of danger head-on, and will often try to hide, avoid, or 
 simply flee from any possible injury or harm to himself. 
 
- 
-
-7: You suffer a -2 penalty to CP in any combat situation in which you do not have a decisive and obvious 
-advantage. You must make a WIL test at RS 2 to bring yourself to confront any sort of danger. If you are 
-injured by violence, you must make a WIL test at RS 4 or panic and try to escape. 
-15: You suffer a -4 penalty to CP in any combat situation in which you do not have a decisive and 
-obvious advantage. You must make a WIL test at RS 4 to bring yourself to confront any sort of danger. If 
-you are injured by violence, you must make a WIL test at RS 6 or panic and try to escape. 
-
- 
-
+\begin{itemize}
+	\item [7:] You suffer a -2 penalty to CP in any combat situation in which you do not have a decisive and obvious advantage. You must make a WIL test at RS 2 to bring yourself to confront any sort of danger. If you are injured by violence, you must make a WIL test at RS 4 or panic and try to escape. 
+	\item [15:] You suffer a -4 penalty to CP in any combat situation in which you do not have a decisive and obvious advantage. You must make a WIL test at RS 4 to bring yourself to confront any sort of danger. If you are injured by violence, you must make a WIL test at RS 6 or panic and try to escape.
+\end{itemize}
 Craven cannot be taken with the Honorable Bane. 
-
- 
-
-Crippled Limb/Appendage (8) 
-Cannot be removed. 
+\paragraph{\label{bane:Crippled Limb/Appendage }}---\quad\textbf{(8)}\\
+\textit{Cannot be removed}\par
 A crippled limb is one that has suffered significant damage and has not been allowed to heal properly. As 
-a result, it has lost most or all of its functionality, and is essentially dead weight, or close to it. Someone 
-with a crippled leg is still better off than someone with no leg at all, but not by much. 
+a result, it has lost most or all of its functionality, and is essentially dead weight, or close to it. Someone with a crippled leg is still better off than someone with no leg at all, but not by much.
 
- 
 
-The Crippled Limb can be used, but at severe penalties. Any Skill tests made that require the limb suffer a 
-+4 to their RS. Attack or Defense Maneuvers made with the limb suffer a +3 to their TN. If the crippled 
-limb is being used for locomotion (like a leg when walking, or an arm while climbing) MOB is reduced 
-by half. 
-
- 
-
-Dead (100) 
-Cannot be removed. 
-You are dead. You may take no Actions except the Decompose Maneuver. 
-
- 
-
- 
-
-Debt (2/4/8) 
+The Crippled Limb can be used, but at severe penalties. Any Skill tests made that require the limb suffer a +4 to their RS. Attack or Defense Maneuvers made with the limb suffer a +3 to their TN. If the crippled limb is being used for locomotion (like a leg when walking, or an arm while climbing) MOB is reduced by half.
+\paragraph{\label{bane:Dead }}---\quad\textbf{(100) }\\
+\textit{Cannot be removed}\par
+You are dead. You may take no Actions except the Decompose Maneuver.
+\paragraph{\label{bane:Debt }}---\quad\textbf{(2/4/8) }\par
 You owe people money. The amount is significant, but you have some time to pay it off before bad things 
 start happening. 
 
- 
 
 In many cases, nobody can actually force you to repay your debts (particularly if you're an armed man 
 with few, if any, solid assets and a horse), but moneylenders have long arms and longer memories, and a 
 great incentive to either make you pay in gold, or in pounds of flesh, as an example to others. Characters 
 that start with no money cannot take this Bane. 
-
- 
-
-2: Minor. You owe an amount of money equal to the Wealth you have at the time of Character Creation, 
-not including Assets. This is determined with Boons and Banes that modify Wealth and Assets. 
-4: Moderate. You owe an amount of money equal to half again your starting Wealth. This is determined 
-with Boons and Banes that modify Wealth and Assets. 
-8: Major. You owe an amount of money equal to twice your starting Wealth, and starting Assets. This is 
-determined with Boons and Banes that modify Wealth and Assets. 
-
- 
-
-
-Dependent (6/12) 
+\begin{itemize}
+	\item [2:] Minor. You owe an amount of money equal to the Wealth you have at the time of Character Creation, not including Assets. This is determined with Boons and Banes that modify Wealth and Assets. 
+	\item [4:] Moderate. You owe an amount of money equal to half again your starting Wealth. This is determinedwith Boons and Banes that modify Wealth and Assets. 
+	\item [8:] Major. You owe an amount of money equal to twice your starting Wealth, and starting Assets. This is determined with Boons and Banes that modify Wealth and Assets.
+\end{itemize}
+\paragraph{\label{bane:Dependent }}---\quad\textbf{(6/12) }\par
 Someone relies on you. Someone you can’t leave behind. And if anything were to happen to them… 
 
- 
 
 Your Dependant is an NPC created by you and the GM (confer with your GM during creation) who tags 
 along with your character. The Dependant can’t just be sent off--maybe you just can’t bear to part with 
@@ -3813,152 +3680,84 @@ them, or they wouldn’t be safe anywhere else, or you’re protecting them from
 even be allowed to know about. Whatever the reason, the Dependant is a chink in your armor that must be 
 defended at all costs. 
 
- 
+\begin{itemize}
+	\item [6:] Create a Follower with 4 less PCP than the PC’s. They may not spend more than 4 PCP on Boons \& Banes, may not be a Tier 5 Race, and should be of a PCP 4 Social Class or lower (Same or lower than the Player). The Dependant may gain Arc Points through their own Arcs, or however else the GM sees fit. Should the Dependant be in danger, you must roll a simple WIL test with RS of 2, or immediately rush to their defence. If the Dependant is injured, you have a -1 to all actions that does not involve saving, rescuing or healing your dependant. If your Dependant dies, and it is not your fault, you could have done nothing to intervene, or the Dependant themselves tried to save someone, then you must pay back your next 6 Arc Points as you slip into a depressed state. If you COULD have saved them, but failed due to being overwhelmed by enemies, failing a skill roll, or whatever other reason, then the next 12 Arc Points must be paid as a cost, and you could be in danger of receiving an Insanity.
+	\item [12:] Create a Follower with 8 less PCP than the PCs. They may not spend more than 2 PCP on Social Class, and may only put 1 PCP into Boons \& Banes. They are restricted to half of the Bane holder’s Proficiency PCP. The Dependant gains Arc Points at half the rate they normally would. Should the Dependant be in danger, you must make a WIL test with an RS of 4, or immediately rush to their aid. You cannot leave your Dependant behind anywhere, unless you make arrangements for their safety (A castle, with owner and guards friendly to the players counts, likewise does a tavern with lockable doors), even if this means you bring them into battle with you. If you must leave them behind anywhere that you cannot be sure is safe, or if you know they are in danger, you take a -2 to all actions that do not lead towards their rescue. If the Dependant should die for any reason, you must pay the next 10 Arc Points you gain as your world shatters around you. You have lost a very important part of your world, and you may never recover. If, however, they die due to you a failure on your part, in a combat you are also taking part in, or because you failed a Skill roll that would have saved them, the next 20 Arc Points must be paid in cost, the GM is HIGHLY encouraged to provide you with an Insanity, or two, and you lose the ability to gain Arc Points from one of your Arcs for a period determined by your GM.\\
+\end{itemize}
+\subparagraph*{Special:} If the GM allows it, you may, instead of taking the Arc Point hit, take a number of Banes that would represent your character’s inability to process or cope with what has happened. The GM may decide these for you, or you may put forward a suggestion. This is a serious event in your character’s life, and thus the Banes you take should represent this.
+\paragraph{\label{bane:Dire Past}}---\quad\textbf{(0) }\\
+{Cannot be removed}\par
+You've been through some serious stuff. Maybe you're a survivor of a terrible battle, or maybe you're a veteran of the Crusades. Maybe you spent your childhood as a cabin boy on a witch-hunter's ship, fighting infidels and blasphemous cults on the islands along the Barbary Coast. Maybe you were born in the dark, where others merely adopted it.
 
-6: Create a Follower with 4 less PCP than the PC’s. They may not spend more than 4 PCP on Boons \& 
-Banes, may not be a Tier 5 Race, and should be of a PCP 4 Social Class or lower (Same or lower than the 
-Player). The Dependant may gain Arc Points through their own Arcs, or however else the GM sees fit. 
-Should the Dependant be in danger, you must roll a simple WIL test with RS of 2, or immediately rush to 
-their defence. If the Dependant is injured, you have a -1 to all actions that does not involve saving, 
-rescuing or healing your dependant. If your Dependant dies, and it is not your fault, you could have done 
-nothing to intervene, or the Dependant themselves tried to save someone, then you must pay back your 
-next 6 Arc Points as you slip into a depressed state. If you COULD have saved them, but failed due to 
-being overwhelmed by enemies, failing a skill roll, or whatever other reason, then the next 12 Arc Points 
-must be paid as a cost, and you could be in danger of receiving an Insanity. 
-12: Create a Follower with 8 less PCP than the PCs. They may not spend more than 2 PCP on Social 
-Class, and may only put 1 PCP into Boons \& Banes. They are restricted to half of the Bane holder’s 
-Proficiency PCP. The Dependant gains Arc Points at half the rate they normally would. Should the 
-Dependant be in danger, you must make a WIL test with an RS of 4, or immediately rush to their aid. 
-You cannot leave your Dependant behind anywhere, unless you make arrangements for their safety (A 
-castle, with owner and guards friendly to the players counts, likewise does a tavern with lockable doors), 
-even if this means you bring them into battle with you. If you must leave them behind anywhere that you 
-cannot be sure is safe, or if you know they are in danger, you take a -2 to all actions that do not lead 
-towards their rescue. If the Dependant should die for any reason, you must pay the next 10 Arc Points 
-you gain as your world shatters around you. You have lost a very important part of your world, and you 
-may never recover. If, however, they die due to you a failure on your part, in a combat you are also taking 
-part in, or because you failed a Skill roll that would have saved them, the next 20 Arc Points must be 
-paid in cost, the GM is HIGHLY encouraged to provide you with an Insanity, or two, and you lose the 
-ability to gain Arc Points from one of your Arcs for a period determined by your GM. 
-Special: If the GM allows it, you may, instead of taking the Arc Point hit, take a number of Banes that 
-would represent your character’s inability to process or cope with what has happened. The GM may 
-decide these for you, or you may put forward a suggestion. This is a serious event in your character’s 
-life, and thus the Banes you take should represent this. 
-
- 
-
-Dire Past (0) 
-Cannot be removed. 
-You've been through some serious stuff. Maybe you're a survivor of a terrible battle, or maybe you're a 
-veteran of the Crusades. Maybe you spent your childhood as a cabin boy on a witch-hunter's ship, fighting 
-infidels and blasphemous cults on the islands along the Barbary Coast. Maybe you were born in the dark, 
-where others merely adopted it. 
-
- 
 
 Write or explain a brief backstory for your character to the GM. He will choose (or design) several Banes 
 for you, to represent the scars and looming shadows of your dark past (you are not awarded B\&B Points 
-for these Banes directly). 
+for these Banes directly).
 
- 
 
 As you have survived your Dire Past, however, you gain 10 additional B\&B Points to spend on Boons. 
 These B\&B Points do NOT count towards your maximum points from Banes. 
 
 
- 
-
 GMs should not be lenient when choosing Banes to suit a character’s Dire Past. Be vicious. Old Wounds, 
 One-Eyed, Enemies, Bad Reputation... even things like Hothead, Honorable and Virtuous are appropriate 
-to apply for this Bane. The character isn’t just awarded 10 B\&B Points, that’s 10 Points in addition to 
-what they can earn by taking Banes, make them work for it! 
-
- 
-
-Enemies (3/10/15) 
+to apply for this Bane. The character isn’t just awarded 10 B\&B Points, that’s 10 Points in addition to what they can earn by taking Banes, make them work for it! 
+\paragraph{\label{bane:Enemies }}---\quad\textbf{(3/10/15) }\par
 You have some powerful enemies who mean to do you serious harm. They may just want to ruin you and 
 crush your name, or perhaps they want to cut your head off and put it on a pike. Either way, they're 
 willing to go out of their way—potentially FAR out of their way—to do it. The level of this Bane 
-indicates just how serious an enemy you've made. Enemies can either be individuals of significant power, 
-or entire organizations or countries. 
-3: Single, dangerous individual, small group or minor organization (rival merchant, local guild). 
-10: Single, powerful individual, large group or organization, regional authorities (Sheriff of Nottingham, 
-the City Guard). 
-15: Incredibly powerful enemies with long arms, continent-spanning organizations (the Holy Roman 
-Emperor, the Church, the Teutonic Order). 
-
- 
-
-Facial Deformity (2/4/8) 
-Cannot be removed. 
+indicates just how serious an enemy you've made. Enemies can either be individuals of significant power, or entire organizations or countries. 
+\begin{itemize}
+	\item [3:] Single, dangerous individual, small group or minor organization (rival merchant, local guild). 
+	\item [10:] Single, powerful individual, large group or organization, regional authorities (Sheriff of Nottingham, the City Guard).
+	\item [15:] Incredibly powerful enemies with long arms, continent-spanning organizations (the Holy Roman Emperor, the Church, the Teutonic Order).
+\end{itemize}
+\paragraph{\label{bane:Facial Deformity }}---\quad\textbf{(2/4/8) }\\
+\textit{Cannot be removed}\par
 People remember your face, and not in a good way. An injury, disease, or birth defect has marred your 
 looks, and you tend to draw attention from your peers. You may not buy off this Bane, barring some 
 miraculous treatment or magic (at the GM's discretion). 
-
- 
-
-2: You have a distinctive (though not particularly disfiguring) mark on your face. You suffer a -2 to 
-checks to disguise yourself or lie about your identity, and people will have an easy time describing you. 
-The mark is not significant enough to disturb people. Examples include Otto Skorzeny and Ernst Blofeld. 
-4: Your face has suffered serious injury or disfigurement. You suffer a -4 to checks to disguise yourself or 
-lie about your identity, and people will have a very easy time describing you. In addition, you also suffer 
-a -2 to the first Social checks you make with any person, as your first impressions are poor. Intimidation 
-rolls are exempt from this penalty, and may (situationally) be enhanced. Examples include Sandor 
-Clegane and Tycho Brahe (without prosthetic). 
-8: Your face is a horrific ruin, and people may have difficulty realizing that you are human, if they see 
-you without warning. You suffer -6 to checks to disguise yourself or lie about your identity, and people 
-will have an incredibly easy time describing you. In addition, you suffer a -4 to the first Social checks you 
-make with any person, as your first impressions are poor, and continue to suffer -2 afterwards, as you 
-simply make people uncomfortable (long-time friends and the particularly understanding might be exempt 
-from these penalties). Intimidation rolls are exempt from this penalty, and may (situationally) be 
-enhanced. Examples include Baldwin IV of Jerusalem and Joe Bonham. 
-
- 
-
-Fat (5) 
+\begin{itemize}
+	\item [2:] You have a distinctive (though not particularly disfiguring) mark on your face. You suffer a -2 to checks to disguise yourself or lie about your identity, and people will have an easy time describing you. The mark is not significant enough to disturb people. Examples include Otto Skorzeny and Ernst Blofeld. 
+	\item [4:] Your face has suffered serious injury or disfigurement. You suffer a -4 to checks to disguise yourself or lie about your identity, and people will have a very easy time describing you. In addition, you also suffer a -2 to the first Social checks you make with any person, as your first impressions are poor. Intimidation rolls are exempt from this penalty, and may (situationally) be enhanced. Examples include Sandor Clegane and Tycho Brahe (without prosthetic).
+	\item [8:] Your face is a horrific ruin, and people may have difficulty realizing that you are human, if they see you without warning. You suffer -6 to checks to disguise yourself or lie about your identity, and people will have an incredibly easy time describing you. In addition, you suffer a -4 to the first Social checks you make with any person, as your first impressions are poor, and continue to suffer -2 afterwards, as you simply make people uncomfortable (long-time friends and the particularly understanding might be exempt from these penalties). Intimidation rolls are exempt from this penalty, and may (situationally) be enhanced. Examples include Baldwin IV of Jerusalem and Joe Bonham.
+\end{itemize}
+\paragraph{\label{bane:Fat }}---\quad\textbf{(5)}\par
 You are rotund! A lot of folks have a bit of extra meat on them, but you look like you just caused a 
 famine in England. Put the fork down, fatty! 
 
- 
 
 You suffer a -2 to your HLT for the purposes of determining Fatigue, and a -2 to MOB. 
 On the upside, you gain a +1 to Stability rolls. 
 
- 
 
 Fat cannot be taken at the same time as the Skinny Bane. 
 
- 
 
-Haemophilia (8) 
-Cannot be removed. 
-
-
+\paragraph{\label{bane:Haemophilia }}---\quad\textbf{(8) }\\
+\textit{Cannot be removed}\par
 Haemophilia is a genetic disorder that impairs the body’s ability to control blood clotting or coagulation, 
 and the character’s body has trouble stopping bleeding when any vessel is broken. This is an absolutely 
 terrible condition to have. 
 
- 
 
 Whenever you suffer any sort of Blood Loss, increase the amount of Bleed points you gain by 3. The RS 
 for medical tests made to stop the bleeding are always increased by 2. 
 
- 
 
-Hothead (3) 
+\paragraph{\label{bane:Hothead }}---\quad\textbf{(3) }\par
 ‘Someone get this hothead outta here!’ You get angry easily, and you're prone to overreacting to 
 perceived threats or insults. Whenever you feel threatened, insulted, or aggravated by somebody, or 
 generally frustrated with a situation, you must make a WIL check at RS 2 or begin either a serious verbal 
 or physical confrontation immediately. 
 
- 
 
 If you are in a situation in which starting such a confrontation would clearly not solve anything (not even 
 by venting your anger by smashing something), or would very obviously result in your own death, the 
 WIL check is reduced to RS 1. 
 
- 
 
-Honorable (15) 
+\paragraph{\label{bane:Honorable }}---\quad\textbf{(15) }\par
 You're genuinely honorable. You might not be a nice guy, you might not be a philanthropist, but you have 
 a real sense of honor. Honor can't be bought, nor can it be awarded. Honor is fought for, acquired, and 
 maintained with diligence. To never break one's word, freely given, to never violate certain rules, to treat 
@@ -3967,20 +3766,16 @@ However, those bound by honor can also be dragged down by it. Honorable behavior
 behavior, and those who break their own codes of honor are lessened by it, as an essential part of 
 themselves dies in the act. 
 
- 
 
 Honorable characters gain a +2 bonus to resist subterfuge, intimidation, torture, and other means of 
 prying information from them. Additionally, he gains a +1 bonus to all social checks made to persuade, 
 reason with, or debate those who know the character to be honorable (this could be everyone, if the 
 character is famous, or just those who know him well or have been impressed with his conduct). 
 
- 
 
 However, a character with this Bane must always conduct himself in an honorable manner (discuss with 
-your GM what ‘honor’ means for your character, establish the principles, and stick to them) or else suffer 
-serious consequences. 
+your GM what ‘honor’ means for your character, establish the principles, and stick to them) or else suffer serious consequences. 
 
- 
 
 A character who goes against his own principles loses this Bane, and must pay the next 10 Arc Points 
 earned as a penalty, as his character works through the crisis of conscience brought on by the collapse of 
@@ -3989,51 +3784,29 @@ moral weakness so much as extreme circumstance. Honorable can also be purchased 
 discretion) after being lost, to represent the character regaining his principles for 2 Arc Points. 
  
 A character cannot have the Honorable Bane at the same time as the Complete Monster Bane. 
-
- 
-
-Lasting Pain (4/8) 
-Cannot be removed. 
-You've got an injury that not only hasn't healed properly, but that causes you chronic or constant pain in 
-the limb. You may learn to live with the pain, but it is never far from your mind. 
-
- 
-
-Choose a Hit Location, such as hand, thigh, face, belly, and so on, which will be the location of the injury 
-or defect that causes the Lasting Pain. If you acquire this Bane through an injury as detailed in Chapter 
-XX: Injury and Recovery, you do not get to choose the area. 
+\paragraph{\label{bane:Lasting Pain }}---\quad\textbf{(4/8) }\\
+{Cannot be removed}\par
+You've got an injury that not only hasn't healed properly, but that causes you chronic or constant pain in the limb. You may learn to live with the pain, but it is never far from your mind.
 
 
- 
-
-4: Minor. It hurts, but not too much. Each day, roll 1d10. On a 1-8, you suffer 2 Pain throughout the day. 
-Any injury to the area awakens this pain until the injury is fully healed. 
-8: Major. The pain can be crippling. Each day, roll 1d10. On a 1-9, you suffer 4 Pain throughout the day. 
-Any injury to the area awakens this pain until the injury is fully healed. 
-
- 
-
-Mute (5/8) 
-Cannot be removed. 
+Choose a Hit Location, such as hand, thigh, face, belly, and so on, which will be the location of the injury or defect that causes the Lasting Pain. If you acquire this Bane through an injury as detailed in \autoref{ch:injuryrecovery}:~\nameref{ch:injuryrecovery}, you do not get to choose the area. 
+\begin{itemize}
+	\item [4:] Minor. It hurts, but not too much. Each day, roll 1d10. On a 1-8, you suffer 2 Pain throughout the day. Any injury to the area awakens this pain until the injury is fully healed. 
+	\item [8:] Major. The pain can be crippling. Each day, roll 1d10. On a 1-9, you suffer 4 Pain throughout the day. Any injury to the area awakens this pain until the injury is fully healed.
+\end{itemize}
+\paragraph{\label{bane:Mute }}---\quad\textbf{(5/8) }\\
+{Cannot be removed}\par
 You can't talk. Perhaps you've suffered a throat injury or had your tongue cut out. Perhaps you've been 
-that way since birth, or maybe a disease ravaged your vocal chords. Either way, you cannot communicate 
-verbally in a meaningful fashion. 
-
- 
-
-5: You cannot form words, but you can cry out, shout, or otherwise make vocal sounds to, say, alert your 
-sleeping friends that you are surrounded by giant spiders. 
-8: You can neither speak nor make any other vocal sounds, and must communicate entirely by writing or 
-using sign language. 
-
- 
-
-Oath (2 to 10) 
+that way since birth, or maybe a disease ravaged your vocal chords. Either way, you cannot communicate verbally in a meaningful fashion.
+\begin{itemize}
+	\item [5:] You cannot form words, but you can cry out, shout, or otherwise make vocal sounds to, say, alert your sleeping friends that you are surrounded by giant spiders.
+	\item [8:] You can neither speak nor make any other vocal sounds, and must communicate entirely by writing or using sign language.
+\end{itemize}
+\paragraph{\label{bane:Oath }}---\quad\textbf{(2 to 10) }\par
 You've sworn a solemn oath, in good conscience and of your own accord. An Oath is a vow or obligation 
 that a character has made, to himself, to others, or to God. This Bane assumes that the Oath in question 
 was made honestly—simply taking an Oath and then breaking it casually when out of sight doesn't count. 
 
- 
 
 If you ever break the Oath (setting aside mitigating circumstances, for example, breaking a Vow of 
 Silence to warn a child of danger, or to inform the Pope of the assassin drawing up behind him) you must 
@@ -4041,165 +3814,92 @@ pay Arc Points as you earn them equal to twice the value of the Bane, as you str
 your failure. You may choose to retain your Oath after these Arc Points have been paid, or to abandon it 
 and lose this Bane at no further cost. 
 
- 
 
 Oaths can be worth between 2 and 10 depending on the severity of the Oath being taken. An Oath of 
 Fealty for a knight might be worth 2, since it's not something that would be hard for him to keep, whereas 
 a Vow of Silence could be worth more, and a Vow of Pacifism could be worth as much as 10, depending 
 on the character's background and premise. Consult with your GM to decide what an Oath should be 
 worth. Generally, the harder it would be to keep, the more it should be worth. 
+\paragraph{\label{bane:Old Wound }}---\quad\textbf{(1) }\\
+{Cannot be removed}\par
+You've suffered a severe injury that has never quite healed properly, and still pains you from time to time, and is particularly sensitive to further injury. 
 
- 
 
-Old Wound (1) 
-Cannot be removed. 
-You've suffered a severe injury that has never quite healed properly, and still pains you from time to time, 
-and is particularly sensitive to further injury. 
+Choose a Hit Location (such as hand, thigh, face, belly, and so on), which will be the location of the Old Wound. If you acquire this Bane through an injury as detailed in \autoref{ch:injuryrecovery}:~\nameref{ch:injuryrecovery}, you do not get to choose the area.
 
- 
 
-Choose a Hit Location (such as hand, thigh, face, belly, and so on), which will be the location of the Old 
-Wound. If you acquire this Bane through an injury as detailed in Chapter XX: Injury and Recovery, you 
-do not get to choose the area. 
+Any attack that hits this location automatically inflicts Stun equal to a level 1 Wound to that area, ignoring all reductions, even if the attack inflicts no Wound.
 
- 
-
-Any attack that hits this location automatically inflicts Stun equal to a level 1 Wound to that area, 
-ignoring all reductions, even if the attack inflicts no Wound. 
-
- 
 
 If this Bane is bought off, its cost to remove it is 5, instead of the 1 suggested by its cost. 
-
- 
-
- 
-
-One-Eyed (10) 
-Cannot be removed. 
+\paragraph{\label{bane:One-Eyed }}---\quad\textbf{(10) }\\
+{Cannot be removed}\par
+You've lost an eye! Perhaps it was an accident, or through injury in combat, or maybe you were born with only one functional eye. Stuff happens. Either way, having one eye can be a disadvantage in combat and in daily life. One-Eyed people can learn to compensate for their lack of depth perception with simple tricks, however it is still difficult to gauge distances.
 
 
-You've lost an eye! Perhaps it was an accident, or through injury in combat, or maybe you were born with 
-only one functional eye. Stuff happens. Either way, having one eye can be a disadvantage in combat and 
-in daily life. One-Eyed people can learn to compensate for their lack of depth perception with simple 
-tricks, however it is still difficult to gauge distances. 
-
- 
-
-PER tests to spot things, gauge distances, and so on, suffer a +1 RS. You also suffer a -1 to your CP in 
-combat, and a -2 to your MP when making ranged attacks, (though not for using missile weapons in 
-melee, those use the CP penalty listed earlier). 
-
- 
-
-If you buy off this Bane, you don't grow a new eye, but become so accustomed to only having one that 
-you no longer suffer the penalties. You cannot remove the Bane, however the penalties don't apply 
-anymore. 
-
- 
-
-If somehow you acquire two One-Eyed Banes, then you regrettably lose both One-Eyed Banes, and gain 
-the Blind Bane, unless you have more than two eyes (i.e. if you are a giant goliath spider possessed by the 
-ghost of Black Hand Lee). 
-
- 
-
-At Character Creation, you may take this Bane as a -2 Facial Deformity to represent the One-Eyed Bane 
-you have ‘bought off’ before Character Creation. Do not apply penalties from One-Eyed, but other rules 
-still take effect. 
-
- 
-
-A character cannot have One-Eyed at the same time as the Blind Bane. 
-
- 
-
-Poor (4/6/8) 
-You're unusually poor for your class in society. You lack funds, perhaps because you or your ancestors 
-made poor investments, without falling too far in social status. Either way, it's likely that you're still 
-trying to claw your way back into relative affluence. Maybe it's even what motivates you. 
-
- 
-
-4: You start with half (50\%) the Wealth of a normal character of your Social Class and Wealth level. You 
-may only take this level of the Bane if your character is of Wealth level 2 or higher, or with GM's 
-permission. 
-6: You start with a quarter (25\%) the Wealth of a normal character of your Social Class and Wealth 
-level.You may only take this level of the Bane if your character is of Wealth level 3 or higher, or with 
-GM's permission. 
-8: You start with no money.You may only take this level of the Bane if your character is of Wealth level 
-4 or higher, or with GM's permission. 
-
- 
-
-A character cannot have the Poor Bane at the same time as the Rich Boon. 
-
- 
-
-Severed Limb/Appendage (10/15/18) 
-Cannot be removed. 
-You're missing an arm or a leg. This could be the whole arm or leg, or just the hand or foot, but the loss of 
-the manipulator at the end is what's important. 
-
- 
-
-If you choose this Bane at Character Creation, choose a limb affected by this Bane, and how much of the 
-limb is missing. If you suffer this Bane because of an injury, then of course you have no say in where the 
-limb has been lost. 
-
- 
-
-10: The hand or foot has been lost. 
-15: The lower half of the limb has been lost (from the elbow or knee). 
-18: The full limb has been lost (from the shoulder or hip). 
+PER tests to spot things, gauge distances, and so on, suffer a +1 RS. You also suffer a -1 to your CP in combat, and a -2 to your MP when making ranged attacks, (though not for using missile weapons in melee, those use the CP penalty listed earlier).
 
 
- 
+If you buy off this Bane, you don't grow a new eye, but become so accustomed to only having one that you no longer suffer the penalties. You cannot remove the Bane, however the penalties don't apply anymore.
 
-The penalty for having lost a limb is serious. 
 
- 
+If somehow you acquire two One-Eyed Banes, then you regrettably lose both One-Eyed Banes, and gain the Blind Bane, unless you have more than two eyes (i.e. if you are a giant goliath spider possessed by the ghost of Black Hand Lee).
 
-Hand 
+
+At Character Creation, you may take this Bane as a -2 Facial Deformity to represent the One-Eyed Bane you have ‘bought off’ before Character Creation. Do not apply penalties from One-Eyed, but other rules still take effect.
+
+
+A character cannot have One-Eyed at the same time as the Blind Bane.
+\paragraph{\label{bane:Poor }}---\quad\textbf{(4/6/8) }\par
+You're unusually poor for your class in society. You lack funds, perhaps because you or your ancestors made poor investments, without falling too far in social status. Either way, it's likely that you're still trying to claw your way back into relative affluence. Maybe it's even what motivates you.
+
+\begin{itemize}
+	\item [4:] You start with half (50\%) the Wealth of a normal character of your Social Class and Wealth level. You may only take this level of the Bane if your character is of Wealth level 2 or higher, or with GM's permission.
+	\item [6:] You start with a quarter (25\%) the Wealth of a normal character of your Social Class and Wealth level.You may only take this level of the Bane if your character is of Wealth level 3 or higher, or with GM's permission.
+	\item [8:] You start with no money.You may only take this level of the Bane if your character is of Wealth level 4 or higher, or with GM's permission.
+\end{itemize}
+A character cannot have the Poor Bane at the same time as the Rich Boon.
+\paragraph{\label{bane:Severed Limb/Appendage }}---\quad\textbf{(10/15/18) }\\
+{Cannot be removed}\par
+You're missing an arm or a leg. This could be the whole arm or leg, or just the hand or foot, but the loss of the manipulator at the end is what's important.
+
+
+If you choose this Bane at Character Creation, choose a limb affected by this Bane, and how much of the limb is missing. If you suffer this Bane because of an injury, then of course you have no say in where the limb has been lost.
+\begin{itemize}
+	\item [10:] The hand or foot has been lost.
+	\item [15:] The lower half of the limb has been lost (from the elbow or knee).
+	\item [18:] The full limb has been lost (from the shoulder or hip).
+\end{itemize}
+The penalty for having lost a limb is serious.
+\subparagraph*{Hand:}
 You cannot perform any task that requires both hands, or use any two-handed weapon. Gripped 
 shields cannot be used (strapped shields can, at the GM’s discretion, with minor modification). 
 When Grappling, making a Slip attempt to prevent this arm from being Trapped or Pinned has a -
 1 TN, unless you have a prosthetic, and Force attempts to untrap the limb are made at a -1 TN as 
 well. Your Punches inflict -2 damage without a prosthetic. 
-
- 
-
-Lower Arm (from the Elbow) 
+\subparagraph*{Lower Arm (from the Elbow):}
 You cannot perform any task that requires both hands, or use any two-handed weapon. No shields 
 of any kind can be used. All Weapon Maneuvers suffer a +1 Activation Cost because of your loss 
 of balance. You may pay 5 Arc Points to remove the Activation Cost (representing your character 
 getting used to the missing limb). You can no longer perform the Punch or Elbow Maneuvers 
 without a prosthetic. All Grappling Maneuver TNs are increased by 1. 
-
- 
-
-Full Arm (from the Upper Arm to Shoulder) 
+\subparagraph*{Full Arm (from the Upper Arm to Shoulder)}
 You cannot perform any task that requires both hands, or use any two-handed weapon. No shields 
 of any kind can be used. All Weapon Maneuvers suffer a +2 Activation Cost because of your loss 
 of balance. You may pay 8 Arc to remove the Activation Cost (representing your character 
 getting used to the missing limb). All Grappling Maneuver TNs are increased by 2. 
 
- 
 
 Missing both hands or arms prevents you from using any held weapons. It is still possible to 
 Grapple unless you are missing both arms to the elbow or more, but the penalties are cumulative. 
 
- 
 
-Foot (from the Foot or lower Shin) 
+\subparagraph*{Foot (from the Foot or lower Shin)}
 You suffer a -2 penalty to MOB, and must make a Stability roll at RS 2 whenever moving faster 
 than a slow limp (a quarter of normal speed) or fall. All Stability rolls forced upon you by other 
 sources have their RS increased by 1. You suffer a CP penalty of 2 in combat in addition to these 
 other penalties, and all Dodge Maneuvers have their TNs increased by 2. 
-
- 
-
-Lower Leg (from the upper Shin to Knee) and Full Leg (from the Thigh to Hip) 
+\subparagraph*{Lower Leg (from the upper Shin to Knee) and Full Leg (from the Thigh to Hip)}
 You cannot walk except to possibly hop at a quarter of normal MOB. You must make a Stability 
 test every turn you move like this at RS 3, or fall and be prone. All Stability rolls forced upon you 
 by other sources have their RS increased by 2. You suffer a CP penalty of 4 in combat in addition 
@@ -4209,172 +3909,96 @@ falling, and reduce the CP penalty to 2, but you cannot run, and a crutch preclu
 weapon on the lost-leg-side hand, and the use of 2H weapons. You cannot perform Knee or Kick 
 maneuvers with your lost leg, and may only perform kicks with your remaining leg (if you have 
 one) while prone, or with a crutch at +1 TN and +1 Activation Cost. 
+\subparagraph*{Full Leg (from the Thigh to Hip)}
+XXXXXXXX
 
- 
-
-Full Leg (from the Thigh to Hip) 
-XXXXXXXX 
-
- 
 
 If both legs are lost, movement is extremely difficult. MOB is reduced to an effective 1, running 
 is not possible. Combat is unthinkable. You are permanently Prone, and can perform no Dodge 
 Maneuvers. 
 
- 
 
-If a severed limb is used without giving it time to heal, the user immediately gains 4 Shock and 1 
+If a severed limb is used without giving it time to heal, the user immediately gains 4 Shock and 1 Pain.
 
 
-Pain. 
-
- 
-
-Prosthetics are available in Chapter 5.4 and will mitigate some of the issues with missing limbs. 
-
- 
-
-Sheltered (2/4/6) 
+Prosthetics are available in Chapter 5.4 and will mitigate some of the issues with missing limbs.%FIX REFERENCE TO PROSTHETICS CHAPTER
+\paragraph{\label{bane:Sheltered }}---\quad\textbf{(2/4/6) }\par
 For some reason, you aren’t quite as used to the world as you should be. You’re less hardened against the 
 harshness of the world, and things tend to affect you more than your fellows. You start with less Grit than 
 you normally would. You cannot reduce your Grit beyond 0. 
-
- 
-
-2: Softy. -1 Grit. 
-4: Seriously Sheltered. -2 Grit. 
-6: You don’t even know what color blood is. -3 Grit. 
-
- 
-
-A character cannot have the Sheltered Bane at the same time as the True Grit Boon. 
-
- 
-
-Short (8/15) 
-You're much shorter than normal for your race. This negatively affects your Reach and your MOB, but 
-you also tire less easily, and you're a harder target for archers and other attackers with missiles. 
-
- 
-
-8: You're about 20% shorter than the average person. You suffer -1 to both Reach and MOB, but you 
-reduce your Exhaustion Rate by 1x (to a minimum of 1x) for the purposes of acquiring Fatigue. Missile 
-Attacks reduce their MP against you by 1 (or their CP by 1, if they are made as Melee Maneuvers in close 
-combat). 
-15: You're about 30% shorter than the average person, and quite possibly have some form of dwarfism. 
-You suffer a -2 to both Reach and MOB, but you reduce your Exhaustion gain by 1x (to a minimum of 
-1x) for the purposes of acquiring Fatigue. Missile Attacks reduce their MP against you by 1 (or their CP 
-by 1, if they are made as Melee Maneuvers in close combat). This is not cumulative with the minor 
-version of Short. 
-
- 
-
+\begin{itemize}
+	\item [2:] Softy. -1 Grit.
+	\item [4:] Seriously Sheltered. -2 Grit.
+	\item [6:]You don’t even know what color blood is. -3 Grit.
+\end{itemize}
+Cannot have the Sheltered Bane at the same time as the True Grit Boon. 
+\paragraph{\label{bane:Short}}---\quad\textbf{(8/15) }\par
+You're much shorter than normal for your race. This negatively affects your Reach and your MOB, but you also tire less easily, and you're a harder target for archers and other attackers with missiles.
+\begin{itemize}
+	\item [8:] You're about 20\% shorter than the average person. You suffer -1 to both Reach and MOB, but you reduce your Exhaustion Rate by 1x (to a minimum of 1x) for the purposes of acquiring Fatigue. Missile Attacks reduce their MP against you by 1 (or their CP by 1, if they are made as Melee Maneuvers in close combat). 
+	\item [15:] You're about 30\% shorter than the average person, and quite possibly have some form of dwarfism. You suffer a -2 to both Reach and MOB, but you reduce your Exhaustion gain by 1x (to a minimum of 1x) for the purposes of acquiring Fatigue. Missile Attacks reduce their MP against you by 1 (or their CP by 1, if they are made as Melee Maneuvers in close combat). This is not cumulative with the minor version of Short.
+\end{itemize}
 A character can not have the Short Bane at the same time as the Tall Boon. Duh. 
 
- 
-
-Skinny (3) 
+\paragraph{\label{bane:Skinny }}---\quad\textbf{(3) }\par
 You’re thin as a rail, a regular beanpole, and unwholesomely thin! Italian grandmothers everywhere 
-actively seek you out and attempt to feed you delicious pasta. 
+actively seek you out and attempt to feed you delicious pasta.
 
- 
 
-You suffer a -1 to your Stability rolls, and your effective CAR for determining Encumbrance is reduced 
-by 1. However, your Exhaustion Rate is reduced by 1x (to a minimum of 1x) for the purposes of 
-acquiring Fatigue. 
+You suffer a -1 to your Stability rolls, and your effective CAR for determining Encumbrance is reduced by 1. However, your Exhaustion Rate is reduced by 1x (to a minimum of 1x) for the purposes of acquiring Fatigue.
 
- 
 
-A character cannot have the Skinny Bane at the same time as the Fat Bane. 
-
- 
-
-Technologically Impaired (5) 
+A character cannot have the Skinny Bane at the same time as the Fat Bane.
+\paragraph{\label{bane:Technologically Impaired }}---\quad\textbf{(5) }\par
 You lack a working knowledge of modern technology, and have great difficulty understanding how all 
 these newfangled devices work. You may not have any Proficiency in a weapon considered modern, nor 
 knowledge of or Skills pertaining to any sciences that are on the cutting edge.You may have outdated or 
 obsolete expertise, though—confer with your GM. 
 
- 
 
 If you want to acquire a new Proficiency involving a modern weapon, or to acquire Skills pertaining to 
 modern technology, the first point or rank you buy in any of these Proficiencies or Skills costs double the 
 normal amount of Arc Points, if you are learning it as part of a School. 
-
- 
 
 
 If you’re trying to acquire a new Proficiency without instruction, you must first spend twice the normal 
 amount of Arc Points to begin a Proficiency, and then make an INT check at an RS determined by the 
 complexity of the device (a hand-spanned crossbow being RS 2, a cranequin-spanned crossbow being RS 
 4, a wheellock musket being RS 5, and a Puckle gun being RS 6. The GM has the final say on what the 
-RS for figuring out a weapon is. Some may be impossible without instruction). Success means that you 
-manage to figure out the weapon sufficiently to take Proficiency in it. Failure means you still spend the 
-Arc Points, but do not gain Proficiency in it. However, you may try again, this time with a cumulative -1 
-to the RS. 
-
- 
-
-Unhappily Married (1/2/3) 
-Your significant other doesn’t like you very much, whether or not the feeling is mutual. They will go to 
-lengths to make your life more difficult, and will generally be a pain in the neck. They can be eluded for a 
-short time, but they always catch up to you in the end. 
-
- 
-
-1: The spouse only makes a minor fuss, whether treating guests badly and bringing disgrace to your name 
-or spreading rumors about you while you’re out adventuring. 
-2: The spouse actively tries to disrupt your life in some way. The gravity of this torment depends on the 
-Social Class and Wealth of the spouse—a disgruntled peasant wife might intentionally undercook your 
-lunch, but your treacherous husband the Duke might humiliate you in court. 
-3: The spouse really has it out for you, and they have your in-laws to back them up. A poorer family 
-might just regularly harangue you or work to make your life miserable. In noble courts, this sort of 
-bitterness results in assassins with ropes hiding in your bedroom, and having to drink out of a hip flask at 
-every meal. 
-
- 
-
-Virtuous (10) 
+RS for figuring out a weapon is. Some may be impossible without instruction). Success means that you manage to figure out the weapon sufficiently to take Proficiency in it. Failure means you still spend the Arc Points, but do not gain Proficiency in it. However, you may try again, this time with a cumulative -1 to the RS.
+\paragraph{\label{bane:Unhappily Married }}---\quad\textbf{(1/2/3) }\par
+Your significant other doesn’t like you very much, whether or not the feeling is mutual. They will go to lengths to make your life more difficult, and will generally be a pain in the neck. They can be eluded for a short time, but they always catch up to you in the end.
+\begin{itemize}
+	\item [1:] The spouse only makes a minor fuss, whether treating guests badly and bringing disgrace to your name or spreading rumors about you while you’re out adventuring. 
+	\item [2:] The spouse actively tries to disrupt your life in some way. The gravity of this torment depends on the Social Class and Wealth of the spouse—a disgruntled peasant wife might intentionally undercook your lunch, but your treacherous husband the Duke might humiliate you in court. 
+	\item [3:] The spouse really has it out for you, and they have your in-laws to back them up. A poorer family might just regularly harangue you or work to make your life miserable. In noble courts, this sort of bitterness results in assassins with ropes hiding in your bedroom, and having to drink out of a hip flask at every meal.
+\end{itemize}
+\paragraph{\label{bane:Virtuous }}---\quad\textbf{(10) }\par
 You possess that greatest of weaknesses, the one flaw that has been the bane of more otherwise perfectly 
-competent and ambitious heroes than any other: you are a genuinely moral, honest, and righteous person. 
-Perhaps it's just in your nature, or perhaps you were just raised well. You've got a conscience, a desire to 
-help people, and while you may not be a pacifist, you're no murderer, and you despise senseless violence, 
-drawing the sword only when necessary. This isn't an easy way to live. Historically, paragons of morality 
-were few and far between, and it has often been said that ‘the good die young.’ 
+competent and ambitious heroes than any other: you are a genuinely moral, honest, and righteous person. Perhaps it's just in your nature, or perhaps you were just raised well. You've got a conscience, a desire to help people, and while you may not be a pacifist, you're no murderer, and you despise senseless violence, drawing the sword only when necessary. This isn't an easy way to live. Historically, paragons of morality were few and far between, and it has often been said that ‘the good die young.’
 
+
+If you ever act in an immoral, unnecessarily cruel or ruthless fashion, you must pay the next 10 Arc Points you earn, as you are wracked by your conscience. However, if you immediately act to try and make up for your moral transgression, by making amends with the wronged or through atonement to society or God, this loss is reduced to 5 Arc Points.
+
+
+A character cannot have the Virtuous Bane at the same time as the Complete Monster Bane
  
 
-If you ever act in an immoral, unnecessarily cruel or ruthless fashion, you must pay the next 10 Arc 
-Points you earn, as you are wracked by your conscience. However, if you immediately act to try and 
-make up for your moral transgression, by making amends with the wronged or through atonement to 
-society or God, this loss is reduced to 5 Arc Points. 
-
- 
-
-A character cannot have the Virtuous Bane at the same time as the Complete Monster Bane. 
-
- 
-
-Wanted (5/10/15) 
+\paragraph{\label{bane:Wanted }}---\quad\textbf{(5/10/15) }\par
 You're wanted by the law, either in your own country, or others. Believe it or not, even in the medieval 
 era, people often acknowledged the criminals of other kingdoms. Often, but not always. Whomever 
 you've committed a crime against, they're willing to go to lengths to retrieve you. 
-
- 
-
-5: Alive. 
-10: Dead. 
-15: Alive, and to be kept alive. For a long, long time. 
- 
+\begin{itemize}
+	\item [5:] Alive.
+	\item [10:] Dead.
+	\item [15:] Alive, and to be kept alive. For a long, long time. 
+\end{itemize}
 \chapter{Skills}\label{ch:skills}
 \clearpage 
-
-Skills 
+\section{Skills}
 Skills represent a character’s acquired knowledge and expertise in a wide variety of activities, from 
-translating ancient scripture, to carving stone, and rigging the sails on a ship. The full list of Skills can be 
-found in Chapter 3: Skills. 
+translating ancient scripture, to carving stone, and rigging the sails on a ship. The full list of Skills can be found in \autoref{ch:skills}:~\nameref{ch:skills}.
 
- 
 
 At Character Creation, the number of Skill Points a character receives is determined by the PCP placed in 
 the section, as well as a number of points equal to the character’s INT. Buying Skills with these points 
