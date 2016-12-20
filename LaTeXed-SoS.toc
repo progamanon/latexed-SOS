@@ -203,27 +203,32 @@
 \contentsline {paragraph}{TN}{102}{section*.254}
 \contentsline {paragraph}{Skill Tests}{102}{section*.255}
 \contentsline {paragraph}{Untrained}{102}{section*.256}
-\contentsline {paragraph}{Athletics}{103}{section*.257}
-\contentsline {paragraph}{Climbing}{104}{section*.258}
-\contentsline {paragraph}{Cooking}{105}{section*.259}
-\contentsline {paragraph}{Crafting}{106}{section*.260}
-\contentsline {paragraph}{Engineering}{106}{section*.261}
-\contentsline {paragraph}{History}{107}{section*.262}
-\contentsline {paragraph}{Hunting}{108}{section*.263}
-\contentsline {paragraph}{Intimidate}{108}{section*.264}
-\contentsline {paragraph}{Navigation}{109}{section*.265}
-\contentsline {paragraph}{Observation}{110}{section*.266}
-\contentsline {paragraph}{Orate}{110}{section*.267}
-\contentsline {paragraph}{Perform}{111}{section*.268}
-\contentsline {paragraph}{Persuasion}{111}{section*.269}
-\contentsline {paragraph}{Politics}{112}{section*.270}
-\contentsline {paragraph}{Research}{112}{section*.271}
-\contentsline {paragraph}{Riding}{113}{section*.272}
-\contentsline {paragraph}{Sailing}{113}{section*.273}
-\contentsline {paragraph}{Stealth}{113}{section*.274}
-\contentsline {paragraph}{Subterfuge}{114}{section*.275}
-\contentsline {paragraph}{Surgery}{114}{section*.276}
-\contentsline {paragraph}{Swimming}{115}{section*.277}
+\contentsline {paragraph}{Leveling up Skills}{103}{section*.257}
+\contentsline {paragraph}{Retrying Skill Attempts}{103}{section*.258}
+\contentsline {paragraph}{Encumbrance}{103}{section*.259}
+\contentsline {subsection}{\numberline {7.1.1}Character Creation}{103}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}Skill Descriptions}{104}{section.7.2}
+\contentsline {paragraph}{Athletics}{104}{section*.261}
+\contentsline {paragraph}{Climbing}{104}{section*.262}
+\contentsline {paragraph}{Cooking}{105}{section*.263}
+\contentsline {paragraph}{Crafting}{106}{section*.264}
+\contentsline {paragraph}{Engineering}{107}{section*.265}
+\contentsline {paragraph}{History}{107}{section*.266}
+\contentsline {paragraph}{Hunting}{108}{section*.267}
+\contentsline {paragraph}{Intimidate}{109}{section*.268}
+\contentsline {paragraph}{Navigation}{109}{section*.269}
+\contentsline {paragraph}{Observation}{110}{section*.270}
+\contentsline {paragraph}{Orate}{110}{section*.271}
+\contentsline {paragraph}{Perform}{111}{section*.272}
+\contentsline {paragraph}{Persuasion}{112}{section*.273}
+\contentsline {paragraph}{Politics}{112}{section*.274}
+\contentsline {paragraph}{Research}{112}{section*.275}
+\contentsline {paragraph}{Riding}{113}{section*.276}
+\contentsline {paragraph}{Sailing}{113}{section*.277}
+\contentsline {paragraph}{Stealth}{114}{section*.278}
+\contentsline {paragraph}{Subterfuge}{114}{section*.279}
+\contentsline {paragraph}{Surgery}{114}{section*.280}
+\contentsline {paragraph}{Swimming}{115}{section*.281}
 \contentsline {chapter}{\numberline {8}Social Class and Wealth}{116}{chapter.8}
 \contentsline {section}{\numberline {8.1}Character Creation}{117}{section.8.1}
 \contentsline {subsection}{\numberline {8.1.1}Social Class Benefits}{117}{subsection.8.1.1}
