@@ -4,7 +4,7 @@
 \usepackage{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{color}
-\usepackage{titletoc}%Used for the mini-tables of content in each chapter
+\usepackage{titletoc}  % Used for the mini-tables of content in each chapter
 \definecolor{marron}{RGB}{60,30,10}
 \definecolor{darkblue}{RGB}{0,0,80}
 \definecolor{lightblue}{RGB}{80,80,80}
@@ -15,6 +15,7 @@
 \usepackage[demo]{graphicx}
 \usepackage{wallpaper}
 \usepackage{wrapfig,booktabs}
+\usepackage{multirow}
 \usepackage{tabu,longtable}
 \usepackage{fancyhdr}
 \usepackage{lettrine}
@@ -80,7 +81,7 @@
 \fancyfoot[LO]{
 	\ornimpar \\ \large \hfill \sffamily\bf \textcolor{darkgray}{\leafNE ~~~ \thepage}
 }
-%\fancyfoot[RE]{\ornpar   \\ \large  \sffamily\bf \textcolor{darkgray}{\thepage ~~~ \reflectbox{\leafNE}}  \hfill}
+%\fancyfoot[RE]{\ornpar   \\ \large  \sffamily\bf \textcolor{darkgray}{\thepage ~~~ lectbox{\leafNE}}  \hfill}
 
 \newenvironment{Section}[1]
 {\section{\vspace{0ex}#1}}
@@ -558,6 +559,7 @@ the amount of PCP available for different levels of Campaign Power.
 \caption{Campaign Power}
 \noindent\begin{tabu} to \textwidth {X[l,2] c X[c]}
 Campaign Power & PCP & Max PCP per Category\\
+\midrule
 Gritty Power (realistic, low-powered historical campaigns) & 18 & 6 \\
 Low Power (realistic, medium-powered historical and fantasy campaigns) & 22 & 7 \\
 Medium Power (heroic historical and fantasy campaigns) & 26 & 8 \\
@@ -775,6 +777,7 @@ Kaselreich.
 	\label{tab:ArcPointFormat}
 	\begin{tabu} spread 0pt{lX}
 Arc Category & Description\\ 
+\midrule
 Saga&Defeat the Kasels and save Tigurnia \\
 Epic &Defeat the Kasel army led by The Red Duke \\
 Belief&Ruvian Genosism (Religion) \\
@@ -808,17 +811,17 @@ into the plot in the first place.
 \begin{table}
 	\caption{Awarding Arc Points}
 	\label{tab:AwardingArcPoints}
-		\begin{tabu} spread 0pt {| X[c,m]X[l,m] |}\toprule %TABLE needs to be fixed, as the vertical lines are garbage
-Arc Category&Arc Points Awarded Per Session \\\cmidrule{1-2}
-	Saga&0-6 
-
-	18 (upon completion of Arc)\\\cmidrule(r){1-2}
-	Epic&0-6
-
-	18 (upon completion of Arc)\\\cmidrule(r){1-2}
-Belief&0-4\\\cmidrule(r){1-2}
-Glory&0-4\\\cmidrule(r){1-2}
-Flaw&0-2\\\bottomrule
+	\centering
+		\begin{tabu} spread 0pt { X[c,m]X[l,m] }
+            Arc Category & Arc Points Awarded Per Session \\
+            \midrule
+	        \multirow{2}{*}{Saga} & 0-6 \\
+	             & 18 (upon completion of Arc) \\
+	        \multirow{2}{*}{Epic} & 0-6 \\
+                 &  18 (upon completion of Arc)\\
+            Belief & 0-4 \\
+            Glory & 0-4 \\
+            Flaw & 0-2 \\
 		\end{tabu} 
 \end{table}
  
@@ -884,22 +887,24 @@ simplify this, here is a table with the total cost of upgrading an Attribute fro
 \begin{table}
 	\caption{Attributes at Character Creation}
 	\label{tab:AttributesatCharCreation}
-\begin{tabu} to \textwidth {X[c]l}
-Attribute Level&Arc Cost\\
-1&-\\ 
-2&4\\ 
-3&8\\ 
-4&(Human Average) 12\\
-5&16\\ 
-6&20\\ 
-7&24\\ 
-8&28\\ 
-9&34\\ 
-10 (Human Maximum)&40 \\
-11&46\\
-12&52\\
-13 (Mortal Maximum)&58\\ 
-\end{tabu}
+	\centering
+	\begin{tabu} to \textwidth {X[c]l}
+	Attribute Level & Arc Cost\\
+	\midrule
+	1 & - \\ 
+	2 & 4 \\ 
+	3 & 8 \\ 
+	4 & (Human Average) 12 \\
+	5 & 16 \\ 
+	6 & 20 \\ 
+	7 & 24 \\ 
+	8 & 28 \\ 
+	9 & 34 \\ 
+	10 (Human Maximum) & 40 \\
+	11 & 46 \\
+	12 & 52 \\
+	13 (Mortal Maximum) & 58 \\ 
+	\end{tabu}
 \end{table}
 When determining starting Attributes, remember that no character can have an Attribute lower than 1 at 
 Character Creation. This includes racial modifiers; you may not build a character whose Attributes would 
@@ -934,22 +939,24 @@ detailed under its description.
 \begin{table}
 	\caption{Arc Cost of Attributes}
 	\label{tab:AttribsArcCost}
-\begin{tabu} spread 0pt {Xl}
-Attribute Level & Arc Cost\\
-1& -                        \\
-2& 4                        \\
-3& 4                        \\
-4 (Human Average)& 4        \\
-5& 4                        \\
-6& 4                        \\
-7& 4                        \\
-8& 4                        \\
-9& 6                        \\
-10 (Human Maximum)& 6       \\
-11& 6                       \\
-12& 6                       \\
-13 (Mortal Maximum)& 6      \\
-\end{tabu}
+	\centering
+	\begin{tabu} spread 0pt {Xl}
+		Attribute Level & Arc Cost\\
+		\midrule
+		1 & -                        \\
+		2 & 4                        \\
+		3 & 4                        \\
+		4 (Human Average) & 4        \\
+		5 & 4                        \\
+		6 & 4                        \\
+		7 & 4                        \\
+		8 & 4                        \\
+		9 & 6                        \\
+		10 (Human Maximum) & 6       \\
+		11 & 6                       \\
+		12 & 6                       \\
+		13 (Mortal Maximum) & 6      \\
+	\end{tabu}
 \end{table}
 \subsubsection{Non-Human Races and Attribute Maximums}
 Humans max out their Attribute stats at 10, but what about races who have bonuses to their Attributes? A 
@@ -1081,22 +1088,24 @@ decide that they should make a Grit test. This is a \textbf{WIL} check with RS e
 \begin{table}
 	\caption{Grit Advancement}
 	\label{tab:GritAdvancement}
-\begin{tabu} spread 0pt {lXX}
-Grit&Description&Example Advancement Threshold\\
-0&Totally innocent and inexperienced. Average child.&Hurting someone’s feelings, or having one’s feelings hurt. \\
-1&Sensitive, sheltered, still learning about the basics of social interaction. Average young person. & Physically hurting someone else (even accidentally), being hurt oneself. \\
-2& Mature person with an understanding of the way the world works. Average adult. &Being confronted with death. \\
-3&Worldly person with experience in the darker elements of society.& Witnessing violent death.\\
-4&Tough person, fully aware of the grim nature of life, no longer fazed by the unrelenting wickedness of the world they live in. &Killing somebody. \\
-5& Hardened person, now capable of facing the harshness of life head-on.&Killing several people. \\
-6& Jaded individual, increasingly callous to both enduring and witnessing pain. &Witnessing violence and death in a large scale. \\
-7& Callous and unfeeling, this person’s empathy is buried deep down to shield them from the pain of enduring hardship and witnessing it in others. &Killing or facilitating the killing of large numbers of people. \\
-8& Empty inside, this person has locked away their feelings so long they’ve almost completely lost touch with them. &Perpetrating genocide, mass torture, or surviving the same.\\
-9&At this point this person is no longer technically sane. This level of indifference to pain and suffering, both of the self and others, is a mental illness. &Witnessing everything you have ever cared for be destroyed. \\
-10& Almost completely inured to fear and pain. Totally fearless. &Destroying everything you have ever cared for with your own hands. \\
-\end{tabu}
-\vspace{0.5 cm}
-		\caption*{Success: Character gains 1 Grit. Failure: Character does not gain a point of Grit.}
+	\centering
+	\begin{tabu} spread 0pt {lXX}
+		Grit&Description&Example Advancement Threshold\\
+		\midrule
+		0&Totally innocent and inexperienced. Average child.&Hurting someone’s feelings, or having one’s feelings hurt. \\
+		1&Sensitive, sheltered, still learning about the basics of social interaction. Average young person. & Physically hurting someone else (even accidentally), being hurt oneself. \\
+		2& Mature person with an understanding of the way the world works. Average adult. &Being confronted with death. \\
+		3&Worldly person with experience in the darker elements of society.& Witnessing violent death.\\
+		4&Tough person, fully aware of the grim nature of life, no longer fazed by the unrelenting wickedness of the world they live in. &Killing somebody. \\
+		5& Hardened person, now capable of facing the harshness of life head-on.&Killing several people. \\
+		6& Jaded individual, increasingly callous to both enduring and witnessing pain. &Witnessing violence and death in a large scale. \\
+		7& Callous and unfeeling, this person’s empathy is buried deep down to shield them from the pain of enduring hardship and witnessing it in others. &Killing or facilitating the killing of large numbers of people. \\
+		8& Empty inside, this person has locked away their feelings so long they’ve almost completely lost touch with them. &Perpetrating genocide, mass torture, or surviving the same.\\
+		9&At this point this person is no longer technically sane. This level of indifference to pain and suffering, both of the self and others, is a mental illness. &Witnessing everything you have ever cared for be destroyed. \\
+		10& Almost completely inured to fear and pain. Totally fearless. &Destroying everything you have ever cared for with your own hands. \\
+	\end{tabu}
+    \vspace{0.5 cm}
+	\caption*{Success: Character gains 1 Grit. Failure: Character does not gain a point of Grit.}
 \end{table} 
 
 \chapter{Races}\label{ch:races}
