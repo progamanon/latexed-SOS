@@ -1,4 +1,4 @@
-%BEGIN_FOLD %including all packages, settings etc.
+%BEGIN_FOLD%including all packages, settings etc.
 %LETTRINE and \ornamento are to be learned
 \documentclass[oneside,11pt,english]{book}
 \usepackage{babel}
@@ -46,7 +46,6 @@
 %kerning=on,
 %expansion=true]
 {microtype}
-
 \setlength{\parskip}{1.3ex plus 0.2ex minus 0.2ex}
 
 
@@ -812,16 +811,15 @@ into the plot in the first place.
 Arc Category&Arc Points Awarded Per Session \\\cmidrule{1-2}
 	Saga&0-6
 
-	18 (upon completion of Arc)\\\cmidrule{1-2}
+	18 (upon completion of Arc)\\
 	Epic&0-6
 
-	18 (upon completion of Arc)\\\cmidrule{1-2}
-Belief&0-4\\\cmidrule{1-2}
-Glory&0-4\\\cmidrule{1-2}
+	18 (upon completion of Arc)\\
+Belief&0-\\
+Glory&0-4\\
 Flaw&0-2\\\bottomrule
 		\end{tabu} 
 \end{table}
- 
 The amount of Arc characters have spent is a direct correlation to how powerful they are, and players 
 should keep track of the amount of Arc they spend on their Character Sheet. It is important for the GM to 
 consider how much Arc characters have spent when planning future encounters with increasingly more 
@@ -3940,7 +3938,7 @@ era, people often acknowledged the criminals of other kingdoms. Often, but not a
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
 \clearpage 
-\section{Skills}
+\section{Skills}%ALL the skills need tables, but I don't know how we want to lay that shit out
 Skills represent a character’s acquired knowledge and expertise in a wide variety of activities, from 
 translating ancient scripture, to carving stone, and rigging the sails on a ship. The full list of Skills can be found in \autoref{ch:skills}:~\nameref{ch:skills}.
 
@@ -3999,54 +3997,39 @@ Skills List:
 %\nameref{skill:Tactics}
 \end{itemize}
 
-Table 3.1 Skills Overview
-Skill Level Skill Pool Skill Bonus Arc Price 
-1 +1 Trained 1 
-2 +2 1 
-3 +3 1 
-4 +4 Teacher 1 
-5 +5 2 
-6 +6 2 
-7 +7 2 
-8 +8 3 
-9 +9 3 
-10 +10 Mastery 3 
-
-
-Trained: No longer count as ‘Untrained’ when using the skill. 
-
-
-Teacher: Grants the character the ability to give another character one free level of the skill the teacher is proficient in. This ability may only be used once on a person for a single skill, and only a number of skills equal to the receiving character’s INT may be trained this way total. Using this takes about a month of in-game time, give or take at the GM’s discretion, and requires the location and materials needed to perform the trained skill. Multiple characters may be trained at the same time as long as their training starts at the same time and there are adequate resources and facilities.
-
-
-Mastery: Once per session, you may automatically succeed with 1/2 dice rolled for one Skill roll.
-
-
-Skill Level: Each skill has a level (ranged from 1 to 10) decided by the character’s investment of Skill Points (at character creation) or Arc (later game). The skill level gives the character dice equal to their skill level for skill tests, as well as other bonuses at various skill levels. Skills cost Arc to increase. Upon obtaining a level with a listed Skill Bonus, the character receives the stated bonus.
-
-
-Skill Pool (SP): A skill pool is a pool of dice used during a skill test. The pool is generated from the relevant Attribute at one die per Attribute value, added with dice equal to the character’s skill level in the relevant skill. Only one attribute can be referenced per skill test; if the situation ever calls upon a different attribute, it becomes a second test. For instance, when using the Climb skill, the character might be called on to make both STR and END based tests.
-
-
-TN: The Target Number (TN) for skill tests is 7. It is always 7. No force can change it from 7 to anything else. Anything that suggests that it is possible to change the Target Number for skill tests to a number other than 7 is a lie. Ignore those anythings.
-
-
-Skill Tests: There are many situations in the game in which a character’s skills will be tested, such as trying to negotiate a hostile deal or simply leaping from one roof to another during a chase. Every test of a skill will state a required number of successes (RS) for the skill test to be successful. The character must roll their pool and get equal to or above the skill’s target number (TN), and get equal to or more than the number of required successes (RS) for the test to be passed. Skills’ tests have modifiers to the situation that affect the skill check’s RS, such as trying to climb a wall slanted against the character or knowing the history of a foreign kingdom. If the number of RS is ever raised above the character’s dice pool plus automatic successes the character might get from other factors, then the skill attempt immediately becomes impossible. Situational modifiers can lower RS as well, though it can never be lowered beneath 1. If there is a situation that a skill doesn’t seem to cover, the GM should use their best judgement to create a test based on similar difficulties to the situation.
-
-
-Untrained: If a character has no levels in a skill they are attempting to use, then they are considered 
-unstrained in it. Some skills cannot be used if the character is untrained in them:
-Chymistry 
-Crafting 
-Engineering 
-History 
-Navigation 
-
-
- 
-
- 
-
+\begin{table}[!ht]
+	\caption{Skills Overview}
+	\label{tab:Skill Levels Overview}
+	\centering
+		\begin{tabu} spread 0pt{X[c]X[c]XX[c]}
+	Skill Level&Skill Pool&	Skill Bonus&Arc Price\\
+	1&			+1&			\nameref{glossary:Trained}&	1\\
+	2&			+2&			-&			1\\
+	3&			+3&			-&			1\\
+	4&			+4&			\nameref{glossary:Teacher}&	1\\
+	5&			+5&			-&			2\\
+	6&			+6&			-&			2\\
+	7&			+7&			-&			2\\
+	8&			+8&			-&			3\\
+	9&			+9&			-&			3\\
+	10&			+10&		\nameref{glossary:Mastery}&3\\
+		\end{tabu}
+\end{table}
+\paragraph{\label{skills:Trained}Trained} No longer count as ‘Untrained’ when using the skill.
+\paragraph{\label{skills:Teacher}Teacher} Grants the character the ability to give another character one free level of the skill the teacher is proficient in. This ability may only be used once on a person for a single skill, and only a number of skills equal to the receiving character’s INT may be trained this way total. Using this takes about a month of in-game time, give or take at the GM’s discretion, and requires the location and materials needed to perform the trained skill. Multiple characters may be trained at the same time as long as their training starts at the same time and there are adequate resources and facilities.
+\paragraph{\label{skills:Mastery}Mastery} Once per session, you may automatically succeed with 1/2 dice rolled for one Skill roll.
+\paragraph{\label{skills:Skill Level}Skill Level} Each skill has a level (ranged from 1 to 10) decided by the character’s investment of Skill Points (at character creation) or Arc (later game). The skill level gives the character dice equal to their skill level for skill tests, as well as other bonuses at various skill levels. Skills cost Arc to increase. Upon obtaining a level with a listed Skill Bonus, the character receives the stated bonus.
+\paragraph{\label{skills:Skill Pool}Skill Pool (SP)} A skill pool is a pool of dice used during a skill test. The pool is generated from the relevant Attribute at one die per Attribute value, added with dice equal to the character’s skill level in the relevant skill. Only one attribute can be referenced per skill test; if the situation ever calls upon a different attribute, it becomes a second test. For instance, when using the Climb skill, the character might be called on to make both STR and END based tests.
+\paragraph{\label{skills:TN}TN} The Target Number (TN) for skill tests is 7. It is always 7. No force can change it from 7 to anything else. Anything that suggests that it is possible to change the Target Number for skill tests to a number other than 7 is a lie. Ignore those anythings.
+\paragraph{\label{skills:Skill Tests}Skill Tests}: There are many situations in the game in which a character’s skills will be tested, such as trying to negotiate a hostile deal or simply leaping from one roof to another during a chase. Every test of a skill will state a required number of successes (RS) for the skill test to be successful. The character must roll their pool and get equal to or above the skill’s target number (TN), and get equal to or more than the number of required successes (RS) for the test to be passed. Skills’ tests have modifiers to the situation that affect the skill check’s RS, such as trying to climb a wall slanted against the character or knowing the history of a foreign kingdom. If the number of RS is ever raised above the character’s dice pool plus automatic successes the character might get from other factors, then the skill attempt immediately becomes impossible. Situational modifiers can lower RS as well, though it can never be lowered beneath 1. If there is a situation that a skill doesn’t seem to cover, the GM should use their best judgement to create a test based on similar difficulties to the situation.
+\paragraph{\label{skills:Untrained}Untrained} If a character has no levels in a skill they are attempting to use, then they are considered unstrained in it. Some skills cannot be used if the character is untrained in them:
+\begin{itemize}
+	\item Chymistry (Not in Beta)
+	\item \nameref{skill:Crafting}
+	\item \nameref{skill:Engineering}
+	\item \nameref{skill:History}
+	\item \nameref{Navigation}
+\end{itemize}
 Leveling up Skills: Skills have a leveling system based on the amount of points spent in any given skill 
 to increase it to the next level. Skill levels are bought simply by paying the Arc price. 
 
@@ -4102,7 +4085,7 @@ represented as accurately as possible.
 Athletics is the skill for moving, jumping, and performing other feats of physical prowess. Gymnastics, sprinting, jumping, and other classic physical activities fall within its purview. Different attributes may be used with Athletics depending on what the character is doing. Someone lifting weights, for example, will probably use STR, while a sprinter would use MOB. A long-distance or marathon runner would use END. Terrain will apply for running. Walking generally doesn’t require an Athletics test, no matter the rigor.
 
 
-Note: The fastest a mortal person can run is their MOB x4 in yards. 
+Note: The fastest a mortal person can run is their MOB x4 in yards.
 
 
 Action Base Attribute vs. RS or other effects 
@@ -4111,34 +4094,36 @@ Lifting 10xSTR in lbs. above your head STR vs. 1 RS
 Lifting more than 10xSTR in lbs. above your head +1 RS per 10xSTR (to maximum of 50x) 
 Holding 10xSTR in lbs. above your head STR vs. 1 RS 
 Holding that same weight for more than 1 second +1 RS per second held. 
+
+
 Sprinting 
 Sprinting 2x your MOB (for up to 5 seconds) MOB vs. 2 RS 
 Sprinting more than 2x your MOB (for up to 5 seconds) +1 RS per 1x more (to maximum of 4) 
 Sprinting for longer than 5 seconds +1 RS per 10 seconds of sprinting. 
 Encumberance (+1 at Light, +4 at Overloaded) +1 to +4 RS 
 Jumping 
+
+
 Vault a Waist Height Obstacle AGI vs. 2 RS 
 Vault a Shoulder Height Obstacle AGI vs. 3 RS 
 Vault a Reach Height Obstacle AGI vs. 5 RS 
 Vault a Jumping Reach Height Obstacle AGI vs. 6 RS 
+
+
 Jump Horizontally 1 yard MOB vs. 1 RS 
 Jump Horizontally further than 1 yard +2 RS per yard 
 Jump Vertically 1 foot MOB vs. 1 RS 
 Jump Vertically more than 1 foot +2 RS per 1 foot 
-Running 
+
+
+Running
 Running $ \frac{1}{4} $ mile without stopping. No Test Required 
 Running a mile without stopping. END vs. 2 RS 
-
-
 Running 5 miles without stopping. END vs. 5 RS 
 Running an entire marathon without stopping. (~26 mi.) END vs. 8 RS 
 No Running Start (for horizontal) +2 RS 
-Encumberance (+1 at Light, +4 at Overloaded) +1 to +4 RS 
 
- 
-
- 
-
+Encumbrance (+1 at Light, +4 at Overloaded) +1 to +4 RS 
 \paragraph{\label{skill:Climbing}Climbing}---\quad\textbf{(END) }\par
 Climbing is the skill that lets characters scale mountains, cliffs, walls, and ropes. In some cases, climbing is easy: climbing a stable ladder that’s at 90 degrees or less, or any dry, sticking, or bogged surface that’s less than 40 degrees up is a simple climbing test. However, even a 10 degree surface will need at least be tough if it’s covered in ice. Terrain can also be a huge factor when rolling Climbing tests. Failing by more than your character’s Climbing skill requires a Stability test against an RS equal to the initial check, with failing resulting in a fall.
 
@@ -4783,171 +4768,94 @@ First STR Check No modifier.
 *Continue on in like fashion until the character makes a successful strength check, or until the character 
 reaches 0 HLT. 
 
- 
-
 \chapter{Social Class and Wealth}\label{ch:wealth}
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
 \clearpage
-Every soldier who marches to war does so with the labors of a hundred other men and women on his 
-back. His pistol was made in Vienna, the frog for his sword was crafted in York. The fur for his cap was 
-hunted in Russia, the cowhide for his pack was herded in Scotland, his boots were cobbled in Normandy, 
-his sword was made in Solingen, his halberd is Swiss, his breastplate is from Milan, his codpiece is from 
-Flanders, and his booze is from Toulouse. 
+Every soldier who marches to war does so with the labors of a hundred other men and women on his back. His pistol was made in Vienna, the frog for his sword was crafted in York. The fur for his cap was hunted in Russia, the cowhide for his pack was herded in Scotland, his boots were cobbled in Normandy, his sword was made in Solingen, his halberd is Swiss, his breastplate is from Milan, his codpiece is from Flanders, and his booze is from Toulouse. Your characters need to be outfitted if they’re going to survive an adventure. Outfitting costs money.
 
- 
-
-Your characters need to be outfitted if they’re going to survive an adventure. Outfitting costs money. 
-
- 
 
 This chapter explains how the currency system of Song of Swords works, how your characters acquire 
 Wealth and Assets to purchase equipment, and what their Social Class means for them. 
+\section{Character Creation}
+A character’s Social Class represents their standing in society, which determines the amount of Wealth available to them at base (this can be modified by the GM, as well as Boons and Banes), and what their privileges and obligations are within society.
 
- 
+
+At Character Creation, you need to invest at least 1 PCP in Social Class and Wealth. Your investment is very important to your character, as it will impact the amount of equipment and influence they may have at the start of play.
 
 
-Character Creation 
-
- 
-
-A character’s Social Class represents their standing in society, which determines the amount of Wealth 
-available to them at base (this can be modified by the GM, as well as Boons and Banes), and what their 
-privileges and obligations are within society. 
-
- 
-
-At Character Creation, you need to invest at least 1 PCP in Social Class and Wealth. Your investment is 
-very important to your character, as it will impact the amount of equipment and influence they may have 
-at the start of play. 
-
- 
-
-The Social Classes listed in Table XX are generic; every culture will have different names for these 
+The Social Classes listed in \autoref{tab:Social Classes and Wealth} are generic; every culture will have different names for these 
 rankings, often multiple for each one. Confer with your GM to decide what your character’s Social Class 
-means. 
+means.
+\begin{wraptable}{r}{7.5 cm}
+	\centering
+	\caption{Social Classes and Wealth}
+	\label{tab:Social Classes and Wealth}
+	\begin{tabu} spread 0pt{cXX}
+PCP		&Social Class	&Wealth\\\cmidrule{1-3}
+1		&Slave			&Nothing\\
+2		&Peasant		&1 gp\\
+3		&Poor Freeman	&3 gp\\
+4		&Freeman		&5 gp, [1W]\\
+5		&High Freeman	&10 gp, [2W]\\
+6		&Minor Noble	&100 gp, [3W]\\
+7		&Landed Noble	&250 gp, [6W]\\
+8		&High Noble		&500 gp, [10W]\\
+9		&Royalty		&1000 gp, [15W]\\
+10		&High Royalty	&1500 gp, [20W]\\
+	\end{tabu}
+\end{wraptable}
+\subsection{Social Class Benefits} Each Social Class has access to certain benefits, and you may choose several of them from the list associated with your character’s Social Class, at no further cost. As Social Class benefits are Boons of a kind, they can be recorded in the Boons and Banes section of the Character Sheet, however Social Class benefits do not affect the purchasing of Boons and Banes at Character Creation.
+The benefits presented here are examples, and your GM may decide that some of these are inappropriate for your campaign, or that others should be added to the list. Confer with your GM about Social Class and its effects.
 
- 
-Table XX Social Classes and Wealth 
-PCP Social Class Wealth 
-1 Slave Nothing 
-2 Peasant 1 gp 
-3 Poor Freeman 3 gp 
-4 Freeman 5 gp, [1W] 
-5 High Freeman 10 gp, [2W] 
-6 Minor Noble 100 gp, [3W] 
-7 Landed Noble 250 gp, [6W] 
-8 High Noble 500 gp, [10W] 
-9 Royalty 1000 gp, [15W] 
-10 High Royalty 1500 gp, [20W] 
+\begin{table}
+	\centering
+	\caption{Social Class Benefits}
+	\label{tab:Social Class Benefits}
+	\begin{tabu} spread 0pt{X[-1]X}
+Social Class	&Boons\\\toprule
+Slave			&\textbf{Pick 1:} \nameref{boon:Hale and Hearty} (2), \nameref{boon:Beautiful} (2), \nameref{boon:Languages} (1)\\
+Peasant			&\textbf{Pick 1:} \nameref{boon:Hale and Hearty} (2), \nameref{boon:Folks Back Home} (3)\\
+Poor Freeman	&\textbf{Pick 1:} \nameref{boon:Hale and Hearty} (2), \nameref{boon:Folks Back Home} (3), \nameref{boon:Literate} (1)\\
+Freeman			&\textbf{Pick 2:} \nameref{boon:Hale and Hearty} (2), \nameref{boon:Folks Back Home} (3), \nameref{boon:Literate} (1),\\
+High Freeman	&\textbf{Pick 2:} \nameref{boon:Folks Back Home} (6), \nameref{boon:Literate} (1), \nameref{boon:Languages} (1), \nameref{boon:Contacts} (1)\\
+Minor Noble		&\textbf{Pick 2:} \nameref{boon:Allies} (5), \nameref{boon:Famous} (2), \nameref{boon:Hale and Hearty} (2), \nameref{boon:Literate} (1), \nameref{boon:Languages} (1), \nameref{boon:Contacts} (1), \nameref{boon:Folks Back Home} (6)\\
+Landed Noble	&\textbf{Pick 2:} \nameref{boon:Allies} (5), \nameref{boon:Famous} (3), \nameref{boon:Hale and Hearty} (2), \nameref{boon:Literate} (2), \nameref{boon:Languages} (2), \nameref{boon:Contacts} (1), \nameref{boon:Folks Back Home} (6)\\
+High Noble		&\textbf{Pick 2:} \nameref{boon:Allies} (5), \nameref{boon:Famous} (4), \nameref{boon:Hale and Hearty} (2), \nameref{boon:Literate} (2), \nameref{boon:Languages} (2), \nameref{boon:Contacts} (4), \nameref{boon:Folks Back Home} (6)\\
+Royalty			&\textbf{Pick 2:} \nameref{boon:Allies} (10), \nameref{boon:Famous} (4), \nameref{boon:Hale and Hearty} (2), \nameref{boon:Literate} (2), \nameref{boon:Languages} (2), \nameref{boon:Contacts} (4), \nameref{boon:Folks Back Home} (6)\\
+High Royalty	&\textbf{Pick 3:} \nameref{boon:Allies} (10), \nameref{boon:Famous} (4), \nameref{boon:Hale and Hearty} (2), \nameref{boon:Literate} (3), \nameref{boon:Languages} (3), \nameref{boon:Contacts} (6), \nameref{boon:Folks Back Home} (6)\\
+	\end{tabu}
+\end{table}
+\subsection{Abnormal Social Class and Wealth Combinations}%THIS wraps when it really shouldn't, likely because of the original template, this should be fixed
+If your character concept involves being an unusually wealthy or poor member of your social class (say, a penniless errant prince,or an escaped prisoner who found huge wealth on a small island where he was told to search by his dying cellmate) then you can do so, using the following system:\par
+First, decide on the Social Class and Wealth you would like your character to have, and their individual PCP cost (for example, a Landed Noble Social Class [7] and the Wealth of a Peasant [2]). Combine the two costs, and divide the result by 2, rounding up. [This is the only time in the game in which you round up.] This is the total PCP cost for your character’s Social Class and Wealth. You gain all of the benefits of your Social Class, and all of the benefits of your Wealth. Examples are provided in the following table. For their potentially unbalancing nature, all abnormal Social Class and Wealth combinations are subject to GM approval.
 
- 
-
-Social Class Benefits 
-Each Social Class has access to certain benefits, and you may choose several of them from the list 
-associated with your character’s Social Class, at no further cost. As Social Class benefits are Boons of a 
-kind, they can be recorded in the Boons and Banes section of the Character Sheet, however Social Class 
-benefits do not affect the purchasing of Boons and Banes at Character Creation. 
-
- 
-
-The benefits presented here are examples, and your GM may decide that some of these are inappropriate 
-for your campaign, or that others should be added to the list. Confer with your GM about Social Class and 
-
-
-its effects. 
-
- 
-Table XX Social Class Benefits 
-Slave Pick 1: Hale and Hearty (2), Beautiful (2), Languages (1) 
-Peasant Pick 1: Hale and Hearty (2), Folks Back Home (3) 
-
-Poor 
-Freeman 
-
-Pick 1: Hale and Hearty (2), Folks Back Home (3), Literate (1) 
-
-Freeman Pick 2: Hale and Hearty (2), Folks Back Home (3), Literate (1), 
-
-High 
-Freeman 
-
-Pick 2: Folks Back Home (6), Literate (1), Languages (1), Contacts (1) 
-
-Minor Noble Pick 2: Allies (5), Famous (2), Hale and Hearty (2), Literate (1), Languages (1), Contacts (1), Folks 
-Back Home (6) 
-
-Landed 
-Noble 
-
-Pick 2: Allies (5), Famous (3), Hale and Hearty (2), Literate (2), Languages (2), Contacts (1), Folks 
-Back Home (6) 
-High Noble Pick 2: Allies (5), Famous (4), Hale and Hearty (2), Literate (2), Languages (2), Contacts (4), Folks 
-Back Home (6) 
-Royalty Pick 2: Allies (10), Famous (4), Hale and Hearty (2), Literate (2), Languages (2), Contacts (4), 
-Folks Back Home (6) 
-
-High 
-Royalty 
-
-Pick 3: Allies (10), Famous (4), Hale and Hearty (2), Literate (3), Languages (3), Contacts (6), 
-Folks Back Home (6) 
-
- 
-
-Abnormal Social Class and Wealth Combinations 
-If your character concept involves being an unusually wealthy or poor member of your social class (say, a 
-penniless errant prince, or an escaped prisoner who found huge wealth on a small island where he was 
-told to search by his dying cellmate) then you can do so, using the following system: 
-
- 
-
-First, decide on the Social Class and Wealth you would like your character to have, and their individual 
-PCP cost (for example, a Landed Noble Social Class [7] and the Wealth of a Peasant [2]). 
-Combine the two costs, and divide the result by 2, rounding up. [This is the only time in the game in 
-which you round up.] 
-This is the total PCP cost for your character’s Social Class and Wealth. You gain all of the benefits of 
-your Social Class, and all of the benefits of your Wealth. Examples are provided in the following table. 
-For their potentially unbalancing nature, all abnormal Social Class and Wealth combinations are subject 
-to GM approval. 
-
- 
-Table XX Abnormal Social Class and Wealth Combinations 
-Concept Social Class Wealth PCP 
-
-
-Pauper Prince Royalty (8) 0 gp (1) 5 
-Poor Knight Minor Noble (6) 5 gp [1W] (4) 5 
-Incredibly Lucky Peasant Peasant (2) 100 gp [3W] (6) 4 
-Janissary Slave (1) 10 gp [2W] (5) 3 
-Wealth 
-
- 
-
+\begin{table}[!ht]
+	\centering
+	\caption{Abnormal Social Class and Wealth Combinations}
+	\label{tab;Abnormal Class/Wealth Combinations}
+	\begin{tabu} spread 0pt {X[l]X[R]X[R]X[-1,c]}
+Concept						&Social Class		&Wealth				&PCP \\\toprule
+Pauper Prince				&Royalty -- (8)		&0 gp -- (1)		&5\\
+Poor Knight					&Minor Noble -- (6)	&5 gp [1W] -- (4)	&5\\
+Incredibly Lucky Peasant	&Peasant -- (2)		&100 gp [3W] -- (6)	&4\\
+Janissary					&Slave -- (1)		&10 gp [2W] -- (5)	&3\\
+	\end{tabu}
+\end{table}
+\section{Wealth}
 In reality, currency is a tricky business, particularly when you're talking about multiple eras, kingdoms, 
-languages and trade routes. 
+languages and trade routes.
 
- 
 
-To keep things from becoming too labyrinthine, Song of Swords uses a generic wealth system, with each 
-item assigned a value in a currency system based on the Carolingian Pound, a system developed by 
-Charlemagne that was used in Europe for nearly 1,000 years in one form or another. This system is 
-divided into three denominations of currency: Copper, Silver and Gold, representing (in English terms) 
-the Denarius, the Shilling, and the Pound, the lattermost of which was worth (theoretically) a ‘pound’ of 
-silver. 
+To keep things from becoming too labyrinthine, Song of Swords uses a generic wealth system, with each item assigned a value in a currency system based on the Carolingian Pound, a system developed by Charlemagne that was used in Europe for nearly 1,000 years in one form or another. This system is divided into three denominations of currency: Copper, Silver and Gold, representing (in English terms) the Denarius, the Shilling, and the Pound, the lattermost of which was worth (theoretically) a ‘pound’ of silver.
 
- 
 
-This system may be familiar to players of other RPGs, which have drawn upon similar inspiration. We 
-adopt it because of that familiarity, and because the bulk of materials priced in historical documents from 
-Medieval Europe are either already in, or can be easily translated to the Carolignian system. 
+This system may be familiar to players of other RPGs, which have drawn upon similar inspiration. We adopt it because of that familiarity, and because the bulk of materials priced in historical documents from Medieval Europe are either already in, or can be easily translated to the Carolignian system.
 
- 
 
-If you prefer a local currency for your campaign, fear not! Conversion tables for older, newer, or foreign 
-currencies will be provided in upcoming Song of Swords Culture Expansions. 
+If you prefer a local currency for your campaign, fear not! Conversion tables for older, newer, or foreign currencies will be provided in upcoming Song of Swords Culture Expansions.
 
- 
+
 Table XX Currency Value 
 Currency Worth Historical value 
 1 gold piece (gp) 20 sp 1 Pound 
@@ -13481,7 +13389,7 @@ apply when Maximum Combat Pool is called for.
 the character's Combat Pool by the amount listed. For more details on Encumbrance, see Page 
 [X] of Chapter 5: Equipment and Encumbrance. 
 \end{itemize}
- 
+
 
 Missile Pool (MP) 
 MP=(Missile Proficiency Pool+Misc)-(Encumbrance+Fatigue+Pain+Perception Penalty from Headgear) 

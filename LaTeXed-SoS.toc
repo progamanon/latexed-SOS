@@ -195,32 +195,44 @@
 \contentsline {paragraph}{Wanted}{98}{section*.247}
 \contentsline {chapter}{\numberline {7}Skills}{99}{chapter.7}
 \contentsline {section}{\numberline {7.1}Skills}{100}{section.7.1}
-\contentsline {paragraph}{Athletics}{103}{section*.248}
-\contentsline {paragraph}{}{103}{section*.249}
-\contentsline {paragraph}{}{104}{section*.250}
-\contentsline {paragraph}{}{105}{section*.251}
-\contentsline {paragraph}{}{106}{section*.252}
-\contentsline {paragraph}{}{106}{section*.253}
-\contentsline {paragraph}{}{107}{section*.254}
-\contentsline {paragraph}{}{108}{section*.255}
-\contentsline {paragraph}{}{108}{section*.256}
-\contentsline {paragraph}{}{109}{section*.257}
-\contentsline {paragraph}{}{109}{section*.258}
-\contentsline {paragraph}{}{110}{section*.259}
-\contentsline {paragraph}{}{111}{section*.260}
-\contentsline {paragraph}{}{111}{section*.261}
-\contentsline {paragraph}{}{111}{section*.262}
-\contentsline {paragraph}{}{112}{section*.263}
-\contentsline {paragraph}{}{112}{section*.264}
-\contentsline {paragraph}{}{113}{section*.265}
-\contentsline {paragraph}{}{113}{section*.266}
-\contentsline {paragraph}{}{113}{section*.267}
-\contentsline {paragraph}{}{114}{section*.268}
-\contentsline {chapter}{\numberline {8}Social Class and Wealth}{115}{chapter.8}
-\contentsline {chapter}{\numberline {9}Equipment}{119}{chapter.9}
-\contentsline {chapter}{\numberline {10}Proficiencies}{176}{chapter.10}
-\contentsline {chapter}{\numberline {11}Maneuvers}{187}{chapter.11}
-\contentsline {chapter}{\numberline {12}Adventuring}{223}{chapter.12}
-\contentsline {chapter}{\numberline {13}Combat}{227}{chapter.13}
-\contentsline {chapter}{\numberline {14}Injury and Recovery}{251}{chapter.14}
+\contentsline {paragraph}{Trained}{101}{section*.249}
+\contentsline {paragraph}{Teacher}{102}{section*.250}
+\contentsline {paragraph}{Mastery}{102}{section*.251}
+\contentsline {paragraph}{Skill Level}{102}{section*.252}
+\contentsline {paragraph}{Skill Pool (SP)}{102}{section*.253}
+\contentsline {paragraph}{TN}{102}{section*.254}
+\contentsline {paragraph}{Skill Tests}{102}{section*.255}
+\contentsline {paragraph}{Untrained}{102}{section*.256}
+\contentsline {paragraph}{Athletics}{103}{section*.257}
+\contentsline {paragraph}{Climbing}{104}{section*.258}
+\contentsline {paragraph}{Cooking}{105}{section*.259}
+\contentsline {paragraph}{Crafting}{106}{section*.260}
+\contentsline {paragraph}{Engineering}{106}{section*.261}
+\contentsline {paragraph}{History}{107}{section*.262}
+\contentsline {paragraph}{Hunting}{108}{section*.263}
+\contentsline {paragraph}{Intimidate}{108}{section*.264}
+\contentsline {paragraph}{Navigation}{109}{section*.265}
+\contentsline {paragraph}{Observation}{110}{section*.266}
+\contentsline {paragraph}{Orate}{110}{section*.267}
+\contentsline {paragraph}{Perform}{111}{section*.268}
+\contentsline {paragraph}{Persuasion}{111}{section*.269}
+\contentsline {paragraph}{Politics}{112}{section*.270}
+\contentsline {paragraph}{Research}{112}{section*.271}
+\contentsline {paragraph}{Riding}{113}{section*.272}
+\contentsline {paragraph}{Sailing}{113}{section*.273}
+\contentsline {paragraph}{Stealth}{113}{section*.274}
+\contentsline {paragraph}{Subterfuge}{114}{section*.275}
+\contentsline {paragraph}{Surgery}{114}{section*.276}
+\contentsline {paragraph}{Swimming}{115}{section*.277}
+\contentsline {chapter}{\numberline {8}Social Class and Wealth}{116}{chapter.8}
+\contentsline {section}{\numberline {8.1}Character Creation}{117}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Social Class Benefits}{117}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Abnormal Social Class and Wealth Combinations}{118}{subsection.8.1.2}
+\contentsline {section}{\numberline {8.2}Wealth}{119}{section.8.2}
+\contentsline {chapter}{\numberline {9}Equipment}{121}{chapter.9}
+\contentsline {chapter}{\numberline {10}Proficiencies}{178}{chapter.10}
+\contentsline {chapter}{\numberline {11}Maneuvers}{189}{chapter.11}
+\contentsline {chapter}{\numberline {12}Adventuring}{225}{chapter.12}
+\contentsline {chapter}{\numberline {13}Combat}{229}{chapter.13}
+\contentsline {chapter}{\numberline {14}Injury and Recovery}{253}{chapter.14}
 \contentsfinish 
