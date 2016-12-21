@@ -238,6 +238,7 @@
 \contentsline {chapter}{\numberline {10}Proficiencies}{178}{chapter.10}
 \contentsline {chapter}{\numberline {11}Maneuvers}{189}{chapter.11}
 \contentsline {chapter}{\numberline {12}Adventuring}{225}{chapter.12}
+\contentsline {section}{\numberline {12.1}Exhaustion}{227}{section.12.1}
 \contentsline {chapter}{\numberline {13}Combat}{229}{chapter.13}
 \contentsline {chapter}{\numberline {14}Injury and Recovery}{253}{chapter.14}
 \contentsfinish 

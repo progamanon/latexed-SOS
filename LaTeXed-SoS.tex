@@ -279,7 +279,7 @@ facebook.com/OpaqueIndustries\par
 opaque.freeforums.net\par
 \end{center}
 \clearpage
-\tableofcontents
+\tableofcontents%BOOKMARK needs to be added here? 
 \mainmatter
 \chapter{Introduction}\label{ch:intro}
 \newpage
@@ -805,9 +805,10 @@ the narrative forward, and Saga being progress for the over-arching plot, with E
 into the plot in the first place. 
 
 \begin{table}
+	\centering
 	\caption{Awarding Arc Points}
 	\label{tab:AwardingArcPoints}
-		\begin{tabu} spread 0pt {X[c,m]X[l,m] }\toprule %TABLE needs to be fixed, as the vertical lines are garbage
+		\begin{tabu} spread 0pt {X[c,m]X[l,m] } %TABLE needs to be fixed, as the vertical lines are garbage
 Arc Category&Arc Points Awarded Per Session \\\cmidrule{1-2}
 	Saga&0-6
 
@@ -815,9 +816,9 @@ Arc Category&Arc Points Awarded Per Session \\\cmidrule{1-2}
 	Epic&0-6
 
 	18 (upon completion of Arc)\\
-Belief&0-\\
+Belief&0-4\\
 Glory&0-4\\
-Flaw&0-2\\\bottomrule
+Flaw&0-2\\
 		\end{tabu} 
 \end{table}
 The amount of Arc characters have spent is a direct correlation to how powerful they are, and players 
@@ -852,8 +853,6 @@ Refer to the chapters on Attributes~(\autoref{ch:attributes}), Skills~(\autoref{
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
 \clearpage
- 
-
 Attributes refer to your character’s raw physical and mental abilities, which affect all learned Skills, 
 Proficiencies, as well as movement and general adventuring. These are the base components of a 
 character’s makeup: their strength, their perceptiveness, their agility of body and mind. 
@@ -4811,6 +4810,7 @@ If your character concept involves being an unusually wealthy or poor member of 
 First, decide on the Social Class and Wealth you would like your character to have, and their individual PCP cost (for example, a Landed Noble Social Class [7] and the Wealth of a Peasant [2]). Combine the two costs, and divide the result by 2, rounding up. [This is the only time in the game in which you round up.] This is the total PCP cost for your character’s Social Class and Wealth. You gain all of the benefits of your Social Class, and all of the benefits of your Wealth. Examples are provided in the following table. For their potentially unbalancing nature, all abnormal Social Class and Wealth combinations are subject to GM approval.
 
 \begin{table}
+	\centering
 	\caption{Abnormal Social Class and Wealth Combinations}
 	\label{tab;Abnormal Class/Wealth Combinations}
 	\begin{tabu} spread 0pt {X[l]X[R]X[R]X[-1,c]}
@@ -4912,34 +4912,24 @@ Wealth Spent Asset Gained Gold Gained
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
 \clearpage
-“Imagine walking five hundred miles over the course of two weeks, carrying an arquebus, a bardiche, a stone of grain, another 
-stone of water, ten pounds of shot, your own armor, your tent, whatever amenities you want for yourself, and your lord’s favorite 
-dog. In the rain. In winter. With dysentery. Alright, are you imagining that? Now imagine that as soon as you’re done with that, 
+\begin{quotation}
+	\raggedright
+	\emph{“Imagine walking five hundred miles over the course of two weeks, carrying an arquebus, a bardiche, a stone of grain, another stone of water, ten pounds of shot, your own armor, your tent, whatever amenities you want for yourself, and your lord’s favorite dog. In the rain. In winter. With dysentery. Alright, are you imagining that? Now imagine that as soon as you’re done with that, you need to actually fight the enemy. You have a horse, but a senator’s nephew is riding it. You’re knee-deep in mud, and you’ve just been assigned a new recruit to train. He speaks four languages, none of which are yours, and has something to prove. Now he’s drunk and arguing with your superiors, you haven’t slept in thirty hours, you’ve just discovered that the fop nephew has broken your horse’s leg in a gopher hole, and your gun’s wheellock is broken. At that moment, the beating of war-drums echoes from the darkness. Someone screams, and a cannonball lands in your cooking fire, where you were drying your boots. Welcome to war. Enjoy your stay.”}
 
-
-you need to actually fight the enemy. You have a horse, but a senator’s nephew is riding it. You’re knee-deep in mud, and you’ve 
-just been assigned a new recruit to train. He speaks four languages, none of which are yours, and has something to prove. Now 
-he’s drunk and arguing with your superiors, you haven’t slept in thirty hours, you’ve just discovered that the fop nephew has 
-broken your horse’s leg in a gopher hole, and your gun’s wheellock is broken. At that moment, the beating of war-drums echoes 
-from the darkness. Someone screams, and a cannonball lands in your cooking fire, where you were drying your boots. 
-Welcome to war. Enjoy your stay.” 
-Mago Straddock, Dacian Volkodav 
+		\hfill--\textbf{Mago Straddock}, Dacian Volkodav
+\end{quotation}
  
 Your character may be the most feared swordsman in the lands, but without his weapon, he is just and 
 only a man—and probably a soon-to-be-dead man, at that. 
-
  
 
 Equipping your character is very important. Not only will they need a weapon (or five!), but they may 
 also need armor, food and drink, transport, medical supplies, tools for survival, and even slaves. This 
 chapter outlines all that you need to know about weaponry, armor, goods and services. 
-
  
 
-If you need to learn more about gold and Wealth, refer to Chapter XX. Information on carrying your 
-equipment and what that means for your character’s Fatigue is explained in Chapter XX. 
+If you need to learn more about gold and Wealth, refer to \autoref{ch:wealth}. Information on carrying your equipment and what that means for your character’s Fatigue is explained in \autoref{sec:exhaustion}:~\nameref{sec:exhaustion}
 
- 
 
 Chapter 9.1: Melee Weapons 
 
@@ -13102,15 +13092,8 @@ At 5x Carry and beyond, the character is too heavily encumbered to move, and can
 or make any sort of skill or attribute tests that involves moving. Reducing the load is the only way to 
 continue moving. 
 
- 
 
- 
-
-Weight 
-
- 
-
-Exhaustion 
+\section{\label{sec:exhaustion}Exhaustion}
 
  
 Exhaustion \& Fatigue 
