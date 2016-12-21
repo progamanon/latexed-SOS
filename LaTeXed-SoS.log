@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.6)  21 DEC 2016 01:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.6)  21 DEC 2016 16:28
 entering extended mode
 **./LaTeXed-SoS.tex
 (LaTeXed-SoS.tex
@@ -990,7 +990,14 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 (C:\Users\Ammad\AppData\Roaming\MiKTeX\2.9\tex\latex\chngcntr\chngcntr.sty
 Package: chngcntr 2009/09/02 v1.0a change counter resetting
 )
-(LaTeXed-SoS.aux)
+(LaTeXed-SoS.aux
+
+LaTeX Warning: Label `tab:Daggers List' multiply defined.
+
+
+LaTeX Warning: Label `tab:Daggers List' multiply defined.
+
+)
 \openout1 = `LaTeXed-SoS.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
@@ -1016,7 +1023,8 @@ File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    ... okay on input line 103.
 LaTeX Font Info:    Try loading font information for OT1+pplj on input line 103
 .
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pplj.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pplj.fd"
 File: ot1pplj.fd 2004/09/06 font definitions for OT1/pplj.
 )
 (C:\Users\Ammad\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
@@ -1206,11 +1214,11 @@ as been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.196 ...er}{\numberline {7}Skills}{99}{chapter.7}
-                                                   [3])
+                                                   [3] [4])
 \tf@toc=\write4
 \openout4 = `LaTeXed-SoS.toc'.
 
- [4]
+ [5]
 Chapter 1.
 LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <20.74> not available
 (Font)              Font shape `OT1/pplj/b/n' tried instead on input line 284.
@@ -1337,119 +1345,183 @@ Chapter 9.
 
 ] [122
 
-] [123] [124] [125] [126] [127] [128] [129]
-[130] [131] [132] [133] [134] [135] [136] [137] [138] [139] [140] [141]
-[142] [143] [144] [145] [146] [147] [148] [149] [150] [151] [152] [153]
-[154] [155] [156] [157] [158] [159] [160] [161] [162] [163] [164] [165]
-[166] [167]
-Overfull \hbox (4.69121pt too wide) in paragraph at lines 8684--8690
-[]\OT1/pplj/m/n/10.95 Halves Shock ef-fect from weapons +4 Blud-geon-ing AV Ig-
-nores AP Swing/Thrust X for Melee Weapons
+]
+Chapter 10.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 4944.
+
+[123
+
+] [124] [125] [126]
+Overfull \hbox (3.55203pt too wide) in paragraph at lines 5069--5069
+[]\OT1/pplj/m/n/10.95 Weapon
  []
 
-[168] [169] [170]
-Overfull \hbox (1.79176pt too wide) in paragraph at lines 8902--8905
+
+Overfull \hbox (3.37685pt too wide) in paragraph at lines 5069--5069
+ []\OT1/pplj/m/n/10.95 Defense 
+ []
+
+
+Overfull \hbox (2.73079pt too wide) in paragraph at lines 5069--5069
+ \OT1/pplj/m/n/10.95 (Guard)| 
+ []
+
+
+Overfull \hbox (25.02568pt too wide) in alignment at lines 5069--5069
+ [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (0.79689pt too wide) in paragraph at lines 5069--5069
+\OT1/pplj/m/n/10.95 Knife/Pishkan 
+ []
+
+
+Overfull \hbox (0.75975pt too wide) in paragraph at lines 5069--5069
+[]\OT1/pplj/m/n/10.95 Dagger,
+ []
+
+
+Overfull \hbox (0.75975pt too wide) in paragraph at lines 5069--5069
+[]\OT1/pplj/m/n/10.95 Dagger,
+ []
+
+
+Overfull \hbox (0.75975pt too wide) in paragraph at lines 5069--5069
+[]\OT1/pplj/m/n/10.95 Dagger,
+ []
+
+
+Overfull \hbox (0.75975pt too wide) in paragraph at lines 5069--5069
+[]\OT1/pplj/m/n/10.95 Dagger,
+ []
+
+
+Overfull \hbox (25.02568pt too wide) in alignment at lines 5069--5069
+ [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 5069
+ []
+
+[127] [128] [129] [130] [131] [132] [133] [134] [135] [136] [137] [138]
+[139] [140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150]
+[151] [152] [153] [154] [155] [156] [157] [158] [159] [160] [161] [162]
+[163] [164] [165] [166] [167] [168] [169] [170] [171] [172]
+Chapter 11.
+[173
+
+] [174] [175] [176] [177] [178] [179] [180] [181] [182] [183] [184]
+[185] [186] [187] [188] [189] [190]
+Chapter 12.
+[191
+
+] [192]
+Overfull \hbox (1.79176pt too wide) in paragraph at lines 9911--9914
 []\OT1/pplj/m/n/10.95 The ar-mor suits them-selves are bipedal mon-strosi-ties 
 of steel and ma-chine, of-ten laden with weaponry
  []
 
-[171] [172] [173] [174] [175] [176] [177]
-Chapter 10.
-(LaTeXed-SoS.ptc) [178
+[193] [194] [195] [196] [197] [198] [199] [200]
+Chapter 13.
+(LaTeXed-SoS.ptc) [201
 
-] [179
+] [202
 
-] [180] [181] [182] [183] [184] [185] [186]
-[187] [188]
-Chapter 11.
-(LaTeXed-SoS.ptc) [189
+] [203] [204] [205] [206] [207] [208] [209]
+[210] [211]
+Chapter 14.
+(LaTeXed-SoS.ptc) [212
 
-] [190
+] [213
 
-] [191] [192]
-Overfull \hbox (2.20624pt too wide) in paragraph at lines 10691--10700
+] [214] [215]
+Overfull \hbox (2.20624pt too wide) in paragraph at lines 11700--11709
 []\OT1/pplj/m/n/10.95 BUTT-STRIKE [X] Type: Uni-ver-sal, At-tack, Swing-ing Re-
 quire-ments: Have a Polearm or Spear weapon,
  []
 
-[193] [194] [195]
-Overfull \hbox (14.8974pt too wide) in paragraph at lines 10864--10868
+[216] [217] [218]
+Overfull \hbox (14.8974pt too wide) in paragraph at lines 11873--11877
 []\OT1/pplj/m/n/10.95 MELEE SHOOT [X+Variable] Type: Uni-ver-sal, At-tack, Thru
 st-ing Re-quire-ments: Have a loaded/spanned
  []
 
-[196] [197] [198] [199] [200] [201] [202] [203] [204] [205]
-Overfull \hbox (3.67287pt too wide) in paragraph at lines 11546--11554
+[219] [220] [221] [222] [223] [224] [225] [226] [227] [228]
+Overfull \hbox (3.67287pt too wide) in paragraph at lines 12555--12563
 []\OT1/pplj/m/n/10.95 Cover AV Ta-ble X.X Cover Cover AV Tall grass/hit the dir
 t 0 Hid-ing be-hind Horse Mount TOU+Mount
  []
 
-[206] [207] [208] [209]
-Overfull \hbox (7.63388pt too wide) in paragraph at lines 11885--11895
+[229] [230] [231] [232]
+Overfull \hbox (7.63388pt too wide) in paragraph at lines 12894--12904
 []\OT1/pplj/m/n/10.95 DOUBLE FLING [???????] Type: Uni-ver-sal, Mis-sile, Throw
 -ing Re-quire-ments: Have Throw-ing Weapons
  []
 
-[210] [211] [212] [213] [214] [215] [216]
-Overfull \hbox (3.17569pt too wide) in paragraph at lines 12371--12376
+[233] [234] [235] [236] [237] [238] [239]
+Overfull \hbox (3.17569pt too wide) in paragraph at lines 13380--13385
 []\OT1/pplj/m/n/10.95 DISENGAGE [??????] Type: XXXXXX Re-quire-ments: XXXXXX Ma
 -neu-ver: XXXXXX Suc-cess: XXXXXX 
  []
 
-[217] [218] [219] [220] [221] [222] [223] [224]
-Chapter 12.
-(LaTeXed-SoS.ptc) [225
+[240] [241] [242] [243] [244] [245] [246] [247]
+Chapter 15.
+(LaTeXed-SoS.ptc) [248
 
-] [226
+] [249
 
-] [227] [228]
-Chapter 13.
-(LaTeXed-SoS.ptc) [229
+] [250] [251]
+Chapter 16.
+(LaTeXed-SoS.ptc) [252
 
-] [230
+] [253
 
 ]
-Overfull \hbox (6.43309pt too wide) in paragraph at lines 13333--13343
+Overfull \hbox (6.43309pt too wide) in paragraph at lines 14342--14352
 []\OT1/pplj/m/n/10.95 Combat Pool (CP) CP = (Adroit-ness+Proficiency Pool+Misc)
 -(Encumbrance+Fatigue+Pain+Misc) Com-
  []
 
-[231]
-Overfull \hbox (15.93843pt too wide) in paragraph at lines 13356--13363
+[254]
+Overfull \hbox (15.93843pt too wide) in paragraph at lines 14365--14372
 []\OT1/pplj/m/n/10.95 Missile Pool (MP) MP=(Missile Pro-fi-ciency Pool+Misc)-(E
 ncumbrance+Fatigue+Pain+Perception Penalty
  []
 
-[232] [233] [234] [235] [236] [237] [238] [239] [240] [241] [242] [243]
-[244] [245] [246] [247] [248] [249]
-Overfull \hbox (20.06726pt too wide) in paragraph at lines 14958--14974
+[255] [256] [257] [258] [259] [260] [261] [262] [263] [264] [265] [266]
+[267] [268] [269] [270] [271] [272] [273]
+Overfull \hbox (20.06726pt too wide) in paragraph at lines 15967--15983
 []\OT1/pplj/m/n/10.95 Mounted Ad-van-tages/Disadvantages Mounted Char-ac-ters g
 ain the fol-low-ing ad-van-tages while Mounted.
  []
 
-[250] [251] [252]
-Chapter 14.
-(LaTeXed-SoS.ptc) [253
+[274] [275]
+Chapter 17.
+(LaTeXed-SoS.ptc) [276
 
-] [254
+] [277
 
-] [255] [256] [257] [258] [259] [260] [261]
-[262] [263] [264] [265] [266] [267] [268] [269] [270] [271] [272] [273]
-[274] [275] [276] [277] [278] [279] [280] [281] [282] [283]
+] [278] [279] [280] [281] [282] [283] [284]
+[285] [286] [287] [288] [289] [290] [291] [292] [293] [294] [295] [296]
+[297] [298] [299] [300] [301] [302] [303] [304] [305] [306]
 \tf@ptc=\write5
 \openout5 = `LaTeXed-SoS.ptc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 17949.
- [284]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 17949.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18958.
+ [307]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 18958.
 
 (LaTeXed-SoS.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 17949.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 18958.
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 17949
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 18958
 .
 Package rerunfilecheck Info: File `LaTeXed-SoS.out' has not changed.
-(rerunfilecheck)             Checksum: 54646F274399FC2C5503B2AC140B38D0;4069.
+(rerunfilecheck)             Checksum: D4D068BF06A614CF1A55D43A9AA76EFE;4496.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1457,16 +1529,19 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 17949.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 18958.
  ) 
 Here is how much of TeX's memory you used:
- 13282 strings out of 493335
- 195922 string characters out of 3136680
- 430498 words of memory out of 3000000
- 15857 multiletter control sequences out of 15000+200000
+ 13346 strings out of 493335
+ 196616 string characters out of 3136680
+ 458773 words of memory out of 3000000
+ 15872 multiletter control sequences out of 15000+200000
  47999 words of font info for 121 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,16n,43p,1538b,607s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,16n,52p,1538b,637s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fil
@@ -1480,9 +1555,9 @@ es (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files (x86)/MiKTeX
  2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/urw/palatino/uplri8a.pfb>
-Output written on LaTeXed-SoS.pdf (292 pages, 1151296 bytes).
+Output written on LaTeXed-SoS.pdf (316 pages, 1215826 bytes).
 PDF statistics:
- 2461 PDF objects out of 2487 (max. 8388607)
- 638 named destinations out of 1000 (max. 500000)
- 18953 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 2630 PDF objects out of 2984 (max. 8388607)
+ 687 named destinations out of 1000 (max. 500000)
+ 19009 words of extra memory for PDF output out of 20736 (max. 10000000)
 

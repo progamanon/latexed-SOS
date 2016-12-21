@@ -235,10 +235,33 @@
 \contentsline {subsection}{\numberline {8.1.2}Abnormal Social Class and Wealth Combinations}{118}{subsection.8.1.2}
 \contentsline {section}{\numberline {8.2}Wealth}{119}{section.8.2}
 \contentsline {chapter}{\numberline {9}Equipment}{121}{chapter.9}
-\contentsline {chapter}{\numberline {10}Proficiencies}{178}{chapter.10}
-\contentsline {chapter}{\numberline {11}Maneuvers}{189}{chapter.11}
-\contentsline {chapter}{\numberline {12}Adventuring}{225}{chapter.12}
-\contentsline {section}{\numberline {12.1}Exhaustion}{227}{section.12.1}
-\contentsline {chapter}{\numberline {13}Combat}{229}{chapter.13}
-\contentsline {chapter}{\numberline {14}Injury and Recovery}{253}{chapter.14}
+\contentsline {chapter}{\numberline {10}Melee Weapons}{123}{chapter.10}
+\contentsline {subsection}{\numberline {10.0.1}Which Weapon for Me?}{123}{subsection.10.0.1}
+\contentsline {subsubsection}{Attack TN}{124}{section*.285}
+\contentsline {subsubsection}{Attack Damage}{124}{section*.286}
+\contentsline {subsubsection}{Defense TN / Guard}{124}{section*.287}
+\contentsline {subsubsection}{Reach}{124}{section*.288}
+\contentsline {subsubsection}{Special}{124}{section*.289}
+\contentsline {subsubsection}{How Many Weapons?}{125}{section*.290}
+\contentsline {subsection}{\numberline {10.0.2}Melee Weapon Characteristics}{125}{subsection.10.0.2}
+\contentsline {subsubsection}{Weapon Name}{125}{section*.291}
+\contentsline {subsubsection}{Weapon Type}{125}{section*.292}
+\contentsline {subsubsection}{Hands}{125}{section*.293}
+\contentsline {subsubsection}{Reach}{125}{section*.294}
+\contentsline {subsubsection}{Swing}{126}{section*.296}
+\contentsline {subsubsection}{Thrust}{126}{section*.297}
+\contentsline {subsubsection}{Defense / Guard}{126}{section*.298}
+\contentsline {subsubsection}{Special}{126}{section*.299}
+\contentsline {subsubsection}{Weight}{126}{section*.300}
+\contentsline {subsubsection}{Cost}{127}{section*.301}
+\contentsline {section}{\numberline {10.1}Daggers}{127}{section.10.1}
+\contentsline {section}{\numberline {10.2}Swords}{129}{section.10.2}
+\contentsline {chapter}{\numberline {11}Armor}{173}{chapter.11}
+\contentsline {chapter}{\numberline {12}Burdinadin Armory}{191}{chapter.12}
+\contentsline {chapter}{\numberline {13}Proficiencies}{201}{chapter.13}
+\contentsline {chapter}{\numberline {14}Maneuvers}{212}{chapter.14}
+\contentsline {chapter}{\numberline {15}Adventuring}{248}{chapter.15}
+\contentsline {section}{\numberline {15.1}Exhaustion}{250}{section.15.1}
+\contentsline {chapter}{\numberline {16}Combat}{252}{chapter.16}
+\contentsline {chapter}{\numberline {17}Injury and Recovery}{276}{chapter.17}
 \contentsfinish 

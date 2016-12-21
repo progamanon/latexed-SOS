@@ -5036,85 +5036,38 @@ no Weight value.
 
 \subsubsection{Cost}
 The weapon’s cost. May vary regionally.
-
 Melee Weapons
-Daggers %DAGGERS TABLE
-
-Table X.X Daggers
-Weapon Name Weapon 
-
-Type Hands Reach Swing Thrust
-
-Defense/ 
-Guard Special Wt Cost
-
-
-Ballock Dagger Dagger 1H H 7(-1c) 6(+1p) 8(1) Fluid Thrusts, Light 
-
-Blade 0 5 cp
-Baselard Dagger 1H S 6(+0c) 6(+0p) 7(1) Fluid Thrusts 0 2 sp
-
-Bowie Knife/ 
-Pishkan Toothpick Dagger 1H S 6(+0c) 6(+1p) 8(1) 0 10 cp
-Cinquedea Dagger, 
-
-Sword 1H S 6(+0c) 7(+2p) 8(0) - 0 3 sp
-Degan Dagger, 
-
-Sword 1H S 6(-1c) 6(+1p) 7(0)
-
-Fluid Thrusts, Light 
-Blade 0 1 sp
-Dirk Dagger 1H H 7(-1c) 6(+0p) 7(0) Fluid Thrusts, Light 
-
-Blade 0 4 cp
-
-Khyber Knife Dagger, 
-
-Sword 1H S 7(+0c) 7(+1p) 7(0) Draw 2, Thin Blade 0 10 cp
-Knife (Large) Dagger 1H S 6(-1c) 6(+0p) 9(0) Draw 1, Light Blade 0 7 cp
-Knife (Small) Dagger 1H H 6(-2c) 6(-1p) 9(0) Draw 1, Light Blade, 
-
-Thin Blade 0 6 cp
-Kukri Dagger 1H S 6(+1c) 7(+0p) 9(0) Draw 2, Light Blade, 
-
-Forward Swept 0 1 sp
-Main Gauche Dagger 1H H 7(-1c) 7(+0p) 6(3) Companion Weapon, 
-
-Light Blade 0 3 sp
-Misericorde Dagger 1H H 9(-2c) 5(-2p) 10(0) Fluid Thrusts, Light 
-
-Blade, Thin Blade 0 3 cp
-Navaja Dagger 1H H 6(+0c) 7(-1p) 8(0) Draw 2, Light Blade 0 6 cp
-Poignard Dagger 1H H 6(-1c) 6(+0p) 8(1) Fluid Thrusts, Light 
-
-Blade, Thin Blade 0 6 cp
-Pugio Dagger 1H H 7(-1c) 6(+1p) 7(0) Light Blade, Spatulate Tip
-
-2 0 6 cp
-Puukko Dagger 1H H 6(-1c) 6(-0p) 9(0) Fluid Thrusts, Light 
-
-Blade 0 4 cp
-Rondel Dagger Dagger 1H S 7(-1c) 6(+1p) 7(1) Fluid Thrusts, Light 
-
-Blade, Thin Blade 0 6 cp
-
-Short Katzbalger Dagger, 
-
-Sword 1H S 7(+0c) 7(+0p) 7(1) Spatulate Tip 2 0 6 sp
-Stiletto Dagger 1H H 7(-1c) 6(+0p) 8(1) Fluid Thrusts, Light 
-
-Blade, Thin Blade 0 8 cp
-Swordbreaker Dagger 1H S 6(-1c) 6(+0p) 7(1) Companion Weapon, 
-
-Parrying Teeth 0 1 sp
-Tanto Dagger 1H H 7(+0c) 6(+0p) 8(1) Draw 1, Light Blade, 
-
-Thin Blade 0 3 sp
-
-Swords%SWORDS TABLE 1H
-
-
+\section{Daggers} %DAGGERS TABLE IS ABSOLUTELY FUCKED. I think linewidth 1.2 could fix it, but I'm not sure how to use \centering for the table without putting it after the \linewidth command itself. Would a \parbox work?
+\begin{longtabu} to 1.05\linewidth {X[2,l]	X	X[-1,c]X[-1,c]	XXX[-1,c]	X[2,l]	X[-3,c]X[-3,r]}
+	\centering\\
+	\caption{Daggers}\\
+	\label{tab:Daggers List}\\
+	\global\extrarowsep = 3mm
+Weapon Name 					&Weapon Type	&Hands&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\\toprule
+\endhead
+Ballock Dagger					&Dagger			&1H	&H	&7(-1c)	&6(+1p)	&8(1)	&Fluid Thrusts, Light Blade				&0	&5 cp \\
+Baselard						&Dagger			&1H	&S	&6(+0c)	&6(+0p)	&7(1)	&Fluid Thrusts							&0	&2 sp \\
+Bowie Knife/Pishkan Toothpick	&Dagger			&1H	&S	&6(+0c)	&6(+1p)	&8(1)	&-										&0	&10 cp\\
+Cinquedea						&Dagger, Sword	&1H	&S	&6(+0c)	&7(+2p)	&8(0)	&-										&0	&3 sp \\
+Degan							&Dagger, Sword	&1H	&S	&6(-1c)	&6(+1p)	&7(0)	&Fluid Thrusts, Light Blade				&0	&1 sp \\
+Dirk							&Dagger			&1H	&H	&7(-1c)	&6(+0p)	&7(0)	&Fluid Thrusts, Light Blade				&0	&4 cp \\
+Khyber Knife					&Dagger, Sword	&1H	&S	&7(+0c)	&7(+1p)	&7(0)	&Draw 2, Thin Blade						&0	&10 cp\\
+Knife (Large)					&Dagger			&1H	&S	&6(-1c)	&6(+0p)	&9(0)	&Draw 1, Light Blade					&0	&7 cp \\
+Knife (Small)					&Dagger			&1H	&H	&6(-2c)	&6(-1p)	&9(0)	&Draw 1, Light Blade, Thin Blade		&0	&6 cp \\
+Kukri							&Dagger			&1H	&S	&6(+1c)	&7(+0p)	&9(0)	&Draw 2, Light Blade, Forward Swept		&0	&1 sp \\
+Main Gauche						&Dagger			&1H	&H	&7(-1c)	&7(+0p)	&6(3)	&Companion Weapon, Light Blade			&0	&3 sp \\
+Misericorde						&Dagger			&1H	&H	&9(-2c)	&5(-2p)	&10(0)	&Fluid Thrusts, Light Blade, Thin Blade	&0	&3 cp \\
+Navaja							&Dagger			&1H	&H	&6(+0c)	&7(-1p)	&8(0)	&Draw 2, Light Blade					&0	&6 cp \\
+Poignard						&Dagger			&1H	&H	&6(-1c)	&6(+0p)	&8(1)	&Fluid Thrusts, Light Blade, Thin Blade	&0	&6 cp \\
+Pugio							&Dagger			&1H	&H	&7(-1c)	&6(+1p)	&7(0)	&Light Blade, Spatulate Tip 2			&0	&6 cp \\
+Puukko							&Dagger			&1H	&H	&6(-1c)	&6(-0p)	&9(0)	&Fluid Thrusts, Light Blade				&0	&4 cp \\
+Rondel Dagger					&Dagger			&1H	&S	&7(-1c)	&6(+1p)	&7(1)	&Fluid Thrusts, Light Blade, Thin Blade	&0	&6 cp \\
+Short Katzbalger				&Dagger, Sword	&1H	&S	&7(+0c)	&7(+0p)	&7(1)	&Spatulate Tip 2						&0	&6 sp \\
+Stiletto						&Dagger			&1H	&H	&7(-1c)	&6(+0p)	&8(1)	&Fluid Thrusts, Light Blade, Thin Blade	&0	&8 cp \\
+Swordbreaker					&Dagger			&1H	&S	&6(-1c)	&6(+0p)	&7(1)	&Companion Weapon, Parrying Teeth		&0	&1 sp \\
+Tanto							&Dagger			&1H	&H	&7(+0c)	&6(+0p)	&8(1)	&Draw 1, Light Blade, Thin Blade		&0	&3 sp \\
+\end{longtabu}
+\section{Swords}%SWORDS TABLE 1H
 1H Swords
 
 Table X.X 1H Swords
@@ -8587,9 +8540,9 @@ then halve the result).
 Half AV Coverage
 Some Hit Locations will be listed with this symbol: *. This means that the armor provides only half AV Coverage to 
 that Hit Location. 
-
+	
 Weak Spots
-Some Hit Locations will be listed with this symbol: ϕ. This indicates a weak spot in the armor. Weak spots can be 
+Some Hit Locations will be listed with this symbol: $\phi$. This indicates a weak spot in the armor. Weak spots can be 
 targeted using the Joint-Thrust Maneuver.
 
 Special
@@ -8651,15 +8604,15 @@ against Thrusts.
 
 0.5 8 sp
 
-Couters 8 7 6 Elbowϕ Hard 1 5 sp
+Couters 8 7 6 Elbow$\phi$ Hard 1 5 sp
 Cuirass 8 7 6 Belly, Chest, Lower 
 
 Back, Side, Upper Back Hard 2.5 2 gp
 Cuisses 8 7 6 Thigh Hard 2 8 sp
-Fauld 8 7 6 Groinϕ, Hipϕ, Thighsϕ Hard, Layers 2 (Groin, Hip, 
+Fauld 8 7 6 Groin$\phi$, Hip$\phi$, Thighs$\phi$ Hard, Layers 2 (Groin, Hip, 
 
 Thighs) 1.5 10 sp
-Gauntlets 8 7 6 Handϕ Hard 2 5 sp
+Gauntlets 8 7 6 Hand$\phi$ Hard 2 5 sp
 Gorget 8 7 6 Neck Hard 1 10 sp
 Greaves 8 7 6 Shin Hard 1.5 6 sp
 
@@ -8674,7 +8627,7 @@ Hard, Layer 1, Mail 2.5 2 gp
 Mail Long Sleeves 6 4 3 Elbow, Forearm, 
 
 Shoulder, Upper Arm Hard, Layer 1, Mail 1.5 1 gp
-Poleyns 8 7 6 Kneeϕ Hard 1.5 5 sp
+Poleyns 8 7 6 Knee$\phi$ Hard 1.5 5 sp
 Quilted Shirt 2 3 4 Full Torso, Groin, Hip, 
 
 Thighs Textile 0 1 sp
@@ -8690,7 +8643,7 @@ Shoulder, Upper Arm Textile 0 6 cp
 Rerebraces 8 7 6 Upper Arm Hard 1 5 sp
 Sabatons 8 7 6 Foot Hard 1.5 5 sp
 
-Spaulders 8 7 6 Shoulderϕ, Upper Armϕ*
+Spaulders 8 7 6 Shoulder$\phi$, Upper Arm$\phi$*
 
 Hard, Provides half AV against
 Thrust attacks to the Shoulder 
@@ -8718,7 +8671,7 @@ Component Name AVC AVP AVB Coverage Special Wt Cost
 Cuirass 8 7 6 Belly, Chest, Lower 
 
 Back, Side, Upper Back Hard 2.5 2 gp
-Fauld 8 7 6 Groinϕ, Hipϕ, Thighsϕ Hard, Layers 2 (Groin, Hip, 
+Fauld 8 7 6 Groin$\phi$, Hip$\phi$, Thighs$\phi$ Hard, Layers 2 (Groin, Hip, 
 
 Thighs) 1.5 10 sp
 Leather Boots 3 2 2 Feet - 0 1 sp
@@ -8743,7 +8696,7 @@ Sleeves 2 3 4
 Elbow, Forearm, 
 Shoulder, Upper Arm Textile 0 6 cp
 
-Spaulders 8 7 6 Shoulderϕ, Upper Armϕ*
+Spaulders 8 7 6 Shoulder$\phi$, Upper Arm$\phi$*
 
 Hard, Provides half AV against
 Thrust attacks to the Shoulder 
@@ -8764,7 +8717,7 @@ cheaper and lighter than Full Plate Armor, but it provides less comprehensive pr
 
 Table XX Plate and Mail Armor 
 Component Name AVC AVP AVB Coverage Special Wt Cost
-Couters 8 7 6 Elbowϕ Hard 1 5 sp
+Couters 8 7 6 Elbow $\phi$ Hard 1 5 sp
 Cuirass 8 7 6 Belly, Chest, Lower 
 
 Back, Side, Upper Back Hard 2.5 2 gp
@@ -8789,7 +8742,7 @@ Gloves/Mittens 6 4 3 Hand Hard, Layer 1, Mail 0.5 3 sp
 Mail Long Sleeves 6 4 3 Elbow, Forearm, 
 
 Shoulder, Upper Arm Hard, Layer 1, Mail 1.5 1 gp
-Poleyns 8 7 6 Kneeϕ Hard 1.5 5 sp
+Poleyns 8 7 6 Knee$\phi$ Hard 1.5 5 sp
 
 Quilted Coat 2 3 4
 
@@ -8904,7 +8857,7 @@ Anima Greaves 7 7 7 Shin Hard 2 1 gp
 Anima Poleyns 7 7 7 Knee Hard 2 10 sp
 Anima Rerebraces 7 7 7 Upper Arm Hard 1 1 gp
 
-Anima Spaulders 7 7 7 Shoulder, Upper Armϕ*
+Anima Spaulders 7 7 7 Shoulder, Upper Arm$\phi$*
 
 Hard, Provides half AV against 
 Thrust attacks to the Shoulder 
@@ -8957,11 +8910,11 @@ Thighs
 
 Hard 3 3 gp
 
-Couters 8 7 6 Elbowϕ Hard 1 5 sp
+Couters 8 7 6 Elbow$\phi$ Hard 1 5 sp
 
 
-Jack Chains 6 0 3 Elbowϕ, Forearmϕ, 
-Upper Armϕ
+Jack Chains 6 0 3 Elbow$\phi$, Forearm$\phi$, 
+Upper Arm$\phi$
 
 Hard, No AV against Thrust 
 attacks of any damage type 0.5 1 sp
@@ -8997,7 +8950,7 @@ TOTAL 5
 DIS Uniform
 Component Name AVC AVP AVB Coverage Special Wt Cost
 Leather Boots 3 2 2 Feet - 0 1 sp
-Mirror Plate 10 9 8 Chestϕ Hard 1.5 1 gp
+Mirror Plate 10 9 8 Chest$\phi$ Hard 1.5 1 gp
 Quilted Leggings 2 3 4 Groin, Hip, Knees, 
 
 Shins, Thighs Textile 0 2 sp
@@ -9060,8 +9013,8 @@ Hard, Layer 1, Mail 2.5 2 gp
 Mail Long Sleeves 6 4 3 Elbow, Forearm, 
 
 Shoulder, Upper Arm Hard, Layer 1, Mail 1.5 1 gp
-Mirror Plate 10 9 8 Chestϕ Hard 1.5 1 gp
-Poleyns 8 7 6 Kneeϕ Hard 1.5 5 sp
+Mirror Plate 10 9 8 Chest$\phi$ Hard 1.5 1 gp
+Poleyns 8 7 6 Knee$\phi$ Hard 1.5 5 sp
 Quilted Leggings 2 3 4 Groin, Hip, Knees, 
 
 Shins, Thighs Textile 0 2 cp
@@ -9085,13 +9038,13 @@ Table X.X Helmets
 Component Name AVC AVP AVB Coverage Special Wt PP Cost
 
 
-Armet 8 7 6 Full Head, Faceϕ,
+Armet 8 7 6 Full Head, Face$\phi$,
 Neck
 
 restricts Breathing 2,
 Integrated Visor, Hard 4 -2 2 gp
 
-Barbute 8 7 6 Faceϕ*, Lower Head, 
+Barbute 8 7 6 Face$\phi$*, Lower Head, 
 
 Upper Head Hard 1 -1 10 sp
 
@@ -9112,13 +9065,13 @@ Head
 Hard, +1 AV vs 
 Downward Swings 2 -1 10 sp
 
-Close Helmet 8 7 6 Full Head, Faceϕ,
+Close Helmet 8 7 6 Full Head, Face$\phi$,
 Neck
 
 restricts Breathing 2,
 Integrated Visor, Hard 3.5 -1 3 gp
 
-Closed Sallet 8 7 6 Faceϕ, Lower Head*, 
+Closed Sallet 8 7 6 Face$\phi$, Lower Head*, 
 Upper Head
 
 Hard, No AV on Face vs 
@@ -9130,13 +9083,13 @@ Conical Helm 8 7 6 Upper Head Hard, +2 AV vs
 
 Downward Swings 2 0 2 sp
 
-Great Bascinet 8 7 6 Full Head, Faceϕ, Neck, 
+Great Bascinet 8 7 6 Full Head, Face$\phi$, Neck, 
 Shoulder
 
 restricts Breathing 2, 
 Integrated Visor, Hard 3.5 -2 15 sp
 
-Great Helm 8 7 6 Full Head, Faceϕ, Neckϕ
+Great Helm 8 7 6 Full Head, Face$\phi$, Neck$\phi$
 
 restricts Breathing 3, 
 Hard, Can be worn with a
@@ -9204,7 +9157,7 @@ Head, Face, and Neck
 
 Tailed Sallet 8 7 6
 
-Faceϕ, Lower Head*, 
+Face$\phi$, Lower Head*, 
 Neck*, Shoulders*, 
 Upper Head
 
@@ -9233,19 +9186,19 @@ is easier than trying to pull off his helmet (see the Maneuvers section for more
 
 Table X.X Visors
 Component Name AVC AVP AVB Coverage Special Wt PP Cost
-Bar-Nasel 4 2 1 Faceϕ Hard, No AV vs Upward Swings 0 0 1 sp
-Cage Visor 7 3 5 Faceϕ Hard, Movable 1 0 5 sp
+Bar-Nasel 4 2 1 Face$\phi$ Hard, No AV vs Upward Swings 0 0 1 sp
+Cage Visor 7 3 5 Face$\phi$ Hard, Movable 1 0 5 sp
 Falling Buff 
-(Hinged Gorget) 8 7 6 Faceϕ, Neck
+(Hinged Gorget) 8 7 6 Face$\phi$, Neck
 
 restricts Breathing 2, Hard, 
 Movable 2 -1 1 gp
-Full Visor 8 7 6 Faceϕ restricts Breathing 2, Hard, 
+Full Visor 8 7 6 Face$\phi$ restricts Breathing 2, Hard, 
 
 Movable 1.5 -1 10 sp
-Goggle Type 5 4 3 Faceϕ Hard, No AV vs Upward Swings 0.5 -1 3 sp
+Goggle Type 5 4 3 Face$\phi$ Hard, No AV vs Upward Swings 0.5 -1 3 sp
 Mail Ventail 6 4 3 Face Layer 1, Hard 1 -1 2 sp
-Tri-Bar Nasel 6 3 2 Faceϕ Hard, No AV vs Upward Swings 0.5 0 3 sp
+Tri-Bar Nasel 6 3 2 Face$\phi$ Hard, No AV vs Upward Swings 0.5 0 3 sp
 
 
 Optional Helmet Crests
@@ -9292,11 +9245,11 @@ Quilted Coif 2 3 4 Lower Head, Neck,
 
 Upper Head Textile 0 0 4 cp
 Quilted Ventail 2 3 4 Face Textile 0 -1 1 cp
-Steel Facemask 8 7 6 Faceϕ Restricts Breathing 1, Hard 2 -1 8 sp
+Steel Facemask 8 7 6 Face$\phi$ Restricts Breathing 1, Hard 2 -1 8 sp
 
 Table X.X Neck Protection
 Component Name AVC AVP AVB Coverage Special Wt PP Cost
-Bevor 8 7 6 Faceϕ*, Lower Head, 
+Bevor 8 7 6 Face$\phi$*, Lower Head, 
 
 Neck Restricts Breathing 1, Hard 2 0 12 sp
 Gorget 8 7 6 Neck Hard 1 0 10 sp
@@ -9325,26 +9278,26 @@ Cuirass 8 7 6 Belly, Chest, Lower
 
 Back, Side, Upper Back Hard 2.5 2 gp
 Codpiece 8 7 6 Groin Hard 0 5 sp
-Fauld 8 7 6 Groinϕ, Hipϕ, Thighsϕ Hard, Layers 2 (Groin, Hip, 
+Fauld 8 7 6 Groin$\phi$, Hip$\phi$, Thighs$\phi$ Hard, Layers 2 (Groin, Hip, 
 
 Thighs) 1.5 10 sp
-Heartguard 8 7 6 Chestϕ Hard 0 1 sp
-Mirror Plate 10 9 8 Chestϕ Hard 1.5 1 gp
+Heartguard 8 7 6 Chest$\phi$ Hard 0 1 sp
+Mirror Plate 10 9 8 Chest$\phi$ Hard 1.5 1 gp
 Munitions 
 Breastplate 7 6 5 Chest Hard 2.5 10 sp
-Munitions Cuirass 7 6 5 Bellyϕ, Chestϕ, Sideϕ Hard 3.5 15 sp
-Munitions Fauld 7 6 5 Groinϕ, Hipϕ, Thighsϕ Hard, Layers 1 (Groin, Hip, 
+Munitions Cuirass 7 6 5 Belly$\phi$, Chest$\phi$, Side$\phi$ Hard 3.5 15 sp
+Munitions Fauld 7 6 5 Groin$\phi$, Hip$\phi$, Thighs$\phi$ Hard, Layers 1 (Groin, Hip, 
 
 Thighs) 2.5 10 sp
-Plackart 8 7 6 Bellyϕ, Hipϕ, Sideϕ, Hard, Layers 2 (Belly, Side) 0.5 1 gp
+Plackart 8 7 6 Belly$\phi$, Hip$\phi$, Side$\phi$, Hard, Layers 2 (Belly, Side) 0.5 1 gp
 
 Table X.X Laminar Torso Armor
 Component Name AVC AVP AVB Coverage Special Wt Cost
 Anima Cuirass 7 7 7 Belly, Chest, Side Hard 3 48 sp
-Anima Fauld 7 7 7 Groinϕ, Hip, Thighsϕ Hard 3 1 gp
+Anima Fauld 7 7 7 Groin$\phi$, Hip, Thighs$\phi$ Hard 3 1 gp
 
 
-Laminar Cuirass 8 7 5 Bellyϕ, Chestϕ, Sideϕ Hard 3 1 gp
+Laminar Cuirass 8 7 5 Belly$\phi$, Chest$\phi$, Side$\phi$ Hard 3 1 gp
 Segmented Tassets 8 7 5 Groin, Hip Hard 3 12 sp
 
 Table X.X Mail Torso Armor
@@ -9479,21 +9432,21 @@ against Thrusts.
 
 Bulletproof 
 Vambraces 10 9 8 Forearm Bulletproof, Hard 2 1 gp
-Couters 8 7 6 Elbowϕ Hard 1 5 sp
-Gauntlets 8 7 6 Handϕ Hard 2 5 sp
-Jack Chains 6 0 3 Elbowϕ, Forearmϕ, 
-Upper Armϕ
+Couters 8 7 6 Elbow$\phi$ Hard 1 5 sp
+Gauntlets 8 7 6 Hand$\phi$ Hard 2 5 sp
+Jack Chains 6 0 3 Elbow$\phi$, Forearm$\phi$, 
+Upper Arm$\phi$
 
 Hard, No AV against Thrust 
 attacks of any damage type 0.5 1 sp
 
 
 Munitions 
-Pauldrons 8 7 6 Shoulderϕ, Upper Armϕ Hard 4 8 sp
+Pauldrons 8 7 6 Shoulder$\phi$, Upper Arm$\phi$ Hard 4 8 sp
 Munitions 
-Rerebraces 7 6 5 Upper Armϕ Hard 3 2 sp
+Rerebraces 7 6 5 Upper Arm$\phi$ Hard 3 2 sp
 Munitions 
-Spaulders 7 6 5 Shoulderϕ, Upper Armϕ*
+Spaulders 7 6 5 Shoulder$\phi$, Upper Arm$\phi$*
 
 Hard, Provides half AV against 
 Thrust attacks to the Shoulder 
@@ -9502,11 +9455,11 @@ and Upper Arm
 1 4 sp
 
 Munitions 
-Vambraces 7 6 5 Forearmϕ Hard 1.5 2 sp
+Vambraces 7 6 5 Forearm$\phi$ Hard 1.5 2 sp
 Pauldrons 10 9 8 Shoulder, Upper Arm Bulletproof, Hard 3 1 gp
 Rerebraces 8 7 6 Upper Arm Hard 1 5 sp
 
-Spaulders 8 7 6 Shoulderϕ, Upper Armϕ*
+Spaulders 8 7 6 Shoulder$\phi$, Upper Arm$\phi$*
 
 Hard, Provides half AV against
 Thrust attacks to the Shoulder 
@@ -9521,7 +9474,7 @@ Component Name AVC AVP AVB Coverage Special Wt Cost
 Anima Pauldrons 7 7 7 Shoulder, Upper Arm Hard 2 2 gp
 Anima Rerebraces 7 7 7 Upper Arm Hard 1 1 gp
 
-Anima Spaulders 7 7 7 Shoulder, Upper Armϕ*
+Anima Spaulders 7 7 7 Shoulder, Upper Arm$\phi$*
 
 Hard, Provides half AV against 
 Thrust attacks to the Shoulder 
@@ -9531,11 +9484,11 @@ and Upper Arm
 
 Anima Vambrace 7 7 7 Forearm Hard 2 3 gp
 Laminar Forearm 
-Guard 8 7 5 Forearmϕ Hard 2 3 sp
+Guard 8 7 5 Forearm$\phi$ Hard 2 3 sp
 Laminar Elbow 
-Joint 8 7 5 Elbowϕ Hard 2 3 sp
-Laminar Pauldrons 8 7 5 Shoulderϕ, Upper Armϕ Hard 3 10 sp
-Laminar Rerebrace 8 7 5 Upper Armϕ Hard 1 3 sp
+Joint 8 7 5 Elbow$\phi$ Hard 2 3 sp
+Laminar Pauldrons 8 7 5 Shoulder$\phi$, Upper Arm$\phi$ Hard 3 10 sp
+Laminar Rerebrace 8 7 5 Upper Arm$\phi$ Hard 1 3 sp
 Table X.X Mail Arm Armor
 Component Name AVC AVP AVB Coverage Special Wt Cost
 Brigandine 
@@ -9570,7 +9523,7 @@ Mail Short Sleeves 6 4 3 Shoulder, Upper Arm Hard, Layer 1, Mail 0.5 12 sp
 Table X.X Leather Arm Armor
 Component Name AVC AVP AVB Coverage Special Wt Cost
 Hardened Leather 
-Pauldrons 4 3 3 Shoulder, Upper Armϕ - 0 5 sp
+Pauldrons 4 3 3 Shoulder, Upper Arm$\phi$ - 0 5 sp
 Hardened Leather 
 Rerebraces 4 3 3 Upper Arm - 0 3 sp
 Hardened Leather 
@@ -9623,9 +9576,9 @@ Bulletproof
 Poleyns 10 9 8 Knee Bulletproof, Hard 2 1 gp
 Cuisses 8 7 6 Thigh Hard 2 8 sp
 Greaves 8 7 6 Shin Hard 1.5 6 sp
-Munitions Cuisses 7 6 5 Thighϕ Hard 3 4 sp
-Munitions Greaves 7 6 5 Shinϕ Hard 2 3 sp
-Poleyns 8 7 6 Kneeϕ Hard 1.5 5 sp
+Munitions Cuisses 7 6 5 Thigh$\phi$ Hard 3 4 sp
+Munitions Greaves 7 6 5 Shin$\phi$ Hard 2 3 sp
+Poleyns 8 7 6 Knee$\phi$ Hard 1.5 5 sp
 Sabatons 8 7 6 Foot Hard 1.5 5 sp
 
 Table XX Laminar Leg Armor
