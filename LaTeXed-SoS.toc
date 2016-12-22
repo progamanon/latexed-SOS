@@ -257,33 +257,60 @@
 \contentsline {section}{\numberline {10.1}Daggers}{127}{section.10.1}
 \contentsline {section}{\numberline {10.2}Swords}{129}{section.10.2}
 \contentsline {subsection}{\numberline {10.2.1}1H Swords}{129}{subsection.10.2.1}
-\contentsline {subsection}{\numberline {10.2.2}2H Swords}{132}{subsection.10.2.2}
-\contentsline {section}{\numberline {10.3}Blunt}{136}{section.10.3}
-\contentsline {subsection}{\numberline {10.3.1}1H Blunt}{136}{subsection.10.3.1}
+\contentsline {subsection}{\numberline {10.2.2}2H Swords}{133}{subsection.10.2.2}
+\contentsline {section}{\numberline {10.3}Blunt}{135}{section.10.3}
+\contentsline {subsection}{\numberline {10.3.1}1H Blunt}{135}{subsection.10.3.1}
 \contentsline {subsubsection}{1H Blunt Weapon Attachments}{137}{section*.302}
-\contentsline {subsection}{\numberline {10.3.2}2H Blunt}{139}{subsection.10.3.2}
-\contentsline {subsubsection}{2H Blunt Weapon Attachments}{140}{section*.303}
-\contentsline {section}{\numberline {10.4}Spears}{142}{section.10.4}
-\contentsline {subsection}{\numberline {10.4.1}Spear Weapon Attachments}{143}{subsection.10.4.1}
-\contentsline {section}{\numberline {10.5}Polearms}{145}{section.10.5}
-\contentsline {subsection}{\numberline {10.5.1}Polearm Weapon Attachments}{146}{subsection.10.5.1}
-\contentsline {section}{\numberline {10.6}Special Qualities}{146}{section.10.6}
-\contentsline {section}{\numberline {10.7}Materials}{148}{section.10.7}
-\contentsline {paragraph}{Limited Supply}{148}{section*.304}
-\contentsline {section}{\numberline {10.8}Customization Options}{149}{section.10.8}
-\contentsline {paragraph}{Examples for Bizarre Gimmick:}{149}{section*.305}
-\contentsline {paragraph}{Custom Hilt (+50\% Cost)}{149}{section*.306}
-\contentsline {paragraph}{Custom Grip (+50\% Cost)}{150}{section*.307}
-\contentsline {paragraph}{Exquisite Decoration (+100-2,000\% Cost)}{150}{section*.308}
-\contentsline {paragraph}{Fine Forging (+50\% Cost)}{150}{section*.309}
-\contentsline {paragraph}{Integrated Pistol (+100\% Cost AND 1 gp)}{150}{section*.310}
-\contentsline {chapter}{\numberline {11}Missile Weapons}{151}{chapter.11}
-\contentsline {chapter}{\numberline {12}Armor}{163}{chapter.12}
-\contentsline {chapter}{\numberline {13}Burdinadin Armory}{181}{chapter.13}
-\contentsline {chapter}{\numberline {14}Proficiencies}{191}{chapter.14}
-\contentsline {chapter}{\numberline {15}Maneuvers}{202}{chapter.15}
-\contentsline {chapter}{\numberline {16}Adventuring}{238}{chapter.16}
-\contentsline {section}{\numberline {16.1}Exhaustion}{240}{section.16.1}
-\contentsline {chapter}{\numberline {17}Combat}{242}{chapter.17}
-\contentsline {chapter}{\numberline {18}Injury and Recovery}{266}{chapter.18}
+\contentsline {subsection}{\numberline {10.3.2}2H Blunt}{137}{subsection.10.3.2}
+\contentsline {subsubsection}{2H Blunt Weapon Attachments}{141}{section*.303}
+\contentsline {section}{\numberline {10.4}Spears}{141}{section.10.4}
+\contentsline {subsection}{\numberline {10.4.1}Spear Weapon Attachments}{144}{subsection.10.4.1}
+\contentsline {section}{\numberline {10.5}Polearms}{144}{section.10.5}
+\contentsline {subsection}{\numberline {10.5.1}Polearm Weapon Attachments}{149}{subsection.10.5.1}
+\contentsline {section}{\numberline {10.6}Special Qualities}{149}{section.10.6}
+\contentsline {paragraph}{AP Swing [X]}{149}{section*.304}
+\contentsline {paragraph}{ P Thrust [X]}{149}{section*.305}
+\contentsline {paragraph}{Bleed [X]}{149}{section*.306}
+\contentsline {paragraph}{Brace}{149}{section*.307}
+\contentsline {paragraph}{Cavalry Sword}{149}{section*.308}
+\contentsline {paragraph}{Chain [X]}{150}{section*.309}
+\contentsline {paragraph}{Companion Weapon}{150}{section*.310}
+\contentsline {paragraph}{Couched Charge}{150}{section*.311}
+\contentsline {paragraph}{Crushing [X]}{150}{section*.312}
+\contentsline {paragraph}{Draw [X]}{150}{section*.313}
+\contentsline {paragraph}{Fluid Thrusts}{150}{section*.314}
+\contentsline {paragraph}{Forward Swept}{150}{section*.315}
+\contentsline {paragraph}{Freakishly Large}{150}{section*.316}
+\contentsline {paragraph}{Hand-Off}{151}{section*.317}
+\contentsline {paragraph}{Heavy Weapon}{151}{section*.318}
+\contentsline {paragraph}{Hook}{151}{section*.319}
+\contentsline {paragraph}{Light Blade}{151}{section*.320}
+\contentsline {paragraph}{Multi-Hit [Y] [X]}{151}{section*.321}
+\contentsline {paragraph}{Parrying Teeth}{151}{section*.322}
+\contentsline {paragraph}{Shock [X]}{151}{section*.323}
+\contentsline {paragraph}{Spatulate Tip [X]}{151}{section*.324}
+\contentsline {paragraph}{Swinging Slot}{151}{section*.325}
+\contentsline {paragraph}{Thin Blade}{151}{section*.326}
+\contentsline {paragraph}{Thrusting Slot}{152}{section*.327}
+\contentsline {paragraph}{Tight Grip [X]}{152}{section*.328}
+\contentsline {paragraph}{Weapon Attachment}{152}{section*.329}
+\contentsline {section}{\numberline {10.7}Materials}{152}{section.10.7}
+\contentsline {paragraph}{Limited Supply}{153}{section*.330}
+\contentsline {section}{\numberline {10.8}Customization Options}{153}{section.10.8}
+\contentsline {paragraph}{Ridiculously Sharp}{153}{section*.331}
+\contentsline {paragraph}{Examples for Bizarre Gimmick:}{154}{section*.332}
+\contentsline {paragraph}{Custom Hilt (+50\% Cost)}{154}{section*.333}
+\contentsline {paragraph}{Custom Grip (+50\% Cost)}{154}{section*.334}
+\contentsline {paragraph}{Exquisite Decoration (+100-2,000\% Cost)}{154}{section*.335}
+\contentsline {paragraph}{Fine Forging (+50\% Cost)}{154}{section*.336}
+\contentsline {paragraph}{Integrated Pistol (+100\% Cost AND 1 gp)}{154}{section*.337}
+\contentsline {chapter}{\numberline {11}Missile Weapons}{156}{chapter.11}
+\contentsline {chapter}{\numberline {12}Armor}{168}{chapter.12}
+\contentsline {chapter}{\numberline {13}Burdinadin Armory}{186}{chapter.13}
+\contentsline {chapter}{\numberline {14}Proficiencies}{196}{chapter.14}
+\contentsline {chapter}{\numberline {15}Maneuvers}{207}{chapter.15}
+\contentsline {chapter}{\numberline {16}Adventuring}{243}{chapter.16}
+\contentsline {section}{\numberline {16.1}Exhaustion}{245}{section.16.1}
+\contentsline {chapter}{\numberline {17}Combat}{247}{chapter.17}
+\contentsline {chapter}{\numberline {18}Injury and Recovery}{271}{chapter.18}
 \contentsfinish 

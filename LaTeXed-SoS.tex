@@ -70,12 +70,12 @@
 %\fancyhead[LE]{\estcab{Fran Oldstyle}}
 %\fancyhead[RE]{\estcab{History of taxonomy}}
 % \fancyhead[CE,CO]{\estcab{\decoone}}
-%\fancyhead[LO]{\estcab{\rightmark}} % malo cuando no hay section ~~~ \thesection
+\fancyhead[LO]{\estcab{\rightmark}} % malo cuando no hay section ~~~ \thesection
 \fancyhead[RO]{\estcab{\leftmark}}
 
-% \fancyhead[RO]{\bf\nouppercase{ \leftmark}}
+ \fancyhead[RO]{\bf\nouppercase{ \leftmark}}
 % \fancyfoot[LE]{\bf \thepage ~~ \leafNE}
-% \fancyfoot[RO]{ \leafNE  ~~ \bf \thepage}
+ \fancyfoot[RO]{ \leafNE  ~~ \bf \thepage}
 
 \fancyfoot[LO]{
 	\ornimpar \newline \large \hfill \sffamily\bf \textcolor{darkgray}{\leafNE ~~~ \thepage}
@@ -5074,7 +5074,8 @@ Tanto							&Dagger			&1H	&H	&7(+0c)	&6(+0p)	&8(1)	&Draw 1, Light Blade, Thin Bl
 \begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
 	\caption{One-Handed Swords}
 	\label{tab:1H Swords}\\
-Weapon Name					&Weapon Type    &Hands   &Reach  &Swing  &Thrust &Defense (Guard)  &Special                                 &Wt  &Cost\\
+		\global\extrarowsep = 3mm
+Weapon Name					&Weapon Type    &Hands   &Reach  &Swing  &Thrust &Defense (Guard)  &Special                                 &Wt  &Cost\\\toprule\endhead
 Arming Sword (Early)        &Sword          &1H      &M      &7(+1c) &7(+0p) &7(1)           &Draw 2, Spatulate Tip 2                 &0.5 &1 gp\\
 Arming Sword (Chivalric)    &Sword          &1H      &M      &7(+2c) &7(+0p) &7(2)           &-                                       &0.5 &1 gp\\
 Arming Sword (Late)         &Sword          &1H      &M      &7(+0c) &7(+2p) &7(2)           &-                                       &0.5 &1 gp\\
@@ -5124,10 +5125,11 @@ Yataghan                    &Sword          &1H      &S      &7(+1c) &8(+0p) &7(
 \end{longtabu}
 
 \subsection{2H Swords}%SWORDS TABLE 2H
-\begin{longtabu} spread 0pt{X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
+\begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
 	\caption{Two-handed Swords}
 	\label{tab:2H Swords}\\
-Weapon Name					&Weapon Type	&Hands	&Reach	&Swing	&Thrust	&Defense (Guard)	&Special						&Wt		&Cost\\
+	\global\extrarowsep = 3mm
+Weapon Name					&Weapon Type	&Hands	&Reach	&Swing	&Thrust	&Defense (Guard)	&Special						&Wt		&Cost\\\toprule\endhead
 Bastard Sword				&Sword			&2H		&L		&7(+1c)	&7(+2p)	&7(2)				&Hand-Off, Heavy Weapon 			&1		&50 sp\\
 Claymore					&Sword			&2H		&L		&7(+2c)	&7(+0p)	&7(2)	&Heavy Weapon &2 &50 sp\\
 Estoc						&Sword 			&2H		&L		&8(+0b)	&6(+2p)	&7(2)	&AP Thrust 1, Thin Blade, Fluid Thrusts			&1		&45 sp\\
@@ -5148,10 +5150,11 @@ Zweihander (Grutte) 	&Sword &2H &EL &7(+4c) &8(+3p) &7(2) &Heavy Weapon, Freakis
 
 \section{Blunt} %BLUNT 1H TABLE
 \subsection{1H Blunt}
-\begin{tabu} to \linewidth{XXXX XXXX XX}
-%	\caption{One-Handed Blunt Weapons}
-%	\label{tab:1H Blunt}
-Weapon Name						&Weapon Type	&Hands&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\
+\begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
+	\caption{One-Handed Blunt Weapons}
+	\label{tab:1H Blunt}\\
+	\global\extrarowsep = 3mm
+Weapon Name						&Weapon Type	&Hands&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\\toprule\endhead
 Battleaxe* &Blunt &1H &M &7(+2c) &7(-2b) &9(0)& AP Swing 1, Hand-Off, Hook, Thrusting Slot, Shock 2, Swinging Slot &1 &6 sp\\
 Bar Mace &Blunt &1H &S &7(+1b) &7(-2b) &7(0)& AP Swing 1, Shock 1, Thrusting Slot &0 &1 sp\\
 Club (Short)/Truncheon &Blunt &1H &S &6(+0b) &7(-2b) &6(0)& Swinging Slot, Thrusting Slot &0 &1 cp\\
@@ -5166,7 +5169,7 @@ Light Mace (Spiked) &Blunt &1H &S &7(+2b) &7(-2b) &7(0)& Bleed 2, Shock 2, Thrus
 Tabarzin* &Blunt &1H &L &7(+2c) &8(+0p) &9(0)& AP Swing 1, Hand-Off, Hook, Shock 1, Swinging Slot, Thrusting Slot &2 &10 sp\\
 Warhammer (Standard) &Blunt &1H &S &7(+2b) &7(-2b) &8(0)& AP Swing 1, Crushing 1, Reverse Slot, Shock 1, Thrusting Slot &0 &6 cp\\
 War Pick &Blunt &1H &S &7(+2p) &7(-2b) &8(0)& AP Swing 2, Hook, Reverse Slot, Thrusting Slot, Thin Blade &0 &2 sp\\
-\end{tabu}
+\end{longtabu}
 
 \subsubsection{1H Blunt Weapon Attachments}%MAKE THIS A SUBTABLE OF THE ABOVE TABLE
 %Weapon Name						&Weapon Type	&Hands	&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\
@@ -5176,10 +5179,11 @@ Reverse Hammer Blunt 1H - 7(+0b) - - AP Swing 1, Crushing 1, Shock 1, Weapon Att
 Reverse Spike Blunt 1H - 7(+0p) - - AP Swing 2, Hook, Weapon Attachment (Swing) 0 6 cp
 Weighted Chain Blunt 1H VL 8(+1b) - 8(0) Chain 3, Hook,Shock 2, Weapon Attachment (Swing) 1 6 cp
 \subsection{2H Blunt} %BLUNT 2H TABLE
-\begin{tabu} to \linewidth{XXXX XXXX XX}
-%	\caption{Two-Handed Blunt}\newline
-%	\label{tab:2H Blunt}\newline\toprule
-Weapon Name				&Weapon Type	&Hands	&Reach	&Swing&Thrust&Defense (Guard)&Special																	&Weight	&Cost\\
+\begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
+	\caption{Two-Handed Blunt}
+	\label{tab:2H Blunt}\\
+	\global\extrarowsep = 3mm
+Weapon Name				&Weapon Type	&Hands	&Reach	&Swing&Thrust&Defense (Guard)&Special																	&Weight	&Cost\\\toprule\endhead
 Battleaxe				&Blunt			&2H		&M		&7(+3c)&7(-2b)&8(0)&AP Swing 1, Hand-Off, Heavy Weapon, Hook, Thrusting Slot, Shock 2, Swinging Slot	&1 &6 sp\\
 Club (Large) 			&Blunt			&2H		&M		&6(+1b)&7(-1b)&7(0)&Heavy Weapon, Shock 1, Swinging Slot, Thrusting Slot								&1 &3 cp\\
 Dane Axe 				&Blunt			&2H		&L		&7(+4c)&8(+0p)&8(0)&AP Swing 2, Crushing 2, Heavy Weapon, Hook, Shock 2, Swinging Slot, Thrusting Slot	&2 &7 sp\\
@@ -5195,7 +5199,7 @@ Tabarzin				&Blunt			&2H		&L		&7(+3c)&8(+0p)&8(0)&AP Swing 2, Hand-Off, Heavy We
 Warhammer (Heavy)		&Blunt			&2H		&M		&7(+2b)&7(-2b)&8(0)&AP Swing 1, Crushing 2, Heavy Weapon, Shock 2, Swinging Slot, Thrusting Slot		&1	&1 sp\\
 War Maul				&Blunt			&2H		&M		&7(+3b)&8(-2b)&8(0)&AP Swing 1, Crushing 2, Heavy Weapon, Shock 4 &2 &2 sp\\
 Wood Axe				&Blunt			&2H		&M		&7(+2c)&8(-2b)&8(0)&AP Swing 1, Heavy Weapon, Hook, Shock 2 &1 &2 sp\\
-\end{tabu}
+\end{longtabu}
 
 \subsubsection{2H Blunt Weapon Attachments} %MAKE THIS A SUBTABLE OF THE 2H BLUNT TABLE
 Table XX 2H Blunt Weapon Attachments
@@ -5207,10 +5211,10 @@ Reverse Spike Blunt 2H - 7(+2p) - - AP Swing 2, Heavy Weapon, Hook, Weapon Attac
 
 \section{Spears}
 Table X.X Spears
-\begin{tabu} to \linewidth {XXXX XXXX XX}
-%	\caption{List of Spears}
-%	\label{tab:Spears}\\
-Weapon Name						&Weapon Type			&Hands	&Reach	&Swing		&Thrust	&Defense (Guard)	&Special																	&Weight	&Cost\\
+\begin{longtabu} to 1\linewidth {X[2,l] X X[-1,c] X[-1,c] XX X[-1,c] X[2,l] X[-3,c] X[-3,r]}
+	\caption{List of Spears}
+	\label{tab:Spears}\\
+Weapon Name						&Weapon Type			&Hands	&Reach	&Swing		&Thrust	&Defense (Guard)	&Special																	&Weight	&Cost\\\toprule\endhead
 Ahlspiess 						&Polearm, Spear			&2H		&L		&8(-1b)		&7(+1p) &7(0)				&AP Thrust 3,Thin Blade 													&5		&4 sp\\
 Fauchard 						&Polearm, Spear			&2H		&VL 	&7(+2c)		&8(+1p) &7(0)				&Forward Swept, Heavy Weapon, Swinging Slot,								&4		&1 sp\\
 Ge (Chinese Dagger-Axe Halberd)	&Polearm, Spear			&2H		&VL 	&7(+3p)		&7(+2p) &7(0)				&AP Swing 1, Heavy Weapon, Hook,											&5		&1 sp\\
@@ -5240,7 +5244,7 @@ Trident 						&Polearm, Spear			&2H		&L		&9(+0c)		&7(+0p) &7(0)				&Hand-Off, Mu
 Yari (Jumonji) 					&Polearm, Spear			&2H		&VL		&7(+2c)		&7(+2p) &7(0)				&Heavy Weapon, 																&4		&2 sp\\
 Yari (Bishamon) 				&Polearm, Spear			&2H		&VL		&7(+3c)		&7(+2p) &7(0)				&AP Swing 1, 																&4		&3 sp\\
 Yari (Kata Kama) 				&Polearm, Spear			&2H		&VL		&7(+2p/+2c)	&7(+2p) &7(0)				&AP Swing 1, Heavy Weapon, Hook, 											&4		&3 sp\\
-\end{tabu}
+\end{longtabu}
 \subsection{Spear Weapon Attachments}
 Table XX Spear Weapon Attachments
 %Weapon Name						&Weapon Type	&Hands	&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\
@@ -5251,10 +5255,10 @@ Weapon Queue Spear* 7(-2c) 7(+0p) 8(0) AP Swing 1,Thin Blade, Weapon Attachment 
 
 *Use attached weapon’s Weapon Proficiency or Hands
 \section{Polearms}
-\begin{tabu} to \linewidth {XXXX XXXX XX}
-%	\caption{List of Polearms}
-%	\label{tab:Polearms}\\
-Weapon Name						&Weapon Type			&Hands	&Reach	&Swing		&Thrust		&Defense (Guard)	&Special																	&Weight	&Cost\\
+\begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
+	\caption{List of Polearms}
+	\label{tab:Polearms}\\
+Weapon Name						&Weapon Type			&Hands	&Reach	&Swing		&Thrust		&Defense (Guard)	&Special																	&Weight	&Cost\\\toprule\endhead
 Ahlspiess						&Polearm, Spear 		&2H		&L		&8(-1b)		&7(+1p)		&7(0)				&AP Thrust 3,Thin Blade														&5		&4 sp\\
 Bardiche						&Polearm				&2H		&VL		&7(+4c)		&9(-1p)		&8(0)				&AP Swing 2, Crushing 2, Heavy Weapon, Shock 2, Swinging Slot				&5		&2 sp\\
 Bec de Corbin					&Polearm				&2H		&VL		&7(+2p)		&7(+2p)		&7(0)				&AP Swing 2, Heavy Weapon, Hook, Swinging Slot, Thin Blade					&5		&1 sp\\
@@ -5285,7 +5289,7 @@ War-Scythe						&Polearm				&2H		&VL		&7(+3c)		&9(+0p) 	&8(0)				&Forward Swept,
 Yari (Jumonji)					&Polearm, Spear			&2H		&VL		&7(+2c)		&7(+2p) 	&7(0)				&Heavy Weapon,																&4		&2 sp\\
 Yari (Bishamon) 				&Polearm, Spear			&2H		&VL		&7(+3c)		&7(+2p) 	&7(0)				&AP Swing 1,																&4		&3 sp\\
 Yari (Kata Kama)				&Polearm, Spear			&2H		&VL		&7(+2p/+2c)	&7(+2p) 	&7(0)				&AP Swing 1, Heavy Weapon, Hook,											&4		&3 sp\\
-\end{tabu}
+\end{longtabu}
 
 \subsection{Polearm Weapon Attachments} %MAKE THIS A SUBTABLE OF THE POLARMS
 Table XX Spear Weapon Attachments
@@ -5295,63 +5299,82 @@ Reverse Hammer Polearm - - 7(+1b) - - AP Swing 1, Crushing 1, Heavy Weapon, Shoc
 Reverse Spike Polearm - - 7(+1p) - - AP Swing 2, Heavy Weapon, Hook, Weapon Attachment (Swing) 0 6 cp
 Weapon Queue Polearm -/- 7(-2c) 7(+0p) 8(0) AP Swing 1,Thin Blade, Weapon Attachment (Thrust) 0 4 cp
 
-\section{Special Qualities}
-Table X.X Melee Weapon Special Qualities%USE table or just use a descriptive list?
+\section{Special Qualities}\label{sec:special-qualities}
+\paragraph{\label{par:AP Swing}AP Swing [X]}---\quad Armor Piercing Swing [X]. When making a Swinging attack against a Hit Location with Hard armor protection, this weapon Inflicts X additional damage against any Armor, up to the AV of the Armor.
 
-Quality Effect
-AP Swing [X] Armor Piercing Swing [X]. When making a Swinging attack against a Hit Location with Hard armor protection, this weapon Inflicts X additional damage against any Armor, up to the AV of the Armor.
+\paragraph{\label{par:AP Thrust} P Thrust [X]}---\quad
+Armor Piercing Thrust [X]. When making a Thrusting attack against a Hit Location with Hard armor protection, this weapon Inflicts X additional damage against any Armor, up to the AV of the Armor.
 
-AP Thrust [X] Armor Piercing Thrust [X]. When making a Thrusting attack against a Hit Location with Hard
-armor protection, this weapon Inflicts X additional damage against any Armor, up to the AV 
-of the Armor.
+\paragraph{\label{par:Bleed}Bleed [X]}---\quad
+Any Swinging attack from this weapon that either inflicts a Wound, or fails to inflict a Wound by 2 or fewer damage, inflicts X Blood Loss. 
+\paragraph{\label{par:Brace}Brace}---\quad
+When using this weapon, you gain 2 automatic additional successes on Initiative Tests made as a result of Offensive/Offensive Orientation.
 
-Bleed [X] Any Swinging attack from this weapon that either inflicts a Wound, or fails to inflict a Wound by 2 or fewer damage, inflicts X Blood Loss.
+\paragraph{\label{par:Cavalry Sword}Cavalry Sword}---\quad
+When making a Swing with Ride-By attack, this weapon’s Draw value is increased by 1.
 
-Brace When using this weapon, you gain 2 automatic additional successes on Initiative Tests made as a result of Offensive/Offensive Orientation.
+\paragraph{\label{par:Chain}Chain [X]}---\quad
+Any attack made at Swing TN with this weapon ignores the first X successes of an enemy’s Parry or Block defense, including Parrying and Blocking Maneuvers like Riposte or Arm Parry. Additionally, this weapon can neither engage in, nor be engaged in a Hilt Push of any sort.
 
-Cavalry Sword When making a Swing with Ride-By attack, this weapon’s Draw value is increased by 1.
+\paragraph{\label{par:Companion Weapon}Companion Weapon}---\quad
+When this weapon is used to make any sort of defensive Maneuver, one of the dice devoted automatically succeeds before rolling.
 
-Chain [X] Any attack made at Swing TN with this weapon ignores the first X successes of an enemy’s Parry or Block defense, including Parrying and Blocking Maneuvers like Riposte or Arm Parry. Additionally, this weapon can neither engage in, nor be engaged in a Hilt Push of any sort.
+\paragraph{\label{par:Couched Charge}Couched Charge}---\quad
+When making a Lance Charge attack with this weapon, reduce its Thrusting TN by 2, and use the Horse’s STR as the base for damage instead of your own.. However, your Reach is not increased by the Tall Boon. In addition, if a Lance Charge attack made by this weapon is Blocked, it carries through on the intended Target Zone anyway, as though it hit with 0 BS, and is reduced by the Shield’s AV regardless of where it hit. If the total damage inflicted by an attack that takes advantage of Lance Charge exceeds the Durability of the weapon by 5 or more, then the weapon breaks immediately after the attack is made.
 
-Companion Weapon When this weapon is used to make any sort of defensive Maneuver, one of the dice devoted automatically succeeds before rolling.
+\paragraph{\label{par:Crushing}Crushing [X]}---\quad
+When this weapon successfully hits with a Swing attack on a Hit Location with any sort of Hard armor protection, reduce all AVs of the armor on that Hit Location by X. This is done after damage is resolved for this attack, and only affects future attacks. Only the highest AV armor on that location is reduced by Crushing. If that armor is reduced to AV 0 in all areas, then Crushing begins to affect lesser Hard armors beneath it. 
 
-Couched Charge When making a Lance Charge attack with this weapon, reduce its Thrusting TN by 2, and use the Horse’s STR as the base for damage instead of your own.. However, your Reach is not increased by the Tall Boon. In addition, if a Lance Charge attack made by this weapon is Blocked, it carries through on the intended Target Zone anyway, as though it hit with 0 BS, and is reduced by the Shield’s AV regardless of where it hit. If the total damage inflicted by an attack that takes advantage of Lance Charge exceeds the Durability of the weapon by 5 or more, then the weapon breaks immediately after the attack is made.
+\paragraph{\label{par:Draw}Draw [X]}---\quad
+When making a Swinging attack that would inflict cutting damage with this weapon, inflict X additional cutting damage if you roll 3 or more BS. This special rule does not come into play if the target benefits from any sort of Hard armor on the Hit Location being hit.
 
-Crushing [X] When this weapon successfully hits with a Swing attack on a Hit Location with any sort of Hard armor protection, reduce all AVs of the armor on that Hit Location by X. This is done after damage is resolved for this attack, and only affects future attacks. Only the highest AV armor on that location is reduced by Crushing. If that armor is reduced to AV 0 in all areas, then Crushing begins to affect lesser Hard armors beneath it. 
+\paragraph{\label{par:Fluid Thrusts}Fluid Thrusts}---\quad
+This weapon can Feint from a Thrust.
 
-Draw [X] When making a Swinging attack that would inflict cutting damage with this weapon, inflict X additional cutting damage if you roll 3 or more BS. This special rule does not come into play if the target benefits from any sort of Hard armor on the Hit Location being hit.
+\paragraph{\label{par:Forward Swept}Forward Swept}---\quad
+When this weapon is used in a Swing attack against which the target would receive an AV bonus, use the lower value between the armor’s AVC and AVP. The Swing still inflicts cutting damage regardless of which AV is used.
 
-Fluid Thrusts This weapon can Feint from a Thrust.
+\paragraph{\label{par:Freakishly Large}Freakishly Large}---\quad
+This weapon is so massive that unless the character using it has either 9 STR or the greater Tall Boon, the TNs for the weapon are all increased by 1.
 
-Forward Swept When this weapon is used in a Swing attack against which the target would receive an AV bonus, use the lower value between the armor’s AVC and AVP. The Swing still inflicts cutting damage regardless of which AV is used.
+\paragraph{\label{par:Hand-Off}Hand-Off}---\quad
+This weapon can be wielded with one hand in addition to wielding with both hands. If used in this fashion, you may continue using it with its normal Proficiency, or with a 1H version of either Blunt or Sword proficiency (depending on the base type of the weapon). However, instead of using the normal profile of the weapon, use the 1H version of the weapon with an * next to it. Switching from 1H to 2H versions of a weapon can be done at the beginning of any Action (or in response to an injury) and requires no CP expenditure.
 
-Freakishly Large This weapon is so massive that unless the character using it has either 9 STR or the greater Tall Boon, the TNs for the weapon are all increased by 1.
+\paragraph{\label{par:Heavy Weapon}Heavy Weapon}---\quad
+When weapons with the Light Blade quality Parry Swinging attacks from this weapon, the Defense TN of the Light Blade is increased by 2, instead of 1.
 
-Hand-Off This weapon can be wielded with one hand in addition to wielding with both hands. If used in this fashion, you may continue using it with its normal Proficiency, or with a 1H version of either Blunt or Sword proficiency (depending on the base type of the weapon). However, instead of using the normal profile of the weapon, use the 1H version of the weapon with an * next to it. Switching from 1H to 2H versions of a weapon can be done at the beginning of any Action (or in response to an injury) and requires no CP expenditure.
+\paragraph{\label{par:Hook}Hook}---\quad
+This weapon can be used with the Hook Maneuver. %PROBABLY could do with a \href
 
-Heavy Weapon When weapons with the Light Blade quality Parry Swinging attacks from this weapon, the Defense TN of the Light Blade is increased by 2, instead of 1.
+\paragraph{\label{par:Light Blade}Light Blade}---\quad
+When Parrying Swinging attacks from any weapon that does not have this quality, this weapon’s Defense TN is increased by 1. Against Heavy Weapons, this penalty increases to 2.
 
-Hook This weapon can be used with the Hook Maneuver.
+\paragraph{\label{par:Multi-Hit}Multi-Hit [Y] [X]}---\quad
+When this weapon is used in a Y type (Swing or Thrust) attack that targets Hit Locations that successfully hits the target, instead of resolving one attack, X identical attacks of equal strength hit instead. Roll on the Target Zone as normal for the first hit. The second hit lands as though the roll had been one lower, the third hit as though the roll had been one higher, etc. Roll on the the same Target Zone to see where these additional attacks land. 
 
-Light Blade When Parrying Swinging attacks from any weapon that does not have this quality, this weapon’s Defense TN is increased by 1. Against Heavy Weapons, this penalty increases to 2.
+\paragraph{\label{par:Parrying Teeth}Parrying Teeth}---\quad
+-1 Parry TN vs attacks made by Swords and Daggers.
 
-Multi-Hit [Y] [X] When this weapon is used in a Y type (Swing or Thrust) attack that targets Hit Locations that successfully hits the target, instead of resolving one attack, X identical attacks of equal strength hit instead. Roll on the Target Zone as normal for the first hit. The second hit lands as though the roll had been one lower, the third hit as though the roll had been one higher, etc. Roll on the the same Target Zone to see where these additional attacks land. 
+\paragraph{\label{par:Shock}Shock [X]}---\quad
+Any hit from this weapon inflicts additional Stun equal to the listed number.
 
-Parrying Teeth -1 Parry TN vs attacks made by Swords and Daggers.
+\paragraph{\label{par:Spatulate Tip}Spatulate Tip [X]}---\quad
+When making a Thrusting attack that would inflict Piercing damage with this weapon, inflict X additional cutting damage if you roll 3 or more BS. This special rule does not come into play if the target benefits from any sort of Hard armor on the Hit Location being hit.
 
-Shock [X] Any hit from this weapon inflicts additional Stun equal to the listed number.
+\paragraph{\label{par:Swinging Slot}Swinging Slot}---\quad
+This weapon can have a Swinging Weapon Attachment added to its Swing profile. This does not replace the current Swing profile, but can be used instead of it when declaring a Maneuver.
 
-Spatulate Tip [X] When making a Thrusting attack that would inflict Piercing damage with this weapon, inflict X additional cutting damage if you roll 3 or more BS. This special rule does not come into play if the target benefits from any sort of Hard armor on the Hit Location being hit.
+\paragraph{\label{par:Thin Blade}Thin Blade}---\quad
+When making a Coup de Grace or Joint Thrust attack, this weapon’s Thrust TN is decreased by 1. In addition, against mail armor this weapon gains AP Thrust 3. If the weapon has an AP Thrust quality, this replaces that value, it does not add to it.
 
-Swinging Slot This weapon can have a Swinging Weapon Attachment added to its Swing profile. This does not replace the current Swing profile, but can be used instead of it when declaring a Maneuver.
+\paragraph{\label{par:Thrusting Slot}Thrusting Slot}---\quad
+This weapon can have its Thrust profile replaced with a Thrusting Weapon Attachment.
 
-Thin Blade When making a Coup de Grace or Joint Thrust attack, this weapon’s Thrust TN is decreased by 1. In addition, against mail armor this weapon gains AP Thrust 3. If the weapon has an AP Thrust quality, this replaces that value, it does not add to it.
+\paragraph{\label{par:Tight Grip}Tight Grip [X]}---\quad
+When using the Power Attack option on a Swing attack, inflict X additional damage. When making a Stability Test to retain your weapon against a Disarm Maneuver or similar event, you may roll 2 additional dice.
 
-Thrusting Slot This weapon can have its Thrust profile replaced with a Thrusting Weapon Attachment.
-
-Tight Grip [X] When using the Power Attack option on a Swing attack, inflict X additional damage. When making a Stability Test to retain your weapon against a Disarm Maneuver or similar event, you may roll 2 additional dice.
-
-Weapon Attachment This weapon can be attached to any weapon with a Swinging Slot (for Reverse Weapons) or a Thrusting Slot (for Arming Spikes) and used instead of the weapon’s basic swinging/thrusting profile. When using the Weapon Attachment, use its attack TN and Damage instead of the original where listed, use the original where no new number is listed, i.e., a Battleaxe with a Reverse Spike Weapon Attachment can make a Strike using the stats of a Reverse Spike instead of the stats of the Battleaxe.
+\paragraph{\label{par:Weapon Attachment}Weapon Attachment}---\quad
+This weapon can be attached to any weapon with a Swinging Slot (for Reverse Weapons) or a Thrusting Slot (for Arming Spikes) and used instead of the weapon’s basic swinging/thrusting profile. When using the Weapon Attachment, use its attack TN and Damage instead of the original where listed, use the original where no new number is listed, i.e., a Battleaxe with a Reverse Spike Weapon Attachment can make a Strike using the stats of a Reverse Spike instead of the stats of the Battleaxe.
 
 \section{Materials}
 \begin{itemize}
@@ -5366,30 +5389,33 @@ Weapon Attachment This weapon can be attached to any weapon with a Swinging Slot
 \subitem -25\% Cost
 \end{itemize}
 
-Steel
-No change
-
-Orichalcum
-Cannot break
-+1 Damage of all types
-+5,000\% Cost+5 gp
-Limited Supply (1)
-
-Silversteel
--2 Weight
-+2 Durability
-+1 Damage of Cutting and Piercing types
-+1,000\% Cost+1 gp
-Limited Supply (3)
-
-\paragraph{Limited Supply}
-This material is in very limited supply. It is so rare that most characters, even the exceedingly wealthy cannot find enough to produce much equipment for themselves. At Character Creation, you may not take more individual items with the Limited Supply quality than the number listed in parenthesis without suffering an increase in cost. If you do take more items of that type, than all of them double in cost. You must also retroactively pay for those you have already taken.
+\begin{itemize}
+\item [] \textbf{Steel}
+\subitem No change
+\end{itemize}
+\begin{itemize}
+\item [] \textbf{Orichalcum}
+\subitem Cannot break
+\subitem +1 Damage of all types
+\subitem +5,000\% Cost + 5 gp
+\subitem Limited Supply (1)
+\end{itemize}
+\begin{itemize}
+\item [] \textbf{Silversteel}
+\subitem -2 Weight
+\subitem +2 Durability
+\subitem +1 Damage of Cutting and Piercing types
+\subitem +1,000\% Cost + 1 gp
+\subitem Limited Supply (3)
+\end{itemize}
+\paragraph{Limited Supply}--- \quad
+ This material is in very limited supply. It is so rare that most characters, even the exceedingly wealthy cannot find enough to produce much equipment for themselves. At Character Creation, you may not take more individual items with the Limited Supply quality than the number listed in parenthesis without suffering an increase in cost. If you do take more items of that type, than all of them double in cost. You must also retroactively pay for those you have already taken.
 
 \section{Customization Options}
-Ridiculously Sharp (+50\% Cost)
+\paragraph{\label{par:Ridiculously Sharp}Ridiculously Sharp}---\quad \textbf{(+50\% Cost)}\par
 This only applies to weapons that inflict cutting damage on hit. It can also be applied to the Reverse Blades of weapons.
 
-Ridiculously Sharp weapons improve their Draw value by 1 (or gain Draw 1 if they do not already have Draw) the first time they inflict damage in a fight with a Swinging attack. Afterwards, they must be resharpened to regain this benefit.
+Ridiculously Sharp weapons improve their \nameref{par:Draw} value by 1 (or gain Draw 1 if they do not already have Draw) the first time they inflict damage in a fight with a Swinging attack. Afterwards, they must be resharpened to regain this benefit.
 
 Resharpening generally costs a copper piece, but can be done in about an hour with a wheel or stone. Orichalcum weapons never require re-sharpening, and Silversteel weapons can be used twice before they must be resharpened.
 
