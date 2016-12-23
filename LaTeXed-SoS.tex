@@ -4,6 +4,7 @@
 \documentclass[oneside,11pt,english]{book}
 \usepackage{babel}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage{color}
 \usepackage{titletoc}%Used for the mini-tables of content in each chapter
 \definecolor{marron}{RGB}{60,30,10}
@@ -73,12 +74,12 @@
 \fancyhead[LO]{\estcab{\rightmark}} % malo cuando no hay section ~~~ \thesection
 \fancyhead[RO]{\estcab{\leftmark}}
 
- \fancyhead[RO]{\bf\nouppercase{ \leftmark}}
+ \fancyhead[RO]{\bfseries\nouppercase{ \leftmark}}
 % \fancyfoot[LE]{\bf \thepage ~~ \leafNE}
- \fancyfoot[RO]{ \leafNE  ~~ \bf \thepage}
+ \fancyfoot[RO]{ \leafNE  ~~ \bfseries \thepage}
 
 \fancyfoot[LO]{
-	\ornimpar \newline \large \hfill \sffamily\bf \textcolor{darkgray}{\leafNE ~~~ \thepage}
+	\ornimpar \newline \large \hfill \sffamily\bfseries \textcolor{darkgray}{\leafNE ~~~ \thepage}
 }
 %\fancyfoot[RE]{\ornpar   \newline \large  \sffamily\bf \textcolor{darkgray}{\thepage ~~~ \reflectbox{\leafNE}}  \hfill}
 
@@ -105,6 +106,7 @@
 \frontmatter
 	%\TileWallPaper{300pt}{300pt}{Descargas/fondopapelviejo.jpg}
 \section*{Changelog:}
+{\huge\LaTeX ified Revision of \today}
 {\footnotesize
 	\begin{itemize}
 	\setlength\itemsep{0mm}
@@ -232,9 +234,9 @@ can be used.
 \item 8/1/2015: Shield Bind now has a Superior version, added to Maneuvers and Proficiencies. 
 \end{itemize}}
 \begin{titlepage}
+\pagestyle{empty}
 	\centering
-	\ornamento
-	\vspace{1.5cm}
+	\ornamento\\
 	{\scshape\Huge Song of Swords Beta 1.9.9\par}
 	\vspace{0.8cm}
 	{\scshape\Large{(MICRO UPDATE)}\par \scshape\Large{from} \par}
@@ -242,7 +244,7 @@ can be used.
 	{\huge Opaque Studios \par}
 	\vfill
 	\vspace{0.2 cm}
-	 \textsc{© Zachary Irwin, James Lacombe}, 2015. All Rights Reserved
+	 \textsc{\copyright~Zachary Irwin, James Lacombe}, 2015. All Rights Reserved
 	 
 	 
 	 \ornamento
@@ -250,7 +252,7 @@ can be used.
 \newpage
 \begin{center}
 \vfill
-\textbf{Beta Rules for Song of Swords Roleplaying Game}
+\textbf{Beta Rules for Song of Swords Roleplaying Game}\par
 Lead Designer: James “Rome” Lacombe\par
 Executive Designer, Producer: Zachary T. Irwin\par
 Supplementary Design Team: Daniel Leiendecker, Forrest Phanton, Taylor Davis\par
@@ -285,13 +287,10 @@ opaque.freeforums.net\par
 \chapter{Introduction}\label{ch:intro}
 \newpage
 \section*{Foreword}
-It’s been a long time, now, since that first appearance back in 2012. We’ve gone through three names, a 
-dozen updates, two hundred threads, and hundreds of thousands of posts. Oceans of blood have been 
-spilled in the countless fechts fought in this game’s testing. Our little reservation on the internet should be 
-marked forever by a mountain of human skulls. 
+It’s been a long time, now, since that first appearance back in 2012. We’ve gone through three names, a dozen updates, two hundred threads, and hundreds of thousands of posts. Oceans of blood have been spilled in the countless fechts fought in this game’s testing. Our little reservation on the internet should be marked forever by a mountain of human skulls.
 
 
-To put it simply, it’s been a long road and we’ve come a long way. 
+To put it simply, it’s been a long road and we’ve come a long way.
 
 
 \noindent And now we are here. This, the release of a new version. This will mark our first (nearly) complete 
@@ -321,26 +320,9 @@ The Gods of the Copybook Headings with terror and slaughter return! \\}
 \section{What is Song of Swords?}
 	\begin{quotation}
 {\small \emph{Mago laughed despite himself as he vaulted the barricade. The routing nomads were scrambling to reform in their 
-makeshift wagon fort. Mago landed before a man struggling with the match of his arquebus. The man looked up. 
-With an exultant whoop, Mago drew his saber and cut the man’s right arm off at the elbow in the same motion. The 
-limb fell, its fingers still holding the powder-horn, and Mago walked past, pushing the man out of his way just as he 
-began to scream at the stump of his own arm. A lancer approached, and Mago wove out of the way of the polearm, 
-two-stepped forward, and snapped out with a cut that caught fingers between blade and haft, cleaving all of the 
-digits from the spearman’s forward hand. He barked aloud in wordless triumph, and swept in to hammer aside a 
-high blow from another swordsman. Grasping his foe by the collar, Mago saw his face. Little more than a child, 
-brown eyes wide, mouth moving in wordless fear. Mago blinked, and then caved the boy’s head in with three terrible 
-blows from the spiked pommel of his sword. He threw the corpse away, and flung himself into the melee, as his 
-brothers closed the net. The slaughter was absolute, men who had raided and pillaged Dacian land for years died 
-on their knees, begging for Dacian mercy.}\par
-\emph{Mago brought his sword down, cleaving a pleading nomad’s head down through to the teeth. He wrenched his 
-sword free and flung his arms wide. There were no more left to kill. The Fighting Volkodavs howled in triumph on a 
-mountain of corpses. A gunshot rang out. Mago heard someone scream. The voice sounded familiar.}\par
-\emph{Then he hit the ground. White-hot pain erupted from his upper thigh, where the bullet had struck him in the back. He 
-realized that he was screaming, and all at once it hit him. The cold mud in his hair, on his face. The clawing agony 
-in his leg. He knew that he would live, somehow. Limping for life, but alive. He forced open his eyes, through the 
-tears of pain, and scanned the perimeter for the source. \textbf{Who?} He tried to breathe through gritted teeth, pain and 
-fury foaming in his mouth. \textbf{Who shot me? I must know.} He felt a tooth crack as his eyes settled on the source of his 
-ruin.}\par
+makeshift wagon fort. Mago landed before a man struggling with the match of his arquebus. The man looked up. With an exultant whoop, Mago drew his saber and cut the man’s right arm off at the elbow in the same motion. The limb fell, its fingers still holding the powder-horn, and Mago walked past, pushing the man out of his way just as he began to scream at the stump of his own arm. A lancer approached, and Mago wove out of the way of the polearm, two-stepped forward, and snapped out with a cut that caught fingers between blade and haft, cleaving all of the digits from the spearman’s forward hand. He barked aloud in wordless triumph, and swept in to hammer aside a high blow from another swordsman. Grasping his foe by the collar, Mago saw his face. Little more than a child, brown eyes wide, mouth moving in wordless fear. Mago blinked, and then caved the boy’s head in with three terrible blows from the spiked pommel of his sword. He threw the corpse away, and flung himself into the melee, as his brothers closed the net. The slaughter was absolute, men who had raided and pillaged Dacian land for years died on their knees, begging for Dacian mercy.}\par
+\emph{Mago brought his sword down, cleaving a pleading nomad’s head down through to the teeth. He wrenched his sword free and flung his arms wide. There were no more left to kill. The Fighting Volkodavs howled in triumph on a mountain of corpses. A gunshot rang out. Mago heard someone scream. The voice sounded familiar.}\par
+\emph{Then he hit the ground. White-hot pain erupted from his upper thigh, where the bullet had struck him in the back. He realized that he was screaming, and all at once it hit him. The cold mud in his hair, on his face. The clawing agony in his leg. He knew that he would live, somehow. Limping for life, but alive. He forced open his eyes, through the tears of pain, and scanned the perimeter for the source. \textbf{Who?} He tried to breathe through gritted teeth, pain and fury foaming in his mouth. \textbf{Who shot me? I must know.} He felt a tooth crack as his eyes settled on the source of his ruin.}\par
 \emph{The one-armed man, pale from loss of blood and fading fast, grinned over the smoking barrel of his arquebus.}}\par
 	\end{quotation}
 Song of Swords is a historical and fantasy tabletop role-playing game that puts its emphasis on realism. 
@@ -408,14 +390,9 @@ Skills are detailed in their own Chapter, but the principle for rolling them is 
 Attribute Checks. Determine the RS, roll at TN 7, count the successes. Skill Checks and Attribute Checks 
 are two kinds of basic Checks that follow these rules.  
 	\begin{quote}
-			\emph{Soot Macross, one of the infamous Macross Sisters, is trying to climb a 30-foot tall fortress wall escape 
-capture. The GM tells her player to roll a Climbing check. Soot’s Pool for the check is her Mobility 
-(which is 10) plus her Climbing Skill (which is 4). She rolls 14 dice, of which 5 roll equal to or over 7, 
-meaning she got 5 Successes.}
+			\emph{Soot Macross, one of the infamous Macross Sisters, is trying to climb a 30-foot tall fortress wall escape capture. The GM tells her player to roll a \nameref{skill:Climbing} check. Soot’s Pool for the check is her Mobility (which is 10) plus her Climbing Skill (which is 4). She rolls 14 dice, of which 5 roll equal to or over 7, meaning she got 5 Successes.}
 
-			\emph{The GM decides that since the inside of the wall is rough and covered in possible handholds, the RS is 
-only 1 per 10 feet. Since the walls are 30 feet high, Soot’s roll of 5 was more than sufficient to get her to 
-the top.} 
+			\emph{The GM decides that since the inside of the wall is rough and covered in possible handholds, the RS is only 1 per 10 feet. Since the walls are 30 feet high, Soot’s roll of 5 was more than sufficient to get her to the top.} 
 
 			\emph{But climbing down the other side is another question entirely… }
 	\end{quote}
@@ -451,7 +428,7 @@ Otherwise, always round down!
 \printcontents[chapters]{}{1}{}
 \newpage
 	\begin{quote}
-		\emph{“It is thus the beauty of Genosism that its means are its ends. Under such a system there can be no confusion as to the right course of action, no contrivance of the ends justifying the means, because you are not pursuing an objective the route to which must be interpreted, but exercising a lifelong discipline the very practice of which is its own purpose.”}\\ 
+		\emph{“It is thus the beauty of Genosism that its means are its ends. Under such a system there can be no confusion as to the right course of action, no contrivance of the ends justifying the means, because you are not pursuing an objective the route to which must be interpreted, but exercising a lifelong discipline the very practice of which is its own purpose.”}\par
 
 		\hfill -\textbf{Pontifatrix Lea I}, Annotations on The Solar Scriptures, Xth Edition 
 	\end{quote} 
@@ -1077,6 +1054,7 @@ When your character experiences, witnesses or perpetrates an action above their 
 decide that they should make a Grit test. This is a \textbf{WIL} check with RS equal to the difference between the character’s current Grit and the level of severity of the experience (as determined on the chart below) to a maximum RS of 3. 
 
 \begin{table}
+	\centering
 	\caption{Grit Advancement}
 	\label{tab:GritAdvancement}
 \begin{tabu} spread 0pt {lXX}
@@ -1094,7 +1072,7 @@ Grit&Description&Example Advancement Threshold\\
 10& Almost completely inured to fear and pain. Totally fearless. &Destroying everything you have ever cared for with your own hands. \\
 \end{tabu}
 \vspace{0.5 cm}
-		\caption*{Success: Character gains 1 Grit. Failure: Character does not gain a point of Grit.}
+		\caption*{Success: Character gains 1 Grit. Failure: Character does not gain a point of Grit.} %NEEDS multicol or something
 \end{table} 
 
 \chapter{Races}\label{ch:races}
@@ -1150,14 +1128,12 @@ to use wi-fi), so assume that all historical characters automatically spend 1 PC
 \subsection{Humans} %NEEDS work
 \begin{quotation}
 	\emph{"Humans pursue death with zeal because they know their mortality. 
-	Deep down, they do not want to live long enough to die." }
-	
+	Deep down, they do not want to live long enough to die."}\par
 	\hfill--\textbf{Nikephoros}, Helian Philosopher 
 \end{quotation}
 \begin{quotation} 
 	\emph{"My arms are tired, my feet are cold; 
-I wish I were at home eating boar."}
-
+I wish I were at home eating boar."}\par
 	\hfill--\textbf{Sir Wilhelm the Strong}, Beleaguered Knight
 \end{quotation}
 \subsubsection*{Overview}
@@ -1167,8 +1143,8 @@ Human beings, also called the Race of Men, the Hostoadin, and a host of other na
 Humanity is a flexible race, and one that builds communities naturally. Humans form nomadic tribes and 
 pastoral communities as easily as they form city-states and great empires. There does not seem to be an 
 environment which they favor over any other; from burning deserts to frozen tundras, lush valleys to 
-desolate wastelands -- anywhere men can live, men do live. 
- 
+desolate wastelands -- anywhere men can live, men do live.
+
 
 The Human tendency to build communities brings with it a sense of tribalism that often turns them 
 against one another, and thus war is the one constant of Human civilization. Yet, so too have they 
@@ -1177,20 +1153,17 @@ infinite potential, both for civilization and debauchery.
  
 
 \subsubsection*{Appearance} 
-Human height varies depending on climate, diet and social conditions, but at this time the average man is 
-about 5'6" and 160 lbs, while the average woman is 5'4", weighing about 120 lbs. Human beings come in 
-many pigments and colorations, though all are descended from common ancestors and are ultimately 
-similar. 
+Human height varies depending on climate, diet and social conditions, but at this time the average man is about 5'6" and 160 lbs, while the average woman is 5'4", weighing about 120 lbs. Human beings come in many pigments and colorations, though all are descended from common ancestors and are ultimately 
+similar.
 
 
 Human beings are young adults by 16 years of age, middle-aged by 40 and elderly by 60, give or take a 
-few years depending on constitution and lifestyle. Infant mortality is high, but in most societies, if a child 
-can survive his first six years, he is likely to live until a ripe age. 
- 
+few years depending on constitution and lifestyle. Infant mortality is high, but in most societies, if a child can survive his first six years, he is likely to live until a ripe age.
+
 
 \subsubsection*{Racial Abilities and Characteristics} 
 \paragraph{Attribute Modifiers:} None\\
-Willing to Learn
+\paragraph{\label{par:Willing to Learn}Willing to Learn}---\quad
 Humans are flexible creatures by nature, and learning is something most can do very quickly, 
 particularly when instructed. Many of the other races, having the mindset of immortality, or 
 simply lacking this flexibility of mind, take to structured teaching less well, and require more 
@@ -1199,22 +1172,18 @@ the Human mind adopts easy. When purchasing Schools, Human characters reduce the
 each Proficiency Core added to the School by 1. 
 
 
-\paragraph{The Human Condition}
+\paragraph{\label{par:The Human Condition}The Human Condition}---\quad
 Human beings live short, brutal lives by the standards of the elder races. Moreso than any other 
 race, Humans are characterized by their ability to overcome their own weaknesses. Only Humans 
 may benefit from the Flaw Arc. 
 \subsubsection*{Culture and Society} 
 There is no single unified Human culture. The diaspora of humanity across Mundus has created an 
-enormous field of differing cultures and civilizations, which vary dramatically from each other. No 
-blanket statement can be said about Human cultures, except that they predominantly consist of Humans.
+enormous field of differing cultures and civilizations, which vary dramatically from each other. No blanket statement can be said about Human cultures, except that they predominantly consist of Humans.
 \subsubsection*{Ecology} 
 XXX 
 \subsection{Goblins}
 \begin{quotation}
-	\emph{"Do you see those wretched creatures, slinking in the dark? Once upon a time, they too had hopes and dreams, and built great 
-empires to challenge the gods. From mud and grime they came, to mud and grime we returned them. Take this lesson to heart. 
-Human."}
-
+	\emph{"Do you see those wretched creatures, slinking in the dark? Once upon a time, they too had hopes and dreams, and built great empires to challenge the gods. From mud and grime they came, to mud and grime we returned them. Take this lesson to heart. Human."}\par
 	\hfill--\textbf{Petraclius Volkanius}, \textit{Helian Dux}
 \end{quotation}
 \begin{quotation} 
@@ -1424,162 +1393,91 @@ Dwarves mate for life, and rarely seek a second mate if separated from the first
 The Din, or Elves, are a category of humanoids characterized by their possession of ‘The Focus.’ The 
 Focus is a sort of practice, aversion, taboo or belief that grants the Din immortality so long as it is held to, 
 as well as certain other powers or abilities, based on the sub-race of Din. 
- 
-
-The Din themselves often quarrel over what precisely constitutes a Din. The Ohanedin, for example, 
-maintain that Humans are also Din (they call them the Hostoadin) because of their ability to Ascend, 
-which they consider a form of Focus. The Burdinadin, by contrast, do not believe that the Zells or the 
-Ohanedin are Din at all, because both receive their immortality from higher powers, rather than from 
-within. The Orredin believe that the Goblins are a degenerate and fallen form of Din that has forgotten its 
-Focus (and thus, justify by precedent that the Orredin themselves are an ascended superior race, while the 
-rest are merely average). 
-
- 
-Whatever the truth of the matter, for the purposes of Races, any race with a Focus can be considered Din, 
-and remain ageless so long as they practice their Focus. They are also susceptible to any effects, magic, 
-and so on that specifies an effect against Din. 
 
 
-In terms of appearance, the Din as a whole are generally similar to Humans, but are usually marked by 
-slightly tapered ears (though this varies between the modest and delicate ears of the Orredin, and the 
-grand, some would say obnoxiously large ears of Zells). The features of Humans (for those Din who hold 
-that the Humans can be counted among them) are simply a logical continuation down from the Orredin. 
+The Din themselves often quarrel over what precisely constitutes a Din. The Ohanedin, for example, maintain that Humans are also Din (they call them the Hostoadin) because of their ability to Ascend, which they consider a form of Focus. The Burdinadin, by contrast, do not believe that the Zells or the Ohanedin are Din at all, because both receive their immortality from higher powers, rather than from within. The Orredin believe that the Goblins are a degenerate and fallen form of Din that has forgotten its Focus (and thus, justify by precedent that the Orredin themselves are an ascended superior race, while the rest are merely average). 
+
+
+Whatever the truth of the matter, for the purposes of Races, any race with a Focus can be considered Din, and remain ageless so long as they practice their Focus. They are also susceptible to any effects, magic, and so on that specifies an effect against Din.
+
+
+In terms of appearance, the Din as a whole are generally similar to Humans, but are usually marked by slightly tapered ears (though this varies between the modest and delicate ears of the Orredin, and the grand, some would say obnoxiously large ears of Zells). The features of Humans (for those Din who hold that the Humans can be counted among them) are simply a logical continuation down from the Orredin.
 
 
 \subsubsection{Focus}
-Din are ageless beings and hold a kind of immortality as long as their Focus is maintained. Each Din has a 
-different Focus, which provides them with certain attributes and skills. 
+Din are ageless beings and hold a kind of immortality as long as their Focus is maintained. Each Din has a different Focus, which provides them with certain attributes and skills.
 
 
-\subsection{Zells}
-The Zellish Focus is called ‘The Dream,’ which grants them immortality so long as they are part of The 
-Dream. A seafaring race, the Zells need to be members of a crew to be part of The Dream. Zells have a 
-strong bond with one another, and have telepathic links with their crew members. 
+\paragraph*{Zells}
+The Zellish Focus is called ‘The Dream,’ which grants them immortality so long as they are part of The Dream. A seafaring race, the Zells need to be members of a crew to be part of The Dream. Zells have a strong bond with one another, and have telepathic links with their crew members.
 
- 
+\paragraph*{Burdinadin}
+The Focus for Burdinadin is rather unclear. The ‘Iron Elves,’ as they are also called, only know that while they are within the sanctuary of their Iron Glade, or otherwise shielded when venturing outside the Glade, they are protected from spiritual contamination, and maintain their Focus.
 
+\paragraph*{Ohanedin}
+The Ohanedin are feared, yet honorable race. Their Focus has three main principles, which ensures their immortality and agelessness. First, they must never clothe themselves in metal, they must never betray an oath freely given, and never eat meat from animals that cannot speak.
 
-Burdinadin 
-The Focus for Burdinadin is rather unclear. The ‘Iron Elves,’ as they are also called, only know that while 
-they are within the sanctuary of their Iron Glade, or otherwise shielded when venturing outside the Glade, 
-they are protected from spiritual contamination, and maintain their Focus. 
+\paragraph*{Orredin}---\quad
+[Not Released] %BLATANT LIES, can we fix this somehow?
 
- 
-
-Ohanedin 
-The Ohanedin are feared, yet honorable race. Their Focus has three main principles, which ensures their 
-immortality and agelessness. First, they must never clothe themselves in metal, they must never betray an 
-oath freely given, and never eat meat from animals that cannot speak. 
-
- 
-
-Orredin 
-[Not Released] 
-
- 
-
-Paleolithic Elf 
-XXX 
-
- 
+\paragraph*{Paleolithic Elf}---\quad
+[Not Released]
 
 \subsection{Zells}
-“Quatschte blöde an die Zelle, kriegste schnell ne Maulschelle” 
-<If you talk tough to a Zell, you should expect your face to swell> 
--Sessonian Folk Saying (Rhyming Translation) 
- 
-“My race sailed these waters before yours crawled out of them.” 
-Rade Sark, Admiral-Prince of the Sea of Eyes 
+\begin{quote}
+	\centering
+		\emph{“Quatschte blöde an die Zelle, kriegste schnell ne Maulschelle”}\\
+		\emph{<<\emph{If you talk tough to a Zell, you should expect your face to swell}>>}\par
+\hfill --Sessonian Folk Saying (Rhyming Translation)
+\end{quote}
+
+\begin{quote}
+	\centering
+		\emph{“My race sailed these waters before yours crawled out of them.”}\par
+		\hfill --\textbf{Rade Sark}, Admiral-Prince of the Sea of Eyes
+\end{quote}
  
 \subsubsection*{Overview} 
-The Zells, or Zellish Elves, or Sugaardin, are a race of humanoids who favor a maritime existence, and 
-are telepathically bonded to their crews, as well as to the living ships on which they sail, called Zellislava. 
-They are immortal, so long as they are on the sea and part of a crew, and so most Zells avoid land when 
-possible. Zells also have a strange attunement to the supernatural, drawing the attention of powerful 
-spirits and even deities more easily than other races. 
+The Zells, or Zellish Elves, or Sugaardin, are a race of humanoids who favor a maritime existence, and are telepathically bonded to their crews, as well as to the living ships on which they sail, called Zellislava. They are immortal, so long as they are on the sea and part of a crew, and so most Zells avoid land when possible. Zells also have a strange attunement to the supernatural, drawing the attention of powerful spirits and even deities more easily than other races. 
 
- 
 
-The Zells have ruled the seas of Mundus for countless eons, and can be found in every maritime role, 
-from mercenary to merchant. Though at heart they are not as warlike a people as Humans are, the Zells 
-have proven that on the high seas they have no equals, and certain groups of them are highly militant. 
+The Zells have ruled the seas of Mundus for countless eons, and can be found in every maritime role, from mercenary to merchant. Though at heart they are not as warlike a people as Humans are, the Zells have proven that on the high seas they have no equals, and certain groups of them are highly militant.
 
- 
 
 \subsubsection*{Appearance} 
-Zells resemble Humans, but it would be difficult to mistake the two. Their ears are long and tapered, and 
-grow longer with age; truly ancient Zells having ears in excess of a foot in length. 
-The average Zell of both genders stands at about 5'10". Males tend to weigh about 150 lbs, and females 
-slightly less. 
-
- 
+Zells resemble Humans, but it would be difficult to mistake the two. Their ears are long and tapered, and grow longer with age; truly ancient Zells having ears in excess of a foot in length. 
+The average Zell of both genders stands at about 5'10". Males tend to weigh about 150 lbs, and females slightly less.
 
 
-The ‘classic Zell,’ the stock from which most of them derive, is fair skinned, with straight black hair, 
-black eyes, and an aquiline nose. However, most Zells have some Human ancestry, and so show diverse 
-traits much as Humans do. Zellish men can grow full beards, something that most Din cannot do, and 
-some of the Zellish ethnic groups place great importance in the growing of mustaches and beards. 
+The ‘classic Zell,’ the stock from which most of them derive, is fair skinned, with straight black hair, black eyes, and an aquiline nose. However, most Zells have some Human ancestry, and so show diverse traits much as Humans do. Zellish men can grow full beards, something that most Din cannot do, and some of the Zellish ethnic groups place great importance in the growing of mustaches and beards.
 
- 
 
 \subsubsection*{Racial Abilities and Characteristics} 
 \paragraph{Attribute Modifiers:} +1 AGI, +2 PER 
 
- 
-
-Elvish Agelessness 
+\paragraph{Elvish Agelessness}---\quad
 Elves reach physical maturity by the age of 20, much like Humans do. However, after that, their 
 bodies' aging process halts, so long as they retain their Focus. Each breed of Din has a different 
 Focus. 
 
- 
 
-Focus 
-Like all members of the Din, the Zells have a focus that allows them to remain Ageless. The 
-focus for Zells is ‘The Dream.’ As long as a Zell is a member of a Dream, the Zell does not age 
-significantly past physical maturity. This effect does not stop the Zell's ears from growing longer 
-over time. Zells who leave their Dream begin to age normally. 
-Zells lose Focus when they set foot on land, but they can stave off the effects of aging by drinking 
-salt walter from the sea. As long as they have a steady supply of sea water and are still part of a 
-Dream, they can retain their immortality indefinitely. 
+\paragraph{Focus}---\quad
+Like all members of the Din, the Zells have a focus that allows them to remain Ageless. The focus for Zells is ‘The Dream.’ As long as a Zell is a member of a Dream, the Zell does not age significantly past physical maturity. This effect does not stop the Zell's ears from growing longer over time. Zells who leave their Dream begin to age normally. 
+Zells lose Focus when they set foot on land, but they can stave off the effects of aging by drinking salt walter from the sea. As long as they have a steady supply of sea water and are still part of a Dream, they can retain their immortality indefinitely.
 
- 
-
-Zellish Dream 
-The Dream is a sort of psychic connection that occurs between Zells. It is a form of semi-
-voluntary communal bonding, the trigger for which is a kind of vessel on open water. When it 
-takes root, the Zells begin to share thoughts, become aware of each others' well-being and 
-feelings, and perhaps more importantly, begin to hear the thoughts of the ship itself, which is 
-naturally drawn into the bond. The Dream allows Zells to communicate nonverbally over a 
-distance of about a mile, and to communicate instructions to their ship (assuming it is a 
-Zellislava). Being a member of a Dream is the requirement for their Focus. 
-
- 
-
-Becoming part of a Dream requires that two or more Zells spend about a week as the sole 
-occupants of a vessel or ship. Even a rowboat will do. Importantly, these Zells must at least agree 
-on which of The Seven Gods of Chaos has primacy. They do not need to be of the same tribe or 
-hold the same beliefs. Even Zells who were raised on land with no contact with other Zells can 
-form crews by fulfilling these requirements. Additionally, Zells that are not part of a Dream may 
-be incorporated into a Dream by spending a similar amount of time on the ship with its crew. 
-
- 
-
-Zellislava 
-Any ship that serves as the ‘founding’ vessel for a Zellish Dream (i.e. the rowboat that Zells 
-spend a week on to merge their consciousnesses) becomes a Zellislava immediately. 
-Alternatively, if a pre-established Dream of Zells make up the primary crew of a vessel of any 
-size for about a year, that ship will gradually become a Zellislava over that period. The Zellislava 
-itself will be aligned to the member of The Seven Gods of Chaos that the Zellish crew worship. A 
+\subparagraph{Zellish Dream}---\quad
+The Dream is a sort of psychic connection that occurs between Zells. It is a form of semi-voluntary communal bonding, the trigger for which is a kind of vessel on open water. When it takes root, the Zells begin to share thoughts, become aware of each others' well-being and feelings, and perhaps more importantly, begin to hear the thoughts of the ship itself, which is naturally drawn into the bond. The Dream allows Zells to communicate nonverbally over a distance of about a mile, and to communicate instructions to their ship (assuming it is a Zellislava). Being a member of a Dream is the requirement for their Focus.
 
 
-Zellislava is a living ship that gradually grows and expands from the framework of its original 
-body, increasing evermore in sophistication and complexity, and eventually gaining moving 
-components. 
+Becoming part of a Dream requires that two or more Zells spend about a week as the sole occupants of a vessel or ship. Even a rowboat will do. Importantly, these Zells must at least agree on which of The Seven Gods of Chaos has primacy. They do not need to be of the same tribe or hold the same beliefs. Even Zells who were raised on land with no contact with other Zells can form crews by fulfilling these requirements. Additionally, Zells that are not part of a Dream may be incorporated into a Dream by spending a similar amount of time on the ship with its crew.
 
- 
 
-Friends in Deep Places 
+\paragraph{Zellislava}---\quad
+Any ship that serves as the ‘founding’ vessel for a Zellish Dream (i.e. the rowboat that Zells spend a week on to merge their consciousnesses) becomes a Zellislava immediately.
+Alternatively, if a pre-established Dream of Zells make up the primary crew of a vessel of any size for about a year, that ship will gradually become a Zellislava over that period. The Zellislava itself will be aligned to the member of The Seven Gods of Chaos that the Zellish crew worship. A Zellislava is a living ship that gradually grows and expands from the framework of its original body, increasing evermore in sophistication and complexity, and eventually gaining moving components.
+
+
+Friends in Deep Places
 Zells in open water, either at sea, on inland oceans or large lakes, have the peculiar ability to 
 vanish into the depths, and reappear at the nearest shore. This involves them emptying their lungs, 
 losing consciousness, and sinking into the deep. Through a barely understood force (believed by 
@@ -1676,7 +1574,6 @@ the tribe gather together (if able), and hold talks about any possible changes t
 his crew breaks the creed, and it is discovered, punishment is usually meted out quickly, according to the 
 creed, by the rest of the tribe. 
 
- 
 
 The actual culture and values of the Zells vary dramatically along tribal lines, but a constant is the 
 worship of The Seven, who are believed to be the source of The Dream, and who are venerated almost 
@@ -1687,11 +1584,9 @@ they cannot articulate why exactly they do. Their religious services always invo
 some sort, and The Seven are even portrayed as being spokes on a great wheel, in some tribes. Even 
 weaponry is often made involving rings or wheels: throwing disks with razor edges, bows with the strings 
 threaded through multiple wheels, and the occasional sword with rings attached to the spine. Thus far, the 
-Zells haven't figured out how to make a sword that looks like a ring, preferring to use their Zellish Sabers, 
+Zells haven't figured out how to make a sword that looks like a ring, preferring to use their Zellish Sabers, although it's only a matter of time. 
 
 
-although it's only a matter of time. 
-. 
 Many Zells have simply been assimilated into Human culture (usually because their ancestors couldn't 
 afford a ship). These people are not generally much different from regular Humans, though they tend to 
 be taciturn, as the natural aversion to words stays with them. The fixation with circles also seems to be 
@@ -1700,7 +1595,6 @@ favor rings, wheels, and other circular designs in art and craft. It is unclear 
 due to the Seven's association with the ‘Brass Wheel,’ or if The Seven's association with rings is due to 
 the Zells' worship of them. 
 
- 
 
 Zells are stereotyped by humans as being highly promiscuous and uninhibited. This is mostly because the 
 ones humans meet tend to be sailors getting drunk before heading back out to sea, but it is generally true 
@@ -1709,8 +1603,6 @@ with) the mother. This is considered the normal state of affairs among Zells--it
 to actually know his father’s name, those who do will often adopt it and the suffix “-vic” as their surname. 
 So a Zell named Boris whose father’s name was Mark would be called Boris Markovic. Having such a 
 name is as close to “nobility” as it gets in Zellish society. 
-
- 
 
 \subsubsection*{Ecology} 
 Zells are social animals. In their natural state, they exist in tight-knit groups that live, travel, fight, eat, and 
@@ -2109,9 +2001,7 @@ Energy. Orredin cannot grow full beards, though some can muster goatees or thin 
  
 
 \paragraph{Attribute Modifiers:} +2 Intelligence, +2 Willpower, -2 Health, -1 Strength 
-Always have Beautiful Minor (can buy Beautiful Major at difference in cost) 
-
- 
+Always have \nameref{boon:Beautiful} Minor (can buy \nameref{boon:Beautiful} Major at difference in cost)
 
 \paragraph{Focus:} Like all Din, the Orredin have a Focus which allows them to remain ageless and immortal. The 
 Orredin focus is to simply be in a Warren with 50 or more Sorcerous Flow. The Flow can be utilized by 
@@ -2137,19 +2027,20 @@ An Orredin starts with 1 Gnosis, and can increase their Gnosis cap in the follow
 \paragraph{And then returns once more, and so is like a Spring:} All Orredin have a Bloodline Power that can be selected from the list below. Additional powers can be purchased in the Magic category at Character Creation. These are just examples. Confer with your GM about personalized Bloodline Powers that may fit your character better. 
 \subsubsection{Bloodline Powers}
 Killing Glare [X+1] %MANEUVER FOR SPELL
-The Orredin can emit thin, visible beams of energy from his eyes that can shear through almost any 
-material like a hot knife through butter. Activate this ability with Gnosis [X+1]. 
-
-
+The Orredin can emit thin, visible beams of energy from his eyes that can shear through almost any material like a hot knife through butter. Activate this ability with Gnosis [X+1].
 When Activated, the Orredin may shoot lasers out of their eyes. These lasers are treated as a Shooting 
-Missile Weapon capable of Rapid Fire (with no limit except MP) with the following Profile: 
-\begin{tabu} to \textwidth {XXX[-1,c]X[c]XX}
+Missile Weapon capable of Rapid Fire (with no limit except MP) with the following Profile:
+\begin{table}[!ht]
+	\caption{Killing Glare}
+	\label{tab:Killing Glare}
+	\begin{tabu} to \textwidth {XXX[-1,c]X[c]XX}
 Weapon Name&Weapon Type&Range& Missile TN&Damage&Special\\
 Killing Glare&Elf Laser&20&4&(WIP+X)c&Flaming 3\\
-\end{tabu}
-There is no “Eye Lasers” Proficiency. For the purposes of Missile Pool, Killing Glare uses Perception instead of Proficiency. Aiming is possible, and adds Perception a second time. Bracing is not possible with Killing Glare. 
-Other Orredin may simply deflect the ability harmlessly by spending Gnosis equal to X. 
-Sometimes, Killing Glare will manifest itself as a beam emitted from the mouth or a hand. 
+	\end{tabu}
+\end{table}
+
+
+There is no “Eye Lasers” Proficiency. For the purposes of Missile Pool, Killing Glare uses Perception instead of Proficiency. Aiming is possible, and adds Perception a second time. Bracing is not possible with Killing Glare. Other Orredin may simply deflect the ability harmlessly by spending Gnosis equal to X. Sometimes, Killing Glare will manifest itself as a beam emitted from the mouth or a hand.
 
 
 Kneel! [X] %SPELL MANUEVER
@@ -2400,19 +2291,13 @@ against Mighty Genosus, his people, or his church(es) gains the Paladin between 
 \end{itemize}
 Divinity depending on the severity of their crimes (1 being a peasant who abandoned the faith out of frustration, 5 being a prominent priest who defected to Chaos Worship or worse).
 \paragraph{Judgement}
-A Paladin can channel the power of Genosus through any weapon—even his own hands—to 
-strike the enemies of his God with terrible vengeance. When a Paladin performs a melee 
-maneuver that inflicts damage (such as Swing and Thrust, though Shoot and Melee Shoot do not 
-count) he may also declare that he is performing Judgement. 
+A Paladin can channel the power of Genosus through any weapon—even his own hands—to strike the enemies of his God with terrible vengeance. When a Paladin performs a melee maneuver that inflicts damage (such as Swing and Thrust, though Shoot and Melee Shoot do not count) he may also declare that he is performing Judgement.\par
 
 
-If the attack hits, in addition to any damage from the attack itself, Judgement inflicts a Fire 
-Damage state not just on the Hit Location, but on all Hit Locations in the Target Zone. So, if a 
-Paladin uses Judgement and strikes an opponent, aiming for the Lower Arm (Target Zone), and 
-hits the victim on the Hand (Hit Location), the victim's Elbow, Forearm and Hand all erupt into flames. 
+If the attack hits, in addition to any damage from the attack itself, Judgement inflicts a Fire Damage state not just on the Hit Location, but on all Hit Locations in the Target Zone. So, if a Paladin uses Judgement and strikes an opponent, aiming for the Lower Arm (Target Zone), and hits the victim on the Hand (Hit Location), the victim's Elbow, Forearm and Hand all erupt into flames.
 
 
-Judgement's Fire Damage is X/TN 5, 3 rounds. X is the Paladin's WIL score. 
+Judgement's Fire Damage is X/TN 5, 3 rounds. X is the Paladin's WIL score.
 
 
 However, Judgement will not work on just any target. The target must be one who is an enemy of 
@@ -2437,8 +2322,8 @@ that missiles flung at them seem to be slowed by the very light itself.
 
 Paladins gain AV versus Missiles and Explosions (this counts as Cover AV) of all varieties so 
 long as they are in contact with light. The amount of AV they gain depends on the intensity of the 
-light they are exposed to. 
-\begin{table}[!h]
+light they are exposed to.\par
+\begin{table}[!ht]
 	\caption{Shield of Dawn AV}
 	\label{tab:Shield of Dawn AV}
 	\begin{tabu} spread 0pt {Xc}
@@ -2626,22 +2511,22 @@ Silver Guard grants him Succor. This can stack.
 \item The Silver Guard regains 1 CP. 
 \end{itemize}
 If the target of this ability is another Ascendant, they can negate (or reduce the effects of) Moonstrike by spending Divinity of their own, on a 1-for-1 basis. 
-\paragraph{The White Fog}
+\paragraph{The White Fog} %REALLY don't like that little wraptable break on the second-to-last row
 \begin{wraptable}{r}{9 cm}
 	\caption{Conditions for the White Fog}
-	\label{tab:Dessian_White_Fog}
-	\begin{tabu} spread 0pt {Xl}
-		Condition& Modifier\\
-		Daytime& -10 yards\\
-		Night& +10 yards\\
-		Extremely Hot& -20 yards \\
-		Hot& -10 yards \\
-		Cold& +30 yards \\
-		Extremely Cold& +50 yards \\
-		No Moisture& -10 yards \\
-		Some Moisture& +10 yards \\
-		Tons of Moisture (snow, rain, ocean)& +20 yards \\
-		Another Silver Guard is present& +10 yards each \\
+	\label{tab:Dessian White Fog}
+	\begin{tabu} spread 0pt {Xr}
+		Condition&Modifier\\
+		Daytime&-10 yards\\
+		Night&+10 yards\\
+		Extremely Hot&-20 yards \\
+		Hot&-10 yards \\
+		Cold&+30 yards \\
+		Extremely Cold&+50 yards \\
+		No Moisture&-10 yards \\
+		Some Moisture&+10 yards \\
+		Tons of Moisture (snow, rain, ocean)&+20 yards \\
+		Another Silver Guard is present&+10 yards each \\
 	\end{tabu}
 \end{wraptable}
 A Silver Guard may choose to passively drain the heat out of an area around himself, and to cause 
@@ -3034,10 +2919,9 @@ Old Wound multiple times on the exact same part of your body, or take Prodigious
 your character creation attribute caps by 4. 
 
 
-Unless specified otherwise, a higher level of a Boon or Bane replaces the effects of its lower levels. 
+Unless specified otherwise, a higher level of a Boon or Bane replaces the effects of its lower levels.
 
-
-\section{Boons List}%THIS section should overlap with the table, right now it's garbage
+\section{Boons List} %THIS section should overlap with the table, right now it's garbage
 \begin{table}[!h]
 	\caption{List of Boons}
 	\label{tab:boons list}
@@ -3156,13 +3040,10 @@ You're pretty. Really pretty. A character with this Boon is easy on the eyes. Th
 and while different cultures have greatly different standards of beauty, for the most part, this is a universal 
 Boon. Beautiful people are generally treated better, as they make a good first impression. 
 
- 
-
-2: You gain a +2 bonus to CHA when dealing with everyone, if your beauty is apparent. You gain a +4 
-bonus to CHA when dealing with characters who would find you sexually attractive. 
-4: You cause carriage crashes. You gain a +3 bonus to CHA when dealing with everyone, if your beauty 
-is apparent. You gain a +6 bonus to CHA when dealing with characters who would find you sexually 
-attractive. Beauty of this caliber often comes with unwanted attention. 
+\begin{itemize}
+\item [2:] You gain a +2 bonus to CHA when dealing with everyone, if your beauty is apparent. You gain a +4 bonus to CHA when dealing with characters who would find you sexually attractive.
+\item [4:] You cause carriage crashes. You gain a +3 bonus to CHA when dealing with everyone, if your beauty is apparent. You gain a +6 bonus to CHA when dealing with characters who would find you sexually attractive. Beauty of this caliber often comes with unwanted attention.
+\end{itemize}
 \paragraph{\label{boon:Berserker}Berserker}---\quad \textbf{(6/12)}\par
 You are prone to flying into uncontrollable spells of bloodthirsty, shield-gnawing lunacy, during which 
 you cannot be prevented from cleaving every head within arm's reach from its shoulders. 
@@ -3172,8 +3053,7 @@ Berserk rages last for 3d10 Rounds. To come down from a berserk rage early, you 
 test at RS 5. Success ends the Berserk Rage. This can be attempted once per Round. 
 
 
-How you enter a berserk rage varies depending on the level of this Boon, but the effects of going berserk 
-are generally the same. 
+How you enter a berserk rage varies depending on the level of this Boon, but the effects of going berserk are generally the same. 
 \begin{itemize}
 \item You reduce all Pain by half. 
 \item You ignore ALL Stun inflicted by Wounds, but not those inflicted by weapon effects. 
@@ -3623,12 +3503,11 @@ along with your character. The Dependant can’t just be sent off--maybe you jus
 them, or they wouldn’t be safe anywhere else, or you’re protecting them from something nobody else can 
 even be allowed to know about. Whatever the reason, the Dependant is a chink in your armor that must be 
 defended at all costs. 
+\subparagraph{6:} Create a Follower with 4 less PCP than the PC’s. They may not spend more than 4 PCP on Boons \& Banes, may not be a Tier 5 Race, and should be of a PCP 4 Social Class or lower (Same or lower than the Player). The Dependant may gain Arc Points through their own Arcs, or however else the GM sees fit. Should the Dependant be in danger, you must roll a simple WIL test with RS of 2, or immediately rush to their defence. If the Dependant is injured, you have a -1 to all actions that does not involve saving, rescuing or healing your dependant. If your Dependant dies, and it is not your fault, you could have done nothing to intervene, or the Dependant themselves tried to save someone, then you must pay back your next 6 Arc Points as you slip into a depressed state. If you COULD have saved them, but failed due to being overwhelmed by enemies, failing a skill roll, or whatever other reason, then the next 12 Arc Points must be paid as a cost, and you could be in danger of receiving an Insanity.\par
 
-\begin{itemize}
-	\item [6:] Create a Follower with 4 less PCP than the PC’s. They may not spend more than 4 PCP on Boons \& Banes, may not be a Tier 5 Race, and should be of a PCP 4 Social Class or lower (Same or lower than the Player). The Dependant may gain Arc Points through their own Arcs, or however else the GM sees fit. Should the Dependant be in danger, you must roll a simple WIL test with RS of 2, or immediately rush to their defence. If the Dependant is injured, you have a -1 to all actions that does not involve saving, rescuing or healing your dependant. If your Dependant dies, and it is not your fault, you could have done nothing to intervene, or the Dependant themselves tried to save someone, then you must pay back your next 6 Arc Points as you slip into a depressed state. If you COULD have saved them, but failed due to being overwhelmed by enemies, failing a skill roll, or whatever other reason, then the next 12 Arc Points must be paid as a cost, and you could be in danger of receiving an Insanity.
-	\item [12:] Create a Follower with 8 less PCP than the PCs. They may not spend more than 2 PCP on Social Class, and may only put 1 PCP into Boons \& Banes. They are restricted to half of the Bane holder’s Proficiency PCP. The Dependant gains Arc Points at half the rate they normally would. Should the Dependant be in danger, you must make a WIL test with an RS of 4, or immediately rush to their aid. You cannot leave your Dependant behind anywhere, unless you make arrangements for their safety (A castle, with owner and guards friendly to the players counts, likewise does a tavern with lockable doors), even if this means you bring them into battle with you. If you must leave them behind anywhere that you cannot be sure is safe, or if you know they are in danger, you take a -2 to all actions that do not lead towards their rescue. If the Dependant should die for any reason, you must pay the next 10 Arc Points you gain as your world shatters around you. You have lost a very important part of your world, and you may never recover. If, however, they die due to you a failure on your part, in a combat you are also taking part in, or because you failed a Skill roll that would have saved them, the next 20 Arc Points must be paid in cost, the GM is HIGHLY encouraged to provide you with an Insanity, or two, and you lose the ability to gain Arc Points from one of your Arcs for a period determined by your GM.\\
-\end{itemize}
-\subparagraph*{Special:} If the GM allows it, you may, instead of taking the Arc Point hit, take a number of Banes that would represent your character’s inability to process or cope with what has happened. The GM may decide these for you, or you may put forward a suggestion. This is a serious event in your character’s life, and thus the Banes you take should represent this.
+\subparagraph{12:} Create a Follower with 8 less PCP than the PCs. They may not spend more than 2 PCP on Social Class, and may only put 1 PCP into Boons \& Banes. They are restricted to half of the Bane holder’s Proficiency PCP. The Dependant gains Arc Points at half the rate they normally would. Should the Dependant be in danger, you must make a WIL test with an RS of 4, or immediately rush to their aid. You cannot leave your Dependant behind anywhere, unless you make arrangements for their safety (A castle, with owner and guards friendly to the players counts, likewise does a tavern with lockable doors), even if this means you bring them into battle with you. If you must leave them behind anywhere that you cannot be sure is safe, or if you know they are in danger, you take a -2 to all actions that do not lead towards their rescue. If the Dependant should die for any reason, you must pay the next 10 Arc Points you gain as your world shatters around you. You have lost a very important part of your world, and you may never recover. If, however, they die due to you a failure on your part, in a combat you are also taking part in, or because you failed a Skill roll that would have saved them, the next 20 Arc Points must be paid in cost, the GM is HIGHLY encouraged to provide you with an Insanity, or two, and you lose the ability to gain Arc Points from one of your Arcs for a period determined by your GM.\par
+
+\subparagraph{Special:} If the GM allows it, you may, instead of taking the Arc Point hit, take a number of Banes that would represent your character’s inability to process or cope with what has happened. The GM may decide these for you, or you may put forward a suggestion. This is a serious event in your character’s life, and thus the Banes you take should represent this.
 \paragraph{\label{bane:Dire Past}Dire Past}---\quad\textbf{(0) }\\
 {Cannot be removed}\par
 You've been through some serious stuff. Maybe you're a survivor of a terrible battle, or maybe you're a veteran of the Crusades. Maybe you spent your childhood as a cabin boy on a witch-hunter's ship, fighting infidels and blasphemous cults on the islands along the Barbary Coast. Maybe you were born in the dark, where others merely adopted it.
@@ -3997,26 +3876,25 @@ Skills List:
 %\nameref{skill:Tactics}
 \end{itemize}
 
-\begin{table}[!ht]
+\paragraph{\label{par:Trained}Trained} No longer count as ‘Untrained’ when using the skill.\\
+\begin{wraptable}{r}{9.5 cm} %UGLY as sin
 	\centering
+	\begin{tabu} spread 0pt{X[c]X[c]XX[c]}
+		Skill Level&Skill Pool&	Skill Bonus&Arc Price\\
+		1&			+1&			\nameref{par:Trained}&	1\\
+		2&			+2&			-&			1\\
+		3&			+3&			-&			1\\
+		4&			+4&			\nameref{par:Teacher}&	1\\
+		5&			+5&			-&			2\\
+		6&			+6&			-&			2\\
+		7&			+7&			-&			2\\
+		8&			+8&			-&			3\\
+		9&			+9&			-&			3\\
+		10&			+10&		\nameref{par:Mastery}&3\\
+	\end{tabu}
 	\caption{Skills Overview}
 	\label{tab:Skill Levels Overview}
-	\centering
-		\begin{tabu} spread 0pt{X[c]X[c]XX[c]}
-	Skill Level&Skill Pool&	Skill Bonus&Arc Price\\
-	1&			+1&			\nameref{par:Trained}&	1\\
-	2&			+2&			-&			1\\
-	3&			+3&			-&			1\\
-	4&			+4&			\nameref{par:Teacher}&	1\\
-	5&			+5&			-&			2\\
-	6&			+6&			-&			2\\
-	7&			+7&			-&			2\\
-	8&			+8&			-&			3\\
-	9&			+9&			-&			3\\
-	10&			+10&		\nameref{par:Mastery}&3\\
-		\end{tabu}
-\end{table}
-\paragraph{\label{par:Trained}Trained} No longer count as ‘Untrained’ when using the skill.
+\end{wraptable}
 \paragraph{\label{par:Teacher}Teacher} Grants the character the ability to give another character one free level of the skill the teacher is proficient in. This ability may only be used once on a person for a single skill, and only a number of skills equal to the receiving character’s INT may be trained this way total. Using this takes about a month of in-game time, give or take at the GM’s discretion, and requires the location and materials needed to perform the trained skill. Multiple characters may be trained at the same time as long as their training starts at the same time and there are adequate resources and facilities.
 \paragraph{\label{par:Mastery}Mastery} Once per session, you may automatically succeed with 1/2 dice rolled for one Skill roll.
 \paragraph{\label{par:Skill Level}Skill Level} Each skill has a level (ranged from 1 to 10) decided by the character’s investment of Skill Points (at character creation) or Arc (later game). The skill level gives the character dice equal to their skill level for skill tests, as well as other bonuses at various skill levels. Skills cost Arc to increase. Upon obtaining a level with a listed Skill Bonus, the character receives the stated bonus.
@@ -4033,12 +3911,10 @@ Skills List:
 \end{itemize}
 \paragraph{Leveling up Skills} Skills have a leveling system based on the amount of points spent in any given skill to increase it to the next level. Skill levels are bought simply by paying the Arc price.
 \paragraph{Retrying Skill Attempts} For physical skills, they can be retried any amount of times, unless injuries or situation stops the character from doing so. For mental ones, such as History and Politics, a single check is allowed, any retries have to be done through the Research skill. For social skills, it’s best to wait before trying again, as if tried again too soon, the target may not react positively, at the GM’s discretion.
-\paragraph{Encumbrance} The amount of gear worn can affect certain skills. There are five levels of Encumbrance: Unencumbered, Light, Medium, Heavy, and Overloaded. 
+\paragraph{Encumbrance} The amount of gear worn can affect certain skills. There are five levels of Encumbrance: Unencumbered, Light, Medium, Heavy, and Overloaded.\\
 \begin{wraptable}{r}{10 cm}%THIS table is complete trash, not sure how to fix it
 	\centering
-	\caption{Encumbrance Level}
-	\label{tab:Encumbrance Penalties}
-	\begin{tabu} spread 0pt{XX[c]X}
+	\begin{tabu} spread 0pt{XX[c]X[r]}
 Encumbrance		&Mobility Effect&Skill Penalty\\\toprule
 Unencumbered	&0				&0\\
 Light			&-2				&+1 RS\\
@@ -4046,6 +3922,8 @@ Medium			&-4				&+2 RS\\
 Heavy			&-6				&+3 RS\\
 Overloaded		&-8				&+4 RS\\
 	\end{tabu}
+	\caption{Encumbrance Level}
+	\label{tab:Encumbrance Penalties}
 \end{wraptable}
 
 
@@ -4888,7 +4766,6 @@ but extracting a large sum of cash from it. This removes the Asset from the char
 least renders it null until it is revitalized through re-investment (the same as purchasing a new asset of the 
 same value). 
 
- 
 
 The act of withdrawing Wealth from an Asset generally takes from several hours to a month, depending 
 on the distance from the place and the ease of having the money (or letters of credit) sent over. 
@@ -5030,7 +4907,7 @@ on the weapon-hand. The kind of Guard it represents depends on the Guard value
 \end{itemize}
 Note that only swords with Guard Value 2 (neither lower nor higher) can use the Murder-Strike Maneuver. %ADD REF TO MORDHAU
 \subsubsection{Special}
-The weapon’s special qualities, which are further described in Table XX. 
+The weapon’s special qualities, which are further described in \autoref{sec:special-qualities}
 \subsubsection{Weight}
 The weight of the weapon added to Encumbrance when sheathed, holstered or stored. When being held, a weapon has 
 no Weight value.
@@ -5302,7 +5179,7 @@ Weapon Queue Polearm -/- 7(-2c) 7(+0p) 8(0) AP Swing 1,Thin Blade, Weapon Attach
 \section{Special Qualities}\label{sec:special-qualities}
 \paragraph{\label{par:AP Swing}AP Swing [X]}---\quad Armor Piercing Swing [X]. When making a Swinging attack against a Hit Location with Hard armor protection, this weapon Inflicts X additional damage against any Armor, up to the AV of the Armor.
 
-\paragraph{\label{par:AP Thrust} P Thrust [X]}---\quad
+\paragraph{\label{par:AP Thrust}AP Thrust [X]}---\quad
 Armor Piercing Thrust [X]. When making a Thrusting attack against a Hit Location with Hard armor protection, this weapon Inflicts X additional damage against any Armor, up to the AV of the Armor.
 
 \paragraph{\label{par:Bleed}Bleed [X]}---\quad
@@ -5311,7 +5188,7 @@ Any Swinging attack from this weapon that either inflicts a Wound, or fails to i
 When using this weapon, you gain 2 automatic additional successes on Initiative Tests made as a result of Offensive/Offensive Orientation.
 
 \paragraph{\label{par:Cavalry Sword}Cavalry Sword}---\quad
-When making a Swing with Ride-By attack, this weapon’s Draw value is increased by 1.
+When making a Swing with Ride-By attack, this weapon’s \hyperref[par:Draw]{Draw} value is increased by 1.
 
 \paragraph{\label{par:Chain}Chain [X]}---\quad
 Any attack made at Swing TN with this weapon ignores the first X successes of an enemy’s Parry or Block defense, including Parrying and Blocking Maneuvers like Riposte or Arm Parry. Additionally, this weapon can neither engage in, nor be engaged in a Hilt Push of any sort.
@@ -5335,7 +5212,7 @@ This weapon can Feint from a Thrust.
 When this weapon is used in a Swing attack against which the target would receive an AV bonus, use the lower value between the armor’s AVC and AVP. The Swing still inflicts cutting damage regardless of which AV is used.
 
 \paragraph{\label{par:Freakishly Large}Freakishly Large}---\quad
-This weapon is so massive that unless the character using it has either 9 STR or the greater Tall Boon, the TNs for the weapon are all increased by 1.
+This weapon is so massive that unless the character using it has either 9 STR or the greater \nameref{boon:Tall} Boon, the TNs for the weapon are all increased by 1.
 
 \paragraph{\label{par:Hand-Off}Hand-Off}---\quad
 This weapon can be wielded with one hand in addition to wielding with both hands. If used in this fashion, you may continue using it with its normal Proficiency, or with a 1H version of either Blunt or Sword proficiency (depending on the base type of the weapon). However, instead of using the normal profile of the weapon, use the 1H version of the weapon with an * next to it. Switching from 1H to 2H versions of a weapon can be done at the beginning of any Action (or in response to an injury) and requires no CP expenditure.
@@ -5344,13 +5221,13 @@ This weapon can be wielded with one hand in addition to wielding with both hands
 When weapons with the Light Blade quality Parry Swinging attacks from this weapon, the Defense TN of the Light Blade is increased by 2, instead of 1.
 
 \paragraph{\label{par:Hook}Hook}---\quad
-This weapon can be used with the Hook Maneuver. %PROBABLY could do with a \href
+This weapon can be used with the Hook Maneuver. %PROBABLY could do with a \ref
 
 \paragraph{\label{par:Light Blade}Light Blade}---\quad
 When Parrying Swinging attacks from any weapon that does not have this quality, this weapon’s Defense TN is increased by 1. Against Heavy Weapons, this penalty increases to 2.
 
 \paragraph{\label{par:Multi-Hit}Multi-Hit [Y] [X]}---\quad
-When this weapon is used in a Y type (Swing or Thrust) attack that targets Hit Locations that successfully hits the target, instead of resolving one attack, X identical attacks of equal strength hit instead. Roll on the Target Zone as normal for the first hit. The second hit lands as though the roll had been one lower, the third hit as though the roll had been one higher, etc. Roll on the the same Target Zone to see where these additional attacks land. 
+When this weapon is used in a Y type (Swing or Thrust) attack that targets Hit Locations that successfully hits the target, instead of resolving one attack, X identical attacks of equal strength hit instead. Roll on the Target Zone as normal for the first hit. The second hit lands as though the roll had been one lower, the third hit as though the roll had been one higher, etc. Roll on the the same Target Zone to see where these additional attacks land.
 
 \paragraph{\label{par:Parrying Teeth}Parrying Teeth}---\quad
 -1 Parry TN vs attacks made by Swords and Daggers.
@@ -5415,11 +5292,11 @@ This weapon can be attached to any weapon with a Swinging Slot (for Reverse Weap
 \paragraph{\label{par:Ridiculously Sharp}Ridiculously Sharp}---\quad \textbf{(+50\% Cost)}\par
 This only applies to weapons that inflict cutting damage on hit. It can also be applied to the Reverse Blades of weapons.
 
-Ridiculously Sharp weapons improve their \nameref{par:Draw} value by 1 (or gain Draw 1 if they do not already have Draw) the first time they inflict damage in a fight with a Swinging attack. Afterwards, they must be resharpened to regain this benefit.
+Ridiculously Sharp weapons improve their \hyperref[par:Draw]{Draw} value by 1 (or gain Draw 1 if they do not already have Draw) the first time they inflict damage in a fight with a Swinging attack. Afterwards, they must be resharpened to regain this benefit.
 
 Resharpening generally costs a copper piece, but can be done in about an hour with a wheel or stone. Orichalcum weapons never require re-sharpening, and Silversteel weapons can be used twice before they must be resharpened.
 
-Bizarre Gimmick (+100\% Cost)
+\paragraph{\label{par:Bizarre Gimmick}Bizarre Gimmick}---\quad \textbf{(+100\% Cost)}\par
 This customisation allows you to add hidden quirks to your weapon. Think hidden parrying hooks, a hollow blade containing an extendable point, a hollow grip filled with blinding dust, or a blade coated in a magnesium solution that can explode into blazing light for an instant.
 
 Bizarre Gimmick worsens the weapon’s best TN by 1 (if its TNs are all the same, worsen the attack TN that inflicts the most damage. If those are the same, reduce the Defense TN), but in return, the Maneuver for which the Gimmick was designed (which must be chosen at creation, with GM approval) gets a special bonus. Once per fight when performing the chosen Maneuver, you may increase your opponent’s Defense TN against it by 2. It can also, optionally, give a weapon the special quality ‘Hook’ if that is the Maneuver chosen.
@@ -5436,22 +5313,30 @@ An additional downside is that professionals and experts tend to look down on th
 A more advanced hilt that provides better protection to the hand. The weapon gains 2 points of Guard value.
 \paragraph{Custom Grip (+50\% Cost)}\par
 A handgrip that corrects the form and facilitates a certain sort of strike. The weapon either gains Tight Grip 1 (or improves its current Tight Grip value by 1) or gains Draw 1 (or improves its current Draw value by 1). It is possible to buy this upgrade twice to give or upgrade both Tight Grip and Draw.
-\paragraph{Exquisite Decoration (+100-2,000\% Cost)}\par
+\paragraph{Exquisite Decoration}---\quad \textbf{(+100-2,000\% Cost)} \par
 The weapon is beautifully decorated with gemstones, reliefs, inlays, and other fineries. This has no effect on the weapon’s usefulness in battle, but it may be impressive enough to provide circumstantial bonuses to social rolls involving glamor and grandeur.
+
 \paragraph{Fine Forging (+50\% Cost)}\par
 The weapon’s Durability increases by 3. You may take this up to three times, increasing the weapon’s Durability by as much as 9 for a total 150\% increase in cost.
-\paragraph{Integrated Pistol (+100\% Cost AND 1 gp)}
-The weapon gains an Integrated Pistol as listed below. This pistol can be fired as a normal pistol. Alternatively, in the event that you use a Swinging or Thrusting attack that hits an enemy, 1 CP can be spent to make an immediate Melee Shoot attack on the target with BS from the Swing or Thrust. This shot always hits in the same Hit Location as the Swing or Thrust. Because of the bulk of the pistol, the weapon’s best Attack TN is worsened by 1. If the Attack TNs are equal, you may choose which is worsened.
+
+\paragraph{Integrated Pistol (+100\% Cost AND 1 gp)}\par
+The weapon gains an \hyperref[tab:Integrated Firearms]{Integrated Pistol} as listed below. This pistol can be fired as a normal pistol. Alternatively, in the event that you use a Swinging or Thrusting attack that hits an enemy, 1 CP can be spent to make an immediate Melee Shoot attack on the target with BS from the Swing or Thrust. This shot always hits in the same Hit Location as the Swing or Thrust. Because of the bulk of the pistol, the weapon’s best Attack TN is worsened by 1. If the Attack TNs are equal, you may choose which is worsened.
 
 This customization can be taken multiple times to represent a revolver-type weapon, allowing the weapon to be fired multiple times before needing to be reloaded. Additional purchases do not worsen the weapon’s Attack TNs further.
 
 You may purchase a Firing Mechanism for the Integrated Pistol, if you are so inclined, otherwise it is assumed to use a flintlock.
 
 The idea of designing a sword with a pistol built into it may sound like fantasy, but if so, it’s the sort of fantasy that appealed to the medieval mind enough for them to give it a shot. Integrated pistols usually fire in-line with the blade, but a few are built into the crossguard, and fire forward from the hand like regular pistols. Either way, they’re not very accurate and they tend to make the weapon more cumbersome. However, they can be a huge advantage at close range, or when closing with longer-ranged adversaries.
-%BEGIN TABLE FOR INTEGRATED WEAPONS
-Weapon Name Weapon Type Range Missile TN Damage Load Ammunition
-Integrated Pistol Firearm 5 7 7p 12 Ball, Shot
-Integrated Dragon Firearm 2 6 7p 10 Ball, Shot
+ %BEGIN TABLE FOR INTEGRATED WEAPONS
+\begin{table}[!ht]
+	\caption{Integrated Firearms}
+	\label{tab:Integrated Firearms}
+	\begin{tabu} to \linewidth {*{7}{X}}
+Weapon Name &Weapon Type &Range &Missile TN &Damage &Load &Ammunition\\\toprule
+Integrated Pistol &Firearm &5 &7 &7p &12 &Ball, Shot\\
+Integrated Dragon &Firearm &2 &6 &7p &10 &Ball, Shot\\
+	\end{tabu}
+\end{table}
 
 \chapter{Missile Weapons}
 “No person of Albish descent will bear or train with, or own the weapon called the Warbow or Longbow 
@@ -5461,9 +5346,7 @@ Missile Weapon Characteristics
 
 
 Weapon Name 
-The name of the weapon. 
-
- 
+The name of the weapon.
 
 Weapon Type 
 The type of the weapon, and thus the Proficiency that it can be used with. 

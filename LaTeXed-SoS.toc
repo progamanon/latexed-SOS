@@ -36,199 +36,206 @@
 \contentsline {section}{\numberline {5.1}Humans, Dwarves and Goblins}{29}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Humans}{29}{subsection.5.1.1}
 \contentsline {paragraph}{Attribute Modifiers:}{30}{section*.39}
-\contentsline {paragraph}{The Human Condition}{30}{section*.40}
+\contentsline {paragraph}{Willing to Learn}{30}{section*.40}
+\contentsline {paragraph}{The Human Condition}{30}{section*.41}
 \contentsline {subsection}{\numberline {5.1.2}Goblins}{30}{subsection.5.1.2}
-\contentsline {paragraph}{Attribute Modifiers:}{31}{section*.46}
-\contentsline {paragraph}{Regeneration}{31}{section*.47}
-\contentsline {paragraph}{Small}{31}{section*.48}
-\contentsline {paragraph}{Sneaky}{31}{section*.49}
-\contentsline {paragraph}{Scarce Environment}{31}{section*.50}
-\contentsline {paragraph}{Tight Spot}{31}{section*.51}
-\contentsline {paragraph}{See in Darkness}{31}{section*.52}
-\contentsline {paragraph}{Photophobia}{31}{section*.53}
+\contentsline {paragraph}{Attribute Modifiers:}{31}{section*.47}
+\contentsline {paragraph}{Regeneration}{31}{section*.48}
+\contentsline {paragraph}{Small}{31}{section*.49}
+\contentsline {paragraph}{Sneaky}{31}{section*.50}
+\contentsline {paragraph}{Scarce Environment}{31}{section*.51}
+\contentsline {paragraph}{Tight Spot}{31}{section*.52}
+\contentsline {paragraph}{See in Darkness}{31}{section*.53}
+\contentsline {paragraph}{Photophobia}{32}{section*.54}
 \contentsline {subsection}{\numberline {5.1.3}Dwarves}{33}{subsection.5.1.3}
-\contentsline {paragraph}{Attribute Modifiers:}{34}{section*.59}
-\contentsline {paragraph}{Short and Stout}{34}{section*.60}
-\contentsline {paragraph}{Robust Immunities}{34}{section*.61}
-\contentsline {paragraph}{See in Shadow}{34}{section*.62}
-\contentsline {paragraph}{Prodigious Livers}{34}{section*.63}
-\contentsline {paragraph}{The Call of the Deep}{34}{section*.64}
-\contentsline {paragraph}{Hammer of Industry}{34}{section*.65}
+\contentsline {paragraph}{Attribute Modifiers:}{34}{section*.60}
+\contentsline {paragraph}{Short and Stout}{34}{section*.61}
+\contentsline {paragraph}{Robust Immunities}{34}{section*.62}
+\contentsline {paragraph}{See in Shadow}{34}{section*.63}
+\contentsline {paragraph}{Prodigious Livers}{34}{section*.64}
+\contentsline {paragraph}{The Call of the Deep}{34}{section*.65}
+\contentsline {paragraph}{Hammer of Industry}{34}{section*.66}
 \contentsline {section}{\numberline {5.2}Din}{36}{section.5.2}
-\contentsline {subsubsection}{Focus}{36}{section*.68}
-\contentsline {subsection}{\numberline {5.2.1}Zells}{36}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Zells}{37}{subsection.5.2.2}
-\contentsline {paragraph}{Attribute Modifiers:}{37}{section*.72}
-\contentsline {subsection}{\numberline {5.2.3}Burdinadin}{41}{subsection.5.2.3}
-\contentsline {paragraph}{Attribute Modifiers:}{42}{section*.78}
-\contentsline {paragraph}{How to Roleplay a Burdinadin}{44}{section*.81}
-\contentsline {subsection}{\numberline {5.2.4}Ohanedin}{45}{subsection.5.2.4}
-\contentsline {paragraph}{Attribute Modifiers:}{45}{section*.85}
-\contentsline {paragraph}{Elvish Agelessness}{45}{section*.86}
-\contentsline {paragraph}{Focus}{46}{section*.87}
-\contentsline {paragraph}{Metallophobia}{46}{section*.88}
-\contentsline {paragraph}{Focus Oaths}{46}{section*.89}
-\contentsline {paragraph}{Natural Awareness}{46}{section*.90}
-\contentsline {paragraph}{Murderous Speed}{46}{section*.91}
-\contentsline {paragraph}{The Feeling Disappears}{47}{section*.92}
-\contentsline {paragraph}{Rules of Nature}{47}{section*.93}
-\contentsline {subsubsection}{How to Roleplay an Ohanedin}{48}{section*.96}
-\contentsline {subsection}{\numberline {5.2.5}Orredin}{49}{subsection.5.2.5}
-\contentsline {paragraph}{Attribute Modifiers:}{49}{section*.100}
-\contentsline {paragraph}{Focus:}{49}{section*.101}
-\contentsline {paragraph}{Apotheosis:}{49}{section*.102}
-\contentsline {paragraph}{The Godhead is a Spring:}{50}{section*.103}
-\contentsline {paragraph}{From it flows Everything:}{50}{section*.104}
-\contentsline {paragraph}{And then returns once more, and so is like a Spring:}{50}{section*.105}
-\contentsline {subsubsection}{Bloodline Powers}{50}{section*.106}
-\contentsline {subsubsection}{How to Roleplay an Orredin}{53}{section*.109}
-\contentsline {subsection}{\numberline {5.2.6}Star Vampire}{53}{subsection.5.2.6}
-\contentsline {paragraph}{Attribute Modifiers:}{53}{section*.113}
-\contentsline {subsection}{\numberline {5.2.7}Paleolithic Elf}{54}{subsection.5.2.7}
-\contentsline {paragraph}{Attribute Modifiers:}{54}{section*.119}
-\contentsline {section}{\numberline {5.3}Ascended Humans}{54}{section.5.3}
-\contentsline {paragraph}{Bonuses}{55}{section*.122}
-\contentsline {subsubsection}{Touched by the Source}{55}{section*.123}
-\contentsline {subsubsection}{Divine Power}{56}{section*.127}
+\contentsline {subsubsection}{Focus}{36}{section*.69}
+\contentsline {subsection}{\numberline {5.2.1}Zells}{37}{subsection.5.2.1}
+\contentsline {paragraph}{Attribute Modifiers:}{38}{section*.78}
+\contentsline {paragraph}{Elvish Agelessness}{38}{section*.79}
+\contentsline {paragraph}{Focus}{38}{section*.80}
+\contentsline {subparagraph}{Zellish Dream}{38}{section*.81}
+\contentsline {paragraph}{Zellislava}{38}{section*.82}
+\contentsline {subsection}{\numberline {5.2.2}Burdinadin}{42}{subsection.5.2.2}
+\contentsline {paragraph}{Attribute Modifiers:}{42}{section*.88}
+\contentsline {paragraph}{How to Roleplay a Burdinadin}{44}{section*.91}
+\contentsline {subsection}{\numberline {5.2.3}Ohanedin}{45}{subsection.5.2.3}
+\contentsline {paragraph}{Attribute Modifiers:}{46}{section*.95}
+\contentsline {paragraph}{Elvish Agelessness}{46}{section*.96}
+\contentsline {paragraph}{Focus}{46}{section*.97}
+\contentsline {paragraph}{Metallophobia}{46}{section*.98}
+\contentsline {paragraph}{Focus Oaths}{46}{section*.99}
+\contentsline {paragraph}{Natural Awareness}{47}{section*.100}
+\contentsline {paragraph}{Murderous Speed}{47}{section*.101}
+\contentsline {paragraph}{The Feeling Disappears}{47}{section*.102}
+\contentsline {paragraph}{Rules of Nature}{47}{section*.103}
+\contentsline {subsubsection}{How to Roleplay an Ohanedin}{48}{section*.106}
+\contentsline {subsection}{\numberline {5.2.4}Orredin}{49}{subsection.5.2.4}
+\contentsline {paragraph}{Attribute Modifiers:}{49}{section*.110}
+\contentsline {paragraph}{Focus:}{50}{section*.111}
+\contentsline {paragraph}{Apotheosis:}{50}{section*.112}
+\contentsline {paragraph}{The Godhead is a Spring:}{50}{section*.113}
+\contentsline {paragraph}{From it flows Everything:}{50}{section*.114}
+\contentsline {paragraph}{And then returns once more, and so is like a Spring:}{50}{section*.115}
+\contentsline {subsubsection}{Bloodline Powers}{51}{section*.116}
+\contentsline {subsubsection}{How to Roleplay an Orredin}{53}{section*.120}
+\contentsline {subsection}{\numberline {5.2.5}Star Vampire}{54}{subsection.5.2.5}
+\contentsline {paragraph}{Attribute Modifiers:}{54}{section*.124}
+\contentsline {subsection}{\numberline {5.2.6}Paleolithic Elf}{54}{subsection.5.2.6}
+\contentsline {paragraph}{Attribute Modifiers:}{54}{section*.130}
+\contentsline {section}{\numberline {5.3}Ascended Humans}{55}{section.5.3}
+\contentsline {paragraph}{Bonuses}{55}{section*.133}
+\contentsline {subsubsection}{Touched by the Source}{55}{section*.134}
+\contentsline {subsubsection}{Divine Power}{56}{section*.138}
 \contentsline {subsection}{\numberline {5.3.1}Genosian Paladin}{56}{subsection.5.3.1}
-\contentsline {paragraph}{Attribute Modifiers:}{57}{section*.131}
-\contentsline {paragraph}{Genosian Ideal}{57}{section*.132}
-\contentsline {paragraph}{Glory, Amen}{57}{section*.133}
-\contentsline {paragraph}{Judgement}{58}{section*.134}
-\contentsline {paragraph}{Shield of Dawn}{58}{section*.135}
-\contentsline {paragraph}{Healing}{59}{section*.137}
-\contentsline {paragraph}{Wrath of God}{59}{section*.138}
-\contentsline {paragraph}{I See You}{60}{section*.139}
+\contentsline {paragraph}{Attribute Modifiers:}{57}{section*.142}
+\contentsline {paragraph}{Genosian Ideal}{57}{section*.143}
+\contentsline {paragraph}{Glory, Amen}{57}{section*.144}
+\contentsline {paragraph}{Judgement}{58}{section*.145}
+\contentsline {paragraph}{Shield of Dawn}{58}{section*.146}
+\contentsline {paragraph}{Healing}{59}{section*.148}
+\contentsline {paragraph}{Wrath of God}{59}{section*.149}
+\contentsline {paragraph}{I See You}{60}{section*.150}
 \contentsline {subsection}{\numberline {5.3.2}Dessian Silver Guard}{61}{subsection.5.3.2}
-\contentsline {paragraph}{Attribute Modifiers:}{61}{section*.145}
-\contentsline {paragraph}{Perfect}{61}{section*.146}
-\contentsline {paragraph}{The Moon Also Rises}{62}{section*.147}
-\contentsline {paragraph}{Moonstrike}{62}{section*.148}
-\contentsline {paragraph}{The White Fog}{63}{table.caption.150}
-\contentsline {paragraph}{Moonlit Twostep}{63}{section*.151}
-\contentsline {paragraph}{Mark of the Moon}{64}{section*.152}
-\contentsline {paragraph}{Forcible Marking}{65}{section*.153}
-\contentsline {paragraph}{Succor}{65}{section*.154}
-\contentsline {paragraph}{A Thousand Stars, One Moon}{65}{section*.155}
+\contentsline {paragraph}{Attribute Modifiers:}{62}{section*.156}
+\contentsline {paragraph}{Perfect}{62}{section*.157}
+\contentsline {paragraph}{The Moon Also Rises}{62}{section*.158}
+\contentsline {paragraph}{Moonstrike}{63}{section*.159}
+\contentsline {paragraph}{The White Fog}{63}{table.caption.161}
+\contentsline {paragraph}{Moonlit Twostep}{64}{section*.162}
+\contentsline {paragraph}{Mark of the Moon}{64}{section*.163}
+\contentsline {paragraph}{Forcible Marking}{65}{section*.164}
+\contentsline {paragraph}{Succor}{65}{section*.165}
+\contentsline {paragraph}{A Thousand Stars, One Moon}{66}{section*.166}
 \contentsline {subsection}{\numberline {5.3.3}Sarturi Chosen}{66}{subsection.5.3.3}
-\contentsline {paragraph}{Attribute Modifiers:}{67}{section*.159}
-\contentsline {subsubsection}{Give unto Sartur\dots }{67}{section*.160}
-\contentsline {paragraph}{From the Depths to the Soil}{67}{table.caption.162}
-\contentsline {paragraph}{A River of Blood}{68}{section*.163}
-\contentsline {paragraph}{Not Today!}{68}{section*.164}
-\contentsline {paragraph}{Band of Blood:}{68}{section*.165}
-\contentsline {paragraph}{Sartur Hungers!:}{69}{section*.166}
-\contentsline {paragraph}{No Hard Feelings:}{69}{section*.167}
+\contentsline {paragraph}{Attribute Modifiers:}{67}{section*.170}
+\contentsline {subsubsection}{Give unto Sartur\dots }{67}{section*.171}
+\contentsline {paragraph}{From the Depths to the Soil}{68}{table.caption.173}
+\contentsline {paragraph}{A River of Blood}{68}{section*.174}
+\contentsline {paragraph}{Not Today!}{68}{section*.175}
+\contentsline {paragraph}{Band of Blood:}{69}{section*.176}
+\contentsline {paragraph}{Sartur Hungers!:}{69}{section*.177}
+\contentsline {paragraph}{No Hard Feelings:}{69}{section*.178}
 \contentsline {chapter}{\numberline {6}Boons and Banes}{70}{chapter.6}
 \contentsline {section}{\numberline {6.1}Character Creation}{71}{section.6.1}
-\contentsline {subparagraph}{1-3 PCP Investment}{71}{section*.171}
-\contentsline {subparagraph}{4-10 PCP Investment}{72}{section*.172}
+\contentsline {subparagraph}{1-3 PCP Investment}{71}{section*.182}
+\contentsline {subparagraph}{4-10 PCP Investment}{72}{section*.183}
 \contentsline {section}{\numberline {6.2}Advancing with Arc}{72}{section.6.2}
 \contentsline {section}{\numberline {6.3}Boons List}{72}{section.6.3}
 \contentsline {section}{\numberline {6.4}Banes List}{74}{section.6.4}
 \contentsline {section}{\numberline {6.5}Boons}{75}{section.6.5}
-\contentsline {paragraph}{Allies}{75}{section*.175}
-\contentsline {paragraph}{Ambidextrous}{75}{section*.176}
-\contentsline {paragraph}{Animal Affinity}{75}{section*.177}
-\contentsline {paragraph}{Beautiful}{76}{section*.178}
-\contentsline {paragraph}{Berserker}{76}{section*.179}
-\contentsline {paragraph}{Bloodthirsty}{77}{section*.180}
-\contentsline {paragraph}{Brave}{77}{section*.181}
-\contentsline {paragraph}{Contacts}{77}{section*.182}
-\contentsline {paragraph}{Direction Sense}{78}{section*.183}
-\contentsline {paragraph}{Estate}{78}{section*.184}
-\contentsline {paragraph}{Favor}{78}{section*.185}
-\contentsline {paragraph}{Famous}{78}{section*.186}
-\contentsline {paragraph}{Folks Back Home}{79}{section*.187}
-\contentsline {paragraph}{Follower}{79}{section*.188}
-\contentsline {paragraph}{Good Ears}{79}{section*.189}
-\contentsline {paragraph}{Good Eyes}{80}{section*.190}
-\contentsline {paragraph}{Good Nose}{80}{section*.191}
-\contentsline {paragraph}{Hale and Hearty}{80}{section*.192}
-\contentsline {paragraph}{Impressive Voice}{80}{section*.193}
-\contentsline {paragraph}{Known for Virtue}{81}{section*.194}
-\contentsline {paragraph}{Languages}{81}{section*.195}
-\contentsline {paragraph}{Literate}{81}{section*.196}
-\contentsline {paragraph}{Natural Born Killer}{81}{section*.197}
-\contentsline {paragraph}{Natural Leader}{82}{section*.198}
-\contentsline {paragraph}{Retinue}{82}{section*.199}
-\contentsline {paragraph}{Tall}{82}{section*.200}
-\contentsline {paragraph}{True Grit}{82}{section*.201}
-\contentsline {paragraph}{Rich}{83}{section*.202}
-\contentsline {paragraph}{Tireless Lobster}{83}{section*.203}
+\contentsline {paragraph}{Allies}{75}{section*.186}
+\contentsline {paragraph}{Ambidextrous}{75}{section*.187}
+\contentsline {paragraph}{Animal Affinity}{75}{section*.188}
+\contentsline {paragraph}{Beautiful}{76}{section*.189}
+\contentsline {paragraph}{Berserker}{76}{section*.190}
+\contentsline {paragraph}{Bloodthirsty}{77}{section*.191}
+\contentsline {paragraph}{Brave}{77}{section*.192}
+\contentsline {paragraph}{Contacts}{77}{section*.193}
+\contentsline {paragraph}{Direction Sense}{78}{section*.194}
+\contentsline {paragraph}{Estate}{78}{section*.195}
+\contentsline {paragraph}{Favor}{78}{section*.196}
+\contentsline {paragraph}{Famous}{78}{section*.197}
+\contentsline {paragraph}{Folks Back Home}{79}{section*.198}
+\contentsline {paragraph}{Follower}{79}{section*.199}
+\contentsline {paragraph}{Good Ears}{79}{section*.200}
+\contentsline {paragraph}{Good Eyes}{80}{section*.201}
+\contentsline {paragraph}{Good Nose}{80}{section*.202}
+\contentsline {paragraph}{Hale and Hearty}{80}{section*.203}
+\contentsline {paragraph}{Impressive Voice}{80}{section*.204}
+\contentsline {paragraph}{Known for Virtue}{81}{section*.205}
+\contentsline {paragraph}{Languages}{81}{section*.206}
+\contentsline {paragraph}{Literate}{81}{section*.207}
+\contentsline {paragraph}{Natural Born Killer}{81}{section*.208}
+\contentsline {paragraph}{Natural Leader}{82}{section*.209}
+\contentsline {paragraph}{Retinue}{82}{section*.210}
+\contentsline {paragraph}{Tall}{82}{section*.211}
+\contentsline {paragraph}{True Grit}{82}{section*.212}
+\contentsline {paragraph}{Rich}{83}{section*.213}
+\contentsline {paragraph}{Tireless Lobster}{83}{section*.214}
 \contentsline {section}{\numberline {6.6}Banes}{83}{section.6.6}
-\contentsline {paragraph}{Arrow Magnet}{83}{section*.204}
-\contentsline {paragraph}{Bad Ears}{83}{section*.205}
-\contentsline {paragraph}{Bad Eyes}{84}{section*.206}
-\contentsline {paragraph}{Bad Reputation}{84}{section*.207}
-\contentsline {paragraph}{Barren/Sterility}{84}{section*.208}
-\contentsline {paragraph}{Blind}{85}{section*.209}
-\contentsline {paragraph}{Braggart}{85}{section*.210}
-\contentsline {paragraph}{Brain Damage}{85}{section*.211}
-\contentsline {paragraph}{Broken Limb/Appendage}{86}{section*.213}
-\contentsline {paragraph}{Complete Monster}{86}{section*.214}
-\contentsline {paragraph}{Craven}{87}{section*.215}
-\contentsline {paragraph}{Crippled Limb/Appendage}{87}{section*.216}
-\contentsline {paragraph}{Dead}{88}{section*.217}
-\contentsline {paragraph}{Debt}{88}{section*.218}
-\contentsline {paragraph}{Dependent}{88}{section*.219}
-\contentsline {paragraph}{Dire Past}{89}{section*.221}
-\contentsline {paragraph}{Enemies}{90}{section*.222}
-\contentsline {paragraph}{Facial Deformity}{90}{section*.223}
-\contentsline {paragraph}{Fat}{91}{section*.224}
-\contentsline {paragraph}{Haemophilia}{91}{section*.225}
-\contentsline {paragraph}{Hothead}{91}{section*.226}
-\contentsline {paragraph}{Honorable}{91}{section*.227}
-\contentsline {paragraph}{Lasting Pain}{92}{section*.228}
-\contentsline {paragraph}{Mute}{92}{section*.229}
-\contentsline {paragraph}{Oath}{93}{section*.230}
-\contentsline {paragraph}{Old Wound}{93}{section*.231}
-\contentsline {paragraph}{One-Eyed}{93}{section*.232}
-\contentsline {paragraph}{Poor}{94}{section*.233}
-\contentsline {paragraph}{Severed Limb/Appendage}{94}{section*.234}
-\contentsline {paragraph}{Sheltered}{96}{section*.241}
-\contentsline {paragraph}{Short}{96}{section*.242}
-\contentsline {paragraph}{Skinny}{97}{section*.243}
-\contentsline {paragraph}{Technologically Impaired}{97}{section*.244}
-\contentsline {paragraph}{Unhappily Married}{97}{section*.245}
-\contentsline {paragraph}{Virtuous}{98}{section*.246}
-\contentsline {paragraph}{Wanted}{98}{section*.247}
+\contentsline {paragraph}{Arrow Magnet}{83}{section*.215}
+\contentsline {paragraph}{Bad Ears}{83}{section*.216}
+\contentsline {paragraph}{Bad Eyes}{84}{section*.217}
+\contentsline {paragraph}{Bad Reputation}{84}{section*.218}
+\contentsline {paragraph}{Barren/Sterility}{84}{section*.219}
+\contentsline {paragraph}{Blind}{85}{section*.220}
+\contentsline {paragraph}{Braggart}{85}{section*.221}
+\contentsline {paragraph}{Brain Damage}{85}{section*.222}
+\contentsline {paragraph}{Broken Limb/Appendage}{86}{section*.224}
+\contentsline {paragraph}{Complete Monster}{86}{section*.225}
+\contentsline {paragraph}{Craven}{87}{section*.226}
+\contentsline {paragraph}{Crippled Limb/Appendage}{87}{section*.227}
+\contentsline {paragraph}{Dead}{88}{section*.228}
+\contentsline {paragraph}{Debt}{88}{section*.229}
+\contentsline {paragraph}{Dependent}{88}{section*.230}
+\contentsline {subparagraph}{6:}{88}{section*.231}
+\contentsline {subparagraph}{12:}{89}{section*.232}
+\contentsline {subparagraph}{Special:}{89}{section*.233}
+\contentsline {paragraph}{Dire Past}{89}{section*.234}
+\contentsline {paragraph}{Enemies}{90}{section*.235}
+\contentsline {paragraph}{Facial Deformity}{90}{section*.236}
+\contentsline {paragraph}{Fat}{91}{section*.237}
+\contentsline {paragraph}{Haemophilia}{91}{section*.238}
+\contentsline {paragraph}{Hothead}{91}{section*.239}
+\contentsline {paragraph}{Honorable}{91}{section*.240}
+\contentsline {paragraph}{Lasting Pain}{92}{section*.241}
+\contentsline {paragraph}{Mute}{92}{section*.242}
+\contentsline {paragraph}{Oath}{93}{section*.243}
+\contentsline {paragraph}{Old Wound}{93}{section*.244}
+\contentsline {paragraph}{One-Eyed}{93}{section*.245}
+\contentsline {paragraph}{Poor}{94}{section*.246}
+\contentsline {paragraph}{Severed Limb/Appendage}{94}{section*.247}
+\contentsline {paragraph}{Sheltered}{96}{section*.254}
+\contentsline {paragraph}{Short}{96}{section*.255}
+\contentsline {paragraph}{Skinny}{97}{section*.256}
+\contentsline {paragraph}{Technologically Impaired}{97}{section*.257}
+\contentsline {paragraph}{Unhappily Married}{97}{section*.258}
+\contentsline {paragraph}{Virtuous}{98}{section*.259}
+\contentsline {paragraph}{Wanted}{98}{section*.260}
 \contentsline {chapter}{\numberline {7}Skills}{99}{chapter.7}
 \contentsline {section}{\numberline {7.1}Skills}{100}{section.7.1}
-\contentsline {paragraph}{Trained}{101}{section*.249}
-\contentsline {paragraph}{Teacher}{102}{section*.250}
-\contentsline {paragraph}{Mastery}{102}{section*.251}
-\contentsline {paragraph}{Skill Level}{102}{section*.252}
-\contentsline {paragraph}{Skill Pool (SP)}{102}{section*.253}
-\contentsline {paragraph}{TN}{102}{section*.254}
-\contentsline {paragraph}{Skill Tests}{102}{section*.255}
-\contentsline {paragraph}{Untrained}{102}{section*.256}
-\contentsline {paragraph}{Leveling up Skills}{103}{section*.257}
-\contentsline {paragraph}{Retrying Skill Attempts}{103}{section*.258}
-\contentsline {paragraph}{Encumbrance}{103}{section*.259}
+\contentsline {paragraph}{Trained}{101}{section*.261}
+\contentsline {paragraph}{Teacher}{101}{section*.263}
+\contentsline {paragraph}{Mastery}{102}{section*.264}
+\contentsline {paragraph}{Skill Level}{102}{section*.265}
+\contentsline {paragraph}{Skill Pool (SP)}{102}{section*.266}
+\contentsline {paragraph}{TN}{102}{section*.267}
+\contentsline {paragraph}{Skill Tests}{102}{section*.268}
+\contentsline {paragraph}{Untrained}{102}{section*.269}
+\contentsline {paragraph}{Leveling up Skills}{103}{section*.270}
+\contentsline {paragraph}{Retrying Skill Attempts}{103}{section*.271}
+\contentsline {paragraph}{Encumbrance}{103}{section*.272}
 \contentsline {subsection}{\numberline {7.1.1}Character Creation}{103}{subsection.7.1.1}
-\contentsline {section}{\numberline {7.2}Skill Descriptions}{104}{section.7.2}
-\contentsline {paragraph}{Athletics}{104}{section*.261}
-\contentsline {paragraph}{Climbing}{104}{section*.262}
-\contentsline {paragraph}{Cooking}{105}{section*.263}
-\contentsline {paragraph}{Crafting}{106}{section*.264}
-\contentsline {paragraph}{Engineering}{107}{section*.265}
-\contentsline {paragraph}{History}{107}{section*.266}
-\contentsline {paragraph}{Hunting}{108}{section*.267}
-\contentsline {paragraph}{Intimidate}{109}{section*.268}
-\contentsline {paragraph}{Navigation}{109}{section*.269}
-\contentsline {paragraph}{Observation}{110}{section*.270}
-\contentsline {paragraph}{Orate}{110}{section*.271}
-\contentsline {paragraph}{Perform}{111}{section*.272}
-\contentsline {paragraph}{Persuasion}{112}{section*.273}
-\contentsline {paragraph}{Politics}{112}{section*.274}
-\contentsline {paragraph}{Research}{112}{section*.275}
-\contentsline {paragraph}{Riding}{113}{section*.276}
-\contentsline {paragraph}{Sailing}{113}{section*.277}
-\contentsline {paragraph}{Stealth}{114}{section*.278}
-\contentsline {paragraph}{Subterfuge}{114}{section*.279}
-\contentsline {paragraph}{Surgery}{114}{section*.280}
-\contentsline {paragraph}{Swimming}{115}{section*.281}
+\contentsline {section}{\numberline {7.2}Skill Descriptions}{103}{section.7.2}
+\contentsline {paragraph}{Athletics}{103}{section*.274}
+\contentsline {paragraph}{Climbing}{104}{section*.275}
+\contentsline {paragraph}{Cooking}{105}{section*.276}
+\contentsline {paragraph}{Crafting}{106}{section*.277}
+\contentsline {paragraph}{Engineering}{107}{section*.278}
+\contentsline {paragraph}{History}{107}{section*.279}
+\contentsline {paragraph}{Hunting}{108}{section*.280}
+\contentsline {paragraph}{Intimidate}{109}{section*.281}
+\contentsline {paragraph}{Navigation}{109}{section*.282}
+\contentsline {paragraph}{Observation}{110}{section*.283}
+\contentsline {paragraph}{Orate}{110}{section*.284}
+\contentsline {paragraph}{Perform}{111}{section*.285}
+\contentsline {paragraph}{Persuasion}{112}{section*.286}
+\contentsline {paragraph}{Politics}{112}{section*.287}
+\contentsline {paragraph}{Research}{112}{section*.288}
+\contentsline {paragraph}{Riding}{113}{section*.289}
+\contentsline {paragraph}{Sailing}{113}{section*.290}
+\contentsline {paragraph}{Stealth}{114}{section*.291}
+\contentsline {paragraph}{Subterfuge}{114}{section*.292}
+\contentsline {paragraph}{Surgery}{114}{section*.293}
+\contentsline {paragraph}{Swimming}{115}{section*.294}
 \contentsline {chapter}{\numberline {8}Social Class and Wealth}{116}{chapter.8}
 \contentsline {section}{\numberline {8.1}Character Creation}{117}{section.8.1}
 \contentsline {subsection}{\numberline {8.1.1}Social Class Benefits}{117}{subsection.8.1.1}
@@ -237,73 +244,74 @@
 \contentsline {chapter}{\numberline {9}Equipment}{121}{chapter.9}
 \contentsline {chapter}{\numberline {10}Melee Weapons}{123}{chapter.10}
 \contentsline {subsection}{\numberline {10.0.1}Which Weapon for Me?}{123}{subsection.10.0.1}
-\contentsline {subsubsection}{Attack TN}{124}{section*.285}
-\contentsline {subsubsection}{Attack Damage}{124}{section*.286}
-\contentsline {subsubsection}{Defense TN / Guard}{124}{section*.287}
-\contentsline {subsubsection}{Reach}{124}{section*.288}
-\contentsline {subsubsection}{Special}{124}{section*.289}
-\contentsline {subsubsection}{How Many Weapons?}{125}{section*.290}
+\contentsline {subsubsection}{Attack TN}{124}{section*.298}
+\contentsline {subsubsection}{Attack Damage}{124}{section*.299}
+\contentsline {subsubsection}{Defense TN / Guard}{124}{section*.300}
+\contentsline {subsubsection}{Reach}{124}{section*.301}
+\contentsline {subsubsection}{Special}{124}{section*.302}
+\contentsline {subsubsection}{How Many Weapons?}{125}{section*.303}
 \contentsline {subsection}{\numberline {10.0.2}Melee Weapon Characteristics}{125}{subsection.10.0.2}
-\contentsline {subsubsection}{Weapon Name}{125}{section*.291}
-\contentsline {subsubsection}{Weapon Type}{125}{section*.292}
-\contentsline {subsubsection}{Hands}{125}{section*.293}
-\contentsline {subsubsection}{Reach}{125}{section*.294}
-\contentsline {subsubsection}{Swing}{126}{section*.296}
-\contentsline {subsubsection}{Thrust}{126}{section*.297}
-\contentsline {subsubsection}{Defense / Guard}{126}{section*.298}
-\contentsline {subsubsection}{Special}{126}{section*.299}
-\contentsline {subsubsection}{Weight}{126}{section*.300}
-\contentsline {subsubsection}{Cost}{127}{section*.301}
+\contentsline {subsubsection}{Weapon Name}{125}{section*.304}
+\contentsline {subsubsection}{Weapon Type}{125}{section*.305}
+\contentsline {subsubsection}{Hands}{125}{section*.306}
+\contentsline {subsubsection}{Reach}{125}{section*.307}
+\contentsline {subsubsection}{Swing}{126}{section*.309}
+\contentsline {subsubsection}{Thrust}{126}{section*.310}
+\contentsline {subsubsection}{Defense / Guard}{126}{section*.311}
+\contentsline {subsubsection}{Special}{126}{section*.312}
+\contentsline {subsubsection}{Weight}{126}{section*.313}
+\contentsline {subsubsection}{Cost}{127}{section*.314}
 \contentsline {section}{\numberline {10.1}Daggers}{127}{section.10.1}
 \contentsline {section}{\numberline {10.2}Swords}{129}{section.10.2}
 \contentsline {subsection}{\numberline {10.2.1}1H Swords}{129}{subsection.10.2.1}
 \contentsline {subsection}{\numberline {10.2.2}2H Swords}{133}{subsection.10.2.2}
 \contentsline {section}{\numberline {10.3}Blunt}{135}{section.10.3}
 \contentsline {subsection}{\numberline {10.3.1}1H Blunt}{135}{subsection.10.3.1}
-\contentsline {subsubsection}{1H Blunt Weapon Attachments}{137}{section*.302}
+\contentsline {subsubsection}{1H Blunt Weapon Attachments}{137}{section*.315}
 \contentsline {subsection}{\numberline {10.3.2}2H Blunt}{137}{subsection.10.3.2}
-\contentsline {subsubsection}{2H Blunt Weapon Attachments}{141}{section*.303}
+\contentsline {subsubsection}{2H Blunt Weapon Attachments}{141}{section*.316}
 \contentsline {section}{\numberline {10.4}Spears}{141}{section.10.4}
 \contentsline {subsection}{\numberline {10.4.1}Spear Weapon Attachments}{144}{subsection.10.4.1}
 \contentsline {section}{\numberline {10.5}Polearms}{144}{section.10.5}
 \contentsline {subsection}{\numberline {10.5.1}Polearm Weapon Attachments}{149}{subsection.10.5.1}
 \contentsline {section}{\numberline {10.6}Special Qualities}{149}{section.10.6}
-\contentsline {paragraph}{AP Swing [X]}{149}{section*.304}
-\contentsline {paragraph}{ P Thrust [X]}{149}{section*.305}
-\contentsline {paragraph}{Bleed [X]}{149}{section*.306}
-\contentsline {paragraph}{Brace}{149}{section*.307}
-\contentsline {paragraph}{Cavalry Sword}{149}{section*.308}
-\contentsline {paragraph}{Chain [X]}{150}{section*.309}
-\contentsline {paragraph}{Companion Weapon}{150}{section*.310}
-\contentsline {paragraph}{Couched Charge}{150}{section*.311}
-\contentsline {paragraph}{Crushing [X]}{150}{section*.312}
-\contentsline {paragraph}{Draw [X]}{150}{section*.313}
-\contentsline {paragraph}{Fluid Thrusts}{150}{section*.314}
-\contentsline {paragraph}{Forward Swept}{150}{section*.315}
-\contentsline {paragraph}{Freakishly Large}{150}{section*.316}
-\contentsline {paragraph}{Hand-Off}{151}{section*.317}
-\contentsline {paragraph}{Heavy Weapon}{151}{section*.318}
-\contentsline {paragraph}{Hook}{151}{section*.319}
-\contentsline {paragraph}{Light Blade}{151}{section*.320}
-\contentsline {paragraph}{Multi-Hit [Y] [X]}{151}{section*.321}
-\contentsline {paragraph}{Parrying Teeth}{151}{section*.322}
-\contentsline {paragraph}{Shock [X]}{151}{section*.323}
-\contentsline {paragraph}{Spatulate Tip [X]}{151}{section*.324}
-\contentsline {paragraph}{Swinging Slot}{151}{section*.325}
-\contentsline {paragraph}{Thin Blade}{151}{section*.326}
-\contentsline {paragraph}{Thrusting Slot}{152}{section*.327}
-\contentsline {paragraph}{Tight Grip [X]}{152}{section*.328}
-\contentsline {paragraph}{Weapon Attachment}{152}{section*.329}
+\contentsline {paragraph}{AP Swing [X]}{149}{section*.317}
+\contentsline {paragraph}{AP Thrust [X]}{149}{section*.318}
+\contentsline {paragraph}{Bleed [X]}{149}{section*.319}
+\contentsline {paragraph}{Brace}{149}{section*.320}
+\contentsline {paragraph}{Cavalry Sword}{149}{section*.321}
+\contentsline {paragraph}{Chain [X]}{150}{section*.322}
+\contentsline {paragraph}{Companion Weapon}{150}{section*.323}
+\contentsline {paragraph}{Couched Charge}{150}{section*.324}
+\contentsline {paragraph}{Crushing [X]}{150}{section*.325}
+\contentsline {paragraph}{Draw [X]}{150}{section*.326}
+\contentsline {paragraph}{Fluid Thrusts}{150}{section*.327}
+\contentsline {paragraph}{Forward Swept}{150}{section*.328}
+\contentsline {paragraph}{Freakishly Large}{150}{section*.329}
+\contentsline {paragraph}{Hand-Off}{151}{section*.330}
+\contentsline {paragraph}{Heavy Weapon}{151}{section*.331}
+\contentsline {paragraph}{Hook}{151}{section*.332}
+\contentsline {paragraph}{Light Blade}{151}{section*.333}
+\contentsline {paragraph}{Multi-Hit [Y] [X]}{151}{section*.334}
+\contentsline {paragraph}{Parrying Teeth}{151}{section*.335}
+\contentsline {paragraph}{Shock [X]}{151}{section*.336}
+\contentsline {paragraph}{Spatulate Tip [X]}{151}{section*.337}
+\contentsline {paragraph}{Swinging Slot}{151}{section*.338}
+\contentsline {paragraph}{Thin Blade}{151}{section*.339}
+\contentsline {paragraph}{Thrusting Slot}{152}{section*.340}
+\contentsline {paragraph}{Tight Grip [X]}{152}{section*.341}
+\contentsline {paragraph}{Weapon Attachment}{152}{section*.342}
 \contentsline {section}{\numberline {10.7}Materials}{152}{section.10.7}
-\contentsline {paragraph}{Limited Supply}{153}{section*.330}
+\contentsline {paragraph}{Limited Supply}{153}{section*.343}
 \contentsline {section}{\numberline {10.8}Customization Options}{153}{section.10.8}
-\contentsline {paragraph}{Ridiculously Sharp}{153}{section*.331}
-\contentsline {paragraph}{Examples for Bizarre Gimmick:}{154}{section*.332}
-\contentsline {paragraph}{Custom Hilt (+50\% Cost)}{154}{section*.333}
-\contentsline {paragraph}{Custom Grip (+50\% Cost)}{154}{section*.334}
-\contentsline {paragraph}{Exquisite Decoration (+100-2,000\% Cost)}{154}{section*.335}
-\contentsline {paragraph}{Fine Forging (+50\% Cost)}{154}{section*.336}
-\contentsline {paragraph}{Integrated Pistol (+100\% Cost AND 1 gp)}{154}{section*.337}
+\contentsline {paragraph}{Ridiculously Sharp}{153}{section*.344}
+\contentsline {paragraph}{Bizarre Gimmick}{153}{section*.345}
+\contentsline {paragraph}{Examples for Bizarre Gimmick:}{154}{section*.346}
+\contentsline {paragraph}{Custom Hilt (+50\% Cost)}{154}{section*.347}
+\contentsline {paragraph}{Custom Grip (+50\% Cost)}{154}{section*.348}
+\contentsline {paragraph}{Exquisite Decoration}{154}{section*.349}
+\contentsline {paragraph}{Fine Forging (+50\% Cost)}{154}{section*.350}
+\contentsline {paragraph}{Integrated Pistol (+100\% Cost AND 1 gp)}{154}{section*.351}
 \contentsline {chapter}{\numberline {11}Missile Weapons}{156}{chapter.11}
 \contentsline {chapter}{\numberline {12}Armor}{168}{chapter.12}
 \contentsline {chapter}{\numberline {13}Burdinadin Armory}{186}{chapter.13}

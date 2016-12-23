@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/TeX Live for SUSE Linux) (preloaded format=pdflatex 2016.11.16)  22 DEC 2016 20:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/TeX Live for SUSE Linux) (preloaded format=pdflatex 2016.11.16)  23 DEC 2016 15:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -269,6 +269,13 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
 (/usr/share/texmf/tex/latex/graphics/color.sty
 Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
@@ -966,37 +973,37 @@ LaTeX Warning: Label `tab:Polearms' multiply defined.
 )
 \openout1 = `LaTeXed-SoS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 104.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 105.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 105.
 
  (/usr/share/texmf/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Try loading font information for OT1+pplj on input line 104
-.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Try loading font information for T1+pplj on input line 105.
 
-(/usr/share/texmf/tex/latex/psnfss/ot1pplj.fd
-File: ot1pplj.fd 2004/09/06 font definitions for OT1/pplj.
+
+(/usr/share/texmf/tex/latex/psnfss/t1pplj.fd
+File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
 )
 Package nag Info: Command \RaggedLeft not defined, skipping amendment on input 
-line 104.
+line 105.
 Package nag Info: Command \RaggedRight not defined, skipping amendment on input
- line 104.
+ line 105.
 
 (/usr/share/texmf/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1030,7 +1037,7 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 104.
+Package hyperref Info: Link coloring OFF on input line 105.
 
 (/usr/share/texmf/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1040,9 +1047,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count151
 )
-LaTeX Info: Redefining \ref on input line 104.
-LaTeX Info: Redefining \pageref on input line 104.
-LaTeX Info: Redefining \nameref on input line 104.
+LaTeX Info: Redefining \ref on input line 105.
+LaTeX Info: Redefining \pageref on input line 105.
+LaTeX Info: Redefining \nameref on input line 105.
  (./LaTeXed-SoS.out) (./LaTeXed-SoS.out)
 \@outlinefile=\write3
 \openout3 = `LaTeXed-SoS.out'.
@@ -1082,7 +1089,7 @@ LaTeX Info: Redefining \nameref on input line 104.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 104.
+LaTeX Info: Redefining \microtypecontext on input line 105.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1096,127 +1103,21 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
-t line 104.
+t line 105.
 Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
-t line 104.
+t line 105.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 104.
+line 105.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
-line 104.
-LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 107.
-LaTeX Font Info:    Try loading font information for TS1+pplj on input line 111
-.
+line 105.
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 108.
 
-(/usr/share/texmf/tex/latex/psnfss/ts1pplj.fd
-File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
-)
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 174.
-
-LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 174.
-LaTeX Font Info:    Try loading font information for U+futs on input line 174.
-(/usr/share/texmf/tex/latex/fourier/ufuts.fd
-File: ufuts.fd 2004/03/26 Fontinst v1.926 font definitions for U/futs.
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `cmss' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 174.
-
-LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <12> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 174.
-LaTeX Font Info:    Font shape `U/futs/bx/n' in size <12> not available
-(Font)              Font shape `U/futs/b/n' tried instead on input line 174.
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 174.
-
-[1{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 220.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 220.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 220.
-
-[2]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 234.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 234.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 234.
-
-[3]
-Package microtype Info: Character `013' is missing
-(microtype)             in font `OT1/pplj/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `013' is missing
-(microtype)             in font `OT1/pplj/m/sc/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `013' is missing
-(microtype)             in font `OT1/pplj/m/sc/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-
-
-LaTeX Font Warning: Font shape `TS1/pplj/m/sc' undefined
-(Font)              using `TS1/pplj/m/n' instead
-(Font)              for symbol `textcopyright' on input line 245.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.249 \end{titlepage}
-                      [1
-
-]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 282.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 282.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 282.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.282 \clearpage
-                 [1]
-LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 283.
- (./LaTeXed-SoS.toc
 (/usr/share/texmf/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+LaTeX Font Info:    Try loading font information for U+msa on input line 109.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1224,4516 +1125,901 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texmf/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+LaTeX Font Info:    Try loading font information for U+msb on input line 109.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (/usr/share/texmf/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) ha
-s been already used, duplicate ignored
+)
+LaTeX Font Info:    Try loading font information for TS1+pplj on input line 113
+.
+
+(/usr/share/texmf/tex/latex/psnfss/ts1pplj.fd
+File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
+)
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 172.
+LaTeX Font Info:    Try loading font information for U+futs on input line 172.
+
+(/usr/share/texmf/tex/latex/fourier/ufuts.fd
+File: ufuts.fd 2004/03/26 Fontinst v1.926 font definitions for U/futs.
+)
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 172.
+
+
+(/usr/share/texmf/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `cmss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `U/futs/bx/n' in size <12> not available
+(Font)              Font shape `U/futs/b/n' tried instead on input line 172.
+ [1{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+] [2] [3]
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplj/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplj/m/sc/24.88'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplj/m/sc/14.4'.
+(microtype)             Ignoring protrusion settings for this character.
+
+
+LaTeX Font Warning: Font shape `TS1/pplj/m/sc' undefined
+(Font)              using `TS1/pplj/m/n' instead
+(Font)              for symbol `textcopyright' on input line 247.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.251 \end{titlepage}
+                      [1
+
+]pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.284 \clearpage
+                 [1]
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 285.
+ (./LaTeXed-SoS.tocpdfTeX warning (ext4): destination with the same identifier 
+(name{page.ii}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.29 ... {4.2}Advancing with Arc}{20}{section.4.2}
                                                    [2
 
 
-]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 196.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 196.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 196.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.iii}) ha
-s been already used, duplicate ignored
+]pdfTeX warning (ext4): destination with the same identifier (name{page.iii}) h
+as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.196 ...er}{\numberline {7}Skills}{99}{chapter.7}
-                                                   [3]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 307.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 307.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 307.
-
-[4])
+l.203 ...er}{\numberline {7}Skills}{99}{chapter.7}
+                                                   [3] [4])
 \tf@toc=\write4
 \openout4 = `LaTeXed-SoS.toc'.
 
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 284.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 284.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 284.
-
-[5]
+ [5]
 Chapter 1.
-LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 285.
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 287.
 [1
 
 
 ]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 320.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 320.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 320.
-
-[2]
-LaTeX Font Info:    Font shape `OT1/pplj/bx/it' in size <10> not available
-(Font)              Font shape `OT1/pplj/b/it' tried instead on input line 343.
-
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 374.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 374.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 374.
-
-[3]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 405.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 405.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 405.
-
-[4]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 449.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 449.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 449.
-
-[5]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 449.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 449.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 449.
-
-[6]
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <12> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 317.
+ [2]
+LaTeX Font Info:    Font shape `T1/pplj/bx/it' in size <10> not available
+(Font)              Font shape `T1/pplj/b/it' tried instead on input line 325.
+ [3] [4] [5] [6]
 Chapter 2.
 \c@ttl@toc@chapters=\count152
 (./LaTeXed-SoS.ptc) [7
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 454--455
-
- []
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 505.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 505.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 505.
-
-[8]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 556.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 556.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 556.
-
-[9]
+] [8] [9]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 609.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 609.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 609.
-
-[10]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 609.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 609.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 609.
-
-[11]
+[10] [11]
 Chapter 3.
 (./LaTeXed-SoS.ptc) [12
 
-]
+] [13
 
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 664.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 664.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 664.
-
-[13
-
-]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 713.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 713.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 713.
-
-[14]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 758.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 758.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 758.
-
-[15]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 807.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 807.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 807.
-
-[16]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 846.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 846.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 846.
-
-[17]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 853.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 853.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 853.
-
-[18]
+] [14] [15] [16] [17] [18]
 Chapter 4.
 (./LaTeXed-SoS.ptc) [19
 
-]
+] [20
 
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 925.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 925.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 925.
-
-[20
-
-]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 964.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 964.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 964.
-
-[21]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 983.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 983.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 983.
-
-[22]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1020.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1020.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1020.
-
-[23]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1054.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1054.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1054.
-
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 1082--1097
-[][]
- []
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1100.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1100.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1100.
-
-[25]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1100.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1100.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1100.
-
-[26]
+] [21] [22] [23] [24] [25] [26]
 Chapter 5.
 (./LaTeXed-SoS.ptc) [27
 
-]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1149.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1149.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1149.
-
-[28
+] [28
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 1165--1166
 
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1200.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1200.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1200.
-
-[29]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1230.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1230.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1230.
-
-[30]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1263.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1263.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1263.
-
-[31]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1309.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1309.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1309.
-
-[32]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1344.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1344.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1344.
-
-[33]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1386.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1386.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1386.
-
-[34]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1427.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1427.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1427.
-
-[35]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1486.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1486.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1486.
-
-[36]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1545.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1545.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1545.
-
-[37]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1600.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1600.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1600.
-
-[38]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1678.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1678.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1678.
-
-[39]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1721.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1721.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1721.
-
-[40]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1775.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1775.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1775.
-
-[41]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1835.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1835.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1835.
-
-[42]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1914.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1914.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1914.
-
-[43]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1939.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1939.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1939.
-
-[44]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1965.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1965.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 1965.
-
-[45]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2006.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2006.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2006.
-
-[46]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2048.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2048.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2048.
-
-[47]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2091.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2091.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2091.
-
-[48]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2129.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2129.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2129.
-
-[49]
-Overfull \hbox (30.26573pt too wide) in paragraph at lines 2144--2153
-[] \OT1/pplj/m/n/10.95 There
  []
 
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2155.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2155.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2155.
-
-[50]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2211.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2211.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2211.
-
-[51]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2244.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2244.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2244.
-
-[52]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2279.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2279.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2279.
-
-[53]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2302.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2302.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2302.
-
-[54]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2338.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2338.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2338.
-
-[55]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2374.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2374.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2374.
-
-[56]
-Overfull \hbox (8.27338pt too wide) in paragraph at lines 2403--2407
- []\OT1/pplj/b/n/10.95 Judgement[] \OT1/pplj/m/n/10.95 A Pal-adin can chan-nel 
-the power of Geno-sus through any weapon|even his own hands|to
+[29] [30] [31] [32] [33] [34] [35] [36] [37] [38] [39]
+Overfull \hbox (3.74448pt too wide) in paragraph at lines 1590--1597
+[]\T1/pplj/m/n/10.95 Many Zells have sim-ply been as-sim-i-lated into Hu-man cu
+l-ture (usu-ally be-cause their an-ces-tors couldn't
  []
 
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2413.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2413.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2413.
-
-[57]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2461.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2461.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2461.
-
-[58]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2520.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2520.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2520.
-
-[59]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2555.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2555.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2555.
-
-[60]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2591.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2591.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2591.
-
-[61]
-Underfull \hbox (badness 1237) in paragraph at lines 2645--2645
-[]\OT1/pplj/m/n/10.95 Tons of Mois-ture (snow, rain,
+[40] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54]
+[55] [56] [57]
+Overfull \hbox (8.27338pt too wide) in paragraph at lines 2294--2294
+ []\T1/pplj/b/n/10.95 Judgement[] \T1/pplj/m/n/10.95 A Pal-adin can chan-nel th
+e power of Geno-sus through any weapon^^Veven his own hands^^Vto
  []
 
+[58] [59] [60] [61] [62]
+Underfull \hbox (badness 1237) in paragraph at lines 2530--2530
+[]\T1/pplj/m/n/10.95 Tons of Mois-ture (snow, rain,
+ []
 
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2647.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2647.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2647.
-
-[62]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2693.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2693.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2693.
-
-[63]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2740.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2740.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2740.
-
-[64]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2796.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2796.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2796.
-
-[65]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2833.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2833.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2833.
-
-[66]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2881.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2881.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2881.
-
-[67]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2924.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2924.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2924.
-
-[68]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2940.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2940.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 2940.
-
-[69]
+[63] [64] [65] [66] [67] [68] [69]
 Chapter 6.
 (./LaTeXed-SoS.ptc) [70
 
-]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3009.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3009.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3009.
-
-[71
+] [71
 
 ]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[72] [73] [74
 
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3077.
+] [75
 
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3077.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3077.
-
-[72]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3077.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3077.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3077.
-
-[73]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3122.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3122.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3122.
-
-[74
-
-]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3166.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3166.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3166.
-
-[75
-
-]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3197.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3197.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3197.
-
-[76]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3228.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3228.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3228.
-
-[77]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3265.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3265.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3265.
-
-[78]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3313.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3313.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3313.
-
-[79]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3356.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3356.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3356.
-
-[80]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3392.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3392.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3392.
-
-[81]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3429.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3429.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3429.
-
-[82]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3459.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3459.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3459.
-
-[83]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3492.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3492.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3492.
-
-[84]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3528.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3528.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3528.
-
-[85]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3565.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3565.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3565.
-
-[86]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3600.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3600.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3600.
-
-[87]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3629.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3629.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3629.
-
-[88]
-Underfull \hbox (badness 10000) in paragraph at lines 3629--3630
-
- []
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3644.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3644.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3644.
-
-[89]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3668.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3668.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3668.
-
-[90]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3710.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3710.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3710.
-
-[91]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3745.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3745.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3745.
-
-[92]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3780.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3780.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3780.
-
-[93]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3810.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3810.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3810.
-
-[94]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3854.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3854.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3854.
-
-[95]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3882.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3882.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3882.
-
-[96]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3915.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3915.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3915.
-
-[97]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3937.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3937.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3937.
-
-[98]
+] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86]
+[87] [88] [89] [90] [91] [92] [93] [94] [95] [96] [97] [98]
 Chapter 7.
 (./LaTeXed-SoS.ptc) [99
 
-]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3981.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3981.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 3981.
-
-[100
+] [100
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 3879--3897
 
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4021.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4021.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4021.
-
-[101]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4029.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4029.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4029.
-
-[102]
-Underfull \hbox (badness 10000) in paragraph at lines 4036--4049
-\OT1/pplj/m/n/10.95 Un-en-cum-bered, Light, Medium, Heavy, and Over-loaded.
  []
 
+[101] [102]
+Underfull \hbox (badness 10000) in paragraph at lines 3914--3927
 
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4065.
+ []
 
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4065.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4065.
-
-[103]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4117.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4117.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4117.
-
-[104]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4166.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4166.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4166.
-
-[105]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4232.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4232.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4232.
-
-[106]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4274.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4274.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4274.
-
-[107]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4342.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4342.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4342.
-
-[108]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4395.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4395.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4395.
-
-[109]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4458.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4458.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4458.
-
-[110]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4513.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4513.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4513.
-
-[111]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4580.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4580.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4580.
-
-[112]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4634.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4634.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4634.
-
-[113]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4695.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4695.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4695.
-
-[114]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4750.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4750.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4750.
-
+[103] [104] [105] [106] [107] [108] [109] [110] [111] [112] [113] [114]
 [115]
 Chapter 8.
 (./LaTeXed-SoS.ptc) [116
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 4766--4786
-\OT1/pplj/m/n/10.95 means.
+Underfull \hbox (badness 10000) in paragraph at lines 4644--4664
+\T1/pplj/m/n/10.95 means.
  []
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4810.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4810.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4810.
 
 [117
 
-]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4830.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4830.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4830.
-
-[118]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4893.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4893.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4893.
-
-[119]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4912.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4912.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4912.
-
-[120]
+] [118] [119] [120]
 Chapter 9.
 (./LaTeXed-SoS.ptc) [121
 
-]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4933.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4933.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4933.
-
-[122
+] [122
 
 ]
 Chapter 10.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 4945.
+(hyperref)                than one, level fixed on input line 4822.
 
 [123
 
-]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4984.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4984.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 4984.
-
-[124]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5015.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5015.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5015.
-
-[125]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5041.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5041.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5041.
-
-[126]
-Overfull \hbox (6.68867pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Weapon
+] [124] [125] [126]
+Overfull \hbox (6.68867pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Weapon
  []
 
 
-Overfull \hbox (6.51349pt too wide) in paragraph at lines 5070--5070
- []\OT1/pplj/m/n/10.95 Defense 
+Overfull \hbox (6.51349pt too wide) in paragraph at lines 4947--4947
+ []\T1/pplj/m/n/10.95 Defense 
  []
 
 
-Overfull \hbox (5.86743pt too wide) in paragraph at lines 5070--5070
- \OT1/pplj/m/n/10.95 (Guard)| 
+Overfull \hbox (5.86743pt too wide) in paragraph at lines 4947--4947
+ \T1/pplj/m/n/10.95 (Guard)| 
  []
 
 
-Overfull \hbox (3.33797pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Dagger| 
+Overfull \hbox (3.33797pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Dagger| 
  []
 
 
-Overfull \hbox (3.33797pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Dagger| 
+Overfull \hbox (3.33797pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Dagger| 
  []
 
 
-Overfull \hbox (7.07018pt too wide) in paragraph at lines 5070--5070
-\OT1/pplj/m/n/10.95 Knife/Pishkan 
+Overfull \hbox (7.07018pt too wide) in paragraph at lines 4947--4947
+\T1/pplj/m/n/10.95 Knife/Pishkan 
  []
 
 
-Overfull \hbox (3.33797pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Dagger| 
+Overfull \hbox (3.33797pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Dagger| 
  []
 
 
-Overfull \hbox (3.8964pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Dagger,
+Overfull \hbox (3.8964pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Dagger,
  []
 
 
-Overfull \hbox (3.8964pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Dagger,
+Overfull \hbox (3.8964pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Dagger,
  []
 
 
-Overfull \hbox (3.33797pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Dagger| 
+Overfull \hbox (3.33797pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Dagger| 
  []
 
 
-Overfull \hbox (3.8964pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Dagger,
+Overfull \hbox (3.8964pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Dagger,
  []
 
 
-Overfull \hbox (3.33797pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Dagger| 
+Overfull \hbox (3.33797pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Dagger| 
  []
 
 
-Overfull \hbox (3.33797pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Dagger| 
+Overfull \hbox (3.33797pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Dagger| 
  []
 
 
-Overfull \hbox (3.33797pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Dagger| 
+Overfull \hbox (3.33797pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Dagger| 
  []
 
 
-Overfull \hbox (3.33797pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Dagger| 
+Overfull \hbox (3.33797pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Dagger| 
  []
 
 
-Overfull \hbox (3.33797pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Dagger| 
+Overfull \hbox (3.33797pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Dagger| 
  []
 
 
-Overfull \hbox (3.33797pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Dagger| 
+Overfull \hbox (3.33797pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Dagger| 
  []
 
 
-Overfull \hbox (3.33797pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Dagger| 
+Overfull \hbox (3.33797pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Dagger| 
  []
 
 
-Overfull \hbox (3.33797pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Dagger| 
+Overfull \hbox (3.33797pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Dagger| 
  []
 
 
-Overfull \hbox (3.33797pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Dagger| 
+Overfull \hbox (3.33797pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Dagger| 
  []
 
 
-Overfull \hbox (3.33797pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Dagger| 
+Overfull \hbox (3.33797pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Dagger| 
  []
 
 
-Overfull \hbox (3.8964pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Dagger,
+Overfull \hbox (3.8964pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Dagger,
  []
 
 
-Overfull \hbox (3.33797pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Dagger| 
+Overfull \hbox (3.33797pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Dagger| 
  []
 
 
-Overfull \hbox (3.27046pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Swordbreaker|  
+Overfull \hbox (3.27046pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Swordbreaker|  
  []
 
 
-Overfull \hbox (3.33797pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Dagger| 
+Overfull \hbox (3.33797pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Dagger| 
  []
 
 
-Overfull \hbox (3.33797pt too wide) in paragraph at lines 5070--5070
-[]\OT1/pplj/m/n/10.95 Dagger| 
+Overfull \hbox (3.33797pt too wide) in paragraph at lines 4947--4947
+[]\T1/pplj/m/n/10.95 Dagger| 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 5070
+Underfull \vbox (badness 10000) detected at line 4947
  []
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5070.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5070.
-
 
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5070.
-
-[127]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5070.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5070.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5070.
-
-[128]
-Overfull \hbox (4.1946pt too wide) in paragraph at lines 5125--5125
-[]\OT1/pplj/m/n/10.95 Weapon
+[127] [128]
+Overfull \hbox (4.1946pt too wide) in paragraph at lines 5002--5002
+[]\T1/pplj/m/n/10.95 Weapon
  []
 
 
-Overfull \hbox (4.01941pt too wide) in paragraph at lines 5125--5125
- []\OT1/pplj/m/n/10.95 Defense 
+Overfull \hbox (4.01941pt too wide) in paragraph at lines 5002--5002
+ []\T1/pplj/m/n/10.95 Defense 
  []
 
 
-Overfull \hbox (3.37335pt too wide) in paragraph at lines 5125--5125
- \OT1/pplj/m/n/10.95 (Guard)| 
+Overfull \hbox (3.37335pt too wide) in paragraph at lines 5002--5002
+ \T1/pplj/m/n/10.95 (Guard)| 
  []
 
 
-Overfull \hbox (1.40231pt too wide) in paragraph at lines 5125--5125
-[]\OT1/pplj/m/n/10.95 Dagger,
+Overfull \hbox (1.40231pt too wide) in paragraph at lines 5002--5002
+[]\T1/pplj/m/n/10.95 Dagger,
  []
 
 
-Overfull \hbox (1.40231pt too wide) in paragraph at lines 5125--5125
-[]\OT1/pplj/m/n/10.95 Dagger,
+Overfull \hbox (1.40231pt too wide) in paragraph at lines 5002--5002
+[]\T1/pplj/m/n/10.95 Dagger,
  []
 
 
-Overfull \hbox (1.40231pt too wide) in paragraph at lines 5125--5125
-[]\OT1/pplj/m/n/10.95 Dagger,
+Overfull \hbox (1.40231pt too wide) in paragraph at lines 5002--5002
+[]\T1/pplj/m/n/10.95 Dagger,
  []
 
 
-Overfull \hbox (1.40231pt too wide) in paragraph at lines 5125--5125
-[]\OT1/pplj/m/n/10.95 Dagger,
+Overfull \hbox (1.40231pt too wide) in paragraph at lines 5002--5002
+[]\T1/pplj/m/n/10.95 Dagger,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5125--5125
-[]\OT1/pplj/m/n/10.95 Sword,
+Underfull \hbox (badness 10000) in paragraph at lines 5002--5002
+[]\T1/pplj/m/n/10.95 Sword,
  []
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5125.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5125.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5125.
-
-[129]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5125.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5125.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5125.
-
-[130]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5125.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5125.
-
 
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5125.
-
-[131]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5125.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5125.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5125.
-
-[132]
-Overfull \hbox (4.16722pt too wide) in paragraph at lines 5149--5149
-[]\OT1/pplj/m/n/10.95 Weapon
+[129] [130] [131] [132]
+Overfull \hbox (4.16722pt too wide) in paragraph at lines 5026--5026
+[]\T1/pplj/m/n/10.95 Weapon
  []
 
 
-Overfull \hbox (3.99203pt too wide) in paragraph at lines 5149--5149
- []\OT1/pplj/m/n/10.95 Defense 
+Overfull \hbox (3.99203pt too wide) in paragraph at lines 5026--5026
+ []\T1/pplj/m/n/10.95 Defense 
  []
 
 
-Overfull \hbox (3.34598pt too wide) in paragraph at lines 5149--5149
- \OT1/pplj/m/n/10.95 (Guard)| 
+Overfull \hbox (3.34598pt too wide) in paragraph at lines 5026--5026
+ \T1/pplj/m/n/10.95 (Guard)| 
  []
 
 
-Overfull \hbox (13.63423pt too wide) in paragraph at lines 5149--5149
-[]\OT1/pplj/m/n/10.95 Flammenschwert|  
+Overfull \hbox (13.63423pt too wide) in paragraph at lines 5026--5026
+[]\T1/pplj/m/n/10.95 Flammenschwert|  
  []
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5149.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5149.
 
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5149.
-
-[133]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5149.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5149.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5149.
-
-[134]
-Overfull \hbox (6.66434pt too wide) in paragraph at lines 5172--5172
-[]\OT1/pplj/m/n/10.95 Weapon
+[133] [134]
+Overfull \hbox (6.66434pt too wide) in paragraph at lines 5049--5049
+[]\T1/pplj/m/n/10.95 Weapon
  []
 
 
-Overfull \hbox (6.48915pt too wide) in paragraph at lines 5172--5172
- []\OT1/pplj/m/n/10.95 Defense 
+Overfull \hbox (6.48915pt too wide) in paragraph at lines 5049--5049
+ []\T1/pplj/m/n/10.95 Defense 
  []
 
 
-Overfull \hbox (5.8431pt too wide) in paragraph at lines 5172--5172
- \OT1/pplj/m/n/10.95 (Guard)| 
+Overfull \hbox (5.8431pt too wide) in paragraph at lines 5049--5049
+ \T1/pplj/m/n/10.95 (Guard)| 
  []
 
 
-Overfull \hbox (26.65482pt too wide) in paragraph at lines 5172--5172
-\OT1/pplj/m/n/10.95 (Short)/Truncheon|  
+Overfull \hbox (26.65482pt too wide) in paragraph at lines 5049--5049
+\T1/pplj/m/n/10.95 (Short)/Truncheon|  
  []
 
 
-Overfull \hbox (10.53647pt too wide) in paragraph at lines 5172--5172
-\OT1/pplj/m/n/10.95 (Medium)/Rod|  
+Overfull \hbox (10.53647pt too wide) in paragraph at lines 5049--5049
+\T1/pplj/m/n/10.95 (Medium)/Rod|  
  []
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5172.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5172.
 
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5172.
-
-[135]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5172.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5172.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5172.
-
-[136]
-Overfull \hbox (6.66434pt too wide) in paragraph at lines 5202--5202
-[]\OT1/pplj/m/n/10.95 Weapon
+[135] [136]
+Overfull \hbox (6.66434pt too wide) in paragraph at lines 5079--5079
+[]\T1/pplj/m/n/10.95 Weapon
  []
 
 
-Overfull \hbox (6.48915pt too wide) in paragraph at lines 5202--5202
- []\OT1/pplj/m/n/10.95 Defense 
+Overfull \hbox (6.48915pt too wide) in paragraph at lines 5079--5079
+ []\T1/pplj/m/n/10.95 Defense 
  []
 
 
-Overfull \hbox (5.8431pt too wide) in paragraph at lines 5202--5202
- \OT1/pplj/m/n/10.95 (Guard)| 
+Overfull \hbox (5.8431pt too wide) in paragraph at lines 5079--5079
+ \T1/pplj/m/n/10.95 (Guard)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5202--5202
-[]\OT1/pplj/m/n/10.95 Blunt,
+Underfull \hbox (badness 10000) in paragraph at lines 5079--5079
+[]\T1/pplj/m/n/10.95 Blunt,
  []
 
 
-Overfull \hbox (8.29587pt too wide) in paragraph at lines 5202--5202
-\OT1/pplj/m/n/10.95 Polearm| 
+Overfull \hbox (8.29587pt too wide) in paragraph at lines 5079--5079
+\T1/pplj/m/n/10.95 Polearm| 
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5202--5202
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5079--5079
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5202--5202
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5079--5079
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5202--5202
-\OT1/pplj/m/n/10.95 Spear,
+Underfull \hbox (badness 10000) in paragraph at lines 5079--5079
+\T1/pplj/m/n/10.95 Spear,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5202--5202
-[]\OT1/pplj/m/n/10.95 Blunt,
+Underfull \hbox (badness 10000) in paragraph at lines 5079--5079
+[]\T1/pplj/m/n/10.95 Blunt,
  []
 
 
-Overfull \hbox (8.29587pt too wide) in paragraph at lines 5202--5202
-\OT1/pplj/m/n/10.95 Polearm| 
+Overfull \hbox (8.29587pt too wide) in paragraph at lines 5079--5079
+\T1/pplj/m/n/10.95 Polearm| 
  []
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5202.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5202.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5202.
-
-[137]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5202.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5202.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5202.
-
-[138]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5202.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5202.
 
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5202.
-
-[139]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5211.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5211.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5211.
-
-[140]
-Overfull \hbox (6.66434pt too wide) in paragraph at lines 5247--5247
-[]\OT1/pplj/m/n/10.95 Weapon
+[137] [138] [139] [140]
+Overfull \hbox (6.66434pt too wide) in paragraph at lines 5124--5124
+[]\T1/pplj/m/n/10.95 Weapon
  []
 
 
-Overfull \hbox (6.48915pt too wide) in paragraph at lines 5247--5247
- []\OT1/pplj/m/n/10.95 Defense 
+Overfull \hbox (6.48915pt too wide) in paragraph at lines 5124--5124
+ []\T1/pplj/m/n/10.95 Defense 
  []
 
 
-Overfull \hbox (5.8431pt too wide) in paragraph at lines 5247--5247
- \OT1/pplj/m/n/10.95 (Guard)| 
+Overfull \hbox (5.8431pt too wide) in paragraph at lines 5124--5124
+ \T1/pplj/m/n/10.95 (Guard)| 
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5247--5247
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5124--5124
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5247--5247
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5124--5124
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5247--5247
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5124--5124
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5247--5247
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5124--5124
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5247--5247
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5124--5124
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5247--5247
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5124--5124
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5247--5247
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5124--5124
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5247--5247
-\OT1/pplj/m/n/10.95 Spear,
+Underfull \hbox (badness 10000) in paragraph at lines 5124--5124
+\T1/pplj/m/n/10.95 Spear,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5247--5247
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5124--5124
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5247--5247
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5124--5124
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5247--5247
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5124--5124
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5247--5247
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5124--5124
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5247--5247
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5124--5124
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5247--5247
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5124--5124
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5247--5247
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5124--5124
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5247--5247
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5124--5124
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5247--5247
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5124--5124
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (22.68419pt too wide) in paragraph at lines 5247--5247
-[]\OT1/pplj/m/n/10.95 7(+2p/+2c)| 
+Overfull \hbox (22.68419pt too wide) in paragraph at lines 5124--5124
+[]\T1/pplj/m/n/10.95 7(+2p/+2c)| 
  []
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5247.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5247.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5247.
-
-[141]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5247.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5247.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5247.
-
-[142]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5247.
-
 
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5247.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5247.
-
-[143]
-Overfull \hbox (6.66434pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Weapon
+[141] [142] [143]
+Overfull \hbox (6.66434pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Weapon
  []
 
 
-Overfull \hbox (6.48915pt too wide) in paragraph at lines 5292--5292
- []\OT1/pplj/m/n/10.95 Defense 
+Overfull \hbox (6.48915pt too wide) in paragraph at lines 5169--5169
+ []\T1/pplj/m/n/10.95 Defense 
  []
 
 
-Overfull \hbox (5.8431pt too wide) in paragraph at lines 5292--5292
- \OT1/pplj/m/n/10.95 (Guard)| 
+Overfull \hbox (5.8431pt too wide) in paragraph at lines 5169--5169
+ \T1/pplj/m/n/10.95 (Guard)| 
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (8.29587pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm| 
+Overfull \hbox (8.29587pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm| 
  []
 
 
-Overfull \hbox (8.29587pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm| 
+Overfull \hbox (8.29587pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm| 
  []
 
 
-Overfull \hbox (8.29587pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm| 
+Overfull \hbox (8.29587pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm| 
  []
 
 
-Overfull \hbox (8.29587pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm| 
+Overfull \hbox (8.29587pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm| 
  []
 
 
-Overfull \hbox (8.29587pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm| 
+Overfull \hbox (8.29587pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 10(-
+Underfull \hbox (badness 10000) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 10(-
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (8.29587pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm| 
+Overfull \hbox (8.29587pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm| 
  []
 
 
-Overfull \hbox (8.29587pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm| 
+Overfull \hbox (8.29587pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm| 
  []
 
 
-Overfull \hbox (8.29587pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm| 
+Overfull \hbox (8.29587pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm| 
  []
 
 
-Overfull \hbox (8.29587pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm| 
+Overfull \hbox (8.29587pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm| 
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (8.29587pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm| 
+Overfull \hbox (8.29587pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm| 
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5292--5292
-\OT1/pplj/m/n/10.95 Spear,
+Underfull \hbox (badness 10000) in paragraph at lines 5169--5169
+\T1/pplj/m/n/10.95 Spear,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (8.29587pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm| 
+Overfull \hbox (8.29587pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm| 
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (8.29587pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm| 
+Overfull \hbox (8.29587pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm| 
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (9.66461pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 Polearm,
+Overfull \hbox (9.66461pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 Polearm,
  []
 
 
-Overfull \hbox (22.68419pt too wide) in paragraph at lines 5292--5292
-[]\OT1/pplj/m/n/10.95 7(+2p/+2c)| 
+Overfull \hbox (22.68419pt too wide) in paragraph at lines 5169--5169
+[]\T1/pplj/m/n/10.95 7(+2p/+2c)| 
  []
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5292.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5292.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5292.
-
-[144]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5292.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5292.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5292.
-
-[145]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5292.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5292.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5292.
-
-[146]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5292.
-
 
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5292.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5292.
-
-[147]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5292.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5292.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5292.
-
-[148]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5318.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5318.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5318.
-
-[149]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5342.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5342.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5342.
-
-[150]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5373.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5373.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5373.
-
-[151]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5408.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5408.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5408.
-
-[152]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5430.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5430.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5430.
-
-[153]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5455.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5455.
+[144] [145] [146] [147] [148] [149] [150] [151] [152] [153] [154]
+Underfull \hbox (badness 10000) in paragraph at lines 5338--5338
+[]\T1/pplj/m/n/10.95 Weapon
+ []
 
 
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5455.
+Underfull \hbox (badness 10000) in paragraph at lines 5338--5338
+[]\T1/pplj/m/n/10.95 Weapon
+ []
 
-[154]
 
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5456.
+Overfull \hbox (3.2019pt too wide) in paragraph at lines 5338--5338
+[]\T1/pplj/m/n/10.95 Ammunition| 
+ []
 
 
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5456.
+Underfull \hbox (badness 10000) in paragraph at lines 5338--5338
+[]\T1/pplj/m/n/10.95 Integrated
+ []
 
 
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5456.
+Underfull \hbox (badness 10000) in paragraph at lines 5338--5338
+[]\T1/pplj/m/n/10.95 Integrated
+ []
 
 [155]
 Chapter 11.
 [156
 
-]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5609.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5609.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5609.
-
-[157]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5702.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5702.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5702.
-
-[158]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5776.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5776.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5776.
-
-[159]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5849.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5849.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5849.
-
-[160]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5931.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5931.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5931.
-
-[161]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5995.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5995.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 5995.
-
-[162]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6070.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6070.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6070.
-
-[163]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6152.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6152.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6152.
-
-[164]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6229.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6229.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6229.
-
-[165]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6304.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6304.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6304.
-
-[166]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6311.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6311.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6311.
-
-[167]
+] [157] [158] [159] [160] [161] [162] [163] [164] [165] [166] [167]
 Chapter 12.
 [168
 
-]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6398.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6398.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6398.
-
-[169]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6455.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6455.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6455.
-
-[170]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6519.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6519.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6519.
-
-[171]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6597.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6597.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6597.
-
-[172]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6670.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6670.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6670.
-
-[173]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6741.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6741.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6741.
-
-[174]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6815.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6815.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6815.
-
-[175]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6889.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6889.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6889.
-
-[176]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6974.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6974.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 6974.
-
-[177]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7056.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7056.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7056.
-
-[178]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7127.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7127.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7127.
-
-[179]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7208.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7208.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7208.
-
-[180]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7288.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7288.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7288.
-
-[181]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7377.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7377.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7377.
-
-[182]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7475.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7475.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7475.
-
-[183]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7562.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7562.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7562.
-
-[184]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7602.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7602.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7602.
-
-[185]
+] [169] [170] [171] [172] [173] [174] [175] [176] [177] [178] [179]
+[180] [181] [182] [183] [184] [185]
 Chapter 13.
 [186
 
-]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7727.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7727.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7727.
-
-[187]
-Overfull \hbox (1.79176pt too wide) in paragraph at lines 7803--7806
-[]\OT1/pplj/m/n/10.95 The ar-mor suits them-selves are bipedal mon-strosi-ties 
-of steel and ma-chine, of-ten laden with weaponry
+] [187]
+Overfull \hbox (1.72961pt too wide) in paragraph at lines 7686--7689
+[]\T1/pplj/m/n/10.95 The ar-mor suits them-selves are bipedal mon-strosi-ties o
+f steel and ma-chine, of-ten laden with weaponry
  []
 
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7812.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7812.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7812.
-
-[188]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7900.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7900.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7900.
-
-[189]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7981.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7981.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 7981.
-
-[190]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8062.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8062.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8062.
-
-[191]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8145.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8145.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8145.
-
-[192]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8257.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8257.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8257.
-
-[193]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8366.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8366.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8366.
-
-[194]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8391.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8391.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8391.
-
-[195]
+[188] [189] [190] [191] [192] [193] [194] [195]
 Chapter 14.
 (./LaTeXed-SoS.ptc) [196
 
-]
+] [197
 
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8499.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8499.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8499.
-
-[197
-
-]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8555.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8555.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8555.
-
-[198]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8622.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8622.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8622.
-
-[199]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8699.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8699.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8699.
-
-[200]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8759.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8759.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8759.
-
-[201]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8829.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8829.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8829.
-
-[202]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8929.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8929.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 8929.
-
-[203]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9044.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9044.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9044.
-
-[204]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9154.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9154.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9154.
-
-[205]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9264.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9264.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9264.
-
-[206]
+] [198] [199] [200] [201] [202] [203] [204]
+[205] [206]
 Chapter 15.
 (./LaTeXed-SoS.ptc) [207
 
-]
+] [208
 
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9346.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9346.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9346.
-
-[208
-
-]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9430.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9430.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9430.
-
-[209]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9515.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9515.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9515.
-
-[210]
-Overfull \hbox (2.20624pt too wide) in paragraph at lines 9592--9601
-[]\OT1/pplj/m/n/10.95 BUTT-STRIKE [X] Type: Uni-ver-sal, At-tack, Swing-ing Re-
-quire-ments: Have a Polearm or Spear weapon,
+] [209] [210]
+Overfull \hbox (2.14409pt too wide) in paragraph at lines 9475--9484
+[]\T1/pplj/m/n/10.95 BUTT-STRIKE [X] Type: Uni-ver-sal, At-tack, Swing-ing Re-q
+uire-ments: Have a Polearm or Spear weapon,
  []
 
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9601.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9601.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9601.
-
-[211]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9649.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9649.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9649.
-
-[212]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9710.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9710.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9710.
-
-[213]
-Overfull \hbox (14.8974pt too wide) in paragraph at lines 9765--9769
-[]\OT1/pplj/m/n/10.95 MELEE SHOOT [X+Variable] Type: Uni-ver-sal, At-tack, Thru
-st-ing Re-quire-ments: Have a loaded/spanned
+[211] [212] [213]
+Overfull \hbox (14.83525pt too wide) in paragraph at lines 9648--9652
+[]\T1/pplj/m/n/10.95 MELEE SHOOT [X+Variable] Type: Uni-ver-sal, At-tack, Thrus
+t-ing Re-quire-ments: Have a loaded/spanned
  []
 
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9782.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9782.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9782.
-
-[214]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9845.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9845.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9845.
-
-[215]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9922.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9922.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9922.
-
-[216]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9987.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9987.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 9987.
-
-[217]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10064.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10064.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10064.
-
-[218]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10124.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10124.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10124.
-
-[219]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10194.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10194.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10194.
-
-[220]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10273.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10273.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10273.
-
-[221]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10349.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10349.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10349.
-
-[222]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10445.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10445.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10445.
-
-[223]
-Overfull \hbox (3.67287pt too wide) in paragraph at lines 10447--10455
-[]\OT1/pplj/m/n/10.95 Cover AV Ta-ble X.X Cover Cover AV Tall grass/hit the dir
-t 0 Hid-ing be-hind Horse Mount TOU+Mount
+[214] [215] [216] [217] [218] [219] [220] [221] [222] [223]
+Overfull \hbox (3.61072pt too wide) in paragraph at lines 10330--10338
+[]\T1/pplj/m/n/10.95 Cover AV Ta-ble X.X Cover Cover AV Tall grass/hit the dirt
+ 0 Hid-ing be-hind Horse Mount TOU+Mount
  []
 
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10499.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10499.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10499.
-
-[224]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10585.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10585.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10585.
-
-[225]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10668.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10668.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10668.
-
-[226]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10736.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10736.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10736.
-
-[227]
-Overfull \hbox (7.63388pt too wide) in paragraph at lines 10786--10796
-[]\OT1/pplj/m/n/10.95 DOUBLE FLING [???????] Type: Uni-ver-sal, Mis-sile, Throw
--ing Re-quire-ments: Have Throw-ing Weapons
+[224] [225] [226] [227]
+Overfull \hbox (7.57173pt too wide) in paragraph at lines 10669--10679
+[]\T1/pplj/m/n/10.95 DOUBLE FLING [???????] Type: Uni-ver-sal, Mis-sile, Throw-
+ing Re-quire-ments: Have Throw-ing Weapons
  []
 
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10812.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10812.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10812.
-
-[228]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10874.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10874.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10874.
-
-[229]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10944.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10944.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 10944.
-
-[230]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11035.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11035.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11035.
-
-[231]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11107.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11107.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11107.
-
-[232]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11185.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11185.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11185.
-
-[233]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11262.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11262.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11262.
-
-[234]
-Overfull \hbox (3.17569pt too wide) in paragraph at lines 11272--11277
-[]\OT1/pplj/m/n/10.95 DISENGAGE [??????] Type: XXXXXX Re-quire-ments: XXXXXX Ma
--neu-ver: XXXXXX Suc-cess: XXXXXX 
+[228] [229] [230] [231] [232] [233] [234]
+Overfull \hbox (3.11354pt too wide) in paragraph at lines 11155--11160
+[]\T1/pplj/m/n/10.95 DISENGAGE [??????] Type: XXXXXX Re-quire-ments: XXXXXX Ma-
+neu-ver: XXXXXX Suc-cess: XXXXXX 
  []
 
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11346.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11346.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11346.
-
-[235]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11431.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11431.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11431.
-
-[236]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11514.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11514.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11514.
-
-[237]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11602.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11602.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11602.
-
-[238]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11681.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11681.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11681.
-
-[239]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11760.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11760.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11760.
-
-[240]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11847.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11847.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11847.
-
-[241]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11915.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11915.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 11915.
-
-[242]
+[235] [236] [237] [238] [239] [240] [241] [242]
 Chapter 16.
 (./LaTeXed-SoS.ptc) [243
 
-]
+] [244
 
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12004.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12004.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12004.
-
-[244
-
-]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12080.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12080.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12080.
-
-[245]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12084.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12084.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12084.
-
-[246]
+] [245] [246]
 Chapter 17.
 (./LaTeXed-SoS.ptc) [247
 
-]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12163.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12163.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12163.
-
-[248
+] [248
 
 ]
-Overfull \hbox (6.43309pt too wide) in paragraph at lines 12234--12244
-[]\OT1/pplj/m/n/10.95 Combat Pool (CP) CP = (Adroit-ness+Proficiency Pool+Misc)
--(Encumbrance+Fatigue+Pain+Misc) Com-
+Overfull \hbox (6.37094pt too wide) in paragraph at lines 12117--12127
+[]\T1/pplj/m/n/10.95 Combat Pool (CP) CP = (Adroit-ness+Proficiency Pool+Misc)-
+(Encumbrance+Fatigue+Pain+Misc) Com-
  []
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12244.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12244.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12244.
 
 [249]
-Overfull \hbox (15.93843pt too wide) in paragraph at lines 12257--12264
-[]\OT1/pplj/m/n/10.95 Missile Pool (MP) MP=(Missile Pro-fi-ciency Pool+Misc)-(E
-ncumbrance+Fatigue+Pain+Perception Penalty
+Overfull \hbox (15.87628pt too wide) in paragraph at lines 12140--12147
+[]\T1/pplj/m/n/10.95 Missile Pool (MP) MP=(Missile Pro-fi-ciency Pool+Misc)-(En
+cumbrance+Fatigue+Pain+Perception Penalty
  []
 
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12298.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12298.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12298.
-
-[250]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12348.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12348.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12348.
-
-[251]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12405.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12405.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12405.
-
-[252]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12510.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12510.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12510.
-
-[253]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12577.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12577.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12577.
-
-[254]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12656.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12656.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12656.
-
-[255]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12711.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12711.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12711.
-
-[256]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12772.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12772.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12772.
-
-[257]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12834.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12834.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12834.
-
-[258]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12904.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12904.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 12904.
-
-[259]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13073.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13073.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13073.
-
-[260]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13175.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13175.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13175.
-
-[261]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13245.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13245.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13245.
-
-[262]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13358.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13358.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13358.
-
-[263]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13471.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13471.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13471.
-
-[264]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13567.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13567.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13567.
-
-[265]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13639.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13639.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13639.
-
-[266]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13731.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13731.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13731.
-
-[267]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13859.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13859.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13859.
-
-[268]
-Overfull \hbox (20.06726pt too wide) in paragraph at lines 13859--13875
-[]\OT1/pplj/m/n/10.95 Mounted Ad-van-tages/Disadvantages Mounted Char-ac-ters g
-ain the fol-low-ing ad-van-tages while Mounted.
+[250] [251] [252] [253] [254] [255] [256] [257] [258] [259] [260] [261]
+[262] [263] [264] [265] [266] [267] [268]
+Overfull \hbox (20.00511pt too wide) in paragraph at lines 13742--13758
+[]\T1/pplj/m/n/10.95 Mounted Ad-van-tages/Disadvantages Mounted Char-ac-ters ga
+in the fol-low-ing ad-van-tages while Mounted.
  []
 
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13964.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13964.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 13964.
-
-[269]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14033.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14033.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14033.
-
-[270]
+[269] [270]
 Chapter 18.
 (./LaTeXed-SoS.ptc) [271
 
-]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14105.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14105.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14105.
-
-[272
-
-]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14202.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14202.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14202.
-
-[273]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14273.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14273.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14273.
-
-[274]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14338.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14338.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14338.
-
-[275]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14409.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14409.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14409.
-
-[276]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14504.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14504.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14504.
-
-[277]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14576.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14576.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14576.
-
-[278]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14645.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14645.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14645.
-
-[279]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14721.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14721.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14721.
-
-[280]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14858.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14858.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14858.
-
-[281]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14944.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14944.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 14944.
-
-[282]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15043.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15043.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15043.
-
-[283]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15136.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15136.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15136.
-
-[284]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15228.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15228.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15228.
-
-[285]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15319.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15319.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15319.
-
-[286]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15416.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15416.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15416.
-
-[287]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15511.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15511.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15511.
-
-[288]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15603.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15603.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15603.
-
-[289]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15697.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15697.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15697.
-
-[290]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15793.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15793.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15793.
-
-[291]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15898.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15898.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15898.
-
-[292]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15996.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15996.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 15996.
-
-[293]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16099.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16099.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16099.
-
-[294]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16199.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16199.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16199.
-
-[295]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16297.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16297.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16297.
-
-[296]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16394.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16394.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16394.
-
-[297]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16498.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16498.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16498.
-
-[298]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16599.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16599.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16599.
-
-[299]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16696.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16696.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16696.
-
-[300]
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16787.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16787.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16787.
-
-[301]
+] [272
+
+] [273] [274] [275] [276] [277] [278] [279]
+[280] [281] [282] [283] [284] [285] [286] [287] [288] [289] [290] [291]
+[292] [293] [294] [295] [296] [297] [298] [299] [300] [301]
 \tf@ptc=\write5
 \openout5 = `LaTeXed-SoS.ptc'.
 
 
-
-Package nag Warning: 870 complaints in total.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 16850.
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16850.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16850.
-
-
-Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
-(nag)                Use \bfseries or \textbf instead on input line 16850.
-
+No complaints by nag.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 16733.
 [302]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 16850.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 16733.
  (./LaTeXed-SoS.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 16850.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 16733.
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 16850
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 16733
 .
 Package rerunfilecheck Info: File `LaTeXed-SoS.out' has not changed.
-(rerunfilecheck)             Checksum: CEDA0920B8F894DBC54A4A83200DF5C9;5256.
+(rerunfilecheck)             Checksum: 160A4B7FB22781EFAB04E87F59EF7E20;5197.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -5741,30 +2027,31 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 16850.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 16733.
  ) 
 Here is how much of TeX's memory you used:
- 13562 strings out of 493091
- 196154 string characters out of 6142991
- 520822 words of memory out of 5000000
- 15984 multiletter control sequences out of 15000+600000
- 47999 words of font info for 121 fonts, out of 8000000 for 9000
+ 13799 strings out of 493091
+ 199967 string characters out of 6142991
+ 521139 words of memory out of 5000000
+ 16194 multiletter control sequences out of 15000+600000
+ 78936 words of font info for 137 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,16n,50p,1536b,639s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/c
-mr12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/
-texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/p
-ublic/fourier/fourier-orns.pfb></usr/share/texmf/fonts/type1/public/fpl/fplbj8a
-.pfb></usr/share/texmf/fonts/type1/public/fpl/fplrc8a.pfb></usr/share/texmf/fon
-ts/type1/public/fpl/fplrij8a.pfb></usr/share/texmf/fonts/type1/urw/palatino/upl
-b8a.pfb></usr/share/texmf/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texm
-f/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf/fonts/type1/urw/palatin
-o/uplri8a.pfb>
-Output written on LaTeXed-SoS.pdf (311 pages, 967422 bytes).
+ 38i,16n,50p,1535b,639s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvi
+ps/cm-super/cm-super-t1.enc}</usr/share/texmf/fonts/type1/public/amsfonts/cm/cm
+mi10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
+/texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/fourier/fourie
+r-orns.pfb></usr/share/texmf/fonts/type1/public/fpl/fplbj8a.pfb></usr/share/tex
+mf/fonts/type1/public/fpl/fplrc8a.pfb></usr/share/texmf/fonts/type1/public/fpl/
+fplrij8a.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/s
+hare/texmf/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texmf/fonts/type1/ur
+w/palatino/uplbi8a.pfb></usr/share/texmf/fonts/type1/urw/palatino/uplr8a.pfb></
+usr/share/texmf/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on LaTeXed-SoS.pdf (311 pages, 984977 bytes).
 PDF statistics:
- 2770 PDF objects out of 2984 (max. 8388607)
- 2187 compressed objects within 22 object streams
- 737 named destinations out of 1000 (max. 500000)
- 19113 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 2794 PDF objects out of 2984 (max. 8388607)
+ 2209 compressed objects within 23 object streams
+ 751 named destinations out of 1000 (max. 500000)
+ 20641 words of extra memory for PDF output out of 20736 (max. 10000000)
 
