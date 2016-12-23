@@ -3495,7 +3495,7 @@ that start with no money cannot take this Bane.
 	\item [8:] Major. You owe an amount of money equal to twice your starting Wealth, and starting Assets. This is determined with Boons and Banes that modify Wealth and Assets.
 \end{itemize}
 \paragraph{\label{bane:Dependent}Dependent}---\quad\textbf{(6/12) }\par
-Someone relies on you. Someone you can’t leave behind. And if anything were to happen to them… 
+Someone relies on you. Someone you can’t leave behind. And if anything were to happen to them…
 
 
 Your Dependant is an NPC created by you and the GM (confer with your GM during creation) who tags 
@@ -3943,44 +3943,47 @@ Athletics is the skill for moving, jumping, and performing other feats of physic
 
 
 Note: The fastest a mortal person can run is their MOB x4 in yards.
+\begin{longtabu} to 1\linewidth {XX[r]}
+	\caption{Athletics}
+	\label{tab:Athletics}\\
+\rowfont[c]{}Action & Base Attribute vs. RS or other effects\\\toprule\endhead
+	\\
+		\multicolumn{2}{c}{Lifting}\\\cmidrule(lr){1-2}
+Lifting 10$ \times $STR in lbs. above your head & STR vs. 1 RS \\
+Lifting more than 10$ \times $STR in lbs. above your head & +1 RS per 10$ \times $STR (to maximum of 50$ \times $) \\
+\\
+Holding 10$ \times $STR in lbs. above your head & STR vs. 1 RS \\
+Holding that same weight for more than 1 second & +1 RS per second held.\\
+	\\
+		\multicolumn{2}{c}{Sprinting}\\\cmidrule(lr){1-2}
+Sprinting 2$\times$ your MOB (for up to 5 seconds) &MOB vs. 2 RS\\
+Sprinting more than 2$\times$ your MOB (for up to 5 seconds) &+1 RS per 1$\times$ more (to maximum of 4)\\
+Sprinting for longer than 5 seconds &+1 RS per 10 seconds of sprinting.\\
+	\\
+Encumbrance (+1 at Light, +4 at Overloaded)&+1 to +4 RS\\
+	\\
+		\multicolumn{2}{c}{Running}\\\cmidrule(lr){1-2}
+Running $ \frac{1}{4} $ mile without stopping. &No Test Required\\
+Running a mile without stopping. &END vs. 2 RS\\
+Running 5 miles without stopping. &END vs. 5 RS\\
+Running an entire marathon without stopping. (~26 mi.) &END vs. 8 RS\\
+	\\
+		\multicolumn{2}{c}{Jumping}\\\cmidrule(lr){1-2}
+Vault a Waist Height Obstacle &AGI vs. 2 RS \\
+Vault a Shoulder Height Obstacle &AGI vs. 3 RS \\
+Vault a Reach Height Obstacle &AGI vs. 5 RS \\
+Vault a Jumping Reach Height Obstacle &AGI vs. 6 RS \\
+\\
+Jump Horizontally 1 yard &MOB vs. 1 RS \\
+Jump Horizontally further than 1 yard &+2 RS per yard\\
+No Running Start (for horizontal) &+2 RS\\
+\\
+Jump Vertically 1 foot &MOB vs. 1 RS \\
+Jump Vertically more than 1 foot &+2 RS per 1 foot \\
+\\
+Encumbrance (+1 at Light, +4 at Overloaded) &+1 to +4 RS\\
+\end{longtabu}
 
-
-Action Base Attribute vs. RS or other effects 
-Lifting
-Lifting 10xSTR in lbs. above your head STR vs. 1 RS 
-Lifting more than 10xSTR in lbs. above your head +1 RS per 10xSTR (to maximum of 50x) 
-Holding 10xSTR in lbs. above your head STR vs. 1 RS 
-Holding that same weight for more than 1 second +1 RS per second held. 
-
-
-Sprinting 
-Sprinting 2x your MOB (for up to 5 seconds) MOB vs. 2 RS 
-Sprinting more than 2x your MOB (for up to 5 seconds) +1 RS per 1x more (to maximum of 4) 
-Sprinting for longer than 5 seconds +1 RS per 10 seconds of sprinting. 
-Encumbrance (+1 at Light, +4 at Overloaded) +1 to +4 RS 
-Jumping 
-
-
-Vault a Waist Height Obstacle AGI vs. 2 RS 
-Vault a Shoulder Height Obstacle AGI vs. 3 RS 
-Vault a Reach Height Obstacle AGI vs. 5 RS 
-Vault a Jumping Reach Height Obstacle AGI vs. 6 RS 
-
-
-Jump Horizontally 1 yard MOB vs. 1 RS 
-Jump Horizontally further than 1 yard +2 RS per yard 
-Jump Vertically 1 foot MOB vs. 1 RS 
-Jump Vertically more than 1 foot +2 RS per 1 foot 
-
-
-Running
-Running $ \frac{1}{4} $ mile without stopping. No Test Required 
-Running a mile without stopping. END vs. 2 RS 
-Running 5 miles without stopping. END vs. 5 RS 
-Running an entire marathon without stopping. (~26 mi.) END vs. 8 RS 
-No Running Start (for horizontal) +2 RS 
-
-Encumbrance (+1 at Light, +4 at Overloaded) +1 to +4 RS 
 \paragraph{\label{skill:Climbing}Climbing}---\quad\textbf{(END) }\par
 Climbing is the skill that lets characters scale mountains, cliffs, walls, and ropes. In some cases, climbing is easy: climbing a stable ladder that’s at 90 degrees or less, or any dry, sticking, or bogged surface that’s less than 40 degrees up is a simple climbing test. However, even a 10 degree surface will need at least be tough if it’s covered in ice. Terrain can also be a huge factor when rolling Climbing tests. Failing by more than your character’s Climbing skill requires a Stability test against an RS equal to the initial check, with failing resulting in a fall.
 
