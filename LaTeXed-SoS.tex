@@ -21,7 +21,6 @@
 \usepackage{fancyhdr}
 \usepackage{lettrine}
 \usepackage{caption}
-\usepackage[hidelinks,hyperfootnotes=false]{hyperref}
 \input Acorn.fd
 \newcommand*\initfamily{\usefont{U}{Acorn}{xl}{n}}
 \usepackage{amsmath}
@@ -53,7 +52,7 @@
 
 \usepackage{fourier-orns}
 
-\newcommand{\ornamento}{\vspace{2em}\noindent \textcolor{darkgray}{\hrulefill~ \raisebox{-2.5pt}[10pt][10pt]{\leafright \decofourleft \decothreeleft  \aldineright \decotwo \floweroneleft \decoone   \floweroneright \decotwo \aldineleft\decothreeright \decofourright \leafleft} ~  \hrulefill \newline \vspace{2em}}}
+\newcommand{\ornamento}{\vspace{2em}\noindent \textcolor{darkgray}{\hrulefill~ \raisebox{-2.5pt}[10pt][10pt]{\leafright \decofourleft \decothreeleft  \aldineright \decotwo \floweroneleft \decoone   \floweroneright \decotwo \aldineleft\decothreeright \decofourright \leafleft} ~  \hrulefill \linebreak \vspace{2em}}}
 \newcommand{\ornpar}{\noindent \textcolor{darkgray}{ \raisebox{-1.9pt}[10pt][10pt]{\leafright} \hrulefill \raisebox{-1.9pt}[10pt][10pt]{\leafright \decofourleft \decothreeleft  \aldineright \decotwo \floweroneleft \decoone}}}
 \newcommand{\ornimpar}{\textcolor{darkgray}{\raisebox{-1.9pt}[10pt][10pt]{\decoone \floweroneright \decotwo \aldineleft \decothreeright \decofourright \leafleft} \hrulefill \raisebox{-1.9pt}[10pt][10pt]{\leafleft}}}
 
@@ -70,16 +69,16 @@
 
 %\fancyhead[LE]{\estcab{Fran Oldstyle}}
 %\fancyhead[RE]{\estcab{History of taxonomy}}
-% \fancyhead[CE,CO]{\estcab{\decoone}}
+% \fancyhead[CO]{\estcab{\decoone}}
 \fancyhead[LO]{\estcab{\rightmark}} % malo cuando no hay section ~~~ \thesection
 \fancyhead[RO]{\estcab{\leftmark}}
 
  \fancyhead[RO]{\bfseries\nouppercase{ \leftmark}}
 % \fancyfoot[LE]{\bf \thepage ~~ \leafNE}
- \fancyfoot[RO]{ \leafNE  ~~ \bfseries \thepage}
+%\fancyfoot[RO]{ \leafNE  ~~ \bfseries \thepage}
 
-\fancyfoot[LO]{
-	\ornimpar \newline \large \hfill \sffamily\bfseries \textcolor{darkgray}{\leafNE ~~~ \thepage}
+\fancyfoot[RO]{
+	\ornimpar \linebreak \large \hfill \sffamily\bfseries \textcolor{darkgray}{\leafNE ~~~ \thepage}
 }
 %\fancyfoot[RE]{\ornpar   \newline \large  \sffamily\bf \textcolor{darkgray}{\thepage ~~~ \reflectbox{\leafNE}}  \hfill}
 
@@ -101,6 +100,7 @@
 \usepackage{chngcntr}
 \counterwithout{figure}{chapter}
 \counterwithout{table}{chapter}
+\usepackage[hidelinks,hyperfootnotes=false]{hyperref}
 %END_FOLD
 \begin{document}
 \frontmatter
@@ -3938,12 +3938,12 @@ END. We provide the best examples we can, but it is your job to ensure what your
 represented as accurately as possible. 
 
 \section{Skill Descriptions}
-\paragraph{\label{skill:Athletics}Athletics}---\quad\textbf{(Various)}\par%TABLE needs to be done here, 
+\paragraph{\label{skill:Athletics}Athletics}---\quad\textbf{(Various)}\par
 Athletics is the skill for moving, jumping, and performing other feats of physical prowess. Gymnastics, sprinting, jumping, and other classic physical activities fall within its purview. Different attributes may be used with Athletics depending on what the character is doing. Someone lifting weights, for example, will probably use STR, while a sprinter would use MOB. A long-distance or marathon runner would use END. Terrain will apply for running. Walking generally doesn’t require an Athletics test, no matter the rigor.
 
 
 Note: The fastest a mortal person can run is their MOB x4 in yards.
-\begin{longtabu} to 1\linewidth {XX[r]}
+\begin{longtabu} to 1\linewidth {X[1.5]X[r]}
 	\caption{Athletics}
 	\label{tab:Athletics}\\
 \rowfont[c]{}Action & Base Attribute vs. RS or other effects\\\toprule\endhead
@@ -3988,187 +3988,110 @@ Encumbrance (+1 at Light, +4 at Overloaded) &+1 to +4 RS\\
 Climbing is the skill that lets characters scale mountains, cliffs, walls, and ropes. In some cases, climbing is easy: climbing a stable ladder that’s at 90 degrees or less, or any dry, sticking, or bogged surface that’s less than 40 degrees up is a simple climbing test. However, even a 10 degree surface will need at least be tough if it’s covered in ice. Terrain can also be a huge factor when rolling Climbing tests. Failing by more than your character’s Climbing skill requires a Stability test against an RS equal to the initial check, with failing resulting in a fall.
 
 
-To properly roll a climb test, set the RS at the total distance that is to be climbed, (1 RS per 10 feet) then apply the modifiers. Failure without falling can still get the person up the amount of successes, at the GM’s discretion.
+To properly roll a climb test, \emph{set the RS at the total distance that is to be climbed}, (1 RS per 10 feet) then apply the modifiers. Failure without falling can still get the person up the amount of successes, at the GM’s discretion.
 
-
-Action Base Attribute vs. RS or 
-other effects 
-Climbing with many hand-holds (rockwall, rigging, stable ladder, knotted 
-rope) 
-
-END vs. 1 RS per 10 feet 
-
-Climbing with some hand-holds and support (swaying rigging, an 
-unsecured ladder, or a knotless rope against a wall) 
-
-END vs. 2 RS per 10 feet 
-
-Climbing rigging flailing in the wind, a shaky, unstable ladder, or a free-
-hanging, knotless rope 
-
-END vs. 3 RS per 10 feet 
-
-Climbing with no handholds (requires tools) END vs. 5 RS 
-Modifiers Effects 
-Decent climbing tools (climbing picks, spiked boots) -1 RS (when appropriate) 
-Fear (-1 Climbing away from something scary, +1 towards) -1 to 1 RS 
-Wall Slanting (-4 helpful slant, -2 favorable slant, +2 difficult slant, +4 
-malicious slant) 
-
--4 to +4 RS 
-
-Weather (Wet/Windy at +1, Soaked/Storming at +3) +1 to +3 RS 
-Encumberance (+1 at Light, +4 at Overloaded) +1 to +4 RS 
-Time (Rushed at +1 RS, Hastened at +3 RS) +1 to +3 RS 
-
-
- 
-Sidebar: 
-Only apply the modifiers for situations that make sense. Climbing picks don’t help that much with rope! 
-
- 
+\begin{longtabu} to \linewidth{X[1.65]X[r]}
+	\caption{Climbing}
+	\label{tab:Climbing Skill}\\
+		\rowfont[c]{}Action &Base Attribute vs. RS or other effects\\\toprule
+Climbing with many hand-holds (rockwall, rigging, stable ladder, knotted rope) & END vs. 1 RS per 10 feet\\
+Climbing with some hand-holds and support (swaying rigging, an unsecured ladder, or a knotless rope against a wall) &END vs. 2 RS per 10 feet\\
+Climbing rigging flailing in the wind, a shaky, unstable ladder, or a free-hanging, knotless rope&END vs. 3 RS per 10 feet\\
+Climbing with no handholds (requires tools) &END vs. 5 RS\\
+	\\
+		\rowfont[c]{}Modifiers &Effects\\\cmidrule{1-2}
+Decent climbing tools (climbing picks, spiked boots) &-1 RS (when appropriate)\\
+Fear (-1 Climbing away from something scary, +1 towards) &-1 to 1 RS\\
+Wall Slanting (-4 helpful slant, -2 favorable slant, +2 difficult slant, +4 malicious slant)& -4 to +4 RS\\
+Weather (Wet/Windy at +1, Soaked/Storming at +3)&+1 to +3 RS\\
+Encumberance (+1 at Light, +4 at Overloaded)&+1 to +4 RS\\
+Time (Rushed at +1 RS, Hastened at +3 RS)&+1 to +3 RS\\
+\end{longtabu}
+Sidebar: Only apply the modifiers for situations that make sense. Climbing picks don’t help that much with rope!
 
 \paragraph{\label{skill:Cooking}Cooking}---\quad\textbf{(INT) }\par
 Cooking is an important skill in a world where most vegetables are grown in unsanitary conditions, and most water is unsafe to drink without boiling. The rise of urban civilization made this doubly important, as the water and ground pollution that comes along with large masses of people make the preparation of food essential. Some foods cannot be eaten at all without preparation--rice consumed without boiling, for example, cannot be properly digested. So in a way, cooking allows for inedible substances to be made edible, making it even more important in an environment where food may be scarce. Cooks require ingredients to make meals. For abstraction purposes, each meal takes about 1 lb of ingredients total per person fed (so 4 lbs for a basic 4 person meal) and needs at least 2 ingredients per level (a fine meal, for example, requires 6 different ingredients). For every ingredient needed that is missing, the RS increases by 1. If the chef is missing more than 3 ingredients, they cannot make a meal of that level and must make a lower-quality meal. The chef may opt to have up to 2 spices act as ingredients, but loses the bonus they would normally give. The meal requires at least one non-spice ingredient. Meals also require 30 minutes of prep time per level, with a lack of time or extra time giving penalties or bonuses accordingly. If the prep time is too short for the maximum RS, the meal cannot be made. A “Meal” is here assumed to be enough foor for 3-4 people at base.
 
 
-Action Base Attribute vs. RS or other effects 
-Preserving food INT vs. 1 per lb 
-Make a poor meal No Test Required 
-Make a good meal INT vs. 2 
-Make a fine meal INT vs. 3 
-Make a lavish meal INT vs. 4 
-Hide poison in a meal INT vs. 3+1 per extra dose 
-Make a poisonous food safe to 
-eat 
-
-INT vs. 5 to 10 per lb, depending the food 
-
-Modifiers Effects 
-Large Meal (10 people) +1 RS 
-Banquet (30 people) +2 RS 
-Massive Meal (100+ people) +3 RS 
-Spices (-1 at Cheap, -3 at -1 to -3 RS 
-
-
-Expensive) 
-Haste (Rushed at +1 RS, 
-Hastened at +3 RS) 
-
-+1 to +3 RS 
-
-Leisure (Per extra hour, 
-minimum RS 1) 
-
--1 RS 
-
-Assistants Assistants take test at $ \frac{1}{2} $ RS, they give +$ \frac{1}{2} $ Successes, to a maximum 
-of the main Cook’s Skill Level. 
-
- 
-Sidebar: 
-Both making the meal and adding the poison to it are two separate checks. 
-Number of assistants that can be used is at the GM’s discretion. Too many chef’s spoils soup! 
-
- 
-
-\paragraph{\label{skill:Crafting}Crafting}---\quad\textbf{(INT) }\par
-Crafting is a general skill umbrella that covers hundreds of potential artisan disciplines. Upon taking the Crafting skill, a character should choose what exact sort of crafting the skill covers. A Shoemaker’s skill is definitely different from a Clockmaker’s. A character can have multiple Crafting skills, each in different disciplines, which are leveled separately. The examples in this list are mostly a general guide. GMs are encouraged to decide just how hard a particular test should be and what attribute to use, especially if it doesn’t quite fit the examples given. 
+\begin{longtabu} to \linewidth{X[1.5]X[r]}
+	\caption{Cooking}
+	\label{tab:Cooking}\\
+		\rowfont[c]{}Action &Base Attribute vs. RS or other effects\\\toprule
+Preserving food &INT vs. 1 per lb\\
+Make a poor meal &No Test Required\\
+Make a good meal &INT vs. 2\\
+Make a fine meal &INT vs. 3\\
+Make a lavish meal &INT vs. 4\\
+Hide poison in a meal &INT vs. 3+1 per extra dose\\
+Make a poisonous food safe to eat &INT vs. 5 to 10 per lb, depending the food\\
+	\\
+		\rowfont[c]{}Modifiers &Effects\\\cmidrule(lr){1-2}
+Large Meal (10 people) &+1 RS \\
+Banquet (30 people) &+2 RS \\
+Massive Meal (100+ people) &+3 RS \\
+Spices (-1 at Cheap, -3 at Expensive &-1 to -3 RS )\\
+Haste (Rushed at +1 RS, Hastened at +3 RS) &+1 to +3 RS \\
+Leisure (Per extra hour, minimum RS 1) &-1 RS\\
+	\\
+\multicolumn{2}{c}{Assistants take test at $ \frac{1}{2} $ RS. They give +$ \frac{1}{2} $ Successes, to a maximum of the main Cook’s Skill Level.}\\
+\end{longtabu}
 
 
-Action Base Attribute vs. RS or other effects 
-Make a simple item (dagger, mace, staff or pole, 
-lumber, chain, vest, horseshoes, wooden doll, sketch) 
-
-INT vs. 2 per item 
-
-Make a basic item (spear, shortbow, hand axe, gun 
-barrel, maille vest, munitions cuirass, breeches, basic 
-landscape, bottle) 
-
-INT vs. 3 per item 
-
-Make a complex item (longsword, greataxe, maille 
-hauberk, light crossbow, cuirass, layered dress, 
-jointed doll, decent portrait, cheap glass lens) 
-
-INT vs. 6 per item 
-
-Make an advanced item (greatsword, fitted suit, 
-gauntlets, high-quality painting, anatomical drawings, 
-bulletproof cuirass, large glass pane) 
-
-INT vs. 10 per item 
-
-Make a great item (advanced weapon or armor with 
-modifications, papal vestments, famous artwork, fine 
-glass lens, precision watch gears) 
-
-INT vs. 15 per item 
-
-Modifiers Effects 
-Tools (Good Quality at -2, Poor Quality at +2) -2 RS to +2 RS 
+Sidebar:
+Both making the meal and adding the poison to it are two separate checks.\\
+Number of assistants that can be used is at the GM’s discretion. Too many chefs spoils the soup!
 
 
-Time (Rushed at +1 RS, Hastened at +3 RS) +1 to +3 RS 
-Assistants Assistants take test at $ \frac{1}{2} $ RS, they give +$ \frac{1}{2} $
-Successes, to a total of the assistant’s skill level 
-in the chosen skill, with Unskilled still equally 1. 
+\paragraph{\label{skill:Crafting}Crafting}---\quad\textbf{(INT)}\par
+Crafting is a general skill umbrella that covers hundreds of potential artisan disciplines. Upon taking the Crafting skill, a character should choose what exact sort of crafting the skill covers. A Shoemaker’s skill is definitely different from a Clockmaker’s. A character can have multiple Crafting skills, each in different disciplines, which are leveled separately. The examples in this list are mostly a general guide. GMs are encouraged to decide just how hard a particular test should be and what attribute to use, especially if it doesn’t quite fit the examples given.
 
+\begin{longtabu} to \linewidth{X[1.5]X[r]}
+	\caption{Crafting}
+	\label{tab:Crafting}\\
+		\rowfont[c]{}Action &Base Attribute vs. RS or other effects\\\toprule
+Make a simple item (dagger, mace, staff or pole, lumber, chain, vest, horseshoes, wooden doll, sketch)&INT vs. 2 per item\\
+Make a basic item (spear, shortbow, hand axe, gun barrel, maille vest, munitions cuirass, breeches, basic landscape, bottle) &INT vs. 3 per item\\
+Make a complex item (longsword, greataxe, maille hauberk, light crossbow, cuirass, layered dress, jointed doll, decent portrait, cheap glass lens) &INT vs. 6 per item\\
+Make an advanced item (greatsword, fitted suit, gauntlets, high-quality painting, anatomical drawings, bulletproof cuirass, large glass pane) &INT vs. 10 per item\\
+Make a great item (advanced weapon or armor with modifications, papal vestments, famous artwork, fine glass lens, precision watch gears) &INT vs. 15 per item\\
+	\\
+		\rowfont[c]{}Modifiers & Effects\\\cmidrule(lr){1-2}
+Tools (Good Quality at -2, Poor Quality at +2) &-2 RS to +2 RS \\
+Time (Rushed at +1 RS, Hastened at +3 RS) &+1 to +3 RS\\
+\caption*{Assistants take test at $ \frac{1}{2} $ RS, they give +$ \frac{1}{2} $ Successes, to a total of the assistant’s skill level in the chosen skill, with Unskilled still equally 1.}
+\end{longtabu}
 
-\paragraph{\label{skill:Engineering}Engineering}---\quad\textbf{(INT) }\par
+\paragraph{\label{skill:Engineering}Engineering}---\quad\textbf{(INT)}\par
 Engineering is similar to Crafting, but with a more specific focus: Engineers plan and implement large works, like bridges, siege weapons, buildings, ships, etc. Essentially any construction task that would be physically impossible to do alone will fall under an Engineering Skill rather than a Crafting one. Even mediocre laborers can accomplish great things with a skilled engineer at their head, so the Engineering skill of the extra hands employed is not absolutely important (though it can’t hurt). Many of the parts an Engineer will want to work with are on the market, but many more will need to be custom-made by the appropriate crafter, especially for more complex projects. Engineers would be smart to make friends with crafters or learn to craft for themselves lest they end up unable to make what they want or need. Like with crafting, the examples in this list are only a guide. The GM is free to use their own interpretation. The time it would take to construct these devices is also negotiable--in some cases, it could take years even with sufficient manpower.
 
+\begin{longtabu} to \linewidth{X[1.5]X[r]}
+	\caption{Engineering}
+	\label{tab:Engineering}\\
+	\rowfont[c]{}Action &Base Attribute vs. RS or other effects\\\toprule
+Make a simple item (hut, beam bridge, raft, dugout, roasting jack) &INT vs. 2 per item \\
+Make a basic item (log cabin, sailboat, arch bridge, palisade) &INT vs. 3 per item \\
+Make a complex item (two-story house, galley, rope bridge) &INT vs. 6 per item \\
+Make an advanced item (mansion, castle wall, ship of the line) &INT vs. 8 per item \\
+Make a great item (ironclad steamship, suspension bridge, skyscraper) &INT vs. 12 per item \\
+	\\
+\rowfont[c]{} Modifiers & Effects\\\cmidrule(lr){1-2}
+Tools (Good Quality at -2, Poor Quality at +2)&-2 RS to +2 RS\\
+Laborers (Extra Laborers at -2, No Laborers at +2) &-2 RS to +2 RS\\
+Time (Rushed at +1 RS, Hastened at +3 RS)&+1 to +3 RS\\
+\end{longtabu}
 
-Action Base Attribute vs. RS or other 
-effects 
-Make a simple item (hut, beam bridge, raft, dugout, roasting jack) INT vs. 2 per item 
-Make a basic item (log cabin, sailboat, arch bridge, palisade) INT vs. 3 per item 
-Make a complex item (two-story house, galley, rope bridge) INT vs. 6 per item 
-Make an advanced item (mansion, castle wall, ship of the line) INT vs. 8 per item 
-Make a great item (ironclad steamship, suspension bridge, 
-skyscraper) 
-
-INT vs. 12 per item 
-
-Modifiers Effects 
-Tools (Good Quality at -2, Poor Quality at +2) -2 RS to +2 RS 
-Laborers (Extra Laborers at -2, No Laborers at +2) -2 RS to +2 RS 
-Time (Rushed at +1 RS, Hastened at +3 RS) +1 to +3 RS 
-
- 
-
- 
-
-\paragraph{\label{skill:History}History}---\quad\textbf{(INT) }\par
+\paragraph{\label{skill:History}History}---\quad\textbf{(INT)}\par
 History is the record of events both human and natural as chronicled throughout the ages. History is a patchwork quilt of stories, accounts, perspectives and guesswork that makes up the understanding that the present has of the past. How closely history coincides with reality is always uncertain, but it provides the foundation, the context for understanding current events and is thus indispensable, even with its flaws. The History skill allows a character to have or gain knowledge of a past event, people, place, culture, etc. When a character encounters something which they might’ve heard about at some point in the past, or upon which an understanding of history might shed some light or special understanding, the GM may prompt them to make a History roll at an RS determined by the obscurity of the event and the resources available to the character.
-
-
-Action Base 
-Attribute vs 
-RS 
-History roll INT vs 1 
-Modifiers Effects 
-Scale of Event (World-changing at -4, Major war/disaster at -2, Minor War/battle/treaty 
-at 0, Small war/disaster at +2, Obscure Skirmish/story/treaty at +4, Forgotten 
-war/legend/treaty at +6) 
-
--4 RS to +6 
-RS 
-
-Time (Very Recent -2, Recent 0, Ancient History +4) -2 RS to +4 
-RS 
-Location (Home at -3, Local at -2, Nation at -1, Foreign at +2, Far Away Land at +4, 
-Literally a different world at +6) 
-
--3 RS to +6 
-RS 
-Personal (Happened to me at -5 RS, Happened to Family/Friends at -2 RS -5 RS to -2 
-RS)
-
- 
-
- 
+\begin{longtabu} to \linewidth{X[1.5]X[r]}
+	\caption{History}
+	\label{tab:History}\\
+	\rowfont[c]{}Action &Base Attribute vs. RS or other effects\\\toprule
+\rowfont[c]{} Modifiers & Effects\\\cmidrule(lr){1-2} 
+Scale of Event (World-changing at -4, Major war/disaster at -2, Minor War/battle/treaty at 0, Small war/disaster at +2, Obscure Skirmish/story/treaty at +4, Forgotten war/legend/treaty at +6) &-4 RS to +6 RS\\
+Time (Very Recent -2, Recent 0, Ancient History +4) &-2 RS to +4 RS\\
+Location (Home at -3, Local at -2, Nation at -1, Foreign at +2, Far Away Land at +4, Literally a different world at +6)&-3 RS to +6 RS\\
+Personal (Happened to me at -5 RS, Happened to Family/Friends at -2 RS &-5 RS to -2 RS)\\
+\end{longtabu}
 
 \paragraph{\label{skill:Hunting}Hunting}---\quad\textbf{(Varies) }\par
 In Song of Swords, hunting has less to do with killing game and more to do with getting near it in the first place. Obviously, this includes tracking, but it also includes knowing how to hide your scent, how to control and entrap animals, and how to make and disguise simple traps to capture or kill game. Obviously, these skills aren’t useful just for hunting animals. People have been referred to as ‘the most dangerous game’ for a reason, after all.
@@ -4176,48 +4099,25 @@ In Song of Swords, hunting has less to do with killing game and more to do with 
 
 In most cases, a Hunting test will take only a few moments, with the exception of making Traps. Traps require ten minutes of uninterrupted work per RS on the skill test to make them.
 
-
-Action Attribute vs. RS or other 
-effects 
-Tracking 
-Tracking PER vs. 1 or Target’s 
-
-
-AGI/Stealth 
-
-Animal size (1 being an elephant, Humans being a 2, 3 being a housecat, 5 
-being a single ant) 
-
-+1 to 5 RS 
-
-Flock size (0 being singular, 5 being a pack of wolves, 10 being army ants) 0 RS to -10 RS 
-Age of tracks (0 being a few minutes old, 1 being a few hours, 5 being a 
-day or more) 
-
-0 RS to +5 RS 
-
-Target is bleeding -1 RS per 5 Blood Loss on 
-the target 
-Trapping 
-Constructing a simple trap (Pitfall, Snare) INT vs. 2 RS 
-Constructing an intermediate trap (Punji Pit, tripwire and cage, Spiked 
-branch traps) 
-
-INT vs. 4 RS 
-
-Constructing a complex trap (Tripwire triggered crossbow, falling cage, 
-collapsing floor) 
-
-INT vs. 6 RS 
-
-Especially complex design (Needing a time delay at +1, an especially 
-deadly Rube Goldberg machine +5) 
-
-+1 RS to +5 RS 
-
- 
-
- 
+\begin{longtabu} to \linewidth{X[1.5]X[r]}
+	\caption{Hunting}
+	\label{tab:Hunting}\\
+	\rowfont[c]{}Action &Base Attribute vs. RS or other effects\\\toprule
+	\\
+		\multicolumn{2}{c}{Tracking}\\
+		\multicolumn{2}{c}{PER vs. 1 or Target’s AGI/Stealth}\\\cmidrule(lr){1-2}
+Animal size (1 being an elephant, Humans being a 2, 3 being a housecat, 5 being a single ant)&+1 to 5 RS \\
+Flock size (0 being singular, 5 being a pack of wolves, 10 being army ants) &0 RS to -10 RS\\
+Age of tracks (0 being a few minutes old, 1 being a few hours, 5 being a day or more) &0 RS to +5 RS\\
+Target is bleeding &-1 RS per 5 Blood Loss on the target\\
+	\\
+	\\
+		\multicolumn{2}{c}{Trapping}\\\cmidrule(lr){1-2}
+Constructing a simple trap (Pitfall, Snare) &INT vs. 2 RS\\
+Constructing an intermediate trap (Punji Pit, tripwire and cage, Spiked branch traps) &INT vs. 4 RS \\
+Constructing a complex trap (Tripwire triggered crossbow, falling cage, collapsing floor) &INT vs. 6 RS \\
+Especially complex design (Needing a time delay at +1, an especially deadly Rube Goldberg machine +5)&+1 RS to +5 RS\\
+\end{longtabu}
 
 \paragraph{\label{skill:Intimidate}Intimidate}---\quad\textbf{(CHA) }\par
 The key skill of some bodyguards, a lot of bouncers, and pretty much every good gang enforcer or commissar, Intimidate is used to control people through fear. Naturally, any actions taken with Intimidate are going to be contested actions, usually against WIL.
@@ -4235,399 +4135,290 @@ For Combat purposes, successfully Intimidating a character who doesn’t have th
 Example: Gizka intimidates Goofus, overcoming her short height with the double-barreled dragon pistol she has on the table. She beats Goofus’s score, and immediately attacks. Goofus cannot declare that he isn’t going Offensive, but he also can’t go Offensive. So, he must declare that he is not going Cautious, leaving him only with Defensive. Gizka declares Offensive, and gives him both barrels.
 
 
-Action Attribute vs. RS or other effects 
-Intimidate CHA vs. RS at Target’s WIL 
-Modifier Effect 
-Opponent is in a situation where they can’t defend 
-themselves 
-
--3 RS (does not stack with Injury) 
-
-Reputation (For being Tough at +1, Violent +2, 
-Dangerous at +3) 
-
-+1 RS to +3 RS 
-
-Injury -1 RS per wound level (of highest level 
-wound, multiple wounds do not stack) 
-Loyalty (Pledged at +1, Fanatic at +3) +1 RS to +3 RS 
-Will be hurt for divulging +3 RS 
-In a position to harm a friend of the target -1 RS 
-Given example of power (Show of Strength at -1, 
-Harmed an ally/target at -2, killed an ally at -3) 
-
--1 RS to -3 RS 
-
-Exploiting Fear (Minor Fear at -1, Major Phobia at -2) -1 RS to -2 RS 
-
- 
-
- 
+\begin{longtabu} to \linewidth{X[1.5]X[r]}
+	\caption{Intimidate}
+	\label{tab:Intimidate}\\
+	\rowfont[c]{}Action &Base Attribute vs. RS or other effects\\\toprule
+Intimidate & CHA vs. RS at Target’s WIL\\
+\rowfont[c]{} Modifier & Effect\\\cmidrule(lr){1-2} 
+Opponent is in a situation where they can’t defend themselves &-3 RS (does not stack with Injury)\\
+Reputation (For being Tough at +1, Violent +2, Dangerous at +3) &+1 RS to +3 RS \\
+Injury &-1 RS per wound level (of highest level wound, multiple wounds do not stack)\\
+Loyalty (Pledged at +1, Fanatic at +3)& +1 RS to +3 RS \\
+Will be hurt for divulging &+3 RS \\
+In a position to harm a friend of the target &-1 RS\\
+Given example of power (Show of Strength at -1, Harmed an ally/target at -2, killed an ally at -3)&-1 RS to -3 RS \\
+Exploiting Fear (Minor Fear at -1, Major Phobia at -2)&-1 RS to -2 RS\\
+\end{longtabu}
 
 \paragraph{\label{skill:Navigation}Navigation}---\quad\textbf{(PER) }\par
 Knowing how to get around is really important. It’s easy enough to find your way around your own home, but unfamiliar streets can be a nightmare, especially if you can’t read the street signs. Trekking through the wilderness is even worse, but at least the wilderness often has landmarks. The open seas rarely give you obvious clues as to where you are, and often, only the sun and the stars guide you. Clouds and fog can take everything away from you.
 
 
-Action Base Attribute vs. RS 
-or other effects 
-Navigating a familiar area No test required 
-Finding a notable location (a visible mountain, town hall, a major business on 
-the main street or a port, a city connected by marked roads, a large river, etc.) 
-
-No test required 
-
-Finding a certain building on marked streets PER vs. 2 
-Finding a clear path through a forest PER vs. 4 
-Travelling through a new area, using the stars and sun to guide you PER vs. 6 
-
-
-Sailing in the right direction on the open sea under an overcast night sky with a 
-new moon 
-
-PER vs. 20 
-
- 
-
- 
+\begin{longtabu} to \linewidth{X[1.5]X[r]}
+	\caption{Navigation}
+	\label{tab:Navigation}\\
+	\rowfont[c]{}Action &Base Attribute vs. RS or other effects\\\toprule
+Navigating a familiar area&No test required\\
+Finding a notable location (a visible mountain, town hall, a major business on the main street or a port, a city connected by marked roads, a large river, etc.)&No test required\\
+Finding a certain building on marked streets &PER vs. 2\\
+Finding a clear path through a forest &PER vs. 4 \\
+Travelling through a new area, using the stars and sun to guide you &PER vs. 6 \\
+Sailing in the right direction on the open sea under an overcast night sky with a new moon &PER vs. 20 \\
+\end{longtabu}
 
 \paragraph{\label{skill:Observation}Observation}---\quad\textbf{(PER, Opposed) }\par
 While anyone can look at something and see the gist of what’s going on, a good Observer can notice little details that others might miss. They can spot the errors in a forgery, notice the lone person in a sea of people who’s not moving the same way, or can see the glimmer of moonlight on the eye staring at them from a nearby bush. Cooks with particularly good Observation can tell which mulling spices were used in a cider or which breed of cattle their steak came from. A master smith can tell roughly the quality of a metal object by its heft, its color, and how it rings when hit against something.
 
-
-Action Base Attribute vs. RS 
-or other effects 
-Notice (Sight/Hearing) PER vs. 1 
-Search Area PER vs. 3 
-Finding a Needle in a Haystack PER vs. 15 
-Notice Concealed/Hidden Weapon PER vs. Stealth 
-Wake up from minor disturbance (slightly creaky floorboard, whistling wind, 
-distant thunder) 
-
-PER vs. 3 
-
-Wake up from moderate disturbance (loudly squeaky door, nearby battle, far 
-off shouting) 
-
-PER vs. 5 
-
-Listening In on Whispering 1 RS per foot of distance 
-Modifier Effect 
-Lighting (Brightly at -1, Dimly at +1, Poorly at +3) -1 RS to +3 RS 
-Notice/Search (Trying to be Seen at -1, Shortly there at +2, Poorly Hidden at 
-+4, Small Movement/Object at +6, Well Hidden +9) 
-
--1 RS to +9 RS 
-
-Hear through Barrier (Minor Disturbance at +1, Thick Wall at +2, Battle at 
-+4) 
-
-+1 RS to +4 RS 
-
- 
-
- 
+\begin{longtabu} to \linewidth{X[1.5]X[r]}
+	\caption{Observation}
+	\label{tab:Observation}\\
+	\rowfont[c]{}Action &Base Attribute vs. RS or other effects\\\toprule
+Notice (Sight/Hearing) &PER vs. 1\\
+Search Area &PER vs. 3 \\
+Finding a Needle in a Haystack &PER vs. 15 \\
+Notice Concealed/Hidden Weapon &PER vs. Stealth \\
+Wake up from minor disturbance (slightly creaky floorboard, whistling wind, distant thunder) &PER vs. 3 \\
+Wake up from moderate disturbance (loudly squeaky door, nearby battle, far off shouting) &PER vs. 5 \\
+Listening in on Whispering &1 RS per foot of distance\\
+	\\
+		\rowfont[c]{} Modifier & Effect\\\cmidrule(lr){1-2}
+Lighting (Brightly at -1, Dimly at +1, Poorly at +3) &-1 RS to +3 RS \\
+Notice/Search (Trying to be Seen at -1, Shortly there at +2, Poorly Hidden at +4, Small Movement/Object at +6, Well Hidden +9) &-1 RS to +9 RS \\
+Hear through Barrier (Minor Disturbance at +1, Thick Wall at +2, Battle at +4) &+1 RS to +4 RS \\
+\end{longtabu}
 
 \paragraph{\label{skill:Orate}Orate}---\quad\textbf{(CHA)}\par
 Talking to a sea of people tends to be pretty intimidating. More-so if that sea of people are really angry. Orators, however, have a few tricks up their sleeve to make their message not just heard, but received well. A good Orator knows how to make a crowd sympathetic, whether by using propaganda, starting a chant to keep people from thinking, or in some cases just being sincere.
 
 
-Action Base Attribute vs. RS or 
-other effects 
-Convince hungry desperate angry peasants that “that guy!” is responsible 
-for their woes... 
-
-CHA vs. 1 
-
-And that they should hang him! CHA vs. 3 
-And his soldiers! CHA vs. 5 
-And the senate! CHA vs. 8 
-And the king! CHA vs. 10 
-And make you King instead! CHA vs. 20 
-Convince previously convinced hungry desperate angry peasants that you 
-AREN’T responsible for their woes. 
-
-CHA vs. 6 
-
-Inspire people to act CHA vs. 1 
-Stir angered people to violence CHA vs. Average WIL 
-Diffuse Violence CHA vs. Average WIL 
-Spread Word/Lies CHA vs Average PER 
-Modifier Effect 
-Disposition (Supportive at -2, Agreeable at -1, Disillusioned at +1, Hostile at +4)
-
--2 RS to +4 RS 
-
-Foreigner/Outsider +2 RS 
-Reputation (Beloved at -2, Good at -1, Bad at +1, Horrible at +2) -2 to +2 RS 
-Authority Figure (Lord/Ruler at -3, Respected Official at -2, Lowly 
-Official at -1) 
-
--3 RS to -1 RS 
-
-Outsider, Lower Class, Inferior, etc. +1 to 10 RS 
-Disposition of Crowd (Supportive at -2, Agreeable at -1, Disillusioned at 
-+1, Hostile at +4) 
-
--2 RS to +4 RS 
-
- 
-
- 
+\begin{longtabu} to \linewidth{X[1.5]X[r]}
+	\caption{Orate}
+	\label{tab:Orate}\\
+	\rowfont[c]{}Action &Base Attribute vs. RS or other effects\\\toprule
+Convince hungry desperate angry peasants that “that guy!” is responsible for their woes... &CHA vs. 1\\
+And that they should hang him! &CHA vs. 3\\
+And his soldiers! &CHA vs. 5 \\
+And the senate! &CHA vs. 8 \\
+And the king! &CHA vs. 10 \\
+And make you King instead! &CHA vs. 20 \\
+Convince previously convinced hungry desperate angry peasants that you AREN’T responsible for their woes.&CHA vs. 6 \\
+Inspire people to act &CHA vs. 1 \\
+Stir angered people to violence &CHA vs. Average WIL \\
+Diffuse Violence &CHA vs. Average WIL \\
+Spread Word/Lies &CHA vs Average PER \\
+	\\
+		\rowfont[c]{} Modifier & Effect\\\cmidrule(lr){1-2} 
+Disposition (Supportive at -2, Agreeable at -1, Disillusioned at +1, Hostile at +4)&-2 RS to +4 RS\\
+Foreigner/Outsider&+2 RS \\
+Reputation (Beloved at -2, Good at -1, Bad at +1, Horrible at +2) &-2 to +2 RS \\
+Authority Figure (Lord/Ruler at -3, Respected Official at -2, Lowly Official at -1) &-3 RS to -1 RS\\
+Outsider, Lower Class, Inferior, etc. &+1 to 10 RS\\
+Disposition of Crowd (Supportive at -2, Agreeable at -1, Disillusioned at +1, Hostile at +4) &-2 RS to +4 RS \\
+\end{longtabu}
 
 \paragraph{\label{skill:Perform}Perform}---\quad\textbf{(Varies) }\par
 Singing, dancing, acting, storytelling, and playing instruments are all ways Performers have entertained people, likely since before recorded history. The Perform skill is used for many reasons: for some, personal accomplishment is all that matters, while others use it to entertain friends and family or to keep spirits up in rough situations. Still more seek fame, glory, money, or the eyes of powerful people. Perform is separated into different specialties, like Crafting is. Singing, dancing, acting, and storytelling are all individual specialties, while most musicians specialize in a particular instrument. They may, of course, try to play an instrument they are unfamiliar with if it is similar enough to their specialty (at the GM’s discretion), but they will suffer a 1 or 2 die penalty as it’s not quite what they’re familiar with. Perform uses CHA unless a particular performance would do better with another attribute: for example, an extended solo for a brass or woodwind instrument might use END as the character cannot run out of breath, or a fast-paced or complicated dance might use AGI. Ad-libbing something is usually WIT. Perform’s RS is generally related to the audience’s expectations. A family watching a child’s recital might only expect a bare success, while an actor performing for a theater full of nobles might be expected to get 6 or even more successes.
 
 
-Action Attribute vs. RS or other 
-effects 
-Performance Varies vs. 1 
-Can-Can with friends CHA vs. 1 
-Belly dancing in a decent club AGI vs. 3 
-Telling a riveting tale CHA vs. 3 
-Ad-libbing Antony and Cleopatra from a quick description WIT vs. 6 
-Moving Musical Performance worthy of Crowd CHA vs. 8 
-Flyting Opposed WIT test 
-Modifier Effect 
-Disposition of Crowd (Supportive at -2, Agreeable at -1, Disillusioned at 
-+1, Hostile at +4) 
+\begin{longtabu} to \linewidth{X[1.5]X[r]}
+	\caption{Perform}
+	\label{tab:Perform}\\
+	\rowfont[c]{}Action &Base Attribute vs. RS or other effects\\\toprule
+Can-Can with friends &CHA vs. 1 \\
+Belly dancing in a decent club &AGI vs. 3 \\
+Telling a riveting tale &CHA vs. 3 \\
+Ad-libbing Antony and Cleopatra from a quick description &WIT vs. 6 \\
+Moving Musical Performance worthy of Crowd &CHA vs. 8 \\
+Flyting &Opposed WIT test \\
+	\\
+		\rowfont[c]{} Modifier & Effect\\\cmidrule(lr){1-2} 
+Disposition of Crowd (Supportive at -2, Agreeable at -1, Disillusioned at +1, Hostile at +4) &-2 RS to +4 RS\\
+\end{longtabu}
 
--2 RS to +4 RS 
-
- 
-
- 
-
-\paragraph{\label{skill:Persuasion}Persuasion}---\quad\textbf{(Varies) }\par
+\paragraph{\label{skill:Persuasion}Persuasion}---\quad\textbf{(Varies)}\par
 Where intimidation uses fear to control people, Persuasion uses trust. A good Persuader either uses their own inherent trustworthiness to convince people of something, or they find someone or something else that the person is willing to trust. Obviously, most of the time the Persuader will be using CHA, although sometimes INT will come into play, or even WIT if the Persuader truly needs to think fast. They will be opposed by the Target’s own INT, WIT, or even an Observation or Research roll if the character is inclined to trust their own work over someone else’s.
 
 
-Action Attribute vs. RS or 
-other effects 
-Persuade CHA vs. RS at Target’s 
-WIL 
-
-
-Gather Information CHA vs. 1 
-Modifier Effect 
-Disposition (Supportive at -2, Agreeable at -1, Disillusioned at +1, Hostile at +4)
-
--2 RS to +4 RS 
-
-Scale of Knowledge (Common Knowledge at -4, Talked About at -2, Known 
-by Few at +2, Guarded Secrets at +4) 
-
--4 RS to +4 RS 
-
-Time (Very Recent -2, Recent 0, Ancient History +4) -2 RS to +4 RS 
-
- 
-
- 
-
- 
-
+\begin{longtabu} to \linewidth{X[1.5]X[r]}
+	\caption{Persuasion}
+	\label{tab:Persuasion}\\
+	\rowfont[c]{}Action &Base Attribute vs. RS or other effects\\\toprule
+Persuade &CHA vs. RS at Target’s WIL \\
+	\\
+Gather Information &CHA vs. 1\\
+	\\
+		\rowfont[c]{} Modifier & Effect\\\cmidrule(lr){1-2} 
+Disposition (Supportive at -2, Agreeable at -1, Disillusioned at +1, Hostile at +4)&-2 RS to +4 RS\\
+Scale of Knowledge (Common Knowledge at -4, Talked About at -2, Known by Few at +2, Guarded Secrets at +4) &-4 RS to +4 RS\\
+Time (Very Recent -2, Recent 0, Ancient History +4) &-2 RS to +4 RS\\ 
+\end{longtabu}
 \paragraph{\label{skill:Politics}Politics}---\quad\textbf{(INT) }\par
-Politics is a character’s knowledge of current events, from the local level to the national to all of the 
-known world. It covers things from what nations are at war with each other, what nobles are courting 
-others, and other, similar topics. If it makes sense for the character’s background, it can also apply to 
-knowledge in the criminal realm. 
+Politics is a character’s knowledge of current events, from the local level to the national to all of the known world. It covers things from what nations are at war with each other, what nobles are courting others, and other, similar topics. If it makes sense for the character’s background, it can also apply to knowledge in the criminal realm.
 
- 
-
-Action Attribute vs. RS or 
-other effects 
-Know Current Events INT vs. 1 
-Modifier Effect 
-Time (Very Recent -2, Recent 0, Ancient History +4) -2 RS to +4 RS 
-Location (Home at -3, Local at -2, Nation at -1, Foreign at +2, Far Away Land 
-at +4, Literally a different world at +6) 
-
--3 RS to +6 RS 
-
-Culture (Gossipy at -2, Distrustful at +1, Secretive at +2) -2 RS to +2 RS 
-Scale of Knowledge (Common Knowledge at -4, Talked About at -2, Known 
-by Few at +2, Guarded Secrets at +4) 
-
--4 RS to +4 RS 
-
- 
-
- 
-
- 
-
+\begin{longtabu} to \linewidth{X[1.5]X[r]}
+	\caption{Politics}
+	\label{tab:Politics}\\
+	\rowfont[c]{}Action &Base Attribute vs. RS or other effects\\\toprule
+Know Current Events &INT vs. 1\\
+	\\
+		\rowfont[c]{} Modifier & Effect\\\cmidrule(lr){1-2} 
+Time (Very Recent -2, Recent 0, Ancient History +4) &-2 RS to +4 RS\\
+Location (Home at -3, Local at -2, Nation at -1, Foreign at +2, Far Away Land at +4, Literally a different world at +6) &-3 RS to +6 RS\\
+Culture (Gossipy at -2, Distrustful at +1, Secretive at +2) &-2 RS to +2 RS\\
+Scale of Knowledge (Common Knowledge at -4, Talked About at -2, Known by Few at +2, Guarded Secrets at +4) &-4 RS to +4 RS\\
+\end{longtabu}
 \paragraph{\label{skill:Research}Research}---\quad\textbf{INT}\par
 Research is all about knowing how to find something out. Someone with low-level Research skill might know how to find an alphabetically filed document or how to use a table of contents. A talented Researcher can scan through a few dozen peer-reviewed journals in a few minutes to find that one obscure article someone wrote about a really rare bone condition.
 
-
-Action Attribute vs. RS or 
-other effects 
-
-
-Commonly Known/Recent Information INT vs. 1 
-Modifiers RS Change 
-Materials (Well-Written at -1, Scattered Notes at +2, Poorly Understood at 
-+4) 
-
--1 RS to +4 RS 
-
-Scale of Knowledge (Common Knowledge at -4, Talked About at -2, Known 
-by Few at +2, Guarded Secrets at +4) 
-
--4 RS to +4 RS 
-
-Time (Very Recent -2, Recent 0, Ancient History +4) -2 RS to +4 RS 
-Familiar Subject -1 RS 
-
- 
-
- 
+\begin{longtabu} to \linewidth{X[1.5]X[r]}
+	\caption{Research}
+	\label{tab:Research}\\
+	\rowfont[c]{}Action &Base Attribute vs. RS or other effects\\\toprule
+Commonly Known/Recent Information&INT vs. 1
+	\\
+		\rowfont[c]{}Modifiers&RS Change\\\cmidrule(lr){1-2}
+Materials (Well-Written at -1, Scattered Notes at +2, Poorly Understood at +4)&-1 RS to +4 RS\\
+Scale of Knowledge (Common Knowledge at -4, Talked About at -2, Known by Few at +2, Guarded Secrets at +4)&-4 RS to +4 RS\\
+Time (Very Recent -2, Recent 0, Ancient History +4)&-2 RS to +4 RS\\
+Familiar Subject&-1 RS\\
+\end{longtabu}
 
 \paragraph{\label{skill:Riding}Riding}---\quad\textbf{Varies}\par
 Sitting on the back of another creature can be surprisingly hard. Riding is how good a character is at staying on top of his mount and leading or driving it accurately. It is a very important skill for cavalrymen and knights. Riding’s uses are, for the most part, detailed in the Maneuvers section, or alongside information on different mounts.
 
-
-Action Base Attribute vs. RS or other 
-effects 
-Simple Trick (Jump, Kneel, Call, Sit) ADR vs. 1 
-Difficult Trick (Sharp Turn, Dangerous Jump, Dangerous 
-Charge) 
-
-ADR vs. 3 
-
-Calm CHA vs. 3 
-Modifiers RS Change 
-Untrained +4 RS 
-Encumberance (+1 at Light, +4 at Overloaded) +1 to +4 RS 
-
+\begin{longtabu} to \linewidth{X[1.5]X[r]}
+	\caption{Riding}
+	\label{tab:Riding}\\
+	\rowfont[c]{}Action &Base Attribute vs. RS or other effects\\\toprule
+Simple Trick (Jump, Kneel, Call, Sit) &ADR vs. 1\\
+Difficult Trick (Sharp Turn, Dangerous Jump, Dangerous Charge) &ADR vs. 3 \\
+Calm &CHA vs. 3\\
+	\\
+		\rowfont[c]{}Modifiers &RS Change\\
+Untrained&+4 RS\\
+Encumberance (+1 at Light, +4 at Overloaded)&+1 to +4 RS \\
+\end{longtabu}
 
 \paragraph{\label{skill:Sailing}Sailing}---\quad\textbf{WIT}\par
 Ships are more than just weighing the anchor and hoisting the sails. Sailors are expected to know a variety of knots, which sails are used for what kinds of wind, how to sail upwind, and how to prepare a ship to weather the weather. Sailing is the skill used to operate all kinds of watercraft, from a rowboat to a ship of the line. This handles the physical acts of handling heavy rigging, moving cargo, steering from the helm, and rowing. This is a sailor’s primary skill. The officers and captain of a ship usually have this skill to use in emergencies, so that they understand their own vessel, and because most of them were probably sailors before they were captains or officers, but most of their work is done with Navigation, Tactics, and Engineering, while their crew takes care of actually sailing the ship.
 
-
-Action Attribute vs. RS or other effects 
-Avoid Simple Obstacle WIT vs. 1 RS 
-
-Prep to Sail WIT vs. 1 RS 
-
-Traverse Hazard WIT vs. 3 RS 
-
-Modifiers RS Change 
-Crew (Skilled -2, Well-staffed, Understaffed at +1, Untrained at +3) +1 RS - +3 RS 
-Weather (Windy at +1, Storming at +3, Massive Storm at +6) +1 to +6 RS 
-
- 
-
- 
+\begin{longtabu} to \linewidth{X[1.5]X[r]}
+	\caption{Sailing}
+	\label{tab:Sailing}\\
+	\rowfont[c]{}Action &Base Attribute vs. RS or other effects\\\toprule
+Avoid Simple Obstacle &WIT vs. 1 RS \\
+Prep to Sail &WIT vs. 1 RS \\
+Traverse Hazard &WIT vs. 3 RS \\
+	\\
+		\rowfont[c]{}Modifiers& RS Change \\
+Crew (Skilled -2, Well-staffed, Understaffed at +1, Untrained at +3) &+1 RS to +3 RS\\
+Weather (Windy at +1, Storming at +3, Massive Storm at +6)&+1 to +6 RS\\
+\end{longtabu}
 
 \paragraph{\label{skill:Stealth}Stealth}---\quad\textbf{(AGI)}
 Sneaking around is a good way to deal with one’s problems, as long as one’s problems have eyes and ears. Camouflage, a soft step, and an eye for shadowed areas help characters avoid detection. It is also used for hiding things. Stealth is made using AGI as an opposed check versus Observation or Hunting.
 
-
-Action Attribute vs. RS or other effects 
-Slinking without sound AGI vs. Observation 
-Falling/Jumping without sound (max 10 feet) AGI vs. Observation 
-Trailing without notice AGI vs. Observation 
-Hiding with Concealment AGI vs. Observation 
-Applying camouflage 2 RS 
-Concealing a weapon vs. Observation 
-Modifiers RS Change 
-Running +4 RS 
-Distraction -2 RS 
-Ground Material (soft at -1, loud at +1) +1 RS 
-Encumberance (+1 at Light, +4 at Overloaded) +1 to +4 RS 
-
- 
-
-
- 
+\begin{longtabu} to \linewidth{X[1.5]X[r]}
+	\caption{Stealth}
+	\label{tab:Stealth}\\
+	\rowfont[c]{}Action &Base Attribute vs. RS or other effects\\\toprule
+Slinking without sound &AGI vs. Observation \\
+Falling/Jumping without sound (max 10 feet) &AGI vs. Observation \\
+Trailing without notice &AGI vs. Observation \\
+Hiding with Concealment &AGI vs. Observation \\
+Applying camouflage &2 RS \\
+Concealing a weapon &vs. Observation \\
+	\\
+		\rowfont[c]{}Modifiers& RS Change\\\cmidrule(lr){1-2}
+Running&+4 RS \\
+Distraction&-2 RS \\
+Ground Material (soft at -1, loud at +1)&+1 RS \\
+Encumberance (+1 at Light, +4 at Overloaded)&+1 to +4 RS\\
+\end{longtabu}
 
 \paragraph{\label{skill:Subterfuge}Subterfuge}---\quad\textbf{(CHA)}\par
 Sometimes, it’s not yourself or your possessions that need to be hidden. When you need to lie, bluff, or sometimes just to keep your mouth shut in the face of threats, torture or intoxication, Subterfuge is your skill. Subterfuge is made using CHA as an opposed check. The opposer uses any skill that would give them insight into the information being given, as determined by the GM. The player may default to $ -\frac{1}{2} $ their Observation skill if they prefer.
 
-
-Modifier Effect 
-Lie CHA vs. Observation 
-Present Fake Emotions CHA vs. Observation 
-Modifiers RS Change 
-Rehearsed -1 RS 
-Believability (Very Believable at -2, Unbelieveable at +2, Near Impossible at +8) -1 RS to +8 RS 
-
- 
-
- 
+\begin{longtabu} to \linewidth{X[1.5]X[r]}
+	\caption{Subterfuge}
+	\label{tab:Subterfuge}\\
+	\rowfont[c]{}Action &Base Attribute vs. RS or other effects\\\toprule
+Lie &CHA vs. Observation\\
+Present Fake Emotions &CHA vs. Observation \\
+\\
+	\rowfont[c]{}Modifier&Effect\\\cmidrule(lr){1-2}
+Rehearsed &-1 RS \\
+Believability (Very Believable at -2, Unbelieveable at +2, Near Impossible at +8) &-1 RS to +8 RS \\
+\end{longtabu}
 
 \paragraph{\label{skill:Surgery}Surgery}---\quad\textbf{(Varies)}\par
-Doctors are well-respected members of society for good reason. Cleaning and bandaging a small cut is one thing, but precisely breaking the skull so that the brain doesn’t get crushed by the blood filling it from a broken aneurysm without causing further damage is another.
+Doctors are well-respected members of society for good reason. Cleaning and bandaging a small cut is one thing, but precisely breaking the skull so that the brain doesn't get crushed by the blood filling it from a broken aneurysm without causing further damage is another.
 
 
-Perform Surgery: A lengthy process generally requiring tools, the character can attempt to at the least patch up a wound. In order to stop a wound from Bleeding, and to reduce the Pain it causes, the Surgery skill must come into play. A Surgery check made at appropriate difficulty for wound level Treats the wound. Treated wounds have their Bloodloss reduced to 0 (unless reopened somehow), and their Pain reduced by half. Treated wounds begin healing immediately. Healing time depends on the character’s maximum normal HLT, and the level of the wound. Once a Wound has fully healed, the Wound, and any remaining pain, are removed from the character.
+\subparagraph{Perform Surgery:} A lengthy process generally requiring tools, the character can attempt to at the least patch up a wound. In order to stop a wound from Bleeding, and to reduce the Pain it causes, the Surgery skill must come into play. A Surgery check made at appropriate difficulty for wound level Treats the wound. Treated wounds have their Bloodloss reduced to 0 (unless reopened somehow), and their Pain reduced by half. Treated wounds begin healing immediately. Healing time depends on the character’s maximum normal HLT, and the level of the wound. Once a Wound has fully healed, the Wound, and any remaining pain, are removed from the character.\par
 
 
-Action Attribute vs. RS or other effects 
-Perform Surgery AGI vs. Wound Level, Stops (Removes) Bloodloss and half of Pain. 
-Test done per wound. 
-Diagnosing a Wound INT vs. 2 
-Stopping Internal Bleeding INT vs. 6 
-Autopsy INT vs. 4 
-Amputation AGI vs. 3 
+\begin{longtabu} to 1\textwidth {X[1.5]X[r]}
+	\caption{Surgery}
+	\label{tab:Surgery}\\
+	\rowfont[c]{}Action &Base Attribute vs. RS or other effects\\\toprule
+Perform Surgery&	AGI vs. Wound Level
 
+					Stops (Removes) Bloodloss and half of Pain.
 
-Remove Projectile AGI vs. Wound Level 
-Staunching Blood Loss INT vs. 1, -1 Bleed per success 
-Modifier Effect 
-Projectile Size (Javelin at -2 
-RS, Bullet at +2 RS) 
-
--2 RS to +2 RS 
-
-Tools (Good Quality at -2, Poor 
-Quality at +2) 
-
--2 RS to +2 RS 
-
-Unsuitable environment +2 RS 
-Assistants Assistants take test at $ \frac{1}{2} $ RS, they give +$ -\frac{1}{2} $ Successes, to a total of the 
-assistant’s skill level in the chosen skill, or 1 if Unskilled. 
-
- 
-
- 
+					Test done per wound.\\
+Diagnosing a Wound&INT vs. 2 \\
+Stopping Internal Bleeding&INT vs. 6\\
+Autopsy&INT vs. 4 \\
+Amputation&AGI vs. 3 \\
+Remove Projectile&AGI vs. Wound Level \\
+Staunching Blood Loss&INT vs. 1, -1 Bleed per success \\
+	\\
+		\rowfont[c]{}Modifier&Effect\\\cmidrule(lr){1-2}
+Projectile Size (Javelin at -2 RS, Bullet at +2 RS)&-2 RS to +2 RS\\
+Tools (Good Quality at -2, Poor Quality at +2) &-2 RS to +2 RS\\
+Unsuitable environment &+2 RS\\
+\caption*{Assistants take test at $ \frac{1}{2} $ RS, they give +$ -\frac{1}{2} $ Successes, to a total of the assistant’s skill level in the chosen skill, or 1 if Unskilled.}
+\end{longtabu}
 
 \paragraph{\label{skill:Swimming}Swimming}---\quad\textbf{(Varies)}\par
 Most characters will be from land-bound races. Swimming is not an instinct: a character must learn to move through the water as easily as they move on land. Zells are naturally pretty good at this, but for most other people it can be difficult, especially with harsh waters or heavy equipment.
 
+\begin{longtabu} spread 0pt {X[2]X[r]}
+	\caption{Swimming}
+	\label{tab:Swimming}\\
+	\rowfont[c]{}Action &Base Attribute vs. RS or other effects\\\toprule
+Swimming in calm water &END vs. 1\\
+Level 1 rapids&END vs. 2 \\
+Level 2 rapids&END vs. 3 \\
+Level 3 rapids&END vs. 4 \\
+Level 4 rapids&END vs. 5 \\
+Level 5 rapids&END vs. 6 \\
+Level 6 rapids&END vs. 10 \\
+	\\
+		\rowfont[c]{} Modifier & Effect\\\cmidrule(lr){1-2} 
+Encumberance (+1 at Light, +4 at Overloaded)&+1 to +4 RS\\
+Arm/Leg unusable&+2 RS per limb\\
+Weather (Windy at +1, Storming at +3, Massive Storm at +6)&+1 to +6 RS\\
+\end{longtabu}
 
-Action Attribute vs. RS or other effects 
-Swimming in calm water END vs. 1 
-Level 1 rapids END vs. 2 
-Level 2 rapids END vs. 3 
-Level 3 rapids END vs. 4 
-Level 4 rapids END vs. 5 
-Level 5 rapids END vs. 6 
-Level 6 rapids END vs. 10 
-Modifier Effect 
-Encumberance (+1 at Light, +4 at Overloaded) +1 to +4 RS 
-Arm/Leg unusable +2 RS per limb 
-Weather (Windy at +1, Storming at +3, Massive Storm at +6) +1 to +6 RS 
-
-
-When failed:
-
-Drowning
-If the character is in danger of drowning, they must immediately make a swim check using their STR at an increasing difficulty. For each round they fail the strength check, their HLT is decreased by one until zero, where the character has drowned. The HLT lost from drowning is temporary and returns to the character once they are revived. All modifiers for swim tests apply. If a character makes a successful strength check, they can then make another normal swim check to make it the rest of the way. If they fail again, repeat the process. For Drowning, losing all of one’s HLT represents the character passing out and not their immediate death; if the character is pulled from the water within 5 minutes, they can be revived by a Medical test at RS 3; revival attempts can be made up to the drowned character’s total HLT score. If a character cannot be revived, they die. If the character is pulled out within 5 minutes plus half their normal HLT score, they can still be revived, but they must make a HLT check at RS 3 or gain the bane Brain Damage (major).
-
-
-Table X.X: Drowning %EXTRA table for Drowning
-Check Modifier 
-First STR Check No modifier. 
-2nd STR Check +1 RS, -1 HLT 
-3rd STR Check +2 RS, -1 HLT 
-4th STR Check +3 RS, -1 HLT 
-+* +* 
-*Continue on in like fashion until the character makes a successful strength check, or until the character 
-reaches 0 HLT. 
-
+\subparagraph{When failed: Drowning}---\quad
+If the character is in danger of drowning, they must immediately make a swim check using their STR at an increasing difficulty. For each round they fail the strength check, their HLT is decreased by one until zero, where the character has drowned. The HLT lost from drowning is temporary and returns to the character once they are revived. All modifiers for swim tests apply. If a character makes a successful strength check, they can then make another normal swim check to make it the rest of the way. If they fail again, repeat the process. For Drowning, losing all of one’s HLT represents the character passing out and not their immediate death; if the character is pulled from the water within 5 minutes, they can be revived by a Medical test at RS 3; revival attempts can be made up to the drowned character’s total HLT score. If a character cannot be revived, they die. If the character is pulled out within 5 minutes plus half their normal HLT score, they can still be revived, but they must make a HLT check at RS 3 or gain the bane \nameref{bane:Brain Damage}~(major)
+\begin{wraptable}{r}{8 cm}
+	\centering
+	\caption{Drowning}
+	\label{tab:Drowning}
+		\begin{tabu}spread 0pt {X[l]X[r]}
+\rowfont[c]{}Check&Modifier\\\toprule
+First STR Check&No modifier.\\
+2nd STR Check &+1 RS, -1 HLT\\
+3rd STR Check &+2 RS, -1 HLT\\
+4th STR Check &+3 RS, -1 HLT\\
+\rowfont[c]{}+\ldots*&+\ldots*\\
+		\end{tabu}
+	\caption*{*~Continue on in like fashion until the character makes a successful strength check, or until the character reaches 0 HLT.}
+\end{wraptable}
 \chapter{Social Class and Wealth}\label{ch:wealth}
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
@@ -4810,7 +4601,10 @@ chapter outlines all that you need to know about weaponry, armor, goods and serv
  
 
 If you need to learn more about gold and Wealth, refer to \autoref{ch:wealth}. Information on carrying your equipment and what that means for your character’s Fatigue is explained in \autoref{sec:exhaustion}:~\nameref{sec:exhaustion}
-\chapter{Melee Weapons}
+\chapter{Melee Weapons}\label{ch:Melee Weapons}
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
+\clearpage
 \begin{quote}
 	\emph{“Invincible Khan. We have exhausted our supply of arrows. We are out of water and the men are dying of thirst. We are running out of horses. The rats are without number. They give us no sleep and they may soon overtake us. We have killed many thousands but we require aid. Your loyal servant begs you for aid."}
 	
@@ -4924,7 +4718,6 @@ Melee Weapons %VESTIGIAL
 \begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
 	\caption{Daggers}
 	\label{tab:Daggers List}\\
-	\global\extrarowsep = 3mm
 Weapon Name						&Weapon Type	&Hands&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\\toprule\endhead
 Ballock Dagger					&Dagger			&1H	&H	&7(-1c)	&6(+1p)	&8(1)	&Fluid Thrusts, Light Blade				&0	&5 cp\\
 Baselard						&Dagger			&1H	&S	&6(+0c)	&6(+0p)	&7(1)	&Fluid Thrusts							&0	&2 sp\\
@@ -4954,7 +4747,6 @@ Tanto							&Dagger			&1H	&H	&7(+0c)	&6(+0p)	&8(1)	&Draw 1, Light Blade, Thin Bl
 \begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
 	\caption{One-Handed Swords}
 	\label{tab:1H Swords}\\
-		\global\extrarowsep = 3mm
 Weapon Name					&Weapon Type    &Hands   &Reach  &Swing  &Thrust &Defense (Guard)  &Special                                 &Wt  &Cost\\\toprule\endhead
 Arming Sword (Early)        &Sword          &1H      &M      &7(+1c) &7(+0p) &7(1)           &Draw 2, Spatulate Tip 2                 &0.5 &1 gp\\
 Arming Sword (Chivalric)    &Sword          &1H      &M      &7(+2c) &7(+0p) &7(2)           &-                                       &0.5 &1 gp\\
@@ -5008,7 +4800,6 @@ Yataghan                    &Sword          &1H      &S      &7(+1c) &8(+0p) &7(
 \begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
 	\caption{Two-handed Swords}
 	\label{tab:2H Swords}\\
-	\global\extrarowsep = 3mm
 Weapon Name					&Weapon Type	&Hands	&Reach	&Swing	&Thrust	&Defense (Guard)	&Special						&Wt		&Cost\\\toprule\endhead
 Bastard Sword				&Sword			&2H		&L		&7(+1c)	&7(+2p)	&7(2)				&Hand-Off, Heavy Weapon 			&1		&50 sp\\
 Claymore					&Sword			&2H		&L		&7(+2c)	&7(+0p)	&7(2)	&Heavy Weapon &2 &50 sp\\
@@ -5033,7 +4824,6 @@ Zweihander (Grutte) 	&Sword &2H &EL &7(+4c) &8(+3p) &7(2) &Heavy Weapon, Freakis
 \begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
 	\caption{One-Handed Blunt Weapons}
 	\label{tab:1H Blunt}\\
-	\global\extrarowsep = 3mm
 Weapon Name						&Weapon Type	&Hands&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\\toprule\endhead
 Battleaxe* &Blunt &1H &M &7(+2c) &7(-2b) &9(0)& AP Swing 1, Hand-Off, Hook, Thrusting Slot, Shock 2, Swinging Slot &1 &6 sp\\
 Bar Mace &Blunt &1H &S &7(+1b) &7(-2b) &7(0)& AP Swing 1, Shock 1, Thrusting Slot &0 &1 sp\\
@@ -5062,7 +4852,6 @@ Weighted Chain Blunt 1H VL 8(+1b) - 8(0) Chain 3, Hook,Shock 2, Weapon Attachmen
 \begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
 	\caption{Two-Handed Blunt}
 	\label{tab:2H Blunt}\\
-	\global\extrarowsep = 3mm
 Weapon Name				&Weapon Type	&Hands	&Reach	&Swing&Thrust&Defense (Guard)&Special																	&Weight	&Cost\\\toprule\endhead
 Battleaxe				&Blunt			&2H		&M		&7(+3c)&7(-2b)&8(0)&AP Swing 1, Hand-Off, Heavy Weapon, Hook, Thrusting Slot, Shock 2, Swinging Slot	&1 &6 sp\\
 Club (Large) 			&Blunt			&2H		&M		&6(+1b)&7(-1b)&7(0)&Heavy Weapon, Shock 1, Swinging Slot, Thrusting Slot								&1 &3 cp\\
@@ -5341,10 +5130,12 @@ Integrated Dragon &Firearm &2 &6 &7p &10 &Ball, Shot\\
 	\end{tabu}
 \end{table}
 
-\chapter{Missile Weapons}
-“No person of Albish descent will bear or train with, or own the weapon called the Warbow or Longbow 
-without special dispensation from his Lord. Any who violate this order shall tied to a post and speared.” 
--Text of Krajini Bow Prohibition 
+\chapter{Missile Weapons}\label{ch:Missile Weapons}
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
+\clearpage
+“No person of Albish descent will bear or train with, or own the weapon called the Warbow or Longbow without special dispensation from his Lord. Any who violate this order shall tied to a post and speared.” -Text of Krajini Bow Prohibition 
+
 Missile Weapon Characteristics 
 
 
@@ -6195,6 +5986,9 @@ Chest, Sides, Belly, Hips, Groin, Thighs, Knees, Shins
  
 
 \chapter{Armor}
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
+\clearpage
 \begin{quote}
 	\centering
 	\emph{“If you have to choose one piece, get a helmet.” }
@@ -7486,6 +7280,9 @@ Silversteel
 Armor has half normal Weight 
 +1,000\% Cost
 \chapter{Burdinadin Armory}
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
+\clearpage
 “I have an idea.” 
 Nikola Garrastazu (Deceased), Head of Glade Apa Translocation Research Bureau 
 
@@ -8278,7 +8075,6 @@ Especially strong (feature) Ever move a piano up a staircase? Don’t worry, you
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
 \clearpage
- 
 
 “When I was in Illegon, I had an apprentice. I forget his name. A hundred times I showed him the right way to parry, and a 
 hundred times he did it the wrong way. On the hundred and first time, I didn’t hold back. Only in swordsmanship can a man lose 
@@ -9145,83 +8941,54 @@ Universal Maneuvers only
 Tier 1 Maneuvers 
 Fling [Superior] 
 
- 
-
-\chapter{Maneuvers}\label{ch:maneuvers}
+\chapter{Maneuvers}\label{ch:maneuvers} %NEED to make some concept photos of possible maneuver layouts. Maneuvers are the most important part of the book, gotta make sure they work!
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
 \clearpage
-Maneuvers are essentially ‘moves’ used in combat. They can range from parrying a blow to firing a pistol 
-and swinging an axe. Most Maneuvers involve devoting CP dice to them, and then rolling these as an 
-attack or a defense against an Opponent. Some have more subtle effects, like changing the way a weapon 
-is held, distracting or blinding an Opponent, or maneuvering around them in combat. 
+Maneuvers are essentially ‘moves’ used in combat. They can range from parrying a blow to firing a pistol and swinging an axe. Most Maneuvers involve devoting CP dice to them, and then rolling these as an attack or a defense against an Opponent. Some have more subtle effects, like changing the way a weapon is held, distracting or blinding an Opponent, or maneuvering around them in combat.
 
 
-Maneuvers are divided into simple categories based on what they do, and when they can be used. For 
-example, Parry is a Defense Weapon Maneuver, because it involves parrying an attack with a weapon. A 
-Lance Charge is an Attack Mounted Weapon Maneuver, since it involves a kind of attack that can only be 
-performed when mounted with a weapon. Most Maneuvers will require the character be wielding an 
-appropriate weapon, which is listed in the Requirements section of each Maneuver. 
+Maneuvers are divided into simple categories based on what they do, and when they can be used. For example, Parry is a Defense Weapon Maneuver, because it involves parrying an attack with a weapon. A Lance Charge is an Attack Mounted Weapon Maneuver, since it involves a kind of attack that can only be performed when mounted with a weapon. Most Maneuvers will require the character be wielding an appropriate weapon, which is listed in the Requirements section of each Maneuver.
 
 
-Gaining Maneuvers 
-
- 
-
-Some Maneuvers are automatically gained at Character Creation, and are able to be used by all characters 
-with any Proficiency. These Maneuvers are identified as ‘Universal.’ 
-
- 
-
-Other Maneuvers, identified as ‘Advanced’ must be earned through levelling Proficiencies and unlocking 
-Maneuver Tiers (refer to Chapter XX for more information). Advanced Maneuvers can only be used 
-when a character is currently using a Proficiency with the Advanced Maneuver unlocked. That means, if 
-your character is using a Bow, they cannot utilize the Advanced Maneuvers available to a 2H Blunt 
-weapon, even if that Maneuver is unlocked. 
-
- 
-
- 
-
-Using Maneuvers 
-
- 
-
-The Superior versions of Maneuvers are considered Advanced for all purposes. 
+\subsection{Gaining Maneuvers}
+Some Maneuvers are automatically gained at Character Creation, and are able to be used by all characters with any Proficiency. These Maneuvers are identified as ‘Universal.’
 
 
- 
+Other Maneuvers, identified as ‘Advanced’ must be earned through leveling Proficiencies and unlocking Maneuver Tiers (refer to \autoref{ch:proficiencies} for more information). Advanced Maneuvers can only be used when a character is currently using a Proficiency with the Advanced Maneuver unlocked. That means, if your character is using a Bow, they cannot utilize the Advanced Maneuvers available to a 2H Blunt weapon, even if that Maneuver is unlocked.
 
-Some Maneuvers, such as Grappling and Hilt Push, result in a special state in which additional 
-Maneuvers become available. These are indicated by having the parent Maneuver’s name before theirs 
-(i.e. Hilt Push: Grapple, or Hilt Push: Lever-Down). 
+\subsection{Using Maneuvers}
+\emph{The Superior versions of Maneuvers are considered Advanced for all purposes.}
 
- 
+Some Maneuvers, such as Grappling and Hilt Push, result in a special state in which additional Maneuvers become available. These are indicated by having the parent Maneuver’s name before theirs (i.e. Hilt Push: Grapple, or Hilt Push: Lever-Down).
 
-Maneuvers List 
+\section{\label{sec:Maneuvers}Maneuvers List}
 
- 
+All Maneuvers follow this format:
 
-All Maneuvers follow this format: 
 
- 
+MANEUVER NAME [Cost]
+Type: [This is the type of the maneuver, for reference to how it can be used. If the proficiency is tagged as ‘Universal,’ it can be used with any Proficiency. If it is tagged as ‘Advanced’ instead, the entry will also list which Proficiencies receive the Maneuver. Some Maneuvers are tagged as being ‘Instant’ and specify their base type, such as ‘Swinging’ or ‘Thrusting.’]
 
-MANEUVER NAME [Cost] 
-Type: [This is the type of the maneuver, for reference to how it can be used. If the proficiency is tagged 
-as ‘Universal,’ it can be used with any Proficiency. If it is tagged as ‘Advanced’ instead, the entry will 
-also list which Proficiencies receive the Maneuver. Some Maneuvers are tagged as being ‘Instant’ and 
-specify their base type, such as ‘Swinging’ or ‘Thrusting.’] 
-Requirements: [These are the requirements to perform the Maneuver.] 
-Maneuver: [This is the actual mechanic for performing the Maneuver.] 
-Success: [This is what happens in the Maneuver succeeds.] 
-Failure: [This is what happens if the Maneuver fails. If a Maneuver has no Failure listed, then it is simply 
-‘Negated,’ a generic failure that has no special effect.] 
-Special: [Additional mechanics, conditions and restrictions are explained here.] 
-Superior: [Some Maneuvers have ‘Superior’ versions that increase the effectiveness of the Maneuver, 
-reduce its cost, or otherwise improve it. Using the Superior version of a Maneuver is optional, the lesser 
-version can always be used. Superior Maneuvers count as the same Maneuver for the purposes of Poor 
-Form, Good Form, and so on.] 
- 
+
+Requirements: [These are the requirements to perform the Maneuver.]
+
+
+Maneuver: [This is the actual mechanic for performing the Maneuver.]
+
+
+Success: [This is what happens in the Maneuver succeeds.]
+
+
+Failure: [This is what happens if the Maneuver fails. If a Maneuver has no Failure listed, then it is simply ‘Negated,’ a generic failure that has no special effect.]
+
+
+Special: [Additional mechanics, conditions and restrictions are explained here.]
+
+
+Superior: [Some Maneuvers have ‘Superior’ versions that increase the effectiveness of the Maneuver, reduce its cost, or otherwise improve it. Using the Superior version of a Maneuver is optional, the lesser version can always be used. Superior Maneuvers count as the same Maneuver for the purposes of Poor Form, Good Form, and so on.]
+
+
 Maneuver List 
 The table below lists all Maneuvers by their Primary and Secondary roles (a Swing is an Attack using a 
 Weapon). It also shows whether a Maneuver is Universal or Advanced (noted as ‘U’ and ‘A’), as well as 
@@ -9238,21 +9005,14 @@ Break U S Attack Weapon Swinging X+2
 Butt-Strike U Attack Weapon Swinging X+2 
 Dacian Rush A Attack Weapon Thrusting 2+X+Y 
 Deep Draw Cut A Attack Weapon Swinging 0 
-Disarm (Attack) U S Attack Weapon Swinging X+1 
-
-
-Punching 
-Feint U Attack Weapon Instant 2+Variable 
-Half-Sword A Attack Weapon Instant 1 
+Disarm (Attack) U S Attack Weapon (Swinging, Punching) X+1 
+Feint U Attack Weapon Instant 2+Variable
+Half-Sword A Attack Weapon Instant 1
 Hew U S Attack Weapon Swinging 0 
-Hook U S Attack Weapon Swinging 
-Thrusting 
-
-1 
-
-Joint Thrust U Attack Weapon Thrusting X+2 
-Melee Shoot U Attack Weapon Thrusting X+Variable 
-Murder-Strike A Attack Weapon Instant 2 
+Hook U S Attack Weapon (Swinging, Thrusting) 1
+Joint Thrust U Attack Weapon Thrusting X+2
+Melee Shoot U Attack Weapon Thrusting X+Variable
+Murder-Strike A Attack Weapon Instant 2
 Pommel Strike A S Attack Weapon Thrusting X 
 Push Cut U S Attack Weapon Thrusting X+1 
 Quickdraw U Attack Weapon Instant 1 
@@ -9262,24 +9022,12 @@ Weapon Throw U Attack Weapon Thrusting X+1
 Clinch (Attack) U S Attack Unarmed Grappling X 
 Elbow U S Attack Unarmed Unarmed X 
 Headbutt U Attack Unarmed Unarmed X+1 
-Hook Punch U S Attack Unarmed Unarmed 
-Punching 
-
-X 
-
+Hook Punch U S Attack Unarmed (Unarmed, Punching) X
 Kick U S Attack Unarmed Unarmed X 
 Knee U S Attack Unarmed Unarmed X 
-One-Two Punch A Attack Unarmed Unarmed 
-Punching 
-
-X+2 
-
+One-Two Punch A Attack Unarmed (Unarmed, Punching) X+2 
 Shoulder Charge U Attack Unarmed Unarmed X 
-Straight Punch U S Attack Unarmed Unarmed 
-Punching 
-
-X 
-
+Straight Punch U S Attack Unarmed (Unarmed, Punching) X
 Shield Bash U S Attack Shield Bash X 
 Shield Beat U S Attack Shield Bash X+2 
 Shield Feint U Attack Shield ????????????? 1 
@@ -9287,15 +9035,9 @@ Blind Toss U Attack Special ????????????? X+Variable
 Strangle U Attack Special Clinching X 
 Parry U Defense Parry Parrying X 
 Quick Defense U Defense Parry Instant 2 
-Riposte A S Defense Parry Parrying 
-Instant 
-
-X+2 
-
-Arm Parry U S Defense Unarmed Parrying X 
-Clinch (Defense) ? ? ? Defense Unarmed Grappling ??? 
-
-
+Riposte A S Defense Parry (Parrying, Instant) X+2 
+Arm Parry U S Defense Unarmed Parrying X
+Clinch (Defense) ? ? ? Defense Unarmed Grappling ???
 Missile Catch U Defense Unarmed ????????????? 2+X 
 Block U Defense Block Blocking X 
 Shield Bind A Defense Block Blocking X+1 
@@ -9311,28 +9053,12 @@ Target Change U Cross Fighting Attack ????????????? 1
 Ally Defense U Cross Fighting Defense ????????????? 2 
 Double Attack U Simultaneous General Attack X+Y+1 
 Double Shot U Simultaneous General Attack X+Y+2 
-Simultaneous Block/Attack U Simultaneous General Blocking 
-Attack 
-
-X+Y 
-
-Simultaneous Off-Hand Parry/Attack U Simultaneous General Parrying 
-Attack 
-
-X+Y+2 
-
-Simultaneous Parry/Attack A S Simultaneous General Parrying 
-Attack 
-
-X+Y+2 
-
-Simultaneous Void/Attack U Simultaneous General Void 
-Attack 
-
-X+Y+2 
-
+Simultaneous Block/Attack U Simultaneous General (Blocking, Attack) X+Y 
+Simultaneous Off-Hand Parry/Attack U Simultaneous General (Parrying, Attack) X+Y+2 
+Simultaneous Parry/Attack A S Simultaneous General (Parrying, Attack) X+Y+2 
+Simultaneous Void/Attack U Simultaneous General (Void, Attack) X+Y+2 
 Aim U S Missile General ????????????? 0 
-Braced Shot A Missile Shooting Shooting ??? 
+Braced Shot A Missile Shooting Shooting ???
 Power-Draw A S Missile Shooting Shooting ??? 
 Rapid Shot U S Missile Shooting Shooting ??? 
 Reload U Missile Shooting ???????????? ??? 
@@ -9346,8 +9072,6 @@ Grapple: Pin U Grapple Advantage ???????????? X
 Grapple: Takedown U Grapple Advantage ???????????? X 
 Grapple: Throw U S Grapple Advantage ???????????? X+2 
 Grapple: Trap U S Grapple Advantage ???????????? X 
-
-
 Grapple: Slip U Grapple Disadvantage ???????????? X 
 Grapple: Twist U Grapple Disadvantage ???????????? X 
 Grapple: Bite U Grapple General Unarmed X+1 
@@ -9383,79 +9107,42 @@ Trample U Mounted Passing 4\^
 Dog Bite U Dog Attack X 
 Savage U Dog Attack X 
 Tackle U Dog Attack 2+X 
+
 \^ = Check required. Refer to Maneuver details. 
-U = Universal Maneuver 
-
-
+U = Universal Maneuver
 A = Advanced Maneuver 
 S = Superior Maneuver 
 ENC = Encumbrance Penalty (presumably to CP). 
- 
 
- 
-
-Attack Maneuvers 
-
- 
+Attack Maneuvers
 
 Attack Maneuvers are generally (though not always) declared with Initiative (see Chapter XX). These all 
 involve some sort of attack aimed at an Opponent. Attack Maneuvers are divided into sub-categories, 
 which when referenced should be denoted with Attack (i.e. an Unarmed Maneuver in this category is an 
 Unarmed Attack, a Weapon Maneuver in this category is a Weapon Attack, etc.) 
 
- 
 
- 
+Weapon Attack Maneuvers
 
- 
+BEAT [X]
+Type: Universal, Swinging
+Requirements: Have a weapon with a Swing TN. It must be the Round immediately after Orientation Declaration, and you must have declared Aggressive.
+Maneuver: Swinging Weapon Attack at Swing TN of weapon, targeting Opponent weapon or shield with X dice. Halve all Reach costs for this Maneuver. For the purpose of Initiative tests involving this Maneuver, Reach costs are not factored into the Initiative roll. 
+Success: Opponent cannot use targeted weapon or shield to perform any action until Refresh. Opponent suffers [BS] Stun. This attack does not change the Reach of combat. 
+Superior: You may now declare this Maneuver in any Action immediately after Refresh if you have Initiative. 
 
- 
 
- 
+Vladock is having trouble getting past his opponent’s spear. He declares a Beat with 8 dice. His opponent declares a Void with 7. Vladock gets 3 BS to his opponent’s 2, and so beats aside his opponent’s weapon and costs him 1 Stun. Vladock can now make an attack in the next Action without fear of being counter-attacked by the spear, since it cannot be used for anything. He’ll still have to pay Range costs, but at least it’s a safe bet instead of a dangerous move. 
 
-Weapon Attack Maneuvers 
 
- 
-
-BEAT [X] 
-Type: Universal, Swinging 
-Requirements: Have a weapon with a Swing TN. It must be the Round immediately after Orientation 
-Declaration, and you must have declared Aggressive. 
-Maneuver: Swinging Weapon Attack at Swing TN of weapon, targeting Opponent weapon or shield with 
-X dice. Halve all Reach costs for this Maneuver. For the purpose of Initiative tests involving this 
-Maneuver, Reach costs are not factored into the Initiative roll. 
-Success: Opponent cannot use targeted weapon or shield to perform any action until Refresh. Opponent 
-suffers [BS] Stun. This attack does not change the Reach of combat. 
-Superior: You may now declare this Maneuver in any Action immediately after Refresh if you have 
-Initiative. 
-
- 
-
-Vladock is having trouble getting past his opponent’s spear. He declares a Beat with 8 dice. His opponent 
-declares a Void with 7. Vladock gets 3 BS to his opponent’s 2, and so beats aside his opponent’s weapon 
-and costs him 1 Stun. Vladock can now make an attack in the next Action without fear of being counter-
-attacked by the spear, since it cannot be used for anything. He’ll still have to pay Range costs, but at least 
-it’s a safe bet instead of a dangerous move. 
-
- 
-
-BREAK [X+2] 
+BREAK [X+2]
 Type: Universal, Swinging 
 Requirements: Have a weapon with a Swing TN. Opponent has a weapon. 
-Maneuver: Swinging Weapon Attack at Weapon Reach at Swing TN, targeting Opponent’s weapon with 
-X dice. 
-Success: Opponent’s weapon sustains damage equal to [STR+Weapon Swing Damage+BS]. If the 
-amount of damage dealt equals or exceeds the damage threshold (listed below) for the targeted weapon, it 
-breaks, and becomes useless except as a potential improvised weapon. At the GM’s discretion, a spear or 
-
-
-polearm may effectively become a quarterstaff after being broken, a wood-hafted blunt weapon might 
-become a truncheon, and so on. 
-Special: This Maneuver ignores Reach modifiers. The user does not move to their weapon’s Reach on a 
-successful attack, but may if the Opponent’s weapon is broken. 
+Maneuver: Swinging Weapon Attack at Weapon Reach at Swing TN, targeting Opponent’s weapon with X dice. 
+Success: Opponent’s weapon sustains damage equal to [STR+Weapon Swing Damage+BS]. If the amount of damage dealt equals or exceeds the damage threshold (listed below) for the targeted weapon, it breaks, and becomes useless except as a potential improvised weapon. At the GM’s discretion, a spear or polearm may effectively become a quarterstaff after being broken, a wood-hafted blunt weapon might become a truncheon, and so on. 
+Special: This Maneuver ignores Reach modifiers. The user does not move to their weapon’s Reach on a successful attack, but may if the Opponent’s weapon is broken. 
 Superior: Break inflicts +2 additional damage. 
 
- 
 
 Weapon Damage Threshold 
 Dagger 12 
@@ -9466,151 +9153,73 @@ Metal-Hafted Blunt 15
 Spear/Polearm 10 
 Langetted/Reinforced Spear/Polearm 12 
 
- 
-Hector is charging a pikeman with his zweihander. Rather than try to close the distance immediately to 
-attack the man, Hector declares a Break against the man’s weapon with 10 dice, paying 2 for activation. 
-His opponent attempts a Void with 8 dice. Hector succeeds with 3 dice to 2, and inflicts 7+3+1 
-(strength+weapon+bonus successes) damage for a total of 11, breaking the pike, whose durability was 
-10. The Pikeman now has only a broken stick, and Hector can deal with him on more even terms. 
 
- 
+Hector is charging a pikeman with his zweihander. Rather than try to close the distance immediately to attack the man, Hector declares a Break against the man’s weapon with 10 dice, paying 2 for activation. His opponent attempts a Void with 8 dice. Hector succeeds with 3 dice to 2, and inflicts 7+3+1 (strength+weapon+bonus successes) damage for a total of 11, breaking the pike, whose durability was 10. The Pikeman now has only a broken stick, and Hector can deal with him on more even terms. 
+
 
 BUTT-STRIKE [X] 
 Type: Universal, Attack, Swinging 
 Requirements: Have a Polearm or Spear weapon, or a Sword being held Half-Swording. 
 Maneuver: Swinging Weapon Attack at Short Reach at Weapon Swing TN, aimed on Swing Table. 
 Success: Inflicts Bludgeoning damage equal to [STR+0+BS] to Hit Location. 
-Special: If this weapon has a metal cap of some sort on the weapon’s reverse end (or if it is a sword being 
-used) this attack inflicts +1 Bludgeoning damage. 
-If Half-Swording the weapon being used for Butt-Strike, the weapon does not suffer the penalty to 
-Swinging damage normally associated with Half-Swording. 
+Special: If this weapon has a metal cap of some sort on the weapon’s reverse end (or if it is a sword being used) this attack inflicts +1 Bludgeoning damage. 
+If Half-Swording the weapon being used for Butt-Strike, the weapon does not suffer the penalty to Swinging damage normally associated with Half-Swording. 
 
- 
 
 DACIAN RUSH [2+X+Y] 
 Type: Advanced, Attack, Thrusting 
-Requirements: Have a Dagger. If Opponent declares a Quickdraw, you may treat this Maneuver as an 
-Instant that occurs before their Quickdraw. 
-Maneuver: Unarmed Attack at Hand Reach with X at Hand Blind TN 7 vs Opponent PER at TN 7. If 
-Opponent has declared a Quickdraw, it is delayed until after this Action is completed. Any defense 
-declared against this Maneuver is not resolved against the Hand Blind, but against the Thrust to follow. 
-Success [Hand Blind]: Opponent suffers [BS] Stun. If a Quickdraw was declared, it is cancelled. You 
-may immediately roll a Thrust Attack with Y as normal. Any non-Weapon Defense against your Thrust 
-
-
-Attack is resolved at +2 TN. 
+Requirements: Have a Dagger. If Opponent declares a Quickdraw, you may treat this Maneuver as an Instant that occurs before their Quickdraw.
+Maneuver: Unarmed Attack at Hand Reach with X at Hand Blind TN 7 vs Opponent PER at TN 7. If Opponent has declared a Quickdraw, it is delayed until after this Action is completed. Any defense declared against this Maneuver is not resolved against the Hand Blind, but against the Thrust to follow. Success [Hand Blind]: Opponent suffers [BS] Stun. If a Quickdraw was declared, it is cancelled. You may immediately roll a Thrust Attack with Y as normal. Any non-Weapon Defense against your Thrust Attack is resolved at +2 TN.
 Failure [Hand Blind]: You may immediately roll a Thrust Attack with Y as normal. 
 Success [Thrust]: Resolve Thrust as normal. 
-Special [Rapid Thrust]: Weapons of Short Reach or Shorter only. If Thrust is successful, you may pay 
-1+X additional CP to make another Thrust with X dice as part of the same Action. Resolve Thrust as 
-normal. The Opponent may use Quick Defense against this Maneuver. 
+Special [Rapid Thrust]: Weapons of Short Reach or Shorter only. If Thrust is successful, you may pay 1+X additional CP to make another Thrust with X dice as part of the same Action. Resolve Thrust as normal. The Opponent may use Quick Defense against this Maneuver. 
 
- 
-Vlatko rushes out of concealment to assassinate a Marju Khan, who has just left the bathhouse in a robe. He has a Pishkan 
-Toothpick as his weapon, and declares a Dacian Rush. 
- 
-Vlatko has 15 CP. The Khan has 20 normally, but this Action he is surprised, and has only 10. Vlatko declares a Dacian Rush 
-with 2+6+7 dice. The Khan tries to Quickdraw his saber by spending 1 CP, so that he can Parry the Dacian's knife with 8 dice. 
-First the Khan must roll his PER (5) versus Vlatko's 6 dice, both at TN 7. 
- 
-Vlatko succeeds by 1 BS, and in doing so inflicts 1 Stun, cancels the Khan's Quickdraw, and also his Parry, returning half of the 
-dice spent (0 from Quickdraw, 4 from the Parry) to his pool. Stun reduces this to 3, meaning the Khan only has 4 CP left. Vlatko 
-now resolves his Thrust with 7 dice, the Khan tries to use Quick Defense with an Arm Parry by spending 2 and then defending 
-with his remaining 2 dice. However, this Arm Parry is made at +2 TN (TN 9 for Arm Parry) meaning the Khan is less than likely 
-to succeed. 
- 
-Vlatko gets 4 successes, the Khan gets 0. Vlatko inflicts STR+Weapon Damage+BS for 5+1+4 piercing damage to the Khan’s 
-TOU of 5 and the AV of his clothing (ruled to be 1) inflicting a level 4 piercing Wound to the Belly through the Khan's robe. The 
-Khan takes more damage than he can handle, and fails his Overshock test, becoming prone. Both parties have 0 CP left. 
- 
-If Vlatko had a few more dice, he could declare a Rapid Thrust to stab the man again, but instead he'll just wait for the Refresh to 
-finish the injured warlord off. 
- 
+
+Vlatko rushes out of concealment to assassinate a Marju Khan, who has just left the bathhouse in a robe. He has a Pishkan Toothpick as his weapon, and declares a Dacian Rush. Vlatko has 15 CP. The Khan has 20 normally, but this Action he is surprised, and has only 10. Vlatko declares a Dacian Rush with 2+6+7 dice. The Khan tries to Quickdraw his saber by spending 1 CP, so that he can Parry the Dacian's knife with 8 dice. First the Khan must roll his PER (5) versus Vlatko's 6 dice, both at TN 7. Vlatko succeeds by 1 BS, and in doing so inflicts 1 Stun, cancels the Khan's Quickdraw, and also his Parry, returning half of the dice spent (0 from Quickdraw, 4 from the Parry) to his pool. Stun reduces this to 3, meaning the Khan only has 4 CP left. Vlatko now resolves his Thrust with 7 dice, the Khan tries to use Quick Defense with an Arm Parry by spending 2 and then defending with his remaining 2 dice. However, this Arm Parry is made at +2 TN (TN 9 for Arm Parry) meaning the Khan is less than likely to succeed. Vlatko gets 4 successes, the Khan gets 0. Vlatko inflicts STR+Weapon Damage+BS for 5+1+4 piercing damage to the Khan’s TOU of 5 and the AV of his clothing (ruled to be 1) inflicting a level 4 piercing Wound to the Belly through the Khan's robe. The Khan takes more damage than he can handle, and fails his Overshock test, becoming prone. Both parties have 0 CP left. If Vlatko had a few more dice, he could declare a Rapid Thrust to stab the man again, but instead he'll just wait for the Refresh to finish the injured warlord off.
+
+
 DEEP DRAW CUT [0] 
 Type: Advanced, Attack, Swinging 
 Requirements: Wielding a weapon which inflicts Cutting damage on Swing. 
-Maneuver: Declare a Swing Attack as normal, but decrease the Reach of the weapon by one step 
-(Medium to Short, Short to Hand, and so on) paying Reach costs for the new Reach if necessary. Reduce 
-the number of BS needed to trigger Draw Cut with this Swing by 1. 
+Maneuver: Declare a Swing Attack as normal, but decrease the Reach of the weapon by one step (Medium to Short, Short to Hand, and so on) paying Reach costs for the new Reach if necessary. Reduce the number of BS needed to trigger Draw Cut with this Swing by 1.
 
- 
-Jerzy, who is fighting with brigands, and has been stabbed in the side, has just stolen Initiative, but he only has 4 remaini ng dice. 
-His Hussar Saber has Draw 3, and he means to take advantage of it. He declares a Deep Draw Cut, moving his weapon to S 
-Reach (convenient, as the fight is now at S Reach because of his stabbing) putting 4 dice on a Strike to the neck. He gets 2 
-successes, and thanks to Deep Draw Cut, that’s enough to activate the Draw damage of his Hussar Saber. His Strength of 4, plus 
-1 for the weapon, plus 3 for the Draw, plus 2 for the BS equals 10 total damage. Jerzy scores a Level 5 Wound, and decapitates 
-his foe. If he hadn’t used Deep Draw Cut, he would’ve only inflicted 7 damage, which would’ve only been a level 2 Wound, and 
-his opponent’s attack might’ve gone through.. 
-. 
-DISARM [X+1] 
+Jerzy, who is fighting with brigands, and has been stabbed in the side, has just stolen Initiative, but he only has 4 remaining dice. His Hussar Saber has Draw 3, and he means to take advantage of it. He declares a Deep Draw Cut, moving his weapon to S Reach (convenient, as the fight is now at S Reach because of his stabbing) putting 4 dice on a Strike to the neck. He gets 2 successes, and thanks to Deep Draw Cut, that’s enough to activate the Draw damage of his Hussar Saber. His Strength of 4, plus 1 for the weapon, plus 3 for the Draw, plus 2 for the BS equals 10 total damage. Jerzy scores a Level 5 Wound, and decapitates his foe. If he hadn’t used Deep Draw Cut, he would’ve only inflicted 7 damage, which would’ve only been a level 2 Wound, and his opponent’s attack might’ve gone through\ldots
+
+DISARM [X+1]
 Type: Universal, Attack, Swinging or Punching 
 Requirements: None 
-Maneuver: Swinging Weapon Attack at Weapon Reach at Parry TN, OR Punching Unarmed Attack at 
-Hand Reach at Punch TN 6, targeting Opponent weapon. 
-Success: Opponent must make an AGI test with RS equal to BS. If this test is failed, the targeted weapon 
-
-
-is removed from the Opponent's grasp, and either retained by you, dropped at your feet, or thrown several 
-yards away at your discretion. 
-Special: If an Opponent’s weapon is a 2H weapon, the Opponent gains a +1 bonus to his AGI test. 
- If the weapon is connected to your character by some means (a lanyard or a chain, etc) the weapon is 
-dropped, but can be retrieved as though Drawing the weapon, or Quickdraw. 
+Maneuver: Swinging Weapon Attack at Weapon Reach at Parry TN, OR Punching Unarmed Attack at Hand Reach at Punch TN 6, targeting Opponent weapon. 
+Success: Opponent must make an AGI test with RS equal to BS. If this test is failed, the targeted weapon is removed from the Opponent's grasp, and either retained by you, dropped at your feet, or thrown several yards away at your discretion.
+Special: If an Opponent’s weapon is a 2H weapon, the Opponent gains a +1 bonus to his AGI test.  If the weapon is connected to your character by some means (a lanyard or a chain, etc) the weapon is dropped, but can be retrieved as though Drawing the weapon, or Quickdraw. 
 Superior: When disarming an Opponent with a 2H weapon, they do not gain the normal +1 bonus to the 
 stability test. 
 
- 
+
 Dusan and Mirza are practicing their swordsmanship. Dusan has declared a Disarm with 6 dice, and Mirza has declared a 
-Parry with 5. Dusan scores 3 successes to Mirza’s 2. Mirza must now make an AGI test at RS 3 (2 base +1 for BS). He has 5 
-AGI, but only rolls 2 successes. He is disarmed, and his weapon is tossed some distance away. Mirza grins bitterly as he goes to 
-retrieve his sword. 
- 
+Parry with 5. Dusan scores 3 successes to Mirza’s 2. Mirza must now make an AGI test at RS 3 (2 base +1 for BS). He has 5 AGI, but only rolls 2 successes. He is disarmed, and his weapon is tossed some distance away. Mirza grins bitterly as he goes to retrieve his sword.
+
+
 FEINT [2+Variable] 
 Type: Universal, Attack, Instant 
-Requirements: Activate after having declared a Swinging or Thrusting Maneuver, and after any other 
-Maneuvers have been declared, but before any are resolved. You may only activate this Maneuver from a 
-Thrusting Maneuver if the weapon being used has the Fluid Thrusts quality. 
-Maneuver: When activated, change either the type of the attack (to either a Swinging or Thrusting 
-Maneuver) or (if the Maneuver targets an area) the Hit Location of the attack (Face to Chest, Chest to 
-Upper Arm, etc.). You may elect to change both if applicable, but you must choose at least one. You may 
-pay 2 dice to add 1 dice to this attack, as many times as you can afford. 
-Additionally, your opponent suffers a +1 TN to any Defense made against this Attack unless he plays 2 
-CP. 
+Requirements: Activate after having declared a Swinging or Thrusting Maneuver, and after any other Maneuvers have been declared, but before any are resolved. You may only activate this Maneuver from a Thrusting Maneuver if the weapon being used has the Fluid Thrusts quality. 
+Maneuver: When activated, change either the type of the attack (to either a Swinging or Thrusting Maneuver) or (if the Maneuver targets an area) the Hit Location of the attack (Face to Chest, Chest to Upper Arm, etc.). You may elect to change both if applicable, but you must choose at least one. You may pay 2 dice to add 1 dice to this attack, as many times as you can afford. Additionally, your opponent suffers a +1 TN to any Defense made against this Attack unless he plays 2 CP.
 
- 
 
 HALF-SWORD [1] 
 Type: Advanced, Instant 
 Requirements: Have any Sword without the Light Blade special rule. 
-Maneuver: This weapon is now Half-Swording. Reduce the Reach of your weapon by 1 stage, and 
-reduce Swing damage by 2. If the weapon being used was 1H with Hand-Off, it is now 2H. If it was 2H, 
-it remains 2H. When performing a Joint Thrust Maneuver while Half-Swording, your weapon counts as 
-having the Thin Blade rule, if it did not previously, and the damage of the Joint Thrust is made at 
-[Weapon Damage+STR+BS] instead of [Weapon Damage+Half STR+BS]. Additionally, Pommel Strike 
-Maneuvers performed while Half-Swording inflict +1 damage. 
-You may deactivate this Maneuver instantly and at no cost before an Action. The weapon immediately 
-regains its original characteristics and loses all bonuses. 
-This Maneuver can be activated instantly before declaring another Maneuver. 
-This Maneuver cannot be activated and deactivated in the same Action. 
+Maneuver: This weapon is now Half-Swording. Reduce the Reach of your weapon by 1 stage, and reduce Swing damage by 2. If the weapon being used was 1H with Hand-Off, it is now 2H. If it was 2H, it remains 2H. When performing a Joint Thrust Maneuver while Half-Swording, your weapon counts as having the Thin Blade rule, if it did not previously, and the damage of the Joint Thrust is made at [Weapon Damage+STR+BS] instead of [Weapon Damage+Half STR+BS]. Additionally, Pommel Strike Maneuvers performed while Half-Swording inflict +1 damage. You may deactivate this Maneuver instantly and at no cost before an Action. The weapon immediately regains its original characteristics and loses all bonuses. This Maneuver can be activated instantly before declaring another Maneuver. This Maneuver cannot be activated and deactivated in the same Action.
 Special: If the weapon being Half-Sworded has the Hand-Off quality, determine its Half-Sword attributes 
 based on its 2H version, regardless of whether the Maneuver was activated from 1H or 2H mode. 
-
- 
 
 HEW [0] 
 Type: Universal, Attack, Swinging 
 Requirements: Have a weapon with a Swing TN. 
-Maneuver: Swinging Weapon Attack at Weapon Reach, at Weapon Swing TN targeting Opponent 
-
-
-shield. 
-Success: Opponent takes [half BS] Stun. Opponent’s shield then sustains damage equal to [STR+Weapon 
-Damage+BS] against its Durability. If the damage equals or exceeds its Durability, the shield is 
-destroyed. If it does not, the shield remains intact but permanently loses 2 Durability, weakening it to 
-further Hews attempts. 
+Maneuver: Swinging Weapon Attack at Weapon Reach, at Weapon Swing TN targeting Opponent shield.
+Success: Opponent takes [half BS] Stun. Opponent’s shield then sustains damage equal to [STR+Weapon Damage+BS] against its Durability. If the damage equals or exceeds its Durability, the shield is destroyed. If it does not, the shield remains intact but permanently loses 2 Durability, weakening it to further Hews attempts.
 Special: Blocking Maneuvers made to defend against this Maneuver are made at +1 TN. 
 Superior: If this Hew fails to destroy a shield it hits, it reduces that shield’s Durability by an additional 1. 
 
- 
 
 HOOK [1] 
 Type: Universal, Attack, Swinging OR Thrusting 
@@ -9626,7 +9235,6 @@ or longer.
 Superior: If targeting an Opponent on a mount, add BS to the number of feet that the character 
 effectively falls after being pulled from saddle. 
 
- 
 
 JOINT THRUST [X+2] 
 Type: Universal, Attack, Thrusting 
@@ -9646,7 +9254,6 @@ This attack does not benefit from AP Thrust [X] unless there is Hard Armor on th
 from that which is being ignored by this Maneuver, such as mail worn beneath the plate, in which case it 
 does benefit from AP Thrust [X], and also from rules like Thin Blade’s AP Thrust 3 vs mail. 
 
- 
 
 MELEE SHOOT [X+Variable] 
 Type: Universal, Attack, Thrusting 
@@ -9697,39 +9304,27 @@ Special: When rolling an Initiative test to determine attack order while making 
 Maneuver, you may roll 1 additional die in the test. If you are Half-Swording when you resolve your 
 Pommel Strike, add +1 to its damage, as explained in the Half-Sword maneuver. 
 
- 
 
 PUSH CUT [X+1] 
 Type: Universal, Attack, Thrusting 
 Requirements: You have a weapon with both a Thrust TN, and a Swing TN that inflicts cutting damage. 
 Maneuver: Thrusting Weapon Attack at Weapon Reach, rolled at Thrust TN, aimed on the Thrusting 
-Attack Table. 
-
-
+Attack Table.
 Success: Inflicts cutting damage equal to [STR+Weapon Swing Damage-1+BS] to Hit Location. 
 Special: When rolling an Initiative test to determine attack order while making a Push Cut, you may roll 1 
 additional die in the test. This is identical to the bonus gained for the Thrust Maneuver. 
 This attack does not apply AP Swing/Thrust, Crushing, or Shock effects. 
 This attack inflicts Draw damage. 
-Superior: When performing a Push Cut, reduce the number of BS needed to trigger Draw by 1. 
-
- 
+Superior: When performing a Push Cut, reduce the number of BS needed to trigger Draw by 1.
 
 QUICKDRAW [1] 
 Type: Universal, Instant 
-Requirements: Have a weapon that you want drawn, and have the capacity to draw it. This Maneuver 
-can only be activated if no other Maneuvers have been used first. 
-Maneuver: When activated, roll ADR at 1 RS per Reach level of the weapon past H Reach. This is 
-instant, and does not resolve in Initiative. H Reach weapons automatically succeed. Weapon with greater 
-than L Reach cannot be Quickdrawn. 
-The RS for Quickdrawing missile weapons of various sorts is listed in the table below. (If the missile 
-weapon cannot be)
-Success: You immediately draw the weapon, and may declare a Swing, Thrust or Parry Maneuver in this 
-same Action. These Maneuvers must be made with the Quickdrawn weapon. 
-Special: If the weapon being Quickdrawn has the Draw special quality, reduces the RS to successfully 
-Quickdraw it by 2. 
+Requirements: Have a weapon that you want drawn, and have the capacity to draw it. This Maneuver can only be activated if no other Maneuvers have been used first.
+Maneuver: When activated, roll ADR at 1 RS per Reach level of the weapon past H Reach. This is instant, and does not resolve in Initiative. H Reach weapons automatically succeed. Weapon with greater than L Reach cannot be Quickdrawn.
+The RS for Quickdrawing missile weapons of various sorts is listed in the table below. (If the missile weapon cannot be)
+Success: You immediately draw the weapon, and may declare a Swing, Thrust or Parry Maneuver in this same Action. These Maneuvers must be made with the Quickdrawn weapon. 
+Special: If the weapon being Quickdrawn has the Draw special quality, reduces the RS to successfully Quickdraw it by 2. 
 
- 
 
 Missile Weapon Quickdraw RS 
 Pistol 1 
@@ -9741,7 +9336,7 @@ Heavy Crossbow 4
 Small Bow 4 
 Large Bow 6 
 
- 
+
 SWING [X] 
 Type: Universal, Swinging 
 Requirements: Wielding a weapon with a Swing TN. 
@@ -16721,16 +16316,9 @@ Level
 
 Stun Pain Bleed Special Description 
 
-Level 1 3 1 0 - Blow to the kidney. Painful. 
-Level 2 5 2 0 - Severe blow to the kidney. 
-Level 3 6 4 0 KO vs 2 Savage kidney blow. Possible unconsciousness. 
-Level 4 5 2 0 KO vs 3 Agonizing kidney shot, unconsciousness 
-likely. 
-Level 5 10 5 1 KO vs 4, Internal 
-Bleeding 
-
-Kidney damage! Jesus Christ! 
-
- 
-
+%Level 1 &3 &1 &0 &- &Blow to the kidney. Painful. 
+%Level 2 &5 &2 &0 &- &Severe blow to the kidney. 
+%Level 3 &6 &4 &0 &KO& vs 2 Savage kidney blow. Possible unconsciousness. 
+%Level 4 &5 &2 &0 &KO& vs 3 Agonizing kidney shot, unconsciousness likely. 
+%Level 5 &10 &5 &1 &KO vs 4, Internal Bleeding &Kidney damage! Jesus Christ! 
 \end{document}
