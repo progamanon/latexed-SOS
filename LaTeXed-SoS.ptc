@@ -232,118 +232,131 @@
 \contentsline {paragraph}{Crafting}{107}{section*.277}
 \contentsline {paragraph}{Engineering}{107}{section*.278}
 \contentsline {paragraph}{History}{108}{section*.279}
-\contentsline {paragraph}{Hunting}{108}{section*.280}
-\contentsline {paragraph}{Intimidate}{109}{section*.281}
-\contentsline {paragraph}{Navigation}{110}{section*.282}
-\contentsline {paragraph}{Observation}{110}{section*.283}
-\contentsline {paragraph}{Orate}{111}{section*.284}
-\contentsline {paragraph}{Perform}{112}{section*.285}
-\contentsline {paragraph}{Persuasion}{112}{section*.286}
-\contentsline {paragraph}{Politics}{113}{section*.287}
-\contentsline {paragraph}{Research}{113}{section*.288}
-\contentsline {paragraph}{Riding}{114}{section*.289}
-\contentsline {paragraph}{Sailing}{114}{section*.290}
-\contentsline {paragraph}{Stealth}{114}{section*.291}
-\contentsline {paragraph}{Subterfuge}{115}{section*.292}
-\contentsline {paragraph}{Surgery}{115}{section*.293}
-\contentsline {paragraph}{Swimming}{115}{section*.294}
-\contentsline {chapter}{\numberline {8}Social Class and Wealth}{117}{chapter.8}
+\contentsline {paragraph}{Hunting}{109}{section*.280}
+\contentsline {paragraph}{Intimidate}{110}{section*.281}
+\contentsline {paragraph}{Navigation}{111}{section*.282}
+\contentsline {paragraph}{Observation}{111}{section*.283}
+\contentsline {paragraph}{Orate}{112}{section*.284}
+\contentsline {paragraph}{Perform}{113}{section*.285}
+\contentsline {paragraph}{Persuasion}{113}{section*.286}
+\contentsline {paragraph}{Politics}{114}{section*.287}
+\contentsline {paragraph}{Research}{114}{section*.288}
+\contentsline {paragraph}{Riding}{115}{section*.289}
+\contentsline {paragraph}{Sailing}{115}{section*.290}
+\contentsline {paragraph}{Stealth}{116}{section*.291}
+\contentsline {paragraph}{Subterfuge}{117}{section*.292}
+\contentsline {paragraph}{Surgery}{117}{section*.293}
+\contentsline {subparagraph}{Perform Surgery:}{117}{section*.294}
+\contentsline {paragraph}{Swimming}{118}{section*.295}
+\contentsline {subparagraph}{When failed: Drowning}{118}{section*.296}
+\contentsline {chapter}{\numberline {8}Social Class and Wealth}{120}{chapter.8}
 \ttl@stoptoc {chapters@6}
 \ttl@starttoc {chapters@7}
-\contentsline {section}{\numberline {8.1}Character Creation}{118}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Social Class Benefits}{118}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}Abnormal Social Class and Wealth Combinations}{119}{subsection.8.1.2}
-\contentsline {section}{\numberline {8.2}Wealth}{120}{section.8.2}
-\contentsline {chapter}{\numberline {9}Equipment}{122}{chapter.9}
+\contentsline {section}{\numberline {8.1}Character Creation}{121}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Social Class Benefits}{121}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Abnormal Social Class and Wealth Combinations}{122}{subsection.8.1.2}
+\contentsline {section}{\numberline {8.2}Wealth}{123}{section.8.2}
+\contentsline {chapter}{\numberline {9}Equipment}{125}{chapter.9}
 \ttl@stoptoc {chapters@7}
 \ttl@starttoc {chapters@8}
-\contentsline {chapter}{\numberline {10}Melee Weapons}{124}{chapter.10}
-\contentsline {subsection}{\numberline {10.0.1}Which Weapon for Me?}{124}{subsection.10.0.1}
-\contentsline {subsubsection}{Attack TN}{125}{section*.298}
-\contentsline {subsubsection}{Attack Damage}{125}{section*.299}
-\contentsline {subsubsection}{Defense TN / Guard}{125}{section*.300}
-\contentsline {subsubsection}{Reach}{125}{section*.301}
-\contentsline {subsubsection}{Special}{125}{section*.302}
-\contentsline {subsubsection}{How Many Weapons?}{126}{section*.303}
-\contentsline {subsection}{\numberline {10.0.2}Melee Weapon Characteristics}{126}{subsection.10.0.2}
-\contentsline {subsubsection}{Weapon Name}{126}{section*.304}
-\contentsline {subsubsection}{Weapon Type}{126}{section*.305}
-\contentsline {subsubsection}{Hands}{126}{section*.306}
-\contentsline {subsubsection}{Reach}{126}{section*.307}
-\contentsline {subsubsection}{Swing}{127}{section*.309}
-\contentsline {subsubsection}{Thrust}{127}{section*.310}
-\contentsline {subsubsection}{Defense / Guard}{127}{section*.311}
-\contentsline {subsubsection}{Special}{127}{section*.312}
-\contentsline {subsubsection}{Weight}{127}{section*.313}
-\contentsline {subsubsection}{Cost}{128}{section*.314}
-\contentsline {section}{\numberline {10.1}Daggers}{128}{section.10.1}
-\contentsline {section}{\numberline {10.2}Swords}{130}{section.10.2}
-\contentsline {subsection}{\numberline {10.2.1}1H Swords}{130}{subsection.10.2.1}
-\contentsline {subsection}{\numberline {10.2.2}2H Swords}{134}{subsection.10.2.2}
-\contentsline {section}{\numberline {10.3}Blunt}{136}{section.10.3}
-\contentsline {subsection}{\numberline {10.3.1}1H Blunt}{136}{subsection.10.3.1}
-\contentsline {subsubsection}{1H Blunt Weapon Attachments}{138}{section*.315}
-\contentsline {subsection}{\numberline {10.3.2}2H Blunt}{138}{subsection.10.3.2}
-\contentsline {subsubsection}{2H Blunt Weapon Attachments}{142}{section*.316}
-\contentsline {section}{\numberline {10.4}Spears}{142}{section.10.4}
-\contentsline {subsection}{\numberline {10.4.1}Spear Weapon Attachments}{145}{subsection.10.4.1}
-\contentsline {section}{\numberline {10.5}Polearms}{145}{section.10.5}
-\contentsline {subsection}{\numberline {10.5.1}Polearm Weapon Attachments}{150}{subsection.10.5.1}
-\contentsline {section}{\numberline {10.6}Special Qualities}{150}{section.10.6}
-\contentsline {paragraph}{AP Swing [X]}{150}{section*.317}
-\contentsline {paragraph}{AP Thrust [X]}{150}{section*.318}
-\contentsline {paragraph}{Bleed [X]}{150}{section*.319}
-\contentsline {paragraph}{Brace}{150}{section*.320}
-\contentsline {paragraph}{Cavalry Sword}{150}{section*.321}
-\contentsline {paragraph}{Chain [X]}{151}{section*.322}
-\contentsline {paragraph}{Companion Weapon}{151}{section*.323}
-\contentsline {paragraph}{Couched Charge}{151}{section*.324}
-\contentsline {paragraph}{Crushing [X]}{151}{section*.325}
-\contentsline {paragraph}{Draw [X]}{151}{section*.326}
-\contentsline {paragraph}{Fluid Thrusts}{151}{section*.327}
-\contentsline {paragraph}{Forward Swept}{151}{section*.328}
-\contentsline {paragraph}{Freakishly Large}{151}{section*.329}
-\contentsline {paragraph}{Hand-Off}{152}{section*.330}
-\contentsline {paragraph}{Heavy Weapon}{152}{section*.331}
-\contentsline {paragraph}{Hook}{152}{section*.332}
-\contentsline {paragraph}{Light Blade}{152}{section*.333}
-\contentsline {paragraph}{Multi-Hit [Y] [X]}{152}{section*.334}
-\contentsline {paragraph}{Parrying Teeth}{152}{section*.335}
-\contentsline {paragraph}{Shock [X]}{152}{section*.336}
-\contentsline {paragraph}{Spatulate Tip [X]}{152}{section*.337}
-\contentsline {paragraph}{Swinging Slot}{152}{section*.338}
-\contentsline {paragraph}{Thin Blade}{152}{section*.339}
-\contentsline {paragraph}{Thrusting Slot}{153}{section*.340}
-\contentsline {paragraph}{Tight Grip [X]}{153}{section*.341}
-\contentsline {paragraph}{Weapon Attachment}{153}{section*.342}
-\contentsline {section}{\numberline {10.7}Materials}{153}{section.10.7}
-\contentsline {paragraph}{Limited Supply}{154}{section*.343}
-\contentsline {section}{\numberline {10.8}Customization Options}{154}{section.10.8}
-\contentsline {paragraph}{Ridiculously Sharp}{154}{section*.344}
-\contentsline {paragraph}{Bizarre Gimmick}{154}{section*.345}
-\contentsline {paragraph}{Examples for Bizarre Gimmick:}{155}{section*.346}
-\contentsline {paragraph}{Custom Hilt (+50\% Cost)}{155}{section*.347}
-\contentsline {paragraph}{Custom Grip (+50\% Cost)}{155}{section*.348}
-\contentsline {paragraph}{Exquisite Decoration}{155}{section*.349}
-\contentsline {paragraph}{Fine Forging (+50\% Cost)}{155}{section*.350}
-\contentsline {paragraph}{Integrated Pistol (+100\% Cost AND 1 gp)}{155}{section*.351}
-\contentsline {chapter}{\numberline {11}Missile Weapons}{157}{chapter.11}
-\contentsline {chapter}{\numberline {12}Armor}{169}{chapter.12}
-\contentsline {chapter}{\numberline {13}Burdinadin Armory}{187}{chapter.13}
-\contentsline {chapter}{\numberline {14}Proficiencies}{197}{chapter.14}
+\contentsline {chapter}{\numberline {10}Melee Weapons}{127}{chapter.10}
 \ttl@stoptoc {chapters@8}
 \ttl@starttoc {chapters@9}
-\contentsline {chapter}{\numberline {15}Maneuvers}{208}{chapter.15}
+\contentsline {subsection}{\numberline {10.0.1}Which Weapon for Me?}{128}{subsection.10.0.1}
+\contentsline {subsubsection}{Attack TN}{128}{section*.301}
+\contentsline {subsubsection}{Attack Damage}{128}{section*.302}
+\contentsline {subsubsection}{Defense TN / Guard}{129}{section*.303}
+\contentsline {subsubsection}{Reach}{129}{section*.304}
+\contentsline {subsubsection}{Special}{129}{section*.305}
+\contentsline {subsubsection}{How Many Weapons?}{129}{section*.306}
+\contentsline {subsection}{\numberline {10.0.2}Melee Weapon Characteristics}{129}{subsection.10.0.2}
+\contentsline {subsubsection}{Weapon Name}{129}{section*.307}
+\contentsline {subsubsection}{Weapon Type}{130}{section*.308}
+\contentsline {subsubsection}{Hands}{130}{section*.309}
+\contentsline {subsubsection}{Reach}{130}{section*.310}
+\contentsline {subsubsection}{Swing}{130}{section*.312}
+\contentsline {subsubsection}{Thrust}{130}{section*.313}
+\contentsline {subsubsection}{Defense / Guard}{131}{section*.314}
+\contentsline {subsubsection}{Special}{131}{section*.315}
+\contentsline {subsubsection}{Weight}{131}{section*.316}
+\contentsline {subsubsection}{Cost}{131}{section*.317}
+\contentsline {section}{\numberline {10.1}Daggers}{131}{section.10.1}
+\contentsline {section}{\numberline {10.2}Swords}{133}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}1H Swords}{133}{subsection.10.2.1}
+\contentsline {subsection}{\numberline {10.2.2}2H Swords}{136}{subsection.10.2.2}
+\contentsline {section}{\numberline {10.3}Blunt}{138}{section.10.3}
+\contentsline {subsection}{\numberline {10.3.1}1H Blunt}{138}{subsection.10.3.1}
+\contentsline {subsubsection}{1H Blunt Weapon Attachments}{139}{section*.318}
+\contentsline {subsection}{\numberline {10.3.2}2H Blunt}{140}{subsection.10.3.2}
+\contentsline {subsubsection}{2H Blunt Weapon Attachments}{142}{section*.319}
+\contentsline {section}{\numberline {10.4}Spears}{143}{section.10.4}
+\contentsline {subsection}{\numberline {10.4.1}Spear Weapon Attachments}{145}{subsection.10.4.1}
+\contentsline {section}{\numberline {10.5}Polearms}{145}{section.10.5}
+\contentsline {subsection}{\numberline {10.5.1}Polearm Weapon Attachments}{149}{subsection.10.5.1}
+\contentsline {section}{\numberline {10.6}Special Qualities}{149}{section.10.6}
+\contentsline {paragraph}{AP Swing [X]}{149}{section*.320}
+\contentsline {paragraph}{AP Thrust [X]}{149}{section*.321}
+\contentsline {paragraph}{Bleed [X]}{149}{section*.322}
+\contentsline {paragraph}{Brace}{150}{section*.323}
+\contentsline {paragraph}{Cavalry Sword}{150}{section*.324}
+\contentsline {paragraph}{Chain [X]}{150}{section*.325}
+\contentsline {paragraph}{Companion Weapon}{150}{section*.326}
+\contentsline {paragraph}{Couched Charge}{150}{section*.327}
+\contentsline {paragraph}{Crushing [X]}{150}{section*.328}
+\contentsline {paragraph}{Draw [X]}{150}{section*.329}
+\contentsline {paragraph}{Fluid Thrusts}{150}{section*.330}
+\contentsline {paragraph}{Forward Swept}{150}{section*.331}
+\contentsline {paragraph}{Freakishly Large}{151}{section*.332}
+\contentsline {paragraph}{Hand-Off}{151}{section*.333}
+\contentsline {paragraph}{Heavy Weapon}{151}{section*.334}
+\contentsline {paragraph}{Hook}{151}{section*.335}
+\contentsline {paragraph}{Light Blade}{151}{section*.336}
+\contentsline {paragraph}{Multi-Hit [Y] [X]}{151}{section*.337}
+\contentsline {paragraph}{Parrying Teeth}{151}{section*.338}
+\contentsline {paragraph}{Shock [X]}{151}{section*.339}
+\contentsline {paragraph}{Spatulate Tip [X]}{151}{section*.340}
+\contentsline {paragraph}{Swinging Slot}{151}{section*.341}
+\contentsline {paragraph}{Thin Blade}{152}{section*.342}
+\contentsline {paragraph}{Thrusting Slot}{152}{section*.343}
+\contentsline {paragraph}{Tight Grip [X]}{152}{section*.344}
+\contentsline {paragraph}{Weapon Attachment}{152}{section*.345}
+\contentsline {section}{\numberline {10.7}Materials}{152}{section.10.7}
+\contentsline {paragraph}{Limited Supply}{153}{section*.346}
+\contentsline {section}{\numberline {10.8}Customization Options}{153}{section.10.8}
+\contentsline {paragraph}{Ridiculously Sharp}{153}{section*.347}
+\contentsline {paragraph}{Bizarre Gimmick}{153}{section*.348}
+\contentsline {paragraph}{Examples for Bizarre Gimmick:}{154}{section*.349}
+\contentsline {paragraph}{Custom Hilt (+50\% Cost)}{154}{section*.350}
+\contentsline {paragraph}{Custom Grip (+50\% Cost)}{154}{section*.351}
+\contentsline {paragraph}{Exquisite Decoration}{154}{section*.352}
+\contentsline {paragraph}{Fine Forging (+50\% Cost)}{154}{section*.353}
+\contentsline {paragraph}{Integrated Pistol (+100\% Cost AND 1 gp)}{154}{section*.354}
+\contentsline {chapter}{\numberline {11}Missile Weapons}{156}{chapter.11}
 \ttl@stoptoc {chapters@9}
 \ttl@starttoc {chapters@10}
-\contentsline {chapter}{\numberline {16}Adventuring}{244}{chapter.16}
+\contentsline {chapter}{\numberline {12}Armor}{168}{chapter.12}
 \ttl@stoptoc {chapters@10}
 \ttl@starttoc {chapters@11}
-\contentsline {section}{\numberline {16.1}Exhaustion}{246}{section.16.1}
-\contentsline {chapter}{\numberline {17}Combat}{248}{chapter.17}
+\contentsline {chapter}{\numberline {13}Burdinadin Armory}{187}{chapter.13}
 \ttl@stoptoc {chapters@11}
 \ttl@starttoc {chapters@12}
-\contentsline {chapter}{\numberline {18}Injury and Recovery}{272}{chapter.18}
+\contentsline {chapter}{\numberline {14}Proficiencies}{197}{chapter.14}
 \ttl@stoptoc {chapters@12}
 \ttl@starttoc {chapters@13}
+\contentsline {chapter}{\numberline {15}Maneuvers}{208}{chapter.15}
+\ttl@stoptoc {chapters@13}
+\ttl@starttoc {chapters@14}
+\contentsline {subsection}{\numberline {15.0.1}Gaining Maneuvers}{209}{subsection.15.0.1}
+\contentsline {subsection}{\numberline {15.0.2}Using Maneuvers}{209}{subsection.15.0.2}
+\contentsline {section}{\numberline {15.1}Maneuvers List}{209}{section.15.1}
+\contentsline {chapter}{\numberline {16}Adventuring}{244}{chapter.16}
+\ttl@stoptoc {chapters@14}
+\ttl@starttoc {chapters@15}
+\contentsline {section}{\numberline {16.1}Exhaustion}{246}{section.16.1}
+\contentsline {chapter}{\numberline {17}Combat}{248}{chapter.17}
+\ttl@stoptoc {chapters@15}
+\ttl@starttoc {chapters@16}
+\contentsline {chapter}{\numberline {18}Injury and Recovery}{272}{chapter.18}
+\ttl@stoptoc {chapters@16}
+\ttl@starttoc {chapters@17}
 \contentsfinish 
