@@ -1,5 +1,6 @@
 %BEGIN_FOLD%including all packages, settings etc.
 %LETTRINE and \ornamento are to be learned
+%FIX ROWSEP IN TABU
 \RequirePackage[l2tabu,orthodox]{nag}
 \documentclass[oneside,11pt,english]{book}
 \usepackage{babel}
@@ -32,8 +33,8 @@
 \geometry{
 	tmargin=3cm, 
 	bmargin=3cm, 
-	lmargin=2cm, 
-	rmargin=2cm,
+	lmargin=1.5cm, 
+	rmargin=1.5cm,
 	headheight=1.5cm,
 	headsep=0.8cm,
 	footskip=0.5cm}
@@ -956,8 +957,8 @@ Agility refers to your character’s physical and manual dexterity. Agility’s 
 balancing, and other acts of flexibility. It is an important Attribute in combat, as well as in various 
 physical activities and skills. 
 
-
 Agility contributes to the Adroitness and Mobility Compound Attributes. 
+
 \subsection*{Endurance (END)}
 Endurance determines your character’s stamina and ability to cope with physical strain and exertion. 
 Endurance is a combination of qualities, including cardiovascular development, which contributes to your 
@@ -11046,7 +11047,7 @@ Alternatively, flip a coin or roll for it. GMs, be sure to be consistent about t
 When rolling for a Hit Location with a missile weapon, first roll 1d10 on the Missile Target Zone table,
 and then roll again on the indicated Thrusting Target Zone that your result indicates to determine the final
 Hit Location of the missile attack.
-\begin{table}
+\begin{table}[!ht]
 	\centering
 	\caption{Missile Target Zone}
 	\label{tab:Missile Target Zones}
@@ -11066,7 +11067,6 @@ Hit Location of the missile attack.
 \end{table}
 
 Initiative
-
 Unless otherwise stated, if a Defense Maneuver successfully defends against any Attack
 Maneuver, the Defender gains Initiative. If a Defense Maneuver resolves but there is no Attack
 Maneuver for it to defend against, it does not grant Initiative unless otherwise stated.
@@ -11402,7 +11402,7 @@ successes by which the test failed.
 When a character's HLT reaches 1 or lower from Blood Loss, all of their other Attributes are temporarily halved. When a character’s HLT reaches 0 or or lower, they immediately pass out and continue to bleed, making END tests and losing HLT into negative amounts. When their HLT reaches a negative amount equal to their unmodified total HLT, they die. Note that when the character passes out, the TOU vs. 2 RS to avoid \nameref{bane:Brain Damage}~is done with their newly-modified TOU. (See Knockout, below.) %NEEDS KNOCKOUT REFERENCE
 
 \begin{quote}
-	\emph{Duke has been shot several times with a repeating crossbow. He is suffering 22 Blood Loss. He must make an Endurance test with his END of 5}
+	\emph{Duke has been shot several times with a repeating crossbow. He is suffering 22 Blood Loss. He must therefore make an Endurance test with his END of 5 against 4 successes.}
 \end{quote}
 \subsubsection{Regaining Health:}
 Once a wound has been treated via \nameref{skill:Surgery}~so that no more Blood Loss can occur, HLT lost to Blood Loss will begin replenishing at a rate of 1 HLT per week.
@@ -11410,20 +11410,19 @@ Once a wound has been treated via \nameref{skill:Surgery}~so that no more Blood 
 HLT lowered by Infection is also recovered in this manner, but only after all of a character’s Infections have been defeated. %NEEDS REFERENCE TO INFECTION
 
 \subsubsection{Staunching Blood Loss}
-Characters can attempt to staunch the loss of blood with the Surgery skill and whatever materials are at hand. A wound must be targeted with this skill which, if successful, terminates all Blood Loss from that wound.
+Characters can attempt to staunch the loss of blood with the \nameref{skill:Surgery} skill and whatever materials are at hand. A wound must be targeted with this skill which, if successful, terminates all Blood Loss from that wound.
 
-If a Character goes for over an hour without losing a point of HLT, any remaining Blood Loss is automatically staunched, including Internal Bleeding.
+If a Character goes for over an hour without losing a point of HLT, any remaining Blood Loss is automatically staunched, including Internal Bleeding. %REF TO INTERNAL BLEEDING
 
-Treating Wounds 
-In order to stop a wound from bleeding, and to reduce the Pain it causes, the Surgery skill must come into 
+\subsubsection{Treating Wounds}
+In order to stop a wound from bleeding, and to reduce the Pain it causes, the \nameref{skill:Surgery} skill must come into 
 play. A Surgery check made at appropriate difficulty for wound level Treats the wound. Treated wounds 
 have their Blood Loss reduced to 0 (unless reopened somehow), and their Pain reduced by half. Treated 
 wounds begin healing immediately. Healing time depends on the character’s maximum normal HLT, and 
 the level of the wound. 
 
- 
+Once a Wound has fully healed, the Wound, and any remaining pain, are removed from the character.
 
-Once a Wound has fully healed, the Wound, and any remaining pain, are removed from the character. 
 Unarmed Wounds heal in Days instead of Weeks. 
 
 \begin{table}[!ht] %THIS is the ugliest fucking table of all time holy shit
@@ -11441,31 +11440,27 @@ Unarmed Wounds heal in Days instead of Weeks.
 	&\multicolumn{1}{c|}{5}&	60&60&60&48&48&48&36&36\\
 	\end{tabu}
 \end{table}
+
 \section{Damage Conditions and Tests}
-Knockout
-A Knockout (KO) test, is an END test. You need a number of successes specified by the event. Failure causes the character to be knocked unconscious, Prone, and unable to act for 1d10 minutes. A character that is knocked out cannot defend themselves and is entirely helpless. Whenever a character is knocked out, they must pass a TOU vs. 2 RS test, or gain the \nameref{bane:Brain Damage} (Minor) Bane.
-[Optional]: If a character is knocked out while standing up or fighting, the GM may rule that he suffers Falling Damage due to landing on a hard surface or an object while unconscious. This usually will be equivalent of a fall from 6 feet. An unconscious man hitting an awkward surface (the corner of a table, a street curb, etc.) could suffer a far more severe injury than the actual blow that rendered him unconscious. 
+\paragraph{\label{par:Knockout}Knockout}---\quad
+A Knockout (KO) test, is an END test. You need a number of successes specified by the event. Failure causes the character to be knocked unconscious, \nameref{par:Prone}, and unable to act for 1d10 minutes. A character that is knocked out cannot defend themselves and is entirely helpless. Whenever a character is knocked out, they must pass a TOU vs. 2 RS test, or gain the \nameref{bane:Brain Damage}~ (Minor) Bane.
 
+\subparagraph{Optional:} If a character is knocked out while standing up or fighting, the GM may rule that he suffers \nameref{sec:falling-damage}~due to landing on a hard surface or an object while unconscious. This usually will be equivalent of a fall from 6 feet. An unconscious man hitting an awkward surface (the corner of a table, a street curb, etc.) could suffer a far more severe injury than the actual blow that rendered him unconscious.
 
-Stability
-When a character makes a Stability Test (either as specified by a wound or effect, or because their CP has been reduced to the negatives by Stun or Pain, or other reasons at GM’s discretion) roll an AGI test. The 
-RS will vary depending on the cause of the event that called for a Stability Test. Failure renders the character Prone. 
+\paragraph{\label{par:Stability}Stability}---\quad
+When a character makes a Stability Test (either as specified by a wound or effect, or because their CP has been reduced to the negatives by Stun or Pain, or other reasons at GM’s discretion) roll an AGI test. The RS will vary depending on the cause of the event that called for a Stability Test. Failure renders the character Prone.
 
 \paragraph{\label{par:Prone}Prone}---\quad
 Whenever a character is laying flat on the ground, they are considered to be Prone. While a character is prone, their maximum combat pools for all melee proficiencies and their Mobility are halved, and the effective Reach of any weapon they’re using (including unarmed “weapons” like fists, legs, etc) is reduced by 2 stages. While Prone, all Maneuvers except for Block are made at +1 TN.
 
 Being knocked prone (after failing a Stability test, being knocked down, etc.) causes a character to immediately take Stun equal to half their maximum combat pool. Until the character is standing during a Refresh, their maximum combat pool remains halved, and any Refresh when prone only restores them to that half-maximum. 
 
-The use of the Rapid-Rise Maneuver allows a character to stand up immediately upon falling down, if they have the remaining CP. Check \autoref{ch:Maneuvers} Proficiencies \& Manuevers for more information. 
+The use of the \nameref{man:RAPID RISE}~Maneuver allows a character to stand up immediately upon falling down, if they have the remaining CP. Check \autoref{ch:Maneuvers} Proficiencies \& Manuevers for more information. 
 
-
-Otherwise, a character must spend an entire action standing up, and cannot use any Maneuvers for that 
-action except Quick Defense. 
-
- 
+Otherwise, a character must spend an entire action standing up, and cannot use any Maneuvers for that action except \nameref{man:QUICK DEFENSE}
 
 \subsection{Falling Damage}\label{sec:falling-damage}
-When a character falls, they roll on the first table below to determine what body part they land with. They then take a wound as if struck with a blunt object to the area hit at Strength determined by the distance fallen, and the surface fallen onto. Neither Armor nor TOU reduce this damage. The character also takes additional damage to the adjacent body parts as determined by the falling table at half damage. 
+When a character falls, they roll on the first table below to determine what body part they land with. They then take a wound as if struck with a blunt object to the area hit at Strength determined by the distance fallen, and the surface fallen onto. Neither Armor nor TOU reduce this damage. The character also takes additional damage to the adjacent body parts as determined by the falling table at half damage.
 
 \begin{table}[!ht]
 	\centering
@@ -11505,7 +11500,7 @@ Water (controlled dive)&1 per 60’ fallen\\
 
 \subsubsection{Falling onto Slopes}
 When falling down a slope, a character sustains damage at a different rate than when falling from the air 
-into a surface, and each step of the fall should be calculated separately. 
+into a surface, and each step of the fall should be calculated separately.
 
 For example: An assassin is flung off a balcony after a failed attempt on the life of a King, and then falls 
 fifty feet onto a hard rooftop, where he then rolls another fifty feet before falling off this second roof, 
@@ -11518,15 +11513,12 @@ Damage to his Hand and Upper Arm. This results in 3 Level 5 Wounds.
 to his neck, and 2 damage to his shoulder and head. At this moment, the assassin dies. 
 \item Third: 20’ on Hard (10 damage) The assassin, who is already dead, finally lands on his back, 
 suffering 10 damage to his upper back, and 5 damage to his head and lower back. This results in 
-three more leve l5 wounds. 
+three more level 5 wounds. 
 \end{itemize}
- 
 
 Every bone in his right arm is shattered, his neck is broken, his spine is broken is two places, and his head 
 is smashed upon. He is dead. BUT, what if, like a smart Assassin, he had aimed for the conspicuous pile 
 of straw instead of the rooftop? 
-
- 
 
 Well, assuming the slope of the roof was fairly steep and actually covered about 30 feet of vertical space, 
 that’d mean that the total distance fallen would’ve been 100 feet exactly. 
@@ -11534,67 +11526,70 @@ that’d mean that the total distance fallen would’ve been 100 feet exactly.
 Now let’s say that the the Assassin leaps into the pile of straw from the same total height (about 100 feet) 
 instead. He instead suffers 12 damage to one body part, and 6 damage to two others. If he’s lucky, he 
 might only shatter one of his legs or arms, but he’s just as likely to break his neck, spine, or rupture all of 
-his organs. 
+his organs.
 
-Falling onto certain materials or hazards might justify changing the damage type inflicted from 
-Bludgeoning to Cutting or Piercing damage. Use your judgment, GM. 
+Falling onto certain materials or hazards might justify changing the damage type inflicted from Bludgeoning to Cutting or Piercing damage. Use your judgment, GM.
 
 \subsection{Burning \& Fire Damage}
 When characters come into contact with fire, bad things tend to happen. Fire damage is much simpler 
 than damage from blunt, cutting, or piercing weapons. Its table is generic, and any part of the body may suffer a Burn Wound using the same chart, seen below. 
 
-When a character suffers Fire Damage, the format looks like this: 
+When a character suffers Fire Damage, the format looks like this: $\dfrac{\mathrm{X}}{\mathrm{TN5}}$
 
-(X)/TN5
 X is the number of dice rolled, and the TN is always 5. Each success on this roll inflicts a level of Burn 
 Damage to the body part (or body parts) affected. 
 
-Burn Damage is not reduced by TOU, but it is reduced minorly by Armor. Cloth, Leather and other light 
-armors do nothing to reduce burn damage. In fact, they might make it worse (Quilted Armor, of worn 
+Burn Damage is not reduced by TOU, but it is reduced minorly by Armor. 
+Cloth, Leather and other light armors do nothing to reduce burn damage. In fact, they might make it worse (Quilted Armor, if worn 
 without Plate over it, increases the Burning Time of any Fire Damage by 1. Mail, Laminar, Brigandine, 
 etc. reduces Burn Damage by 1. Plate reduces Burn Damage by 2). 
 
- 
-
 Burn Damage is Cumulative. If a character suffers a Level 1 Burn, and then next Round suffers two 
-additional Burn Damage, this does not create a Level 2 Burn, but instead turns the Level 1 into a Level 3. 
+additional Burn Damage, this does not create a Level 2 Burn, but instead turns the Level 1 into a Level 3.
 
- 
+Burning damage often lasts for multiple Rounds, inflicting damage at the beginning of each, and clothing or armor may also catch fire, continuing the blaze for still longer! 
 
-Burning damage often lasts for multiple Rounds, inflicting damage at the beginning of each, and clothing 
-or armor may also catch fire, continuing the blaze for still longer! 
+\begin{table}[!ht]
+	\centering
+	\caption{Burn Examples}
+	\label{tab:Burn Area Examples}
+	\begin{tabu} to \linewidth {X[-0.5] X X[-2,c] X}
+\rowfont[c]{}Example Burn Source
+&	Coverage 
+&		Damage 
+&			Burning Time\\\toprule
 
- 
+Boiling Oil
+&	Usually head, shoulders, neck, back, possibly face or arms
+&		$ \dfrac{\mathrm{4}}{\mathrm{TN5}} $
+&			4 Round\\
 
-Table 8.5 Burn Area 
-Example Burn 
-Source 
+Flaming Arrow
+&	Point of Impact
+&		$\dfrac{2}{\mathrm{TN5}} $
+&			10 Rounds\\
 
-Coverage Damage Burning Time 
+Hair Caught Fire
+&	Head(?)
+&		$ \dfrac{1}{\mathrm{TN5}} $
+&			1-3 Rounds (length of hair)\\
 
-Boiling Oil Usually head, shoulders, neck, back, 
-possibly face or arms. 
+Burning Sleeve
+&	Arm
+&		$ \dfrac{2}{\mathrm{TN5}}$
+&			5 Rounds\\
 
-4/TN5 4 Rounds 
-
-Flaming Arrow Point of Impact 2/TN5 10 Rounds 
-
-Hair Caught Fire Head(?) 1/TN5 1-3 Rounds (length of hair) 
-
-Burning Sleeve Arm 2/TN5 5 Rounds 
-
-Bonfire Full Body 3/TN5 Indefinitely, 3 Rounds after 
-exiting Bonfire 
-
- 
+Bonfire
+&	Full Body 
+&		$\dfrac{3}{\mathrm{TN5}}$
+&			Indefinitely, 3 Rounds after exiting Bonfire\\
+	\end{tabu}
+\end{table}
 
 Extinguishing a fire on one’s person is either very easy (patting out, smothering with a blanket or cloth, 
 dropping and rolling) or excessively difficult (boiling oil, burning pitch, chainmail made dangerously hot 
 in a fire, acid). You may try to Extinguish a source of burn damage by spending a Full Action in the 
-Bystander Phase doing so. This is an Agility check, with the RS ranging from 1 (burning sleeve) to 8 
-(covered in burning pitch). 
-
- 
+Bystander Phase doing so. This is an Agility check, with the RS ranging from 1 (burning sleeve) to 8 (covered in burning pitch). %REFERENCE TO BYSTANDER PHASE?
 
 So, a character may suffer a pot of boiling oil being dumped on his head while climbing up a siege ladder. 
 The GM estimates this as a 4/TN5 burn attack that hits the upper head, neck, shoulders, and back. The 
@@ -11604,51 +11599,21 @@ burn damage to the upper head by 2, the back and shoulders by 1. The neck suffer
 The result is a Level 1 Burn to both shoulders (two wounds), and a Level 2 burn to the neck. The next 
 Round, he suffers additional damage. 
 
- 
+\begin{table}[!ht]
+	\caption{Burn Damage}
+	\label{wound:Burn Damage}
+	\begin{tabu} to \linewidth {X[-1,l] *{3}{X[-3,c]} X[2]X[4]}
+\rowfont[c]{}Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+Level 1 &4 &4 &- &[-3 Infection Chance]&1st degree Burn. Painful, but not serious.\\
+Level 2 &8 &6 &- &[-1 Infection Chance]&Minor 2nd degree burn with swelling, but no probable scarring.\\
+Level 3 &12 &10 &- &[+1 Infection Chance] &Bad 2nd degree burn, skin lost, scarring probable.\\
+Level 4 &20 &20 &- &[+3 Infection Chance] &3rd degree burn, serious scarring and injury. Consider disfigurement Banes.\\
+Level 5 &Total &30 &- &[+5 Infection Chance] &4th degree burn or worse, flesh destroyed, bone exposed and charred, almost certainly lethal if located on vitals (HLT at RS 5)\\
+	\end{tabu}
+\end{table}
 
 
-Table 8.6 Burn Damage 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 4 4 - [-3 Infection 
-Chance] 
-
-1st degree Burn, painful but not serious. 
-
-Level 2 8 6 - [-1 Infection 
-Chance] 
-
-Minor 2nd degree burn with swelling, but no probable 
-scarring. 
-
-Level 3 12 10 - [+1 Infection 
-Chance] 
-
-Bad 2nd degree burn, skin lost, scarring probable. 
-
-Level 4 20 20 - [+3 Infection 
-Chance] 
-
-3rd degree burn, serious scarring and injury. Consider 
-disfigurement Banes. 
-
-Level 5 Total 30 - [+5 Infection 
-Chance] 
-
-4th degree burn or worse, flesh destroyed, bone 
-exposed and charred, almost certainly lethal if located 
-on vitals (HLT at RS 5) 
-
- 
-
- 
-
- 
-
-Electrical Damage 
+\subsection{Electrical Damage}
 Being electrocuted is not something that happens often in a medieval setting, but it can happen. Electrical 
 Damage is made against TOU, but it is not reduced by any sort of armor, and in fact is increased by 
 metallic armor (mail and scale increases Electrical damage by 1, Laminar and Plate of all varieties 
@@ -11679,8 +11644,8 @@ Lethal Shock (Struck by Lightning) 8
 Cataclysmic Shock (Power Lines) 10 
 
  
-Table 8.8 Electrical Damage 
-Wound Level Stun Pain Bleed Special Description 
+Table 8.8 Electrical Damage
+%Wound Level &Stun &Pain &Bleed &Special &Description\\
 
 Level 1 8 0 - 
 
@@ -11696,64 +11661,36 @@ Level 5 Total Total - KO at 4, HET at 3 vs Death
 
  
 
-Cold Damage 
+\subsection{Cold Damage}
 Something something, Cold can target Limbs, TOU reduces, Armor doesn’t, Warm Clothing can slow 
 effects, need rules for Freezing, yadda yadda, what killed the dinosaurs? Get to the Choppa. 
 
  
 
 Table 8.9 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
+Wound Level Stun Pain Bleed Special Description
 Level 1 2 2 - 
-
 Level 2 4 4 - 
-
 Level 3 6 2 - Reduces all Pain in Zone by 2 
-
-Level 4 8 0 - Reduces all Pain in Zone by 4, Difficult Surgery vs 
-Frostbite if Limb, HET test at 3 vs Death if not Limb 
-
- 
-
- 
-
-Level 5 10 0 - Reduces all Pain in Zone by 10, Miracle Surgery vs 
-Amputation if Limb, HET test at 4 vs Death if not Limb 
-
- 
-
- 
-
- 
-
-Infection 
+Level 4 8 0 - Reduces all Pain in Zone by 4, Difficult Surgery vs Frostbite if Limb, HET test at 3 vs Death if not Limb
+Level 5 10 0 - Reduces all Pain in Zone by 10, Miracle Surgery vs Amputation if Limb, HET test at 4 vs Death if not Limb
 
 
+\section{Infection}
 The shock of a wound can kill a man, or he can bleed out before the injury can be staunched, but the most 
 insidious and terrible way to die of a wound is by corruption, or infection. In the course of healing, a 
 wound can become infested with bacteria and parasites which quickly cause the wound to become 
 gangrenous or septic, which can eventually result in necrosis and death. 
-
- 
 
 Infection has a chance of occurring 24 hours after the infliction of the wound. Roll a HLT Test at RS 
 equal to the Infection Level of the Wound. The Infection Level equal to the Wound Level, plus any 
 miscellaneous modifiers. Both Wound descriptions and exterior circumstances (see Table 7.1) can 
 increase or decrease Infection Chance. 
 
- 
-
 Unarmed Wounds cannot cause Infection. 
 
- 
-
-Table 8.7 Infection Modifiers 
-Modifier Amount 
-
+Table 8.7 
+Infection Modifiers Modifier Amount 
 Wound was successfully treated with Surgery immediately after it was inflicted. -1 per 2 
 BS 
 
@@ -11782,16 +11719,9 @@ Wounded party did not receive adequate care after the injury. +2
 
 Wound was intentionally infected after being sustained. +3 
 
- 
-
- 
-
 If the character succeeds, then the Wound does not become infected, and heals normally. However, if 
 something occurs to infect the Wound again (the wound is exposed to filth, or reopened, or stripped of its 
 coverings and left unprotected for some time) then an additional roll may be necessary. 
-
- 
-
 
 If the Infection Roll fails, then the Wound becomes Infected. Once a Wound becomes Infected, the 
 character’s body begins to fight against the infection by all means possible, some of which are quite 
@@ -11799,40 +11729,29 @@ detrimental. Characters with Infections become Feverish within 24 hours, and rem
 Infection is defeated. (See Illness and Disease section for the effects of Fever. Short version: The 
 character suffers a Halved Combat and Mobility pool, and gains Exhaustion at double the normal rate). 
 
- 
-
 Every 24 hours, the character must roll a Health Check at RS equal to the Infection Level of the Wound. 
 This roll can be modified with Medical skill, as detailed on Table 7.2, and this will greatly increase a 
 character’s chance of survival. If unsuccessful, the character’s Health is reduced temporarily by 1. This 
 Health does not recover until after the Infection is defeated. If the character’s Health is reduced to 1 by 
 Infection, then all current Infections become Septic. 
 
- 
-
 If a character succeeds a number of these Health Checks equal to the Infection Level of the wound, that 
 Infection is defeated, and the character can begin recovering Health, assuming there are no other 
 Infections to struggle against. 
-
- 
 
 In the case of multiple Infections developing, only one Health Check is rolled per 24 hour period, at the 
 highest Infection Level of the infected wounds suffered. If the Check succeeds, all of the Infections are 
 resisted. If the Check fails, the character only loses 1 point of Health, not 1 per Infection. 
 
- 
-
-Table 8.8 Infection Treatment 
-Modifier Amount 
+Table 8.8 Infection Treatment
+Modifier Amount
 Character’s infections are treated by a Surgeon -2 
 Character is kept in a comfortable, clean environment -2 
 Character has enough to eat/drink -1 
 Character partakes of no strenuous activity -1 
 
- 
 
- 
-
-Septic Infections 
+\subsection{Septic Infections}
 Septic Infections (when the injury becomes gangrenous and decaying) are almost invariably lethal. After 
 a wound becomes Septic, it rapidly spreads across the body, eventually reaching the heart or brain, and 
 killing the victim. The character becomes delusional, weak, and likely unconscious, and dies within 
@@ -11850,7 +11769,7 @@ might’ve been a salvageable limb.
  
 
 
-Amputation 
+\subsection{Amputation}
 When a limb is Amputated (which itself requires a Surgery check at RS 3), the limb suffers the equivalent 
 of a level 5 cutting wound on the location where the Infection is located, but with no Bleed. This 
 automatically removes the Infection that occupied the amputated limb, and the wound can then be treated 
@@ -11860,17 +11779,17 @@ into the procedure to make it as clean as possible, and may benefit from other f
 clean environment with proper tools, to minimize the chance of the new wound becoming Infected as 
 well. 
 
- 
-
 If a wound becomes Septic before being amputated, as detailed in the Septic Infection section above, then 
 the Amputation’s -2 to Infection Chance is reduced to -1, increasing the possibility of repeated Infection, 
 as some of it may have already spread beyond the limb. 
- 
+
 \chapter{Wound Charts}\label{ch:Damage Tables}
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
 \clearpage
 This is the part where you learn about what it’s like to die.
 
-Target Zones and Hit Locations 
+\section*{Target Zones and Hit Locations}
 When a character is hit by an attack, there are two key aspects of the hit that need to be noted: the Target 
 Zone (which is the general area of the body that the attack hits) and the Hit Location (which is the precise 
 point of the body that is hit). 
@@ -11884,17 +11803,12 @@ damage based on the following formula:
 [Total Damage Done (Maneuver Damage+Miscellaneous)] versus [Total Defensive Value (TOU+AV of 
 appropriate damage type+Miscellaneous)] 
 
- 
-
 If the Total Damage exceeds the Total Defense, the result is a Wound of a level equal to the excess 
 damage. 
 
- 
-
 The amount of damage done is then applied on the damage charts located later in this section. 
 
-
-Which Thigh, though? 
+\subsection{Which Thigh, though?}
 When declaring an attack against an arm or a leg, or even when attacking the neck, be sure to declare 
 which limb, or from which side the cut is made from, in the case of neck or torso cuts. Obviously if you 
 cut the right arm, all of the hit results should be on that arm. The same applies when making a cut to the 
@@ -12008,39 +11922,33 @@ Lower Leg Thrust 1-3: Foot
 
  
 
-Wound Qualities 
+\section{Wound Qualities}
+Quality Description/Effect
 
-Table 8.1.3 Wound Qualities 
-Quality Description/Effect 
+Stability vs [X] RS
+You must make a Stability (AGI+Misc) test at X RS or be rendered \nameref{par:Prone}.
 
-Stability vs [X] RS 
-You must make a Stability (AGI+Misc) test at X RS or be rendered Prone. 
-
-Disarm vs [X] RS 
-You must make a Disarm (AGI+Misc) test at X RS or drop anything held in the affected arm. 
+Disarm vs [X] RS
+You must make a Disarm (AGI+Misc) test at X RS or drop anything held in the affected arm.
 
 KO vs [X] RS 
-You must make a Knockout (END+Misc) test at X RS or be rendered unconscious for 1d10 
-minutes.
+You must make a Knockout (END+Misc) test at X RS or be rendered unconscious for 1d10 minutes.
 
 [X] Surgery vs [Y]
-You immediately gain Y Bane, which cannot be removed without a successful Surgery test at X 
-difficulty before the wound heals. If the wound heals (or the surgery test fails) then Y Bane 
-becomes permanent. 
+You immediately gain Y Bane, which cannot be removed without a successful Surgery test at X difficulty before the wound heals. If the wound heals (or the surgery test fails) then Y Bane becomes permanent.
+
 Autodrop You automatically drop anything held with this limb when this Wound is inflicted. Increase the RS 
 of any Stability test made to maintain your grip on a weapon with this limb by the Wound level. 
 
 
 Auto-Prone
-You are automatically rendered Prone. You cannot Stand Up in the same action, or in the action 
-after receiving this Wound. Increase all further Stability tests RS by the Wound level, until the 
-Wound is fully healed. 
+You are automatically rendered Prone. You cannot Stand Up in the same action, or in the action after receiving this Wound. Increase all further Stability tests RS by the Wound level, until the Wound is fully healed.
 
 Auto-KO
 Character is rendered unconscious for 1d10*6 minutes. Increase the RS of any further KO rolls by the Wound level, until the Wound is fully healed.
 
-Infection Risk+[X] 
-This Wound suffers an increased Infection Risk equal to X. 
+Infection Risk+[X]
+This Wound suffers an increased Infection Risk equal to X.
 
 Stun: Total Automatically reduces Combat Pool to 0, and immediately renders you Prone without a test.
 
@@ -12056,1825 +11964,1095 @@ Internal Bleeding
 Halting this bleeding requires a Surgery roll at +3 RS from normal. 
 
 
-Damage Charts
 \section{Upper Head}
-Table 8.1.4 Upper Head - Cutting Wound Level
-Stun Pain Bleed Special Description 
-Level 1 1 7 1 - Shallow cut on scalp, not serious.
-Level 2 2 9 3 - Deep cut on scalp, blood runs into face.
-Level 3 4 13 5 KO vs 4 RS Cracked skull, nearly invisible, but devastating.
-Level 4 Total Total 8 Auto-KO [Difficult Surgery vs Brain Damage], Internal Bleeding Severe skull fracture, brain damage, immediate unconsciousness.
-Level 5 - - - Dead Blade cleaves through top of skull down to the teeth. Instant death.
+\begin{table} %Upper Head - Cutting
+	\caption{Upper Head - Cutting}
+	\label{wound:Upper Head - Cutting}
+	\begin{tabu} to \linewidth {X[l] *{3}{X[-2,c]} X[2]X[4]}
+\rowfont[c]{}Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+Level 1& 1 &7 &1 &- &Shallow cut on scalp, not serious.\\
+Level 2& 2 &9 &3 &- &Deep cut on scalp, blood runs into face.\\
+Level 3 &4 &13&5 &KO vs 4 RS &Cracked skull, nearly invisible, but devastating.\\
+Level 4& Total &Total &8 
+&Auto-KO
 
+Difficult Surgery vs. \nameref{bane:Brain Damage}
 
-Table 8.1.5 Upper Head - Piercing 
-Wound 
-Level 
+Internal Bleeding
+&Severe skull fracture, brain damage, immediate unconsciousness.\\
+Level 5& - &- &- &Dead &Blade cleaves through top of skull down to the teeth. Instant death.\\
+	\end{tabu}
+\end{table}
 
-Stun Pain Bleed Special Description 
+\begin{table} %Upper Head - Piercing
+	\caption{Upper Head - Piercing}
+	\label{wound:Upper Head - Piercing}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1 &0 &4 &0 &- &Raking glance to the side of the head. \\
+Level 2 &1 &6 &3 &- &Deeper rake across scalp, lots of blood.\\
+Level 3 &2 &10 &5 &KO vs 3 RS &Skull cracked, possible unconsciousness. \\
+Level 4 &Total &Total &20
+	&Auto-KO
+	
+	Miracle Surgery vs \nameref{bane:Brain Damage}
+	
+	Internal Bleeding
+&Skull penetrated, instantly unconscious.\\
+Level 5 &- &- &- &Dead &Point penetrates straight through skull into brain, instant death.\\
+	\end{tabu}
+\end{table}
 
-Level 1 0 4 0 - Raking glance to the side of the head. 
-Level 2 1 6 3 - Deeper rake across scalp, lots of blood. 
-Level 3 2 10 5 KO vs 3 RS Skull cracked, possible unconsciousness. 
-Level 4 Total Total 20 Auto-KO 
-[Miracle Surgery vs Brain 
-Damage], Internal Bleeding 
+\begin{table} %Upper Head - Bludgeoning
+	\caption{Upper Head - Bludgeoning}
+	\label{wound:Upper Head - Bludgeoning}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 4& 1& - &Blow to the side of the head. Ow.\\
+Level 2& 3& 6& 2& KO vs 1 RS &Temple is glanced. May lose consciousness.\\
+Level 3& 5& 8& 4& KO vs 5 RS &Skull fracture, may lose consciousness.\\
+Level 4& Total &Total &6 &Auto-KO [Difficult Surgery vs\nameref{bane:Brain Damage}], Internal Bleeding &Skull shatters, immediately unconscious.\\
+Level 5& - &- &- &Dead &Skull crushed. Brain and bone everywhere. Death. \\
+	\end{tabu}
+\end{table}
 
-Skull penetrated, instantly unconscious. 
-
-Level 5 - - - Dead Point penetrates straight through skull 
-into brain, instant death. 
-
- 
-Table 8.1.6 Upper Head - Bludgeoning 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 1 4 1 - Blow to the side of the head. Ow. 
-Level 2 3 6 2 KO vs 1 RS Temple is glanced. May lose 
-consciousness. 
-Level 3 5 8 4 KO vs 5 RS Skull fracture, may lose 
-consciousness. 
-Level 4 Total Total 6 Auto-KO 
-[Difficult Surgery vs Brain Damage], 
-Internal Bleeding 
-
-Skull shatters, immediately 
-unconscious. 
-
-Level 5 - - - Dead Skull crushed. Brain and bone 
-everywhere. Death. 
-
- 
-Table 8.1.7 Upper Head - Unarmed 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 0 0 0 - Blow to the forehead. Negligible effect. 
-Level 2 0 0 0 - Graze to the side of the head. Painful but nothing 
-special. 
-Level 3 1 1 0 KO vs 1 RS Hard blow to the dome of the head. Bruising, 
-possible blackout. 
-Level 4 3 3 0 KO vs 3 RS Straight blow to the temple. Probably unconscious. 
-Level 5 Total 10 3 Auto-KO, Internal 
-Bleeding 
-
-Severe blow to the temple, fractured bones, possible 
-brain damage. 
-
-
- 
-
- 
+\begin{table} %Upper Head - Unarmed
+	\caption{Upper Head - Unarmed}
+	\label{wound: Upper Head - Unarmed}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\ 
+Level 1& 0& 0& 0& - &Blow to the forehead. Negligible effect.\\
+Level 2& 0& 0& 0& - &Graze to the side of the head. Painful but nothing special.\\
+Level 3& 1& 1& 0& KO vs 1 RS &Hard blow to the dome of the head. Bruising, possible blackout.\\
+Level 4& 3& 3& 0& KO vs 3 RS &Straight blow to the temple. Probably unconscious. \\
+Level 5& Total& 10 &3 &Auto-KO, Internal Bleeding &Severe blow to the temple, fractured bones, possible brain damage.\\
+	\end{tabu}
+\end{table}
+	\clearpage
 
 \section{Face}
-Table 8.1.8 Face - Cutting Wound Level 
+\begin{table} %Face - Cutting
+	\caption{Face - Cutting}
+	\label{wound:Face - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 6& 1& - &Cut vertically across the chin or lips. May leave a scar.\\
+Level 2& 2& 8& 3& - &Deeper cut, possible chipping of jaw, may contact chin, lip, cheek, or brow.\\
+Level 3& 4& 16& 8& [Miracle Surgery vs One-Eyed] &Slash catches eye! Severe damage, may lose eye.\\
+Level 4& 6& 20& 18& [Miracle Surgery vs One-Eyed] OR [Miracle Surgery vs Facial Deformity] [Infection Chance +2] &Face bisected, extreme damage to jaw, teeth, and skull. May lose eye (1-5) or nose (6-10), serious medical complications either way.\\
+Level 5& - &- &- &Dead& Head cloven through to the teeth, instant death.\\
+	\end{tabu}
+\end{table}
 
-Stun Pain Bleed Special Description 
+\begin{table} %Face - Piercing
+	\caption{Face - Piercing}
+	\label{wound:Face - Piercing}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 5& 1& - &Facial scratch.\\
+Level 2& 2& 6& 2& - &Point glances off facial bones, bleeding occurs, but nothing serious.\\
+Level 3& 3& 8& 3& - &Point hits, but fails to penetrate facial bone, very painful, but still no significant damage.\\
+Level 4& 5& 15& 10& [Difficult Surgery vs Mute] OR [Miracle Surgery vs One-Eyed] OR [+5 to wound’s Bleed] &Point penetrates face, either through mouth (1-3) eye (4-6) or facial bones (7-10.) Severe injury, lots of bleeding, extremely painful.\\
+Level 5& - &- &- &Dead& Head impaled, instant death.\\
+	\end{tabu}
+\end{table}
 
-Level 1 1 6 1 - Cut vertically across the chin or lips. May leave 
-a scar. 
-Level 2 2 8 3 - Deeper cut, possible chipping of jaw, may 
-contact chin, lip, cheek, or brow. 
-Level 3 4 16 8 [Miracle Surgery vs One-
-Eyed] 
+\begin{table} %Face - Bludgeoning
+	\caption{Face - Bludgeoning}
+	\label{wound:Face - Bludgeoning}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1 &2 &4 &0 &- &Blow to the jaw, head rolls with it well. \\
+Level 2 &3 &5 &2 &- &Firmer blow, blood in mouth, possible lost tooth. Youch. \\
+Level 3 &5 &8 &3 &KO vs 3 RS &Serious damage to jaw, fracture maybe, head jerked hard, may lose consciousness and several teeth.\\
+Level 4 &7 &12&7 &KO vs 5 RS &Mute as the Bane until healed Broken jaw, almost certain unconsciousness.\\
+Level 5 &- &- &- &Dead &Jaw smashed, skull shattered, neck broken. Instant death.\\
+	\end{tabu}
+\end{table}
 
-Slash catches eye! Severe damage, may lose 
-eye. 
-
-Level 4 6 20 18 [Miracle Surgery vs One-
-Eyed] OR [Miracle Surgery 
-vs Facial Deformity] 
-[Infection Chance +2] 
-
-Face bisected, extreme damage to jaw, teeth, 
-and skull. May lose eye (1-5) or nose (6-10), 
-serious medical complications either way. 
-
-Level 5 - - - Dead Head cloven through to the teeth, instant death. 
-
- 
-Table 8.1.9 Face - Piercing 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 1 5 1 - Facial scratch. 
-Level 2 2 6 2 - Point glances off facial bones, bleeding 
-occurs, but nothing serious. 
-Level 3 3 8 3 - Point hits, but fails to penetrate facial bone, 
-very painful, but still no significant damage. 
-Level 4 5 15 10 [Difficult Surgery vs Mute] OR 
-[Miracle Surgery vs One-Eyed] 
-OR [+5 to wound’s Bleed] 
-
-Point penetrates face, either through mouth 
-(1-3) eye (4-6) or facial bones (7-10.) Severe 
-injury, lots of bleeding, extremely painful. 
-Level 5 - - - Dead Head impaled, instant death. 
-
- 
-Table 8.1.10 Face - Bludgeoning 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 2 4 0 - Blow to the jaw, head rolls with it well. 
-Level 2 3 5 2 - Firmer blow, blood in mouth, possible lost tooth. Youch. 
-Level 3 5 8 3 KO vs 3 RS Serious damage to jaw, fracture maybe, head jerked hard, 
-may lose consciousness and several teeth. 
-
-Level 4 7 12 7 KO vs 5 RS 
-Mute as the Bane 
-until healed 
-Broken jaw, almost certain unconsciousness. 
-
-Level 5 - - - Dead Jaw smashed, skull shattered, neck broken. Instant death. 
-
- 
-Table 8.1.11 Face - Unarmed 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 1 0 0 - Grazing blow. 
-Level 2 2 0 0 - Firmer blow, might leave a bruise. 
-Level 3 3 2 0 KO vs 2 
-RS 
-
-Hard hit, swelling! 
-
-Level 4 4 10 3 KO vs 5 
-RS 
-
-Broken nose or orbital fracture of eye socket. Severely 
-debilitating and painful, probable KO. 
-Level 5 Total 15 3 Auto-KO Perfect hit, nose probably broken, Several teeth probably lost, 
-instant KO. 
-
- 
-
- 
-
- 
-
- 
+\begin{table} %Face - Unarmed
+	\caption{Face - Unarmed}
+	\label{wound:Face - Unarmed}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1 &1 &0 &0& - &Grazing blow.\\
+Level 2 &2 &0 &0& - &Firmer blow, might leave a bruise. \\
+Level 3 &3 &2 &0 &KO vs 2 RS &Hard hit, swelling!\\
+Level 4 &4 &10&3 &KO vs 5 RS &Broken nose or orbital fracture of eye socket. Severely debilitating and painful, probable KO.\\
+Level 5& Total& 15 &3 &Auto-KO &Perfect hit, nose probably broken, Several teeth probably lost, instant KO.\\
+	\end{tabu}
+\end{table}
+	\clearpage
 
 \section{Lower Head}
-Table 8.1.12 Lower Head - Cutting 
-Wound 
-Level 
+\begin{table} %Lower Head - Cutting
+	\caption{Lower Head - Cutting}
+	\label{wound:Lower Head - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 6& 1& - &Cross cut on the face, probably on the cheek, mouth or chin.\\
+Level 2& 2& 8& 4& - &Direct hit on side of face, classic German dueling scar.\\
+Level 3& 3& 12& 8& KO vs 3 RS &Direct hit cleaves through cheek, damaging several teeth.\\
+Level 4& 4& 18& 12& KO vs 4 RS [Difficult Surgery vs Facial Deformity] &Blade cuts cheek from corner of mouth to behind the ear, lots of teeth lost, cheek muscle damage.\\
+Level 5& - &- &- &Dead& Blade either cleaves through entire side of head, decapitating above the jaw, or most of the way through. Death is mercifully instantaneous.\\
+	\end{tabu}
+\end{table}
 
-Stun Pain Bleed Special Description 
+\begin{table} %Lower Head - Piercing
+	\caption{Lower Head - Piercing}
+	\label{wound:Lower Head - Piercing}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 0& 4& 2& - &Grazed jaw.\\
+Level 2& 1& 6& 4& - &Stabs through cheek, chipped tooth!\\
+Level 3& 2& 9& 8& KO vs 3 RS &Several teeth broken, cheek ripped open, jaw fractured.\\
+Level 4& 3& 14& 14& KO vs 5 RS [Difficult Surgery vs \nameref{bane:Mute}] &Jaw shattered, many teeth destroyed, may lose tongue.\\
+Level 5& - &- &- &Dead& Point slams through brainstem. Instant death.\\
+	\end{tabu}
+\end{table}
 
-Level 1 1 6 1 - Cross cut on the face, probably on the cheek, mouth or 
-chin. 
-Level 2 2 8 4 - Direct hit on side of face, classic German dueling scar. 
-Level 3 3 12 8 KO vs 3 RS Direct hit cleaves through cheek, damaging several teeth. 
-Level 4 4 18 12 KO vs 4 RS 
-[Difficult Surgery vs 
-Facial Deformity] 
+\begin{table} %Lower Head - Bludgeoning
+	\caption{Lower Head - Bludgeoning}
+	\label{wound:Lower Head - Bludgeoning}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 2& 3& 0& - &Tapped jaw, possibly bruised.\\
+Level 2& 4& 4& 1& KO vs 3 RS &Solid strike to jaw, jarring!\\
+Level 3& 6& 6& 3& KO vs 4 RS &Fractured jaw, possibly several lost teeth! \\
+Level 4& 8& 10& 4& KO vs 5 RS [Routine Surgery vs Face Deformation] &Broken jaw.\\
+Level 5& - &- &- &Dead& Neck Broken. Instant death.\\
+	\end{tabu}
+\end{table}
 
-Blade cuts cheek from corner of mouth to behind the ear, 
-lots of teeth lost, cheek muscle damage. 
-
-Level 5 - - - Dead Blade either cleaves through entire side of head, 
-decapitating above the jaw, or most of the way through. 
-Death is mercifully instantaneous. 
-
- 
-
-
-Table 8.1.13 Lower Head - Piercing 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 0 4 2 - Grazed jaw. 
-Level 2 1 6 4 - Stabs through cheek, chipped tooth! 
-Level 3 2 9 8 KO vs 3 RS Several teeth broken, cheek ripped open, jaw 
-fractured. 
-Level 4 3 14 14 KO vs 5 RS 
-[Difficult Surgery vs 
-Mute] 
-
-Jaw shattered, many teeth destroyed, may lose 
-tongue. 
-
-Level 5 - - - Dead Point slams through brainstem. Instant death. 
-
- 
-Table 8.1.14 Lower Head - Bludgeoning 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 2 3 0 - Tapped jaw, possibly bruised. 
-Level 2 4 4 1 KO vs 3 RS Solid strike to jaw, jarring! 
-Level 3 6 6 3 KO vs 4 RS Fractured jaw, possibly several lost 
-teeth! 
-Level 4 8 10 4 KO vs 5 RS 
-[Routine Surgery vs Face 
-Deformation] 
-
-Broken jaw. 
-
-Level 5 - - - Dead Neck Broken. Instant death. 
-
- 
-Table 8.1.15 Lower Head - Unarmed 
-Wound Level Stun Pain Bleed Special Description 
-Level 1 2 0 0 - Grazing blow to the jaw. 
-Level 2 3 0 0 KO vs 1 RS Hit on the jaw. Better hope it ain’t glass... 
-Level 3 5 2 0 KO vs 3 RS Good hit, head jerked to the side, KO is a distinct possibility. 
-Level 4 10 5 0 KO vs 8 RS Jaw battered, significant chance of unconsciousness. 
-Level 5 Total 15 3 Auto-KO Jaw broken, instant unconsciousness. 
-
- 
-
- 
+\begin{table} %Lower Head - Unarmed
+	\caption{Lower Head - Unarmed}
+	\label{wound:Lower Head - Unarmed}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 2& 0& 0& - &Grazing blow to the jaw.\\
+Level 2& 3& 0& 0& KO vs 1 RS &Hit on the jaw. Better hope it ain’t glass... \\
+Level 3& 5& 2& 0& KO vs 3 RS &Good hit, head jerked to the side, KO is a distinct possibility. \\
+Level 4& 10& 5& 0& KO vs 8 RS &Jaw battered, significant chance of unconsciousness. \\
+Level 5& Total &15 &3 &Auto-KO &Jaw broken, instant unconsciousness. \\
+	\end{tabu}
+\end{table}
+	\clearpage
 
 \section{Neck}
-Table 8.1.16 Neck - Cutting 
-Wound 
-Level 
+\begin{table} %Neck - Cutting
+	\caption{Neck - Cutting}
+	\label{wound:Neck - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 4& 4& - &Cut on the neck, painful but not deep.\\
+Level 2& 2& 8& 6& - &Serious cut to the side of neck, passes dangerously close to windpipe.\\
+Level 3& 3& 12& 12& [Difficult Surgery vs Mute] &Slashed throat, possible vocal chord damage.\\
+Level 4& 5& 14& 20& [Miracle Surgery vs Mute] &Throat and jugular cut, spray of blood, needs a surgeon immediately.\\
+Level 5& - &- &- &Dead& Decapitation. Instant death.\\
+	\end{tabu}
+\end{table}
 
-Stun Pain Bleed Special Description 
+\begin{table} %Neck - Piercing
+	\caption{Neck - Piercing}
+	\label{wound:Neck - Piercing}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 5& 6& - &Puncture wound in neck, not good!\\
+Level 2& 2& 5& 10& - &Deeper puncture wound, neck’s major artery!\\
+Level 3& 3& 8& 20& [Difficult Surgery vs Mute] &Punctured carotid or jugular, extreme bleeding! Possible vocal chord damage.\\
+Level 4& 5& 12& 25& [Miracle Surgery vs Mute] &Severed carotid or jugular, cracked vertebrae, vocal chord damage!\\
+Level 5& - &- &- &Dead& Throat impaled, neck possibly broken. Exsanguination is almost instant. Death.\\
+	\end{tabu}
+\end{table}
 
-Level 1 1 4 4 - Cut on the neck, painful but not deep. 
-Level 2 2 8 6 - Serious cut to the side of neck, passes dangerously 
-close to windpipe. 
-Level 3 3 12 12 [Difficult Surgery vs 
-Mute] 
-
-Slashed throat, possible vocal chord damage. 
-
-Level 4 5 14 20 [Miracle Surgery vs 
-Mute] 
-
-Throat and jugular cut, spray of blood, needs a 
-surgeon immediately. 
-Level 5 - - - Dead Decapitation. Instant death. 
-
- 
-Table 8.1.17 Neck - Piercing 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 1 5 6 - Puncture wound in neck, not good! 
-Level 2 2 5 10 - Deeper puncture wound, neck’s major artery! 
-Level 3 3 8 20 [Difficult Surgery vs 
-Mute] 
-
-Punctured carotid or jugular, extreme bleeding! 
-Possible vocal chord damage. 
-
-Level 4 5 12 25 [Miracle Surgery vs 
-Mute] 
-
-Severed carotid or jugular, cracked vertebrae, vocal 
-chord damage! 
-Level 5 - - - Dead Throat impaled, neck possibly broken. Exsanguination 
-is almost instant. Death. 
-
- 
-Table 8.1.18 Neck - Bludgeoning 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 2 2 0 - Painful blow to neck, bruised flesh. 
-Level 2 4 3 0 - Heavy blow, momentary choking, significantly 
+\begin{table} %Neck - Bludgeoning
+	\caption{Neck - Bludgeoning}
+	\label{wound:Neck - Bludgeoning}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 2& 2& 0& - &Painful blow to neck, bruised flesh. \\
+Level 2& 4& 3& 0& - &Heavy blow, momentary choking, significantly \\
 stunned. 
-Level 3 6 6 3 - Severely bruised windpipe, vocal cords damaged. 
-Level 4 8 Total 7 KO vs 3 RS [Hard 
-Surgery vs Mute] 
+Level 3& 6& 6& 3& - &Severely bruised windpipe, vocal cords damaged. \\
+Level 4 &8 &Total &7 &KO vs 3 RS [Hard Surgery vs Mute] &Severe damage to windpipe, brachial nerve damage, chipped spinal cord.\\
+Level 5& - &- &- &Dead& Snapped neck, instantaneous death. \\
+	\end{tabu}
+\end{table}
 
-Severe damage to windpipe, brachial nerve 
-damage, chipped spinal cord. 
-Level 5 - - - Dead Snapped neck, instantaneous death. 
-
- 
-Table 8.1.19 Neck - Unarmed 
-
-
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 1 0 0 - Chin too tucked in for a good hit, glances off. 
-Level 2 1 0 0 - Glancing blow to side of neck. Minimal effect. 
-Level 3 3 2 0 - Solid hit to throat. Might be hard to talk for a while. 
-Level 4 5 5 0 KO vs 3 RS Severe hit to the throat, breathing is difficult. 
-Possible unconsciousness. 
-Level 5 Total 15 3 Auto-KO, HLT vs 3 RS 
-vs Death 
-
-Windpipe collapsed, instant unconsciousness, 
-possible death. 
-
- 
-
- 
+\begin{table} %Neck - Unarmed
+	\caption{Neck - Unarmed}
+	\label{wound:Neck - Unarmed}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 0& 0& - &Chin too tucked in for a good hit, glances off.\\
+Level 2& 1& 0& 0& - &Glancing blow to side of neck. Minimal effect.\\
+Level 3& 3& 2& 0& - &Solid hit to throat. Might be hard to talk for a while.\\
+Level 4& 5& 5& 0& KO vs 3 RS &Severe hit to the throat, breathing is difficult. Possible unconsciousness.\\
+Level 5& Total &15 &3 &Auto-KO, HLT vs 3 RS vs Death. &Windpipe collapsed, instant unconsciousness, possible death.\\
+	\end{tabu}
+\end{table}
+	\clearpage
 
 \section{Shoulder}
-Table 8.1.20 Shoulder - Cutting 
-Wound 
-Level 
+\begin{table} %Shoulder - Cutting
+	\caption{Shoulder - Cutting}
+	\label{wound:Shoulder - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 0& 4& 1& - &Shallow cut to the shoulder.\\
+Level 2& 0& 6& 3& - &Deep cut, significant pain and bleeding.\\
+Level 3& 1& 12& 6& Autodrop &Cleaves into the meat of shoulder, halts at collarbone.\\
+Level 4& 2& 14& 8& Autodrop [Difficult Surgery vs Crippled Limb] &Broken collarbone and cracked ribs, shoulder severely injured\\
+Level 5& - &- &- &Dead& Cloven from shoulder to hip. Near or near-instant death.\\
+	\end{tabu}
+\end{table}
 
-Stun Pain Bleed Special Description 
+\begin{table} %Shoulder - Piercing
+	\caption{Shoulder - Piercing}
+	\label{wound:Shoulder - Piercing}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 0& 3& 2& - &Shallow stab to the shoulder. Painful, bloody, not serious.\\
+Level 2& 0& 5& 5& - &Deeper stab, point halts in muscle.\\
+Level 3& 1& 9& 7& - &Deep into the muscle, chipped collarbone.\\
+Level 4& 2& 12& 12& - &Collarbone cracked, nicked artery, lots of blood.\\
+Level 5& 5& 15& 20& - &Penetration into the subclavicular area. Artery severed.\\
+	\end{tabu}
+\end{table}
 
-Level 1 0 4 1 - Shallow cut to the shoulder. 
-Level 2 0 6 3 - Deep cut, significant pain and bleeding. 
-Level 3 1 12 6 Autodrop Cleaves into the meat of shoulder, halts at 
-collarbone. 
-Level 4 2 14 8 Autodrop 
-[Difficult Surgery vs 
-Crippled Limb] 
+\begin{table} %Shoulder - Bludgeoning
+	\caption{Shoulder - Bludgeoning}
+	\label{wound:Shoulder - Bludgeoning}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 2& 3& 0& - &Blow to the shoulder. No real damage.\\
+Level 2& 4& 5& 2& - &Hard blow to the shoulder, severe muscle bruising.\\
+Level 3& 6& 6& 4& Autodrop [Routine Surgery vs Ruined limb] &Dislocated shoulder, arm useless.\\
+Level 4& 8& 10& 5& Autodrop [Difficulty Surgery vs Ruined Limb] &Shoulder broken, may not recover properly.\\
+Level 5& 12& 15& 12& Autodrop [Miracle Surgery vs Ruined limb], Internal Bleeding &Shoulder collapsed, internal bleeding, recovery unlikely, death possible.\\
+	\end{tabu}
+\end{table}
 
-Broken collarbone and cracked ribs, shoulder 
-severely injured 
-
-Level 5 - - - Dead Cloven from shoulder to hip. Near or near-
-instant death. 
-
- 
-Table 8.1.21 Shoulder - Piercing 
-Wound Level Stun Pain Bleed Special Description 
-Level 1 0 3 2 - Shallow stab to the shoulder. Painful, bloody, not serious. 
-Level 2 0 5 5 - Deeper stab, point halts in muscle. 
-Level 3 1 9 7 - Deep into the muscle, chipped collarbone. 
-Level 4 2 12 12 - Collarbone cracked, nicked artery, lots of blood. 
-Level 5 5 15 20 - Penetration into the subclavicular area. Artery severed. 
-
- 
-Table 8.1.22 Shoulder - Bludgeoning 
-
-
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 2 3 0 - Blow to the shoulder. No real damage. 
-Level 2 4 5 2 - Hard blow to the shoulder, severe muscle 
-bruising. 
-Level 3 6 6 4 Autodrop 
-[Routine Surgery vs Ruined 
-limb] 
-
-Dislocated shoulder, arm useless. 
-
-Level 4 8 10 5 Autodrop 
-[Difficulty Surgery vs Ruined 
-Limb] 
-
-Shoulder broken, may not recover properly. 
-
-Level 5 12 15 12 Autodrop 
-[Miracle Surgery vs Ruined 
-limb], Internal Bleeding 
-
-Shoulder collapsed, internal bleeding, 
-recovery unlikely, death possible. 
-
- 
-Table 8.1.23 Shoulder - Unarmed 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 0 0 0 - Light thump, almost friendly. 
-Level 2 0 0 0 - Slightly painful, though nothing lasting. 
-Level 3 1 3 0 - Shoulder deadened, arm feels funny for quite 
-some time. 
-Level 4 2 8 0 Autodrop 
-[Difficult Surgery vs 
-Crippled Limb] 
-
-Shoulder joint dislocated, tendons torn. Arm may 
-never be the same again. 
-
-Level 5 8 18 0 Autodrop 
-[Difficult Surgery vs 
-Ruined Limb] 
-
-Shoulder joint smashed, arm may twist in 
-unnatural ways. 
-
- 
-
- 
+\begin{table} %Shoulder - Unarmed
+	\caption{Shoulder - Unarmed}
+	\label{wound:Should - Unarmed}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 0& 0& 0& - &Light thump, almost friendly.\\
+Level 2& 0& 0& 0& - &Slightly painful, though nothing lasting.\\
+Level 3& 1& 3& 0& - &Shoulder deadened, arm feels funny for quite some time.\\
+Level 4& 2& 8& 0& Autodrop [Difficult Surgery vs Crippled Limb] &Shoulder joint dislocated, tendons torn. Arm may never be the same again.\\
+Level 5& 8& 18& 0& Autodrop [Difficult Surgery vs Ruined Limb] &Shoulder joint smashed, arm may twist in unnatural ways.\\
+	\end{tabu}
+\end{table}
+	\clearpage
 
 \section{Chest}
-Table 8.1.24 Chest - Cutting 
-Wound 
-Level 
+\begin{table} %Chest - Cutting
+	\caption{Chest - Cutting}
+	\label{wound:Chest - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 0& 4& 0& - &Shallow cut across chest, ribs do their job, no serious effect.\\
+Level 2& 1& 5& 2& - &Deeper cut, raking ribs.\\
+Level 3& 2& 10& 5& - &Cracked ribs, laceration within ribcage, no organ damage but very painful.\\
+Level 4& 3& 15& 20& - &Ribs broken or cloven, bleeding in chest cavity.\\
+Level 5& - &- &- &Dead& Blade cleaves through ribs and into center of chest cavity. Lungs, heart, major blood vessels cut, near-instant death.\\
+	\end{tabu}
+\end{table}
 
-Stun Pain Bleed Special Description 
+\begin{table} %Chest - Piercing
+	\caption{Chest - Piercing}
+	\label{wound:Chest - Piercing}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 0& 3& 2& - &Attack rakes across ribs.\\
+Level 2& 1& 4& 4& - &Minor penetration, point halted by ribs.\\
+Level 3& 3& 7& 6& - &Penetration into chest, no organ damage but significant bleeding.\\
+Level 4& 4& 14& 25& [Difficult Surgery vs Punctured Lung] &Deep penetration into chest cavity! Extreme bleeding and organ damage!\\
+Level 5& - &- &- &Dead& Heart or spine pierced, death is instantaneous.\\
+	\end{tabu}
+\end{table}
 
-Level 1 0 4 0 - Shallow cut across chest, ribs do their job, no serious effect. 
-Level 2 1 5 2 - Deeper cut, raking ribs. 
-Level 3 2 10 5 - Cracked ribs, laceration within ribcage, no organ damage but very 
+\begin{table} %Chest - Bludgeoning
+	\caption{Chest - Bludgeoning}
+	\label{wound:Chest - Bludgeoning}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 3& 0& - &Blow to chest, shock absorbed by ribs.\\
+Level 2& 2& 6& 0& - &Bruised ribs.\\
+Level 3& 3& 8& 0& - &Cracked ribs, exceptional pain. \\
+Level 4& 5& 12& 8& Internal Bleeding &Ribs broken, fragments lacerate flesh, severe bleeding internally\\
+Level 5& Total& Total& 15 &Internal Bleeding &Ribcage shattered, possible organ damage, definite internal bleeding.\\
+	\end{tabu}
+\end{table}
 
-
-painful. 
-Level 4 3 15 20 - Ribs broken or cloven, bleeding in chest cavity. 
-Level 5 - - - Dead Blade cleaves through ribs and into center of chest cavity. Lungs, 
-heart, major blood vessels cut, near-instant death. 
-
- 
-Table 8.1.25 Chest - Piercing 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 0 3 2 - Attack rakes across ribs. 
-Level 2 1 4 4 - Minor penetration, point halted by ribs. 
-Level 3 3 7 6 - Penetration into chest, no organ damage but 
-significant bleeding. 
-Level 4 4 14 25 [Difficult Surgery vs 
-Punctured Lung] 
-
-Deep penetration into chest cavity! Extreme 
-bleeding and organ damage! 
-Level 5 - - - Dead Heart or spine pierced, death is instantaneous. 
-
- 
-Table 8.1.26 Chest - Bludgeoning 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 1 3 0 - Blow to chest, shock absorbed by ribs. 
-Level 2 2 6 0 - Bruised ribs. 
-Level 3 3 8 0 - Cracked ribs, exceptional pain. 
-Level 4 5 12 8 Internal 
-Bleeding 
-
-Ribs broken, fragments lacerate flesh, severe bleeding 
-internally 
-
-Level 5 Total Total 15 Internal 
-Bleeding 
-
-Ribcage shattered, possible organ damage, definite 
-internal bleeding. 
-
- 
-Table 8.1.27 Chest - Unarmed 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 0 0 0 - Blow to the chest. Trivial damage. 
-Level 2 0 1 0 - Good blow to the chest. Might leave a bruise. 
-Level 3 1 2 0 - Serious hit to the chest. Possible bone damage. 
-Level 4 2 5 0 - Rib cracking, significant damage. 
-
-
-Level 5 3 15 5 Internal 
-Bleeding 
-
-Severe rib damage, might have a rib in the lung, internal 
-bleeding probable. 
-
- 
-
- 
+\begin{table} %Chest - Unarmed
+	\caption{Chest - Unarmed}
+	\label{wound:Chest - Unarmed}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 0& 0& 0& - &Blow to the chest. Trivial damage.\\
+Level 2& 0& 1& 0& - &Good blow to the chest. Might leave a bruise.\\
+Level 3& 1& 2& 0& - &Serious hit to the chest. Possible bone damage.\\
+Level 4& 2& 5& 0& - &Rib cracking, significant damage.\\
+Level 5& 3& 15& 5& Internal Bleeding &Severe rib damage, might have a rib in the lung, internal bleeding probable.\\
+	\end{tabu}
+\end{table}
+	\clearpage
 
 \section{Side}
-Table 8.1.28 Side - Cutting 
-Wound 
-Level 
+\begin{table} %Side - Cutting
+	\caption{Side - Cutting}
+	\label{wound:Side - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 0& 6& 2& - &Cut across the side and belly, painful but shallow.\\
+Level 2& 1& 7& 4& - &Deeper cut, lots of blood.\\
+Level 3& 2& 12& 6& [Infection Risk +3] &Blade penetrates into side, serious but survivable. Possible organ damage.\\
+Level 4& 3& 20& 20& KO vs 5 RS [Infection +5] &Disembowelment, extreme damage and survival is close to unthinkable.\\
+Level 5& - &- &- &Dead& Individual is cloven nearly or totally in half. Death is instantaneous.\\
+	\end{tabu}
+\end{table}
 
-Stun Pain Bleed Special Description 
+\begin{table} %Side - Piercing
+	\caption{Side - Piercing}
+	\label{wound:Side - Piercing}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 0& 4& 4& - &Shallow penetration to the side, bit of blood, nothing serious.\\
+Level 2& 1& 5& 6& - &Penetration at an oblique angle, might be through-and-through, significant bleeding but no lasting harm.\\
+Level 3& 2& 9& 9& - &Side pierced, severe bleeding but no organ damage.\\
+Level 4& 3& 12& 14& [Infection Risk +2] &Deep penetration, organ damage, severe bleeding, serious risk of infection. \\
+Level 5& 5& 16& 18& [Infection Risk +5] &Extreme penetration, possible exit wound, organ and intestinal damage!\\
+	\end{tabu}
+\end{table}
 
-Level 1 0 6 2 - Cut across the side and belly, painful but shallow. 
-Level 2 1 7 4 - Deeper cut, lots of blood. 
-Level 3 2 12 6 [Infection Risk 
-+3] 
+\begin{table} %Side - Bludgeoning
+	\caption{Side - Bludgeoning}
+	\label{wound:Side - Bludgeoning}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 2& 4& 0& - &Smacked in the side. Bad bruise, but that’s it.\\
+Level 2& 4& 5& 0& - &Hard blow, winded, may cause nausea.\\
+Level 3& 6& 7& 1& Internal Bleeding &Severe blow to side or belly, nausea and pain, but no internal damage.\\
+Level 4& 8& 12& 5& Internal Bleeding &Blood in mouth, organ damage. Mercifully little risk of infection.\\
+Level 5& Total& Total& 25 &[Infection Risk +5], Internal Bleeding &Internal organs ruptured, survival would be nothing short of a miracle.\\
+	\end{tabu}
+\end{table}
 
-Blade penetrates into side, serious but survivable. Possible 
-organ damage. 
-
-Level 4 3 20 20 KO vs 5 RS 
-[Infection +5] 
-
-Disembowelment, extreme damage and survival is close to 
-unthinkable. 
-Level 5 - - - Dead Individual is cloven nearly or totally in half. Death is 
-instantaneous. 
-
- 
-Table 8.1.29 Side - Piercing 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 0 4 4 - Shallow penetration to the side, bit of blood, nothing serious. 
-Level 2 1 5 6 - Penetration at an oblique angle, might be through-and-
-through, significant bleeding but no lasting harm. 
-Level 3 2 9 9 - Side pierced, severe bleeding but no organ damage. 
-Level 4 3 12 14 [Infection 
-Risk +2] 
-
-Deep penetration, organ damage, severe bleeding, serious risk 
-of infection. 
-
-Level 5 5 16 18 [Infection 
-Risk +5] 
-
-Extreme penetration, possible exit wound, organ and 
-intestinal damage! 
-
- 
-Table 8.1.30 Side - Bludgeoning 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 2 4 0 - Smacked in the side. Bad bruise, but that’s it. 
-Level 2 4 5 0 - Hard blow, winded, may cause nausea. 
-Level 3 6 7 1 Internal Bleeding Severe blow to side or belly, nausea and pain, 
-but no internal damage. 
-
-
-Level 4 8 12 5 Internal Bleeding Blood in mouth, organ damage. Mercifully little 
-risk of infection. 
-Level 5 Total Total 25 [Infection Risk +5], 
-Internal Bleeding 
-
-Internal organs ruptured, survival would be 
-nothing short of a miracle. 
-
- 
-Table 8.1.31 Side - Unarmed 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 1 0 0 - Grazing blow, little effect. 
-Level 2 1 1 0 - Blow absorbed mostly by muscle, little effect. 
-Level 3 8 8 0 - Liver blow! That’s gonna hurt tomorrow. 
-Level 4 15 10 0 - Severe liver blow! This would be a fight-ender for most 
-people. 
-Level 5 20 15 3 Internal 
-Bleeding 
-
-Liver damaged, unbearable pain, possible internal 
-bleeding. 
-
- 
-
- 
+\begin{table} %Side - Unarmed
+	\caption{Side - Unarmed}
+	\label{wound:Side - Unarmed}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 0& 0& - &Grazing blow, little effect.\\
+Level 2& 1& 1& 0& - &Blow absorbed mostly by muscle, little effect.\\
+Level 3& 8& 8& 0& - &Liver blow! That’s gonna hurt tomorrow.\\
+Level 4& 15& 10& 0& - &Severe liver blow! This would be a fight-ender for most people.\\
+Level 5& 20& 15& 3& Internal Bleeding &Liver damaged, unbearable pain, possible internal bleeding.\\
+	\end{tabu}
+\end{table}
+	\clearpage
 
 \section{Belly}
-Table 8.1.32 Belly - Cutting 
-Wound 
-Level 
+\begin{table} %Belly - Cutting
+	\caption{Belly - Cutting}
+	\label{wound:Belly - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 5& 1& - &Cut straight up across navel. Not deep, but damn close.\\
+Level 2& 3& 8& 4& - &Deeper cut, significant flesh wound, some muscle damage. Not pretty.\\
+Level 3& 4& 10& 10& - &Serious cut belly, muscle damage, lots of bleeding, near organ damage.\\
+Level 4& 5& 15& 15& [Infection Risk +4] &Cut belly, intestinal and organ damage. Get a doctor. Get one fast.\\
+Level 5& - &- &- &Dead& Blade cleaves into belly, through organs and sternum. Instant death.\\
+	\end{tabu}
+\end{table}
 
-Stun Pain Bleed Special Description 
+\begin{table} %Belly - Piercing
+	\caption{Belly - Piercing}
+	\label{wound:Belly - Piercing}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 4& 3& - &Shallow stab to side of midriff. No real damage.\\
+Level 2& 3& 6& 6& - &Deeper stab, muscle damage and lots of bleeding, but mercifully no organs hit.\\
+Level 3& 5& 12& 10& [Infection Chance +4] &Stabbed in the gut, organ and intestine damage. This is serious.\\
+Level 4& 7& 14& 20& [Infection Chance +4] &Severe internal damage. If this happened in a hospital today, your odds would be poor.\\
+Level 5& - &- &- &Dead& Point slams straight through guts to sever central artery of trunk. Exsanguination occurs within seconds, unconsciousness is instant.\\
+	\end{tabu}
+\end{table}
 
-Level 1 1 5 1 - Cut straight up across navel. Not deep, but damn close. 
-Level 2 3 8 4 - Deeper cut, significant flesh wound, some muscle 
-damage. Not pretty. 
-Level 3 4 10 10 - Serious cut belly, muscle damage, lots of bleeding, near 
-organ damage. 
-Level 4 5 15 15 [Infection Risk 
-+4] 
+\begin{table} %Belly - Bludgeoning
+	\caption{Belly - Bludgeoning}
+	\label{wound:Belly - Bludgeoning}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 3& 4& 0& - &A solid blow to the stomach, winding but not serious.\\
+Level 2& 6& 5& 0& - &A harder, bruising blow to the midriff.\\
+Level 3& 9& 6& 0& KO vs 3 RS &Severe blow to the stomach, brachial response might result in unconsciousness.\\
+Level 4& 11& 7& 3& KO vs 4 RS &Tremendous winding blow to the stomach, may vomit (END at 2), may lose consciousness.\\
+Level 5& 15& 8& 5& KO vs 6 RS &Possible organ damage, will be sick, will almost certainly lose consciousness.\\
+	\end{tabu}
+\end{table}
 
-Cut belly, intestinal and organ damage. Get a doctor. Get 
-one fast. 
-Level 5 - - - Dead Blade cleaves into belly, through organs and sternum. 
-Instant death. 
-
- 
-Table 8.1.33 Belly - Piercing 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 1 4 3 - Shallow stab to side of midriff. No real damage. 
-Level 2 3 6 6 - Deeper stab, muscle damage and lots of bleeding, but 
-
-
-mercifully no organs hit. 
-
-Level 3 5 12 10 [Infection 
-Chance +4] 
-
-Stabbed in the gut, organ and intestine damage. This is serious. 
-
-Level 4 7 14 20 [Infection 
-Chance +4] 
-
-Severe internal damage. If this happened in a hospital today, 
-your odds would be poor. 
-Level 5 - - - Dead Point slams straight through guts to sever central artery of 
-trunk. Exsanguination occurs within seconds, unconsciousness 
-is instant. 
- 
-Table 8.1.34 Belly - Bludgeoning 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 3 4 0 - A solid blow to the stomach, winding but not serious. 
-Level 2 6 5 0 - A harder, bruising blow to the midriff. 
-Level 3 9 6 0 KO vs 3 
-RS 
-
-Severe blow to the stomach, brachial response might result in 
-unconsciousness. 
-
-Level 4 11 7 3 KO vs 4 
-RS 
-
-Tremendous winding blow to the stomach, may vomit (END at 
-2), may lose consciousness. 
-
-Level 5 15 8 5 KO vs 6 
-RS 
-
-Possible organ damage, will be sick, will almost certainly lose 
-consciousness. 
-
- 
-Table 8.1.35 Belly - Unarmed 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 1 0 0 - Gut shot. 
-Level 2 3 3 0 - A harder, bruising blow to the midriff. 
-Level 3 5 5 0 KO vs 3 
-RS 
-
-Severe blow to the stomach, brachial response might result in 
-unconsciousness. 
-
-Level 4 7 7 0 KO vs 4 
-RS 
-
-Tremendous winding blow to the stomach, may vomit (END at 
-2), may lose consciousness. 
-
-Level 5 9 12 3 KO vs 6 
-RS 
-
-Possible organ damage, will be sick, will almost certainly lose 
-consciousness. 
-
- 
-
- 
+\begin{table} %Belly - Unarmed
+	\caption{Belly - Unarmed}
+	\label{wound:Belly - Unarmed}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 0& 0& - &Gut shot.\\
+Level 2& 3& 3& 0& - &A harder, bruising blow to the midriff.\\
+Level 3& 5& 5& 0& KO vs 3 RS &Severe blow to the stomach, brachial response might result in unconsciousness.\\
+Level 4& 7& 7& 0& KO vs 4 RS &Tremendous winding blow to the stomach, may vomit (END at 2), may lose consciousness.\\
+Level 5& 9& 12& 3& KO vs 6 RS &Possible organ damage, will be sick, will almost certainly lose consciousness.\\
+	\end{tabu}
+\end{table}
+	\clearpage
 
 \section{Hip}
-Table 8.1.36 Hip - Cutting Wound Level 
-Stun Pain Bleed Special Description 
+\begin{table} %Hip - Cutting
+	\caption{Hip - Cutting}
+	\label{wound:Hip - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 5& 1& - &Shallow cut on the hip. No significant damage.\\
+Level 2& 2& 7& 2& - &Deeper cut, bleeding, painful.\\
+Level 3& 3& 12& 5& Stability vs 3 RS &Blade chips hip bone, excruciatingly painful.\\
+Level 4& 4& 16& 10& Stability vs 4 RS &Broken hip, blade nicks artery.\\
+Level 5& 5& 20& 20& Auto-Prone [Difficult Surgery vs Crippled Leg] &Blade cleaves fully into hip, cuts artery, severe, and very likely lethal injury.\\
+	\end{tabu}
+\end{table}
 
-Level 1 1 5 1 - Shallow cut on the hip. No significant damage. 
-Level 2 2 7 2 - Deeper cut, bleeding, painful. 
-Level 3 3 12 5 Stability vs 3 RS Blade chips hip bone, excruciatingly painful. 
-Level 4 4 16 10 Stability vs 4 RS Broken hip, blade nicks artery. 
-Level 5 5 20 20 Auto-Prone [Difficult 
-Surgery vs Crippled Leg] 
+\begin{table} %Hip - Piercing
+	\caption{Hip - Piercing}
+	\label{wound:Hip - Piercing}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 4& 1& - &Shallow penetration over the hip.\\
+Level 2& 2& 6& 3& Stability vs 1 RS &Deeper penetration, glances off bone.\\
+Level 3& 3& 10& 6& Stability vs 3 RS &Bone chips, but weapon does not penetrate deeper.\\
+Level 4& 4& 12& 8& Stability vs 4 RS &Hip fractures beneath penetration, severe bleeding.\\
+Level 5& 5& 14& 12& Stability vs 5 RS [Miracle Surgery vs Crippled Leg] &Hip is smashed, may never recover, potentially lethal.\\
+	\end{tabu}
+\end{table}
 
-Blade cleaves fully into hip, cuts artery, 
-severe, and very likely lethal injury. 
+\begin{table} %Hip - Bludgeoning
+	\caption{Hip - Bludgeoning}
+	\label{wound:Hip - Bludgeoning}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 2& 3& 0& - &Glancing blow to the hip.\\
+Level 2& 3& 5& 1& Stability vs 2 RS &Solid blow to hip, jarring and painful.\\
+Level 3& 5& 10& 3& Stability vs 3 RS &Cracked hip, bruised bone.\\
+Level 4& 6& 12& 5& Auto-Prone [Difficult Surgery vs Crippled Leg] &Hip broken, leg may be crippled permanently.\\
+Level 5& 8& 18& 7& Auto-Prone [Miracle Surgery vs Crippled Leg] &Hip is destroyed. Leg probably won’t recover.\\
+	\end{tabu}
+\end{table}
 
- 
-Table 8.1.37 Hip - Piercing 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 1 4 1 - Shallow penetration over the hip. 
-Level 2 2 6 3 Stability vs 1 RS Deeper penetration, glances off bone. 
-Level 3 3 10 6 Stability vs 3 RS Bone chips, but weapon does not penetrate 
-deeper. 
-Level 4 4 12 8 Stability vs 4 RS Hip fractures beneath penetration, severe 
-bleeding. 
-Level 5 5 14 12 Stability vs 5 RS 
-[Miracle Surgery vs Crippled 
-Leg] 
-
-Hip is smashed, may never recover, 
-potentially lethal. 
-
- 
-Table 8.1.38 Hip - Bludgeoning 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 2 3 0 - Glancing blow to the hip. 
-Level 2 3 5 1 Stability vs 2 RS Solid blow to hip, jarring and painful. 
-Level 3 5 10 3 Stability vs 3 RS Cracked hip, bruised bone. 
-Level 4 6 12 5 Auto-Prone [Difficult Surgery vs 
-Crippled Leg] 
-
-Hip broken, leg may be crippled 
-permanently. 
-
-Level 5 8 18 7 Auto-Prone [Miracle Surgery vs 
-Crippled Leg] 
-
-Hip is destroyed. Leg probably won’t 
-recover. 
-
- 
-Table 8.1.39 Hip - Unarmed 
-Wound Level Stun Pain Bleed Special Description 
-
-
-Level 1 0 0 0 - Grazing blow, on a very inopportune location. 
-Level 2 0 0 0 - Minor damage to the hip. 
-Level 3 1 1 0 - Bruised hip. It stings a bit. 
-Level 4 2 3 0 - Severely bruised hip. Still not much damage. 
-Level 5 3 6 0 Stability vs 3 RS Possible fractured hip, loss of balance probable. 
-
- 
-
- 
-
- 
-
+\begin{table} %Hip - Unarmed
+	\caption{Hip - Unarmed}
+	\label{wound:Hip - Unarmed}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 0& 0& 0& - &Grazing blow, on a very inopportune location.\\
+Level 2& 0& 0& 0& - &Minor damage to the hip.\\
+Level 3& 1& 1& 0& - &Bruised hip. It stings a bit.\\
+Level 4& 2& 3& 0& - &Severely bruised hip. Still not much damage.\\
+Level 5& 3& 6& 0& Stability vs 3 RS &Possible fractured hip, loss of balance probable.\\
+	\end{tabu}
+\end{table}
+	\clearpage
 
 \section{Groin}
-Table 8.1.40 Groin - Cutting 
-Wound 
-Level 
+\begin{table} %Groin - Cutting
+	\caption{Groin - Cutting}
+	\label{wound:Groin - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 2& 14& 2& - &Jimmies rustled, not a good day.\\
+Level 2& 3& 16& 4& [Difficult Surgery vs Sterility] &Severe cut, significant damage. May lose consciousness.\\
+Level 3& 5& 20& 8& KO vs 3 RS [Miracle Surgery vs Sterility] &Excessive damage, blade strikes pelvis, internal bleeding and terrible damage.\\
+Level 4& Total& Total& 20 &KO vs 5 RS Sterility &Blade cleaves deep, artery cut, excessive damage to reproductive organs within and without.\\
+Level 5& - &- &- &Dead& Blade cleaves pelvis in twain, coming to rest deep in torso. Mercifully near-instant death.\\
+	\end{tabu}
+\end{table}
 
-Stun Pain Bleed Special Description 
+\begin{table} %Groin - Piercing
+	\caption{Groin - Piercing}
+	\label{wound:Groin - Piercing}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 2& 12& 4& - &Your lizard brain cries, vehemently, ‘Do not make a habit of getting hit like this.’\\
+Level 2& 3& 15& 8& [Difficult Surgery vs \hyperref[bane:Barren/Sterility]{Sterility}] &Stabbed in groin. Excruciatingly painful, chance of reproductive organ damage.\\
+Level 3& 4& 18& 15& [Miracle Surgery vs Sterility] &Deep stab in groin, nicks artery. Possible loss of reproductive capability.\\
+Level 4& Total& Total& 25 &KO vs 5 RS Sterility &Artery severed, reproductive organs damaged beyond repair, unconsciousness likely.\\
+Level 5& - &- &- &Dead& Point slams through groin into abdomen, severing major artery and cracking pelvis. Death from shock and exsanguination follow instantly.\\
+	\end{tabu}
+\end{table}
 
-Level 1 2 14 2 - Jimmies rustled, not a good day. 
-Level 2 3 16 4 [Difficult Surgery 
-vs Sterility] 
+\begin{table} %Groin - Bludgeoning
+	\caption{Groin - Bludgeoning}
+	\label{wound:Groin - Bludgeoning}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 4& 10& 0& - &A modest thump between the legs. Painful and debilitating.\\
+Level 2& 6& 15& 0& KO vs 2 RS &A harder blow, enough to cause bruising and extreme nausea. May lose consciousness.\\
+Level 3& 8& 20& 3& KO vs 3 RS [Routine Surgery vs Sterility] &Serious damage, reproductive organs may be damaged, surgical assessment advised. May lose consciousness.\\
+Level 4& Total& Total& 10 &KO vs 5 RS [Difficult Surgery vs Sterility] &Severe damage to reproductive organs, but also to pelvis and innards. Possible organ damage. May lose consciousness.\\
+Level 5& Total& Total& 15 &Auto-KO [Miracle Surgery vs Sterility] &The horrors borne within this wound level do not bear consideration. Severe internal organ damage, instant knockout, may never recover.\\
+	\end{tabu}
+\end{table}
 
-Severe cut, significant damage. May lose 
-consciousness. 
-
-Level 3 5 20 8 KO vs 3 RS 
-[Miracle Surgery vs 
-Sterility] 
-
-Excessive damage, blade strikes pelvis, internal 
-bleeding and terrible damage. 
-
-Level 4 Total Total 20 KO vs 5 RS 
-Sterility 
-
-Blade cleaves deep, artery cut, excessive damage to 
-reproductive organs within and without. 
-Level 5 - - - Dead Blade cleaves pelvis in twain, coming to rest deep in 
-torso. Mercifully near-instant death. 
-
- 
-Table 8.1.41 Groin - Piercing 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 2 12 4 - Your lizard brain cries, vehemently, ‘Do not make a habit of 
-getting hit like this.’ 
-Level 2 3 15 8 [Difficult 
-Surgery vs 
-Sterility] 
-
-Stabbed in groin. Excruciatingly painful, chance of 
-reproductive organ damage. 
-
-Level 3 4 18 15 [Miracle 
-Surgery vs 
-Sterility] 
-
-Deep stab in groin, nicks artery. Possible loss of 
-reproductive capability. 
-
-Level 4 Total Total 25 KO vs 5 RS 
-Sterility 
-
-Artery severed, reproductive organs damaged beyond repair, 
-unconsciousness likely. 
-Level 5 - - - Dead Point slams through groin into abdomen, severing major 
-artery and cracking pelvis. Death from shock and 
-exsanguination follow instantly. 
-
- 
-
- 
-
-
-Table 8.1.42 Groin - Bludgeoning 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 4 10 0 - A modest thump between the legs. Painful and debilitating. 
-Level 2 6 15 0 KO vs 2 RS A harder blow, enough to cause bruising and extreme 
-nausea. May lose consciousness. 
-Level 3 8 20 3 KO vs 3 RS 
-[Routine 
-Surgery vs 
-Sterility] 
-
-Serious damage, reproductive organs may be damaged, 
-surgical assessment advised. May lose consciousness. 
-
-Level 4 Total Total 10 KO vs 5 RS 
-[Difficult 
-Surgery vs 
-Sterility] 
-
-Severe damage to reproductive organs, but also to pelvis 
-and innards. Possible organ damage. May lose 
-consciousness. 
-
-Level 5 Total Total 15 Auto-KO 
-[Miracle Surgery 
-vs Sterility] 
-
-The horrors borne within this wound level do not bear 
-consideration. Severe internal organ damage, instant 
-knockout, may never recover. 
-
- 
-Table 8.1.43 Groin - Unarmed 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 2 3 0 - The schoolyard standby, eh? Pain vanishes after 5 
-Rounds. 
-Level 2 4 5 0 - Blow to the groin, cringeworthy. Pain vanishes 
-after 5 Rounds. 
-Level 3 6 8 0 KO vs 2 RS Severe blow, agonizing. 
-Level 4 8 12 0 KO vs 5 RS 
-
- 
-
-Hard blow, instant nausea, significant chance of 
-losing consciousness. 
-
-Level 5 Total Total 3 Auto-KO 
-[Difficult Surgery vs 
-Sterility] 
-
-Mother of God. 
-
- 
-
- 
-
- 
-
- 
-
- 
+\begin{table} %Groin - Unarmed
+	\caption{Groin - Unarmed}
+	\label{wound:Groin - Unarmed}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 2& 3& 0& - &The schoolyard standby, eh? Pain vanishes after 5 Rounds.\\
+Level 2& 4& 5& 0& - &Blow to the groin, cringeworthy. Pain vanishes after 5 Rounds.\\
+Level 3& 6& 8& 0& KO vs 2 RS &Severe blow, agonizing.\\
+Level 4& 8& 12& 0& KO vs 5 RS &Hard blow, instant nausea, significant chance of losing consciousness.\\
+Level 5& Total& Total& 3 &Auto-KO [Difficult Surgery vs Sterility] &Mother of God.\\
+	\end{tabu}
+\end{table}
+	\clearpage
 
 \section{Thigh}
-Table 8.1.44 Thigh - Cutting Wound Level 
-Stun Pain Bleed Special Description 
-Level 1 1 4 2 - Shallow cut on thigh. 
-Level 2 2 5 4 - Deeper cut on thigh. Superficial damage. 
-Level 3 3 12 10 Stability vs 3 RS Serious cut cleaves to bone, anguish, possible 
-knockdown. 
-Level 4 4 15 20 Auto-prone 
-[Difficult Surgery 
-vs Crippled Leg] 
+\begin{table} %Thigh - Cutting
+	\caption{Thigh - Cutting}
+	\label{wound:Thigh - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 4& 2& - &Shallow cut on thigh.\\
+Level 2& 2& 5& 4& - &Deeper cut on thigh. Superficial damage.\\
+Level 3& 3& 12& 10& Stability vs 3 RS &Serious cut cleaves to bone, anguish, possible knockdown.\\
+Level 4& 4& 15& 20
+	&Auto-prone\newline
+	Difficult Surgery vs Crippled Leg
+&Deep cut to thigh, chipped femur, severed artery. Medic!\\
+Level 5& Total& Total& 25 
+	&Auto-prone\newline
+	[Infection Risk +5]\newline
+	Limb Severed! 
+&Blade cleaves through the femur and either severs leg entirely or gets stuck in hip/pelvis. This is close to unsurvivable.\\
+	\end{tabu}
+\end{table}
 
-Deep cut to thigh, chipped femur, severed artery. Medic! 
+\begin{table} %Thigh - Piercing
+	\caption{Thigh - Piercing}
+	\label{wound:Thigh - Piercing}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 3& 4& - &Shallow penetration of thigh.\\
+Level 2& 2& 5& 6& - &Deeper penetration of thigh, lots of blood.\\
+Level 3& 3& 10& 10& Stability vs 1 RS &Bone is glanced, artery nicked.\\
+Level 4& 4& 12& 15& Stability vs 3 RS &Femur cracked, artery severed.\\
+Level 5& 5& 14& 20& Auto-prone [Difficult Surgery vs Crippled Leg] &Leg completely impaled, artery severed, bone broken. Automatic knockdown\\
+	\end{tabu}
+\end{table}
 
-Level 5 Total Total 25 Auto-prone 
-[Infection Risk +5] 
-Limb Severed! 
+\begin{table} %Thigh - Bludgeoning
+	\caption{Thigh - Bludgeoning}
+	\label{wound:Thigh - Bludgeoning}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 2& 0& 0& - &Hit on thigh. Impact totally absorbed by dense muscle.\\
+Level 2& 4& 2& 0& - &More solid hit, painful bruising on thigh, still nothing serious.\\
+Level 3& 6& 4& 1& Stability vs 2 RS &Severe bruising, minor femur damage, possible knockdown.\\
+Level 4& 8& 10& 3& Auto-prone [Routine Surgery vs Crippled Leg] &Femur fractured, automatic knockdown.\\
+Level 5& 10& 20& 5& Auto-prone [Difficult Surgery vs Crippled Leg] &Compound fracture of femur. Unspeakably horrific, does not bear thinking about.\\
+	\end{tabu}
+\end{table}
 
-Blade cleaves through the femur and either severs leg 
-entirely or gets stuck in hip/pelvis. This is close to 
-unsurvivable. 
-
- 
-Table 8.1.45 Thigh - Piercing 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 1 3 4 - Shallow penetration of thigh. 
-Level 2 2 5 6 - Deeper penetration of thigh, lots of blood. 
-Level 3 3 10 10 Stability vs 1 RS Bone is glanced, artery nicked. 
-Level 4 4 12 15 Stability vs 3 RS Femur cracked, artery severed. 
-Level 5 5 14 20 Auto-prone 
-[Difficult Surgery vs 
-Crippled Leg] 
-
-Leg completely impaled, artery severed, bone 
-broken. Automatic knockdown 
-
- 
-Table 8.1.46 Thigh - Bludgeoning 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 2 0 0 - Hit on thigh. Impact totally absorbed by dense 
-muscle. 
-Level 2 4 2 0 - More solid hit, painful bruising on thigh, still 
-nothing serious. 
-Level 3 6 4 1 Stability vs 2 RS Severe bruising, minor femur damage, possible 
-knockdown. 
-Level 4 8 10 3 Auto-prone 
-[Routine Surgery vs 
-Crippled Leg] 
-
-Femur fractured, automatic knockdown. 
-
-Level 5 10 20 5 Auto-prone 
-[Difficult Surgery vs 
-
-Compound fracture of femur. Unspeakably horrific, 
-does not bear thinking about. 
-
-
-Crippled Leg] 
-
- 
-Table 8.1.47 Thigh - Unarmed 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 0 0 0 - Hit on thigh. Impact totally absorbed by dense 
-muscle. 
-Level 2 0 0 0 - Hit on thigh. Impact mostly absorbed by dense 
-muscle. 
-Level 3 0 1 0 - More solid hit, painful bruising on thigh, still 
-nothing serious. 
-Level 4 1 2 0 Stability vs 2 RS Severe bruising, minor femur damage, possible 
-knockdown. 
-Level 5 2 10 3 Auto-prone 
-[Routine Surgery vs 
-Crippled Leg] 
-
-Femur fractured, automatic knockdown. 
-
- 
-
- 
+\begin{table} %Thigh - Unarmed
+	\caption{Thigh - Unarmed}
+	\label{wound:Thigh - Unarmed}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 0& 0& 0& - &Hit on thigh. Impact totally absorbed by dense muscle.\\
+Level 2& 0& 0& 0& - &Hit on thigh. Impact mostly absorbed by dense muscle.\\
+Level 3& 0& 1& 0& - &More solid hit, painful bruising on thigh, still nothing serious.\\
+Level 4& 1& 2& 0& Stability vs 2 RS &Severe bruising, minor femur damage, possible knockdown.\\
+Level 5& 2& 10& 3& Auto-prone [Routine Surgery vs Crippled Leg] &Femur fractured, automatic knockdown.\\
+	\end{tabu}
+\end{table}
+	\clearpage
 
 \section{Knee}
-Table 8.1.48 Knee - Cutting Wound Level 
-Stun Pain Bleed Special Description 
+\begin{table} %Knee - Cutting
+	\caption{Knee - Cutting}
+	\label{wound:Knee - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 6& 0& - &‘Motherf-’\\
+Level 2& 1& 8& 1& Stability vs 1 RS &Deep cut to knee, painful contact with bone. May fall.\\
+Level 3& 3& 10& 2& Stability vs 3 RS &Chipped bone, jarring and painful.\\
+Level 4& 5& 15& 3& Auto-prone [Difficult Surgery vs Crippled Knee] &Knee shattered. Automatic Knockdown. Leg may never recover.\\
+Level 5& Total& Total& 20 &Auto-prone [Infection Chance +3] Limb Severed! &Leg severed at knee. Knockdown automatic. Death by exsanguination likely to follow without medical attention.\\
+	\end{tabu}
+\end{table}
 
-Level 1 1 6 0 - ‘Motherf-’ 
-Level 2 1 8 1 Stability vs 1 RS Deep cut to knee, painful contact with bone. May fall. 
-Level 3 3 10 2 Stability vs 3 RS Chipped bone, jarring and painful. 
-Level 4 5 15 3 Auto-prone 
-[Difficult Surgery vs 
-Crippled Knee] 
+\begin{table} %Knee - Piercing
+	\caption{Knee - Piercing}
+	\label{wound:Knee - Piercing}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 5& 2& - &A glancing stab to the knee.\\
+Level 2& 1& 7& 4& Stability vs 2 RS &Knee injured.\\
+Level 3& 2& 9& 7& Stability vs 4 RS &Knee fractures, pain is intense.\\
+Level 4& 3& 16& 12& Auto-prone [Difficult Surgery vs Crippled Knee] &Kneecap shattered. Probably won't recover. Automatic knockdown.\\
+Level 5& 8& 20& 15& Auto-prone [Miracle Surgery vs Crippled Knee] &Knee shatters, leg bends wrong way. Automatic knockdown. Odds of recovery are dubious at best.\\
+	\end{tabu}
+\end{table}
 
-Knee shattered. Automatic Knockdown. Leg may never 
-recover. 
+\begin{table} %Knee - Bludgeoning
+	\caption{Knee - Bludgeoning}
+	\label{wound:Knee - Bludgeoning}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1 &2 &3 &0 &Stability vs 2 RS &Glancing blow to the knee. Disruptive, but no major damage. May trip.\\
+Level 2 &4 &5& 0& Stability vs 3 RS &Solid blow to the knee, bruising, may trip.\\
+Level 3 &6 &7& 2& Stability vs 5 RS &Damaged knee, bruised or chipped bone, may fall down.\\
+Level 4 &8 &10& 3& Auto-prone [Difficult Surgery vs Crippled knee] &Broken knee, automatic knockdown, may never recover.\\
+Level 5 &Total &18 &5 &Auto-prone [Miracle Surgery vs Crippled knee] &Knee smashed, automatic knockdown. Would take an act of God to recover.\\
+	\end{tabu}
+\end{table}
 
-Level 5 Total Total 20 Auto-prone 
-[Infection Chance 
-+3] Limb Severed! 
-
- 
-
-Leg severed at knee. Knockdown automatic. Death by 
-exsanguination likely to follow without medical 
-attention. 
-
- 
-Table 8.1.49 Knee - Piercing 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 1 5 2 - A glancing stab to the knee. 
-
-
-Level 2 1 7 4 Stability vs 2 RS Knee injured. 
-Level 3 2 9 7 Stability vs 4 RS Knee fractures, pain is intense. 
-Level 4 3 16 12 Auto-prone 
-[Difficult Surgery vs 
-Crippled Knee] 
-
-Kneecap shattered. Probably won't recover. 
-Automatic knockdown. 
-
-Level 5 8 20 15 Auto-prone 
-[Miracle Surgery vs 
-Crippled Knee] 
-
-Knee shatters, leg bends wrong way. Automatic 
-knockdown. Odds of recovery are dubious at best. 
-
- 
-Table 8.1.50 Knee - Bludgeoning 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 2 3 0 Stability vs 2 RS Glancing blow to the knee. Disruptive, but no 
-major damage. May trip. 
-Level 2 4 5 0 Stability vs 3 RS Solid blow to the knee, bruising, may trip. 
-Level 3 6 7 2 Stability vs 5 RS Damaged knee, bruised or chipped bone, may fall 
-down. 
-Level 4 8 10 3 Auto-prone 
-[Difficult Surgery vs 
-Crippled knee] 
-
-Broken knee, automatic knockdown, may never 
-recover. 
-
-Level 5 Total 18 5 Auto-prone 
-[Miracle Surgery vs 
-Crippled knee] 
-
-Knee smashed, automatic knockdown. Would take 
-an act of God to recover. 
-
- 
-Table 8.1.51 Knee - Unarmed 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 0 0 0 - Didn’t even feel it. 
-Level 2 1 0 0 - Unpleasant stinging sensation. 
-Level 3 2 5 0 Stability vs 5 RS Knee hurt, possible knockdown. 
-Level 4 3 10 0 Auto-prone 
-[Difficult Surgery vs 
-Crippled knee] 
-
-Knee fractured, possible tendon/muscle tear. Could 
-be a crippling injury. Extreme pain. 
-
-Level 5 8 18 0 Auto-prone 
-[Miracle Surgery vs 
-Crippled knee] 
-
-Knee snapped backwards. Onlookers may faint. Leg 
-will probably never recover. 
-
- 
-
- 
+\begin{table} %Knee - Unarmed
+	\caption{Knee - Unarmed}
+	\label{wound:Knee - Unarmed}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 0& 0& 0& - &Didn’t even feel it.\\
+Level 2& 1& 0& 0& - &Unpleasant stinging sensation.\\
+Level 3& 2& 5& 0&Stability vs 5 RS &Knee hurt, possible knockdown.\\
+Level 4& 3& 10& 0& Auto-prone [Difficult Surgery vs Crippled knee] &Knee fractured, possible tendon/muscle tear. Could be a crippling injury. Extreme pain.\\
+Level 5& 8& 18& 0& Auto-prone [Miracle Surgery vs Crippled knee] &Knee snapped backwards. Onlookers may faint. Leg will probably never recover.\\
+	\end{tabu}
+\end{table}
+	\clearpage
 
 \section{Shin}
-Table 8.1.52 Shin - Cutting Wound Level
-Stun Pain Bleed Special Description 
+\begin{table} %Shin - Cutting
+	\caption{Shin - Cutting}
+	\label{wound:Shin - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 5& 1& - &Grazed shin, painful but no lasting harm.\\
+Level 2& 2& 7& 4& Stability vs 1 RS &Deep cut, bone contact.\\
+Level 3& 3& 9& 7& Stability vs 3 RS &Chipped shinbone, some blood, may fall.\\
+Level 4& 4& 14& 10& Auto-prone [Difficult Surgery vs Crippled Leg] &Deep cut cleaves into bone, automatic knockdown. May never recover.\\
+Level 5& 5& 20& 15& Auto-prone [Infection Chance +3] Limb Severed! &Leg severed halfway down shin. Automatic knockdown.\\
+	\end{tabu}
+\end{table}
 
-Level 1 1 5 1 - Grazed shin, painful but no lasting harm. 
-Level 2 2 7 4 Stability vs 1 RS Deep cut, bone contact. 
-Level 3 3 9 7 Stability vs 3 RS Chipped shinbone, some blood, may fall. 
-Level 4 4 14 10 Auto-prone 
-[Difficult Surgery vs 
-Crippled Leg] 
+\begin{table} %Shin - Piercing
+	\caption{Shin - Piercing}
+	\label{wound:Shin - Piercing}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 4& 2& - &A light fracture to the shin.\\
+Level 2& 2& 6& 5& Stability vs 2 RS &Deep puncture, chipped bone.\\
+Level 3& 3& 8& 8& Stability vs 3 RS &Tendon grazed, leg freezes up. Possible bone fracture.\\
+Level 4& 4& 10& 10& Auto-prone [Routine Surgery vs Crippled Leg] &Shinbone breaks, tendon damage. Severe muscle damage. Automatic knockdown.\\
+Level 5& 5& 20& 17& Auto-prone [Difficult Surgery vs Crippled Leg] &Compound fracture of shinbone, leg ruined, may never recover. Automatic knockdown.\\
+	\end{tabu}
+\end{table}
 
-Deep cut cleaves into bone, automatic 
-knockdown. May never recover. 
+\begin{table} %Shin - Bludgeoning
+	\caption{Shin - Bludgeoning}
+	\label{wound:Shin - Bludgeoning}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 2& 4& 0& - &Glancing blow to shin. No real damage, but man that stings.\\
+Level 2& 3& 6& 0& Stability vs 1 RS &Harder blow, may fall.\\
+Level 3& 5& 8& 3& Stability vs 4 RS &Fractured shin, agonizing, and may fall.\\
+Level 4& 7& 14& 5& [Routine Surgery vs Crippled Leg] Auto-prone &Shin breaks, excessive pain. Automatic knockdown.\\
+Level 5& 9& 16& 10& Auto-prone [Miracle surgery vs Crippled Leg] &Compound fracture of the shinbone, excessive damage. Leg may never recover. Automatic knockdown.\\
+	\end{tabu}
+\end{table}
 
-Level 5 5 20 15 Auto-prone 
-[Infection Chance +3] 
-Limb Severed! 
-
-Leg severed halfway down shin. Automatic 
-knockdown. 
-
- 
-Table 8.1.53 Shin - Piercing 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 1 4 2 - A light fracture to the shin. 
-Level 2 2 6 5 Stability vs 2 RS Deep puncture, chipped bone. 
-Level 3 3 8 8 Stability vs 3 RS Tendon grazed, leg freezes up. Possible bone 
-fracture. 
-Level 4 4 10 10 Auto-prone 
-[Routine Surgery vs 
-Crippled Leg] 
-
-Shinbone breaks, tendon damage. Severe muscle 
-damage. Automatic knockdown. 
-
-Level 5 5 20 17 Auto-prone 
-[Difficult Surgery vs 
-Crippled Leg] 
-
-Compound fracture of shinbone, leg ruined, may 
-never recover. Automatic knockdown. 
-
- 
-Table 8.1.54 Shin - Bludgeoning 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 2 4 0 - Glancing blow to shin. No real damage, but man that 
-stings. 
-Level 2 3 6 0 Stability vs 1 RS Harder blow, may fall. 
-Level 3 5 8 3 Stability vs 4 RS Fractured shin, agonizing, and may fall. 
-Level 4 7 14 5 Auto-prone Shin breaks, excessive pain. Automatic knockdown. 
-
-
-[Routine Surgery vs 
-Crippled Leg] 
-Level 5 9 16 10 Auto-prone 
-[Miracle surgery vs 
-Crippled Leg] 
-
-Compound fracture of the shinbone, excessive damage. 
-Leg may never recover. Automatic knockdown. 
-
- 
-Table 8.1.55 Shin - Unarmed 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 0 0 0 - Glancing blow to shin. No real damage, but man 
-that stings. 
-Level 2 1 0 0 Stability vs 1 RS Glancing blow to shin. No real damage, but man 
-that stings. Might fall. 
-Level 3 2 5 0 Stability vs 3 RS Bruising, minor damage to shinbone 
-Level 4 3 8 0 Stability vs 4 RS Fractured shin, agonizing, and may fall. 
-Level 5 6 14 0 Auto-prone 
-[Routine Surgery vs 
-Crippled Leg] 
-
-Ever seen Silva vs Weidman? 
-
- 
-
- 
+\begin{table} %Shin - Unarmed
+	\caption{Shin - Unarmed}
+	\label{wound:Shin - Unarmed}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 0& 0& 0& - &Glancing blow to shin. No real damage, but man that stings. \\
+Level 2& 1& 0& 0& Stability vs 1 RS &Glancing blow to shin. No real damage, but man that stings. Might fall.\\
+Level 3& 2& 5& 0& Stability vs 3 RS &Bruising, minor damage to shinbone\\
+Level 4& 3& 8& 0& Stability vs 4 RS &Fractured shin, agonizing, and may fall.\\
+Level 5& 6& 14& 0& Auto-prone [Routine Surgery vs Crippled Leg] &Ever seen Silva vs Weidman?\\
+	\end{tabu}
+\end{table}
+	\clearpage
 
 \section{Foot}
-Table 8.1.56 Foot - Cutting 
-Wound 
-Level 
+\begin{table} %Foot - Cutting
+	\caption{Foot - Cutting}
+	\label{wound:Foot - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 4& 0& - &Light cut on foot, unpleasant.\\
+Level 2& 2& 5& 1& - &Deep cut into the meat of foot. Painful but not serious.\\
+Level 3& 3& 6& 1& Stability vs 3 RS &Serious damage to foot, possible bone fractures.\\
+Level 4& 4& 10& 3& Auto-prone &Broken foot, tendon damage, possible toe loss. Automatic knockdown.\\
+Level 5& 5& 12& 10& Auto-prone [Infection chance +3] Limb Severed! &Foot destroyed or severed at the ankle. Automatic knockdown, severe bleeding.\\
+	\end{tabu}
+\end{table}
 
-Stun Pain Bleed Special Description 
+\begin{table} %Foot - Piercing
+	\caption{Foot - Piercing}
+	\label{wound:Foot - Piercing}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 2& 2& - &Glancing blow to foot, no major damage.\\
+Level 2& 2& 5& 3& Stability vs 1 RS &Foot stabbed.\\
+Level 3& 3& 10&4& Stability vs 3 RS &Foot impaled, fracture of small bones.\\
+Level 4& 4& 12&5& Stability vs 5 RS &Foot is nailed to the floor.\\
+Level 5& 5& 18&7& Auto-prone [Difficult Surgery vs Crippled Leg] &Foot impaled, ankle damaged, tendons damaged. Automatic knockdown, may not regain functionality.\\
+	\end{tabu}
+\end{table}
 
-Level 1 1 4 0 - Light cut on foot, unpleasant. 
-Level 2 2 5 1 - Deep cut into the meat of foot. Painful but not 
-serious. 
-Level 3 3 6 1 Stability vs 3 RS Serious damage to foot, possible bone fractures. 
-Level 4 4 10 3 Auto-prone Broken foot, tendon damage, possible toe loss. 
-Automatic knockdown. 
-Level 5 5 12 10 Auto-prone 
-[Infection chance +3] 
-Limb Severed! 
+\begin{table} %Foot - Bludgeoning
+	\caption{Foot - Bludgeoning}
+	\label{wound:Foot - Bludgeoning}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 2& 2& 0& - &Foot thumped. Unfortunately, feet are kind of designed for that. Minimal damage.\\
+Level 2& 3& 3& 0& Stability vs 2 RS &Foot hit harder, actual pain, may trip.\\
+Level 3& 5& 7& 2& Stability vs 4 RS &Equivalent to an ankle sprain, painful and debilitating.\\
+Level 4& 7& 10& 3& Auto-prone [Routine Surgery vs Crippled Leg] &Foot is broken, automatic knockdown. May not recover, stay off it.\\
+Level 5& 9& 18& 5& Auto-prone [Miracle Surgery vs Crippled Leg] &Foot is smashed entirely, multiple compound fractures. May not recover, amputation worth considering.\\
+	\end{tabu}
+\end{table}
 
-Foot destroyed or severed at the ankle. Automatic 
-knockdown, severe bleeding. 
-
- 
-Table 8.1.57 Foot - Piercing 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-
-Level 1 1 2 2 - Glancing blow to foot, no major damage. 
-Level 2 2 5 3 Stability vs 1 RS Foot stabbed. 
-Level 3 3 10 4 Stability vs 3 RS Foot impaled, fracture of small bones. 
-Level 4 4 12 5 Stability vs 5 RS Foot is nailed to the floor. 
-Level 5 5 18 7 Auto-prone 
-[Difficult Surgery vs 
-Crippled Leg] 
-
-Foot impaled, ankle damaged, tendons damaged. 
-Automatic knockdown, may not regain functionality. 
-
- 
-
- 
-
-
-Table 8.1.58 Foot - Bludgeoning 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 2 2 0 - Foot thumped. Unfortunately, feet are kind of designed 
-for that. Minimal damage. 
-Level 2 3 3 0 Stability vs 2 RS Foot hit harder, actual pain, may trip. 
-Level 3 5 7 2 Stability vs 4 RS Equivalent to an ankle sprain, painful and debilitating. 
-Level 4 7 10 3 Auto-prone 
-[Routine Surgery vs 
-Crippled Leg] 
-
-Foot is broken, automatic knockdown. May not recover, 
-stay off it. 
-
-Level 5 9 18 5 Auto-prone 
-[Miracle Surgery vs 
-Crippled Leg] 
-
-Foot is smashed entirely, multiple compound fractures. 
-May not recover, amputation worth considering. 
-
- 
-Table 8.1.59 Foot - Unarmed 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 0 0 0 - Foot stings for a minute. 
-Level 2 0 1 0 Stability vs 1 RS Slightly more painful. Like, hopping up and 
-down painful. 
-Level 3 1 3 0 Stability vs 2 RS Foot bruised, actually painful. 
-Level 4 2 7 0 Stability vs 3 RS Equivalent to an ankle sprain, painful and 
-debilitating. 
-Level 5 3 10 0 Auto-prone 
-[Routine Surgery vs 
-Crippled Leg] 
-
-Foot is broken, automatic knockdown. May not 
-recover, stay off it. 
-
- 
-
- 
+\begin{table} %Foot - Unarmed
+	\caption{Foot - Unarmed}
+	\label{wound:Foot - Unarmed}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 0& 0& 0& - &Foot stings for a minute.\\
+Level 2& 0& 1& 0& Stability vs 1 RS &Slightly more painful. Like, hopping up and down painful.\\
+Level 3& 1& 3& 0& Stability vs 2 RS &Foot bruised, actually painful.\\
+Level 4& 2& 7& 0& Stability vs 3 RS &Equivalent to an ankle sprain, painful and debilitating.\\
+Level 5& 3& 10& 0& Auto-prone [Routine Surgery vs Crippled Leg] &Foot is broken, automatic knockdown. May not recover, stay off it.\\
+	\end{tabu}
+\end{table}
+	\clearpage
 
 \section{Upper Arm}
-Table 8.1.60 Upper Arm - Cutting Wound Level 
-Stun Pain Bleed Special Description 
+\begin{table} %Upper Arm - Cutting
+	\caption{Upper Arm - Cutting}
+	\label{wound:Upper Arm - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 4& 1& - &Cut on arm. Trivial.\\
+Level 2& 2& 7& 2& - &Painful cut on upper arm. No serious damage, but some blood.\\
+Level 3& 3& 10& 3& - &Blade cuts through muscle, chips humerus.\\
+Level 4& 4& 14& 6& [Difficult Surgery vs Crippled Arm] &Blade breaks humerus, arm is severely damaged, may never recover use of arm.\\
+Level 5& 5& 15& 20& Limb Severed! [Infection +3] &Arm severed just below the shoulder! Extreme blood loss, seek help!\\
+	\end{tabu}
+\end{table}
 
-Level 1 1 4 1 - Cut on arm. Trivial. 
-Level 2 2 7 2 - Painful cut on upper arm. No serious damage, but 
-some blood. 
-Level 3 3 10 3 - Blade cuts through muscle, chips humerus. 
+\begin{table} %Upper Arm - Piercing
+	\caption{Upper Arm - Piercing}
+	\label{wound:Upper Arm - Piercing}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 4& 2& - &Shallow puncture on upper arm. Trivial injury.\\
+Level 2& 2& 5& 3& - &Deeper puncture, some muscle damage, bleeding.\\
+Level 3& 3& 8& 5& - &Penetration deep into humerus, terrible bleeding and extreme pain.\\
+Level 4& 4& 12& 8& [Difficult Surgery vs Crippled Arm] &Grievous bone damage, going to be difficult to set.\\
+Level 5& 5& 15& 15& [Miracle Surgery vs Crippled Arm] &Bone shattered, clipped artery, may never recover, extreme bleeding.\\
+	\end{tabu}
+\end{table}
 
+\begin{table} %Upper Arm - Bludgeoning
+	\caption{Upper Arm - Bludgeoning}
+	\label{wound:Upper Arm - Bludgeoning}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 2& 2& 0& - &Bruise on the upper arm, no significant harm.\\
+Level 2& 3& 3& 0& - &Harder blow, severe bruising on tricep.\\
+Level 3& 5& 5& 1& Autodrop &Intense trauma, fractured humerus.\\
+Level 4& 7& 9& 2& Autodrop [Difficult Surgery vs Crippled Arm] &Broken humerus, extreme pain, needs treatment.\\
+Level 5& 9& 12& 5& Autodrop [Miracle Surgery vs Crippled Arm] Infection Risk +2 &Humerus shattered, fragments driven into surrounding flesh, limb may be unsalvageable.\\
+	\end{tabu}
+\end{table}
 
-Level 4 4 14 6 [Difficult Surgery vs 
-Crippled Arm] 
-
-Blade breaks humerus, arm is severely damaged, 
-may never recover use of arm. 
-
-Level 5 5 15 20 Limb Severed! 
-[Infection +3] 
-
-Arm severed just below the shoulder! Extreme 
-blood loss, seek help! 
-
- 
-Table 8.1.61 Upper Arm - Piercing 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 1 4 2 - Shallow puncture on upper arm. Trivial injury. 
-Level 2 2 5 3 - Deeper puncture, some muscle damage, 
-bleeding. 
-Level 3 3 8 5 - Penetration deep into humerus, terrible bleeding 
-and extreme pain. 
-Level 4 4 12 8 [Difficult Surgery vs 
-Crippled Arm] 
-
-Grievous bone damage, going to be difficult to 
-set. 
-
-Level 5 5 15 15 [Miracle Surgery vs 
-Crippled Arm] 
-
-Bone shattered, clipped artery, may never 
-recover, extreme bleeding. 
-
- 
-Table 8.1.62 Upper Arm - Bludgeoning 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 2 2 0 - Bruise on the upper arm, no significant harm. 
-Level 2 3 3 0 - Harder blow, severe bruising on tricep. 
-Level 3 5 5 1 Autodrop Intense trauma, fractured humerus. 
-Level 4 7 9 2 Autodrop [Difficult Surgery vs 
-Crippled Arm] 
-
-Broken humerus, extreme pain, needs 
-treatment. 
-
-Level 5 9 12 5 Autodrop [Miracle Surgery vs 
-Crippled Arm] Infection Risk 
-+2 
-
-Humerus shattered, fragments driven into 
-surrounding flesh, limb may be 
-unsalvageable. 
-
- 
-Table 8.1.63 Upper Arm - Unarmed 
-Wound Level Stun Pain Bleed Special Description 
-Level 1 0 0 0 - Two for flinching. 
-Level 2 1 0 0 - Dead arm. 
-Level 3 2 0 - Bruise, nothing serious. 
-Level 4 3 3 0 - Bruised bone in the upper arm. Damn that hurts! 
-
-
-Level 5 4 5 0 Autodrop Severe bruise, minor fractures in upper arm bones. 
-
- 
-
- 
+\begin{table} %Upper Arm - Unarmed
+	\caption{Upper Arm - Unarmed}
+	\label{wound: Upper arm - Unarmed}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1 &0 &0 &0 &- &Two for flinching.\\
+Level 2 &1 &0 &0 &- &Dead arm.\\
+Level 3 &2 &  &0 &- &Bruise, nothing serious.\\ %MISSING NUMBER IN ORIGINAL DOC
+Level 4 &3 &3 &0 &- &Bruised bone in the upper arm. Damn that hurts!\\
+Level 5 &4 &5 &0 &Autodrop &Severe bruise, minor fractures in upper arm bones.\\
+	\end{tabu}
+\end{table}
+	\clearpage
 
 \section{Elbow}
-Table 8.1.64 Elbow - Cutting 
-Wound 
-Level 
+\begin{table} %Elbow - Cutting
+	\caption{Elbow - Cutting}
+	\label{wound:Elbow - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 5& 1& - &Shallow cut to elbow.\\
+Level 2& 2& 6& 3& Disarm vs 2 RS &Deeper cut to elbow, nerves nicked, may drop item.\\
+Level 3& 3& 8& 5& Autodrop &Nerves cut, bone chipped, item automatically dropped. Arm will not function until healed.\\
+Level 4& 4& 12& 7& Autodrop [Difficult Surgery vs Crippled Arm] &Nerves severed, arm nearly cloven off, bone broken. Item automatically dropped. Arm may not recover functionality.\\
+Level 5& 5& 20& 20& Autodrop [Infection Risk +3] Limb Severed! &Arm severed at the elbow, massive blood loss, limb irrecoverable, infection is a serious risk.\\
+		\end{tabu}
+\end{table}
 
-Stun Pain Bleed Special Description 
+\begin{table} %Elbow - Piercing
+	\caption{Elbow - Piercing}
+	\label{wound:Elbow - Piercing}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 4& 3& Disarm vs RS 1 &Painful stab in elbow. May drop item.\\
+Level 2& 2& 6& 6& Disarm vs RS 3 &Deeper penetration, nerve injury, may drop item.\\
+Level 3& 3& 10& 10& Autodrop [Difficult Surgery vs Crippled Arm] &Spike penetrates clear through elbow, automatic weapon drop, arm may not recover.\\
+Level 4& 4& 14& 14& Autodrop [Miracle Surgery vs Crippled Arm] &Extreme injury to elbow joint, nerves destroyed, arm loses functionality and may not recover.\\
+Level 5& 5& 18& 20& Autodrop [Arm automatically crippled] [Infection Risk +4] &Arm rendered totally unusable, will probably need to be amputated, definitely will not recover functionality.\\
+	\end{tabu}
+\end{table}
 
-Level 1 1 5 1 - Shallow cut to elbow. 
-Level 2 2 6 3 Disarm vs 2 RS Deeper cut to elbow, nerves nicked, may drop item. 
-Level 3 3 8 5 Autodrop Nerves cut, bone chipped, item automatically dropped. 
-Arm will not function until healed. 
-Level 4 4 12 7 Autodrop 
-[Difficult Surgery vs 
-Crippled Arm] 
+\begin{table} %Elbow - Bludgeoning
+	\caption{Elbow - Bludgeoning}
+	\label{wound:Elbow - Bludgeoning}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 2& 4& 0& Disarm vs 1 RS &Straight blow to the elbow. Arm goes temporarily numb, but no lasting damage.\\
+Level 2& 4& 6& 0& Disarm vs 3 RS &More severe impact, bruising, impact to nerves, painful tingling and numbness in whole arm.\\
+Level 3& 6& 10& 1& Disarm vs 5 RS &Fractured elbow, severe pain, hopefully no lasting damage.\\
+Level 4& 8& 14& 3& Autodrop [Easy Surgery vs Crippled Arm] &Elbow broken or severely dislocated. Needs treatment.\\
+Level 5& 10& 18& 6& Autodrop [Miracle Surgery vs Crippled Arm] &Elbow smashed to pieces, arm bent the wrong way, exquisite pain. Unfathomable horror.\\
+	\end{tabu}
+\end{table}
 
-Nerves severed, arm nearly cloven off, bone broken. 
-Item automatically dropped. Arm may not recover 
-functionality. 
-
-Level 5 5 20 20 Autodrop 
-[Infection Risk +3] 
-Limb Severed! 
-
-Arm severed at the elbow, massive blood loss, limb 
-irrecoverable, infection is a serious risk. 
-
- 
-Table 8.1.65 Elbow - Piercing 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 1 4 3 Disarm vs RS 1 Painful stab in elbow. May drop item. 
-Level 2 2 6 6 Disarm vs RS 3 Deeper penetration, nerve injury, may drop item. 
-Level 3 3 10 10 Autodrop 
-[Difficult Surgery vs 
-Crippled Arm] 
-
-Spike penetrates clear through elbow, automatic 
-weapon drop, arm may not recover. 
-
-Level 4 4 14 14 Autodrop 
-[Miracle Surgery vs 
-Crippled Arm] 
-
-Extreme injury to elbow joint, nerves destroyed, 
-arm loses functionality and may not recover. 
-
-Level 5 5 18 20 Autodrop 
-[Arm automatically 
-crippled] [Infection Risk 
-+4] 
-
-Arm rendered totally unusable, will probably need 
-to be amputated, definitely will not recover 
-functionality. 
-
- 
-Table 8.1.66 Elbow - Bludgeoning 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 2 4 0 Disarm vs 1 RS Straight blow to the elbow. Arm goes temporarily 
-
-
-numb, but no lasting damage. 
-Level 2 4 6 0 Disarm vs 3 RS More severe impact, bruising, impact to nerves, 
-painful tingling and numbness in whole arm. 
-Level 3 6 10 1 Disarm vs 5 RS Fractured elbow, severe pain, hopefully no lasting 
-damage. 
-Level 4 8 14 3 Autodrop [Easy Surgery 
-vs Crippled Arm] 
-
-Elbow broken or severely dislocated. Needs 
-treatment. 
-
-Level 5 10 18 6 Autodrop [Miracle 
-Surgery vs Crippled Arm] 
-
-Elbow smashed to pieces, arm bent the wrong 
-way, exquisite pain. Unfathomable horror. 
-
- 
-Table 8.1.67 Elbow - Unarmed 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 0 0 0 - No effect. 
-Level 2 0 0 0 - Still no effect. 
-Level 3 1 0 0 - Funnybone effect. Minor bruising. 
-Level 4 2 2 0 - Painful bruising, but still nothing serious. Arm might be numb 
-for a bit. 
-Level 5 3 5 0 Autodrop Bruised bone and injured tendons. Arm won’t work quite the 
-same for a while. 
-
- 
-
- 
+\begin{table} %Elbow - Unarmed
+	\caption{Elbow - Unarmed}
+	\label{wound:Elbow - Unarmed}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 0& 0& 0& - &No effect.\\
+Level 2& 0& 0& 0& - &Still no effect.\\
+Level 3& 1& 0& 0& - &Funnybone effect. Minor bruising.\\
+Level 4& 2& 2& 0& - &Painful bruising, but still nothing serious. Arm might be numb for a bit.\\
+Level 5& 3& 5& 0& Autodrop &Bruised bone and injured tendons. Arm won’t work quite the same for a while.\\
+	\end{tabu}
+\end{table}
+	\clearpage
 
 \section{Forearm}
-Table 8.1.68 Forearm - Cutting 
-Wound 
-Level 
+\begin{table} %Forearm - Cutting
+	\caption{Forearm - Cutting}
+	\label{wound:Forearm - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 3& 1& - &Shallow cut on the forearm. Will be fine without treatment.\\
+Level 2& 2& 6& 3& - &Deep cut, painful but not debilitating.\\
+Level 3& 3& 10& 6& Disarm vs 4 RS &Serious cut, muscle and tendon damage, possible fracture. May drop held item.\\
+Level 4& 4& 15& 8& Autodrop [Difficult Surgery vs Crippled Arm] &Broken bones, serious muscle damage, automatically drop held item, arm may not recover.\\
+Level 5& 5& 20& 20& Autodrop [Infection Chance +3] Limb Severed! &Arm cloven off just beneath the elbow. Serious blood loss.\\
+	\end{tabu}
+\end{table}
 
-Stun Pain Bleed Special Description 
+\begin{table} %Forearm - Piercing
+	\caption{Forearm - Piercing}
+	\label{wound:Forearm - Piercing}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 2& 2& - &Puncture wound on the forearm.\\
+Level 2& 2& 5& 5& - &Deep puncture on the forearm, more blood, no vital damage.\\
+Level 3& 3& 7& 10& Disarm vs 2 RS &A deep puncture to the forearm, chipping bone, nicked vein. May drop item. \\
+Level 4& 4& 9& 14& Disarm vs 3 RS &Veins are torn, blood everywhere. May drop item.\\
+Level 5& 5& 12& 18& Autodrop [Difficult Surgery vs Crippled Arm] [Infection Risk +4] &Complete penetration of the arm, blood loss serious. Item automatically dropped.\\
+		\end{tabu}
+\end{table}
 
-Level 1 1 3 1 - Shallow cut on the forearm. Will be fine without 
-treatment. 
-Level 2 2 6 3 - Deep cut, painful but not debilitating. 
-Level 3 3 10 6 Disarm vs 4 RS Serious cut, muscle and tendon damage, possible 
-fracture. May drop held item. 
-Level 4 4 15 8 Autodrop 
-[Difficult Surgery vs 
-Crippled Arm] 
+\begin{table} %Forearm - Bludgeoning
+	\caption{Forearm - Bludgeoning}
+	\label{wound:Forearm - Bludgeoning}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 2& 2& 0& - &Sharp blow to the forearm. That stings!\\
+Level 2& 4& 4& 1& Disarm vs 3 RS &Hard strike to the wrist, severe bruise, may drop held items.\\
+Level 3& 6& 10& 3& Disarm vs 4 RS [Routine Surgery vs Crippled Arm] &Broken bones, possible snapped wrist. May drop held items.\\
+Level 4& 8& 14& 6& Autodrop [Difficult Surgery vs Crippled Limb] &Forearm is shattered, automatically drop held items.\\
+Level 5& 10& 15& 10& Autodrop [Difficult Surgery vs Crippled Arm] &Forearm crushed, staggering damage, automatically drop item, limb may never recover.\\
+	\end{tabu}
+\end{table}
 
-Broken bones, serious muscle damage, automatically 
-drop held item, arm may not recover. 
-
-Level 5 5 20 20 Autodrop 
-[Infection Chance +3] 
-
-Arm cloven off just beneath the elbow. Serious blood 
-loss. 
-
-
-Limb Severed! 
-
- 
-Table 8.1.69 Forearm - Piercing 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 1 2 2 - Puncture wound on the forearm. 
-Level 2 2 5 5 - Deep puncture on the forearm, more blood, 
-no vital damage. 
-Level 3 3 7 10 Disarm vs 2 RS A deep puncture to the forearm, chipping 
-bone, nicked vein. May drop item. 
-Level 4 4 9 14 Disarm vs 3 RS Veins are torn, blood everywhere. May drop 
-item. 
-Level 5 5 12 18 Autodrop 
-[Difficult Surgery vs Crippled 
-Arm] [Infection Risk +4] 
-
-Complete penetration of the arm, blood loss 
-serious. Item automatically dropped. 
-
- 
-Table 8.1.70 Forearm - Bludgeoning 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 2 2 0 - Sharp blow to the forearm. That stings! 
-Level 2 4 4 1 Disarm vs 3 RS Hard strike to the wrist, severe bruise, may drop 
-held items. 
-Level 3 6 10 3 Disarm vs 4 RS 
-[Routine Surgery vs 
-Crippled Arm] 
-
-Broken bones, possible snapped wrist. May drop 
-held items. 
-
-Level 4 8 14 6 Autodrop 
-[Difficult Surgery vs 
-Crippled Limb] 
-
-Forearm is shattered, automatically drop held items. 
-
-Level 5 10 15 10 Autodrop 
-[Difficult Surgery vs 
-Crippled Arm] 
-
-Forearm crushed, staggering damage, automatically 
-drop item, limb may never recover. 
-
- 
-Table 8.1.71 Forearm - Unarmed 
-Wound Level Stun Pain Bleed Special Description 
-Level 1 0 0 0 - Ow. 
-Level 2 1 0 0 - Ow! 
-Level 3 2 1 0 - Seriously, stop. 
-
-
-Level 4 3 2 0 - Agh! You jerk! 
-Level 5 5 8 3 Disarm vs 4 RS 
-[Routine Surgery vs Crippled Arm] 
-
-FFFFFFFF 
-
- 
-
- 
+\begin{table} %Forearm - Unarmed
+	\caption{Forearm - Unarmed}
+	\label{wound:Forearm - Unarmed}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 0& 0& 0& - &Ow.\\
+Level 2& 1& 0& 0& - &Ow!\\
+Level 3& 2& 1& 0& - &Seriously, stop.\\
+Level 4& 3& 2& 0& - &Agh! You jerk!\\
+Level 5& 5& 8& 3& Disarm vs 4 RS [Routine Surgery vs Crippled Arm] &FFFFFFFF \\
+	\end{tabu}
+\end{table}
+	\clearpage
 
 \section{Hand}
+\begin{table} %Hand - Cutting
+	\caption{Hand - Cutting}
+	\label{wound:Hand - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 4& 1& - &Painful cut on hand.\\
+Level 2& 2& 6& 3& Disarm vs 2 RS &Deep cut, bruised bones, may drop held item.\\
+Level 3& 3& 9& 5& Disarm vs 5 RS &Broken hand, may drop held item.\\
+Level 4& 4& 12& 8& Autodrop &Severe damage to hand, 1-3 fingers severed, automatically drop held items.\\
+Level 5& 5& 15& 15& Autodrop [Infection Chance +5] Limb Severed! &Hand destroyed or severed. Jet of blood erupts from wound.\\
+	\end{tabu}
+\end{table}
 
- 
+\begin{table} %Hand - Piercing
+	\caption{Hand - Piercing}
+	\label{wound:Hand - Piercing}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 3& 1& - &Glancing hit on back of hand.\\
+Level 2& 2& 4& 2& Disarm vs 1 RS &Deeper penetration of hand. May drop held items.\\
+Level 3& 3& 6& 4& Disarm vs 3 RS [Routine Surgery vs Crippled Hand] &Hand impaled, item automatically dropped, may not recover.\\
+Level 4& 4& 10& 4& Autodrop [Difficult Surgery vs Crippled Hand] &Hand seriously damaged, probably won't recover.\\
+Level 5& 5& 15& 18& Autodrop [Miracle Surgery vs Crippled Hand] &Point tears through hand to forearm, tearing open vein. Extreme blood loss.\\
+	\end{tabu}
+\end{table}
 
-Table 8.1.72 Hand - Cutting 
-Wound 
-Level 
+\begin{table} %Hand - Bludgeoning
+	\caption{Hand - Bludgeoning}
+	\label{wound:Hand - Bludgeoning}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 2& 3& 1& - &Painful strike on hand.\\
+Level 2& 4& 5& 2& Disarm vs 2 RS &A severe blow to hand. Fractured phalanges. May drop items.\\
+Level 3& 6& 6& 2& Disarm vs 4 RS [Routine Surgery vs Crippled Hand] &Hand smashed, items probably dropped.\\
+Level 4& 8& 8& 3& Autodrop [Difficult Surgery vs Crippled Hand] &Hand bones shattered, damage severe, item automatically dropped, may not recover.\\
+Level 5& 10& 12& 8& Autodrop [Miracle Surgery vs Crippled Hand] [Infection Risk +3] &Hand completely smashed. Will probably need to be amputated. Time to consider a hook.\\
+	\end{tabu}
+\end{table}
 
-Stun Pain Bleed Special Description 
-
-Level 1 1 4 1 - Painful cut on hand. 
-Level 2 2 6 3 Disarm vs 2 RS Deep cut, bruised bones, may drop held item. 
-Level 3 3 9 5 Disarm vs 5 RS Broken hand, may drop held item. 
-Level 4 4 12 8 Autodrop Severe damage to hand, 1-3 fingers severed, 
-automatically drop held items. 
-Level 5 5 15 15 Autodrop 
-[Infection Chance 
-+5] 
-Limb Severed! 
-
-Hand destroyed or severed. Jet of blood erupts from 
-wound. 
-
- 
-Table 8.1.73 Hand - Piercing 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 1 3 1 - Glancing hit on back of hand. 
-Level 2 2 4 2 Disarm vs 1 RS Deeper penetration of hand. May drop held items. 
-Level 3 3 6 4 Disarm vs 3 RS 
-[Routine Surgery vs 
-Crippled Hand] 
-
-Hand impaled, item automatically dropped, may 
-not recover. 
-
-Level 4 4 10 4 Autodrop 
-[Difficult Surgery vs 
-Crippled Hand] 
-
-Hand seriously damaged, probably won't recover. 
-
-Level 5 5 15 18 Autodrop 
-[Miracle Surgery vs 
-Crippled Hand] 
-
-Point tears through hand to forearm, tearing open 
-vein. Extreme blood loss. 
-
- 
-Table 8.1.74 Hand - Bludgeoning 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-
-Level 1 2 3 1 - Painful strike on hand. 
-Level 2 4 5 2 Disarm vs 2 RS A severe blow to hand. Fractured phalanges. 
-May drop items. 
-Level 3 6 6 2 Disarm vs 4 RS 
-[Routine Surgery vs Crippled 
-Hand] 
-
-Hand smashed, items probably dropped. 
-
-Level 4 8 8 3 Autodrop 
-[Difficult Surgery vs Crippled 
-Hand] 
-
-Hand bones shattered, damage severe, item 
-automatically dropped, may not recover. 
-
-Level 5 10 12 8 Autodrop 
-[Miracle Surgery vs Crippled 
-Hand] [Infection Risk +3] 
-
-Hand completely smashed. Will probably need 
-to be amputated. Time to consider a hook. 
-
- 
-Table 8.1.75 Hand - Unarmed 
-Wound Level Stun Pain Bleed Special Description 
-Level 1 0 0 0 - Stings for a second. 
-Level 2 0 0 0 - Trivial bruising. 
-Level 3 2 1 0 - Bruised hand. 
-Level 4 5 5 0 Autodrop Fractured bones in hand. 
-Level 5 10 10 0 Autodrop Broken fist. 
-
- 
-
- 
+\begin{table} %Hand - Unarmed
+	\caption{Hand - Unarmed}
+	\label{wound:Hand - Unarmed}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 0& 0& 0& - &Stings for a second.\\
+Level 2& 0& 0& 0& - &Trivial bruising.\\
+Level 3& 2& 1& 0& - &Bruised hand.\\
+Level 4& 5& 5& 0& Autodrop &Fractured bones in hand.\\
+Level 5& 10& 10& 0& Autodrop &Broken fist.\\
+	\end{tabu}
+\end{table}
+	\clearpage
 
 \section{Upper Back}
+\begin{table} %Upper Back - Cutting
+	\caption{Upper Back - Cutting}
+	\label{wound:Upper Back - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 2& 2& 2& - &Light lacerations, noticeable discomfort.\\
+Level 2& 4& 4& 4& - &Long cuts, heavy bleeding.\\
+Level 3& 7& 9& 6& - &Deep gashes, wounds noticeable. Scars that will never heal.\\
+Level 4& 10& 15& 8& Stability vs 3 RS &Spinal fracture, shoulder blades cracked, no organ damage, but extreme pain.\\
+Level 5& - &- &- &Dead& Shoulders cleaved, spine severed. Spine destroyed. While death is not instantaneous, it will come within 24 hours.\\
+	\end{tabu}
+\end{table}
 
-Table 8.1.76 Upper Back - Cutting 
-Wound 
-Level 
+\begin{table} %Upper Back - Piercing
+	\caption{Upper Back - Piercing}
+	\label{wound:Upper Back - Piercing}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 1& 3& 2& - &Light piercing, minor bleeding, noticeable pain.\\
+Level 2& 3& 4& 5& - &Minor penetration, glances off shoulder blade. \\
+Level 3& 5& 9& 8& - &Penetrates through flesh, halted deep in shoulder blade. \\
+Level 4& 10& 13& 20& [Miracle Surgery vs Punctured Lung] &Point hits home, piercing deep and causing significant bleeding. Possible organ damage.\\
+Level 5& - &- &- &Dead& Spine severed or heart pierced, it’s all bad. Spine destroyed. While death is not instantaneous,it will come within 24 hours.\\
+	\end{tabu}
+\end{table}
 
-Stun Pain Bleed Special Description 
+\begin{table} %Upper Back - Bludgeoning
+	\caption{Upper Back - Bludgeoning}
+	\label{wound:Upper Back - Bludgeoning}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 4& 2& 0& - &Light bruising, minor displacement.\\
+Level 2& 7& 3& 1& - &Heavy bruising, feels like something chipped.\\
+Level 3& 10& 4& 2& Stability vs 1 RS &Severe bruising, noticeable bleeding.\\
+Level 4& 13& 5& 3& Autoprone [Paralyzed (Not in Beta)] &Something definitely made a cracking sound. Spine damaged, may never walk again.\\
+Level 5& - &- &- &Dead& Spine completely destroyed, severe rupturing of internal organs, instant death.\\
+	\end{tabu}
+\end{table}
 
-Level 1 2 2 2 - Light lacerations, noticeable discomfort. 
-Level 2 4 4 4 - Long cuts, heavy bleeding. 
-Level 3 7 9 6 - Deep gashes, wounds noticeable. Scars that will never heal. 
-Level 4 10 15 8 Stability vs 
-3 RS 
-
-Spinal fracture, shoulder blades cracked, no organ damage, but 
-extreme pain. 
-Level 5 - - - Dead Shoulders cleaved, spine severed. Spine destroyed. While death 
-is not instantaneous, it will come within 24 hours. 
-
- 
-Table 8.1.77 Upper Back - Piercing 
-
-
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 1 3 2 - Light piercing, minor bleeding, noticeable pain. 
-Level 2 3 4 5 - Minor penetration, glances off shoulder blade. 
-Level 3 5 9 8 - Penetrates through flesh, halted deep in shoulder blade. 
-Level 4 10 13 20 [Miracle Surgery vs 
-Punctured Lung] 
-
-Point hits home, piercing deep and causing significant 
-bleeding. Possible organ damage. 
-Level 5 - - - Dead Spine severed or heart pierced, it’s all bad. Spine 
-destroyed. While death is not instantaneous, it will come 
-within 24 hours. 
-
- 
-Table 8.1.78 Upper Back - Bludgeoning 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 4 2 0 - Light bruising, minor displacement. 
-Level 2 7 3 1 - Heavy bruising, feels like something chipped. 
-Level 3 10 4 2 Stability vs 1 RS Severe bruising, noticeable bleeding. 
-Level 4 13 5 3 Autoprone 
-[Paralyzed (Not in 
-Beta)] 
-
-Something definitely made a cracking sound. Spine 
-damaged, may never walk again. 
-
-Level 5 - - - Dead Spine completely destroyed, severe rupturing of internal 
-organs, instant death. 
-
- 
-Table 8.1.79 Upper Back - Unarmed 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 0 0 0 - Negligible effect. 
-Level 2 1 0 0 - Still nothing. 
-Level 3 3 1 0 - Bruising. Starting to hurt now. 
-Level 4 5 2 0 - Severe bruising, starting to hurt, possible damage to spine and 
-ribs. 
-Level 5 10 5 0 - Minor fracture to ribs, bruised spine. 
-
- 
-
- 
+\begin{table} %Upper Back - Unarmed
+	\caption{Upper Back - Unarmed}
+	\label{wound:Upper Back - Unarmed}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 0& 0& 0& - &Negligible effect.\\
+Level 2& 1& 0& 0& - &Still nothing.\\
+Level 3& 3& 1& 0& - &Bruising. Starting to hurt now.\\
+Level 4& 5& 2& 0& - &Severe bruising, starting to hurt, possible damage to spine and ribs.\\
+Level 5& 10& 5& 0& - &Minor fracture to ribs, bruised spine.\\
+	\end{tabu}
+\end{table}
+	\clearpage
 
 \section{Lower Back}
-Table 8.1.80 Lower Back - Cutting 
-Wound 
-Level 
+\begin{table} %Lower Back - Cutting
+	\caption{Lower Back - Cutting}
+	\label{wound:Lower Back - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 3& 5& 1& - &Light lacerations, painful.\\
+Level 2& 5& 8& 5& - &Long cuts, significant bleeding.\\
+Level 3& 8& 10& 10& Stability vs 2 RS &Deep gashes, wounds noticeable. Terrible scarring.\\
+Level 4& 12& 15& 15& Autoprone [Paralyzed (Not in Beta)] &Blow cracks spine, and cleaves muscle and flesh. Possible paralysis.\\
+Level 5& - &- &- &Dead& Spine severed, severe intestinal damage, central artery in trunk severed. Near-instant death.\\
+	\end{tabu}
+\end{table}
 
-Stun Pain Bleed Special Description 
+\begin{table} %Lower Back - Piercing
+	\caption{Lower Back - Piercing}
+	\label{wound:Lower Back - Piercing}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1 &5 &2 &3 &- &Shallow penetration halted by back muscles.\\
+Level 2& 7& 4& 6& - &Deeper penetration into the lower back, severe bleeding but no organ damage.\\
+Level 3& 12& 10& 10& Stability vs 1 RS, [Infection Risk +2] &Deep penetration, possible organ damage, severe bleeding.\\
+Level 4& 14& 12& 20& [Infection Risk +3] Autoprone&Deep penetration, kidney, liver, or intestinal damage, possible spinal damage.\\
+Level 5& - &- &- &Dead &Total impalement, main artery of the trunk severed, major organ damage, instant death.\\
+	\end{tabu}
+\end{table}
 
-Level 1 3 5 1 - Light lacerations, painful. 
-Level 2 5 8 5 - Long cuts, significant bleeding. 
-Level 3 8 10 10 Stability vs 2 RS Deep gashes, wounds noticeable. Terrible scarring. 
-Level 4 12 15 15 Autoprone 
-[Paralyzed (Not in 
-Beta)] 
+\begin{table} %Lower Back - Unarmed
+	\caption{Lower Back - Bludgeoning}
+	\label{wound:Lower Back - Bludgeoning}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level &Stun &Pain &Bleed &Special &Description\\
+Level 1& 5& 4& 0& - &Light bruising, shocking pain.\\
+Level 2& 8& 5& 0& - &Heavy bruising, stunning pain.\\
+Level 3& 10& 6& 1 &Stability vs 3 RS, Internal Bleeding &Blow to the kidneys from behind. Agony.\\
+Level 4& 15& 7& 3 &Autoprone [Paralyzed (Not in Beta)], Internal Bleeding &Spine damaged, footing lost instantly.\\
+Level 5& - &- &- &Dead &Spine broken just above tailbone, intestinal rupture, unconsciousness instant, death follows shortly. \\
+	\end{tabu}
+\end{table}
 
-Blow cracks spine, and cleaves muscle and flesh. 
-Possible paralysis. 
-
-Level 5 - - - Dead Spine severed, severe intestinal damage, central artery in 
-trunk severed. Near-instant death. 
-
- 
-Table 8.1.81 Lower Back - Piercing 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 5 2 3 - Shallow penetration halted by back muscles. 
-Level 2 7 4 6 - Deeper penetration into the lower back, severe 
-bleeding but no organ damage. 
-Level 3 12 10 10 Stability vs 1 RS, 
-[Infection Risk +2] 
-
-Deep penetration, possible organ damage, severe 
-bleeding. 
-
-Level 4 14 12 20 [Infection Risk +3] 
-Autoprone 
-
- 
-
-Deep penetration, kidney, liver, or intestinal 
-damage, possible spinal damage. 
-
-Level 5 - - - Dead Total impalement, main artery of the trunk severed, 
-major organ damage, instant death. 
-
- 
-Table 8.1.82 Lower Back - Bludgeoning 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-Level 1 5 4 0 - Light bruising, shocking pain. 
-Level 2 8 5 0 - Heavy bruising, stunning pain. 
-Level 3 10 6 1 Stability vs 3 RS, 
-Internal Bleeding 
-
-Blow to the kidneys from behind. Agony. 
-
-Level 4 15 7 3 Autoprone 
-[Paralyzed (Not in 
-Beta)], Internal Bleeding 
-
-Spine damaged, footing lost instantly. 
-
-
-Level 5 - - - Dead Spine broken just above tailbone, intestinal rupture, 
-unconsciousness instant, death follows shortly. 
-\begin{table}%Lower Back Unarmed Wound
+\begin{table} %Lower Back - Unarmed
 	\caption{Lower Back - Unarmed Wound}
-	\label{tab:Lower Back Unarmed Wound}
+	\label{wound:Lower Back - Unarmed}
 	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
 Wound Level& Stun&Pain&Bleed&Special&Description\\\toprule
 Level 1 &3 &1 &0 &- &Blow to the kidney. Painful.\\
@@ -13884,4 +13062,5 @@ Level 4 &5 &2 &0 &KO vs 3&Agonizing kidney shot, unconsciousness likely.\\
 Level 5 &10 &5 &1 &KO vs 4, Internal Bleeding &Kidney damage! Jesus Christ!\\
 	\end{tabu}
 \end{table}
+
 \end{document}
