@@ -288,6 +288,9 @@ opaque.freeforums.net\par
 \tableofcontents %BOOKMARK needs to be added here? 
 \mainmatter
 \chapter{Introduction}\label{ch:intro}
+%Save original \intextsep
+\newlength{\oldintextsep}
+\setlength{\oldintextsep}{\intextsep}
 \newpage
 \section*{Foreword}
 It’s been a long time, now, since that first appearance back in 2012. We’ve gone through three names, a dozen updates, two hundred threads, and hundreds of thousands of posts. Oceans of blood have been spilled in the countless fechts fought in this game’s testing. Our little reservation on the internet should be marked forever by a mountain of human skulls.
@@ -789,16 +792,20 @@ into the plot in the first place.
 	\centering
 	\caption{Awarding Arc Points}
 	\label{tab:AwardingArcPoints}
-		\begin{tabu} spread 0pt {X[c,m]X[l,m] } %TABLE needs to be fixed, as the vertical lines are garbage
+		\begin{tabu} spread 0pt {X[-1,c]X[l,m] } %TABLE needs to be fixed, as the vertical lines are garbage, maybe wraptab?
 Arc Category&Arc Points Awarded Per Session \\\cmidrule{1-2}
 	Saga&0-6
-
+	
 	18 (upon completion of Arc)\\
+		\\
 	Epic&0-6
-
+	
 	18 (upon completion of Arc)\\
+		\\
 Belief&0-4\\
+		\\
 Glory&0-4\\
+		\\
 Flaw&0-2\\
 		\end{tabu} 
 \end{table}
@@ -860,14 +867,15 @@ indicated on \autoref{tab:PCPInvestment}~regarding~\nameref*{tab:PCPInvestment}~
 Attributes as-per Advancing with Arc. The higher an Attribute is at the start, the more Arc it costs. To 
 simplify this, here is a table with the total cost of upgrading an Attribute from 1 at Character Creation. 
 \begin{table}
+	\centering
 	\caption{Attributes at Character Creation}
 	\label{tab:AttributesatCharCreation}
-\begin{tabu} to \textwidth {X[c]l}
-Attribute Level&Arc Cost\\\
+	\begin{tabu} spread 0pt {XX[-2,l]}
+Attribute Level&Arc Cost\\
 1&-\\ 
 2&4\\ 
 3&8\\ 
-4&(Human Average) 12\\
+4 (Human Average)& 12\\
 5&16\\ 
 6&20\\ 
 7&24\\ 
@@ -877,7 +885,7 @@ Attribute Level&Arc Cost\\\
 11&46\\
 12&52\\
 13 (Mortal Maximum)&58\\ 
-\end{tabu}
+	\end{tabu}
 \end{table}
 When determining starting Attributes, remember that no character can have an Attribute lower than 1 at 
 Character Creation. This includes racial modifiers; you may not build a character whose Attributes would 
@@ -1056,11 +1064,9 @@ their Grit scores.
 When your character experiences, witnesses or perpetrates an action above their Grit level, the GM may 
 decide that they should make a Grit test. This is a \textbf{WIL} check with RS equal to the difference between the character’s current Grit and the level of severity of the experience (as determined on the chart below) to a maximum RS of 3. 
 
-\begin{table}
-	\centering
+\begin{longtabu} spread 0pt {lXX}
 	\caption{Grit Advancement}
-	\label{tab:GritAdvancement}
-\begin{tabu} spread 0pt {lXX}
+	\label{tab:GritAdvancement}\\
 Grit&Description&Example Advancement Threshold\\
 0&Totally innocent and inexperienced. Average child.&Hurting someone’s feelings, or having one’s feelings hurt. \\
 1&Sensitive, sheltered, still learning about the basics of social interaction. Average young person. & Physically hurting someone else (even accidentally), being hurt oneself. \\
@@ -1073,11 +1079,9 @@ Grit&Description&Example Advancement Threshold\\
 8& Empty inside, this person has locked away their feelings so long they’ve almost completely lost touch with them. &Perpetrating genocide, mass torture, or surviving the same.\\
 9&At this point this person is no longer technically sane. This level of indifference to pain and suffering, both of the self and others, is a mental illness. &Witnessing everything you have ever cared for be destroyed. \\
 10& Almost completely inured to fear and pain. Totally fearless. &Destroying everything you have ever cared for with your own hands. \\
-\end{tabu}
-\vspace{0.5 cm}
-		\caption*{Success: Character gains 1 Grit. Failure: Character does not gain a point of Grit.} %NEEDS multicol or something
-\end{table} 
-
+		\\
+		\caption*{Success: Character gains 1 Grit. \qquad Failure: Character does not gain a point of Grit.} %NEEDS multicol or something
+\end{longtabu}
 \chapter{Races}\label{ch:races}
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
@@ -1323,9 +1327,7 @@ table, because of their excellent eyesight in the dark (i.e. Pitch Black becomes
 Lit becomes Dimly Lit, and Dimly Lit becomes Evenly Lit). However, they cannot see colors 
 when in the dark. 
 \paragraph{Prodigious Livers}
-Dwarves gain a +6 to their effective HLT when rolling to resist toxins (poisons, alcohol, general 
-toxins) that are ingested, and a +2 to their effective HLT against poisoned arrows, weapons or 
-other toxins that enter the body through injury. 
+Dwarves gain a +6 to their effective HLT when rolling to resist toxins (poisons, alcohol, general toxins) that are ingested, and a +2 to their effective HLT against poisoned arrows, weapons or other toxins that enter the body through injury.
 \paragraph{The Call of the Deep}
 Dwarves get +4 to any roll involving digging downwards. A Dwarf must make a WIL roll at RS 5 
 to stop himself from digging once he has begun. A Dwarf who is currently under the influence of 
@@ -2027,9 +2029,9 @@ An Orredin starts with 1 Gnosis, and can increase their Gnosis cap in the follow
 \end{itemize}
 \paragraph{The Godhead is a Spring:} Every Orredin is at least a Minor Sorcerer, and is considered to have X points in the Magic Category devoted to Sorcery. The level can be increased with additional expenditure in the Magic Category at Character Creation. 
 \paragraph{From it flows Everything:} Each Orredin in a Sorcerous Warren increases the Flow value of that Warren by 2, and of all adjacent Warrens by 1.
-\paragraph{And then returns once more, and so is like a Spring:} All Orredin have a Bloodline Power that can be selected from the list below. Additional powers can be purchased in the Magic category at Character Creation. These are just examples. Confer with your GM about personalized Bloodline Powers that may fit your character better. 
+\paragraph{And then returns once more, and so is like a Spring:} All Orredin have a Bloodline Power that can be selected from the list below. Additional powers can be purchased in the Magic category at Character Creation. These are just examples. Confer with your GM about personalized Bloodline Powers that may fit your character better.
 \subsubsection{Bloodline Powers}
-Killing Glare [X+1] %MANEUVER FOR SPELL
+\paragraph{\large\label{man:Killing Glare} Killing Glare}---\quad{\large[X+1]}\par
 The Orredin can emit thin, visible beams of energy from his eyes that can shear through almost any material like a hot knife through butter. Activate this ability with Gnosis [X+1].
 When Activated, the Orredin may shoot lasers out of their eyes. These lasers are treated as a Shooting 
 Missile Weapon capable of Rapid Fire (with no limit except MP) with the following Profile:
@@ -2037,50 +2039,37 @@ Missile Weapon capable of Rapid Fire (with no limit except MP) with the followin
 	\caption{Killing Glare}
 	\label{tab:Killing Glare}
 	\begin{tabu} to \textwidth {XXX[-1,c]X[c]XX}
-Weapon Name&Weapon Type&Range& Missile TN&Damage&Special\\
+Weapon Name&Weapon Type&Range& Missile TN&Damage&Special\\\toprule
 Killing Glare&Elf Laser&20&4&(WIP+X)c&Flaming 3\\
 	\end{tabu}
 \end{table}
 
-
 There is no “Eye Lasers” Proficiency. For the purposes of Missile Pool, Killing Glare uses Perception instead of Proficiency. Aiming is possible, and adds Perception a second time. Bracing is not possible with Killing Glare. Other Orredin may simply deflect the ability harmlessly by spending Gnosis equal to X. Sometimes, Killing Glare will manifest itself as a beam emitted from the mouth or a hand.
 
-
-Kneel! [X] %SPELL MANUEVER
-When activating this ability, the Orredin may issue a command, generally no longer than two or three 
-words, directed at a living being. That being must make a Willpower test at RS equal to 2+(X/2) or do its 
-best to obey the command. If the command is dangerous or potentially suicidal, the target gains a bonus 
-of +3 to its Willpower test. If the command is overtly suicidal (“Die” is a valid command, causing the 
+\paragraph{\large\label{man:Kneel!} Kneel!}---\quad{\large[X]}\par
+When activating this ability, the Orredin may issue a command, generally no longer than two or three words, directed at a living being. That being must make a Willpower test at RS equal to 2+(X/2) or do its best to obey the command. If the command is dangerous or potentially suicidal, the target gains a bonus of +3 to its Willpower test. If the command is overtly suicidal (“Die” is a valid command, causing the 
 target’s heart to stop) the target doubles its Willpower for the purposes of the test. Kneel! is only binding 
-for about ten seconds (5 Rounds in combat) after which the effects wear off. Multiple targets may be 
-selected for Kneel! At a cost of +2 Gnosis per target. This ability does not work on other Orredin. 
+for about ten seconds (5 Rounds in combat) after which the effects wear off. Multiple targets may be selected for Kneel! At a cost of +2 Gnosis per target. This ability does not work on other Orredin. 
 
 
-Majesty [X] %MANEUVER MAGIC ORREDIN
+\paragraph{\large\label{man:Majesty} Majesty}---\quad{\large[X]}\par
 The Orredin may produce light, an aura of majesty and power, and create unearthly music, noises or 
 whispers around them at will. It become very difficult to argue with, contradict, or even disagree with an 
 Orredin in this state, much less to attack one. When activating this ability, the Orredin's Charisma doubles for a number of minutes equal to X. Any attempt to attack the Orredin suffers a reduction in CP/MP for 
 the Maneuver equal to the Orredin's doubled Charisma score. 
-If the Orredin makes any attack himself, or runs away (quickly, slowly backing away is fine) panics, is 
-hurt, etc., the effect is immediately shattered. 
+If the Orredin makes any attack himself, or runs away (quickly, slowly backing away is fine) panics, is hurt, etc., the effect is immediately shattered. 
 This ability does not work on other Orredin. 
 
 
-Purple Vortex [X] %MANEUVER MAGIC
-The Orredin can stare into his opponent’s eyes, and enter a state of mutual hypnosis during which he can 
-exert subtle control over his opponent. This is useful in things like dancing or debate or darts, but it is 
-perhaps most useful in combat. 
+\paragraph{\large\label{man:Purple Vortex} Purple Vortex}---\quad{\large[X]}\par
+The Orredin can stare into his opponent’s eyes, and enter a state of mutual hypnosis during which he can exert subtle control over his opponent. This is useful in things like dancing or debate or darts, but it is perhaps most useful in combat. 
 In Combat, after all Actions have been declared but before they are resolved, if the Orredin can look into 
 an opponent’s eyes clearly (a closed helmet would prevent this, or being blind, shutting one’s eyes, etc) 
-an Orredin may activate this ability by spending X Gnosis. Roll a Willpower Contest between the Orredin 
-and the target. 
-Success: Treat X amount of dice as if they had rolled successes on an unresolved maneuver this action 
-This ability can be negated by other Orredin by spending Gnosis equal to X. 
+an Orredin may activate this ability by spending X Gnosis. Roll a Willpower Contest between the Orredin and the target.
+\vspace*{-15pt}\subparagraph{Success:} Treat X amount of dice as if they had rolled successes on an unresolved maneuver this action.\par
+This ability can be negated by other Orredin by spending Gnosis equal to X.
 \subsubsection*{Culture and Society} 
-The Orredin primarily live in the flying city of Helion, where their race has endured since the cataclysm 
-that destroyed their empire millennia ago. Their numbers were sorely reduced in the disaster, and most of 
-them were related to each other. Keenly aware of the dangers of inbreeding, the Orredin enacted a 
-centuries-long Eugenics program, aimed at gradually assimilating fresh blood into the genepool, and 
+The Orredin primarily live in the flying city of Helion, where their race has endured since the cataclysm that destroyed their empire millennia ago. Their numbers were sorely reduced in the disaster, and most of them were related to each other. Keenly aware of the dangers of inbreeding, the Orredin enacted a centuries-long Eugenics program, aimed at gradually assimilating fresh blood into the genepool, and 
 restoring their numbers. To find proper candidates, human and Dinnic mercenaries from across the land 
 are hired and sent on suicidal missions, tested for courage, physical perfection and other attributes, and 
 engaged in gladiatorial combat. Only the finest are adopted into the Orredin’s fine society, the rest are 
@@ -2562,32 +2551,24 @@ otherwise move. A Silver Guard may spend one Divinity to perform the Soaring Cha
 Maneuver in the first Action of combat if his Orientation is Red. 
 
 
-Soaring Charge  %MANEUVER OUTSIDE NORMAL ORDER
-[2+Encumbrance Penalty] 
-Special: Silver Guard, Instant. 
-Requirements: Be a Silver Guard. Use this Maneuver only if you threw Red. 
-Maneuver: Declare an Attack as normal. However, you gain a +2 bonus to Initiative rolls made 
-during this Action (this includes Red/Red tests) and a +2 bonus to any damage you inflict with 
-Attack Maneuvers (except Melee Shoot) during this Action. 
-Special: For the rest of the Round, your Defenses gain the following rule: "Failure: Enemy 
-attack is not reduced by Successes from this maneuver, and hits with all Successes as BS." 
-
+\paragraph{\label{man:Soaring Charge}Soaring Charge}---\quad{[2+Encumbrance Penalty]}
+\begin{description}
+\item [Special:] Silver Guard, Instant. 
+\item [Requirements:] Be a Silver Guard. Use this Maneuver only if you threw Red. 
+\item [Maneuver:] Declare an Attack as normal. However, you gain a +2 bonus to Initiative rolls made during this Action (this includes Red/Red tests) and a +2 bonus to any damage you inflict with Attack Maneuvers (except Melee Shoot) during this Action.
+\item [Special:] For the rest of the Round, your Defenses gain the following rule: "\textbf{Failure:} Enemy attack is not reduced by Successes from this maneuver, and hits with all Successes as BS."
+\end{description}
 
 \paragraph{Mark of the Moon}
 A Silver Guard can ‘Mark’ an individual as an ‘Adherent’ if they are a true believer in 
 Bocanadessia. This has no cost, and can be done to any willing individual who has a Faith Arc 
 that venerates Bocanadessia, or who is willing to convert (the act of Marking instills a new and 
 virtually unshakeable faith in the individual), and isn't a Complete Monster. Being a Complete 
-
-
 Monster prevents this ability from working. Marking an Adherent involves putting a hand on 
 their head or face, and willing it to be so. 
 
-
-Marked Adherents gain a spectral imprint of a handprint and a moon (in the phase that it was in at 
-the time the Adherent was Marked) that can only be seen by Ascended Humans. Paladins and 
+Marked Adherents gain a spectral imprint of a handprint and a moon (in the phase that it was in at the time the Adherent was Marked) that can only be seen by Ascended Humans. Paladins and 
 Sarturi Chosen can see it as well. 
-
 
 Marked Adherents gain the following benefits so long as they remain true to their faith: 
 \begin{itemize}
@@ -2646,11 +2627,9 @@ Guards) through the use of Divinity. This is not as powerful as Paladin healing-
 cannot instantly close wounds, nor can they regrow lost limbs, and it cannot be used on the Silver 
 Guard himself, but it is much easier for the Silver Guard to do. 
 
-
 A Silver Guard can cure most diseases by praying over the kneeling or prostrate Adherent, and 
 then laying a hand on the spectral brand they are marked with. This costs 0 Divinity if the disease 
 is something non-fatal but merely unpleasant, and 1 Divinity if the disease is potentially or actively lethal. 
-
 
 Mental illnesses of all kinds (including hereditary ones that have no actual cure or treatment) can 
 be removed with a touch. The Silver Guard only needs to spend 1 Divinity, but the Adherent must 
@@ -2670,10 +2649,8 @@ Silver Guards live with some of the most soul-crushingly horrific knowledge to b
 petty problems of a Human being, even a thousand Human beings, are so trivial that most Silver 
 Guards wouldn't notice. 
 
-
 After about a month, the memories taken away will start to return, but can be relieved again 
 through another Succor. 
-
 
 \paragraph{A Thousand Stars, One Moon}
 A Silver Guard can cause their Adherents to become stronger by spending Divinity. This allows 
@@ -2923,13 +2900,11 @@ your character creation attribute caps by 4.
 
 
 Unless specified otherwise, a higher level of a Boon or Bane replaces the effects of its lower levels.
-
-\section{Boons List} %THIS section should overlap with the table, right now it's garbage
-\begin{table}[!h]
-	\caption{List of Boons}
-	\label{tab:boons list}
-	\begin{tabu} to \linewidth {XXX[c]}
-		Boon& Description&B\&B Point / Arc Point Cost\\\
+\section{Boons List}
+	\begin{longtabu} spread 0pt {XXX[-1,r]}
+			\caption{List of Boons}
+			\label{tab:boons list}\\
+		\rowfont[c]{}Boon& Description&B\&B Point / Arc Point Cost\\\toprule
 		\nameref{boon:Allies}*&&1/5/10\\
 		\nameref{boon:Ambidextrous}& Character Creation only& 3\\
 		\nameref{boon:Animal Affinity}&&2/4/6\\
@@ -2959,15 +2934,12 @@ Unless specified otherwise, a higher level of a Boon or Bane replaces the effect
 		\nameref{boon:Tall} &Character Creation only &8/12\\
 		\nameref{boon:True Grit} & Character Creation only &2/4/6\\
 		\nameref{boon:Rich}& Character Creation only &1/3/5\\
-	\end{tabu}
-\end{table}
-\clearpage
+\end{longtabu}
 \section{Banes List}
-\begin{table}[!ht]
-	\caption{List of Banes}
-	\label{tab:Banes List}
-	\begin{tabu} to \linewidth {X X X}
-		Bane&Description&B\&B Point / Arc Point Cost\\\
+	\begin{longtabu} spread 0pt {X[1.5] X X[-2,r]}
+		\caption{List of Banes}
+		\label{tab:Banes List}\\
+\rowfont[c]{}	Bane&Description&B\&B Point / Arc Point Cost\\\toprule
 \nameref{bane:Arrow Magnet}	&&3\\
 \nameref{bane:Bad Ears} 		&Cannot be removed &2/4\\
 \nameref{bane:Bad Eyes} 		&Cannot be removed &4/6\\
@@ -3004,8 +2976,7 @@ Unless specified otherwise, a higher level of a Boon or Bane replaces the effect
 \nameref{bane:Unhappily Married} &&1/2/3\\
 \nameref{bane:Virtuous} &&10\\
 \nameref{bane:Wanted} &&5/10/15\\
-	\end{tabu}
-\end{table}
+\end{longtabu}
 \clearpage
 \section{Boons}
 \paragraph{\label{boon:Allies}Allies}---\quad\textbf{(1/5/10)}\par
@@ -3373,8 +3344,8 @@ you had an unfortunate encounter with a low-flying halberd. This Bane is not uni
 \item [1:] Barren/Sterile. You’re simply sterile. No children for you (or no more children, if you already have them). You may still feel sexual urges, depending on the nature of your condition.
 \item [3:] Eunuch. You were made a eunuch before puberty (male only). This is a different situation from the above, as this has a serious effect on the development of young men. In addition to all of the obvious effects of the process and the sterility associated with it, you must also pay 2 additional Arc to level up STR or HLT. However, as a side effect, you gain a +2 bonus against all manner of Social rolls made with the intent to deceive, and a +2 bonus against Intimidation and Taunt attempts.
 \end{itemize}
-\paragraph{\label{bane:Blind}Blind}---\quad\textbf{(20)}
-{Cannot be removed}\par
+\paragraph{\label{bane:Blind}Blind}---\quad\textbf{(20)}\\
+\emph{Cannot be removed}\par
 You're stone fucking blind. This brings with it certain problems. While blind men have been known to fight, it is by no means easy, and few would recommend it. 
 
 Blind Characters cannot make sight-based PER checks, nor can they do anything that strictly requires the 
@@ -3407,10 +3378,9 @@ faculties, and possibly some neurological failures (tics, partial paralysis of l
 When you gain Brain Damage, roll 1d10 on the \nameref{tab:Brain Damage} and immediately suffer its effects.\\
 Old Wounds typically develop on the head, neck or around the spine but it’s possible that they may affect hands or joints (GM’s choice). If you would gain a Bane you already have, instead increase the severity of that Bane, if you can. Otherwise ignore that particular effect.
 
-
-For each instance of Brain Damage you currently suffer from, add +1 RS to all INT-based rolls. You no 
-think so good after getting struck on the head too much. 
+For each instance of Brain Damage you currently suffer from, add +1 RS to all INT-based rolls. You no think so good after getting struck on the head too much. 
 \begin{table}[!h]
+	\centering
 	\caption{Brain Damage Table}
 	\label{tab:Brain Damage}
 	\begin{tabu} to \linewidth {cX}
@@ -3431,7 +3401,6 @@ think so good after getting struck on the head too much.
 \textit{Cannot be removed}\par
 A broken limb is a serious injury, but with some time and rest, it’ll be as good as new. Right? 
 Well, in theory anyway. If a limb is used while broken, it may not heal properly, and repeated injuries to a wounded limb can permanently cripple it. A broken limb cannot be used for anything (wielding a sword, walking, and so on), until the Wound that caused it heals (a treated broken leg can be walked on with the aid of crutches, but at 1/4th of normal MOB, and no intense movement is possible). 
-
 
 You may not choose this Bane at Character Creation, and it cannot be bought off. The Wound must heal normally. 
 \paragraph{\label{bane:Complete Monster}Complete Monster}---\quad\textbf{(10) }\par
@@ -3512,7 +3481,7 @@ defended at all costs.
 
 \subparagraph{Special:} If the GM allows it, you may, instead of taking the Arc Point hit, take a number of Banes that would represent your character’s inability to process or cope with what has happened. The GM may decide these for you, or you may put forward a suggestion. This is a serious event in your character’s life, and thus the Banes you take should represent this.
 \paragraph{\label{bane:Dire Past}Dire Past}---\quad\textbf{(0) }\\
-{Cannot be removed}\par
+\emph{Cannot be removed}\par
 You've been through some serious stuff. Maybe you're a survivor of a terrible battle, or maybe you're a veteran of the Crusades. Maybe you spent your childhood as a cabin boy on a witch-hunter's ship, fighting infidels and blasphemous cults on the islands along the Barbary Coast. Maybe you were born in the dark, where others merely adopted it.
 
 
@@ -3596,10 +3565,8 @@ prying information from them. Additionally, he gains a +1 bonus to all social ch
 reason with, or debate those who know the character to be honorable (this could be everyone, if the 
 character is famous, or just those who know him well or have been impressed with his conduct). 
 
-
 However, a character with this Bane must always conduct himself in an honorable manner (discuss with 
 your GM what ‘honor’ means for your character, establish the principles, and stick to them) or else suffer serious consequences. 
-
 
 A character who goes against his own principles loses this Bane, and must pay the next 10 Arc Points 
 earned as a penalty, as his character works through the crisis of conscience brought on by the collapse of 
@@ -3609,7 +3576,7 @@ discretion) after being lost, to represent the character regaining his principle
  
 A character cannot have the Honorable Bane at the same time as the Complete Monster Bane. 
 \paragraph{\label{bane:Lasting Pain}Lasting Pain}---\quad\textbf{(4/8) }\\
-{Cannot be removed}\par
+\emph{Cannot be removed}\par
 You've got an injury that not only hasn't healed properly, but that causes you chronic or constant pain in the limb. You may learn to live with the pain, but it is never far from your mind.
 
 
@@ -3619,7 +3586,7 @@ Choose a Hit Location, such as hand, thigh, face, belly, and so on, which will b
 	\item [8:] Major. The pain can be crippling. Each day, roll 1d10. On a 1-9, you suffer 4 Pain throughout the day. Any injury to the area awakens this pain until the injury is fully healed.
 \end{itemize}
 \paragraph{\label{bane:Mute}Mute}---\quad\textbf{(5/8) }\\
-{Cannot be removed}\par
+\emph{Cannot be removed}\par
 You can't talk. Perhaps you've suffered a throat injury or had your tongue cut out. Perhaps you've been 
 that way since birth, or maybe a disease ravaged your vocal chords. Either way, you cannot communicate verbally in a meaningful fashion.
 \begin{itemize}
@@ -3645,7 +3612,7 @@ a Vow of Silence could be worth more, and a Vow of Pacifism could be worth as mu
 on the character's background and premise. Consult with your GM to decide what an Oath should be 
 worth. Generally, the harder it would be to keep, the more it should be worth. 
 \paragraph{\label{bane:Old Wound}Old Wound}---\quad\textbf{(1) }\\
-{Cannot be removed}\par
+\emph{Cannot be removed}\par
 You've suffered a severe injury that has never quite healed properly, and still pains you from time to time, and is particularly sensitive to further injury. 
 
 
@@ -3657,7 +3624,7 @@ Any attack that hits this location automatically inflicts Stun equal to a level 
 
 If this Bane is bought off, its cost to remove it is 5, instead of the 1 suggested by its cost. 
 \paragraph{\label{bane:One-Eyed}One-Eyed}---\quad\textbf{(10) }\\
-{Cannot be removed}\par
+\emph{Cannot be removed}\par
 You've lost an eye! Perhaps it was an accident, or through injury in combat, or maybe you were born with only one functional eye. Stuff happens. Either way, having one eye can be a disadvantage in combat and in daily life. One-Eyed people can learn to compensate for their lack of depth perception with simple tricks, however it is still difficult to gauge distances.
 
 
@@ -3683,10 +3650,9 @@ You're unusually poor for your class in society. You lack funds, perhaps because
 	\item [8:] You start with no money.You may only take this level of the Bane if your character is of Wealth level 4 or higher, or with GM's permission.
 \end{itemize}
 A character cannot have the Poor Bane at the same time as the Rich Boon.
-\paragraph{\label{bane:Severed Limb/Appendage}Severed Limb/Appendage}---\quad\textbf{(10/15/18) }\\
-{Cannot be removed}\par
+\paragraph{\label{bane:Severed Limb/Appendage}Severed Limb/Appendage:}---\quad\textbf{(10/15/18) }\\
+\emph{Cannot be removed}\par
 You're missing an arm or a leg. This could be the whole arm or leg, or just the hand or foot, but the loss of the manipulator at the end is what's important.
-
 
 If you choose this Bane at Character Creation, choose a limb affected by this Bane, and how much of the limb is missing. If you suffer this Bane because of an injury, then of course you have no say in where the limb has been lost.
 \begin{itemize}
@@ -3695,35 +3661,33 @@ If you choose this Bane at Character Creation, choose a limb affected by this Ba
 	\item [18:] The full limb has been lost (from the shoulder or hip).
 \end{itemize}
 The penalty for having lost a limb is serious.
-\subparagraph*{Hand:}
+\vspace*{-10pt}\subparagraph*{Hand:}
 You cannot perform any task that requires both hands, or use any two-handed weapon. Gripped 
 shields cannot be used (strapped shields can, at the GM’s discretion, with minor modification). 
 When Grappling, making a Slip attempt to prevent this arm from being Trapped or Pinned has a -
 1 TN, unless you have a prosthetic, and Force attempts to untrap the limb are made at a -1 TN as 
 well. Your Punches inflict -2 damage without a prosthetic. 
-\subparagraph*{Lower Arm (from the Elbow):}
+\vspace*{-10pt}\subparagraph*{Lower Arm (from the Elbow):}
 You cannot perform any task that requires both hands, or use any two-handed weapon. No shields 
 of any kind can be used. All Weapon Maneuvers suffer a +1 Activation Cost because of your loss 
 of balance. You may pay 5 Arc Points to remove the Activation Cost (representing your character 
 getting used to the missing limb). You can no longer perform the Punch or Elbow Maneuvers 
 without a prosthetic. All Grappling Maneuver TNs are increased by 1. 
-\subparagraph*{Full Arm (from the Upper Arm to Shoulder)}
+\vspace*{-10pt}\subparagraph*{Full Arm (from the Upper Arm to Shoulder):}
 You cannot perform any task that requires both hands, or use any two-handed weapon. No shields 
 of any kind can be used. All Weapon Maneuvers suffer a +2 Activation Cost because of your loss 
 of balance. You may pay 8 Arc to remove the Activation Cost (representing your character 
 getting used to the missing limb). All Grappling Maneuver TNs are increased by 2. 
 
-
 Missing both hands or arms prevents you from using any held weapons. It is still possible to 
 Grapple unless you are missing both arms to the elbow or more, but the penalties are cumulative. 
 
-
-\subparagraph*{Foot (from the Foot or lower Shin)}
+\vspace*{-10pt}\subparagraph*{Foot (from the Foot or lower Shin):}
 You suffer a -2 penalty to MOB, and must make a Stability roll at RS 2 whenever moving faster 
 than a slow limp (a quarter of normal speed) or fall. All Stability rolls forced upon you by other 
 sources have their RS increased by 1. You suffer a CP penalty of 2 in combat in addition to these 
 other penalties, and all Dodge Maneuvers have their TNs increased by 2. 
-\subparagraph*{Lower Leg (from the upper Shin to Knee) and Full Leg (from the Thigh to Hip)}
+\vspace*{-10pt}\subparagraph*{Lower Leg (from the upper Shin to Knee) and Full Leg (from the Thigh to Hip):}
 You cannot walk except to possibly hop at a quarter of normal MOB. You must make a Stability 
 test every turn you move like this at RS 3, or fall and be prone. All Stability rolls forced upon you 
 by other sources have their RS increased by 2. You suffer a CP penalty of 4 in combat in addition 
@@ -3733,9 +3697,8 @@ falling, and reduce the CP penalty to 2, but you cannot run, and a crutch preclu
 weapon on the lost-leg-side hand, and the use of 2H weapons. You cannot perform Knee or Kick 
 maneuvers with your lost leg, and may only perform kicks with your remaining leg (if you have 
 one) while prone, or with a crutch at +1 TN and +1 Activation Cost. 
-\subparagraph*{Full Leg (from the Thigh to Hip)}
+\vspace*{-10pt}\subparagraph*{Full Leg (from the Thigh to Hip):}
 XXXXXXXX
-
 
 If both legs are lost, movement is extremely difficult. MOB is reduced to an effective 1, running 
 is not possible. Combat is unthinkable. You are permanently Prone, and can perform no Dodge 
@@ -3745,7 +3708,7 @@ Maneuvers.
 If a severed limb is used without giving it time to heal, the user immediately gains 4 Shock and 1 Pain.
 
 
-Prosthetics are available in Chapter 5.4 and will mitigate some of the issues with missing limbs.%FIX REFERENCE TO PROSTHETICS CHAPTER
+Prosthetics are available in \autoref{ch:Prosthetics} and will mitigate some of the issues with missing limbs.
 \paragraph{\label{bane:Sheltered}Sheltered}---\quad\textbf{(2/4/6) }\par
 For some reason, you aren’t quite as used to the world as you should be. You’re less hardened against the 
 harshness of the world, and things tend to affect you more than your fellows. You start with less Grit than 
@@ -3820,7 +3783,7 @@ era, people often acknowledged the criminals of other kingdoms. Often, but not a
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
 \clearpage 
-\section{Skills}\label{sec:skills}%ALL the skills need tables, but I don't know how we want to lay that shit out
+\section{Skills}\label{sec:skills}
 Skills represent a character’s acquired knowledge and expertise in a wide variety of activities, from 
 translating ancient scripture, to carving stone, and rigging the sails on a ship. The full list of Skills can be found in \autoref{ch:skills}:~\nameref{ch:skills}.
 
@@ -3846,7 +3809,8 @@ Skills are different from Proficiencies and other systems in that they typically
 
 
 Skills List:
-\begin{itemize}\itemsep1pt
+\begin{itemize}
+	[noitemsep]
 	\item \nameref{skill:Athletics}
 	\item Chymistry --- (Not in Beta)
 %\nameref{skill:Chymistry}
@@ -3856,7 +3820,7 @@ Skills List:
 	\item Drill --- (Not in Beta)
 %	\item \nameref{skill:Drill} 
 	\item \nameref{skill:Engineering}
-%GATHER INFORMATION SKILL	\item \nameref{skill:Gather Information}
+%	\item \nameref{skill:Gather Information}
 	\item \nameref{skill:History}
 	\item \nameref{skill:Hunting}
 	\item \nameref{skill:Intimidate}
@@ -3880,6 +3844,7 @@ Skills List:
 \end{itemize}
 
 \paragraph{\label{par:Trained}Trained} No longer count as ‘Untrained’ when using the skill.\\
+\setlength\intextsep{0pt}
 \begin{wraptable}{r}{9.5 cm} %UGLY as sin
 	\centering
 	\begin{tabu} spread 0pt{X[c]X[c]XX[c]}
@@ -3898,6 +3863,7 @@ Skills List:
 	\caption{Skills Overview}
 	\label{tab:Skill Levels Overview}
 \end{wraptable}
+\setlength{\intextsep}{\oldintextsep}
 \paragraph{\label{par:Teacher}Teacher} Grants the character the ability to give another character one free level of the skill the teacher is proficient in. This ability may only be used once on a person for a single skill, and only a number of skills equal to the receiving character’s INT may be trained this way total. Using this takes about a month of in-game time, give or take at the GM’s discretion, and requires the location and materials needed to perform the trained skill. Multiple characters may be trained at the same time as long as their training starts at the same time and there are adequate resources and facilities.
 \paragraph{\label{par:Mastery}Mastery} Once per session, you may automatically succeed with 1/2 dice rolled for one Skill roll.
 \paragraph{\label{par:Skill Level}Skill Level} Each skill has a level (ranged from 1 to 10) decided by the character’s investment of Skill Points (at character creation) or Arc (later game). The skill level gives the character dice equal to their skill level for skill tests, as well as other bonuses at various skill levels. Skills cost Arc to increase. Upon obtaining a level with a listed Skill Bonus, the character receives the stated bonus.
@@ -3906,6 +3872,7 @@ Skills List:
 \paragraph{\label{par:Skill Tests}Skill Tests}: There are many situations in the game in which a character’s skills will be tested, such as trying to negotiate a hostile deal or simply leaping from one roof to another during a chase. Every test of a skill will state a required number of successes (RS) for the skill test to be successful. The character must roll their pool and get equal to or above the skill’s target number (TN), and get equal to or more than the number of required successes (RS) for the test to be passed. Skills’ tests have modifiers to the situation that affect the skill check’s RS, such as trying to climb a wall slanted against the character or knowing the history of a foreign kingdom. If the number of RS is ever raised above the character’s dice pool plus automatic successes the character might get from other factors, then the skill attempt immediately becomes impossible. Situational modifiers can lower RS as well, though it can never be lowered beneath 1. If there is a situation that a skill doesn’t seem to cover, the GM should use their best judgement to create a test based on similar difficulties to the situation.
 \paragraph{\label{par:Untrained}Untrained} If a character has no levels in a skill they are attempting to use, then they are considered unstrained in it. Some skills cannot be used if the character is untrained in them:
 \begin{itemize}
+	[noitemsep]
 	\item Chymistry (Not in Beta)
 	\item \nameref{skill:Crafting}
 	\item \nameref{skill:Engineering}
@@ -3915,8 +3882,12 @@ Skills List:
 \paragraph{Leveling up Skills} Skills have a leveling system based on the amount of points spent in any given skill to increase it to the next level. Skill levels are bought simply by paying the Arc price.
 \paragraph{Retrying Skill Attempts} For physical skills, they can be retried any amount of times, unless injuries or situation stops the character from doing so. For mental ones, such as History and Politics, a single check is allowed, any retries have to be done through the Research skill. For social skills, it’s best to wait before trying again, as if tried again too soon, the target may not react positively, at the GM’s discretion.
 \paragraph{Encumbrance} The amount of gear worn can affect certain skills. There are five levels of Encumbrance: Unencumbered, Light, Medium, Heavy, and Overloaded.\\
-\begin{wraptable}{r}{10 cm}%THIS table is complete trash, not sure how to fix it
+
+\setlength{\intextsep}{0pt}
+\begin{wraptable}{r}{10 cm}
 	\centering
+	\caption{Encumbrance Level}
+	\label{tab:Encumbrance Penalties}
 	\begin{tabu} spread 0pt{XX[c]X[r]}
 Encumbrance		&Mobility Effect&Skill Penalty\\\toprule
 Unencumbered	&0				&0\\
@@ -3925,10 +3896,8 @@ Medium			&-4				&+2 RS\\
 Heavy			&-6				&+3 RS\\
 Overloaded		&-8				&+4 RS\\
 	\end{tabu}
-	\caption{Encumbrance Level}
-	\label{tab:Encumbrance Penalties}
 \end{wraptable}
-
+\setlength{\intextsep}{\oldintextsep}
 
 \subsection{Character Creation}
 At Character Creation, Skills can be purchased by spending Skill Points, given at an amount depending on the invested PCP plus an amount equal to the character’s INT, by purchasing individual skills.
@@ -3941,7 +3910,7 @@ END. We provide the best examples we can, but it is your job to ensure what your
 represented as accurately as possible. 
 
 \section{Skill Descriptions}
-\paragraph{\label{skill:Athletics}Athletics}---\quad\textbf{(Various)}\par
+\paragraph{\label{skill:Athletics}Athletics}---\quad\textbf{(Various)}\par%THIS TABLE IS REALLY UGLY
 Athletics is the skill for moving, jumping, and performing other feats of physical prowess. Gymnastics, sprinting, jumping, and other classic physical activities fall within its purview. Different attributes may be used with Athletics depending on what the character is doing. Someone lifting weights, for example, will probably use STR, while a sprinter would use MOB. A long-distance or marathon runner would use END. Terrain will apply for running. Walking generally doesn’t require an Athletics test, no matter the rigor.
 
 
@@ -3951,27 +3920,30 @@ Note: The fastest a mortal person can run is their MOB x4 in yards.
 	\label{tab:Athletics}\\
 \rowfont[c]{}Action & Base Attribute vs. RS or other effects\\\toprule\endhead
 	\\
-		\multicolumn{2}{c}{Lifting}\\\cmidrule(lr){1-2}
+		\multicolumn{2}{c}{Lifting}\\\tabucline[1pt on 2pt] {1-2}
 Lifting 10$ \times $STR in lbs. above your head & STR vs. 1 RS \\
 Lifting more than 10$ \times $STR in lbs. above your head & +1 RS per 10$ \times $STR (to maximum of 50$ \times $) \\
 \\
 Holding 10$ \times $STR in lbs. above your head & STR vs. 1 RS \\
 Holding that same weight for more than 1 second & +1 RS per second held.\\
 	\\
-		\multicolumn{2}{c}{Sprinting}\\\cmidrule(lr){1-2}
+	\\
+		\multicolumn{2}{c}{Sprinting}\\\tabucline[1pt on 2pt] {1-2}
 Sprinting 2$\times$ your MOB (for up to 5 seconds) &MOB vs. 2 RS\\
 Sprinting more than 2$\times$ your MOB (for up to 5 seconds) &+1 RS per 1$\times$ more (to maximum of 4)\\
 Sprinting for longer than 5 seconds &+1 RS per 10 seconds of sprinting.\\
 	\\
 Encumbrance (+1 at Light, +4 at Overloaded)&+1 to +4 RS\\
 	\\
-		\multicolumn{2}{c}{Running}\\\cmidrule(lr){1-2}
+	\\
+		\multicolumn{2}{c}{Running}\\\tabucline[1pt on 2pt] -
 Running $ \frac{1}{4} $ mile without stopping. &No Test Required\\
 Running a mile without stopping. &END vs. 2 RS\\
 Running 5 miles without stopping. &END vs. 5 RS\\
 Running an entire marathon without stopping. (~26 mi.) &END vs. 8 RS\\
 	\\
-		\multicolumn{2}{c}{Jumping}\\\cmidrule(lr){1-2}
+	\\
+		\multicolumn{2}{c}{Jumping}\\\tabucline[1pt on 2pt] {1-2}
 Vault a Waist Height Obstacle &AGI vs. 2 RS \\
 Vault a Shoulder Height Obstacle &AGI vs. 3 RS \\
 Vault a Reach Height Obstacle &AGI vs. 5 RS \\
@@ -3987,7 +3959,7 @@ Jump Vertically more than 1 foot &+2 RS per 1 foot \\
 Encumbrance (+1 at Light, +4 at Overloaded) &+1 to +4 RS\\
 \end{longtabu}
 
-\paragraph{\label{skill:Climbing}Climbing}---\quad\textbf{(END) }\par
+\paragraph{\label{skill:Climbing}Climbing}---\quad\textbf{(END)}\par
 Climbing is the skill that lets characters scale mountains, cliffs, walls, and ropes. In some cases, climbing is easy: climbing a stable ladder that’s at 90 degrees or less, or any dry, sticking, or bogged surface that’s less than 40 degrees up is a simple climbing test. However, even a 10 degree surface will need at least be tough if it’s covered in ice. Terrain can also be a huge factor when rolling Climbing tests. Failing by more than your character’s Climbing skill requires a Stability test against an RS equal to the initial check, with failing resulting in a fall.
 
 
@@ -4705,19 +4677,16 @@ on the weapon-hand. The kind of Guard it represents depends on the Guard value
 	\item [3:] Complex Guard (Rapier, Sidesword)
 	\item [4:] Basket Hilt (Schiavona, Heavy Backsword)
 \end{itemize}
-Note that only swords with Guard Value 2 (neither lower nor higher) can use the Murder-Strike Maneuver. %ADD REF TO MORDHAU
+Note that only swords with Guard Value 2 (neither lower nor higher) can use the \nameref{man:MURDER-STRIKE} Maneuver.
 \subsubsection{Special}
 The weapon’s special qualities, which are further described in \autoref{sec:special-qualities}
 \subsubsection{Weight}
 The weight of the weapon added to Encumbrance when sheathed, holstered or stored. When being held, a weapon has 
 no Weight value.
-
 \subsubsection{Cost}
 The weapon’s cost. May vary regionally.
 
-Melee Weapons %VESTIGIAL
-
-\section{Daggers} %DAGGERS TABLE IS ABSOLUTELY FUCKED. I think linewidth 1.2 could fix it, but I'm not sure how to use \centering for the table without putting it after the \linewidth command itself. Would a \parbox work?
+\section{Daggers}
 \begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
 	\caption{Daggers}
 	\label{tab:Daggers List}\\
@@ -4745,7 +4714,7 @@ Swordbreaker					&Dagger			&1H	&S	&6(-1c)	&6(+0p)	&7(1)	&Companion Weapon, Parry
 Tanto							&Dagger			&1H	&H	&7(+0c)	&6(+0p)	&8(1)	&Draw 1, Light Blade, Thin Blade		&0	&3 sp\\
 \end{longtabu}
 
-\section{Swords}%SWORDS TABLE 1H
+\section{Swords}
 \subsection{1H Swords}
 \begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
 	\caption{One-Handed Swords}
@@ -4799,7 +4768,7 @@ War Cleaver                 &Sword          &1H      &M      &7(+2c) &8(-1p) &8(
 Yataghan                    &Sword          &1H      &S      &7(+1c) &8(+0p) &7(0)           &Forward Swept, Draw 1                   &0.5 &10 sp\\
 \end{longtabu}
 
-\subsection{2H Swords}%SWORDS TABLE 2H
+\subsection{2H Swords}
 \begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
 	\caption{Two-handed Swords}
 	\label{tab:2H Swords}\\
@@ -4822,7 +4791,7 @@ Zweihander 				&Sword &2H &VL &7(+3c) &8(+2p) &7(2) &Heavy Weapon 								&2 	&7
 Zweihander (Grutte) 	&Sword &2H &EL &7(+4c) &8(+3p) &7(2) &Heavy Weapon, Freakishly Large 			&3 	&6 gp\\
 \end{longtabu}
 
-\section{Blunt} %BLUNT 1H TABLE
+\section{Blunt}
 \subsection{1H Blunt}
 \begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
 	\caption{One-Handed Blunt Weapons}
@@ -4845,13 +4814,15 @@ War Pick &Blunt &1H &S &7(+2p) &7(-2b) &8(0)& AP Swing 2, Hook, Reverse Slot, Th
 \end{longtabu}
 
 \subsubsection{1H Blunt Weapon Attachments}%MAKE THIS A SUBTABLE OF THE ABOVE TABLE
-%Weapon Name						&Weapon Type	&Hands	&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\\
-Arming Spike Blunt 1H - - (+0p) - Weapon Attachment (Thrust) 0 1 cp
-Reverse Blade Blunt 1H - 7(+1c) - - Weapon Attachment (Swing) 0 6 cp
-Reverse Hammer Blunt 1H - 7(+0b) - - AP Swing 1, Crushing 1, Shock 1, Weapon Attachment (Swing) 0 6 cp
-Reverse Spike Blunt 1H - 7(+0p) - - AP Swing 2, Hook, Weapon Attachment (Swing) 0 6 cp
-Weighted Chain Blunt 1H VL 8(+1b) - 8(0) Chain 3, Hook,Shock 2, Weapon Attachment (Swing) 1 6 cp
-\subsection{2H Blunt} %BLUNT 2H TABLE
+\begin{tabu} to \linewidth {X[3] X *{5}{X[-3,c]} X[5] *{2}{X[-2]}}
+Weapon Name						&Weapon Type	&Hands	&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\
+Arming Spike	&Blunt	&1H	&-	&-		&(+0p)	&-		&Weapon Attachment (Thrust) &0 &1 cp\\
+Reverse Blade	&Blunt	&1H	&-	&7(+1c)&-	&-		&Weapon Attachment (Swing) &0 &6 cp\\
+Reverse Hammer	&Blunt	&1H	&-	&7(+0b)&-	&-		&AP Swing 1, Crushing 1, Shock 1, Weapon Attachment (Swing) &0 &6 cp\\
+Reverse Spike	&Blunt	&1H	&-	&7(+0p)&-	&-		&AP Swing 2, Hook, Weapon Attachment (Swing) &0 &6 cp\\
+Weighted Chain	&Blunt	&1H	&VL	&8(+1b)&-	&8(0)	&Chain 3, Hook,Shock 2, Weapon Attachment (Swing) &1 &6 cp\\
+\end{tabu}
+\subsection{2H Blunt}
 \begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
 	\caption{Two-Handed Blunt}
 	\label{tab:2H Blunt}\\
@@ -5020,7 +4991,7 @@ This weapon can be wielded with one hand in addition to wielding with both hands
 When weapons with the Light Blade quality Parry Swinging attacks from this weapon, the Defense TN of the Light Blade is increased by 2, instead of 1.
 
 \paragraph{\label{wepqual:Hook}Hook}---\quad
-This weapon can be used with the Hook Maneuver. %PROBABLY could do with a \ref
+This weapon can be used with the \nameref{man:HOOK} Maneuver.
 
 \paragraph{\label{wepqual:Light Blade}Light Blade}---\quad
 When Parrying Swinging attacks from any weapon that does not have this quality, this weapon’s Defense TN is increased by 1. Against Heavy Weapons, this penalty increases to 2.
@@ -5126,7 +5097,6 @@ This customization can be taken multiple times to represent a revolver-type weap
 You may purchase a Firing Mechanism for the Integrated Pistol, if you are so inclined, otherwise it is assumed to use a flintlock.
 
 The idea of designing a sword with a pistol built into it may sound like fantasy, but if so, it’s the sort of fantasy that appealed to the medieval mind enough for them to give it a shot. Integrated pistols usually fire in-line with the blade, but a few are built into the crossguard, and fire forward from the hand like regular pistols. Either way, they’re not very accurate and they tend to make the weapon more cumbersome. However, they can be a huge advantage at close range, or when closing with longer-ranged adversaries.
- %BEGIN TABLE FOR INTEGRATED WEAPONS
 \begin{table}[!ht]
 	\caption{Integrated Firearms}
 	\label{tab:Integrated Firearms}
@@ -5640,19 +5610,23 @@ missile hits Hard armor. The Textile quality of armor is negated by a Winged mis
 
  
 
-\chapter{Prosthetics}
-“You are sure this will work, elf?”\\
-“Yes, Herr Muts, it will work. I will admit that accommodating the socket for your musculature was difficult, we have never had 
-such a well developed specimen on the table before, and we had to accommodate for the great strain you are likely to be placing 
-on the limb. Many of the muscles have been re-anchored to the socket, though they won’t really do anything except hold it in 
-place. Additional support rods connect to the scapula and clavicle. You should notice an increased appetite as long as it is 
-active\ldots That is normal. When you want to disengage the limb, perhaps to sleep, simply envision a blue triangle in your mind’s 
-eye. To activate it, attempt to touch your thumb to little-finger on the mechanical hand, and that should re-engage it.”\\
-“Are you sure this isn’t witchcraft?”\\
-“Of course not. You’re still human right down to the marrow of your… remaining bones.”\\
-“What about the special feature I requested?”\\
-“Oh yes, let me go set up some targets...”\\
+\chapter{Prosthetics}\label{ch:Prosthetics}
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
+\clearpage
+\begin{quotation}
+\emph{“You are sure this will work, elf?”}
 
+\vspace{5pt}\emph{“Yes, Herr Muts, it will work. I will admit that accommodating the socket for your musculature was difficult, we have never had such a well developed specimen on the table before, and we had to accommodate for the great strain you are likely to be placing on the limb. Many of the muscles have been re-anchored to the socket, though they won’t really do anything except hold it in place. Additional support rods connect to the scapula and clavicle. You should notice an increased appetite as long as it is active\ldots~ That is normal. When you want to disengage the limb, perhaps to sleep, simply envision a blue triangle in your mind’s eye. To activate it, attempt to touch your thumb to little-finger on the mechanical hand, and that should re-engage it.”}
+
+\vspace{5pt}\emph{“Are you sure this isn’t witchcraft?”}
+
+\vspace{5pt}\emph{“Of course not. You’re still human right down to the marrow of your\ldots~remaining bones.”}
+
+\vspace{5pt}\emph{“What about the special feature I requested?”}
+
+\vspace{5pt}\emph{“Oh yes, let me go set up some targets\ldots”}
+\end{quotation}
 
 Prosthetics are artificial replacement limbs designed to restore some functionality to amputees. At their 
 most basic, a prosthetic can be a simple stick, like the idiosyncratic ‘peg leg’ that everyone imagines 
@@ -5866,19 +5840,15 @@ a proper weapon held in the dominant hand.
 
 Shields have a long history, and come in a huge variety of shapes and compositions.
 
-\subsection{Shield Characteristics}
+\subsection{Shield Characteristics}%NEEDS PARAGRAPHS
 
 Shield Name 
 The variety of shield. Some of these are generalizations, as dozens of different cultures may have had 
 very minor permutations on the same shield design, but each called it something different. 
 
- 
 
-Shield Bash TN/Damage 
-This number determines how effectively a shield can be used to bash or otherwise actively disrupt an 
-opponent, and the amount of additional Bludgeoning damage it does on strike. Spiked shields, when used 
-this way, inflict Piercing instead of Bludgeoning damage. The Bash TN is used in XXXXXX, and similar 
-Maneuvers. %REFER TO SHIELD BASH MANEUVER
+Shield Bash TN/Damage
+This number determines how effectively a shield can be used to bash or otherwise actively disrupt an opponent, and the amount of additional Bludgeoning damage it does on strike. Spiked shields, when used this way, inflict Piercing instead of Bludgeoning damage. The Bash TN is used in \nameref{man:SHIELD BASH}, and similar Maneuvers.
 
  
 
@@ -5917,10 +5887,9 @@ on the back or belt, it does not add to effective weight.
 Cost 
 The cost of the shield.
 
-\begin{table}
+\begin{longtabu} to \linewidth {X[2,l] X[c] *{3}{X[-1,c]} X[3] *{2}{X[-1,c]}}
 	\caption{Shields}
-	\label{tab:Shields}
-	\begin{tabu} to \linewidth {X[2,l] X[c] *{3}{X[-1,c]} X[3] *{2}{X[-1,c]}}
+	\label{tab:Shields}\\
 Shield Name								&Bash TN&Block TN&AV&Dur.&Coverage& Wt.& Cost\\
 Buckler									&6(+0b)	&7	&8	&15	&Hand*, Forearm*&0&5 sp\\
 Oval Shield 							&7(+1b)	&7	&6	&10	&Hand*, Forearm* Elbow, Upper Arm, Shoulders, Neck, Chest, Sides, Belly, Hips, Groin, Thighs&1&2 sp\\
@@ -5934,9 +5903,8 @@ Large Round Shield 						&8(+0b)	&7	&6	&10	&Hands, Forearm, Elbow, Upper Arm, Sh
 Scutum 									&7(+1b)	&7	&6	&12	&Hand*, Forearm* Elbow, Upper Arm, Shoulders, Neck, Chest, Sides, Belly, Hips, Groin, Thighs, Knees, Shins&2&5 sp\\
 Round Shield 							&6(+0b)	&7	&6	&8	&Hand*, Forearm* Elbow, Upper Arm, Shoulders, Neck, Chest, Sides, Belly, Hips, Groin, Thighs&1&2 sp\\
 Hand Pavise 							&9(+0b)	&7	&6	&12	&Hands, Forearm, Elbow, Upper Arm, Shoulders, Neck, Chest, Sides, Belly, Hips, Groin, Thighs, Knees, Shins&1&5 sp\\
-	\end{tabu}
 	\caption*{*As long as this shield's AV is in effect, it applies its AV to both hands and forearms}
-\end{table}
+\end{longtabu}
 
 \chapter{Armor}
 \startcontents[chapters]
@@ -6318,91 +6286,45 @@ Quilted Long Sleeves& 2& 3& 4& Elbow, Forearm, Shoulder, Upper Arm& Textile& 0& 
 
 \section{Armor Components}
 \subsection{Head and Neck Armor}
-
-\begin{table}
+\begin{longtabu}to \linewidth {X *{3}{X[-1,c]} X[2] X[2] *{3}{X[-1,c]}}
 	\caption{Helmets}
-	\label{tab:Helmets}
-	\begin{tabu} to \linewidth {X *{3}{X[-1,c]} X[2] X[2] *{3}{X[-1,c]}}
+	\label{tab:Helmets}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&PP& Cost\\
 Armet& 8& 7& 6& Full Head, Face$\phi$, Neck &Restricts Breathing 2, Integrated Visor, Hard& 4& -2& 2 gp\\
-Barbute& 8& 7& 6& Face$\phi$*, Lower Head, 
-Upper Head &Hard& 1 &-1& 10 sp\\
-Bascinet& 8& 7& 6& Lower Head, Upper 
-Head &Hard, +1 AV vs 
-Downward Swings, Can 
-be worn with Great Helm for Layer 1 on Upper 
-Head and Lower Head& 1.5& 0& 12 sp\\
-Burgonet& 8& 7& 6& Lower Head, Upper 
-Head &Hard, +1 AV vs 
-Downward Swings &2 &-1& 10 sp\\
+Barbute& 8& 7& 6& Face$\phi$*, Lower Head, Upper Head &Hard& 1 &-1& 10 sp\\
+Bascinet& 8& 7& 6& Lower Head, Upper Head &Hard, +1 AV vs Downward Swings, Can be worn with Great Helm for Layer 1 on Upper Head and Lower Head& 1.5& 0& 12 sp\\
+Burgonet& 8& 7& 6& Lower Head, Upper Head &Hard, +1 AV vs Downward Swings &2 &-1& 10 sp\\
 Close Helmet& 8& 7& 6& Full Head, Face$\phi$, Neck &Restricts Breathing 2, Integrated Visor, Hard& 3.5 &-1& 3 gp\\
-Closed Sallet& 8& 7& 6& Face$\phi$, Lower Head*, 
-Upper Head &Hard, No AV on Face vs 
-Upward Swings &2 &-1& 10 sp\\
-Conical Helm& 8& 7& 6& Upper Head &Hard, +2 AV vs 
-Downward Swings 2& 0& 2& sp\\
-Great Bascinet& 8& 7& 6& Full Head, Face$\phi$, Neck, 
-Shoulder &Restricts Breathing 2, 
-Integrated Visor, Hard& 3.5 &-2& 15 sp\\
-Great Helm& 8& 7& 6& Full Head, Face$\phi$, Neck$\phi$ &Restricts Breathing 3, 
-Hard, Can be worn with a Skullcap or Bascinet for 
-Layer 1 on overlapping 
-areas& 5 &-3& 30 sp\\
+Closed Sallet& 8& 7& 6& Face$\phi$, Lower Head*, Upper Head &Hard, No AV on Face vs Upward Swings &2 &-1& 10 sp\\
+Conical Helm& 8& 7& 6& Upper Head &Hard, +2 AV vs Downward Swings 2& 0& 2& sp\\
+Great Bascinet& 8& 7& 6& Full Head, Face$\phi$, Neck, Shoulder &Restricts Breathing 2, Integrated Visor, Hard& 3.5 &-2& 15 sp\\
+Great Helm& 8& 7& 6& Full Head, Face$\phi$, Neck$\phi$ &Restricts Breathing 3, Hard, Can be worn with a Skullcap or Bascinet for Layer 1 on overlapping areas& 5 &-3& 30 sp\\
 Hat/Cap& 1& 1& 1& Upper Head &-& 0& 0& 1 cp\\
-Kettle Helm& 8& 7& 6& Lower Head*, Upper 
-Head &Hard, No AV vs Upward 
-Swings 0& 0& 3& sp\\
-Lamellar Pot Helm& 5& 5& 5& Lower Head, Upper 
-Head &Hard& 2 &-1& 8 sp\\
-Leather Pot Helm& 4& 3& 3& Lower Head, Upper 
-Head &-& 1 &-1& 10 cp\\
+Kettle Helm& 8& 7& 6& Lower Head*, Upper Head &Hard, No AV vs Upward Swings 0& 0& 3& sp\\
+Lamellar Pot Helm& 5& 5& 5& Lower Head, Upper Head &Hard& 2 &-1& 8 sp\\
+Leather Pot Helm& 4& 3& 3& Lower Head, Upper Head &-& 1 &-1& 10 cp\\
 Leather Skullcap& 4& 3& 3& Upper Head &-& 0& 0& 6 cp\\
-Morion& 8& 7& 6& Lower Head*, Upper 
-Head &Hard, +1 AV vs 
-Downward Swings 1& 0& 1&2 sp\\
-Open Sallet& 8& 7& 6& Lower Head*, Upper 
-Head &Hard& 2& 0& 5 sp\\
-Quilted Helmet& 2& 4& 5& Lower Head, Upper 
-Head &Textile& 0& 0& 8 cp\\
-Reinforced Roman 
-Helm& 8& 7& 6& Lower Head, Neck*, 
-Shoulders*, Upper Head &Hard, +4 AV on Upper 
-Head& 2.5& 0& 1 gp\\
-Roman Helm (Gallic Style)& 8& 7& 6& Lower Head, Neck*
- Shoulders*, Upper Head, &Hard& 2& 0& 15 sp\\
-Skullcap& 8& 7& 6& Upper Head &Hard, Can be worn with 
-Great Helm for Layer 2 
-on Upper Head& 0& 0& 1 sp\\
-Stechhelm& 10& 9& 8& Full Head, Neck &Restricts Breathing 3, 
-Hard, +4 AV on Lower 
-Head, Face, and Neck& 
-8 &-3& 1 gp\\
-Tailed Sallet& 8& 7& 6& Face$\phi$, Lower Head*, 
-Neck*, Shoulders*, 
-Upper Head &Hard, No AV on Face vs 
-Upward Swings &2& -1& 12 sp\\
-Zischagge/ Szyszak& 8& 7& 6& Lower Head, Neck*, 
-Shoulders*, Upper Head &Hard, +4 AV on Upper 
-Head& 2.5& 0& 10 sp\\
-	\end{tabu}
-\end{table}
+Morion& 8& 7& 6& Lower Head*, Upper Head &Hard, +1 AV vs Downward Swings 1& 0& 1&2 sp\\
+Open Sallet& 8& 7& 6& Lower Head*, Upper Head &Hard& 2& 0& 5 sp\\
+Quilted Helmet& 2& 4& 5& Lower Head, Upper Head &Textile& 0& 0& 8 cp\\
+Reinforced Roman Helm& 8& 7& 6& Lower Head, Neck*, Shoulders*, Upper Head &Hard, +4 AV on Upper Head& 2.5& 0& 1 gp\\
+Roman Helm (Gallic Style)& 8& 7& 6& Lower Head, Neck* Shoulders*, Upper Head, &Hard& 2& 0& 15 sp\\
+Skullcap& 8& 7& 6& Upper Head &Hard, Can be worn with Great Helm for Layer 2 on Upper Head& 0& 0& 1 sp\\
+Stechhelm& 10& 9& 8& Full Head, Neck &Restricts Breathing 3, Hard, +4 AV on Lower Head, Face, and Neck& 8 &-3& 1 gp\\
+Tailed Sallet& 8& 7& 6& Face$\phi$, Lower Head*, Neck*, Shoulders*, Upper Head &Hard, No AV on Face vs Upward Swings &2& -1& 12 sp\\
+Zischagge/ Szyszak& 8& 7& 6& Lower Head, Neck*, Shoulders*, Upper Head &Hard, +4 AV on Upper Head& 2.5& 0& 10 sp\\
+\end{longtabu}
 
-Optional Visors
-Any Helmet that does not cover the Face can be equipped with a visor, which can be chosen from the list below. The 
-visor then becomes part of the helmet, applying AV and Coverage as normal. If a visor type covers more than the 
-Face, it cannot be attached to any helmet that already covers any of those additional areas.
+\subsubsection{\label{sec:Visors}Optional Visors}---\quad
+Any Helmet that does not cover the Face can be equipped with a visor, which can be chosen from the list below. The visor then becomes part of the helmet, applying AV and Coverage as normal. If a visor type covers more than the Face, it cannot be attached to any helmet that already covers any of those additional areas.
 
-Movable Visors
-A visor can be opened or closed at will (in combat this requires an ADR test at RS 1, and 3 CP). When open, a visor 
-ceases to provide any AV for the Hit Location, but also removes all PP and Weight penalties from the visor for as long 
-as it is open. Closing a visor is much easier than opening one, and can be done with a sharp nod of the head (no ADR 
-test, and only 1 CP while in combat). There is a darker side to this as well. Opening an enemy’s visor during a grapple 
+\paragraph{\label{par:Movable Visors}Movable Visors}---\quad
+A visor can be opened or closed at will (in combat this requires an ADR test at RS 1, and 3 CP). When open, a visor ceases to provide any AV for the Hit Location, but also removes all PP and Weight penalties from the visor for as long as it is open. Closing a visor is much easier than opening one, and can be done with a sharp nod of the head (no ADR test, and only 1 CP while in combat). There is a darker side to this as well. Opening an enemy’s visor during a grapple 
 is easier than trying to pull off his helmet (see the Maneuvers section for more on grappling).
 
-\begin{table}
+\begin{longtabu} to \linewidth {X *{3}{X[-1,c]} X[2] X[2] *{3}{X[-1,c]}}
 	\caption{Visors}
-	\label{tab:Visors}
-	\begin{tabu} to \linewidth {X *{3}{X[-1,c]} X[2] X[2] *{3}{X[-1,c]}}
+	\label{tab:Visors}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&PP&Cost\\
 Bar-Nasel& 4& 2& 1& Face$\phi$& Hard, No AV vs Upward Swings &0& 0& 1 sp\\
 Cage Visor& 7& 3& 5& Face$\phi$& Hard, Movable& 1& 0& 5 sp\\
@@ -6414,331 +6336,221 @@ Movable& 1.5 &-1& 10 sp\\
 Goggle Type& 5& 4& 3& Face$\phi$& Hard, No AV vs Upward Swings &0.5 &-1& 3 sp\\
 Mail Ventail& 6& 4& 3& Face& Layer 1, Hard& 1 &-1& 2 sp\\
 Tri-Bar Nasel& 6& 3& 2& Face$\phi$& Hard, No AV vs Upward Swings &0.5& 0& 3 sp\\
-	\end{tabu}
-\end{table}
+\end{longtabu}
 
-Optional Helmet Crests
-You may add an optional decorative crest to your helmet by paying an additional cost and adding the listed weight (if 
-any) to the helmet.
+\subsubsection{Optional Helmet Crests}
+You may add an optional decorative crest to your helmet by paying an additional cost and adding the listed weight (if any) to the helmet.
 
-Helmet Crests
-Component Name Crest Description Wt Cost
+\vspace*{-10pt}\paragraph{Identifying Crest}---\quad 0 Weight \quad 1 gp\par
+Large and visible crest or plume (like that of a Roman Centurion), which aids in troop identification. You gain a +1 bonus to Tactics or Strategy rolls made in combat.
 
-Identifying 
-Large and visible crest or plume (like that of a Roman Centurion), which aids in troop 
-identification. You gain a +1 bonus to Tactics or Strategy rolls made in combat. 
-	0 1 gp
-
-Intimidating
+\vspace*{-10pt}\paragraph{Intimidating Crest}---\quad 0 Weight \quad 1 gp\par
 Intimidating crests could be war-crests, horns, depict demonic imagery, or have a 
 heightening effect, and so on. Opponents who have WIL lower than yours suffer a -1 
 penalty to their CP for the first Round of combat they fight with you unless they have 
-the Brave Boon. If they are Craven, the -1 penalty will remain throughout combat, so 
-long as the helmet is worn. 
-	0 1 gp
+the \nameref{boon:Brave}~Boon. If they are \nameref{bane:Craven}, the -1 penalty will remain throughout combat, so long as the helmet is worn. 
 
-Ruthlessly 
-Fashionable
+\vspace*{-10pt}\paragraph{Ruthlessly Fashionable Crest}---\quad 1 Weight \quad 3 gp\par
 These are magnificent paper maché or wooden crests, and possibly have mechanical 
-movements. You gain a +1 bonus to Leadership rolls made in combat. 
-	1 3 gp
+movements. You gain a +1 bonus to Leadership rolls made in combat.
 
-\begin{table}
+\begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{3}{X[-1,c]}}
 	\caption{Non-Helmet Head Protection}
-	\label{tab:Non-Helmet Head Protection}
-	\begin{tabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{3}{X[-1,c]}}
+	\label{tab:Non-Helmet Head Protection}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&PP&Cost\\
 Cloth Mask/Scarf& 1& 1& 1& Face, Lower Head &Textile&0&0&1 cp\\
 Lamellar Ventail& 5& 5& 5& Face, Neck &Hard &1.5 &-1 &2 sp\\
-Mail Camail& 6& 4& 3& Lower Head, Neck, 
-Shoulders &Hard, Layer 1, Mail& 1& 0& 4 sp\\
+Mail Camail& 6& 4& 3& Lower Head, Neck, Shoulders &Hard, Layer 1, Mail& 1& 0& 4 sp\\
 Mail Coif& 6& 4& 3& Lower Head, Neck, Upper Head& Hard, Layer 1, Mail& 1& 0& 2 sp\\
 Mail Ventail& 6& 4& 3& Face& Hard, Layer 1, Mail& 1.5 &-1& 1 sp\\
-Quilted Camail& 2& 3& 4& Lower Head, Neck, 
-Shoulders& Textile& 0& 0& 8 cp\\
+Quilted Camail& 2& 3& 4& Lower Head, Neck, Shoulders& Textile& 0& 0& 8 cp\\
 Quilted Coif& 2& 3& 4& Lower Head, Neck, Upper Head& Textile& 0& 0& 4 cp\\
 Quilted Ventail& 2& 3& 4& Face& Textile& 0 &-1& 1 cp\\
 Steel Facemask& 8& 7& 6& Face$\phi$& Restricts Breathing 1, Hard& 2 &-1& 8 sp\\
-	\end{tabu}
-\end{table}
+\end{longtabu}
 
-\begin{table}
+\begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{3}{X[-1,c]}}
 	\caption{Neck Protection}
-	\label{tab:Neck Protection}
-	\begin{tabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{3}{X[-1,c]}}
+	\label{tab:Neck Protection}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&PP& Cost\\
 Bevor& 8& 7& 6& Face$\phi$*, Lower Head, Neck& Restricts Breathing 1, Hard& 2& 0& 12 sp\\
 Gorget& 8& 7& 6& Neck& Hard& 1& 0& 10 sp\\
 Leather Neck-Stock& 3& 2& 2& Neck &-& 0& 0& 8 cp\\
-Neck-Wrap (such 
-as a Scarf)& 1& 1& 1& Neck& Textile& 0& 0& 1 cp\\
+Neck-Wrap (such as a Scarf)& 1& 1& 1& Neck& Textile& 0& 0& 1 cp\\
 Reinforced Leather Neck-Stock& 4& 3& 3& Neck& Hard& 0& 0& 1 sp\\
-	\end{tabu}
-\end{table}
+\end{longtabu}
 
 \subsection{Torso Armor}
-\begin{table}
+\begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
 	\caption{Plate Torso Armor}
-	\label{tab:Plate Torso Armor}
-	\begin{tabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
+	\label{tab:Plate Torso Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\
 Breastplate& 8& 7& 6& Belly, Chest, Side& Hard& 1.5& 1 gp\\
 Bulletproof Breastplate& 10& 9& 8& Belly, Chest, Side& Bulletproof, Hard& 3.5& 2 gp\\
-Bulletproof Cuirass& 10& 9& 8& Belly, Chest, Lower 
-Back, Side, Upper Back& Bulletproof, Hard& 4.5& 4 gp\\
+Bulletproof Cuirass& 10& 9& 8& Belly, Chest, Lower Back, Side, Upper Back& Bulletproof, Hard& 4.5& 4 gp\\
 Bulletproof Codpiece& 10& 9& 8& Groin& Bulletproof, Hard& 0.5& 1 gp\\
-Cuirass& 8& 7& 6& Belly, Chest, Lower 
-Back, Side, Upper Back& Hard& 2.5& 2 gp\\
+Cuirass& 8& 7& 6& Belly, Chest, Lower Back, Side, Upper Back& Hard& 2.5& 2 gp\\
 Codpiece& 8& 7& 6& Groin& Hard& 0& 5 sp\\
-Fauld& 8& 7& 6& Groin$\phi$, Hip$\phi$, Thighs$\phi$& Hard, Layers 2 (Groin, Hip, 
-Thighs)& 1.5& 10 sp\\
+Fauld& 8& 7& 6& Groin$\phi$, Hip$\phi$, Thighs$\phi$& Hard, Layers 2 (Groin, Hip, Thighs)& 1.5& 10 sp\\
 Heartguard& 8& 7& 6& Chest$\phi$& Hard& 0& 1 sp\\
 Mirror Plate& 10& 9& 8& Chest$\phi$& Hard& 1.5& 1 gp\\
-Munitions 
-Breastplate& 7& 6& 5& Chest& Hard& 2.5& 10 sp\\
+Munitions Breastplate& 7& 6& 5& Chest& Hard& 2.5& 10 sp\\
 Munitions Cuirass& 7& 6& 5& Belly$\phi$, Chest$\phi$, Side$\phi$& Hard& 3.5& 15 sp\\
-Munitions Fauld& 7& 6& 5& Groin$\phi$, Hip$\phi$, Thighs$\phi$& Hard, Layers 1 (Groin, Hip, 
-Thighs)& 2.5& 10 sp\\
+Munitions Fauld& 7& 6& 5& Groin$\phi$, Hip$\phi$, Thighs$\phi$& Hard, Layers 1 (Groin, Hip, Thighs)& 2.5& 10 sp\\
 Plackart& 8& 7& 6& Belly$\phi$, Hip$\phi$, Side$\phi$,& Hard, Layers 2 (Belly, Side)& 0.5& 1 gp\\
-	\end{tabu}
-\end{table}
+\end{longtabu}
 
-\begin{table}
+\begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
 	\caption{Laminar Torso Armor}
-	\label{tab:Laminar Torso Armor}
-	\begin{tabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
+	\label{tab:Laminar Torso Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\
 Anima Cuirass& 7& 7& 7& Belly, Chest, Side& Hard& 3& 48 sp\\
 Anima Fauld& 7& 7& 7& Groin$\phi$, Hip, Thighs$\phi$& Hard& 3& 1 gp\\
 Laminar Cuirass& 8& 7& 5& Belly$\phi$, Chest$\phi$, Side$\phi$& Hard& 3& 1 gp\\
 Segmented Tassets& 8& 7& 5& Groin, Hip& Hard& 3& 12 sp\\
-	\end{tabu}
-\end{table}
+\end{longtabu}
 
-\begin{table}
+\begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
 	\caption{Mail Torso Armor}
-	\label{tab:Mail Torso Armor}
-	\begin{tabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
+	\label{tab:Mail Torso Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\
 Brigandine Coat& 5& 6& 4& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& Hard& 3& 3 gp\\
 Brigandine Shirt& 5& 6& 4& Full Torso, Groin, Hip, Thighs& Hard& 2& 30 sp\\
 Brigandine Vest& 5& 6& 4& Full Torso& Hard& 1& 1 gp\\
-Lamellar Coat& 5& 5& 5& Full Torso, Groin, Hip, 
-Knees, Shoulders, 
-Thighs& 
-Hard& 3& 3 gp\\
-Lamellar Shirt& 5& 5& 5& Full Torso, Groin, Hip, 
-Thighs& Hard& 2& 2 gp\\
+Lamellar Coat& 5& 5& 5& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& Hard& 3& 3 gp\\
+Lamellar Shirt& 5& 5& 5& Full Torso, Groin, Hip, Thighs& Hard& 2& 2 gp\\
 Lamellar Vest& 5& 5& 5& Full Torso& Hard& 1& 1 gp\\
-Mail Coat& 6& 4& 3& Full Torso, Groin, Hip, 
-Knees, Shoulders, 
-Thighs& Hard, Layer 1, Mail& 2.5& 2 gp\\
-Mail Shirt& 6& 4& 3& Full Torso, Groin, Hip, 
-Thighs& Hard, Layer 1, Mail& 1.5& 1 gp\\
+Mail Coat& 6& 4& 3& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& Hard, Layer 1, Mail& 2.5& 2 gp\\
+Mail Shirt& 6& 4& 3& Full Torso, Groin, Hip, Thighs& Hard, Layer 1, Mail& 1.5& 1 gp\\
 Mail Vest& 6& 4& 3& Full Torso& Hard, Layer 1, Mail& 0.5& 18 sp\\
-	\end{tabu}
-\end{table}
+\end{longtabu}
 
-\begin{table}
+\begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
 	\caption{Textile Torso Armor}
-	\label{tab:Textile Torso Armor}
-	\begin{tabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
+	\label{tab:Textile Torso Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\
-Cloth Coat& 1& 1& 1& Full Torso, Groin, Hip, 
-Knees, Shoulders, Thighs& Textile& 0& 2 cp\\
-Cloth Shirt/Vest& 1& 1& 1& Full Torso, Groin, Hip, 
-Thighs& Textile& 0& 1 cp\\
-Heavy Quilted 
-Coat& 3& 4& 5& Full Torso, Groin, Hip, 
-Knees, Shoulders, Thighs& Textile& 1& 5 sp\\
-Heavy Quilted 
-Shirt& 3& 4& 5& Full Torso, Groin, Hip, 
-Thighs& Textile& 0.5& 3 sp\\
+Cloth Coat& 1& 1& 1& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& Textile& 0& 2 cp\\
+Cloth Shirt/Vest& 1& 1& 1& Full Torso, Groin, Hip, Thighs& Textile& 0& 1 cp\\
+Heavy Quilted Coat& 3& 4& 5& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& Textile& 1& 5 sp\\
+Heavy Quilted Shirt& 3& 4& 5& Full Torso, Groin, Hip, Thighs& Textile& 0.5& 3 sp\\
 Heavy Quilted Vest& 3& 4& 5& Full Torso& Textile& 0& 2 sp\\
-Quilted Coat& 2& 3& 4& Full Torso, Groin, Hip, 
-Knees, Shoulders, Thighs& Textile& 0.5& 17 cp\\
+Quilted Coat& 2& 3& 4& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& Textile& 0.5& 17 cp\\
 Quilted Shirt& 2& 3& 4& Full Torso, Groin, Hip, Thighs& Textile& 0& 1 sp\\
 Quilted Vest& 2& 3& 4& Full Torso& Textile& 0& 5 cp\\
-	\end{tabu}
-\end{table}
+\end{longtabu}
 
-\begin{table}
+\begin{longtabu}to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
 	\caption{Leather Torso Armor}
-	\label{tab:Leather Torso Armor}
-	\begin{tabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
+	\label{tab:Leather Torso Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\
-Leather Buffcoat& 3& 2& 2& Full Torso, Groin, Hip, 
-Knees, Shoulders, Thighs &-& 0& 5 sp\\
-Leather Jack& 3& 2& 2& Full Torso, Groin, Hip, 
-Thighs &-& 0& 2 sp\\
-Leather Lamellar 
-Coat& 3& 4& 3& Full Torso, Groin, Hip, 
-Knees, Shoulders, Thighs &-& 1& 9 sp\\
-Leather Lamellar 
-Shirt& 3& 4& 3& Full Torso, Groin, Hip, 
-Thighs &-& 0.5& 6 sp\\
-Leather Lamellar 
-Vest& 3& 4& 3& Full Torso &-& 0& 3 sp\\
+Leather Buffcoat& 3& 2& 2& Full Torso, Groin, Hip, Knees, Shoulders, Thighs &-& 0& 5 sp\\
+Leather Jack& 3& 2& 2& Full Torso, Groin, Hip, Thighs &-& 0& 2 sp\\
+Leather Lamellar Coat& 3& 4& 3& Full Torso, Groin, Hip, Knees, Shoulders, Thighs &-& 1& 9 sp\\
+Leather Lamellar Shirt& 3& 4& 3& Full Torso, Groin, Hip, Thighs &-& 0.5& 6 sp\\
+Leather Lamellar Vest& 3& 4& 3& Full Torso &-& 0& 3 sp\\
 Leather Vest& 3& 2& 2& Full Torso &-& 0& 1 sp\\
-Hardened Leather 
-Breastplate& 4& 3& 3& Belly, Chest, Side &-& 0& 5 sp\\
-Hardened Leather 
-Cuirass& 4& 3& 3& Belly, Chest, Lower 
-Back, Side, Upper Back &-& 1& 8 sp\\
-Shagreen 
-Greatcoat& 4& 3& 3& Full Torso, Full Arms, 
-Groin, Hip, Knees, 
-Shins, Thighs &-& 0& 1 gp\\
-	\end{tabu}
-\end{table}
+Hardened Leather Breastplate& 4& 3& 3& Belly, Chest, Side &-& 0& 5 sp\\
+Hardened Leather Cuirass& 4& 3& 3& Belly, Chest, Lower Back, Side, Upper Back &-& 1& 8 sp\\
+Shagreen Greatcoat& 4& 3& 3& Full Torso, Full Arms, Groin, Hip, Knees, Shins, Thighs &-& 0& 1 gp\\\bottomrule
+\end{longtabu}
 
-\clearpage
 \subsection{Arm Armor}
-
-\begin{table}
+\begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
 	\caption{Plate Arm Armor}
-	\label{tab:Plate Arm Armor}
-	\begin{tabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
+	\label{tab:Plate Arm Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\
-Besagews& 8& 7& 6& Shoulders (Thrust only), 
-Upper Arm* (Thrust 
-only)& Hard, When layered with 
-Spaulders use Besagews value 
-against Thrusts.& 0.5& 8 sp\\
-Bulletproof 
-Vambraces& 10& 9& 8& Forearm& Bulletproof, Hard& 2& 1 gp\\
+Besagews& 8& 7& 6& Shoulders (Thrust only), Upper Arm* (Thrust only)& Hard, When layered with Spaulders use Besagews value against Thrusts.& 0.5& 8 sp\\
+Bulletproof Vambraces& 10& 9& 8& Forearm& Bulletproof, Hard& 2& 1 gp\\
 Couters& 8& 7& 6& Elbow$\phi$& Hard& 1& 5 sp\\
 Gauntlets& 8& 7& 6& Hand$\phi$& Hard& 2& 5 sp\\
-Jack Chains& 6& 0& 3& Elbow$\phi$, Forearm$\phi$, 
-Upper Arm$\phi$& Hard, No AV against Thrust 
-attacks of any damage type& 0.5& 1 sp\\
-Munitions 
-Pauldrons& 8& 7& 6& Shoulder$\phi$, Upper Arm$\phi$& Hard& 4& 8 sp\\
-Munitions 
-Rerebraces& 7& 6& 5& Upper Arm$\phi$& Hard& 3& 2 sp\\
-Munitions 
-Spaulders& 7& 6& 5& Shoulder$\phi$, Upper Arm$\phi$*& Hard, Provides half AV against 
-Thrust attacks to the Shoulder 
-and Upper Arm& 1& 4 sp\\
-Munitions 
-Vambraces& 7& 6& 5& Forearm$\phi$& Hard& 1.5& 2 sp\\
+Jack Chains& 6& 0& 3& Elbow$\phi$, Forearm$\phi$, Upper Arm$\phi$& Hard, No AV against Thrust attacks of any damage type& 0.5& 1 sp\\
+Munitions Pauldrons& 8& 7& 6& Shoulder$\phi$, Upper Arm$\phi$& Hard& 4& 8 sp\\
+Munitions Rerebraces& 7& 6& 5& Upper Arm$\phi$& Hard& 3& 2 sp\\
+Munitions Spaulders& 7& 6& 5& Shoulder$\phi$, Upper Arm$\phi$*& Hard, Provides half AV against Thrust attacks to the Shoulder and Upper Arm& 1& 4 sp\\
+Munitions Vambraces& 7& 6& 5& Forearm$\phi$& Hard& 1.5& 2 sp\\
 Pauldrons& 10& 9& 8& Shoulder, Upper Arm& Bulletproof, Hard& 3& 1 gp\\
 Rerebraces& 8& 7& 6& Upper Arm& Hard& 1& 5 sp\\
 Spaulders& 8& 7& 6& Shoulder$\phi$, Upper Arm$\phi$*& Hard, Provides half AV against Thrust attacks to the Shoulder 
 and Upper Arm& 0.5& 6 sp\\
 Vambraces& 8& 7& 6& Forearm& Hard& 1& 5 sp\\
-	\end{tabu}
-\end{table}
+\end{longtabu}
 
-\begin{table}
+\begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
 	\caption{Laminar Arm Armor}
-	\label{tab:Laminar Arm Armor}
-	\begin{tabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
+	\label{tab:Laminar Arm Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\
 Anima Pauldrons& 7& 7& 7& Shoulder, Upper Arm& Hard& 2& 2 gp\\
 Anima Rerebraces& 7& 7& 7& Upper Arm& Hard& 1& 1 gp\\
 Anima Spaulders& 7& 7& 7& Shoulder, Upper Arm$\phi$*& Hard, Provides half AV against 
-Thrust attacks to the Shoulder 
-and Upper Arm& 2& 1 gp\\
+Thrust attacks to the Shoulder and Upper Arm& 2& 1 gp\\
 Anima Vambrace& 7& 7& 7& Forearm& Hard& 2& 3 gp\\
 Laminar Forearm  Guard& 8& 7& 5& Forearm$\phi$& Hard& 2& 3 sp\\
-Laminar Elbow 
-Joint& 8& 7& 5& Elbow$\phi$& Hard& 2& 3 sp\\
+Laminar Elbow Joint& 8& 7& 5& Elbow$\phi$& Hard& 2& 3 sp\\
 Laminar Pauldrons& 8& 7& 5& Shoulder$\phi$, Upper Arm$\phi$& Hard& 3& 10 sp\\
-Laminar Rerebrace& 8& 7& 5& Upper Arm$\phi$& Hard& 1& 3 sp\\
-	\end{tabu}
-\end{table}
+Laminar Rerebrace& 8& 7& 5& Upper Arm$\phi$& Hard& 1& 3 sp\\\bottomrule
+\end{longtabu}
 
-\begin{table}
+\begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
 	\caption{Mail Arm Armor}
-	\label{tab:Mail Arm Armor}
-	\begin{tabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
+	\label{tab:Mail Arm Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\
-Brigandine 
-Gloves/Mittens& 5& 6& 4& Hand& Hard& 1& 3 sp\\
-Brigandine Long 
-Sleeves& 5& 6& 4& Elbow, Forearm, Shoulder, Upper Arm& Hard& 3& 2 gp\\
-Brigandine Short 
-Sleeves& 5& 6& 4& Shoulder, Upper Arm& Hard& 2& 14 sp\\
-Lamellar 
-Gloves/Mittens& 5& 5& 5& Hand& Hard& 1& 3 sp\\
-Lamellar Long 
-Sleeves& 5& 5& 5& Elbow, Forearm, Shoulder, Upper Arm& Hard& 4& 1 gp\\
-Lamellar Short 
-Sleeves& 5& 5& 5& Shoulder, Upper Arm& Hard& 2& 12 sp\\
-Mail 
-Gloves/Mittens& 6& 4& 3& Hand& Hard, Layer 1, Mail& 0.5& 3 sp\\
+Brigandine Gloves/Mittens& 5& 6& 4& Hand& Hard& 1& 3 sp\\
+Brigandine Long Sleeves& 5& 6& 4& Elbow, Forearm, Shoulder, Upper Arm& Hard& 3& 2 gp\\
+Brigandine Short Sleeves& 5& 6& 4& Shoulder, Upper Arm& Hard& 2& 14 sp\\
+Lamellar Gloves/Mittens& 5& 5& 5& Hand& Hard& 1& 3 sp\\
+Lamellar Long Sleeves& 5& 5& 5& Elbow, Forearm, Shoulder, Upper Arm& Hard& 4& 1 gp\\
+Lamellar Short Sleeves& 5& 5& 5& Shoulder, Upper Arm& Hard& 2& 12 sp\\
+Mail Gloves/Mittens& 6& 4& 3& Hand& Hard, Layer 1, Mail& 0.5& 3 sp\\
 Mail Long Sleeves& 6& 4& 3& Elbow, Forearm, Shoulder, Upper Arm& Hard, Layer 1, Mail& 1.5& 1 gp\\
 Mail Short Sleeves& 6& 4& 3& Shoulder, Upper Arm& Hard, Layer 1, Mail& 0.5& 12 sp\\
-	\end{tabu}
-\end{table}
+\end{longtabu}
 
-\begin{table}
+\begin{longtabu}to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
 	\caption{Leather Arm Armor}
-	\label{tab:Leather Arm Armor}
-	\begin{tabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
+	\label{tab:Leather Arm Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\
-Hardened Leather 
-Pauldrons& 4& 3& 3& Shoulder, Upper Arm$\phi$ &-& 0& 5 sp\\
-Hardened Leather 
-Rerebraces& 4& 3& 3& Upper Arm &-& 0& 3 sp\\
-Hardened Leather 
-Vambraces& 4& 3& 3& Forearm &-& 0& 3 sp\\
+Hardened Leather Pauldrons& 4& 3& 3& Shoulder, Upper Arm$\phi$ &-& 0& 5 sp\\
+Hardened Leather Rerebraces& 4& 3& 3& Upper Arm &-& 0& 3 sp\\
+Hardened Leather Vambraces& 4& 3& 3& Forearm &-& 0& 3 sp\\
 Leather Gloves& 3& 2& 2& Hand &-& 0& 1 sp\\
 Leather Sleeves& 3& 2& 2& Elbow, Forearm, Shoulder, Upper Arm &-& 0& 2 sp\\
-Leather Lamellar 
-Long Sleeves& 3& 4& 3& Elbow, Forearm, Shoulder, Upper Arm &-& 0& 3 sp\\
-Leather Lamellar 
-Short Sleeves& 3& 4& 3& Shoulder, Upper Arm &-& 0& 1 sp\\
+Leather Lamellar Long Sleeves& 3& 4& 3& Elbow, Forearm, Shoulder, Upper Arm &-& 0& 3 sp\\
+Leather Lamellar Short Sleeves& 3& 4& 3& Shoulder, Upper Arm &-& 0& 1 sp\\
 Reinforced Leather Gloves& 4& 3& 3& Hand &-& 0& 2 sp\\
-	\end{tabu}
-\end{table}
+\end{longtabu}
 
-\begin{table}
+\begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
 	\caption{Textile Arm Armor}
-	\label{tab:Textile Arm Armor}
-	\begin{tabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
+	\label{tab:Textile Arm Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\
 Cloth Gloves& 1& 1& 1& Hand& Textile& 0& 1 cp\\
-Cloth Long Sleeves& 1& 1& 1& Elbow, Forearm, 
-Shoulder, Upper Arm& Textile& 0& 2 cp\\
+Cloth Long Sleeves& 1& 1& 1& Elbow, Forearm, Shoulder, Upper Arm& Textile& 0& 2 cp\\
 Cloth Short Sleeves& 1& 1& 1& Shoulder, Upper Arm& Textile& 0& 1 cp\\
 Quilted Gloves& 2& 3& 4& Hand& Textile& 0& 1 cp\\
-Quilted Long 
-Sleeves& 2& 3& 4& Elbow, Forearm, 
-Shoulder, Upper Arm& Textile& 0& 6 cp\\
-Quilted Short 
-Sleeves& 2& 3& 4& Shoulder, Upper Arm& Textile& 0& 3 cp\\
-Reinforced Quilted 
-Gloves& 4& 4& 5& Hand& Textile& 0& 1 sp\\
-	\end{tabu}
-\end{table}
+Quilted Long Sleeves& 2& 3& 4& Elbow, Forearm, Shoulder, Upper Arm& Textile& 0& 6 cp\\
+Quilted Short Sleeves& 2& 3& 4& Shoulder, Upper Arm& Textile& 0& 3 cp\\
+Reinforced Quilted Gloves& 4& 4& 5& Hand& Textile& 0& 1 sp\\
+\end{longtabu}
 
-\clearpage
 \subsection{Leg Armor}
-\begin{table}
+\begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
 	\caption{Plate Leg Armor}
-	\label{tab:Plate Leg Armor}
-	\begin{tabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
+	\label{tab:Plate Leg Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\
 Bulletproof Cuisses& 10& 9& 8& Thigh& Bulletproof, Hard& 4& 2 gp\\
-Bulletproof 
-Greaves& 10& 9& 8& Shin& Bulletproof, Hard& 2& 2 gp\\
-Bulletproof 
-Poleyns& 10& 9& 8& Knee& Bulletproof, Hard& 2& 1 gp\\
+Bulletproof Greaves& 10& 9& 8& Shin& Bulletproof, Hard& 2& 2 gp\\
+Bulletproof Poleyns& 10& 9& 8& Knee& Bulletproof, Hard& 2& 1 gp\\
 Cuisses& 8& 7& 6& Thigh& Hard& 2& 8 sp\\
 Greaves& 8& 7& 6& Shin& Hard& 1.5& 6 sp\\
 Munitions Cuisses& 7& 6& 5& Thigh$\phi$& Hard& 3& 4 sp\\
 Munitions Greaves& 7& 6& 5& Shin$\phi$& Hard& 2& 3 sp\\
 Poleyns& 8& 7& 6& Knee$\phi$& Hard& 1.5& 5 sp\\
 Sabatons& 8& 7& 6& Foot& Hard& 1.5& 5 sp\\
-	\end{tabu}
-\end{table}
+\end{longtabu}
 
-\begin{table}
+\begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
 	\caption{Laminar Leg Armor}
-	\label{tab:Laminar Leg Armor}
-	\begin{tabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
+	\label{tab:Laminar Leg Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\
 Anima Cuisses& 7& 7& 7& Thigh& Hard& 3& 1 gp\\
 Anima Greaves& 7& 7& 7& Shin& Hard& 2& 1 gp\\
@@ -6746,62 +6558,44 @@ Anima Poleyns& 7& 7& 7& Knee& Hard& 2& 10 sp\\
 Laminar Boots& 8& 7& 5& Foot& Hard& 2& 4 sp\\
 Laminar Cuisses& 8& 7& 5& Thigh& Hard& 3& 4 sp\\
 Laminar Greaves& 8& 7& 5& Shin& Hard& 3& 4 sp\\
-	\end{tabu}
-\end{table}
+\end{longtabu}
 
-\begin{table}
+\begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
 	\caption{Mail Leg Armor}
-	\label{tab:Mail Leg Armor}
-	\begin{tabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
+	\label{tab:Mail Leg Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\
 Brigandine Boots& 5& 6& 4& Feet& Hard& 1.5& 8 sp\\
-Brigandine 
-Leggings& 5& 6& 4& Groin, Hip, Knees, 
-Shins, Thighs& Hard& 3& 10 sp\\
-Lamellar Leggings& 5& 5& 5& Groin, Hip, Knees, 
-Shins, Thighs& Hard& 3& 12 sp\\
+Brigandine Leggings& 5& 6& 4& Groin, Hip, Knees, Shins, Thighs& Hard& 3& 10 sp\\
+Lamellar Leggings& 5& 5& 5& Groin, Hip, Knees, Shins, Thighs& Hard& 3& 12 sp\\
 Lamellar Boots& 5& 5& 5& Feet& Hard& 1.5& 10 sp\\
 Mail Boots& 6& 4& 3& Feet& Hard, Layer 1, Mail& 1& 3 sp\\
 Mail Groin Gusset& 6& 4& 3& Groin& Hard, Layer 1, Mail& 0& 3 sp\\
-Mail Leggings& 6& 4& 3& Groin, Hip, Knees, 
-Shins, Thighs& Hard, Layer 1, Mail& 2.5& 8 sp\\
-	\end{tabu}
-\end{table}
+Mail Leggings& 6& 4& 3& Groin, Hip, Knees, Shins, Thighs& Hard, Layer 1, Mail& 2.5& 8 sp\\
+\end{longtabu}
 
-\begin{table}
+\begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
 	\caption{Leather Leg Armor}
-	\label{tab:Leather Leg Armor}
-	\begin{tabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
+	\label{tab:Leather Leg Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\
 Leather Boots& 3& 2& 2& Feet& -& 0& 1 sp\\
-Leather Leggings& 3& 2& 2& Groin, Hip, Knees, 
-Shins, Thighs& -& 0& 2 sp\\
-Hardened Leather 
-Cuisses& 4& 3& 3& Hip, Thighs& -& 0& 8 cp\\
-Hardened Leather 
-Greaves& 4& 3& 3& Shins& -& 0& 1 sp\\
-Hardened Leather 
-Knee-Guards& 4& 3& 3& Knee& -& 0& 6 cp\\
-Leather Lamellar 
-Cuisses& 3& 4& 3& Hip, Thighs& -& 0& 3 sp\\
-Leather Lamellar 
-Greaves& 3& 4& 3& Shins& -& 0& 3 sp\\
-	\end{tabu}
-\end{table}
+Leather Leggings& 3& 2& 2& Groin, Hip, Knees, Shins, Thighs& -& 0& 2 sp\\
+Hardened Leather Cuisses& 4& 3& 3& Hip, Thighs& -& 0& 8 cp\\
+Hardened Leather Greaves& 4& 3& 3& Shins& -& 0& 1 sp\\
+Hardened Leather Knee-Guards& 4& 3& 3& Knee& -& 0& 6 cp\\
+Leather Lamellar Cuisses& 3& 4& 3& Hip, Thighs& -& 0& 3 sp\\
+Leather Lamellar Greaves& 3& 4& 3& Shins& -& 0& 3 sp\\
+\end{longtabu}
 
-\begin{table}
+\begin{longtabu}to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
 	\caption{Textile Leg Armor}
-	\label{tab:Textile Leg Armor}
-	\begin{tabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
+	\label{tab:Textile Leg Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\
 Cloth Leggings& 1& 1& 1& Groin, Hip, Knees, 
 Shins, Thighs& Textile& 0& 1 cp\\
 Quilted Leggings& 2& 3& 4& Groin, Hip, Knees, 
 Shins, Thighs& Textile& 0& 2 cp\\
-	\end{tabu}
-\end{table}
+\end{longtabu}
 
-\clearpage
 \subsection{Horse Armor}
 \begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
 	\caption{Horse Armor}
@@ -6815,8 +6609,7 @@ Barding& 4& 3& 3& Horse& -& 3& 1 gp\\
 Lamellar Barding& 5& 5& 5& Horse& -& 8& 15 gp\\
 Mail Barding& 6& 4& 3& Horse& -& 8& 10 gp\\
 Plate Barding& 8& 7& 6& Horse& -& 12& 30 gp\\
-	\end{tabu}
-\end{table}
+\end{longtabu}
 
 \section{Special Qualities}
 \paragraph{\label{par:Hard}Hard}---\quad
@@ -6899,7 +6692,7 @@ targets do not detect and flee from the agent before it has time to take effect.
 \emph{Here we have several silversalt imprints of various stages of the compound’s effect on an exposed subject. 
 ...I would remind the ethics committee that this weapon would probably never be used against actual people. It would be 
 employed primarily against vermin, aggressive animals, and humans.”}\par
---\textbf{Xabi Beloki}, Zorezai Zaibatsu Senior Designer \textit{‘Brimstone Gas’} Development Grant Request, Glade Lagu Records 
+--\textbf{Xabi Beloki}, Zorezai Zaibatsu Senior Designer. \textit{‘Brimstone Gas’} Development Grant Request, Glade Lagu Records 
 \end{quote}
 
 The Burdinadin’s Natural Philosophy allows them the ability to produce many wondrous things; 
@@ -6912,137 +6705,52 @@ wary about even letting their trusted human allies use it. Most equipment is des
 quickly without regular micro-maintenance, the sort of thing that only Burdinadin could perform. This 
 way, if the hardware falls into non-Burdinadin hands, it will quickly become unusable. 
 
-Burdinadin Armor 
+\section{Burdinadin Armor}
 Burdinadin armor differs from the armors of other races and cultures in that it is not intended merely for 
 protection from violence, but also as a proof against spirit contamination. They wear it to insulate 
 themselves from the outside world, and to protect their vulnerable flesh from the predations of monsters 
 from the Otherworld. 
 
-As such, Burdinadin armor has an ‘Insulation’ factor. As long as the Insulation is above a certain 
-threshold, the Burdinadin is protected from contamination. The Burdinadin’s HLT also factors into this. 
-Insulation is removed from armor by Crushing attacks. Each point of Crushing damage removes 1 point 
-of Insulation. 
+As such, Burdinadin armor has an ‘Insulation’ factor. As long as the Insulation is above a certain threshold, the Burdinadin is protected from contamination. The Burdinadin’s HLT also factors into this. 
+Insulation is removed from armor by Crushing attacks. Each point of Crushing damage removes 1 point of Insulation. 
 
- 
-Table X.X Required Insulation + HLT to Avoid Contamination 
-Environment Insulation + HLT 
-Sterile (Glade, Iron Tent, Deadzone) 0 
-Average (Outdoors, Old Mine, City) 10 
-High (Forest, Underwater, Temple, Magical Hotspot) 15 
-Extreme (Schwarzvald, The Spirit Realm) 20 
+\begin{table}
+	\centering
+	\caption{Insulation~$+$~HLT Requirements to avoid Contamination}
+	\label{tab:Insulation Requirements}
+	\begin{tabu} spread 0pt {XX[-1]}
+Environment&Insulation + HLT Required\\\toprule
+Sterile (Glade, Iron Tent, Deadzone)&0\\
+Average (Outdoors, Old Mine, City)&10\\
+High (Forest, Underwater, Temple, Magical Hotspot)&15 \\
+Extreme (Schwarzvald, The Spirit Realm)& 20\\
+	\end{tabu}
+\end{table}
+\subsection{Burdinadin Armor}
+Words around creating your own armor set by mixing and matching components.
 
- 
-
- 
-
-Burdinadin Armor 
-Words around creating your own armor set by mixing and matching components. 
-
- 
-
-Table X.X Burdinadin Headgear 
+Table X.X Burdinadin Headgear
 Armor AVC AVP AVB Coverage Special Wt. PP Cost 
-Burdinadin Helmet 10 9 8 Upper Head, 
-Lower Head 
+Burdinadin Helmet 10 9 8 Upper Head, Lower Head Hard, Insulation 2, Augmentations (1) 3 -1 3gp
+Burdinadin Respirator Mask 10 9 8 Face$\phi$ Hard, Insulation 2, Augmentations (1) 1 -1 1gp 
 
-Hard, Insulation 2, 
-Augmentations (1) 
-
-3 -1 3gp 
-
-Burdinadin 
-Respirator Mask 
-
-10 9 8 Face$\phi$ Hard, Insulation 2, 
-Augmentations (1) 
-
-1 -1 1gp 
-
- 
-Table X.X Burdinadin Plate Armor 
-
-%Component&Name&AVC& VP& AB& Coerage& Speial& Wt& ost\ 
-Burdinadin 8 7 6 Elbow$\phi$ Hard, Insulation 0 1 5 sp 
-
-
-Couters 
-Burdinadin 
-Cuirass 
-
-8 7 6 Belly, Chest, Lower Back, 
-Side, Upper Back 
-
-Hard, Insulation 3, Augmentations 
-(3) 
-
-2.5 2 gp 
-
-Burdinadin 
-Cuisses 
-
-8 7 6 Thigh Hard, Insulation 1 2 8 sp 
-
-Burdinadin Fauld 8 7 6 Groin$\phi$, Hip$\phi$, Thighs$\phi$ Hard, Insulation 0 1.5 10 
-sp 
-Burdinadin 
-Gauntlets 
-
-8 7 6 Hand$\phi$ Hard, Insulation 0, Augmentations 
-(1) 
-
-2 5 sp 
-
-Burdinadin 
-Gorget 
-
-8 7 6 Neck Hard, Insulation 0 1 10 
-sp 
-
-Burdinadin 
-Greaves 
-
-8 7 6 Shin Hard, Insulation 0, Augmentations 
-(1) 
-
-1.5 6 sp 
-
-Burdinadin 
-Poleyns 
-
-8 7 6 Knee$\phi$ Hard, Insulation 0 1.5 5 sp 
-
-Burdinadin 
-Rerebraces 
-
-8 7 6 Upper Arm Hard, Insulation 1, Augmentations 
-(1) 
-
-1 5 sp 
-
-Burdinadin 
-Sabatons 
-
-8 7 6 Foot Hard, Insulation 0, Augmentations 
-(1) 
-
-1.5 5 sp 
-
-Burdinadin 
-Pauldrons 
-
-10 9 8 Shoulder, Upper Arm Bulletproof, Hard, Insulation 1, 
-Augmentations (1) 
-
-3 1 gp 
-
-Burdinadin 
-Vambraces 
-
-8 7 6 Forearm Hard, Insulation 1 1 5 sp 
-
- 
-
- 
+\begin{longtabu} to \linewidth {X[2] *{3}{X[-2,c]} X[3]X[4] *{2}{X[-2,c]}}
+\caption{Burdinadin Plate Armor}
+\label{tab: Burdinadin Plate Armor}\\
+\rowfont[c]{}Component Name&AVC&AVP&AVB&Coverage&Special&Wt.&Cost\\\toprule
+Burdinadin Couters &8 &7 &6 &Elbow$\phi$ &Hard, Insulation 0 &1 &5 sp\\
+Burdinadin Cuirass &8 &7 &6 &Belly, Chest, Lower Back, Side, Upper Back& Hard, Insulation 3, Augmentations (3) &2.5& 2 gp \\
+Burdinadin Cuisses &8 &7 &6 &Thigh &Hard, Insulation 1 &2 &8 sp \\
+Burdinadin Fauld &8 &7 &6 &Groin$\phi$, Hip$\phi$, Thighs$\phi$ &Hard, Insulation 0 &1.5 &10 sp\\
+Burdinadin Gauntlets &8 &7 &6 &Hand$\phi$ &Hard, Insulation 0, Augmentations (1) &2 &5 sp \\
+Burdinadin Gorget &8 &7 &6 &Neck &Hard, Insulation 0 &1 &10 sp \\
+Burdinadin Greaves &8 &7 &6& Shin &Hard, Insulation 0, Augmentations (1) &1.5 &6 sp\\
+Burdinadin Poleyns &8 &7 &6& Knee$\phi$ &Hard, Insulation 0 &1.5 &5 sp\\
+Burdinadin Rerebraces &8 &7 &6& Upper Arm &Hard, Insulation 1, Augmentations (1) &1 &5 sp\\
+Burdinadin Sabatons&8&7&6&Foot& Hard, Insulation 0, Augmentations (1) &1.5 &5 sp\\
+Burdinadin Pauldrons&10&9&8&Shoulder, Upper Arm& Bulletproof, Hard, Insulation 1, Augmentations (1) &3 &1 gp\\
+Burdinadin Vambraces&8&7&6&Forearm& Hard, Insulation 1&1&5 sp\\
+\end{longtabu}
 
 Myrmidon Armor 
 Myrmidon armor is a marvel of modern Burdinadin engineering, and far outclasses any other form of 
@@ -7066,14 +6774,10 @@ The Myrmidons are rare. Most Glades have only two or three of them, but each is 
 of tearing dozens of armed men to pieces, and challenging all but the largest of monsters at range or in 
 hand to hand combat. 
 
- 
-
 
 [Myrmidon armor is beyond the scope of this Release] 
 
- 
-
-Armor Augmentations 
+Armor Augmentations
 Burdinadin armor often have Augmentation slots listed in their special qualities section, which specifies 
 the number of Augmentations that the armor can be fitted with. These Augmentations are listed below, 
 along with the details of their function and their additional costs. 
@@ -7190,9 +6894,6 @@ Cost: 1 gp plus the cost of the weapon
 
 
 Fitted To: Arms, Torso, Legs 
-
- 
-
 Integrated Tool System [1 per toolset] 
 Include surgeon’s tools, smith’s tools or tradesman’s tools in your armor. These have no weight and can 
 be drawn for use at any time. 
@@ -7670,7 +7371,7 @@ Proficiencies.
 
 
 Characters unlock Maneuver Tiers and Talents as they level their Proficiency. Maneuvers are certain 
-techniques and moves that a character employs in combat (and are further detailed in \autoref{ch:maneuvers}), and 
+techniques and moves that a character employs in combat (and are further detailed in \autoref{ch:Maneuvers}), and 
 Talents are small bonuses which may be universal, or specific to a Proficiency (refer to Chapter XX). 
 
 
@@ -8493,7 +8194,7 @@ Universal Maneuvers only
 Tier 1 Maneuvers 
 Fling [Superior] 
 
-\chapter{Maneuvers}\label{ch:maneuvers} %NEED to make some concept photos of possible maneuver layouts. Maneuvers are the most important part of the book, gotta make sure they work! Possibly the actual list of maneuvers should have its own chapter since it's quite extensive? This would also prevent bookmark bloat
+\chapter{Maneuvers}\label{ch:Maneuvers} %NEED to make some concept photos of possible maneuver layouts. Maneuvers are the most important part of the book, gotta make sure they work! Possibly the actual list of maneuvers should have its own chapter since it's quite extensive? This would also prevent bookmark bloat
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
 \clearpage
@@ -8724,7 +8425,7 @@ Langetted/Reinforced Spear/Polearm&12 \\
 \item [Special:] If this weapon has a metal cap of some sort on the weapon’s reverse end (or if it is a sword being used) this attack inflicts +1 Bludgeoning damage.  If Half-Swording the weapon being used for Butt-Strike, the weapon does not suffer the penalty to Swinging damage normally associated with Half-Swording. 
 \end{description}
 
-\paragraph{\large\label{man:DACIAN RUSH}[DACIAN RUSH }---\quad{\large[2+X+Y]}
+\paragraph{\large\label{man:DACIAN RUSH}DACIAN RUSH }---\quad{\large[2+X+Y]}
 \begin{description}
 \item [Type:] Advanced, Attack, Thrusting 
 \item [Requirements:] Have a Dagger. If Opponent declares a Quickdraw, you may treat this Maneuver as an Instant that occurs before their Quickdraw.
@@ -9198,7 +8899,7 @@ next Action phase.
 have used this Maneuver on that character before. This is not limited to one fight—every single time you 
 use this Maneuver on a character, your Activation Cost for it increases by 1 against that character. 
 This Maneuver cannot be used as part of any sort of Simultaneous Maneuver. 
-If this man %THIS WAS MISSING 
+If this man %this was missing in the main document
 This Maneuver cannot be Parried, but may be Blocked or Voided. 
 When rolling an Initiative test to determine attack order while making a Blind Toss, you may roll 3 
 additional dice in the test.
@@ -9271,7 +8972,7 @@ However, the Defensive Maneuvers chosen cannot be used more times than normally 
 
 \paragraph{\large\label{man:Riposte} Riposte}---\quad{\large[2+X]}
 \begin{description}
-\item [Advanced:] 1H Sword, 2H Sword, Polearm, Spear, 1H Blunt, 2H Blunt %THIS IS NOT FOLLOWING THE STANDARD FORMAT
+\item [Advanced:] 1H Sword, 2H Sword, Polearm, Spear, 1H Blunt, 2H Blunt %this is not following the standard format
 \item [Requirement:] Have a weapon with a Parry TN and a Strike or Cut TN. 
 \item [Maneuver:] Parry-Like Defense with X at Weapon Parry TN. 
 If you are using this maneuver with Initiative, wait until characters without Initiative have declared their 
@@ -10099,14 +9800,14 @@ Thrusting Hit Location.
 \end{description}
 
 \paragraph{\large\label{man:MOUNT KICK} MOUNT KICK}---\quad{\large[2] (RS 3 Ride Check)}
-\begin{description} 
+\begin{description}
 \item [Type:] Universal, Attack, Mounted 
 \item [Requirements:] In a Bout, Mounted, Mount has a Kick attack. 
 \item [Maneuver:] Mount makes Unarmed Attack at Long Reach with Full CP at Kick TN 7 aimed on the Thrust 
 Table. 
 \item [Success:] Inflict damage equal to [Mount Strength+Mount Kick Damage+BS] in Bludgeoning Damage to 
 Thrust Location. 
-\item [Ride Fail:] You cannot convince your mount to kick anything this Action.]
+\item [Ride Fail:] You cannot convince your mount to kick anything this Action.
 \end{description}
 \subsection{Defense Mounted Maneuvers}
 \paragraph{\large\label{man:DISENGAGE} DISENGAGE}---\quad{\large[??????]}
@@ -10139,7 +9840,7 @@ maneuver (Multiply this as you would normal Fatigue!) If you do, the TN of the m
 \item [Ride Fail:] You fail to convince your horse to swerve away! Opponent attack resolves as normal.
 \end{description}
 \subsection{Passing Mounted Maneuvers}
-\paragraph{\large\label{man:RIDE-BY} RIDE-BY}---\quad{\large[2] RS 3 Ride Check)}
+\paragraph{\large\label{man:RIDE-BY} RIDE-BY}---\quad{\large[2] (RS 3 Ride Check)}
 \begin{description} 
 \item [Type:] Universal, Mounted 
 \item [Requirements:] Charging into a Bout while mounted. Declare this Maneuver in addition to any other 
@@ -10156,7 +9857,7 @@ the weapon, or Quickdraw.
 \item [Ride Fail:] Your horse panics, and accidentally rams the thing you were trying to ride past. Resolve a 
 Horse Crash as detailed in the Mounted Combat section.
 \end{description}
-\paragraph{\large\label{man:TRAMPLE} TRAMPLE}---\quad{\large[4] RS 4 Ride Check)}
+\paragraph{\large\label{man:TRAMPLE} TRAMPLE}---\quad{\large[4] (RS 4 Ride Check)}
 \begin{description} 
 \item [Type:] Universal, Mounted 
 \item [Requirements:] Charging into a Bout while mounted, declare this maneuver in addition to any other 
@@ -10217,63 +9918,37 @@ This Attack does not end a Grab.
 \item [Success:] Opponent suffers [BS] Stun, and must make a Stability Test at RS 2+BS or be rendered Prone 
 and suffer Falling Damage as though having fallen Feet equal to [5+Dog Strength+BS.] 
 \end{description}
-\chapter{Talents}\label{ch:Talents}
-Talents are small improvements to a character’s combat skills that are acquired as the character’s 
-Proficiency score increases. At set intervals in a Proficiency’s progression, a character earns Talents of 
-Novice, Journeyman, or Master rank. These Talents may be chosen from the Talent list at the end of this 
-chapter
+\chapter{Talents}\label{ch:Talents} %TALENTS NEED DOING
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
+\clearpage
+Talents are small improvements to a character’s combat skills that are acquired as the character’s Proficiency score increases. At set intervals in a Proficiency’s progression, a character earns Talents of Novice, Journeyman, or Master rank. These Talents may be chosen from the Talent list at the end of this chapter
 
 \section{Gaining Talents}
 A character gets a Talent whenever a Proficiency or a School reaches a level in which a Talent is 
-rewarded (see Table XX for details.) 
+rewarded (see \autoref{tab:Proficiency Progression}~for details.)
 
 Proficiencies that are a part of a School do not gain Talents. Instead, the School as a whole gains only one 
 set of Talents, but these Talents apply to all Proficiencies within the School, and can use any Proficiency 
 in the School to satisfy their requirements. 
 
- 
+\subsection{Choosing Talents}
+When your character receives a Talent from a Proficiency level that they’ve just acquired, you may choose any Talent under the Talent rank they have gained (Novice, Journeyman or Master) or lower, provided the character meets the requirements of the Talent. You may take a Novice Talent in a Journeyman Talent slot, but you may not take a Journeyman level Talent in a Novice slot.
 
-Choosing Talents 
-When your character receives a Talent from a Proficiency level that they’ve just acquired, you may 
-choose any Talent under the Talent rank they have gained (Novice, Journeyman or Master) or lower, 
-provided the character meets the requirements of the Talent. You may take a Novice Talent in a 
+Some Talents have Attribute requirements, which your character must match or exceed in order to take the Talent. Others have Proficiency requirements, meaning that they can only be taken as Talents for that Proficiency or a School containing that Proficiency.
 
+Talents cannot be taken multiple times.
 
-Journeyman Talent slot, but you may not take a Journeyman level Talent in a Novice slot. 
+\section{Using Talents}
+Any time a Talent would be applicable for activation, simply announce that it is in effect or not in effect.
+If it is simply an automatic improvement to a Maneuver or similar, assume that it is in effect unless you say otherwise. 
 
- 
+Unless the Talent is chosen for a School, Talents can not be used for Proficiencies they are not linked to, or when Defaulting from a Proficiency. 
 
-Some Talents have Attribute requirements, which your character must match or exceed in order to take 
-the Talent. Others have Proficiency requirements, meaning that they can only be taken as Talents for that 
-Proficiency or a School containing that Proficiency. 
+\section{Talent List}
+\subsection{Novice Talents}
 
- 
-
-Talents cannot be talken multiple times. 
-
- 
-
-Using Talents 
-Any time a Talent would be applicable for activation, simply announce that it is in effect or not in effect. 
-If it is simply an automatic improvement to a Maneuver or similar, assume that it is in effect unless you 
-say otherwise. 
-
- 
-
-Unless the Talent is chosen for a School, Talents can not be used for Proficiencies they are not linked to, 
-or when Defaulting from a Proficiency. 
-
- 
-
-Talent List 
-
- 
-
-Novice Talents 
-
- 
-
-Accuracy 
+Accuracy
 Requirements: Universal, AGI 4. 
 Description: You have a natural knack for hitting in the right spot. It's not always conscious, but your 
 attacks just seem to find their way to your intended target. 
@@ -10911,6 +10586,7 @@ can’t act in a Phase simply do not take any Actions. If a character who cannot
 Melee Combat by another character, however, they may participate as normal in the Melee.
 Characters declare Actions in reverse ADR order (from lowest to highest), but the Actions are resolved in
 ADR Order (from highest to lowest.)
+
 \begin{tabu} spread 0pt {X[2,l] *{3}{X}}
 	Initiative&ADR 1-3&ADR 4-6&ADR 7+\\
 	Phase 1&  	N  &	N & 	Y\\
@@ -11110,7 +10786,7 @@ declares his. In the event of a tie, the PC declares second. If the characters a
 write down their maneuvers and reveal them simultaneously.
 After this, both characters roll an Initiative Test (ADR+Length Advantage+Misc) to determine
 whose attack resolves first. In the event of a tie, then the two characters resolve their maneuvers
-with %MISSING IN THE ACTUAL DOCUMENT
+with %this part is missing in the actual document
 If two Aggressive characters Target each other, they both act as though they have the Initiative
 over the other. Roll an ADR test. The loser must declare his Action first, after which the winner
 declares. Both still proceed as though they had Initiative (i.e. they must both declare Attack
@@ -11199,7 +10875,7 @@ Overwatching characters may only attack other characters engaged in their Bout. 
 upon unengaged characters, or characters engaged in other Bouts. To do this, they must End the Watch
 and either use the General Action Phase, or engage in another Bout by using the Overwatch Action.
 
-\subsection {Round Conclusion}
+\subsection{Round Conclusion}
 At the end of the Round, if Targets are alive and present, whichever character currently has Initiative may
 choose to either Disengage or Lock.
 
@@ -11237,17 +10913,13 @@ Encumbrance Penalty, Exhaustion Penalty, Pain, and any miscellaneous penalties t
 Maximum CP is called for.
 
 \section{Target Zones and Hit Locations}
-When a character is hit by an attack, there are two key aspects of the hit that need to be noted: the Target
-Zone (which is the general area of the body that the attack hits) and the Hit Location (which is the precise
-point of the body that is hit).
-Each Target Zone contains three to four Hit Locations, which are listed below. Swinging, thrusting and
-missile attacks have different Target Zones available to them.
-If an attack hits, roll 1d10 to decide the Hit Location that the attack actually lands on, and then calculate
-damage based on the following formula:
-[Total Damage (Maneuver Damage+Miscellaneous)] versus [Total Defense (TOU+AV of appropriate
-damage type+Miscellaneous)]
-If the Total Damage exceeds the Total Defense, the result is a Wound of a level equal to the excess
-damage. The amount of damage done is then applied on the Wound charts located in Chapter XX.
+When a character is hit by an attack, there are two key aspects of the hit that need to be noted: the Target Zone (which is the general area of the body that the attack hits) and the Hit Location (which is the precisepoint of the body that is hit).
+
+Each Target Zone contains three to four Hit Locations, which are listed below. Swinging, thrusting and missile attacks have different Target Zones available to them.
+
+If an attack hits, roll 1d10 to decide the Hit Location that the attack actually lands on, and then calculate damage based on the following formula:
+[Total Damage (Maneuver Damage + Miscellaneous)] versus [Total Defense (TOU+AV of appropriate damage type + Miscellaneous)]
+If the Total Damage exceeds the Total Defense, the result is a Wound of a level equal to the excess damage. The amount of damage done is then applied on the Wound charts located in \autoref{ch:Damage Tables}
 Attacks and Missing Limbs
 If the Target is missing a body part or limb on the Target Zone that is being attacked, and the roll dictates
 that that Hit Location would be hit, the attack automatically misses and has no effect.
@@ -11375,6 +11047,7 @@ When rolling for a Hit Location with a missile weapon, first roll 1d10 on the Mi
 and then roll again on the indicated Thrusting Target Zone that your result indicates to determine the final
 Hit Location of the missile attack.
 \begin{table}
+	\centering
 	\caption{Missile Target Zone}
 	\label{tab:Missile Target Zones}
 	\begin{tabu} spread 0pt {X[-1,c]X[2]}
@@ -11391,6 +11064,7 @@ Hit Location of the missile attack.
 		10&Lower Leg (1-5 left, 6-10 right)\\
 	\end{tabu}
 \end{table}
+
 Initiative
 
 Unless otherwise stated, if a Defense Maneuver successfully defends against any Attack
@@ -11693,24 +11367,20 @@ sustaining the Stun chooses which maneuvers to subtract from.
 \end{itemize}
 
 \subsection{\label{sec:Pain}Pain}---\quad
-Pain is similar to Stun, but rather than the immediate jarring effect of the injury, it is a lasting effect. Pain 
-inflicted by any source reduces the character’s Refresh by 1 per point of Pain, reducing the amount of 
-Combat Pool the character gains at the start of each Round to a minimum of 0. 
+Pain is similar to Stun, but rather than the immediate jarring effect of the injury, it is a lasting effect. Pain inflicted by any source reduces the character’s Refresh by 1 per point of Pain, reducing the amount of Combat Pool the character gains at the start of each Round to a minimum of 0. 
 
-If Pain reduces a character’s Combat Pool at Refresh to 0, the character is rendered helpless and incapable of doing anything meaningful (talking may or may not be possible, GM’s choice). 
+If Pain reduces a character’s Combat Pool at Refresh to 0, the character is rendered helpless and incapable of doing anything meaningful (talking may or may not be possible, GM’s choice).
+
 The character must also make a Willpower test at RS equal to any excess Pain over that required to reduce the character’s CP to 0 or lose consciousness.
 
-A character’s total Pain is reduced by Grit before being subtracted from the character’s Combat Pool. 
-So, a character who has 5 Grit and who is currently suffering 12 Pain suffers a -7 penalty to their 
-Maximum Combat Pool until the pain is alleviated. 
+A character’s total Pain is reduced by Grit before being subtracted from the character’s Combat Pool.
+So, a character who has 5 Grit and who is currently suffering 12 Pain suffers a -7 penalty to their Maximum Combat Pool until the pain is alleviated. 
 
 \section{Blood Loss and Bleeding Rolls}
 Whenever a character has an amount of Blood Loss equal to 5 or more, they must make an END test at 
-the end of each Round. For every five points of Blood Loss that a character has, the test requires one more 
-success. If the Blood Loss test is ever failed, the character suffers HLT loss equal to the amount they 
-failed the test by.
+the end of each Round. For every five points of Blood Loss that a character has, the test requires one more success. If the Blood Loss test is ever failed, the character suffers HLT loss equal to the amount they failed the test by.
 
-\begin{table}
+\begin{table}[!ht]
 	\centering
 	\caption{Blood Loss}
 	\label{tab:Blood Loss}
@@ -11729,28 +11399,20 @@ Total Blood Loss &Required Successes to Stave Off\\
 Any time that a Blood Loss test is failed, the Character loses an amount of HLT equal to the number of 
 successes by which the test failed.
 
-When a character's HLT reaches 1 or lower from Blood Loss, all of their other Attributes are temporarily 
-halved. When a character’s HLT reaches 0 or or lower, they immediately pass out and continue to bleed, 
-making END tests and losing HLT into negative amounts. When their HLT reaches a negative amount 
-equal to their unmodified total HLT, they die. Note that when the character passes out, the TOU vs. 2 RS 
-to avoid Brain Damage is done with their newly-modified TOU. (See Knockout, below.) 
+When a character's HLT reaches 1 or lower from Blood Loss, all of their other Attributes are temporarily halved. When a character’s HLT reaches 0 or or lower, they immediately pass out and continue to bleed, making END tests and losing HLT into negative amounts. When their HLT reaches a negative amount equal to their unmodified total HLT, they die. Note that when the character passes out, the TOU vs. 2 RS to avoid \nameref{bane:Brain Damage}~is done with their newly-modified TOU. (See Knockout, below.) %NEEDS KNOCKOUT REFERENCE
 
 \begin{quote}
 	\emph{Duke has been shot several times with a repeating crossbow. He is suffering 22 Blood Loss. He must make an Endurance test with his END of 5}
 \end{quote}
 \subsubsection{Regaining Health:}
-Once a wound has been treated via Surgery so that no more Blood Loss can occur, HLT lost to Blood 
-Loss will begin replenishing at a rate of 1 HLT per week. 
+Once a wound has been treated via \nameref{skill:Surgery}~so that no more Blood Loss can occur, HLT lost to Blood Loss will begin replenishing at a rate of 1 HLT per week.
 
-HLT lowered by Infection is also recovered in this manner, but only after all of a character’s Infections have been defeated.
+HLT lowered by Infection is also recovered in this manner, but only after all of a character’s Infections have been defeated. %NEEDS REFERENCE TO INFECTION
 
 \subsubsection{Staunching Blood Loss}
-Characters can attempt to staunch the loss of blood with the Surgery skill and whatever materials are at 
-hand. A wound must be targeted with this skill which, if successful, terminates all Blood Loss from that 
-wound. 
+Characters can attempt to staunch the loss of blood with the Surgery skill and whatever materials are at hand. A wound must be targeted with this skill which, if successful, terminates all Blood Loss from that wound.
 
-If a Character goes for over an hour without losing a point of HLT, any remaining Blood Loss is 
-automatically staunched, including Internal Bleeding. 
+If a Character goes for over an hour without losing a point of HLT, any remaining Blood Loss is automatically staunched, including Internal Bleeding.
 
 Treating Wounds 
 In order to stop a wound from bleeding, and to reduce the Pain it causes, the Surgery skill must come into 
@@ -11781,40 +11443,20 @@ Unarmed Wounds heal in Days instead of Weeks.
 \end{table}
 \section{Damage Conditions and Tests}
 Knockout
-A Knockout (KO) test, is an END test. You need a number of successes specified by the event. Failure 
-causes the character to be knocked unconscious, Prone, and unable to act for 1d10 minutes. A character 
-that is knocked out cannot defend themselves and is entirely helpless. Whenever a character is knocked 
-out, they must pass a TOU vs. 2 RS test, or gain the Brain Damage (Minor) Bane. 
-[Optional]: If a character is knocked out while standing up or fighting, the GM may rule that he suffers 
-Falling Damage due to landing on a hard surface or an object while unconscious. This usually will be 
-equivalent of a fall from 6 feet. An unconscious man hitting an awkward surface (the corner of a table, a 
-street curb, etc.) could suffer a far more severe injury than the actual blow that rendered him unconscious. 
+A Knockout (KO) test, is an END test. You need a number of successes specified by the event. Failure causes the character to be knocked unconscious, Prone, and unable to act for 1d10 minutes. A character that is knocked out cannot defend themselves and is entirely helpless. Whenever a character is knocked out, they must pass a TOU vs. 2 RS test, or gain the \nameref{bane:Brain Damage} (Minor) Bane.
+[Optional]: If a character is knocked out while standing up or fighting, the GM may rule that he suffers Falling Damage due to landing on a hard surface or an object while unconscious. This usually will be equivalent of a fall from 6 feet. An unconscious man hitting an awkward surface (the corner of a table, a street curb, etc.) could suffer a far more severe injury than the actual blow that rendered him unconscious. 
 
- 
 
-Stability 
-When a character makes a Stability Test (either as specified by a wound or effect, or because their CP has 
-been reduced to the negatives by Stun or Pain, or other reasons at GM’s discretion) roll an AGI test. The 
-RS will vary depending on the cause of the event that called for a Stability Test. Failure renders the 
-character Prone. 
-
- 
+Stability
+When a character makes a Stability Test (either as specified by a wound or effect, or because their CP has been reduced to the negatives by Stun or Pain, or other reasons at GM’s discretion) roll an AGI test. The 
+RS will vary depending on the cause of the event that called for a Stability Test. Failure renders the character Prone. 
 
 \paragraph{\label{par:Prone}Prone}---\quad
-Whenever a character is laying flat on the ground, they are considered to be Prone. While a character is 
-prone, their maximum combat pools for all melee proficiencies and their Mobility are halved, and the 
-effective Reach of any weapon they’re using (including unarmed “weapons” like fists, legs, etc) is 
-reduced by 2 stages. While Prone, all Maneuvers except for Block are made at +1 TN. 
+Whenever a character is laying flat on the ground, they are considered to be Prone. While a character is prone, their maximum combat pools for all melee proficiencies and their Mobility are halved, and the effective Reach of any weapon they’re using (including unarmed “weapons” like fists, legs, etc) is reduced by 2 stages. While Prone, all Maneuvers except for Block are made at +1 TN.
 
-Being knocked prone (after failing a Stability test, being knocked down, etc.) causes a character to 
-immediately take Stun equal to half their maximum combat pool. Until the character is standing during a 
-Refresh, their maximum combat pool remains halved, and any Refresh when prone only restores them to 
-that half-maximum. 
+Being knocked prone (after failing a Stability test, being knocked down, etc.) causes a character to immediately take Stun equal to half their maximum combat pool. Until the character is standing during a Refresh, their maximum combat pool remains halved, and any Refresh when prone only restores them to that half-maximum. 
 
- 
-
-The use of the Rapid-Rise Maneuver allows a character to stand up immediately upon falling down, if 
-they have the remaining CP. Check Chapter 4: Proficiencies \& Manuevers for more information. 
+The use of the Rapid-Rise Maneuver allows a character to stand up immediately upon falling down, if they have the remaining CP. Check \autoref{ch:Maneuvers} Proficiencies \& Manuevers for more information. 
 
 
 Otherwise, a character must spend an entire action standing up, and cannot use any Maneuvers for that 
@@ -11823,10 +11465,7 @@ action except Quick Defense.
  
 
 \subsection{Falling Damage}\label{sec:falling-damage}
-When a character falls, they roll on the first table below to determine what body part they land with. They 
-then take a wound as if struck with a blunt object to the area hit at Strength determined by the distance 
-fallen, and the surface fallen onto. Neither Armor nor TOU reduce this damage. The character also takes 
-additional damage to the adjacent body parts as determined by the falling table at half damage. 
+When a character falls, they roll on the first table below to determine what body part they land with. They then take a wound as if struck with a blunt object to the area hit at Strength determined by the distance fallen, and the surface fallen onto. Neither Armor nor TOU reduce this damage. The character also takes additional damage to the adjacent body parts as determined by the falling table at half damage. 
 
 \begin{table}[!ht]
 	\centering
@@ -11864,7 +11503,7 @@ Water (controlled dive)&1 per 60’ fallen\\
 	\end{tabu}
 \end{table}
 
-Falling onto Slopes 
+\subsubsection{Falling onto Slopes}
 When falling down a slope, a character sustains damage at a different rate than when falling from the air 
 into a surface, and each step of the fall should be calculated separately. 
 
@@ -11892,35 +11531,23 @@ of straw instead of the rooftop?
 Well, assuming the slope of the roof was fairly steep and actually covered about 30 feet of vertical space, 
 that’d mean that the total distance fallen would’ve been 100 feet exactly. 
 
- 
-
 Now let’s say that the the Assassin leaps into the pile of straw from the same total height (about 100 feet) 
 instead. He instead suffers 12 damage to one body part, and 6 damage to two others. If he’s lucky, he 
 might only shatter one of his legs or arms, but he’s just as likely to break his neck, spine, or rupture all of 
 his organs. 
 
- 
-
 Falling onto certain materials or hazards might justify changing the damage type inflicted from 
 Bludgeoning to Cutting or Piercing damage. Use your judgment, GM. 
 
- 
-
-Burning \& Fire Damage 
+\subsection{Burning \& Fire Damage}
 When characters come into contact with fire, bad things tend to happen. Fire damage is much simpler 
-than damage from blunt, cutting, or piercing weapons. Its table is generic, and any part of the body may 
-suffer a Burn Wound using the same chart, seen below. 
-
- 
+than damage from blunt, cutting, or piercing weapons. Its table is generic, and any part of the body may suffer a Burn Wound using the same chart, seen below. 
 
 When a character suffers Fire Damage, the format looks like this: 
 
-
-(X)/TN5 
+(X)/TN5
 X is the number of dice rolled, and the TN is always 5. Each success on this roll inflicts a level of Burn 
 Damage to the body part (or body parts) affected. 
-
- 
 
 Burn Damage is not reduced by TOU, but it is reduced minorly by Armor. Cloth, Leather and other light 
 armors do nothing to reduce burn damage. In fact, they might make it worse (Quilted Armor, of worn 
@@ -12241,25 +11868,18 @@ as some of it may have already spread beyond the limb.
  
 \chapter{Wound Charts}\label{ch:Damage Tables}
 \clearpage
-
-This is the part where you learn about what it’s like to die. 
+This is the part where you learn about what it’s like to die.
 
 Target Zones and Hit Locations 
 When a character is hit by an attack, there are two key aspects of the hit that need to be noted: the Target 
 Zone (which is the general area of the body that the attack hits) and the Hit Location (which is the precise 
 point of the body that is hit). 
 
- 
-
 Each Target Zone contains three to four Hit Locations, which are listed below. Swinging and Thrusting 
-attacks have different Target Zones available to them. 
-
- 
+attacks have different Target Zones available to them.  
 
 If an attack hits, roll 1d10 to decide the Hit Location that the attack actually lands on, and then calculate 
 damage based on the following formula: 
-
- 
 
 [Total Damage Done (Maneuver Damage+Miscellaneous)] versus [Total Defensive Value (TOU+AV of 
 appropriate damage type+Miscellaneous)] 
@@ -12390,28 +12010,20 @@ Lower Leg Thrust 1-3: Foot
 
 Wound Qualities 
 
- 
 Table 8.1.3 Wound Qualities 
 Quality Description/Effect 
-Stability vs 
-[X] RS 
 
+Stability vs [X] RS 
 You must make a Stability (AGI+Misc) test at X RS or be rendered Prone. 
 
-Disarm vs 
-[X] RS 
-
+Disarm vs [X] RS 
 You must make a Disarm (AGI+Misc) test at X RS or drop anything held in the affected arm. 
 
-KO vs [X] 
-RS 
-
+KO vs [X] RS 
 You must make a Knockout (END+Misc) test at X RS or be rendered unconscious for 1d10 
-minutes. 
+minutes.
 
-[X] Surgery 
-vs [Y] 
-
+[X] Surgery vs [Y]
 You immediately gain Y Bane, which cannot be removed without a successful Surgery test at X 
 difficulty before the wound heals. If the wound heals (or the surgery test fails) then Y Bane 
 becomes permanent. 
@@ -12419,67 +12031,40 @@ Autodrop You automatically drop anything held with this limb when this Wound is 
 of any Stability test made to maintain your grip on a weapon with this limb by the Wound level. 
 
 
-Auto-Prone You are automatically rendered Prone. You cannot Stand Up in the same action, or in the action 
+Auto-Prone
+You are automatically rendered Prone. You cannot Stand Up in the same action, or in the action 
 after receiving this Wound. Increase all further Stability tests RS by the Wound level, until the 
 Wound is fully healed. 
-Auto-KO Character is rendered unconscious for 1d10*6 minutes. Increase the RS of any further KO rolls by 
-the Wound level, until the Wound is fully healed. 
-Infection 
-Risk+[X] 
 
+Auto-KO
+Character is rendered unconscious for 1d10*6 minutes. Increase the RS of any further KO rolls by the Wound level, until the Wound is fully healed.
+
+Infection Risk+[X] 
 This Wound suffers an increased Infection Risk equal to X. 
 
-Stun: Total Automatically reduces Combat Pool to 0, and immediately renders you Prone without a test. 
-Pain: Total Your effective Pain is considered infinite until this Wound has healed. 
-Limb 
-Severed 
+Stun: Total Automatically reduces Combat Pool to 0, and immediately renders you Prone without a test.
 
+Pain: Total Your effective Pain is considered infinite until this Wound has healed. 
+
+Limb Severed
 This limb is cut off! You receive the Severed Limb Bane. 
 
-Dead You’re Dead. You get the Dead Bane. 
-Internal 
-Bleeding 
+Dead
+You’re Dead. You get the Dead Bane. 
 
+Internal Bleeding 
 Halting this bleeding requires a Surgery roll at +3 RS from normal. 
 
- 
 
- 
-
-Damage Charts 
-
- 
-
-Upper Head 
-
- 
-Table 8.1.4 Upper Head - Cutting 
-Wound 
-Level 
-
+Damage Charts
+\section{Upper Head}
+Table 8.1.4 Upper Head - Cutting Wound Level
 Stun Pain Bleed Special Description 
-
-Level 1 1 7 1 - Shallow cut on scalp, not serious. 
-Level 2 2 9 3 - Deep cut on scalp, blood runs into face. 
-Level 3 4 13 5 KO vs 4 RS Cracked skull, nearly invisible, but 
-devastating. 
-
-Level 4 Total Total 8 
-
-Auto-KO 
-[Difficult Surgery vs Brain 
-Damage], Internal Bleeding 
-
-Severe skull fracture, brain damage, 
-immediate unconsciousness. 
-Level 5 - - - Dead Blade cleaves through top of skull down to 
-the teeth. Instant death. 
-
- 
-
- 
-
- 
+Level 1 1 7 1 - Shallow cut on scalp, not serious.
+Level 2 2 9 3 - Deep cut on scalp, blood runs into face.
+Level 3 4 13 5 KO vs 4 RS Cracked skull, nearly invisible, but devastating.
+Level 4 Total Total 8 Auto-KO [Difficult Surgery vs Brain Damage], Internal Bleeding Severe skull fracture, brain damage, immediate unconsciousness.
+Level 5 - - - Dead Blade cleaves through top of skull down to the teeth. Instant death.
 
 
 Table 8.1.5 Upper Head - Piercing 
@@ -12546,12 +12131,8 @@ brain damage.
 
  
 
-Face 
-
- 
-Table 8.1.8 Face - Cutting 
-Wound 
-Level 
+\section{Face}
+Table 8.1.8 Face - Cutting Wound Level 
 
 Stun Pain Bleed Special Description 
 
@@ -12607,14 +12188,11 @@ Stun Pain Bleed Special Description
 Level 1 2 4 0 - Blow to the jaw, head rolls with it well. 
 Level 2 3 5 2 - Firmer blow, blood in mouth, possible lost tooth. Youch. 
 Level 3 5 8 3 KO vs 3 RS Serious damage to jaw, fracture maybe, head jerked hard, 
-
-
 may lose consciousness and several teeth. 
 
 Level 4 7 12 7 KO vs 5 RS 
 Mute as the Bane 
 until healed 
-
 Broken jaw, almost certain unconsciousness. 
 
 Level 5 - - - Dead Jaw smashed, skull shattered, neck broken. Instant death. 
@@ -12649,9 +12227,7 @@ instant KO.
 
  
 
-Lower Head 
-
- 
+\section{Lower Head}
 Table 8.1.12 Lower Head - Cutting 
 Wound 
 Level 
@@ -12727,11 +12303,7 @@ Level 5 Total 15 3 Auto-KO Jaw broken, instant unconsciousness.
 
  
 
-Neck 
-
- 
-
-
+\section{Neck}
 Table 8.1.16 Neck - Cutting 
 Wound 
 Level 
@@ -12818,9 +12390,7 @@ possible death.
 
  
 
-Shoulder 
-
- 
+\section{Shoulder}
 Table 8.1.20 Shoulder - Cutting 
 Wound 
 Level 
@@ -12910,9 +12480,7 @@ unnatural ways.
 
  
 
-Chest 
-
- 
+\section{Chest}
 Table 8.1.24 Chest - Cutting 
 Wound 
 Level 
@@ -12992,9 +12560,7 @@ bleeding probable.
 
  
 
-Side 
-
- 
+\section{Side}
 Table 8.1.28 Side - Cutting 
 Wound 
 Level 
@@ -13083,10 +12649,7 @@ bleeding.
 
  
 
-Belly 
-
- 
-
+\section{Belly}
 Table 8.1.32 Belly - Cutting 
 Wound 
 Level 
@@ -13190,15 +12753,8 @@ consciousness.
 
  
 
-Hip 
-
- 
-Table 8.1.36 Hip - Cutting 
-
-
-Wound 
-Level 
-
+\section{Hip}
+Table 8.1.36 Hip - Cutting Wound Level 
 Stun Pain Bleed Special Description 
 
 Level 1 1 5 1 - Shallow cut on the hip. No significant damage. 
@@ -13271,10 +12827,7 @@ Level 5 3 6 0 Stability vs 3 RS Possible fractured hip, loss of balance probable
  
 
 
-Groin 
-
- 
-
+\section{Groin}
 Table 8.1.40 Groin - Cutting 
 Wound 
 Level 
@@ -13409,18 +12962,9 @@ Mother of God.
 
  
 
-Thigh 
-
- 
-
-Table 8.1.44 Thigh - Cutting 
-
-
-Wound 
-Level 
-
+\section{Thigh}
+Table 8.1.44 Thigh - Cutting Wound Level 
 Stun Pain Bleed Special Description 
-
 Level 1 1 4 2 - Shallow cut on thigh. 
 Level 2 2 5 4 - Deeper cut on thigh. Superficial damage. 
 Level 3 3 12 10 Stability vs 3 RS Serious cut cleaves to bone, anguish, possible 
@@ -13510,14 +13054,8 @@ Femur fractured, automatic knockdown.
 
  
 
-Knee 
-
- 
-
-Table 8.1.48 Knee - Cutting 
-Wound 
-Level 
-
+\section{Knee}
+Table 8.1.48 Knee - Cutting Wound Level 
 Stun Pain Bleed Special Description 
 
 Level 1 1 6 0 - ‘Motherf-’ 
@@ -13620,15 +13158,8 @@ will probably never recover.
 
  
 
-
-Shin 
-
- 
-
-Table 8.1.52 Shin - Cutting 
-Wound 
-Level 
-
+\section{Shin}
+Table 8.1.52 Shin - Cutting Wound Level
 Stun Pain Bleed Special Description 
 
 Level 1 1 5 1 - Grazed shin, painful but no lasting harm. 
@@ -13719,10 +13250,7 @@ Ever seen Silva vs Weidman?
 
  
 
-Foot 
-
- 
-
+\section{Foot}
 Table 8.1.56 Foot - Cutting 
 Wound 
 Level 
@@ -13814,13 +13342,8 @@ recover, stay off it.
 
  
 
-Upper Arm 
-
- 
-Table 8.1.60 Upper Arm - Cutting 
-Wound 
-Level 
-
+\section{Upper Arm}
+Table 8.1.60 Upper Arm - Cutting Wound Level 
 Stun Pain Bleed Special Description 
 
 Level 1 1 4 1 - Cut on arm. Trivial. 
@@ -13904,9 +13427,7 @@ Level 5 4 5 0 Autodrop Severe bruise, minor fractures in upper arm bones.
 
  
 
-Elbow 
-
- 
+\section{Elbow}
 Table 8.1.64 Elbow - Cutting 
 Wound 
 Level 
@@ -14010,10 +13531,7 @@ same for a while.
 
  
 
-Forearm 
-
- 
-
+\section{Forearm}
 Table 8.1.68 Forearm - Cutting 
 Wound 
 Level 
@@ -14110,7 +13628,7 @@ FFFFFFFF
 
  
 
-Hand 
+\section{Hand}
 
  
 
@@ -14206,9 +13724,7 @@ Level 5 10 10 0 Autodrop Broken fist.
 
  
 
-Upper Back 
-
- 
+\section{Upper Back}
 
 Table 8.1.76 Upper Back - Cutting 
 Wound 
@@ -14286,11 +13802,7 @@ Level 5 10 5 0 - Minor fracture to ribs, bruised spine.
 
  
 
-Lower Back 
-
-
- 
-
+\section{Lower Back}
 Table 8.1.80 Lower Back - Cutting 
 Wound 
 Level 
@@ -14360,17 +13872,16 @@ Spine damaged, footing lost instantly.
 
 Level 5 - - - Dead Spine broken just above tailbone, intestinal rupture, 
 unconsciousness instant, death follows shortly. 
-
- 
-Table 8.1.83 Lower Back - Unarmed 
-Wound 
-Level 
-
-Stun Pain Bleed Special Description 
-
-%Level 1 &3 &1 &0 &- &Blow to the kidney. Painful. 
-%Level 2 &5 &2 &0 &- &Severe blow to the kidney. 
-%Level 3 &6 &4 &0 &KO& vs 2 Savage kidney blow. Possible unconsciousness. 
-%Level 4 &5 &2 &0 &KO& vs 3 Agonizing kidney shot, unconsciousness likely. 
-%Level 5 &10 &5 &1 &KO vs 4, Internal Bleeding &Kidney damage! Jesus Christ! 
+\begin{table}%Lower Back Unarmed Wound
+	\caption{Lower Back - Unarmed Wound}
+	\label{tab:Lower Back Unarmed Wound}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
+Wound Level& Stun&Pain&Bleed&Special&Description\\\toprule
+Level 1 &3 &1 &0 &- &Blow to the kidney. Painful.\\
+Level 2 &5 &2 &0 &- &Severe blow to the kidney.\\
+Level 3 &6 &4 &0 &KO vs 2&Savage kidney blow. Possible unconsciousness.\\
+Level 4 &5 &2 &0 &KO vs 3&Agonizing kidney shot, unconsciousness likely.\\
+Level 5 &10 &5 &1 &KO vs 4, Internal Bleeding &Kidney damage! Jesus Christ!\\
+	\end{tabu}
+\end{table}
 \end{document}
