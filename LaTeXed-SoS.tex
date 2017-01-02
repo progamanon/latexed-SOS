@@ -17,14 +17,14 @@
 \definecolor{shadecolor}{rgb}{0.97,0.97,0.97}
 \usepackage[demo]{graphicx}
 \usepackage{wallpaper}
-\usepackage{wrapfig,booktabs}
 \usepackage{tabu,longtable,ctable}
+\usepackage{wrapfig,booktabs}
 \usepackage{fancyhdr}
 \usepackage{lettrine}
-\usepackage{caption}
+\usepackage[font=normalsize]{caption}     %% make caption in normal size
 \usepackage{multicol}
-\input Acorn.fd
-\newcommand*\initfamily{\usefont{U}{Acorn}{xl}{n}}
+%\input Acorn.fd
+%\newcommand*\initfamily{\usefont{U}{Acorn}{xl}{n}}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -40,16 +40,16 @@
 	footskip=0.5cm}
 \usepackage[full]{textcomp}
 \renewcommand{\familydefault}{pplj} 
-\usepackage
-%[
-%final,
-%stretch=10,
-%protrusion=true,
-%tracking=true,
-%spacing=on,
-%kerning=on,
-%expansion=true]
-{microtype}
+%	\usepackage
+%	[
+%	final,
+%	stretch=10,
+%	protrusion=true,
+%	tracking=true,
+%	spacing=on,
+%	kerning=on,
+%	expansion=true]
+%	{microtype}
 \setlength{\parskip}{1.3ex plus 0.2ex minus 0.2ex}
 
 
@@ -105,148 +105,152 @@
 %\counterwithout{figure}{chapter}
 %\counterwithout{table}{chapter}
 \usepackage[hidelinks,hyperfootnotes=false]{hyperref}
+	\usepackage{etoolbox}
+	\AtBeginEnvironment{longtabu}{\footnotesize}{}{}   %% change all longtabu content to foot note size
+	\AtBeginEnvironment{tabu}{\footnotesize}{}{} %%Do the same for tabu content, not sure if these two can be combined
+\usepackage{microtype}
 %END_FOLD
 \begin{document}
 \frontmatter
 	%\TileWallPaper{300pt}{300pt}{Descargas/fondopapelviejo.jpg}
-\section*{Changelog:}
-{\huge\LaTeX ified Revision of \today}
-{\footnotesize
-	\begin{itemize}
-	\setlength\itemsep{0mm}
-\item 4/14/2015, K06.0:Changed “ An example may be gaining the Bane of ‘Wanted” to :gaining the ‘Wanted’ 
-Bane: 
-\item 4/14/2015, K06.0: In progress of adding *s to boons \& banes that can be taken multiple separate times 
-\item 4/14/2015, K06.0: Removed extra spaces at the end of Boon \& Bane names; about half of them had one 
-\item 4/14/2015, K13.0: Added the following line to the last bullet point of Stun and also bolded all instances of 
-Stun in that section on Stun. “The Character sustaining the Stun chooses which maneuvers to subtract 
-from.” 
-\item 4/14/2015 K06.0: Added the following line to the Bloodthirsty boon: (and only Red/Red)
-\item 4/14/2015 K06.0 Under the Natural Leader Boon, I removed the word “Social” from you gain +2 to your 
-Social score. 
-\item 4/14/2015 K06.0 Added a clause to Prodigious boons clarifying that they only have an effect during 
-character creation. 
-\item 4/14/2015 K06.0 Added a clause to Prodigious Strength clarifying that it does cost 15 and not 10. 
-\item 4/14/2015 K06.0 Clarified Tall 2’s effects on initiative 
-\item 4/14/2015 K06.0 Capitalized the Iron, Steel, and Stone under True Grit 
-\item 4/14/2015 K06.0 Under Bad Reputation Bane, changed For example, while intimidating some yokels. to 
-While intimidating some yokels, for example. 
-\item 4/14/2015 K06.0 Made changes to the Blind bane. Blind characters can no longer take the Good Eyes 
-Boon; Blind characters treat all light levels as Evenly Lit; and Blind characters roll for MP as well as CP. 
-Standardized all its wording to say Blind Characters rather than “Blind individual” and capitalized the ‘C’ in 
-‘Character’ in the Boon. 
-\item 4/14/2015 K06.0 Reduced Braggart WIL RS from 3 to 2. 
-\item 4/14/2015 K06.0: Changes to Brain Damage Bane: 
-Renamed the Head Trauma table to Brain Damage 
-Capitalized all instances of “Int” to “INT” under Brain Damage 
-Added The result is the effect of the Bane.to the level 2 Brain Damage bane 
- Changed a great amount of the Bane’s wording 
- Altered the Brain Damage table’s results for 4 - 7 
- Wrote an Example for Brain Damage in use 
-\item 4/14/2015 K13.0: Corrected the spelling of character under Knockout: [Optional]: If a character is 
-knocked out. 
-\item 4/14/2015 K13.0: Also in the Knockout section, corrected “etc” to “etc.”” and capitalized the M and B in 
-“Brain Damage (Minor) Bane” 
-\item 4/14/2015 K13.0: Changed the Knockout title to be underlined, and removed its colon and an extra blank 
-space 
-\item 4/14/2015 K13.0: Changed Stability to be underlined 
-\item 4/14/2015 K13.0: Changed Falling Onto Slopes to be un-bolded and italicized, to be consistent with 
-Septic Infections as a “sub-section” of sorts 
-\item 4/14/2015 K13.0: Changed Electricity Damage to be underlined and renamed it Electrical Damage to be 
-consistent with its text, which calls it Electrical Damage 
-\item 4/14/2015 K13.0: Removed the commas after table 8.7 and table 8.8 before listing the tables’ titles. They 
-were out of place and inconsistent with other table names, like table 8.6. 
-\item 4/14/2015 K13.0: Changed Cold Damage to be underlined 
-\item 4/14/2015 K13.0: Changed Infection to be underlined 
-\item 4/14/2015 K13.0: Added to Blood Loss that a Brain Damage check made after passing out from bloodloss 
-is done with the reduced TOU score: Note that when the character passes out, the TOU vs. 2 RS to avoid 
-Brain Damage is done with their newly-modified TOU. (See Knockout, below.) 
-Changed HLT reaches 1 to HLT reaches 1 or lower 
-Changed HLT reaches 0 to HLT reaches 0 or below 
-Changed table 8.1 Blood Loss to be un-italicized, bolded, and on the left side of the table, 
-consistent with tables seen in the Boons \& Banes chapter. 
-Changed table 8.1 to be more precise in its rows \& columns and added spaces at the end to fill 
-out the page 
-\item 4/15/2015 K08.0: Replaced the abnormal Social Class and Wealth calculations with: Combine the two 
-costs, and divide the result by 2, rounding up. Note that this is how it was in 1.9.3. Further added the line 
-For their potentially unbalancing nature, all abnormal Social Class and Wealth combinations are subject 
-to GM approval. Changed the Abnormal Social Class and Wealth Combinations table appropriately. 
-Moved the spacing between the table and the large word Wealth to keep all the Wealth parts on 
-the same page. 
-\item 4/15/2015 K13.0: Changed the word “make” to “pass” in “they must make a TOU vs 2 RS test”: 
-Whenever a character is knocked out, they must pass a TOU vs. 2 RS test, or gain the Brain Damage 
-(Minor) Bane 
-\item 4/15/2015 K06.0: Finished heavy changes to the Brain Damage boon. 
-\item 4/15/2015 K06.0: Changed “theoretically” to “in theory” under Broken Limb/Appendage 
-\item 4/15/2015 K06.0: Replaced all instances of Sincerity with Subterfuge. 
-\item 4/15/2015 K06.0: Changed Craven’s costs to -7/-15 and their effects to RS 2 and RS 4. 
-\item 4/15/2015 K06.0: Changed each instance of is determined with to counts in the Debt bane. 
-\item 4/15/2015 K06.0: Corrected Fat to say it affects HLT, not END 
-\item 4/15/2015 K06.0: Reduced Hothead RSes to 2 and 1 
-\item 4/15/2015 K06.0: Fixed the wording in Lasting Pain from “Target Zone Area” to “Hit Location”. 
-\item 4/16/2015 K10.1: Changed Wording on Arm Parry’s Special. 
-\item 4/24/2015 K9.6: Added Weak Points to Burdinadin Armor 
-\item 4/29/2015 K10.1: Removed Trip Maneuver both from section and table. 
-\item 4/29/2015 K10: Removed Superior Trip references in Proficiencies. 
-\item 4/29/2015 K6: Added Tireless Lobster to Boons \& Banes both in section and table. 
-\item 5/31/2015 K09: Mirror Plates now protect Chest and Belly both. 
-\item 6/9/2015 K06: Changed Retinue and Follower rules and Costs 
-\item 6/9/2015 K09: Changed Weapon Guard values, added descriptions 
-\item 6/11/2015 K05: Changes to Zells, Paladins and Ohanedin. References to Prodigious removed. 
-\item 6/11/2015 K02: Modifications to Character Creation Chart 
-\item 6/11/2015 K04: Attributes changed to a scaling Point Buy system 
-\item 6/24/2015: Black Bill added “Moonspear” 
-\item 6/24/2015: Khyber Knife added to Daggers, Curved Dagger removed. 
-\item 7/7/2015: Shields Reworked, both stats and Durability section. 
-\item 7/7/2015: Minor changes to Fatigue penalty in Void, Closing Void, and Flee. 
-\item 7/7/2015: BLANKET changes to Polearms. 
-\item 7/7/2015: Defensive Disarm removed. 
-\item 7/7/2015: Disarm 2+BS difficulty changed to BS. 
-\item 7/8/2015: Yataghan Change 
-\item 7/22/2015: In the Talent Grapple: Use Weapon and Trip no longer exist, other references to them in 
-Talents have been removed. 
-\item 7/22/2015: Good Form and Special Move now use same terminology. 
-\item 7/25/2015: Missile Penalty Table added under Shoot Maneuver. 
-\item 7/31/2015: Yet more changes to weapons. Just supplant all the old tables with these. 
-\item 7/31/2015: Burdinadin Prosthetic section now mentions that Prosthetics are “Hard.” 
-\item 7/31/2015: Section added saying that weapons mounted in Prosthetics now have to be drawn before they 
-can be used. 
-\item 7/31/2015: Bow proficiency now has Superior Shoot at Tier 1 instead of Tier 2. 
-\item 7/31/2015: Strength Caps now offer diminishing Returns (Melee Weapons section.) 
-\item 7/31/2015: Slowpoke is now only usable when literally using a Spear or Polearm. 
-\item 7/31/2015: Shield AV counts as Hard. 
-\item 7/31/2015: Guard AV for Weapons counts as Hard. 
-\item 7/31/2015: Burgonet and Great Helm changed. Weight and Perception Penalty reduced. 
-\item 7/31/2015: Whirlwind Defense now restores 2 CP after successful Parry.\ 
-\item 7/31/2015: Modifications to Rideby Attack (Lanyard/chain rules added) 
-\item 7/31/2015: Feint now imposes a TN penalty to defender unless he pays 2 CP. 
-\item 7/31/2015: Gun damage changed (ammo types do more AP, guns do less damage) 
-\item 7/31/2015: can now hide behind your own horse (you coward) 
-\item 7/31/2015: Unarmed Wounds now heal in Days instead of Months. 
-\item 7/31/2015: Shot gets -3 Load 
-\item 7/31/2015: Hilt Push now has a “Tie” clause. 
-\item 7/31/2015: Arm Parry moved to Tier 1 in Dagger, Superior Clinch added to Tier 2 in Dagger. 
-\item 7/31/2015: Lanyard added to misc. equipment 
-\item 7/31/2015: Shield-Breaker Talent buffed 
-\item 7/31/2015: It was on purpose! Talent requirements changed to WIT 6. 
-\item 7/31/2015: TZMs re-added to Combat Section. 
-\item 7/31/2015: Noble School now has a Missile Weapon option. 
-\item 7/31/2015: War Cleaver got Heavy Weapon. 
-\item 7/31/2015: Several New Talents Added 
-\item 7/31/2015: Anima and Laminar Weight Values decreased. 
-\item 7/31/2015: Armored Skirts Re-Added. 
-\item 8/1/2015: Shield Bind now has a Superior version, added to Maneuvers and Proficiencies. 
-\end{itemize}}
+%\section*{Changelog:} %OBSOLETE?
+%{\footnotesize
+%	\begin{itemize}
+%	\setlength\itemsep{0mm}
+%\item 4/14/2015, K06.0: Changed “An example may be gaining the Bane of ‘Wanted” to :gaining the ‘Wanted’ 
+%Bane: 
+%\item 4/14/2015, K06.0: In progress of adding *s to boons \& banes that can be taken multiple separate times 
+%\item 4/14/2015, K06.0: Removed extra spaces at the end of Boon \& Bane names; about half of them had one 
+%\item 4/14/2015, K13.0: Added the following line to the last bullet point of Stun and also bolded all instances of 
+%Stun in that section on Stun. “The Character sustaining the Stun chooses which maneuvers to subtract 
+%from.” 
+%\item 4/14/2015 K06.0: Added the following line to the Bloodthirsty boon: (and only Red/Red)
+%\item 4/14/2015 K06.0 Under the Natural Leader Boon, I removed the word “Social” from you gain +2 to your 
+%Social score. 
+%\item 4/14/2015 K06.0 Added a clause to Prodigious boons clarifying that they only have an effect during 
+%character creation. 
+%\item 4/14/2015 K06.0 Added a clause to Prodigious Strength clarifying that it does cost 15 and not 10. 
+%\item 4/14/2015 K06.0 Clarified Tall 2’s effects on initiative 
+%\item 4/14/2015 K06.0 Capitalized the Iron, Steel, and Stone under True Grit 
+%\item 4/14/2015 K06.0 Under Bad Reputation Bane, changed For example, while intimidating some yokels. to 
+%While intimidating some yokels, for example. 
+%\item 4/14/2015 K06.0 Made changes to the Blind bane. Blind characters can no longer take the Good Eyes 
+%Boon; Blind characters treat all light levels as Evenly Lit; and Blind characters roll for MP as well as CP. 
+%Standardized all its wording to say Blind Characters rather than “Blind individual” and capitalized the ‘C’ in 
+%‘Character’ in the Boon. 
+%\item 4/14/2015 K06.0 Reduced Braggart WIL RS from 3 to 2. 
+%\item 4/14/2015 K06.0: Changes to Brain Damage Bane: 
+%Renamed the Head Trauma table to Brain Damage 
+%Capitalized all instances of “Int” to “INT” under Brain Damage 
+%Added The result is the effect of the Bane.to the level 2 Brain Damage bane 
+% Changed a great amount of the Bane’s wording 
+% Altered the Brain Damage table’s results for 4 - 7 
+% Wrote an Example for Brain Damage in use 
+%\item 4/14/2015 K13.0: Corrected the spelling of character under Knockout: [Optional]: If a character is 
+%knocked out. 
+%\item 4/14/2015 K13.0: Also in the Knockout section, corrected “etc” to “etc.”” and capitalized the M and B in 
+%“Brain Damage (Minor) Bane” 
+%\item 4/14/2015 K13.0: Changed the Knockout title to be underlined, and removed its colon and an extra blank 
+%space 
+%\item 4/14/2015 K13.0: Changed Stability to be underlined 
+%\item 4/14/2015 K13.0: Changed Falling Onto Slopes to be un-bolded and italicized, to be consistent with 
+%Septic Infections as a “sub-section” of sorts 
+%\item 4/14/2015 K13.0: Changed Electricity Damage to be underlined and renamed it Electrical Damage to be 
+%consistent with its text, which calls it Electrical Damage 
+%\item 4/14/2015 K13.0: Removed the commas after table 8.7 and table 8.8 before listing the tables’ titles. They 
+%were out of place and inconsistent with other table names, like table 8.6. 
+%\item 4/14/2015 K13.0: Changed Cold Damage to be underlined 
+%\item 4/14/2015 K13.0: Changed Infection to be underlined 
+%\item 4/14/2015 K13.0: Added to Blood Loss that a Brain Damage check made after passing out from bloodloss 
+%is done with the reduced TOU score: Note that when the character passes out, the TOU vs. 2 RS to avoid 
+%Brain Damage is done with their newly-modified TOU. (See Knockout, below.) 
+%Changed HLT reaches 1 to HLT reaches 1 or lower 
+%Changed HLT reaches 0 to HLT reaches 0 or below 
+%Changed table 8.1 Blood Loss to be un-italicized, bolded, and on the left side of the table, 
+%consistent with tables seen in the Boons \& Banes chapter. 
+%Changed table 8.1 to be more precise in its rows \& columns and added spaces at the end to fill 
+%out the page 
+%\item 4/15/2015 K08.0: Replaced the abnormal Social Class and Wealth calculations with: Combine the two 
+%costs, and divide the result by 2, rounding up. Note that this is how it was in 1.9.3. Further added the line 
+%For their potentially unbalancing nature, all abnormal Social Class and Wealth combinations are subject 
+%to GM approval. Changed the Abnormal Social Class and Wealth Combinations table appropriately. 
+%Moved the spacing between the table and the large word Wealth to keep all the Wealth parts on 
+%the same page. 
+%\item 4/15/2015 K13.0: Changed the word “make” to “pass” in “they must make a TOU vs 2 RS test”: 
+%Whenever a character is knocked out, they must pass a TOU vs. 2 RS test, or gain the Brain Damage 
+%(Minor) Bane 
+%\item 4/15/2015 K06.0: Finished heavy changes to the Brain Damage boon. 
+%\item 4/15/2015 K06.0: Changed “theoretically” to “in theory” under Broken Limb/Appendage 
+%\item 4/15/2015 K06.0: Replaced all instances of Sincerity with Subterfuge. 
+%\item 4/15/2015 K06.0: Changed Craven’s costs to -7/-15 and their effects to RS 2 and RS 4. 
+%\item 4/15/2015 K06.0: Changed each instance of is determined with to counts in the Debt bane. 
+%\item 4/15/2015 K06.0: Corrected Fat to say it affects HLT, not END 
+%\item 4/15/2015 K06.0: Reduced Hothead RSes to 2 and 1 
+%\item 4/15/2015 K06.0: Fixed the wording in Lasting Pain from “Target Zone Area” to “Hit Location”. 
+%\item 4/16/2015 K10.1: Changed Wording on Arm Parry’s Special. 
+%\item 4/24/2015 K9.6: Added Weak Points to Burdinadin Armor 
+%\item 4/29/2015 K10.1: Removed Trip Maneuver both from section and table. 
+%\item 4/29/2015 K10: Removed Superior Trip references in Proficiencies. 
+%\item 4/29/2015 K6: Added Tireless Lobster to Boons \& Banes both in section and table. 
+%\item 5/31/2015 K09: Mirror Plates now protect Chest and Belly both. 
+%\item 6/9/2015 K06: Changed Retinue and Follower rules and Costs 
+%\item 6/9/2015 K09: Changed Weapon Guard values, added descriptions 
+%\item 6/11/2015 K05: Changes to Zells, Paladins and Ohanedin. References to Prodigious removed. 
+%\item 6/11/2015 K02: Modifications to Character Creation Chart 
+%\item 6/11/2015 K04: Attributes changed to a scaling Point Buy system 
+%\item 6/24/2015: Black Bill added “Moonspear” 
+%\item 6/24/2015: Khyber Knife added to Daggers, Curved Dagger removed. 
+%\item 7/7/2015: Shields Reworked, both stats and Durability section. 
+%\item 7/7/2015: Minor changes to Fatigue penalty in Void, Closing Void, and Flee. 
+%\item 7/7/2015: BLANKET changes to Polearms. 
+%\item 7/7/2015: Defensive Disarm removed. 
+%\item 7/7/2015: Disarm 2+BS difficulty changed to BS. 
+%\item 7/8/2015: Yataghan Change 
+%\item 7/22/2015: In the Talent Grapple: Use Weapon and Trip no longer exist, other references to them in 
+%Talents have been removed. 
+%\item 7/22/2015: Good Form and Special Move now use same terminology. 
+%\item 7/25/2015: Missile Penalty Table added under Shoot Maneuver. 
+%\item 7/31/2015: Yet more changes to weapons. Just supplant all the old tables with these. 
+%\item 7/31/2015: Burdinadin Prosthetic section now mentions that Prosthetics are “Hard.” 
+%\item 7/31/2015: Section added saying that weapons mounted in Prosthetics now have to be drawn before they 
+%can be used. 
+%\item 7/31/2015: Bow proficiency now has Superior Shoot at Tier 1 instead of Tier 2. 
+%\item 7/31/2015: Strength Caps now offer diminishing Returns (Melee Weapons section.) 
+%\item 7/31/2015: Slowpoke is now only usable when literally using a Spear or Polearm. 
+%\item 7/31/2015: Shield AV counts as Hard. 
+%\item 7/31/2015: Guard AV for Weapons counts as Hard. 
+%\item 7/31/2015: Burgonet and Great Helm changed. Weight and Perception Penalty reduced. 
+%\item 7/31/2015: Whirlwind Defense now restores 2 CP after successful Parry.\ 
+%\item 7/31/2015: Modifications to Rideby Attack (Lanyard/chain rules added) 
+%\item 7/31/2015: Feint now imposes a TN penalty to defender unless he pays 2 CP. 
+%\item 7/31/2015: Gun damage changed (ammo types do more AP, guns do less damage) 
+%\item 7/31/2015: can now hide behind your own horse (you coward) 
+%\item 7/31/2015: Unarmed Wounds now heal in Days instead of Months. 
+%\item 7/31/2015: Shot gets -3 Load 
+%\item 7/31/2015: Hilt Push now has a “Tie” clause. 
+%\item 7/31/2015: Arm Parry moved to Tier 1 in Dagger, Superior Clinch added to Tier 2 in Dagger. 
+%\item 7/31/2015: Lanyard added to misc. equipment 
+%\item 7/31/2015: Shield-Breaker Talent buffed 
+%\item 7/31/2015: It was on purpose! Talent requirements changed to WIT 6. 
+%\item 7/31/2015: TZMs re-added to Combat Section. 
+%\item 7/31/2015: Noble School now has a Missile Weapon option. 
+%\item 7/31/2015: War Cleaver got Heavy Weapon. 
+%\item 7/31/2015: Several New Talents Added 
+%\item 7/31/2015: Anima and Laminar Weight Values decreased. 
+%\item 7/31/2015: Armored Skirts Re-Added. 
+%\item 8/1/2015: Shield Bind now has a Superior version, added to Maneuvers and Proficiencies. 
+%\end{itemize}}
 \begin{titlepage}
 \pagestyle{empty}
 	\centering
 	\ornamento\\
-	{\scshape\Huge Song of Swords Beta 1.9.9\par}
+	{\scshape\huge Song of Swords Beta 1.9.9\par}
 	\vspace{0.8cm}
 	{\scshape\Large{(MICRO UPDATE)}\par \scshape\Large{from} \par}
 	\vspace{0.1 cm}
 	{\huge Opaque Studios \par}
 	\vfill
+	{\huge\LaTeX ified Revision of \today}\par
 	\vspace{0.2 cm}
 	 \textsc{\copyright~Zachary Irwin, James Lacombe}, 2015. All Rights Reserved
 	 
@@ -299,7 +303,6 @@ It’s been a long time, now, since that first appearance back in 2012. We’ve 
 
 To put it simply, it’s been a long road and we’ve come a long way.
 
-
 \noindent And now we are here. This, the release of a new version. This will mark our first (nearly) complete 
 version of Song of Swords to be released in many months. There have been many great and significant 
 additions to the game, and numerous systems have been added to the core rules, which hitherto have been 
@@ -309,7 +312,7 @@ separate documents. This is, at least for now, the definitive Song of Swords.
 So here it is -- enjoy it. God knows you’ve been waiting long enough. This page is looking a bit empty, so 
 I’m going to stick some Kipling in here. 
 \vspace{0.8 cm}
- {\large 
+{\large
 \begin{verse}
 \emph{As it will be in the future, it was at the birth of Man\\
 There are only four things certain since Social Progress began. \\
@@ -336,31 +339,26 @@ Song of Swords is a historical and fantasy tabletop role-playing game that puts 
 It's a game about intense life and death conflicts, adventure with peril around every corner, deep stories, 
 involved characters, and no holds barred combat. 
 
-
 Song of Swords isn't a game with hit points or ablative health. Here, injuries are devastating, debilitating, 
 and dead-serious affairs. Even blows that don't kill immediately can kill with blood loss or infection from 
 sloppy treatment. Survivors may suffer limps, lameness and even crippling disability. You will need sharp 
 wits, thick armor, quick feet, great martial skill, or a combination of several of them, to survive. 
-
 
 You decide your characters' goals, and through the Arc Points system, your character grows by 
 progressing toward these goals, in addition to those chosen by the Gamemaster to give structure to the 
 game's narrative. Violence may be a means to an end, but its danger means that you must pick your 
 battles wisely, instead of charging headfirst into every combat situation. 
 
-
 These elements combine to create a game in which the heroism of the characters is genuinely heroic. 
 When even one slip-up can mean dismemberment or death, it takes real courage to face danger, and 
 courage is what heroes are made of. This isn't a game for the faint of heart. 
-
 
 Whether you fancy a campaign as 15th century Englishmen fighting in France under Henry V, or a 
 desperate last stand against the Mongols in Hungary, Song of Swords can provide your historical role-
 playing experience. Perhaps you’re more interested in fighting Grues in the hideous depths of the 
 Kaselreich, or fighting Goblins in the brutal tunnels of Cross Way beneath the iron hills of Dace. Again, 
 we’ve got you covered.
-Welcome to Song of Swords. 
-
+Welcome to Song of Swords.
 
 \section{What is a Roleplaying Game?}
 A roleplaying game like Song of Swords is a game in which the players assume the ‘roles’ of their 
@@ -368,11 +366,9 @@ characters and go on adventures with them, using their combined imagination. One
 ‘Gamemaster’ or GM, is in charge of running the game, playing the minor characters (Non-Player 
 Characters, or NPCs) and guiding the players in their adventures.
 
-
 To add tension and fun to the game, dice are rolled to decide the outcome of certain events like combat, 
 dangerous acrobatics, stealth, and so on. As characters survive their adventures and overcome obstacles, 
 they grow, becoming more capable and skilled. 
-
 
 The rules in this book are here to help make sure everyone has a fun role-playing experience, the Song of Swords way. Remember, the goal here is to have fun! 
 \section{Basic Mechanics Explained}
@@ -406,10 +402,12 @@ are two kinds of basic Checks that follow these rules.
 \subsubsection{Opposed Rolls}
 	An Opposed Roll is when two characters roll against each other. In Opposed Rolls, there is usually not an 
 RS. Instead, the character who gets more successes is victorious in whatever sort of contest they are 
-engaging in.\par
+engaging in.
+
 	So if two characters are arm-wrestling, and the GM decides this is best represented as an Opposed 
 Strength Roll, they would both roll their Strength at TN 7, and whichever of them got more successes 
-would win.\par	
+would win.
+
 	In the event of a tie in successes in an Opposed Roll, either the two characters are evenly matched (if such 
 a thing is plausible in the situation) or they must roll again to break the tie. The GM must decide which is 
 more appropriate given the situation. 
@@ -429,7 +427,7 @@ without a listed TN, assume that that TN is 7.
 In any situation in which a number would be divided, such as determining Compound Attributes or the 
 weight of a character’s equipment, always round down unless specifically told not to, such as when using 
 the Abnormal Class/Wealth Combinations special rule, or when calculating asymmetrical armor weights. 
-Otherwise, always round down! 
+Otherwise, always round down!
 \chapter{Character Creation}\label{ch:charcreation}
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
@@ -444,30 +442,26 @@ Song of Swords is a game about characters; those controlled by the players are c
 (NPCs). In order to ensure a fun and balanced game for everyone, all characters are created using a 
 system called Character Creation. That is, all PCs and NPCs are created using the steps in this chapter. 
 
- 
 In Character Creation, the GM establishes whether the campaign will be a fantasy or historical campaign, 
 and sets the power level of the campaign (Campaign Power), which allows players to balance their 
 characters relative to one another. 
 
- 
 Characters are built using Player Creation Points (PCP) which are spent on different aspects of characters, 
 called Categories, which includes their Attributes, Skills, Proficiencies, and so on. The amount of PCP a 
 character has to spend at Character Creation is based on the Campaign Power. 
 
- 
 \section{How to Create a Character}
 Here’s a step-by-step guide to making a character in Song of Swords. It might be a bit tricky at first, but 
-once you understand the steps it’s actually very simple. 
+once you understand the steps it’s actually very simple.
 
-Step 1: Set the Campaign Power 
+\subparagraph{Step 1: Set the Campaign Power}
 The GM will set the Campaign Power and explain the theme of the campaign. The Campaign Power will 
 determine how many PCP you have available to make your character, as well as the maximum PCP you 
 can invest in any one Category. PCP are the building blocks of your character during this process, so the 
 more of them you have, the more powerful your character will be. Refer to~\autoref{tab:campaign_power}, below, for a guide 
-on Campaign Power. 
- 
+on Campaign Power.
 
-Step 2: Develop Your Character Concept 
+\subparagraph{Step 2: Develop Your Character Concept}
 Decide what kind of character you are making. Your character is your avatar for interacting with the game 
 world, and the nature of the character you create will dramatically change your roleplaying experience. 
 When deciding on a character concept, it’s a good idea to factor in what the GM has said the campaign 
@@ -475,61 +469,46 @@ might be like and what the other players are building. Players should communicat
 coordinate Character Creation, either to create a group with fun dynamics, prior relationships, or 
 complementary and conflicting personalities. This makes for a more engaging group dynamic when play 
 begins! 
- 
 
-Step 3: Spend PCP on Categories 
+\subparagraph{Step 3: Spend PCP on Categories}
 Now, divide your PCP between the Categories outlined in Table XX below. There are six mandatory 
 Categories, plus one optional one, Magic. You do not have to put any points into Magic, but all other 
 Categories must have at least 1 PCP put into them. For more detail on these Categories, and what your 
 PCP investment will mean, refer to their respective chapters. 
 
- 
 \begin{itemize}
-\item Race: Your character’s birth race. Different races have dramatically different abilities. 
-\item Attributes: Your character’s base physical and mental ability scores. Having strong Attributes makes a character more capable in general. 
-\item Skills: Your character’s level of aptitude in various disciplines. Skills are very important for being able to do things both inside and outside of combat. 
-\item Proficiencies: Your character’s proficiency in fighting. 
-\item Social Class and Wealth: Your character’s standing in the world, and also the amount of money your character starts with. For good reference, a knight’s full kit of plate armor, a good helmet, a middle of the road warhorse, a sword, a dagger and a lance would cost over 14 gp. By contrast, a regular footman’s kit, including a padded jack, jack chains, a skullcap, and a spear, shield and dagger would cost less than 1 gp. 
-\item Magic: Not included in Beta. 
-\item Boons and Banes: Your character’s various traits, quirks and flaws. 
+\item [Race:] Your character’s birth race. Different races have dramatically different abilities. 
+\item [Attributes:] Your character’s base physical and mental ability scores. Having strong Attributes makes a character more capable in general.
+\item [Skills:] Your character’s level of aptitude in various disciplines. Skills are very important for being able to do things both inside and outside of combat. 
+\item [Proficiencies:] Your character’s proficiency in fighting. 
+\item [Social Class and Wealth:] Your character’s standing in the world, and also the amount of money your character starts with. For good reference, a knight’s full kit of plate armor, a good helmet, a middle of the road warhorse, a sword, a dagger and a lance would cost over 14 gp. By contrast, a regular footman’s kit, including a padded jack, jack chains, a skullcap, and a spear, shield and dagger would cost less than 1 gp.
+\item [Magic:] Not included in Beta. 
+\item [Boons and Banes:] Your character’s various traits, quirks and flaws. 
 \end{itemize}
- 
 
-Step 4: Buy Equipment and Supplies 
+\subparagraph{Step 4: Buy Equipment and Supplies}
 The resources your character has at their disposal will have a great impact on your campaign. Be sure to 
 equip your character with the items that they will need. The quality and number of items available to your 
-character is largely affected by your character’s Wealth. Refer to Chapter XX for more information about 
-buying equipment and supplies. 
+character is largely affected by your character’s Wealth. Refer to \autoref{ch:equipment} for more information about buying equipment and supplies.
 
- 
-
-
-Step 5: Review Your Character with the GM 
+\subparagraph{Step 5: Review Your Character with the GM}
 At this stage it is important to review your character with the GM. Your GM will check whether you have 
 spent your PCP appropriately in each of the required Categories, and supplied your character with 
 necessary equipment. 
 
- 
-
-Step 6: Determine Arcs 
+\subparagraph{Step 6: Determine Arcs}
 The next step of Character Creation is to determine your character’s Arcs. Arcs represent your character’s 
 goals, drives and beliefs that guide them through life, especially during the campaign itself. These provide 
 Arc Points, which are used to advance your character’s Abilities and Skills. For more information on Arcs 
-and Arc Points, go to Chapter XX. 
+and Arc Points, go to \autoref{ch:arc}
 
- 
-
-Step 7: Name and Describe the Character 
+\subparagraph{Step 7: Name and Describe the Character}
 Finally, give your character a name and describe them. Be mindful of the setting of the campaign, as well 
 as your character’s race, gender and social class when choosing a name. Perception is everything; a great 
 name can evoke strong imagery, and how characters look and conduct themselves may influence how 
 other characters and NPCs interact with them. 
 
- 
-
 Once you have completed Step 7, you are ready to play! 
-
- 
 
 \section{Campaign Power}
 As explained above, the Campaign Power determines the type of campaign you will play, as well as the 
@@ -1170,7 +1149,7 @@ few years depending on constitution and lifestyle. Infant mortality is high, but
 
 
 \subsubsection*{Racial Abilities and Characteristics} 
-\paragraph{Attribute Modifiers:} None\\
+\paragraph{Attribute Modifiers:} None
 \paragraph{\label{par:Willing to Learn}Willing to Learn}---\quad
 Humans are flexible creatures by nature, and learning is something most can do very quickly, 
 particularly when instructed. Many of the other races, having the mindset of immortality, or 
@@ -1649,80 +1628,60 @@ brotherhood there--you’re probably part human yourself, after all.
 Male Names: Vlad, Rade, Boris, Akula, Olaf, Taviye, Dusan, Slavomir, Bozemir, Radovan, Arkan 
 Female Names: Kasatka, Dahaka, Shahaka, Moloko, Rahoko, Draguna, Natalya, Tamara, Dusica 
  
-\subsection{Burdinadin} 
-"I've been inside of an Iron Glade. The construction is admirable, though lacking in aesthetics. They bathe in rooms full of steam. 
-Their halls are lit by panels of glowing glass, and the great towers stretch as far underground as above, but there is no personal 
-element. It was not a home, it was an emergency shelter. A bolthole. A temporary solution become terribly permanent." 
-Zoph Escher, Lord of Kar-Ischil 
-‘On Elves’, Report to The Hurtsickle Society 
+\subsection{Burdinadin} %BURDS NEED WORK
+\begin{quote}
+\emph{``I've been inside of an Iron Glade. The construction is admirable, though lacking in aesthetics. They bathe in rooms full of steam.\\
+Their halls are lit by panels of glowing glass, and the great towers stretch as far underground as above, but there is no personal element.\\
+It was not a home, it was an emergency shelter. A bolthole. A temporary solution become terribly permanent.''}
 
- 
+\vspace*{-5pt}\hfill--\textbf{Zoph Escher}, Lord of Kar-Ischil \textit{‘On Elves’}, Report to The Hurtsickle Society
+\end{quote}
+\begin{quote}
+\emph{``If we thought death was a way out, we would have built gibbets, not Glades.''}
 
-"If we thought death was a way out, we would have built gibbets, not Glades." 
-Skillithingtorix Amljatijakove, Burdinadin Radical 
-‘No Way Out’, Master Thesis, Lagu University of Natural Philosophy 
+\hfill --\textbf{Skillithingtorix Amljatijakove}, Burdinadin Radical, \textit{‘No Way Out’}, Master Thesis, Lagu University of Natural Philosophy
+\end{quote}
 
- 
-
-\subsubsection*{Overview} 
+\subsubsection*{Overview}
 The Burdinadin, or ‘Iron Elves,’ are a race of intellectuals and shut-ins who have sealed themselves away 
 from the outer world within the great Iron Glades, huge metallic fortresses that shield them from the 
 impurities of the outside. They are gifted scientists, in large part because the same quasi-magical senses 
 that made the outside world so intimidating to them can also be turned inwards, to analyze the subtle 
 mechanics of natural law around them. 
 
- 
-
 \subsubsection*{Appearance} 
 The Burdinadin range from chestnut-skinned to fair, and tend to have pale hair and green or red eyes. 
 They rarely stand over 5'6", and tend to hover between 100 and 140 lbs. Females are not noticeably 
 shorter than males, but tend to be slighter of figure. 
 
- 
-
 \subsubsection*{Racial Abilities and Characteristics} 
 \paragraph{Attribute Modifiers:} +1 INT, +1 AGI 
 
- 
-
-Elvish Agelessness 
+Elvish Agelessness
 Elves reach physical maturity by the age of 20, much like Humans do. However, after that, their 
 bodies' aging process halts, so long as they retain their Focus. Each breed of Din has a different 
 Focus. 
-
- 
 
 Focus 
 The Burdinadin do not currently know what their Focus is, but so long as they are within the Iron 
 Glades or properly shielded while outside, they retain their Elvish Agelessness. 
 
-
- 
-
 Natural Philosophy 
 So long as the Burdinadin is not suffering Pain from spirit contamination (see Sterile Soul below) 
 a Burdinadin may make a special Education test to discern the function, purpose, composition, 
 and/or mechanics of any object, device or technology. For this test, the Burdinadin adds PER to 
-INT. This kind of check is omni-sensory, utilizing sight, smell, touch, hearing, and even taste. 
-
- 
+INT. This kind of check is omni-sensory, utilizing sight, smell, touch, hearing, and even taste.
 
 If the Burdinadin is allowed to disassemble and play with the subject manually, a +4 bonus is 
 gained to the Education test. 
 
- 
-
 When used in this way, Natural Philosophy requires time to study the object determined by the 
 RS of the test. See the table below. 
 
- 
-
-After a successful use of this ability to analyze something, any Craft rolls made to improve, 
+After a successful use of this ability to analyze something, any \nameref{skill:Crafting}~rolls made to improve, 
 redesign, copy, forge, disable or otherwise take advantage of this knowledge gain a bonus equal 
 to the Bonus Successes from the Natural Philosophy roll. The same object can be analyzed 
-multiple times, but the Craft bonus does not stack, only the highest number of BS is used. 
-
- 
+multiple times, but the Crafting bonus does not stack, only the highest number of BS is used. 
 
 There is a cost to using this power. Every hour that is spent using Natural Philosophy, the 
 Burdinadin must make a WIL test at RS 1, +1 per hour they have already been using the ability. If 
@@ -4547,14 +4506,12 @@ In the above Table XX, the number in brackets is a character’s Wealth, which c
 acquire additional money or assets, as detailed in Table XX, below. These can be purchased multiple 
 times, and Wealth must be spent at Character Creation. 
 
- 
+
 Table XX Wealth/Asset/Gold Chart 
 Wealth Spent Asset Gained Gold Gained 
-1 Minor Asset 6 gp 
-2 Moderate Asset 12 gp 
-3 Major Asset 18 gp 
-
- 
+1 Minor Asset 6 gp
+2 Moderate Asset 12 gp
+3 Major Asset 18 gp
 
 \chapter{Equipment}\label{ch:equipment}
 \startcontents[chapters]
@@ -4640,8 +4597,8 @@ The type of the weapon, and thus the Proficiency that it can be used with.
 \subsubsection{Hands}
 This specifies the number of hands required to use the weapon, either one (1H) or two (2H). 
 \subsubsection{Reach}
-The weapon’s Reach, as \autoref{tab:Reach} describes. Reach has important effects in combat, which are further explained in Chapter 10.
-\begin{table}
+The weapon’s Reach, as \autoref{tab:Reach} describes. Reach has important effects in combat, which are further explained in \autoref{ch:combat}, \autoref{sec:Reach}
+\begin{table}[!ht]
 	\centering
 	\caption{Reach}
 	\label{tab:Reach}
@@ -4689,7 +4646,7 @@ The weapon’s cost. May vary regionally.
 
 \section{Daggers}
 \begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
-	\caption{Daggers}
+	\caption{Daggers}\\
 	\label{tab:Daggers List}\\
 Weapon Name						&Weapon Type	&Hands&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\\\toprule\endhead
 Ballock Dagger					&Dagger			&1H	&H	&7(-1c)	&6(+1p)	&8(1)	&Fluid Thrusts, Light Blade				&0	&5 cp\\
@@ -4771,7 +4728,7 @@ Yataghan                    &Sword          &1H      &S      &7(+1c) &8(+0p) &7(
 
 \subsection{2H Swords}
 \begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
-	\caption{Two-handed Swords}
+	\caption{Two-handed Swords}\\
 	\label{tab:2H Swords}\\
 Weapon Name					&Weapon Type	&Hands	&Reach	&Swing	&Thrust	&Defense (Guard)	&Special						&Wt		&Cost\\\\toprule\endhead
 Bastard Sword				&Sword			&2H		&L		&7(+1c)	&7(+2p)	&7(2)				&Hand-Off, Heavy Weapon 			&1		&50 sp\\
@@ -4795,7 +4752,7 @@ Zweihander (Grutte) 	&Sword &2H &EL &7(+4c) &8(+3p) &7(2) &Heavy Weapon, Freakis
 \section{Blunt}
 \subsection{1H Blunt}
 \begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
-	\caption{One-Handed Blunt Weapons}
+	\caption{One-Handed Blunt Weapons}\\
 	\label{tab:1H Blunt}\\
 Weapon Name						&Weapon Type	&Hands&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\\\toprule\endhead
 Battleaxe* &Blunt &1H &M &7(+2c) &7(-2b) &9(0)& AP Swing 1, Hand-Off, Hook, Thrusting Slot, Shock 2, Swinging Slot &1 &6 sp\\
@@ -4812,20 +4769,29 @@ Light Mace (Spiked) &Blunt &1H &S &7(+2b) &7(-2b) &7(0)& Bleed 2, Shock 2, Thrus
 Tabarzin* &Blunt &1H &L &7(+2c) &8(+0p) &9(0)& AP Swing 1, Hand-Off, Hook, Shock 1, Swinging Slot, Thrusting Slot &2 &10 sp\\
 Warhammer (Standard) &Blunt &1H &S &7(+2b) &7(-2b) &8(0)& AP Swing 1, Crushing 1, Reverse Slot, Shock 1, Thrusting Slot &0 &6 cp\\
 War Pick &Blunt &1H &S &7(+2p) &7(-2b) &8(0)& AP Swing 2, Hook, Reverse Slot, Thrusting Slot, Thin Blade &0 &2 sp\\
-\end{longtabu}
-
-\subsubsection{1H Blunt Weapon Attachments}%MAKE THIS A SUBTABLE OF THE ABOVE TABLE
-\begin{tabu} to \linewidth {X[3] X *{5}{X[-3,c]} X[5] *{2}{X[-2]}}
-Weapon Name						&Weapon Type	&Hands	&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\
+	\\
+	\\
+		\multicolumn{10}{c}{1H Blunt Weapon Attachments}\\\tabucline{1-10}
 Arming Spike	&Blunt	&1H	&-	&-		&(+0p)	&-		&Weapon Attachment (Thrust) &0 &1 cp\\
 Reverse Blade	&Blunt	&1H	&-	&7(+1c)&-	&-		&Weapon Attachment (Swing) &0 &6 cp\\
 Reverse Hammer	&Blunt	&1H	&-	&7(+0b)&-	&-		&AP Swing 1, Crushing 1, Shock 1, Weapon Attachment (Swing) &0 &6 cp\\
 Reverse Spike	&Blunt	&1H	&-	&7(+0p)&-	&-		&AP Swing 2, Hook, Weapon Attachment (Swing) &0 &6 cp\\
 Weighted Chain	&Blunt	&1H	&VL	&8(+1b)&-	&8(0)	&Chain 3, Hook,Shock 2, Weapon Attachment (Swing) &1 &6 cp\\
-\end{tabu}
+\end{longtabu}
+%BEGIN_FOLD%For the 1H Blunt attachment tabu outside the longtabu environment
+%\subsubsection{1H Blunt Weapon Attachments}%MAKE THIS A SUBTABLE OF THE ABOVE TABLE
+%\begin{tabu} to \linewidth {X[3] X *{5}{X[-3,c]} X[5] *{2}{X[-2]}}
+%Weapon Name						&Weapon Type	&Hands	&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\
+%Arming Spike	&Blunt	&1H	&-	&-		&(+0p)	&-		&Weapon Attachment (Thrust) &0 &1 cp\\
+%Reverse Blade	&Blunt	&1H	&-	&7(+1c)&-	&-		&Weapon Attachment (Swing) &0 &6 cp\\
+%Reverse Hammer	&Blunt	&1H	&-	&7(+0b)&-	&-		&AP Swing 1, Crushing 1, Shock 1, Weapon Attachment (Swing) &0 &6 cp\\
+%Reverse Spike	&Blunt	&1H	&-	&7(+0p)&-	&-		&AP Swing 2, Hook, Weapon Attachment (Swing) &0 &6 cp\\
+%Weighted Chain	&Blunt	&1H	&VL	&8(+1b)&-	&8(0)	&Chain 3, Hook,Shock 2, Weapon Attachment (Swing) &1 &6 cp\\
+%\end{tabu}
+%END_FOLD
 \subsection{2H Blunt}
 \begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
-	\caption{Two-Handed Blunt}
+	\caption{Two-Handed Blunt}\\
 	\label{tab:2H Blunt}\\
 Weapon Name				&Weapon Type	&Hands	&Reach	&Swing&Thrust&Defense (Guard)&Special																	&Weight	&Cost\\\\toprule\endhead
 Battleaxe				&Blunt			&2H		&M		&7(+3c)&7(-2b)&8(0)&AP Swing 1, Hand-Off, Heavy Weapon, Hook, Thrusting Slot, Shock 2, Swinging Slot	&1 &6 sp\\
@@ -4856,7 +4822,7 @@ Reverse Spike Blunt 2H - 7(+2p) - - AP Swing 2, Heavy Weapon, Hook, Weapon Attac
 \section{Spears}
 Table X.X Spears
 \begin{longtabu} to 1\linewidth {X[2,l] X X[-1,c] X[-1,c] XX X[-1,c] X[2,l] X[-3,c] X[-3,r]}
-	\caption{List of Spears}
+	\caption{List of Spears}\\
 	\label{tab:Spears}\\
 Weapon Name						&Weapon Type			&Hands	&Reach	&Swing		&Thrust	&Defense (Guard)	&Special																	&Weight	&Cost\\\\toprule\endhead
 Ahlspiess 						&Polearm, Spear			&2H		&L		&8(-1b)		&7(+1p) &7(0)				&AP Thrust 3,Thin Blade 													&5		&4 sp\\
@@ -4900,7 +4866,7 @@ Weapon Queue Spear* 7(-2c) 7(+0p) 8(0) AP Swing 1,Thin Blade, Weapon Attachment 
 *Use attached weapon’s Weapon Proficiency or Hands
 \section{Polearms}
 \begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
-	\caption{List of Polearms}
+	\caption{List of Polearms}\\
 	\label{tab:Polearms}\\
 Weapon Name						&Weapon Type			&Hands	&Reach	&Swing		&Thrust		&Defense (Guard)	&Special																	&Weight	&Cost\\\\toprule\endhead
 Ahlspiess						&Polearm, Spear 		&2H		&L		&8(-1b)		&7(+1p)		&7(0)				&AP Thrust 3,Thin Blade														&5		&4 sp\\
@@ -4944,12 +4910,11 @@ Reverse Spike Polearm - - 7(+1p) - - AP Swing 2, Heavy Weapon, Hook, Weapon Atta
 Weapon Queue Polearm -/- 7(-2c) 7(+0p) 8(0) AP Swing 1,Thin Blade, Weapon Attachment (Thrust) 0 4 cp
 
 \section{Special Qualities}\label{sec:special-qualities}
-\paragraph{\label{wepqual:AP Swing}AP Swing [X]}---\quad Armor Piercing Swing [X]. 
+\paragraph{\label{wepqual:AP Swing}AP Swing [X]}---\quad Armor Piercing Swing [X].
 
 When making a Swinging attack against a Hit Location with Hard armor protection, this weapon Inflicts X additional damage against any Armor, up to the AV of the Armor.
 
-\paragraph{\label{wepqual:AP Thrust}AP Thrust [X]}---\quad
-Armor Piercing Thrust [X]. 
+\paragraph{\label{wepqual:AP Thrust}AP Thrust [X]}---\quad Armor Piercing Thrust [X].
 
 When making a Thrusting attack against a Hit Location with Hard armor protection, this weapon Inflicts X additional damage against any Armor, up to the AV of the Armor.
 
@@ -4959,7 +4924,7 @@ Any Swinging attack from this weapon that either inflicts a Wound, or fails to i
 When using this weapon, you gain 2 automatic additional successes on Initiative Tests made as a result of Offensive/Offensive Orientation.
 
 \paragraph{\label{wepqual:Cavalry Sword}Cavalry Sword}---\quad
-When making a Swing with Ride-By attack, this weapon’s \hyperref[par:Draw]{Draw} value is increased by 1.
+When making a Swing with Ride-By attack, this weapon’s \hyperref[wepqual:Draw]{Draw} value is increased by 1.
 
 \paragraph{\label{wepqual:Chain}Chain [X]}---\quad
 Any attack made at Swing TN with this weapon ignores the first X successes of an enemy’s Parry or Block defense, including Parrying and Blocking Maneuvers like Riposte or Arm Parry. Additionally, this weapon can neither engage in, nor be engaged in a Hilt Push of any sort.
@@ -5112,217 +5077,168 @@ Integrated Dragon &Firearm &2 &6 &7p &10 &Ball, Shot\\
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
 \clearpage
-“No person of Albish descent will bear or train with, or own the weapon called the Warbow or Longbow without special dispensation from his Lord. Any who violate this order shall tied to a post and speared.” -Text of Krajini Bow Prohibition 
+\begin{quote}
+\emph{“No person of Albish descent will bear or train with, or own the weapon called the Warbow or Longbow without special dispensation from his Lord. Any who violate this order shall tied to a post and speared.” }
 
-Missile Weapon Characteristics 
+--\textit{Text of Krajini Bow Prohibition}
+\end{quote}
 
-
-Weapon Name 
+\section{Missile Weapon Characteristics}
+\subsubsection{Weapon Name}
 The name of the weapon.
 
-Weapon Type 
+\subsubsection{Weapon Type}
 The type of the weapon, and thus the Proficiency that it can be used with. 
 
- 
-
-Range 
+\subsubsection{Range}
 This is the distance in yards that a missile weapon can be used, and considered to be at “Short” range. 
 Every multiple of this distance the weapon is used at past the first decreases the Missile Pool for Shoot or 
-Fling by 1. See Missile Weapons in Combat in the Combat section for more details. 
+Fling by 1. See Missile Weapons in Combat in the \nameref{ch:combat}~for more details.  %NEEDS ref to missile weapons in combat
 
+\subsubsection{Missile TN}
+This is the TN used when making a missile attack with this weapon.
 
- 
-
-Missile TN 
-This is the TN used when making a missile attack with this weapon. 
-
- 
-
-Damage 
+\subsubsection{Damage}
 This is the power (before modification by arrowheads or Maneuvers/Talents) of an attack made by a 
 missile weapon, as well as the damage type of the attack. The damage type of missile weapons is 
 invariably piercing (p) damage. 
 
- 
 
-Special 
-The weapon’s special qualities, which are further described in Table XX. 
+\subsubsection{Special}
+The weapon’s special qualities, which are further described in Table XX. %NEEDS ref to missile weapon qualities
 
- 
-
-Weight 
+\subsubsection{Weight}
 This is the Weight of the weapon when it is being stored. When in use, a weapon’s Weight is 0. 
 
- 
+\subsubsection{Cost}
+This is the cost of the weapon.
 
-Cost 
-This is the cost of the weapon. 
+\subsubsection{Required STR}
+\vspace{-10pt}\emph{Bow}
 
- 
-
-Required STR 
-Bow 
 If a character does not have the Required STR of a bow, he cannot string it. If already strung, the bow can 
 be used with inferior STR, but the Missile TN increases by 1, and damage dealt decreases by 1, per point 
 of the character’s STR beneath the Required STR. 
 
- 
-
-Span 
+\subsubsection{Span}
 Bows and throwing weapons can be drawn and fired in the same Action. However, crossbows need to be 
 spanned, and firearms need to be loaded prior to firing (see Span - Crossbow, and Load - Firearm, 
-respectively). 
+respectively)
 
- 
+\vspace{-10pt}\emph{Crossbow}
 
-Crossbow 
 This number determines how many Successes are required before the crossbow is spanned and ready to 
 be fired. Reference this number with the Spanning Tool of the weapon, which determines the TN of these 
 Successes, as well as whether they can be accumulated over Rounds, or only in one Round. The Reload 
 Maneuver is used to Span crossbows. 
 
- 
+\subsubsection{Spanning Tool}
+\vspace{-10pt}\emph{Crossbow}
 
-Spanning Tool 
-Crossbow 
 This refers to the Spanning Tool that is used to span the crossbow. The Span TN is the minimum number 
 required for Span Successes (see Span - Crossbow). Store Span refers to whether the Span Successes can 
 be accumulated over Rounds, or only in one Round (‘yes’ for accumulating Successes, ‘no’ when all 
 Successes must be gained in one Round). 
 
-
- 
-
-Load 
-Firearm 
+\subsubsection{Load}
+\vspace{-10pt}\emph{Firearm}\par
 This number determines how many Successes are required before the firearm is loaded and ready to be 
 fired. Reference this number with the weapon’s Loading Mechanism, which determines the TN of these 
 Successes. Firearms universally accumulate Load Successes over Rounds, whereas crossbows may or 
 may not allow that. The Reload Maneuver is used to Load firearms. 
 
- 
-
-Loading Mechanism 
-Firearm 
+\subsubsection{Loading Mechanism}
+\vspace{-10pt}\emph{Firearm}\par
 This refers to the Loading Mechanism that is used to load the firearm, and details the type of cartridge 
 used, which greatly affects the ease of loading. The Load TN is the minimum number required for Load 
 Successes (see Load - Firearm). The Ammunition Cost Modifier determines how much this Loading 
-Mechanism affects the cost of ammunition. Brass cartridges would be more expensive than paper 
-cartridges, for example. 
- 
+Mechanism affects the cost of ammunition. Brass cartridges would be more expensive than paper cartridges, for example. 
 
-
-Firing Mechanism 
-Firearm 
+\subsubsection{Firing Mechanism}
+\vspace{-10pt}\emph{Firearm}\par
 The Firing Mechanism determines the types of Loading Mechanisms available for firearms. Firing 
-Mechanisms may have Special qualities that greatly affect how your firearm operates. 
- 
-Ammunition 
-Bow, Crossbow and Firearm 
+Mechanisms may have Special qualities that greatly affect how your firearm operates.
+
+\subsubsection{Ammunition}
+\vspace{-10pt}\emph{Bow, Crossbow and Firearm}\par
 This outlines the type of ammunition that can be fired from the weapon. Ammunition must first be loaded 
 before it can be fired. Ammunition may have Special qualities, which may make it more or less effective 
-in certain circumstances. 
+in certain circumstances.
 
- 
-
+\paragraph{Catch Chance}---\quad
 Some missile weapons, and their projectiles, have a significant chance of becoming stuck in their victims. 
 If a missile with a Catch Chance inflicts a Wound on a character, roll 1d10. If the result is equal to or 
 under the Catch Chance, then the head of the missile becomes stuck in the Wound. This adds +4 Pain to 
 the Wound, and increases its Infection Chance by 2 until it is removed. 
 
- 
-
 If the stuck missile is not removed (Surgery Check RS 3), and the Wound heals with the missile (or its 
 head, in the case of arrows) still stuck inside, then the character immediately gains either the minor or 
-major Lasting Pain Bane in that area. The GM can decide on the level of Lasting Pain, or you can roll for 
-it: 1-6 minor, 7-10 major. 
+major \nameref{bane:Lasting Pain}~Bane in that area. The GM can decide on the level of Lasting Pain, or you can roll for it: 1-6 minor, 7-10 major.
 
- 
-
-Ammunition Capacity 
-Firearm 
+\subsubsection{Ammunition Capacity}
+\vspace{-10pt}\emph{Firearm}\par
 This specifies how many shots your firearm holds before it requires reloading. Ammunition Capacities 
 have Special qualities which affects whether firearms can be fired with simultaneous Shots, and how 
 firearms are reloaded. 
 
- 
+\section{Missile Weapons}
 
-Missile Weapons 
-
- 
-
-Bows 
+\subsection{Bows}
 Explain how weapons are used/what is required for it. 
+\begin{table}
+	\centering
+	\caption{Bows}
+	\label{tab:Bows}
+	\begin{tabu} spread 0pt {X[3]X[-1,c] *{3}{X[-2,c]} X[-1,c] X[2] *{2}{X[-2]}}
+\rowfont[c]{}Weapon Name&Weapon Type&Range&Missile TN&Damage&Required STR&Special&Wt&Cost\\\toprule
+Composite Horsebow &Bow &25 &7 &5p &4 &Cavalry Bow 3 &0 &6 sp\\
+Composite Warbow &Bow &30 &7 &6p &5 &Cavalry Bow 2 &0.5 &8 sp\\
+Horsebow &Bow &20 &7 &4p &3 &Cavalry Bow 3 &0 &2 sp\\
+Longbow &Bow &25 &7 &5p &4 &-&0.5 &3 sp\\
+Warbow &Bow &30 &7 &6p &6 &- &0.5 &4 sp\\
+Zellish Wheelbow &Bow &40 &7 &7p &5 &- &3 &5 gp\\
+	\end{tabu}
+\end{table}
 
- 
-Table X.X Bows 
-Weapon Name Weapon Type Range Missile TN Damage Required STR Special Wt Cost 
-Composite Horsebow Bow 25 7 5p 4 Cavalry Bow 3 0 6 sp 
-Composite Warbow Bow 30 7 6p 5 Cavalry Bow 2 0.5 8 sp 
-Horsebow Bow 20 7 4p 3 Cavalry Bow 3 0 2 sp 
-Longbow Bow 25 7 5p 4 - 0.5 3 sp 
+\begin{table}
+	\centering
+	\caption{Ammunition for Bows and Crossbows}
+	\label{tab:Ammunition for Bows and Crossbows}
+	\begin{tabu} spread 0pt {XX[2.5] X[-2,c] X[-2,l]}
+\rowfont[c]{}Ammunition Name&Special&Catch Chance&Cost\\\toprule
+Barbed Broadhead &Winged 2 &10/10 &4 sp/20\\
+Bodkin &+10 Range, Narrow &1/10 &1 sp/20\\
+Bludgeon/Stun &Bludgeon, Shock 2, -5 Range &0/10 &10 cp/20\\
+Broadhead &+1 Damage, Winged 2 &5/10 &2 sp/20\\
+Fire Arrow &-1 Damage, +1 Missile TN, -5 Range, Flaming 1 &5/10 &2 sp/20\\
+Heavy Broadhead &+2 Damage, Winged 2, -5 Range &5/10 &3 sp/20\\
+Lozenge-Head &-5 Range, AP 2 &2/10 &2 sp/20\\
+Swallowtail &-1 Required STR, Winged 1 &8/10 &4 sp/20\\
+	\end{tabu}
+\end{table}
 
-
-Warbow Bow 30 7 6p 6 - 0.5 4 sp 
-Zellish Wheelbow Bow 40 7 7p 5 - 3 5 gp 
-
- 
-Ammunition 
-
- 
-Table X.X Ammunition for Bows and Crossbows 
-Ammunition Name Special Catch Chance Cost 
-Barbed Broadhead Winged 2 10/10 4 sp/20 
-Bodkin +10 Range, Narrow 1/10 1 sp/20 
-Bludgeon/Stun Bludgeon, Shock 2, -5 Range 0/10 10 cp/20 
-Broadhead +1 Damage, Winged 2 5/10 2 sp/20 
-Fire Arrow -1 Damage, +1 Missile TN, -5 Range, Flaming 1 5/10 2 sp/20 
-Heavy Broadhead +2 Damage, Winged 2, -5 Range 5/10 3 sp/20 
-Lozenge-Head -5 Range, AP 2 2/10 2 sp/20 
-Swallowtail -1 Required STR, Winged 1 8/10 4 sp/20 
-
- 
-
-Crossbows 
+\subsection{Crossbows}
 Explain how weapons are used/what is required for it. 
+\begin{table} %CROSSBOWS LOOKS LIKE SHIT
+	\centering
+	\caption{Crossbows}
+	\label{tab:Crossbows}
+	\begin{tabu} to \linewidth {X[3] X *{4}{X[-2,c]}  X[4] *{2}{X[-2]}}
+		\rowfont[c]{} Weapon Name &Weapon Type & Range &Missile TN &Damage &Span &Spanning Tool &Wt &Cost\\\toprule
+Arbalest &Crossbow &20 &6 &10p &25 &Crank, Windlass &3 &2 gp\\
+Hand Crossbow &Crossbow &5 &5 &4p &2 &Lever, Screw &0 &5 sp\\
+Heavy Crossbow &Crossbow &15 &6 &8p &10 &Hand, Lever, Stirrup, Crank &2 &1 gp\\
+Hunting Crossbow &Crossbow &10 &6 &7p &6 &Hand, Lever, Stirrup &1 &15 sp\\
+Light Crossbow &Crossbow &10 &6 &6p &4 &Lever &1 &10 sp\\
+Manuballista/Samostrel &Crossbow &25 &10(7)\textasciitilde &15p &40 &Winch &5 &5 gp\\
+	\end{tabu}
+\vspace{5pt}	\caption*{\textasciitilde~This weapon’s Missile TN is 10 if it is fired while moving, standing normally, from a horse, and so on. In order to use TN 7, it must be Braced against the ground, a wall, on a stand or rest, and so on.}
+\end{table}
+\subsubsection{Ammunition}
+Bows and Crossbows use the same ammunition. Refer to \autoref{tab:Ammunition for Bows and Crossbows} under Bow - Ammunition. %COULD MAYBE USE REF TO BOW - AMMUNITION
 
- 
-Table X.X Crossbows 
-Weapon Name Weapon 
-Type 
-
-Range Missile 
-TN 
-
-Damage Span Spanning Tool Wt Cost 
-
-Arbalest Crossbow 20 6 10p 25 Crank, Windlass 3 2 gp 
-Hand Crossbow Crossbow 5 5 4p 2 Lever, Screw 0 5 sp 
-Heavy Crossbow Crossbow 15 6 8p 10 Hand, Lever, Stirrup, 
-Crank 
-
-2 1 gp 
-
-Hunting Crossbow Crossbow 10 6 7p 6 Hand, Lever, Stirrup 1 15 
-sp 
-Light Crossbow Crossbow 10 6 6p 4 Lever 1 10 
-sp 
-Manuballista/Samostrel Crossbow 25 10(7)~ 15p 40 Winch 5 5 gp 
-~ This weapon’s Missile TN is 10 if it is fired while moving, standing normally, from a horse, and so on. In order to use TN 7, it 
-must be Braced against the ground, a wall, on a stand or rest, and so on. 
-
- 
-
-Ammunition 
-Bows and Crossbows use the same ammunition. Refer to Table XX under Bow - Ammunition. 
-
- 
-
-
-Spanning Tools 
-
- 
-Table X.X Spanning Tools 
+Spanning Tools
+Table X.X Spanning Tools
 Spanning Tool Span TN Store Span Wt Cost 
 Crank (Crannequin) TN 7 Yes 0 1 sp 
 Hand TN 6 No 0 - 
@@ -5332,13 +5248,10 @@ Stirrup TN 4 No 1 5 cp
 Windlass TN 6 Yes 1 2 sp 
 Winch TN 5 Yes 2 3 sp 
 
- 
-
-Firearms 
+\subsection{Firearms}
 Explain how weapons are used/what is required for it. 
 
- 
-Table X.X Firearms 
+Table X.X Firearms
 Weapon Name Weapon Type Range Missile TN Damage Load Ammunition Wt Cost 
 Arquebus Firearm 10 7 6p 20 Ball, Shot 1 12 sp 
 Blunderbuss Firearm 3 6 6p 18 Ball, Heavy Shot 1 12 sp 
@@ -5355,8 +5268,6 @@ must be Braced against the ground, a wall, on a stand or rest, and so on.
  
 
 Ammunition 
-
- 
 Table X.X Ammunition for Firearms 
 Ammunition Name Special Catch Chance Cost 
 Ball AP 6 9/10 1 cp/10 
@@ -5835,59 +5746,52 @@ two prosthetic legs and a prosthetic forearm would add 3.
 There are also Enhancements that can be attached to limbs to increase their performance, also detailed in 
 the Burdinadin Armory. 
  
-\chapter{Shields}
+\chapter{Shields}\label{ch:Shields}
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
+\newpage
 Shields are typically held in a fighter’s off-hand, and are used to block, bind and bash in conjunction with 
 a proper weapon held in the dominant hand. 
 
 Shields have a long history, and come in a huge variety of shapes and compositions.
 
-\subsection{Shield Characteristics}%NEEDS PARAGRAPHS
-
-Shield Name 
+\section{Shield Characteristics}
+\paragraph{Shield Name}---\quad
 The variety of shield. Some of these are generalizations, as dozens of different cultures may have had 
 very minor permutations on the same shield design, but each called it something different. 
 
 
-Shield Bash TN/Damage
+\vspace{-10pt}\paragraph{Shield Bash TN/Damage}---\quad
 This number determines how effectively a shield can be used to bash or otherwise actively disrupt an opponent, and the amount of additional Bludgeoning damage it does on strike. Spiked shields, when used this way, inflict Piercing instead of Bludgeoning damage. The Bash TN is used in \nameref{man:SHIELD BASH}, and similar Maneuvers.
 
- 
-
-Block TN 
+\vspace{-10pt}\paragraph{Block TN}---\quad
 This number determines how effectively a shield can be used to block, deflect, or otherwise thwart 
 opponents. The Block TN is used in Block, and similar Maneuvers. 
 
- 
+\vspace{-10pt}\paragraph{AV}---\quad
+This determines the amount of passive AV applied to any body part covered by the shield when it is attacked. Certain effects can ignore shield AV or remove it temporarily from the body part. The AV 
+stated is the same for all damage types.
 
-AV 
-This determines the amount of passive AV applied to any body part covered by the shield when it is 
-attacked. Certain effects can ignore shield AV or remove it temporarily from the body part. The AV 
-stated is the same for all damage types. 
-Shield AV counts as Hard. 
+Shield AV counts as \nameref{par:Hard}.
 
- 
+\vspace{-10pt}\paragraph{Durability}---\quad
+Durability refers to the shield’s resistance to physical damage. If a shield suffers damage (from a \nameref{man:HEW}~Maneuver, or similar source) equal to its Durability, it is destroyed. Each time a shield sustains a \nameref{man:HEW}~attempt that does not destroy it, its Durability is permanently reduced by 2. Each time an attack of any 
+sort that lands on a Shield’s protected areas inflicts damage higher than the shield's Durability, Durability 
+is permanently reduced by 1.
 
-Durability 
-Durability refers to the shield’s resistance to physical damage. If a shield suffers damage (from a Hew 
-Maneuver, or similar source) equal to its Durability, it is destroyed. Each time a shield sustains a Hew 
-attempt that does not destroy it, its Durability is permanently reduced by 2. Each time an attack of any 
-sort that lands on a Shield’s protected areas inflicts damage higher than the shield’s Durability, Durability 
-is permanently reduced by 1. 
- 
-Coverage 
+\vspace{-10pt}\paragraph{Coverage} ---\quad
 Coverage represents the Hit Locations that are covered by the shield. Much like armor, when a shield is 
 carried on the arm, it provides AV equal to the amount listed in its AV column to the Hit Locations listed. 
 All shield AV stacks with regular armor AV. 
 
- 
-
-Weight 
+\vspace{-10pt}\paragraph{Weight}---\quad
 This is the weight added to encumbrance as long as the shield is carried on the arm. When a shield is held 
 on the back or belt, it does not add to effective weight. 
 
-Cost 
+\vspace{-10pt}\paragraph{Cost}---\quad
 The cost of the shield.
-
+\newpage
+\section{Shield List}
 \begin{longtabu} to \linewidth {X[2,l] X[c] *{3}{X[-1,c]} X[3] *{2}{X[-1,c]}}
 	\caption{Shields}
 	\label{tab:Shields}\\
@@ -5895,9 +5799,9 @@ Shield Name								&Bash TN&Block TN&AV&Dur.&Coverage& Wt.& Cost\\
 Buckler									&6(+0b)	&7	&8	&15	&Hand*, Forearm*&0&5 sp\\
 Oval Shield 							&7(+1b)	&7	&6	&10	&Hand*, Forearm* Elbow, Upper Arm, Shoulders, Neck, Chest, Sides, Belly, Hips, Groin, Thighs&1&2 sp\\
 Wooden Targe 							&7(+0b)	&7	&6	&10	&Hand, Forearm, Chest&0&10 cp\\
-Wicker Targe 							&7(-2b)	&7	&4	&6	&7(-2b) 7 4 6 Hand, Forearm, Chest&0& 0 2 cp\\
+Wicker Targe 							&7(-2b)	&7	&4	&6	&Hand, Forearm, Chest&0&2 cp\\
 Rodela 									&8(+0b)	&7	&8	&15	&Hand, Forearm, Elbow, Upper Arm, Chest, Side &1& 10 sp\\
-Bulletproof Rodela/Round Shield&8(+1b)	&7	&10	&20	& 7 10 20 Hand, Forearm, Elbow, Upper Arm, Chest, Side &2&2 30 sp\\
+Bulletproof Rodela/Round Shield&8(+1b)	&7	&10	&20	&Hand, Forearm, Elbow, Upper Arm, Chest, Side &2&30 sp\\
 Heater Shield 							&8(+0b)	&7	&6	&10	&Hand, Forearm, Elbow, Upper Arm, Shoulder, Chest, Side, Belly, Hip, Groin, Thigh&1&1 sp\\
 Kite Shield 							&9(+0b)	&7	&6	&10	&Hand, Forearm, Elbow, Upper Arm, Shoulder, Chest, Side, Belly, Hip, Groin, Thigh, Knee&2&2 sp\\
 Large Round Shield 						&8(+0b)	&7	&6	&10	&Hands, Forearm, Elbow, Upper Arm, Shoulders, Neck, Chest, Sides, Belly, Hips, Groin, Thighs&1&1 sp\\
@@ -5907,38 +5811,45 @@ Hand Pavise 							&9(+0b)	&7	&6	&12	&Hands, Forearm, Elbow, Upper Arm, Shoulder
 	\caption*{*As long as this shield's AV is in effect, it applies its AV to both hands and forearms}
 \end{longtabu}
 
-\chapter{Armor}
+\chapter{Armor}\label{ch:Armor}
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
 \clearpage
+\section{What Armor Should I Wear?}
 \begin{quote}
 	\centering
-	\emph{“If you have to choose one piece, get a helmet.” }
+	\emph{“If you have to choose one piece, get a helmet.”}
 \end{quote}
-\section{What Armor Should I Wear?}
 Before you proceed, there’s something you should know. There are dozens and dozens of armor pieces and types in 
 the section to follow. It’s very easy to be overwhelmed by the sheer number of choices you’re about to encounter. 
 
-Don’t hyperventilate. Remain calm. If sifting through \~150 armor pieces to custom-build your own outfit doesn’t 
+Don’t hyperventilate. Remain calm. If sifting through \textasciitilde150 armor pieces to custom-build your own outfit doesn’t
 appeal to you, we’ve got your back. Before this chapter details the many armor components available to you, there are
 Pre-made Armor Sets that you can choose from. These are full suits of armor (not including helmets) complete with 
 references for the total weight of the armor, how much it costs, what it protects and how well it protects it, as well as a description of the armor set.
 
-You’ll still have to pick a helmet, but that’s just one list.
+You’ll still have to pick a helmet, but that’s just one list, in \autoref{sec:Head and Neck Armor}
+
 [SIDEBAR] ARMORING TIPS %SIDEBAR?
 
 -Plate armor provides the highest protection, but many pieces have Weak Points that can be targeted by certain 
 maneuvers. It’s always smart to wear something beneath Plate.
+
 -Mail armor provides good coverage, but is weak against weapons with the Thin Blade quality.
+
 -Brigandine has no weaknesses, but is less protective against cutting than Mail or Plate.
--Padded armor is very useful against missiles, particularly when combined with a heavier armor. Most armors should 
-be worn with padding.
+
+-Padded armor is very useful against missiles, particularly when combined with a heavier armor. Most armors should be worn with padding.
+
 -Some weapons can severely reduce the effectiveness of armor, but none can completely ignore it through sheer 
 damage. It’s always good to be armored.
+
 -Any protection is better than nothing. If you have an exposed point, the enemy WILL attack it. 
--Partial armor is not terribly useful in melee combat, but since missile attacks land randomly, it is useful if you expect 
-to be shot at.
+
+-Partial armor is not terribly useful in melee combat, but since missile attacks land randomly, it is useful if you expect to be shot at.
+
 -Don’t do the Hollywood thing and not wear a helmet. The head is one of the easiest places to attack.
+
 -If you expect to be fighting on horseback, remember that leg armor’s weight is negated while riding!
 
 [END SIDEBAR]
@@ -5980,17 +5891,18 @@ The armor component’s armor value against cutting, piercing and bludgeoning da
 \subsection{Layering Armor}
 Armor can be layered (worn over other armor) within reason, but the AVs do not normally layer, unless otherwise 
 stated. However, layered armor always uses the highest AV of the layered pieces against any attack to that area. This is
-after factoring in Special Qualities like AP, Textile, Hard, Draw, Layer, and so on. 
+after factoring in Special Qualities like AP, Textile, Hard, Draw, Layer, and so on.
 Whichever Armor’s AV is used to defend against an attack, only that Armor’s Special Qualities (with the exception of 
 Layer) are in play for the purposes of that Attack. In the event of a tied AV, the wearer of the armor may choose which 
 Armor’s AV to use. The qualities of that Armor are then in play, all others are ignored.
+
 Example 1: An attack with Saber is made on a body part armored with Quilt and Mail armor. The Quilt’s AVC is only 
 2, whereas the Mail’s AVC is 6. The Mail’s AV is used, and so the Hard and Mail Qualities are also in play, while the 
 Textile Quality is not.
+
 Example 2: An attack is made with an Ahlspiess against a body part armored with Plate Armor and Mail. The Plate 
 Armor’s AVP is 7, while the Mail’s AVP is 4. The Plate Armor’s AVP of 7 is increased to 8 by the Mail, and is used 
-against the attack. The Ahlspiess’s Thin Blade Quality is not used, since the armor it is targeting is Plate, but its AP 
-Thrust of 3 is still in effect.
+against the attack. The Ahlspiess’s Thin Blade Quality is not used, since the armor it is targeting is Plate, but its AP Thrust of 3 is still in effect.
 
 \subsection{Underarmor}
 Realistically, no armor is worn on its own. Plate armor was usually worn with clothes specifically designed to pad the 
@@ -6286,7 +6198,7 @@ Quilted Long Sleeves& 2& 3& 4& Elbow, Forearm, Shoulder, Upper Arm& Textile& 0& 
 \end{longtabu}
 
 \section{Armor Components}
-\subsection{Head and Neck Armor}
+\subsection{Head and Neck Armor}\label{sec:Head and Neck Armor}
 \begin{longtabu}to \linewidth {X *{3}{X[-1,c]} X[2] X[2] *{3}{X[-1,c]}}
 	\caption{Helmets}
 	\label{tab:Helmets}\\
@@ -6316,12 +6228,11 @@ Tailed Sallet& 8& 7& 6& Face$\phi$, Lower Head*, Neck*, Shoulders*, Upper Head &
 Zischagge/ Szyszak& 8& 7& 6& Lower Head, Neck*, Shoulders*, Upper Head &Hard, +4 AV on Upper Head& 2.5& 0& 10 sp\\
 \end{longtabu}
 
-\subsubsection{\label{sec:Visors}Optional Visors}---\quad
+\subsubsection{\label{sec:Visors}Optional Visors}
 Any Helmet that does not cover the Face can be equipped with a visor, which can be chosen from the list below. The visor then becomes part of the helmet, applying AV and Coverage as normal. If a visor type covers more than the Face, it cannot be attached to any helmet that already covers any of those additional areas.
 
 \paragraph{\label{par:Movable Visors}Movable Visors}---\quad
-A visor can be opened or closed at will (in combat this requires an ADR test at RS 1, and 3 CP). When open, a visor ceases to provide any AV for the Hit Location, but also removes all PP and Weight penalties from the visor for as long as it is open. Closing a visor is much easier than opening one, and can be done with a sharp nod of the head (no ADR test, and only 1 CP while in combat). There is a darker side to this as well. Opening an enemy’s visor during a grapple 
-is easier than trying to pull off his helmet (see the Maneuvers section for more on grappling).
+A visor can be opened or closed at will (in combat this requires an ADR test at RS 1, and 3 CP). When open, a visor ceases to provide any AV for the Hit Location, but also removes all PP and Weight penalties from the visor for as long as it is open. Closing a visor is much easier than opening one, and can be done with a sharp nod of the head (no ADR test, and only 1 CP while in combat). There is a darker side to this as well. Opening an enemy’s visor during a grapple is easier than trying to pull off his helmet (see the \nameref{ch:Maneuvers}~chapter for more on grappling).
 
 \begin{longtabu} to \linewidth {X *{3}{X[-1,c]} X[2] X[2] *{3}{X[-1,c]}}
 	\caption{Visors}
@@ -6663,7 +6574,7 @@ Plate Barding& 8& 7& 6& Horse& -& 12& 30 gp\\
 		\subitem +1,000\% Cost
 \end{itemize}
 
-\chapter{Burdinadin Armory} %BURD ARMORY NEEDS DOING
+\chapter{Burdinadin Armory}\label{ch:Burdinadin Armory} %BURD ARMORY NEEDS DOING
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
 \clearpage
@@ -6730,10 +6641,15 @@ Extreme (Schwarzvald, The Spirit Realm)& 20\\
 \subsection{Burdinadin Armor}
 Words around creating your own armor set by mixing and matching components.
 
-Table X.X Burdinadin Headgear
-Armor AVC AVP AVB Coverage Special Wt. PP Cost 
-Burdinadin Helmet 10 9 8 Upper Head, Lower Head Hard, Insulation 2, Augmentations (1) 3 -1 3gp
-Burdinadin Respirator Mask 10 9 8 Face$\phi$ Hard, Insulation 2, Augmentations (1) 1 -1 1gp 
+\begin{table}[!ht]
+	\caption{Burdinadin Headgear}
+	\label{tab:Burdinadin Headgear}
+	\begin{tabu} to \linewidth {X[2] *{3}{X[-1,c]} X[3]X[4] *{3}{X[-2,c]}}
+Armor &AVC &AVP &AVB &Coverage &Special &Wt. &PP &Cost\\\toprule
+Burdinadin Helmet&10&9&8&Upper Head, Lower Head&Hard, Insulation 2, Augmentations (1)&3&-1&3 gp\\
+Burdinadin Respirator Mask &10 &9 &8 &Face$\phi$ &Hard, Insulation 2, Augmentations (1)&1&-1&1 gp\\
+	\end{tabu}
+\end{table}
 
 \begin{longtabu} to \linewidth {X[2] *{3}{X[-2,c]} X[3]X[4] *{2}{X[-2,c]}}
 \caption{Burdinadin Plate Armor}
@@ -7074,7 +6990,7 @@ operate the gun as though they had already performed an Aim Maneuver.
 Cost: 10 gp 
 Fitted To: Ranged Weapon 
  
-\chapter{Other Items} %OTHER ITEMS NEED DOING
+\chapter{Other Items}\label{ch:Other Items} %OTHER ITEMS NEED DOING
  
 
 I feel there needs to be an introduction of sorts here. Why are we buying other items? 
@@ -8201,7 +8117,6 @@ Fling [Superior]
 \clearpage
 Maneuvers are essentially ‘moves’ used in combat. They can range from parrying a blow to firing a pistol and swinging an axe. Most Maneuvers involve devoting CP dice to them, and then rolling these as an attack or a defense against an Opponent. Some have more subtle effects, like changing the way a weapon is held, distracting or blinding an Opponent, or maneuvering around them in combat.
 
-
 Maneuvers are divided into simple categories based on what they do, and when they can be used. For example, Parry is a Defense Weapon Maneuver, because it involves parrying an attack with a weapon. A Lance Charge is an Attack Mounted Weapon Maneuver, since it involves a kind of attack that can only be performed when mounted with a weapon. Most Maneuvers will require the character be wielding an appropriate weapon, which is listed in the Requirements section of each Maneuver.
 
 
@@ -8375,7 +8290,7 @@ Unarmed Attack, a Weapon Maneuver in this category is a Weapon Attack, etc.)
 
 \subsection{Weapon Attack Maneuvers}
 \paragraph{\large\label{man:BEAT} BEAT}---\quad{\large[X]}
-\begin{description}
+\vspace{-10pt}\begin{description}
 \item [Type:] Universal, Swinging
 \item [Requirements:] Have a weapon with a Swing TN. It must be the Round immediately after Orientation Declaration, and you must have declared Aggressive.
 \item [Maneuver:] Swinging Weapon Attack at Swing TN of weapon, targeting Opponent weapon or shield with X dice. Halve all Reach costs for this Maneuver. For the purpose of Initiative tests involving this Maneuver, Reach costs are not factored into the Initiative roll. 
@@ -8386,7 +8301,7 @@ Unarmed Attack, a Weapon Maneuver in this category is a Weapon Attack, etc.)
 \emph{Vladock is having trouble getting past his opponent’s spear. He declares a Beat with 8 dice. His opponent declares a Void with 7. Vladock gets 3 BS to his opponent’s 2, and so beats aside his opponent’s weapon and costs him 1 Stun. Vladock can now make an attack in the next Action without fear of being counter-attacked by the spear, since it cannot be used for anything. He’ll still have to pay Range costs, but at least it’s a safe bet instead of a dangerous move. }
 \end{quotation}
 
-\paragraph{\large\label{man:BREAK}BREAK}---\quad{\large[X+2]}
+\paragraph{\large\label{man:BREAK}BREAK}---\quad{\large[X$ + $2]}
 	\vspace{-10pt}
 \begin{description}
 	\item[Type:] Universal, Swinging
@@ -8427,7 +8342,7 @@ Langetted/Reinforced Spear/Polearm&12 \\
 \end{description}
 
 \paragraph{\large\label{man:DACIAN RUSH}DACIAN RUSH }---\quad{\large[2+X+Y]}
-\begin{description}
+\vspace{-10pt}\begin{description}
 \item [Type:] Advanced, Attack, Thrusting 
 \item [Requirements:] Have a Dagger. If Opponent declares a Quickdraw, you may treat this Maneuver as an Instant that occurs before their Quickdraw.
 \item [Maneuver:] Unarmed Attack at Hand Reach with X at Hand Blind TN 7 vs Opponent PER at TN 7. If Opponent has declared a Quickdraw, it is delayed until after this Action is completed. Any defense declared against this Maneuver is not resolved against the Hand Blind, but against the Thrust to follow. Success [Hand Blind]: Opponent suffers [BS] Stun. If a Quickdraw was declared, it is cancelled. You may immediately roll a Thrust Attack with Y as normal. Any non-Weapon Defense against your Thrust Attack is resolved at +2 TN.
@@ -8440,7 +8355,7 @@ Langetted/Reinforced Spear/Polearm&12 \\
 \end{quotation}
 
 \paragraph{\large\label{man:DEEP DRAW CUT} DEEP DRAW CUT}---\quad{\large[0]}
-\begin{description}
+\vspace{-10pt}\begin{description}
 \item [Type:] Advanced, Attack, Swinging 
 \item [Requirements:] Wielding a weapon which inflicts Cutting damage on Swing. 
 \item [Maneuver:] Declare a Swing Attack as normal, but decrease the Reach of the weapon by one step (Medium to Short, Short to Hand, and so on) paying Reach costs for the new Reach if necessary. Reduce the number of BS needed to trigger Draw Cut with this Swing by 1.
@@ -8451,7 +8366,7 @@ Langetted/Reinforced Spear/Polearm&12 \\
 \end{quotation}
 
 \paragraph{\large\label{man:DISARM} DISARM}---\quad{\large[X+1]}
-\begin{description}
+\vspace{-10pt}\begin{description}
 \item [Type:] Universal, Attack, Swinging or Punching 
 \item [Requirements:] None 
 \item [Maneuver:] Swinging Weapon Attack at Weapon Reach at Parry TN, OR Punching Unarmed Attack at Hand Reach at Punch TN 6, targeting Opponent weapon. 
@@ -8466,14 +8381,14 @@ Parry with 5. Dusan scores 3 successes to Mirza’s 2. Mirza must now make an AG
 \end{quotation}
 
 \paragraph{\large\label{man:FEINT} FEINT}---\quad{\large[2+Variable]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Instant 
 \item [Requirements:] Activate after having declared a Swinging or Thrusting Maneuver, and after any other Maneuvers have been declared, but before any are resolved. You may only activate this Maneuver from a Thrusting Maneuver if the weapon being used has the Fluid Thrusts quality. 
 \item [Maneuver:] When activated, change either the type of the attack (to either a Swinging or Thrusting Maneuver) or (if the Maneuver targets an area) the Hit Location of the attack (Face to Chest, Chest to Upper Arm, etc.). You may elect to change both if applicable, but you must choose at least one. You may pay 2 dice to add 1 dice to this attack, as many times as you can afford. Additionally, your opponent suffers a +1 TN to any Defense made against this Attack unless he plays 2 CP.
 \end{description}
 
 \paragraph{\large\label{man:HALF-SWORD} HALF-SWORD}---\quad{\large[1]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Advanced, Instant 
 \item [Requirements:] Have any Sword without the Light Blade special rule. 
 \item [Maneuver:] This weapon is now Half-Swording. Reduce the Reach of your weapon by 1 stage, and reduce Swing damage by 2. If the weapon being used was 1H with Hand-Off, it is now 2H. If it was 2H, it remains 2H. When performing a Joint Thrust Maneuver while Half-Swording, your weapon counts as having the Thin Blade rule, if it did not previously, and the damage of the Joint Thrust is made at [Weapon Damage+STR+BS] instead of [Weapon Damage+Half STR+BS]. Additionally, Pommel Strike Maneuvers performed while Half-Swording inflict +1 damage. You may deactivate this Maneuver instantly and at no cost before an Action. The weapon immediately regains its original characteristics and loses all bonuses. This Maneuver can be activated instantly before declaring another Maneuver. This Maneuver cannot be activated and deactivated in the same Action.
@@ -8481,7 +8396,7 @@ Parry with 5. Dusan scores 3 successes to Mirza’s 2. Mirza must now make an AG
 based on its 2H version, regardless of whether the Maneuver was activated from 1H or 2H mode. 
 \end{description}
 \paragraph{\large\label{man:HEW} HEW}---\quad{\large[0]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Swinging 
 \item [Requirements:] Have a weapon with a Swing TN. 
 \item [Maneuver:] Swinging Weapon Attack at Weapon Reach, at Weapon Swing TN targeting Opponent shield.
@@ -8491,7 +8406,7 @@ based on its 2H version, regardless of whether the Maneuver was activated from 1
 \end{description}
 
 \paragraph{\large\label{man:HOOK} HOOK}---\quad{\large[1]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Swinging OR Thrusting 
 \item [Requirements:] Have a weapon with the Hook quality. 
 \item [Maneuver:] Swinging Weapon Attack at Weapon Reach at Weapon Swing TN, OR Thrusting Weapon 
@@ -8507,7 +8422,7 @@ effectively falls after being pulled from saddle.
 \end{description}
 
 \paragraph{\large\label{man:JOINT THRUST} JOINT THRUST}---\quad{\large[X+2]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Thrusting 
 \item [Requirements:] Wielding a weapon with a Thrust value that inflicts piercing damage. 
 \item [Maneuver:] Thrusting Weapon Attack at Weapon Reach with X dice, rolled at Thrust TN+1, aimed at Hit 
@@ -8527,7 +8442,7 @@ does benefit from AP Thrust [X], and also from rules like Thin Blade’s AP Thru
 \end{description}
 
 \paragraph{\large\label{man:MELEE SHOOT} MELEE SHOOT}---\quad{\large[X+Variable]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Thrusting 
 \item [Requirements:] Have a loaded/spanned Bow, Crossbow or Firearm ready in the hand, or declare this 
 Maneuver with Quickdraw on a holstered/slung loaded Bow, Crossbow or Firearm. 
@@ -8544,7 +8459,7 @@ When rolling an Initiative test to determine attack order while making a Melee S
 roll 1 additional die in the test. 
 \end{description}
 \paragraph{\large\label{man:MURDER-STRIKE} MURDER-STRIKE}---\quad{\large[2]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Advanced, Instant 
 \item [Requirements:] Have a 1H or 2H Sword with base Guard Value 2 (custom modification bonuses don’t 
 count). Have two hands available to hold the weapon. This Maneuver can only be activated if you have 
@@ -8562,7 +8477,7 @@ these changes.
 to its normal stats. 
 \end{description}
 \paragraph{\large\label{man:POMMEL STRIKE} POMMEL STRIKE}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Advanced, Attack, Thrusting 
 \item [Requirements:] Have a 1H or 2H Sword or any other weapon with a pommel. 
 \item [Maneuver:] Thrusting Weapon Attack at H Reach at Thrust TN 6, aimed on Thrusting Attack Table. 
@@ -8574,7 +8489,7 @@ Pommel Strike, add +1 to its damage, as explained in the Half-Sword maneuver.
 \end{description}
 
 \paragraph{\large\label{man:PUSH CUT} PUSH CUT}---\quad{\large[X+1]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Thrusting 
 \item [Requirements:] You have a weapon with both a Thrust TN, and a Swing TN that inflicts cutting damage. 
 \item [Maneuver:] Thrusting Weapon Attack at Weapon Reach, rolled at Thrust TN, aimed on the Thrusting 
@@ -8587,7 +8502,7 @@ This attack inflicts Draw damage.
 \item [Superior:] When performing a Push Cut, reduce the number of BS needed to trigger Draw by 1.
 \end{description}
 \paragraph{\large\label{man:QUICKDRAW} QUICKDRAW}---\quad{\large[1]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Instant 
 \item [Requirements:] Have a weapon that you want drawn, and have the capacity to draw it. This Maneuver can only be activated if no other Maneuvers have been used first.
 \item [Maneuver:] When activated, roll ADR at 1 RS per Reach level of the weapon past H Reach. This is instant, and does not resolve in Initiative. H Reach weapons automatically succeed. Weapon with greater than L Reach cannot be Quickdrawn.
@@ -8613,7 +8528,7 @@ Large Bow &6 \\
 \end{table}
 
 \paragraph{\large\label{man:SWING} SWING}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Swinging 
 \item [Requirements:] Wielding a weapon with a Swing TN. 
 \item [Maneuver:] Weapon Attack at Weapon Reach with X dice rolled at Swing TN, aimed on the Swinging 
@@ -8624,7 +8539,7 @@ weapon’s Swing damage type.
 an amount equal to the number of CP spent. 
 \end{description}
 \paragraph{\large\label{man:THRUST} THRUST}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Thrusting 
 \item [Requirements:] Wielding a weapon with a Thrust value. 
 \item [Maneuver:] Weapon Attack at Weapon Reach with X dice, rolled at Thrust TN, aimed on the Thrusting 
@@ -8638,7 +8553,7 @@ pay X+2 additional CP to make another Thrust with X dice as part of the same Act
 normal. The Opponent may only use Quick Defense against this Maneuver. 
 \end{description}
 \paragraph{\large\label{man:WEAPON THROW} WEAPON THROW}---\quad{\large[X+1]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Thrusting 
 \item [Requirements:] Have a Throwing Weapon. 
 \item [Maneuver:] Thrusting Weapon Attack at current Combat Range with X dice at the Missile TN of the 
@@ -8665,7 +8580,7 @@ successes. The hammer slams into the spearman’s face, and he collapses into a 
 
 \subsection{Unarmed Attack Maneuvers}
 \paragraph{\large\label{man:CLINCH (ATTACK)} CLINCH (ATTACK)}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Defense, Grappling 
 \item [Requirements:] Must have limbs. 
 \item [Maneuver:] Grappling Attack at HA Reach with X dice at Clinch TN 8. 
@@ -8689,15 +8604,13 @@ would render one of those in the Grapple unable to be targeted by the other does
 would remove the character from combat does so. 
 If, at the end of an Action, you are neither Trapping nor Pinning an Opponent's body part, the Grapple 
 ends. By default, when the Grapple ends, the two characters remain at HA Reach. 
-\item [Failure:] If Parried or Blocked, you suffer a Swing, Thrust, or Shield Bash (depending on the 
-Parrying/Blocking device, at the GM's discretion) to your arms (left 1-3, right 4-6), chest (7-8) or head (9-
-10) without BS. 
+\item [Failure:] If Parried or Blocked, you suffer a Swing, Thrust, or Shield Bash (depending on the Parrying/Blocking device, at the GM's discretion) to your arms (left 1-3, right 4-6), chest (7-8) or head (9-10) without BS.
 \item [Superior:] Clinch resolves at Clinch TN 7. 
 \end{description}
 
 
 \paragraph{\large\label{man:ELBOW} ELBOW}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Unarmed 
 \item [Requirements:] An arm with which to strike. This can be done while holding a weapon, at the GM's 
 discretion. 
@@ -8716,7 +8629,7 @@ head with 12 dice. He rolls 8 successes to the defenseless fool, and inflicts ST
 \end{quotation}
 
 \paragraph{\large\label{man:HEADBUTT} HEADBUTT}---\quad{\large[X+1]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Unarmed 
 \item [Requirements:] None. No hands required. 
 \item [Maneuver:] Unarmed Attack at HA Reach with X dice at Headbutt TN 6 at either Face or Chest Target 
@@ -8730,7 +8643,7 @@ Head with dice equal to half of Defense successes from shield used.
 back upon it from this attack, and the Headbutt instead inflicts [STR+0+BS] Damage. 
 \end{description}
 \paragraph{\large\label{man:HOOK PUNCH} HOOK PUNCH}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Unarmed, Punching 
 \item [Requirements:] Have a hand with which to strike. This can be done while holding a weapon, at GM's 
 discretion. 
@@ -8747,7 +8660,7 @@ If aiming a Hook Punch below the waist, Activation Cost increases by 1.
 \item [Superior:] Your punches now inflict an additional +1 damage, and inflict 2 Shock. 
 \end{description}
 \paragraph{\large\label{man:KICK} KICK}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Unarmed 
 \item [Requirements:] Have an available leg to Kick. 
 \item [Maneuver:] Unarmed Attack at S Reach with X dice at Kick TN 8 at Target Zone on the Thrusting or 
@@ -8774,7 +8687,7 @@ barrel of his blunderbuss, and\ldots}
 \end{quotation}
 
 \paragraph{\large\label{man:KNEE} KNEE}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Unarmed 
 \item [Requirements:] Have an available leg to Knee. 
 \item [Maneuver:] Unarmed Attack at HA Reach with X dice at Knee TN 7 at Target Zone on the Thrusting 
@@ -8788,7 +8701,7 @@ Zone currently Trapped in a Clinch. If wearing metal knee-armor, add +1 to damag
 \end{description}
 
 \paragraph{\large\label{man:ONE-TWO PUNCH} ONE-TWO PUNCH}---\quad{\large[X+2]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Advanced, Attack, Unarmed, Punching 
 \item [Requirements:] Have two hands with which to strike. This can be done while holding a weapon or 
 weapons, at GM’s discretion. 
@@ -8805,7 +8718,7 @@ the costs again.
  
 
 \paragraph{\large\label{man:SHOULDER CHARGE} SHOULDER CHARGE}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Unarmed 
 \item [Requirements:] Be at Medium range or further to your target. 
 \item [Maneuver:] Unarmed Attack at HA Reach, at Shoulder Charge TN 6 at Target Zone on the Thrusting 
@@ -8819,7 +8732,7 @@ equal to half of Defense successes from Parrying weapon or shield.
  
 
 \paragraph{\large\label{man:STRAIGHT PUNCH} STRAIGHT PUNCH}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Unarmed, Punching 
 \item [Requirements:] Have an available hand to Punch. This can be done while holding a weapon, at the GM's 
 discretion. 
@@ -8840,7 +8753,7 @@ If aiming a Straight Punch below the waist, Activation Cost increases by 1.
 \end{description}
 \subsection{Shield Attack Maneuvers}
 \paragraph{\large\label{man:SHIELD BASH} SHIELD BASH}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Bash 
 \item [Requirements:] Have a shield. 
 \item [Maneuver:] Bashing Shield Attack with X dice at H Reach at Shield Bash TN at Target Zone on 
@@ -8860,7 +8773,7 @@ to take this guy down.}
 \end{quotation}
 
 \paragraph{\large\label{man:SHIELD BEAT} SHIELD BEAT}---\quad{\large[X+2]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Bash 
 \item [Requirements:] Have a shield. 
 \item [Maneuver:] Bashing Shield Attack at Shield Bash TN targeting Opponent shield or weapon. 
@@ -8872,7 +8785,7 @@ cannot Block with your shield in the next Action. This does not change the Reach
 Maneuver with the same Shield Beat, and both effects occur if the Maneuver is successful. 
 \end{description}
 \paragraph{\large\label{man:SHIELD FEINT} SHIELD FEINT}---\quad{\large[1]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack 
 \item [Requirements:] Have a shield, make an attack with another weapon. 
 \item [Maneuver:] Spend Activation Cost to change declared attack from current one to a Shield Bash 
@@ -8889,7 +8802,7 @@ Shield Bash.}
 
 \subsection{Special Attack Maneuvers}
 \paragraph{\large\label{man:BLIND TOSS} BLIND TOSS}---\quad{\large[X+Variable]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack 
 \item [Requirements:] Have something to throw in-hand or within quick and easy reach (hat, scarf, cloak, sand, 
 dirt, etc) must be at EL Reach or shorter. 
@@ -8915,7 +8828,7 @@ raised pistol with a thumb. Alas, poor Goofus\ldots}
 
 
 \paragraph{\large\label{man:STRANGLE} STRANGLE}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Clinching 
 \item [Requirements:] Are behind an Opponent, either through stealth, Outmaneuver, and so on. Have two arms 
 (hands optional), a wire/cord, some sort of bar, or any other potential strangling device. 
@@ -8929,7 +8842,7 @@ maintain the Strangle as normal in the coming rounds.
 \section{Defense Maneuvers}
 \subsection{Parry Defense Maneuvers}
 \paragraph{\large\label{man:DISARM (DEFENSE)} DISARM (DEFENSE)}---\quad{\large[X+2]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Defense, Parrying 
 \item [Requirements:] Have a weapon, device or anything with a Defense TN. 
 \item [Maneuver:] Defense at X with Defense TN. 
@@ -8937,10 +8850,10 @@ maintain the Strangle as normal in the coming rounds.
 the targeted weapon is removed from the Opponent's grasp, and either retained by you, dropped at your 
 feet, or thrown several yards away at your discretion. 
 \item [Failure:] Opponent attack is not reduced by Successes from this Maneuver, and hits with all Successes as 
-BS. 
+BS.
 \end{description}
 \paragraph{\large\label{man:PARRY} PARRY}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Defense, Parrying 
 \item [Requirements:] Have a weapon, device or anything with a Defense TN. 
 \item [Maneuver:] Defense with X at Defense TN. If you are using this Maneuver without Initiative, declare it 
@@ -8959,7 +8872,7 @@ does not apply here.
 \end{description}
 
 \paragraph{\large\label{man:QUICK DEFENSE} QUICK DEFENSE}---\quad{\large[2]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Defense, Instant 
 \item [Requirements:] You may declare this Maneuver in response to having any attack declared at you, 
 regardless of whether or not you have already declared Maneuvers for this Action. You must have some 
@@ -8972,7 +8885,7 @@ However, the Defensive Maneuvers chosen cannot be used more times than normally 
 \end{description}
 
 \paragraph{\large\label{man:Riposte} Riposte}---\quad{\large[2+X]}
-\begin{description}
+\vspace{-10pt}\begin{description}
 \item [Advanced:] 1H Sword, 2H Sword, Polearm, Spear, 1H Blunt, 2H Blunt %this is not following the standard format
 \item [Requirement:] Have a weapon with a Parry TN and a Strike or Cut TN. 
 \item [Maneuver:] Parry-Like Defense with X at Weapon Parry TN. 
@@ -8991,7 +8904,7 @@ attack as normal.
 
 \subsection{Unarmed Defense Maneuvers}
 \paragraph{\large\label{man:ARM PARRY} ARM PARRY}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Defense, Parrying 
 Requirement: Have a free arm that extends (at least) to the forearm (prosthetics can be used for this) with 
 which to Parry. This arm can not be holding or wearing a shield. 
@@ -9013,7 +8926,7 @@ of Superior.
 Refer to \nameref{man:CLINCH (ATTACK)}, as the Maneuver is mechanically the same.
 
 \paragraph{\large\label{man:MISSILE CATCH} MISSILE CATCH}---\quad{\large[2+X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Defense 
 \item [Requirements:] Either you or someone adjacent to you is being attacked with a thrown missile weapon, 
 and you have at least one unused hand. 
@@ -9027,7 +8940,7 @@ half BS. If the missile was aimed at someone else, the attack simply resolves.
 \end{description}
 \subsection{Block Defense Maneuvers}
 \paragraph{\large\label{man:BLOCK} BLOCK}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Defense, Blocking 
 \item [Requirements:] A shield or other item with a Block TN. 
 \item [Maneuver:] Block with X dice at Block TN. If you are using this Maneuver without Initiative, declare it 
@@ -9038,7 +8951,7 @@ attacks to defend against.
 \end{description}
 
 \paragraph{\large\label{man:SHIELD BIND} SHIELD BIND}---\quad{\large[X+1]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Advanced, Defense, Blocking 
 \item [Requirements:] Have a shield, and Opponent is using weapon of M Reach or longer. 
 \item [Maneuver:] Blocking Defense at Block TN. 
@@ -9048,7 +8961,7 @@ Action. You cannot Block with your shield in the next Action.
 opponent up to BS. 
 \end{description}
 \paragraph{\large\label{man:TOTAL BLOCK} TOTAL BLOCK}---\quad{\large[Half Maximum CP]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Defense, Blocking 
 \item [Requirements:] Have a Shield. Only usable in first Action of a Round. If it is First Action, only usable if 
 you declared Defensive. 
@@ -9060,7 +8973,7 @@ declare Total Block you cannot declare any attack during this Action for any rea
 \end{description}
 \subsection{Void Defense Maneuvers}
 \paragraph{\large\label{man:CLOSING VOID} CLOSING VOID}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Defense, Void 
 \item [Requirements:] None. 
 \item [Maneuver:] Void Defense at TN 8 with X. 
@@ -9075,7 +8988,7 @@ Fatigue Rules Only: You may choose to gain [2+ENC Penalty] Fatigue when performi
 base of 7. Additional factors (Talents, Schools, and so on) may reduce this further. 
 \end{description}
 \paragraph{\large\label{man:DART-OUT} DART-OUT}---\quad{\large[X+ENC Penalty]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Defense, Void 
 \item [Requirements:] None. 
 \item [Maneuver:] Void Defense at TN 8 with X. 
@@ -9090,7 +9003,7 @@ Fatigue Rules only: You may choose to gain [2+ENC Penalty] Fatigue when performi
 base of 7. Additional factors (Talents, Schools, and so on) may reduce this further. 
 \end{description}
 \paragraph{\large\label{man:FLEE} FLEE}---\quad{\large[X+ENC Penalty]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Defense, Void 
 \item [Requirements:] Have not declared an Attack in either this or the previous Action. If it is the first Round 
 of the Bout, must have chosen Defensive Orientation. 
@@ -9106,7 +9019,7 @@ Fatigue (multiply this as you would normal Fatigue Gain!) that are applied immed
 \end{description}
 
 \paragraph{\large\label{man:TAKE COVER} TAKE COVER}---\quad{\large[X+ENC Penalty]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Defense, Void 
 \item [Requirements:] The ability to move. This Maneuver can be used defensively against an Opponent attack, 
 or passively to assume a defensive position against future attacks. 
@@ -9148,7 +9061,7 @@ Stone wall& 24\\
 \end{table}
 
 \paragraph{\large\label{man:VOID} VOID}---\quad{\large[X+ENC Penalty]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Defense, Void 
 \item [Requirements:] None. 
 \item [Maneuver:] Void Defense with X dice at TN 8. 
@@ -9166,11 +9079,10 @@ that he is unencumbered, Gallant elects to take 2 Fatigue and reduce the TN of h
 avoid having his head smashed in.}
 \end{quotation}
 
- 
 
 \subsection{Special Defense Maneuvers}
 \paragraph{\large\label{man:PASS (DO NOTHING)} PASS (DO NOTHING)}---\quad{\large[None]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Defense 
 \item [Requirements:] None. You may ALWAYS choose to Pass. 
 \item [Maneuver:] You do nothing this Action. As you are undergoing no activity, you count as idle for purposes 
@@ -9181,7 +9093,7 @@ Maneuver.
 \section{Cross-Fighting Maneuvers}
 \subsection{Attack Cross-Fighting Maneuvers}
 \paragraph{\large\label{man:CLEAVING BLOW} CLEAVING BLOW}---\quad{\large[2]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Swinging 
 \item [Requirements:] Wielding a weapon with a Swing TN, facing multiple opponents that are valid Opponents 
 for you. 
@@ -9198,7 +9110,7 @@ Reach weapon, 6 times for a VL Reach weapon, and so on).
  
 
 \paragraph{\large\label{man:TARGET CHANGE} TARGET CHANGE}---\quad{\large[1]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack 
 \item [Requirements:] Facing multiple Opponents that are valid targets for you. 
 \item [Maneuver:] Spend 1 to change target to a new valid Opponent immediately upon declaring this 
@@ -9206,7 +9118,7 @@ Maneuver. You may then declare Maneuvers normally against this new Opponent.
 \end{description}
 \subsection{Defense Cross-Fighting Maneuvers}
 \paragraph{\large\label{man:ALLY DEFENSE} ALLY DEFENSE}---\quad{\large[2]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Defense 
 \item [Requirements:] Facing multiple Opponents that are valid targets for you, at least one of which is 
 launching an attack that is directed at a character other than you. 
@@ -9218,7 +9130,7 @@ may choose to target you.
 \section{Simultaneous Maneuvers}
 \subsection{General Simultaneous Maneuvers}
 \paragraph{\large\label{man:DOUBLE ATTACK} DOUBLE ATTACK}---\quad{\large[X+Y+1]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack
 \item [Requirements:] Have two weapons.
 \item [Maneuver:] Declare a Weapon Attack Maneuver with your primary hand weapon (X), and an off-hand 
@@ -9228,7 +9140,7 @@ must be defended against separately.
 \end{description}
 
 \paragraph{\large\label{man:DOUBLE SHOT} DOUBLE SHOT}---\quad{\large[X+Y+2]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack 
 \item [Requirements:] Have two single-handed shooting missile weapons (Firearm or Crossbow) that are loaded 
 and ready to shoot. 
@@ -9238,7 +9150,7 @@ weapon (Y). These Maneuvers resolve simultaneously, and must be defended against
 [X+Y+1] 
 \end{description}
 \paragraph{\large\label{man:SIMULTANEOUS BLOCK/ATTACK} SIMULTANEOUS BLOCK/ATTACK}---\quad{\large[X+Y]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Blocking 
 \item [Requirements:] Have both a shield and a weapon. 
 \item [Maneuver:] Declare a Weapon Attack Maneuver (X) and a Blocking Maneuver with your weapon and 
@@ -9250,7 +9162,7 @@ If you are using this Maneuver without Initiative, declare your Block and your A
 and resolve them at Initiative. 
 \end{description}
 \paragraph{\large\label{man:SIMULTANEOUS OFF-HAND PARRY/ATTACK} SIMULTANEOUS OFF-HAND PARRY/ATTACK}---\quad{\large[X+Y+2]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Parrying 
 \item [Requirements:] Have two arms with which to attack, weapons optional. 
 \item [Maneuver:] Declare a Weapon OR Unarmed Attack Maneuver (X) with one of your arms/weapons, and a 
@@ -9264,7 +9176,7 @@ and resolve them at Initiative.
 \item [Special:] If a character has the Ambidextrous Boon, this Maneuver’s Activation Cost is reduced to [X+Y]. 
 \end{description}
 \paragraph{\large\label{man:SIMULTANEOUS PARRY/ATTACK} SIMULTANEOUS PARRY/ATTACK}---\quad{\large[X+Y+2]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Advanced, Attack, Parrying 
 \item [Requirements:] Have a weapon. 
 \item [Maneuver:] Declare a Weapon Attack Maneuver (X) and a Parry Maneuver (Y) with the same weapon 
@@ -9279,7 +9191,7 @@ to your Attack roll. If used with Initiative, and there is no attack incoming af
 may add up to half of the Parry dice you set aside to your Attack instead of returning them to your CP. 
 \end{description}
 \paragraph{\large\label{man:SIMULTANEOUS VOID/ATTACK} SIMULTANEOUS VOID/ATTACK}---\quad{\large[X+Y+2]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Void 
 \item [Requirements:] None. 
 \item [Maneuver:] Declare an Attack Maneuver (X) and a Void Manuever (Y), dividing dice between the two. 
@@ -9300,7 +9212,7 @@ Remember, a character’s MP is normally equal only to their Proficiency with th
 be increased with Talents, and with the Aim Maneuver below. 
 \subsection{General Missile Maneuvers}
 \paragraph{\large\label{man:AIM} AIM}---\quad{\large[0]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Missile 
 \item [Requirements:] Have missile weapon that is ready to shoot or fling. 
 \item [Maneuver:] Spend Action aiming at visible target. No roll is required, failure is only possible if you are 
@@ -9311,7 +9223,7 @@ an Aim bonus equal to your PER to your MP for that attack.
 \end{description}
 \subsection{Shooting Missile Maneuvers}
 \paragraph{\large\label{man:BRACED SHOT} BRACED SHOT}---\quad{\large[???????]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Advanced, Missile, Shooting 
 \item [Requirements:] Have a shooting weapon that can be fired from a rest, and a rest ready to be used. A 
 portable gun rest can be used in conjunction with this action, but a fence, table, crenellation, mantlet, 
@@ -9326,7 +9238,7 @@ horseback or while mounted, barring unusual circumstances (you are riding an ele
 carriage with a gun rest, or you are riding a camel with a harness-mounted musket on a pivot). 
 \end{description}
 \paragraph{\large\label{man:POWER DRAW} POWER DRAW}---\quad{\large[???????]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Advanced, Missile, Shooting 
 \item [Requirements:] Bows only. This Maneuver can only be used if your STR is at least 1 point higher than 
 the Required STR of the bow being used. 
@@ -9345,7 +9257,7 @@ sufficient to destroy the weapon, it does so, and the attack hits the defender a
 before making the Power Draw to increase damage by an amount equal to MP spent. 
 \end{description}
 \paragraph{\large\label{man:RAPID SHOT} RAPID SHOT}---\quad{\large[???????]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Missile, Shooting 
 \item [Requirements:] Have a bow, or a missile weapon with multiple ‘shots’ (any regular bow, double-barreled 
 pistol, revolver, multi-prod crossbow, repeating crossbow). 
@@ -9356,7 +9268,7 @@ declare more Shoot Maneuvers than the number allowed by your weapon, or 5 in the
 \item [Superior:] Each shot after the first now reduces your total MP by 1 instead of 2. 
 \end{description}
 \paragraph{\large\label{man:RELOAD} RELOAD}---\quad{\large[???????]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Missile 
 \item [Requirements:] Have a shooting weapon that requires reloading (firearm or crossbow) that is unloaded. 
 Have ammunition with which to reload it. 
@@ -9367,7 +9279,7 @@ reaches its Load or Span requirement, it is now loaded and ready to be used.
 Cavalry Bow special quality do not reduce this penalty. 
 \end{description}
 \paragraph{\large\label{man:SHOOT} SHOOT}---\quad{\large[???????]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Missile, Shooting 
 \item [Requirements:] Have a Bow, Crossbow or Firearm that is ready to shoot or be loosed. 
 \item [Maneuver:] Shooting Missile Attack with MP-1 per Range increment at Missile TN. 
@@ -9413,7 +9325,7 @@ Target is Figthing an Ally in Melee:& -6 MP \\
 
 \subsection{Throwing Missile Maneuvers}
 \paragraph{\large\label{man:DOUBLE FLING} DOUBLE FLING}---\quad{\large[???????]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Missile, Throwing 
 \item [Requirements:] Have Throwing Weapons in either hand that are ready to be thrown. Slings cannot be 
 used for this Maneuver. The weapons must be of the same general type (javelins, knives, hammers/axes, 
@@ -9425,7 +9337,7 @@ Flings resolve as normal, but with the half-1 MP.
 increase damage by 1 damage per MP spent. 
 \end{description}
 \paragraph{\large\label{man:FLING} FLING}---\quad{\large[???????]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Missile, Throwing 
 \item [Requirements:] Have a Throwing Weapon that is ready to be thrown. 
 \item [Maneuver:] Missile Attack with full MP-1 per Range increment at Missile TN. 
@@ -9443,7 +9355,7 @@ Disadvantage tag.
 
 \subsection{Advantage Grapple Maneuvers}
 \paragraph{\large\label{man:GRAPPLING: CHOKE} GRAPPLING: CHOKE}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Grapple, Advantage 
 \item [Requirements:] Grappling, have Advantage, Opponent's head is Trapped or Pinned. 
 \item [Maneuver:] Grapple Attack at HA Range at Choke TN 7 with X dice. 
@@ -9468,7 +9380,7 @@ maintaining it increases to TN 8. Garrotes cannot be used over characters with s
 \end{description}
 
 \paragraph{\large\label{man:GRAPPLING: COUP DE GRACE} GRAPPLING: COUP DE GRACE}---\quad{\large[X+2]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Grapple, Advantage, Thrusting 
 \item [Requirements:] Grappling, have Advantage, wielding a weapon of S Reach or shorter with an arm that is 
 not Trapped, Pinned or Locked. This weapon must inflict piercing damage on the Thrust. 
@@ -9484,7 +9396,7 @@ used has Thin Blade, make this Attack at -1 TN. It is possible to benefit from b
 Blade simultaneously when making this Attack. 
 \end{description}
 \paragraph{\large\label{man:GRAPPLING: LIMB-BREAK} GRAPPLING: LIMB-BREAK}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Grapple, Advantage 
 \item [Requirements:] Grappling, have Advantage, at least one of Opponent's body parts are Trapped. 
 \item [Maneuver:] Grapple Attack at HA Reach on Trapped body part at Break TN of body part with X dice 
@@ -9498,7 +9410,7 @@ making it more effective.
 \item [Superior:] Break damage is increased by 2. 
 \end{description}
 \paragraph{\large\label{man:GRAPPLING: PIN} GRAPPLING: PIN}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Grapple, Advantage 
 \item [Requirements:] Grappling, have Advantage, at least one of Opponent's body parts is Trapped. 
 \item [Maneuver:] Grapple Attack at HA Reach on Trapped body part at Pin TN 8 with X dice. 
@@ -9509,7 +9421,7 @@ the limb that is Pinned was being used in a Maneuver, then Pin also inflicts Sho
 release them. 
 \end{description}
 \paragraph{\large\label{man:GRAPPLING: TAKEDOWN} GRAPPLING: TAKEDOWN}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Grapple, Advantage 
 \item [Requirements:] Grappling, have Advantage. 
 \item [Maneuver:] Grapple Attack at HA Reach at Takedown TN 8 with X dice. 
@@ -9517,7 +9429,7 @@ release them.
 fighter with Advantage gains a -1 bonus to all Maneuver TNs while retaining it. 
 \end{description}
 \paragraph{\large\label{man:GRAPPLING: THROW} GRAPPLING: THROW}---\quad{\large[X+2]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Grapple, Advantage 
 \item [Requirements:] Grappling, have Advantage. 
 \item [Maneuver:] Grapple Attack at HA Reach at Throw TN 7 with X dice. 
@@ -9532,7 +9444,7 @@ The +2 Activation Cost for throwing on the ground includes the penalty for being
 \item [Superior:] You may re-roll on the Falling Table to see where damage is inflicted. 
 \end{description}
 \paragraph{\large\label{man:GRAPPLING: TRAP} GRAPPLING: TRAP}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Grapple, Advantage 
 \item [Requirements:] Grappling, have Advantage. 
 \item [Maneuver:] Grapple Attack at HA Reach at Trap TN 7 with X dice, targeting head, right arm, left arm, 
@@ -9548,7 +9460,7 @@ release them.
 \end{description}
 \subsection{Disadvantage Grapple Maneuvers}
 \paragraph{\large\label{man:GRAPPLING: SLIP} GRAPPLING: SLIP}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Grapple, Disadvantage 
 \item [Requirements:] Grappling. 
 \item [Maneuver:] Grapple Defense at Slip TN 6 with X dice. 
@@ -9561,7 +9473,7 @@ is on the ground, both characters are Prone.
 \end{description}
 
 \paragraph{\large\label{man:GRAPPLING: TWIST} GRAPPLING: TWIST}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Grapple, Disadvantage 
 \item [Requirements:] Grappling. 
 \item [Maneuver:] Grapple Defense at Twist TN 7 with X dice. 
@@ -9574,7 +9486,7 @@ is on the ground, both characters are Prone.
 \end{description}
 \subsection{General Grapple Maneuvers}
 \paragraph{\large\label{man:GRAPPLING: BITE} GRAPPLING: BITE}---\quad{\large[X+1]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Grapple, Unarmed 
 \item [Requirements:] Grappling. Must have teeth. Cannot have a visor or other armor covering the face. No 
 hands required. You do not need to have Advantage to perform this Maneuver, but it resolves after the 
@@ -9590,7 +9502,7 @@ This attack does not suffer the increased Activation Cost for ground fighting.
 \end{description}
 
 \paragraph{\large\label{man:GRAPPLING: FORCE} GRAPPLING: FORCE}---\quad{\large[X+1]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Grapple 
 \item [Requirements:] Grappling, have one body part currently Trapped or Pinned. You do not need to have 
 Advantage to perform this Maneuver, but it resolves after the character with Advantage's Maneuver, and 
@@ -9603,7 +9515,7 @@ Maneuver, and is immune to the normal cumulative +1 TNs.
 \end{description}
 
 \paragraph{\large\label{man:GRAPPLING: UNARMED ATTACK} GRAPPLING: UNARMED ATTACK}---\quad{\large[??????]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] XXXXXXXX 
 \item [Requirements:] XXXXXXXX 
 \item [Maneuver:] XXXXXXXX 
@@ -9611,7 +9523,7 @@ Maneuver, and is immune to the normal cumulative +1 TNs.
 \item [Special:] XXXXXXXX 
 \end{description}
 \paragraph{\large\label{man:GRAPPLING: USE WEAPON} GRAPPLING: USE WEAPON}---\quad{\large[??????]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] XXXXXXXX 
 \item [Requirements:] XXXXXXXX 
 \item [Maneuver:] XXXXXXXX 
@@ -9621,7 +9533,7 @@ Maneuver, and is immune to the normal cumulative +1 TNs.
 \section{Hilt Push Maneuvers}
 \subsection{Advantage Hilt Push Maneuvers}
 \paragraph{\large\label{man:HILT PUSH} HILT PUSH}---\quad{\large[2]}
-\begin{description}
+\vspace{-10pt}\begin{description}
 \item [Type:] Universal, Instant 
 \item [Requirements:] Activate Hilt Push under any of the following circumstances, in descending order of 
 priority. If your opponent does not declare a Hilt Push when they have a higher priority “trigger” for this 
@@ -9683,7 +9595,7 @@ Hilt Push: Butt-Strike*
 Hilt Push: Shoulder Charge 
 \end{description}
 \paragraph{\large\label{man:Hilt Push: Lever Down} Hilt Push: Lever Down}---\quad{\large[2+X]}
-\begin{description}
+\vspace{-10pt}\begin{description}
 \item [Type:]
 \item [Requirements:] Be in the Push 
 \item [Maneuver:] Push Attack with X at Weapon Parry TN. 
@@ -9693,7 +9605,7 @@ reduced by Opponent BS, and resolves at full BS. The Maneuver still reduces Oppo
 \end{description}
 
 \paragraph{\large\label{man:Hilt Push: Evasion*} Hilt Push: Evasion*}---\quad{\large[2+Encumbrance+X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] 
 \item [Requirements:] Be in the Push. 
 \item [Maneuver:] Void with X at TN 8. 
@@ -9706,7 +9618,7 @@ reduced by Opponent BS, and resolves at full BS. The Maneuver still reduces Oppo
 XXXXXXXXXXXXXXXXXXXXXX 
 
 \paragraph{\large\label{man:OUTMANEUVER} OUTMANEUVER}---\quad{\large[X+2+Encumbrance Penalty]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Mobility, Instant 
 \item [Requirements:] You and at least one other Character are Targeting an Opponent. Activate this Maneuver 
 before declaring an Action. You may not perform this Maneuver while Prone. 
@@ -9723,8 +9635,8 @@ At GM’s discretion, the Battlefield TN can be lower for the defender than the 
 if the defending character is in a defensible position like a doorway or a breach in a wall where getting 
 past him to outflank him would be more difficult. 
 \end{description}
-\paragraph{\large\label{man:RAPID RISE} RAPID RISE}---\quad{\large[3+(Encumbrance Penalty*2)]}
-\begin{description} 
+\paragraph{\large\label{man:RAPID RISE} RAPID RISE}---\quad{\large[3$+ (\mathrm{Encumbrance~Penalty}\times2) $]}
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Mobility, Instant 
 \item [Requirements:] Must be Prone. Declare this Maneuver before declaring Maneuvers for this Action. You 
 may not Activate this Maneuver if you are currently suffering from any Wound that has the Auto 
@@ -9735,11 +9647,9 @@ Knockdown tag.
 ended, and if you have not been affected by a Stability test or Auto-prone, you are no longer Prone.
 \end{description}
 \paragraph{\large\label{man:SLIP-ABOUT} SLIP-ABOUT}---\quad{\large[X+Encumbrance Penalty+Special]}
-\begin{description} 
-\item [Type:] Universal, Mobility, Instant 
+\vspace{-10pt}\begin{description} \item [Type:] Universal, Mobility, Instant 
 \item [Requirements:] None. Declare this Maneuver before declaring Maneuvers for this Action. 
-\item [Maneuver:] Pay CP equal to Opponent Mobility. Roll X+Mobility vs Battlefield Terrain TN. Opponent 
-rolls Mobility at Battlefield TN. 
+\item [Maneuver:] Pay CP equal to Opponent Mobility. Roll X$ + $Mobility vs Battlefield Terrain TN. Opponent rolls Mobility at Battlefield TN. 
 \item [Success:] You are now Outflanking the Target, and the Target Un-Targets you. This condition does not 
 require an ally, and ends at the end of the Action. 
 \item [Special:] Performing this Action increases your Fatigue Gain for this Round by 1. 
@@ -9748,7 +9658,7 @@ if the defending character is in a defensible position like a doorway or a breac
 past him to outflank him would be more difficult. 
 \end{description}
 \paragraph{\large\label{man:STEAL INITIATIVE} STEAL INITIATIVE}---\quad{\large[X+Opponent Per]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] XXXXXX 
 \item [Requirements:] Don't have Initiative. 
 \item [Maneuver:] Roll an Initiative Contest against target, with all normal modifiers. You may spend X extra 
@@ -9758,7 +9668,7 @@ CP, and add 1 die to your Initiative Roll for every 3 extra CP spent.
 The Activation Cost of Steal Initiative is equal to the target's modified Perception score, plus optional X. 
 \end{description}
 \paragraph{\large\label{man:THREAD THE NEEDLE} THREAD THE NEEDLE}---\quad{\large[X+Y+Encumbrance Penalty]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Mobility, Instant 
 \item [Requirements:] Multiple Adversaries. Activate this Maneuver before Actions are declared in a Round. 
 You may not perform this Maneuver while Prone. 
@@ -9773,7 +9683,7 @@ continue Targeting this Opponent.
 \section{Mounted Maneuvers}
 \subsection{Attack Mounted Maneuvers}
 \paragraph{\large\label{man:LANCE CHARGE} LANCE CHARGE}---\quad{\large[X+2] (RS 3 Ride Check)}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Mounted 
 \item [Requirements:] Charging into a Bout while mounted, have a weapon with the Couched Charge quality. 
 \item [Maneuver:] Attack at Weapon Reach with X, rolled at Weapon Thrust TN, aimed on the Thrust Table. 
@@ -9789,7 +9699,7 @@ but you lose all CP devoted to Lance Charge.
 \end{description}
 
 \paragraph{\large\label{man:MOUNT BITE} MOUNT BITE}---\quad{\large[2] (RS 4 Ride Check)}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Mounted 
 \item [Requirements:] In a Bout, Mounted, Mount has a Bite attack. 
 \item [Maneuver:] Mount makes Unarmed Attack at Medium Reach with Horse’s Full CP at Bite TN 6 aimed on 
@@ -9801,7 +9711,7 @@ Thrusting Hit Location.
 \end{description}
 
 \paragraph{\large\label{man:MOUNT KICK} MOUNT KICK}---\quad{\large[2] (RS 3 Ride Check)}
-\begin{description}
+\vspace{-10pt}\begin{description}
 \item [Type:] Universal, Attack, Mounted 
 \item [Requirements:] In a Bout, Mounted, Mount has a Kick attack. 
 \item [Maneuver:] Mount makes Unarmed Attack at Long Reach with Full CP at Kick TN 7 aimed on the Thrust 
@@ -9812,7 +9722,7 @@ Thrust Location.
 \end{description}
 \subsection{Defense Mounted Maneuvers}
 \paragraph{\large\label{man:DISENGAGE} DISENGAGE}---\quad{\large[??????]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] XXXXXX 
 \item [Requirements:] XXXXXX 
 \item [Maneuver:] XXXXXX 
@@ -9820,7 +9730,7 @@ Thrust Location.
 \end{description}
 
 \paragraph{\large\label{man:LEAN} LEAN}---\quad{\large[X+Encumbrance Level] (RS 2 Ride Check)}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Mounted, Void 
 \item [Requirements:] Mounted, you are being attacked above the Waist. 
 \item [Maneuver:] Void at Lean TN 8 with X. Make a Ride Check. 
@@ -9833,7 +9743,7 @@ maneuver (Multiply this as you would normal Fatigue!) If you do, the TN of the m
 1, to a base of 7. Additional factors (Talents, Schools, etc) may reduce this further.
 \end{description}
 \paragraph{\large\label{man:MOUNT DODGE} MOUNT DODGE}---\quad{\large[2] (RS 2 Ride Check)}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Mounted, Void 
 \item [Requirements:] Mounted, either your Horse or your own body beneath the Waist is being attacked. 
 \item [Maneuver:] If Successful, Horse rolls full CP to Void at Horse Dodge TN 7 against Opponent Attack. 
@@ -9842,7 +9752,7 @@ maneuver (Multiply this as you would normal Fatigue!) If you do, the TN of the m
 \end{description}
 \subsection{Passing Mounted Maneuvers}
 \paragraph{\large\label{man:RIDE-BY} RIDE-BY}---\quad{\large[2] (RS 3 Ride Check)}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Mounted 
 \item [Requirements:] Charging into a Bout while mounted. Declare this Maneuver in addition to any other 
 Maneuver. It is always resolved after all other Maneuvers, and can be used in combination with any 
@@ -9859,7 +9769,7 @@ the weapon, or Quickdraw.
 Horse Crash as detailed in the Mounted Combat section.
 \end{description}
 \paragraph{\large\label{man:TRAMPLE} TRAMPLE}---\quad{\large[4] (RS 4 Ride Check)}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Mounted 
 \item [Requirements:] Charging into a Bout while mounted, declare this maneuver in addition to any other 
 Maneuver. It is always resolved after all other Maneuvers, and can be used in combination with any 
@@ -9876,7 +9786,7 @@ a Horse Crash as detailed in the Mounted Combat section!
 \section{Dog Maneuvers}
 \subsection{Attack Dog Maneuvers}
 \paragraph{\large\label{man:DOG BITE} DOG BITE}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Dog 
 \item [Requirements:] Be Dog (or Wolf, Hyena, or similar animal using Dog rules) and have teeth not 
 constrained by a muzzle. 
@@ -9900,7 +9810,7 @@ A Dog remains Grabbing the affected character until any of the following circums
 \end{itemize}
 \end{description}
 \paragraph{\large\label{man:SAVAGE} SAVAGE}---\quad{\large[X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Dog 
 \item [Requirements:] Be Dog (or Wolf, Hyena, or similar animal using Dog rules) and have teeth not 
 constrained by a muzzle. Be currently Grabbing a Target. 
@@ -9912,13 +9822,14 @@ Stability Test at RS 2+BS or be rendered Prone. If already Prone, Target takes [
 This Attack does not end a Grab. 
 \end{description}
 \paragraph{\large\label{man:TACKLE} TACKLE}---\quad{\large[2+X]}
-\begin{description} 
+\vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Dog 
 \item [Requirements:] Be Dog (or Wolf, Hyena, or similar animal using Dog rules). 
 \item [Maneuver:] Unarmed Attack at Half-Hand Reach with X at Furious Dog Tackle TN 5. 
 \item [Success:] Opponent suffers [BS] Stun, and must make a Stability Test at RS 2+BS or be rendered Prone 
 and suffer Falling Damage as though having fallen Feet equal to [5+Dog Strength+BS.] 
 \end{description}
+
 \chapter{Talents}\label{ch:Talents} %TALENTS NEED DOING
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
@@ -10480,23 +10391,16 @@ continue moving.
 
 
 \section{\label{sec:exhaustion}Exhaustion}
-
- 
-Exhaustion \& Fatigue
-
+\subsection{Exhaustion \& Fatigue}
 As characters exerts themselves physically, either in combat or other strenuous activities like running, 
 jumping or severe lifting, fatigue will begin to set in. 
-
- 
 
 -side bar- 
 [Fatigue rules add another layer of realism to combat, but also another layer of complexity. These 
 should be considered Optional Rules, and can be safely ignored in campaigns with new players, 
 those more interested in heroic action, and those who wish to keep bookkeeping to a minimum.] 
 
- 
-
-Fatigue Points 
+\subsubsection{Fatigue Points}
 At the end of each Round, while in combat, all characters in the combat who acted in the previous Round 
 gain one Fatigue point. Encumbrance and Environmental effects can increase this amount (being in 
 Medium Encumbrance, for example, causes a character to gain double the normal number of Fatigue). 
@@ -10505,36 +10409,34 @@ additional 1x to Fatigue Gain per point of the quality (i.e. Constricts Breathin
 Gain.). If the visor/whatever is raised, then it has no effect. Once a character reaches the amount of 
 Fatigue to move to the next level of Exhaustion, they suffer penalties until they’ve had a chance to rest. 
 
- 
-
 Additionally, any Wound inflicts Fatigue equal to the level of the Wound, regardless of what sort of 
 Wound it is. Some Wounds will inflict additional Fatigue, and Blood Loss, with its ability to reduce 
 Health, can also effect Fatigue. 
 
- 
+\begin{table}
+	\centering
+	\caption{Fatigue Level}
+	\label{tab:Fatigue Level}
+	\begin{tabu} spread 0pt {X X *{3}{X[-1,c]}}
+Fatigue Level &Exhaustion Level &CP Penalty &Mobility Penalty &Skill Penalty\\\toprule
+(0 to 5)+HLT &Fresh &0 &0 &0\\
+(6 to 10)+HLT&Winded&-1 &-1 &-1\\
+(11 to 15)+HLT &Tired &-2 &-2 &-2\\
+(16 to 20)+HLT &Very Tired &-4 &-4 &-4\\
+(21 to 25)+HLT &Exhausted &-6 &-6 &-6\\
+	\end{tabu}
+\end{table}
 
-Table X.X Fatigue Level 
-Fatigue Level Exhaustion Level CP Penalty Mobility Penalty Skill Penalty 
-0 to 5+HLT Fresh 0 0 0 
-6 to 10+HLT Winded -1 -1 -1 
-
-
-11 to 15+HLT Tired -2 -2 -2 
-16 to 20+HLT Very Tired -4 -4 -4 
-21 to 25+HLT Exhausted -6 -6 -6 
-
- 
-Resting 
+\paragraph{Resting}---\quad
 A character who takes no Actions during a Bout Cycle (or who only takes Actions that do not cause 
 Fatigue) loses Fatigue equal to his Endurance score, modified by his Encumbrance level (see Recovery 
-Speed). Full-Face Helmets and Visors halve a character’s Endurance for this purpose, unless lifted or 
-removed (see Movable Visors later in this section for more details.) 
+Speed). Full-Face Helmets and Visors halve a character’s Endurance for this purpose, unless lifted or
+removed (see \nameref{par:Movable Visors}~in \autoref{par:Movable Visors}~for more details.)
 Sitting down and having a drink adds 2 to a character’s effective Endurance (after Encumbrance) for the 
 purposes of Resting. 
 
- 
 
-Wearing Armor Long-Term 
+\subsubsection{Wearing Armor Long-Term}
 Fighting in armor is one thing, but living in armor is quite another. Wearing armor for long periods of 
 time, such as while traveling, performing everyday tasks, or especially while sleeping, istiresome and 
 uncomfortable. 
@@ -10544,7 +10446,6 @@ If an individual sleeps in armor, the armor’s effective Weight doubles for the
 Generally people who expected to be wearing armor all the time wore lighter and more comfortable stuff, 
 so that as the day dragged on it would not reduce their performance as much. 
 
- 
 
 [Sidebar: Comfortable Armoring] 
 Wealthier aristocrats and warriors who had heavier armor usually wouldn’t just walk around in it, they 
@@ -10554,8 +10455,6 @@ little problem.
 [End Sidebar] 
 
 Fatigue 
-
- 
 
 Lighting 
 
@@ -10818,7 +10717,7 @@ they do not roll for Orientation--rather they gain initiative automatically over
 combat.
 
 \subsection{Maneuver Resolution}
-Maneuvers are resolved as detailed in their descriptions in Chapter XX, however the basic concepts will
+Maneuvers are resolved as detailed in their descriptions in \autoref{ch:Maneuvers}, however the basic concepts will
 be repeated here.
 As an example, the Thrust Maneuver’s description:
 \paragraph{\large THRUST}---\quad{\large[X]}
@@ -10839,6 +10738,8 @@ invested into the Maneuver (X) at the Thrust TN of the weapon they are using to 
 location on the Thrusting Attack Table, as shown on Table XX in this chapter. If successful, this attack
 deals the amount of damage described in the Success section (STR+the weapon’s thrust damage
 rating+any Successes above the enemy Defense).
+
+
 Defense works similarly, let’s look at the Block Maneuver’s description:
 \paragraph{\large BLOCK}---\quad{\large[X]}
 Type: Universal, Defense, Blocking
@@ -10880,31 +10781,30 @@ and either use the General Action Phase, or engage in another Bout by using the 
 At the end of the Round, if Targets are alive and present, whichever character currently has Initiative may
 choose to either Disengage or Lock.
 
-\begin{itemize}
-\item [Lock:] The characters engaged in the Bout are still `in combat,' and continue fighting in the next
-Round. As they are still engaged, they may not participate in the General Action Phase between
-Rounds.
-\item [Disengage:] The characters are no longer in combat, and the Encounter ends.
+\subparagraph{Lock:}
+The characters engaged in the Bout are still `in combat,' and continue fighting in the next Round. As they are still engaged, they may not participate in the General Action Phase between Rounds.
+\subparagraph{Disengage:}
+The characters are no longer in combat, and the Encounter ends.
 If Targets are unavailable because they are dead, incapacitated, or escaped, then the Encounter ends.
 Characters who were engaged in a Bout that ended due to it being Disengaged or Targets being
 unavailable are able to Engage in other existing Bouts, if they are within move distance. They will be able
 to use the General Action Phase so long as they are unengaged.
-\end{itemize}
 
-Encounter Ends
+\paragraph{Encounter Ends}
 When all Bouts have resolved, through surrender, death or flight, the Encounter ends and characters may
 interact normally.
 
 
 \section{Combat Concepts}
-Combat Pool (CP)
+\subsection{Combat Pool (CP)}
 CP (melee weapons) = (ADR+Proficiency Pool+Misc)-(Encumbrance+Fatigue+Pain+Misc)
+
 CP (ranged weapons) = (Proficiency Pool+Misc)=(Encumbrance+Fatigue+Pain+PER Penalty+Misc)
+
 CP represents a character's skill with the weapon they’re using, and is used to activate and power
 Maneuvers of all sorts. It is determined by a character's ADR score (melee only) combined with their
-Proficiency Pool; thus a character who is quicker and better trained will have a higher score than one who
-is slower and less experienced.
-CP can be reduced by a character's Encumbrance, their injuries or exhaustion, PER penalties from
+Proficiency Pool; thus a character who is quicker and better trained will have a higher score than one who is slower and less experienced.
+CP can be reduced by a character's Encumbrance, their injuries or exhaustion, PER penalties from %HOW DO PERCEPTION PENALTIES APPLY?
 headgear, and other miscellaneous factors. Because CP refreshes at the beginning of every Round, not
 between Actions, it is important for a character to keep careful track of how much CP they use in the first
 Action, so as to have some left over for the second Action.
@@ -10912,136 +10812,139 @@ Maximum CP is a character's ADR (melee only), Proficiency Pool, School Bonus, Bo
 any miscellaneous bonuses that apply when Maximum CP is called for, minus the character's
 Encumbrance Penalty, Exhaustion Penalty, Pain, and any miscellaneous penalties that apply when
 Maximum CP is called for.
-
-\section{Target Zones and Hit Locations}
-When a character is hit by an attack, there are two key aspects of the hit that need to be noted: the Target Zone (which is the general area of the body that the attack hits) and the Hit Location (which is the precisepoint of the body that is hit).
-
-Each Target Zone contains three to four Hit Locations, which are listed below. Swinging, thrusting and missile attacks have different Target Zones available to them.
-
-If an attack hits, roll 1d10 to decide the Hit Location that the attack actually lands on, and then calculate damage based on the following formula:
-[Total Damage (Maneuver Damage + Miscellaneous)] versus [Total Defense (TOU+AV of appropriate damage type + Miscellaneous)]
-If the Total Damage exceeds the Total Defense, the result is a Wound of a level equal to the excess damage. The amount of damage done is then applied on the Wound charts located in \autoref{ch:Damage Tables}
-Attacks and Missing Limbs
-If the Target is missing a body part or limb on the Target Zone that is being attacked, and the roll dictates
-that that Hit Location would be hit, the attack automatically misses and has no effect.
-Which Thigh, Though?
-When declaring an attack against an arm or a leg, or even when attacking the neck, be sure to declare
-which limb, or from which side the cut is made from, in the case of neck or torso cuts. Obviously if you
-aim for the right arm, all of the hit results should be on that arm. The same applies when making a cut to
-the neck and hitting the shoulder; specify which side you’re attacking.
-However, when making downwards or upwards swings, you may hit a shoulder or the thigh. But which
-one?
-Here’s an easy way to decide, if you don’t feel like flipping a coin: fighters tend to lead with the dominant
-side of their bodies when fighting, so if an opponent is right-handed, and you land a hit on his thigh with
-an upwards swing, you probably hit him on his right thigh.
-Alternatively, flip a coin or roll for it. GMs, be sure to be consistent about this sort of thing!
-
-	\subsection{Swinging Target Zones}
-	\begin{longtabu}spread 0pt{XX}
-		\caption{Swinging Attacks}
-		\label{tab:Swinging Hit Locations}\\
-		\rowfont[c]{}Target Zone&Hit Locations\\\toprule
-		\multirow{4}{*}{Downwards Head Swing}
-		&	1-3: Shoulder\\
-		&	4-5: Lower Head\\
-		&	6-7: Face\\
-		&	8-10 Upper Head\\
-		\\
-		\multirow{4}{*}{Upwards Head Swing}
-		&	1-3: Chest\\
-		&	4-5: Neck\\
-		&	6-8: Lower Head\\
-		&	9-10: Face\\
-		\\
-		\multirow{4}{*}{Neck Swing}
-		&	1-3: Shoulder\\
-		&	4-6: Neck\\
-		&	7-8: Lower Head\\
-		&	9-10: Face\\
-		\\
-		\multirow{3}{*}{Torso Swing (Horizontal)}
-		&	1-3: Belly\\
-		&	4-7: Side\\
-		&	8-10: Chest\\
-		\\
-		\multirow{3}{*}{Upper Arm Swing}
-		&	1-3: Elbow\\
-		&	4-7: Upper Arm\\
-		&	8-10: Shoulder\\
-		\\
-		\multirow{3}{*}{Lower Arm Swing}
-		&	1-3: Hand\\
-		&	4-7: Forearm\\
-		&	8-10: Elbow\\
-		\\
-		\multirow{3}{*}{Upper Leg Swing}
-		&	1-3: Knee\\
-		&	4-7: Thigh\\
-		&	8-10: Hip\\
-		\\
-		\multirow{3}{*}{Lower Leg Swing}
-		&	1-3: Foot\\
-		&	4-7: Shin\\
-		&	8-10: Knee\\
-		\\
-		\multirow{3}{*}{Upwards Groin Swing}
-		&	1-3: Thigh\\
-		&	4-7: Groin\\
-		&	8-10: Belly\\
-	\end{longtabu}
-	
-	\subsection{Thrusting Target Zones}
-	\begin{longtabu}spread 0pt{XX}
-		\caption{Thrusting Attacks}
-		\label{tab:Thrusting Hit Locations}\\
-		\rowfont[c]{}Target Zone&Hit Locations\\\toprule
-		\multirow{3}{*}{Head}
-		&	1-3: Neck\\
-		&	4-7: Face\\
-		&	8-10: Upper Head\\
-		\\
-		\multirow{3}{*}{Neck}
-		&	1-3: Chest\\
-		&	4-7: Neck\\
-		&	8-10: Face\\
-		\\
-		\multirow{4}{*}{Chest}
-		&	1-3: Belly\\
-		&	4-7: Chest\\
-		&	8-9: Shoulder\\
-		&	10: Neck\\
-		\\
-		\multirow{4}{*}{Belly}
-		&	1: Groin\\
-		&	2: Hip\\
-		&	3-7: Belly\\
-		&	8-10: Chest\\
-		\\
-		\multirow{3}{*}{Upper Arm}
-		&	1-3: Elbow\\
-		&	4-7: Upper Arm\\
-		&	8-10: Shoulder\\
-		\\
-		\multirow{3}{*}{Lower Arm}
-&	1-3: Hand\\
-&	4-7: Forearm\\
-&	8-10: Elbow\\
-		\\
-\multirow{3}{*}{Groin}
-&	1-3: Thigh\\
-&	4-7: Groin\\
-&	8-10: Belly\\
-		\\
-\multirow{3}{*}{Upper Leg}
-&	1-3: Knee\\
-&	4-7: Thigh\\
-&	8-10: Hip\\
-		\\
-\multirow{3}{*}{Lower Leg}
-&	1-3: Foot\\
-&	4-7: Shin\\
-&	8-10: Knee\\
-\end{longtabu}
+%BEGIN_FOLD %EXTRA target zone shit
+%\section{Target Zones and Hit Locations}
+%When a character is hit by an attack, there are two key aspects of the hit that need to be noted: the Target Zone (which is the general area of the body that the attack hits) and the Hit Location (which is the precisepoint of the body that is hit).
+%
+%Each Target Zone contains three to four Hit Locations, which are listed below. Swinging, thrusting and missile attacks have different Target Zones available to them.
+%
+%If an attack hits, roll 1d10 to decide the Hit Location that the attack actually lands on, and then calculate damage based on the following formula:
+%
+%[Total Damage (Maneuver Damage + Miscellaneous)] versus [Total Defense (TOU+AV of appropriate damage type + Miscellaneous)]
+%
+%If the Total Damage exceeds the Total Defense, the result is a Wound of a level equal to the excess damage. The amount of damage done is then applied on the Wound charts located in \autoref{ch:Damage Tables}
+%Attacks and Missing Limbs
+%If the Target is missing a body part or limb on the Target Zone that is being attacked, and the roll dictates
+%that that Hit Location would be hit, the attack automatically misses and has no effect.
+%Which Thigh, Though?
+%When declaring an attack against an arm or a leg, or even when attacking the neck, be sure to declare
+%which limb, or from which side the cut is made from, in the case of neck or torso cuts. Obviously if you
+%aim for the right arm, all of the hit results should be on that arm. The same applies when making a cut to
+%the neck and hitting the shoulder; specify which side you’re attacking.
+%However, when making downwards or upwards swings, you may hit a shoulder or the thigh. But which
+%one?
+%Here’s an easy way to decide, if you don’t feel like flipping a coin: fighters tend to lead with the dominant
+%side of their bodies when fighting, so if an opponent is right-handed, and you land a hit on his thigh with
+%an upwards swing, you probably hit him on his right thigh.
+%Alternatively, flip a coin or roll for it. GMs, be sure to be consistent about this sort of thing!
+%
+%	\subsection{Swinging Target Zones}
+%	\begin{longtabu}spread 0pt{XX}
+%		\caption{Swinging Attacks}
+%		\label{tab:Swinging Hit Locations}\\
+%		\rowfont[c]{}Target Zone&Hit Locations\\\toprule
+%		\multirow{4}{*}{Downwards Head Swing}
+%		&	1-3: Shoulder\\
+%		&	4-5: Lower Head\\
+%		&	6-7: Face\\
+%		&	8-10 Upper Head\\
+%		\\
+%		\multirow{4}{*}{Upwards Head Swing}
+%		&	1-3: Chest\\
+%		&	4-5: Neck\\
+%		&	6-8: Lower Head\\
+%		&	9-10: Face\\
+%		\\
+%		\multirow{4}{*}{Neck Swing}
+%		&	1-3: Shoulder\\
+%		&	4-6: Neck\\
+%		&	7-8: Lower Head\\
+%		&	9-10: Face\\
+%		\\
+%		\multirow{3}{*}{Torso Swing (Horizontal)}
+%		&	1-3: Belly\\
+%		&	4-7: Side\\
+%		&	8-10: Chest\\
+%		\\
+%		\multirow{3}{*}{Upper Arm Swing}
+%		&	1-3: Elbow\\
+%		&	4-7: Upper Arm\\
+%		&	8-10: Shoulder\\
+%		\\
+%		\multirow{3}{*}{Lower Arm Swing}
+%		&	1-3: Hand\\
+%		&	4-7: Forearm\\
+%		&	8-10: Elbow\\
+%		\\
+%		\multirow{3}{*}{Upper Leg Swing}
+%		&	1-3: Knee\\
+%		&	4-7: Thigh\\
+%		&	8-10: Hip\\
+%		\\
+%		\multirow{3}{*}{Lower Leg Swing}
+%		&	1-3: Foot\\
+%		&	4-7: Shin\\
+%		&	8-10: Knee\\
+%		\\
+%		\multirow{3}{*}{Upwards Groin Swing}
+%		&	1-3: Thigh\\
+%		&	4-7: Groin\\
+%		&	8-10: Belly\\
+%	\end{longtabu}
+%	
+%	\subsection{Thrusting Target Zones}
+%	\begin{longtabu}spread 0pt{XX}
+%		\caption{Thrusting Attacks}
+%		\label{tab:Thrusting Hit Locations}\\
+%		\rowfont[c]{}Target Zone&Hit Locations\\\toprule
+%		\multirow{3}{*}{Head}
+%		&	1-3: Neck\\
+%		&	4-7: Face\\
+%		&	8-10: Upper Head\\
+%		\\
+%		\multirow{3}{*}{Neck}
+%		&	1-3: Chest\\
+%		&	4-7: Neck\\
+%		&	8-10: Face\\
+%		\\
+%		\multirow{4}{*}{Chest}
+%		&	1-3: Belly\\
+%		&	4-7: Chest\\
+%		&	8-9: Shoulder\\
+%		&	10: Neck\\
+%		\\
+%		\multirow{4}{*}{Belly}
+%		&	1: Groin\\
+%		&	2: Hip\\
+%		&	3-7: Belly\\
+%		&	8-10: Chest\\
+%		\\
+%		\multirow{3}{*}{Upper Arm}
+%		&	1-3: Elbow\\
+%		&	4-7: Upper Arm\\
+%		&	8-10: Shoulder\\
+%		\\
+%		\multirow{3}{*}{Lower Arm}
+%&	1-3: Hand\\
+%&	4-7: Forearm\\
+%&	8-10: Elbow\\
+%		\\
+%\multirow{3}{*}{Groin}
+%&	1-3: Thigh\\
+%&	4-7: Groin\\
+%&	8-10: Belly\\
+%		\\
+%\multirow{3}{*}{Upper Leg}
+%&	1-3: Knee\\
+%&	4-7: Thigh\\
+%&	8-10: Hip\\
+%		\\
+%\multirow{3}{*}{Lower Leg}
+%&	1-3: Foot\\
+%&	4-7: Shin\\
+%&	8-10: Knee\\
+%\end{longtabu}
+%END_FOLD
 
 \subsection{Missile Target Zones}
 When rolling for a Hit Location with a missile weapon, first roll 1d10 on the Missile Target Zone table,
@@ -11084,7 +10987,7 @@ Maneuver they are defending against. What this means is that if two characters a
 other, the one with Initiative resolves their Maneuver first, and only afterwards does the
 Initiative-less character (if they survive) resolve their Maneuver.
 
-Reach
+\subsection{Reach}\label{sec:Reach} %SECOND REACH TABLE
 Reach is an important factor in combat. The fighter with longer reach tends to have an advantage, so long
 as the fight stays at their desired range. Entire philosophies of warfare are built around the simple
 advantage of having reach over one’s enemies. Of course, a long weapon reach also has its weaknesses.
@@ -11128,10 +11031,10 @@ Halberd
 Ludicrously Long
 LL
 Pike
+
 Here are some important notes on Reach and how it affects combat:
 The basic distance between any two characters is the Reach of the longer weapon between the
-two. If one of the characters has a missile weapon, then the Reach of that weapon is considered
-LL.
+two. If one of the characters has a missile weapon, then the Reach of that weapon is considered LL.
 If a character successfully hits their Target with an attack that has a Reach value, the combat
 moves to the Reach of the attack, which will usually be the favored Reach of the attacker.
 When declaring an Attack Maneuver against a Target at a longer Reach than the character’s own,
@@ -11153,24 +11056,27 @@ If Goofus wants to attack Gallant, that’s five (5) stages of Reach he would ne
 the attack succeeds, then he would move the fight to S Reach, since he got close enough to hit. At S Reach, Gallant is now the one
 at the disadvantage, and Attack AND Defense Maneuvers using his weapon each suffer a 5 CP Activation Cost. He could still
 Void incoming attacks without penalty, since these do not use his now cumbersome weapon.
-Range
+
+\subsubsection{Range}
 When making missile attacks, the range of the weapon is measured in Yards (about three feet or one
 meter each) from the attacker to the target. Each missile weapon has a Range value, which is the number
 of yards at which the weapon may be used before it suffers a penalty to accuracy. For each multiple of
-that range at which the attack is made, the attacker suffers a -1 Penalty to his Missile aTtack. So, if a
+that range at which the attack is made, the attacker suffers a -1 Penalty to his Missile attack. So, if a
 weapon has 40 yard range, an attack made at up to 40 yards would be made with no penalty, one at 41-80
 yards would be made at a -1 penalty, an attack at 81-12 yards would be made at a -2 penalty, etc.
-Additional Combat Rules
-Declaring Defense Maneuvers without Initiative
+
+
+\section{Additional Combat Rules}
+\subsection{Declaring Defense Maneuvers without Initiative}
 If you are using a Defense maneuver with Initiative, wait until characters without Initiative have declared
 their Defenses to declare the target of that Defense. If nobody declares attacks against you, you may
 return the Defense Dice to your Combat Pool. Then, resolve maneuvers at Initiative.
-Battlefield Terrain
+\subsection{Battlefield Terrain}
 Sometimes combat will occur on uneven or otherwise irregular terrain. When fighting on rough terrain
 that might cause a character to fall, trip or stumble, a Mobility Test is required at the start of each Round
 at an RS determined by the nature of the terrain. Failure inflicts Stun equal to the amount of successes by
 which the roll failed. This can cause Overshock and tripping!
-Terrain
+\subsubsection{Terrain}
 Loose Gravel, Light Mud, Slippery Marble
 Deep Mud, Shallow Water, Potholes
 Collapsing Floor, Intense Mud, Deliberate Pitfalls
@@ -11354,7 +11260,7 @@ This is the amount of blood being lost from the wound. Different kinds of wounds
 \paragraph{Stun}---\quad
 Stun is a one-time deduction from a character's Combat Pool. It does not decrease a character's maximum CP, but rather their current reserves. Stun cannot reduce a character's CP below 0. If Stun would bring a character's CP below 0, the CP is only reduced to 0, and the character suffers Overshock.
 
-\label{rule:Overshock}Overshock forces a Stability Test at RS equal to the excess Stun after 0. Failure results in the character becoming \nameref{par:Prone}.
+\label{par:Overshock}Overshock forces a Stability Test at RS equal to the excess Stun after 0. Failure results in the character becoming \nameref{par:Prone}.
 
 \begin{itemize}
 \item If Stun is sustained while a Character has an unresolved Maneuver declared, the Stun is first 
@@ -11399,7 +11305,7 @@ Total Blood Loss &Required Successes to Stave Off\\
 Any time that a Blood Loss test is failed, the Character loses an amount of HLT equal to the number of 
 successes by which the test failed.
 
-When a character's HLT reaches 1 or lower from Blood Loss, all of their other Attributes are temporarily halved. When a character’s HLT reaches 0 or or lower, they immediately pass out and continue to bleed, making END tests and losing HLT into negative amounts. When their HLT reaches a negative amount equal to their unmodified total HLT, they die. Note that when the character passes out, the TOU vs. 2 RS to avoid \nameref{bane:Brain Damage}~is done with their newly-modified TOU. (See Knockout, below.) %NEEDS KNOCKOUT REFERENCE
+When a character's HLT reaches 1 or lower from Blood Loss, all of their other Attributes are temporarily halved. When a character’s HLT reaches 0 or or lower, they immediately pass out and continue to bleed, making END tests and losing HLT into negative amounts. When their HLT reaches a negative amount equal to their unmodified total HLT, they die. Note that when the character passes out, the TOU vs. 2 RS to avoid \nameref{bane:Brain Damage}~is done with their newly-modified TOU. (See \nameref{par:Knockout}, below.)
 
 \begin{quote}
 	\emph{Duke has been shot several times with a repeating crossbow. He is suffering 22 Blood Loss. He must therefore make an Endurance test with his END of 5 against 4 successes.}
@@ -11407,7 +11313,7 @@ When a character's HLT reaches 1 or lower from Blood Loss, all of their other At
 \subsubsection{Regaining Health:}
 Once a wound has been treated via \nameref{skill:Surgery}~so that no more Blood Loss can occur, HLT lost to Blood Loss will begin replenishing at a rate of 1 HLT per week.
 
-HLT lowered by Infection is also recovered in this manner, but only after all of a character’s Infections have been defeated. %NEEDS REFERENCE TO INFECTION
+HLT lowered by \nameref{sec:Infection} is also recovered in this manner, but only after all of a character’s Infections have been defeated.
 
 \subsubsection{Staunching Blood Loss}
 Characters can attempt to staunch the loss of blood with the \nameref{skill:Surgery} skill and whatever materials are at hand. A wound must be targeted with this skill which, if successful, terminates all Blood Loss from that wound.
@@ -11453,9 +11359,9 @@ When a character makes a Stability Test (either as specified by a wound or effec
 \paragraph{\label{par:Prone}Prone}---\quad
 Whenever a character is laying flat on the ground, they are considered to be Prone. While a character is prone, their maximum combat pools for all melee proficiencies and their Mobility are halved, and the effective Reach of any weapon they’re using (including unarmed “weapons” like fists, legs, etc) is reduced by 2 stages. While Prone, all Maneuvers except for Block are made at +1 TN.
 
-Being knocked prone (after failing a Stability test, being knocked down, etc.) causes a character to immediately take Stun equal to half their maximum combat pool. Until the character is standing during a Refresh, their maximum combat pool remains halved, and any Refresh when prone only restores them to that half-maximum. 
+Being knocked prone (after failing a Stability test, being knocked down, etc.) causes a character to immediately take Stun equal to half their maximum combat pool. Until the character is standing during a Refresh, their maximum combat pool remains halved, and any Refresh when prone only restores them to that half-maximum.
 
-The use of the \nameref{man:RAPID RISE}~Maneuver allows a character to stand up immediately upon falling down, if they have the remaining CP. Check \autoref{ch:Maneuvers} Proficiencies \& Manuevers for more information. 
+The use of the \nameref{man:RAPID RISE}~Maneuver allows a character to stand up immediately upon falling down, if they have the remaining CP. Check \autoref{ch:Maneuvers}: \nameref{ch:Maneuvers} for more information. 
 
 Otherwise, a character must spend an entire action standing up, and cannot use any Maneuvers for that action except \nameref{man:QUICK DEFENSE}
 
@@ -11539,12 +11445,12 @@ When a character suffers Fire Damage, the format looks like this: $\dfrac{\mathr
 X is the number of dice rolled, and the TN is always 5. Each success on this roll inflicts a level of Burn 
 Damage to the body part (or body parts) affected. 
 
-Burn Damage is not reduced by TOU, but it is reduced minorly by Armor. 
+Burn Damage is not reduced by TOU, but it is reduced minorly by Armor.
 Cloth, Leather and other light armors do nothing to reduce burn damage. In fact, they might make it worse (Quilted Armor, if worn 
 without Plate over it, increases the Burning Time of any Fire Damage by 1. Mail, Laminar, Brigandine, 
-etc. reduces Burn Damage by 1. Plate reduces Burn Damage by 2). 
+etc. reduces Burn Damage by 1. Plate reduces Burn Damage by 2).
 
-Burn Damage is Cumulative. If a character suffers a Level 1 Burn, and then next Round suffers two 
+Burn Damage is Cumulative. If a character suffers a Level 1 Burn, and then next Round suffers two
 additional Burn Damage, this does not create a Level 2 Burn, but instead turns the Level 1 into a Level 3.
 
 Burning damage often lasts for multiple Rounds, inflicting damage at the beginning of each, and clothing or armor may also catch fire, continuing the blaze for still longer! 
@@ -11593,13 +11499,14 @@ Bystander Phase doing so. This is an Agility check, with the RS ranging from 1 (
 
 So, a character may suffer a pot of boiling oil being dumped on his head while climbing up a siege ladder. 
 The GM estimates this as a 4/TN5 burn attack that hits the upper head, neck, shoulders, and back. The 
-roll is made, 4 at TN 5. 
+roll is made, 4 at TN 5.
 2 successes are scored, however the character is wearing a Plate helmet and a Mail shirt, which reduces 
 burn damage to the upper head by 2, the back and shoulders by 1. The neck suffers all damage. 
 The result is a Level 1 Burn to both shoulders (two wounds), and a Level 2 burn to the neck. The next 
 Round, he suffers additional damage. 
 
 \begin{table}[!ht]
+	\centering
 	\caption{Burn Damage}
 	\label{wound:Burn Damage}
 	\begin{tabu} to \linewidth {X[-1,l] *{3}{X[-3,c]} X[2]X[4]}
@@ -11617,108 +11524,100 @@ Level 5 &Total &30 &- &[+5 Infection Chance] &4th degree burn or worse, flesh de
 Being electrocuted is not something that happens often in a medieval setting, but it can happen. Electrical 
 Damage is made against TOU, but it is not reduced by any sort of armor, and in fact is increased by 
 metallic armor (mail and scale increases Electrical damage by 1, Laminar and Plate of all varieties 
-increases it by 2). 
+increases it by 2).
 A character does not suffer Electrical Wounds to any particular part of their body, the Wound applies to 
 the character’s whole frame. However, in extreme cases (Damage 5 and Higher) a Burn Wound may be 
 inflicted (generally 1 at 5, +1 per 2 points of Electricity Damage past 5) at the point of electrocution. 
 Multiple Electrical Wounds combine, creating a new Wound with a Level equal to the highest previous 
 Wound +1. (So if a character has a Level 3 Electrical Wound, and suffers an additional Level 1-3 
 Electrical Wound, he instead upgrades the original Level 3 Wound to a Level 4, and suffers its effects 
-instead.) 
+instead.)
 Each Action (second) that a character stays in contact with the source of Electricity, he suffers the damage 
-again. 
+again.
 On top of any actual damage inflicted, Electricity always inflicts Shock equal to the amount of damage 
-dealt. 
+dealt.
 Electrical Wounds cannot be Infected, and heal at twice the speed of other Wounds. 
 
- 
 
-Table 8.7 Electricity Damage by Source 
-Source Damage 
-Mild Shock (power outlet) 3 
+\begin{table} %SHOULD probably be a wraptable
+	\centering
+	\caption{Electricity Damage by Source}
+	\label{tab:Electricity Damage by Source}
+	\begin{tabu} spread 0pt {Xr}
+Source &Damage\\
+Mild Shock (power outlet) &3\\
+Severe Shock (Car Battery)&5\\
+Dangerous Shock (Transformer) &6\\
+Lethal Shock (Struck by Lightning) &8\\
+Cataclysmic Shock (Power Lines) &10\\
+	\end{tabu}
+\end{table}
 
-
-Severe Shock (Car Battery) 5 
-Dangerous Shock (Transformer) 6 
-Lethal Shock (Struck by Lightning) 8 
-Cataclysmic Shock (Power Lines) 10 
-
- 
-Table 8.8 Electrical Damage
-%Wound Level &Stun &Pain &Bleed &Special &Description\\
-
-Level 1 8 0 - 
-
-Level 2 10 2 - KO at 1 
-
-Level 3 12 4 - KO at 2 
-
-Level 4 16 20 - KO at 3 
-
-Level 5 Total Total - KO at 4, HET at 3 vs Death 
-
- 
-
- 
+\begin{table}[!ht]
+	\centering
+	\caption{Electrical Damage}
+	\label{wound:Electrical Damage}
+	\begin{tabu} to \linewidth {X[-1,l] *{3}{X[-3,c]} X[2]}
+Wound Level &Stun &Pain &Bleed &Special\\ %&Description\\
+Level 1 &8  &0 &- &\\
+Level 2 &10 &2 &- &KO at 1\\
+Level 3 &12 &4 &- &KO at 2\\
+Level 4 &16 &20 &-&KO at 3\\
+Level 5 &Total &Total &- &KO at 4, HET at 3 vs Death\\
+	\end{tabu}
+\end{table}
 
 \subsection{Cold Damage}
 Something something, Cold can target Limbs, TOU reduces, Armor doesn’t, Warm Clothing can slow 
 effects, need rules for Freezing, yadda yadda, what killed the dinosaurs? Get to the Choppa. 
 
- 
+\begin{table}[!ht]
+	\centering
+	\caption{Cold Damage}
+	\label{wound:Cold Damage}
+	\begin{tabu} to \linewidth {X[-1,l] *{3}{X[-3,c]} X[2]}
+Wound Level &Stun &Pain &Bleed &Special\\ %&Description
+Level 1 &2 &2 &- &\\
+Level 2 &4 &4 &- &\\
+Level 3 &6 &2 &- &Reduces all Pain in Zone by 2 \\
+Level 4 &8 &0 &- &Reduces all Pain in Zone by 4, Difficult Surgery vs Frostbite if Limb, HET test at 3 vs Death if not Limb\\
+Level 5 &10& 0& -& Reduces all Pain in Zone by 10, Miracle Surgery vs Amputation if Limb, HET test at 4 vs Death if not Limb\\
+	\end{tabu}
+\end{table}
 
-Table 8.9 
-Wound Level Stun Pain Bleed Special Description
-Level 1 2 2 - 
-Level 2 4 4 - 
-Level 3 6 2 - Reduces all Pain in Zone by 2 
-Level 4 8 0 - Reduces all Pain in Zone by 4, Difficult Surgery vs Frostbite if Limb, HET test at 3 vs Death if not Limb
-Level 5 10 0 - Reduces all Pain in Zone by 10, Miracle Surgery vs Amputation if Limb, HET test at 4 vs Death if not Limb
-
-
-\section{Infection}
+\section{Infection}\label{sec:Infection}
 The shock of a wound can kill a man, or he can bleed out before the injury can be staunched, but the most 
 insidious and terrible way to die of a wound is by corruption, or infection. In the course of healing, a 
 wound can become infested with bacteria and parasites which quickly cause the wound to become 
 gangrenous or septic, which can eventually result in necrosis and death. 
 
-Infection has a chance of occurring 24 hours after the infliction of the wound. Roll a HLT Test at RS 
-equal to the Infection Level of the Wound. The Infection Level equal to the Wound Level, plus any 
-miscellaneous modifiers. Both Wound descriptions and exterior circumstances (see Table 7.1) can 
-increase or decrease Infection Chance. 
+Infection has a chance of occurring 24 hours after the infliction of the wound. Roll a HLT Test at RS
+equal to the Infection Level of the Wound. The Infection Level equal to the Wound Level, plus any
+miscellaneous modifiers. Both Wound descriptions and exterior circumstances (see \autoref{tab:Infection Modifiers}) can
+increase or decrease Infection Chance.
 
-Unarmed Wounds cannot cause Infection. 
+Unarmed Wounds cannot cause Infection.
 
-Table 8.7 
-Infection Modifiers Modifier Amount 
-Wound was successfully treated with Surgery immediately after it was inflicted. -1 per 2 
-BS 
-
-Wound is treated with an expensive poultice during Surgery -2 
-
-Wound is the result of an Amputation -2 
-
-Wounded party is allowed to rest immediately -1 
-
-Wound was inflicted in a fairly clean environment free of filth (being cut with a well 
-maintained dress sword during a parade, being injured by a practice weapon). 
-
--2 
-
-Wound was inflicted by a bludgeoning weapon. -1 
-
-Wound was inflicted by a piercing weapon. +1 
-
-Wound was inflicted in an unclean environment. +1 
-
-Wound was inflicted with a filthy weapon. +2 
-
-Wounded party has strenuously exerted himself since being injured. +1 
-
-Wounded party did not receive adequate care after the injury. +2 
-
-Wound was intentionally infected after being sustained. +3 
-
+\begin{table} %SHOULD probably be a wraptable
+	\centering
+	\caption{Infection Modifiers}
+	\label{tab:Infection Modifiers}
+	\begin{tabu} spread 0pt {Xr}
+Infection Modifiers &Modifier Amount\\
+Wound was successfully treated with Surgery immediately after it was inflicted. &-1 per 2 BS\\
+Wound is treated with an expensive poultice during Surgery &-2\\
+Wound is the result of an Amputation &-2\\
+Wounded party is allowed to rest immediately &-1\\
+Wound was inflicted in a fairly clean environment free of filth (being cut with a well maintained dress sword during a parade, being injured by a practice weapon). &-2\\
+Wound was inflicted by a bludgeoning weapon. &-1\\
+Wound was inflicted by a piercing weapon. &+1\\
+Wound was inflicted in an unclean environment. &+1\\
+Wound was inflicted with a filthy weapon. &+2\\
+Wounded party has strenuously exerted himself since being injured. &+1\\
+Wounded party did not receive adequate care after the injury. &+2\\
+Wound was intentionally infected after being sustained. &+3\\
+	\end{tabu}
+\end{table}
 If the character succeeds, then the Wound does not become infected, and heals normally. However, if 
 something occurs to infect the Wound again (the wound is exposed to filth, or reopened, or stripped of its 
 coverings and left unprotected for some time) then an additional roll may be necessary. 
@@ -11750,7 +11649,6 @@ Character is kept in a comfortable, clean environment -2
 Character has enough to eat/drink -1 
 Character partakes of no strenuous activity -1 
 
-
 \subsection{Septic Infections}
 Septic Infections (when the injury becomes gangrenous and decaying) are almost invariably lethal. After 
 a wound becomes Septic, it rapidly spreads across the body, eventually reaching the heart or brain, and 
@@ -11758,16 +11656,11 @@ killing the victim. The character becomes delusional, weak, and likely unconscio
 2d10+HLT hours. If the character can pass a WIL+HLT test at RS 5, the character can struggle on for 
 another 24 hours, but will still die before the next day. 
 
- 
-
 There is no treatment for Sepsis, but if the Infection is in a limb, it can be Amputated immediately upon 
 the onset of Sepsis to prevent it from spreading. This increases the Infection Level of the resulting 
 Amputated wound by 1, whereas Amputating before Sepsis develops does not increase the Infection 
 Level at all. Surgeons must be careful when deciding whether or not to amputate too early on what 
 might’ve been a salvageable limb. 
-
- 
-
 
 \subsection{Amputation}
 When a limb is Amputated (which itself requires a Surgery check at RS 3), the limb suffers the equivalent 
@@ -11777,7 +11670,7 @@ like a normal wound for terms of surgery checks to end blood loss and begin the 
 Amputations also confer an automatic -2 to the Infection Chance of the wound, due to the care that goes 
 into the procedure to make it as clean as possible, and may benefit from other factors as well, such as a 
 clean environment with proper tools, to minimize the chance of the new wound becoming Infected as 
-well. 
+well.
 
 If a wound becomes Septic before being amputated, as detailed in the Septic Infection section above, then 
 the Amputation’s -2 to Infection Chance is reduced to -1, increasing the possibility of repeated Infection, 
@@ -11787,9 +11680,11 @@ as some of it may have already spread beyond the limb.
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
 \clearpage
-This is the part where you learn about what it’s like to die.
+\begin{center}
+	This is the part where you learn about what it’s like to die.
+\end{center}
 
-\section*{Target Zones and Hit Locations}
+\section{Target Zones and Hit Locations}
 When a character is hit by an attack, there are two key aspects of the hit that need to be noted: the Target 
 Zone (which is the general area of the body that the attack hits) and the Hit Location (which is the precise 
 point of the body that is hit). 
@@ -11800,15 +11695,14 @@ attacks have different Target Zones available to them.
 If an attack hits, roll 1d10 to decide the Hit Location that the attack actually lands on, and then calculate 
 damage based on the following formula: 
 
-[Total Damage Done (Maneuver Damage+Miscellaneous)] versus [Total Defensive Value (TOU+AV of 
-appropriate damage type+Miscellaneous)] 
+[Total Damage Done (Maneuver Damage$ + $Miscellaneous)] versus [Total Defensive Value (TOU+AV of appropriate damage type$ + $Miscellaneous)]
 
 If the Total Damage exceeds the Total Defense, the result is a Wound of a level equal to the excess 
-damage. 
+damage.
 
-The amount of damage done is then applied on the damage charts located later in this section. 
+The amount of damage done is then applied on the damage charts located later in this chapter.
 
-\subsection{Which Thigh, though?}
+\subsection*{Which Thigh, though?}
 When declaring an attack against an arm or a leg, or even when attacking the neck, be sure to declare 
 which limb, or from which side the cut is made from, in the case of neck or torso cuts. Obviously if you 
 cut the right arm, all of the hit results should be on that arm. The same applies when making a cut to the 
@@ -11875,116 +11769,118 @@ Alternatively, flip a coin or roll for it. GMs, be sure to be consistent about t
 &	4-7: Groin\\
 &	8-10: Belly\\
 \end{longtabu}
- 
-Table 8.1.2 Thrusting Attacks 
-Target Zone Hit Locations 
-Face Thrust 1-3: Neck 
-4-7: Face 
-8-10: Upper Head 
-Neck Thrust 1-3: Chest 
-4-7: Neck 
-8-10: Face 
 
-
-Chest Thrust 1-3: Belly 
-4-7: Chest 
-8-9: Shoulder 
-10: Neck 
-Belly Thrust 1: Groin 
-2: Hip 
-3-7: Belly 
-8-10: Chest 
-Upper Arm Thrust 1-3: Elbow 
-4-7: Upper Arm 
-8-10: Shoulder 
-Lower Arm Thrust 
-
- 
-
-1-3: Hand 
-4-7: Forearm 
-8-10: Elbow 
-
-Groin Thrust 
-
- 
-
-1-3: Thigh 
-4-7: Groin 
-8-10: Belly 
-Upper Leg Thrust 1-3: Knee 
-4-7: Thigh 
-8-10: Hip 
-Lower Leg Thrust 1-3: Foot 
-4-7: Shin 
-8-10: Knee 
- 
-
- 
+\begin{longtabu} spread 0pt {XX}
+	\caption{Thrusting Attacks}\\
+	\label{tab:Thrusting Hit Locations}\\
+Target Zone&Hit Locations\\
+\multirow{3}{*}{Face Thrust}
+&	1-3: Neck\\
+&	4-7: Face\\
+&	8-10: Upper Head\\
+	\\
+\multirow{3}{*}{Neck Thrust}
+&	1-3: Chest\\
+&	4-7: Neck\\
+&	8-10: Face\\
+	\\
+\multirow{4}{*}{Chest Thrust}
+&	1-3: Belly\\
+&	4-7: Chest\\
+&	8-9: Shoulder\\
+&	10: Neck\\
+	\\
+\multirow{4}{*}{Belly Thrust}
+&1: Groin\\
+&2: Hip\\
+&3-7: Belly\\
+&8-10: Chest\\
+	\\
+\multirow{3}{*}{Upper Arm Thrust}
+&	1-3: Elbow\\
+&	4-7: Upper Arm\\
+&	8-10: Shoulder\\
+	\\
+\multirow{3}{*}{Lower Arm Thrust}
+&	1-3: Hand\\
+&	4-7: Forearm\\
+&	8-10: Elbow\\
+	\\
+\multirow{3}{*}{Groin Thrust}
+&	1-3: Thigh\\
+&	4-7: Groin\\
+&	8-10: Belly\\
+	\\
+\multirow{3}{*}{Upper Leg Thrust}
+&	1-3: Knee\\
+&	4-7: Thigh\\
+&	8-10: Hip\\
+	\\
+\multirow{3}{*}{Lower Leg Thrust}
+&	1-3: Foot\\
+&	4-7: Shin\\
+&	8-10: Knee\\
+\end{longtabu}
 
 \section{Wound Qualities}
-Quality Description/Effect
+\paragraph[Stability vs. ]{\label{par:Stability vs [X] RS}Stability vs [X] RS}---\quad
+You must make a \nameref{par:Stability}~(AGI+Misc) test at X RS or be rendered \nameref{par:Prone}.
 
-Stability vs [X] RS
-You must make a Stability (AGI+Misc) test at X RS or be rendered \nameref{par:Prone}.
-
-Disarm vs [X] RS
+\paragraph[Disarm vs. ]{\label{par:Disarm vs [X] RS}Disarm vs [X] RS}---\quad
 You must make a Disarm (AGI+Misc) test at X RS or drop anything held in the affected arm.
 
-KO vs [X] RS 
-You must make a Knockout (END+Misc) test at X RS or be rendered unconscious for 1d10 minutes.
+\paragraph[KO vs. ]{\label{par:KO vs [X] RS}KO vs [X] RS }---\quad
+You must make a \autoref{par:Knockout}~(END+Misc) test at X RS or be rendered unconscious for 1d10 minutes.
 
-[X] Surgery vs [Y]
+\paragraph[Surgery vs. ]{\label{par:Surgery vs [Y]}[X] Surgery vs [Y]}---\quad
 You immediately gain Y Bane, which cannot be removed without a successful Surgery test at X difficulty before the wound heals. If the wound heals (or the surgery test fails) then Y Bane becomes permanent.
 
-Autodrop You automatically drop anything held with this limb when this Wound is inflicted. Increase the RS 
-of any Stability test made to maintain your grip on a weapon with this limb by the Wound level. 
+\paragraph{\label{par:Autodrop}Autodrop}---\quad 
+You automatically drop anything held with this limb when this Wound is inflicted. Increase the RS of any \nameref{par:Stability}~test made to maintain your grip on a weapon with this limb by the Wound level. %WAIT WHAT THE FUCK DO YOU MEAN STABILITY TO MAINTAIN GRIP
 
-
-Auto-Prone
+\paragraph{\label{par:Auto-Prone}Auto-Prone}---\quad
 You are automatically rendered Prone. You cannot Stand Up in the same action, or in the action after receiving this Wound. Increase all further Stability tests RS by the Wound level, until the Wound is fully healed.
 
-Auto-KO
+\paragraph{\label{par:Auto-KO}Auto-KO}---\quad
 Character is rendered unconscious for 1d10*6 minutes. Increase the RS of any further KO rolls by the Wound level, until the Wound is fully healed.
 
-Infection Risk+[X]
+\paragraph[Infection Risk]{\label{par:Infection Risk}Infection Risk+[X]}---\quad
 This Wound suffers an increased Infection Risk equal to X.
 
-Stun: Total Automatically reduces Combat Pool to 0, and immediately renders you Prone without a test.
+\paragraph[Total]{\label{par:Stun: Total}Stun: Total}---\quad
+Automatically reduces Combat Pool to 0, and immediately renders you Prone without a test.
 
-Pain: Total Your effective Pain is considered infinite until this Wound has healed. 
+\paragraph[Total]{\label{par:Pain: Total}Pain: Total}---\quad
+Your effective Pain is considered infinite until this Wound has healed.
 
-Limb Severed
-This limb is cut off! You receive the Severed Limb Bane. 
+\paragraph{\label{par:Limb Severed}Limb Severed}---\quad
+This limb is cut off! You receive the \hyperref[bane:Severed Limb/Appendage]{Severed Limb}~Bane. 
 
-Dead
-You’re Dead. You get the Dead Bane. 
+\paragraph{\label{par:Dead}Dead}---\quad
+You’re Dead. You get the \nameref{bane:Dead}~Bane.
 
-Internal Bleeding 
-Halting this bleeding requires a Surgery roll at +3 RS from normal. 
-
-
+\paragraph{\label{par:Internal Bleeding}Internal Bleeding}---\quad
+Halting this bleeding requires a Surgery roll at +3 RS from normal.
+\newpage
 \section{Upper Head}
-\begin{table} %Upper Head - Cutting
+\begin{table}[hb] %Upper Head - Cutting
 	\caption{Upper Head - Cutting}
 	\label{wound:Upper Head - Cutting}
 	\begin{tabu} to \linewidth {X[l] *{3}{X[-2,c]} X[2]X[4]}
-\rowfont[c]{}Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+\rowfont[c]{} Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
 Level 1& 1 &7 &1 &- &Shallow cut on scalp, not serious.\\
 Level 2& 2 &9 &3 &- &Deep cut on scalp, blood runs into face.\\
 Level 3 &4 &13&5 &KO vs 4 RS &Cracked skull, nearly invisible, but devastating.\\
-Level 4& Total &Total &8 
-&Auto-KO
-
-Difficult Surgery vs. \nameref{bane:Brain Damage}
-
-Internal Bleeding
+Level 4& Total &Total &8
+	&Auto-KO \newline
+	Difficult \nameref{par:Surgery vs [Y]} \nameref{bane:Brain Damage}\newline
+	\nameref{par:Internal Bleeding}
 &Severe skull fracture, brain damage, immediate unconsciousness.\\
 Level 5& - &- &- &Dead &Blade cleaves through top of skull down to the teeth. Instant death.\\
 	\end{tabu}
 \end{table}
 
-\begin{table} %Upper Head - Piercing
+\begin{table}[hb] %Upper Head - Piercing
 	\caption{Upper Head - Piercing}
 	\label{wound:Upper Head - Piercing}
 	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[4]}
@@ -11993,10 +11889,8 @@ Level 1 &0 &4 &0 &- &Raking glance to the side of the head. \\
 Level 2 &1 &6 &3 &- &Deeper rake across scalp, lots of blood.\\
 Level 3 &2 &10 &5 &KO vs 3 RS &Skull cracked, possible unconsciousness. \\
 Level 4 &Total &Total &20
-	&Auto-KO
-	
-	Miracle Surgery vs \nameref{bane:Brain Damage}
-	
+	&Auto-KO\newline
+	Miracle Surgery vs \nameref{bane:Brain Damage}\newline
 	Internal Bleeding
 &Skull penetrated, instantly unconscious.\\
 Level 5 &- &- &- &Dead &Point penetrates straight through skull into brain, instant death.\\
@@ -12011,7 +11905,11 @@ Wound Level &Stun &Pain &Bleed &Special &Description\\
 Level 1& 1& 4& 1& - &Blow to the side of the head. Ow.\\
 Level 2& 3& 6& 2& KO vs 1 RS &Temple is glanced. May lose consciousness.\\
 Level 3& 5& 8& 4& KO vs 5 RS &Skull fracture, may lose consciousness.\\
-Level 4& Total &Total &6 &Auto-KO [Difficult Surgery vs\nameref{bane:Brain Damage}], Internal Bleeding &Skull shatters, immediately unconscious.\\
+Level 4& Total &Total &6 
+	&Auto-KO\newline
+	Difficult \nameref{par:Surgery vs [Y]}~\nameref{bane:Brain Damage}\newline
+	\nameref{par:Internal Bleeding}
+&Skull shatters, immediately unconscious.\\
 Level 5& - &- &- &Dead &Skull crushed. Brain and bone everywhere. Death. \\
 	\end{tabu}
 \end{table}
@@ -12038,8 +11936,12 @@ Level 5& Total& 10 &3 &Auto-KO, Internal Bleeding &Severe blow to the temple, fr
 Wound Level &Stun &Pain &Bleed &Special &Description\\
 Level 1& 1& 6& 1& - &Cut vertically across the chin or lips. May leave a scar.\\
 Level 2& 2& 8& 3& - &Deeper cut, possible chipping of jaw, may contact chin, lip, cheek, or brow.\\
-Level 3& 4& 16& 8& [Miracle Surgery vs One-Eyed] &Slash catches eye! Severe damage, may lose eye.\\
-Level 4& 6& 20& 18& [Miracle Surgery vs One-Eyed] OR [Miracle Surgery vs Facial Deformity] [Infection Chance +2] &Face bisected, extreme damage to jaw, teeth, and skull. May lose eye (1-5) or nose (6-10), serious medical complications either way.\\
+Level 3& 4& 16& 8&[Miracle Surgery vs One-Eyed] &Slash catches eye! Severe damage, may lose eye.\\
+Level 4& 6& 20& 18
+	&Miracle \nameref{par:Surgery vs [Y]}~One-Eyed OR\newline
+	Miracle \nameref{par:Surgery vs [Y]}~Facial Deformity\newline
+	\nameref{par:Infection Risk} +2
+&Face bisected, extreme damage to jaw, teeth, and skull. May lose eye (1-5) or nose (6-10), serious medical complications either way.\\
 Level 5& - &- &- &Dead& Head cloven through to the teeth, instant death.\\
 	\end{tabu}
 \end{table}
@@ -12052,7 +11954,11 @@ Wound Level &Stun &Pain &Bleed &Special &Description\\
 Level 1& 1& 5& 1& - &Facial scratch.\\
 Level 2& 2& 6& 2& - &Point glances off facial bones, bleeding occurs, but nothing serious.\\
 Level 3& 3& 8& 3& - &Point hits, but fails to penetrate facial bone, very painful, but still no significant damage.\\
-Level 4& 5& 15& 10& [Difficult Surgery vs Mute] OR [Miracle Surgery vs One-Eyed] OR [+5 to wound’s Bleed] &Point penetrates face, either through mouth (1-3) eye (4-6) or facial bones (7-10.) Severe injury, lots of bleeding, extremely painful.\\
+Level 4& 5& 15& 10
+	&Difficult Surgery vs \nameref{bane:Mute} OR\newline
+	Miracle Surgery vs \nameref{bane:One-Eyed}~OR\newline
+	+5 to wound’s Bleed
+&Point penetrates face, either through mouth (1-3) eye (4-6) or facial bones (7-10.) Severe injury, lots of bleeding, extremely painful.\\
 Level 5& - &- &- &Dead& Head impaled, instant death.\\
 	\end{tabu}
 \end{table}
@@ -12066,7 +11972,7 @@ Level 1 &2 &4 &0 &- &Blow to the jaw, head rolls with it well. \\
 Level 2 &3 &5 &2 &- &Firmer blow, blood in mouth, possible lost tooth. Youch. \\
 Level 3 &5 &8 &3 &KO vs 3 RS &Serious damage to jaw, fracture maybe, head jerked hard, may lose consciousness and several teeth.\\
 Level 4 &7 &12&7 &KO vs 5 RS &Mute as the Bane until healed Broken jaw, almost certain unconsciousness.\\
-Level 5 &- &- &- &Dead &Jaw smashed, skull shattered, neck broken. Instant death.\\
+Level 5 &- &- &- &\nameref{bane:Dead} &Jaw smashed, skull shattered, neck broken. Instant death.\\
 	\end{tabu}
 \end{table}
 
@@ -12093,7 +11999,10 @@ Wound Level &Stun &Pain &Bleed &Special &Description\\
 Level 1& 1& 6& 1& - &Cross cut on the face, probably on the cheek, mouth or chin.\\
 Level 2& 2& 8& 4& - &Direct hit on side of face, classic German dueling scar.\\
 Level 3& 3& 12& 8& KO vs 3 RS &Direct hit cleaves through cheek, damaging several teeth.\\
-Level 4& 4& 18& 12& KO vs 4 RS [Difficult Surgery vs Facial Deformity] &Blade cuts cheek from corner of mouth to behind the ear, lots of teeth lost, cheek muscle damage.\\
+Level 4& 4& 18& 12
+	&KO vs 4 RS\newline
+	[Difficult Surgery vs Facial Deformity]
+&Blade cuts cheek from corner of mouth to behind the ear, lots of teeth lost, cheek muscle damage.\\
 Level 5& - &- &- &Dead& Blade either cleaves through entire side of head, decapitating above the jaw, or most of the way through. Death is mercifully instantaneous.\\
 	\end{tabu}
 \end{table}
@@ -12106,7 +12015,10 @@ Wound Level &Stun &Pain &Bleed &Special &Description\\
 Level 1& 0& 4& 2& - &Grazed jaw.\\
 Level 2& 1& 6& 4& - &Stabs through cheek, chipped tooth!\\
 Level 3& 2& 9& 8& KO vs 3 RS &Several teeth broken, cheek ripped open, jaw fractured.\\
-Level 4& 3& 14& 14& KO vs 5 RS [Difficult Surgery vs \nameref{bane:Mute}] &Jaw shattered, many teeth destroyed, may lose tongue.\\
+Level 4& 3& 14& 14
+	&KO vs 5 RS\newline
+	[Difficult Surgery vs \nameref{bane:Mute}]
+&Jaw shattered, many teeth destroyed, may lose tongue.\\
 Level 5& - &- &- &Dead& Point slams through brainstem. Instant death.\\
 	\end{tabu}
 \end{table}
@@ -12119,7 +12031,10 @@ Wound Level &Stun &Pain &Bleed &Special &Description\\
 Level 1& 2& 3& 0& - &Tapped jaw, possibly bruised.\\
 Level 2& 4& 4& 1& KO vs 3 RS &Solid strike to jaw, jarring!\\
 Level 3& 6& 6& 3& KO vs 4 RS &Fractured jaw, possibly several lost teeth! \\
-Level 4& 8& 10& 4& KO vs 5 RS [Routine Surgery vs Face Deformation] &Broken jaw.\\
+Level 4& 8& 10& 4
+	&KO vs 5 RS\newline
+	[Routine Surgery vs Face Deformation] 
+&Broken jaw.\\
 Level 5& - &- &- &Dead& Neck Broken. Instant death.\\
 	\end{tabu}
 \end{table}
