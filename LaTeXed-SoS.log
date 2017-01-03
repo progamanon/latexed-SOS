@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/TeX Live for SUSE Linux) (preloaded format=pdflatex 2016.11.16)  19 DEC 2016 23:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/TeX Live for SUSE Linux) (preloaded format=pdflatex 2016.11.16)  2 JAN 2017 11:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,20 +6,34 @@ entering extended mode
 (./LaTeXed-SoS.tex
 LaTeX2e <2015/01/01> patch level 2
 Babel <3.9m> and hyphenation patterns for 79 languages loaded.
+(/usr/share/texmf/tex/latex/nag/nag.sty
+Package: nag 2011/11/25 0.7 warning about old commands (ulmi)
+\c@nag@c=\count79
+\c@nag@sins=\count80
+Package nag Info: Loaded nag-l2tabu.cfg  on input line 552.
+
+(/usr/share/texmf/tex/latex/nag/nag-l2tabu.cfg
+File: nag-l2tabu.cfg 2010/05/17 v2.11 l2tabu rules for nag.sty (ulmi)
+)
+Package nag Info: Loaded nag-orthodox.cfg  on input line 552.
+
+(/usr/share/texmf/tex/latex/nag/nag-orthodox.cfg
+File: nag-orthodox.cfg 2006/04/19 v1.8 strict rules for nag.sty (ulmi)
+))
 (/usr/share/texmf/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texmf/tex/latex/base/bk11.clo
 File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count79
-\c@chapter=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@part=\count81
+\c@chapter=\count82
+\c@section=\count83
+\c@subsection=\count84
+\c@subsubsection=\count85
+\c@paragraph=\count86
+\c@subparagraph=\count87
+\c@figure=\count88
+\c@table=\count89
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -32,7 +46,7 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 
 (/usr/share/texmf/tex/generic/babel/babel.def
 File: babel.def 2015/08/03 3.9m Babel common definitions
-\babel@savecnt=\count88
+\babel@savecnt=\count90
 \U@D=\dimen103
 )
 \l@canadian = a dialect from \language\l@american 
@@ -256,13 +270,20 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/share/texmf/tex/latex/graphics/color.sty
-Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+(/usr/share/texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 (/usr/share/texmf/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 142.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
 
 (/usr/share/texmf/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
@@ -273,8 +294,18 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/share/texmf/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count89
-))
+\Gread@gobject=\count91
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
 (/usr/share/texmf/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2011/12/15 v1.6 TOC entries
 \ttl@leftsep=\dimen104
@@ -308,15 +339,15 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texmf/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count90
-\calc@Bcount=\count91
+\calc@Acount=\count92
+\calc@Bcount=\count93
 \calc@Adimen=\dimen107
 \calc@Bdimen=\dimen108
 \calc@Askip=\skip43
 \calc@Bskip=\skip44
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count92
+\calc@Ccount=\count94
 \calc@Cskip=\skip45
 )
 (/usr/share/texmf/tex/latex/eso-pic/eso-pic.sty
@@ -338,73 +369,45 @@ Package ifpdf Info: pdfTeX in PDF mode is detected.
 \tileX=\skip52
 \tileY=\skip53
 )
-(/usr/share/texmf/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen109
-\WF@size=\dimen110
-\c@WF@wrappedlines=\count93
-\WF@box=\box26
-\WF@everypar=\toks17
-Package: wrapfig 2003/01/31  v 3.6
-)
-(/usr/share/texmf/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen111
-\lightrulewidth=\dimen112
-\cmidrulewidth=\dimen113
-\belowrulesep=\dimen114
-\belowbottomsep=\dimen115
-\aboverulesep=\dimen116
-\abovetopsep=\dimen117
-\cmidrulesep=\dimen118
-\cmidrulekern=\dimen119
-\defaultaddspace=\dimen120
-\@cmidla=\count94
-\@cmidlb=\count95
-\@aboverulesep=\dimen121
-\@belowrulesep=\dimen122
-\@thisruleclass=\count96
-\@lastruleclass=\count97
-\@thisrulewidth=\dimen123
-)
 (/usr/share/texmf/tex/latex/tabu/tabu.sty
 Package: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
 
 (/usr/share/texmf/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen124
-\extrarowheight=\dimen125
-\NC@list=\toks18
+\col@sep=\dimen109
+\extrarowheight=\dimen110
+\NC@list=\toks17
 \extratabsurround=\skip54
 \backup@length=\skip55
 )
 (/usr/share/texmf/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box27
-\sift@deathcycles=\count98
-\@vwid@loff=\dimen126
-\@vwid@roff=\dimen127
+\@vwid@box=\box26
+\sift@deathcycles=\count95
+\@vwid@loff=\dimen111
+\@vwid@roff=\dimen112
 )
-\c@taburow=\count99
-\tabu@nbcols=\count100
-\tabu@cnt=\count101
-\tabu@Xcol=\count102
-\tabu@alloc=\count103
-\tabu@nested=\count104
-\tabu@target=\dimen128
-\tabu@spreadtarget=\dimen129
-\tabu@naturalX=\dimen130
-\tabucolX=\dimen131
-\tabu@Xsum=\dimen132
-\extrarowdepth=\dimen133
-\abovetabulinesep=\dimen134
-\belowtabulinesep=\dimen135
-\tabustrutrule=\dimen136
-\tabu@thebody=\toks19
-\tabu@footnotes=\toks20
-\tabu@box=\box28
-\tabu@arstrutbox=\box29
-\tabu@hleads=\box30
-\tabu@vleads=\box31
+\c@taburow=\count96
+\tabu@nbcols=\count97
+\tabu@cnt=\count98
+\tabu@Xcol=\count99
+\tabu@alloc=\count100
+\tabu@nested=\count101
+\tabu@target=\dimen113
+\tabu@spreadtarget=\dimen114
+\tabu@naturalX=\dimen115
+\tabucolX=\dimen116
+\tabu@Xsum=\dimen117
+\extrarowdepth=\dimen118
+\abovetabulinesep=\dimen119
+\belowtabulinesep=\dimen120
+\tabustrutrule=\dimen121
+\tabu@thebody=\toks18
+\tabu@footnotes=\toks19
+\tabu@box=\box27
+\tabu@arstrutbox=\box28
+\tabu@hleads=\box29
+\tabu@vleads=\box30
 \tabu@cellskip=\skip56
 )
 (/usr/share/texmf/tex/latex/tools/longtable.sty
@@ -413,53 +416,142 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTright=\skip58
 \LTpre=\skip59
 \LTpost=\skip60
-\LTchunksize=\count105
-\LTcapwidth=\dimen137
-\LT@head=\box32
-\LT@firsthead=\box33
-\LT@foot=\box34
-\LT@lastfoot=\box35
-\LT@cols=\count106
-\LT@rows=\count107
-\c@LT@tables=\count108
-\c@LT@chunks=\count109
-\LT@p@ftn=\toks21
+\LTchunksize=\count102
+\LTcapwidth=\dimen122
+\LT@head=\box31
+\LT@firsthead=\box32
+\LT@foot=\box33
+\LT@lastfoot=\box34
+\LT@cols=\count103
+\LT@rows=\count104
+\c@LT@tables=\count105
+\c@LT@chunks=\count106
+\LT@p@ftn=\toks20
+)
+(/usr/share/texmf/tex/latex/ctable/ctable.sty
+Package: ctable 2014/04/25 v1.29 ctable package for \ flexible typesetting of t
+able and figure floats using key/value directives
+
+(/usr/share/texmf/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texmf/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texmf/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks21
+\XKV@tempa@toks=\toks22
+)
+\XKV@depth=\count107
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texmf/tex/latex/tools/tabularx.sty
+Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
+\TX@col@width=\dimen123
+\TX@old@table=\dimen124
+\TX@old@col=\dimen125
+\TX@target=\dimen126
+\TX@delta=\dimen127
+\TX@cols=\count108
+\TX@ftn=\toks23
+)
+(/usr/share/texmf/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen128
+\lightrulewidth=\dimen129
+\cmidrulewidth=\dimen130
+\belowrulesep=\dimen131
+\belowbottomsep=\dimen132
+\aboverulesep=\dimen133
+\abovetopsep=\dimen134
+\cmidrulesep=\dimen135
+\cmidrulekern=\dimen136
+\defaultaddspace=\dimen137
+\@cmidla=\count109
+\@cmidlb=\count110
+\@aboverulesep=\dimen138
+\@belowrulesep=\dimen139
+\@thisruleclass=\count111
+\@lastruleclass=\count112
+\@thisrulewidth=\dimen140
+)
+(/usr/share/texmf/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+\c@r@tfl@t=\count113
+\rotFPtop=\skip61
+\rotFPbot=\skip62
+\rot@float@box=\box35
+\rot@mess@toks=\toks24
+)
+(/usr/share/texmf/tex/latex/oberdiek/transparent.sty
+Package: transparent 2007/01/08 v1.0 Transparency via pdfTeX's color stack (HO)
+
+
+(/usr/share/texmf/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+))
+\@ctblframesep=\dimen141
+\@defaultctblframesep=\dimen142
+\@ctblframerule=\dimen143
+\@defaultctblframerule=\dimen144
+\@ctblwidth=\dimen145
+\@defaultctblwidth=\dimen146
+\@ctblcaptionskip=\dimen147
+\@defaultctblcaptionskip=\dimen148
+\@ctblmaxwidth=\dimen149
+\@defaultctblmaxwidth=\dimen150
+\@ctblmincapwidth=\dimen151
+\@defaultctblmincapwidth=\dimen152
+\@ctblfooterwidth=\dimen153
+\@defaultctblfooterwidth=\dimen154
+\@ctblw=\dimen155
+\@ctblfloatwidth=\dimen156
+\@ctbloldsep=\dimen157
+\@ctbloldrule=\dimen158
+\ctbl@t=\box36
+\@ctblcurftwidth=\dimen159
+)
+(/usr/share/texmf/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen160
+\WF@size=\dimen161
+\c@WF@wrappedlines=\count114
+\WF@box=\box37
+\WF@everypar=\toks25
+Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/share/texmf/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip61
-\f@ncyO@elh=\skip62
-\f@ncyO@erh=\skip63
-\f@ncyO@olh=\skip64
-\f@ncyO@orh=\skip65
-\f@ncyO@elf=\skip66
-\f@ncyO@erf=\skip67
-\f@ncyO@olf=\skip68
-\f@ncyO@orf=\skip69
+\fancy@headwidth=\skip63
+\f@ncyO@elh=\skip64
+\f@ncyO@erh=\skip65
+\f@ncyO@olh=\skip66
+\f@ncyO@orh=\skip67
+\f@ncyO@elf=\skip68
+\f@ncyO@erf=\skip69
+\f@ncyO@olf=\skip70
+\f@ncyO@orf=\skip71
 )
 (/usr/share/texmf/tex/latex/lettrine/lettrine.sty
 File: lettrine.sty 2015/02/16 v1.8 (Daniel Flipo)
-\c@DefaultLines=\count110
-\c@DefaultDepth=\count111
-\DefaultFindent=\dimen138
-\DefaultNindent=\dimen139
-\DefaultSlope=\dimen140
-\DiscardVskip=\dimen141
-\L@lbox=\box36
-\L@tbox=\box37
-\c@L@lines=\count112
-\c@L@depth=\count113
-\L@Pindent=\dimen142
-\L@Findent=\dimen143
-\L@Nindent=\dimen144
-\L@lraise=\dimen145
-\L@first=\dimen146
-\L@next=\dimen147
-\L@slope=\dimen148
-\L@height=\dimen149
-\L@novskip=\dimen150
-\LettrineWidth=\dimen151
-\LettrineHeight=\dimen152
-\LettrineDepth=\dimen153
+\c@DefaultLines=\count115
+\c@DefaultDepth=\count116
+\DefaultFindent=\dimen162
+\DefaultNindent=\dimen163
+\DefaultSlope=\dimen164
+\DiscardVskip=\dimen165
+\L@lbox=\box38
+\L@tbox=\box39
+\c@L@lines=\count117
+\c@L@depth=\count118
+\L@Pindent=\dimen166
+\L@Findent=\dimen167
+\L@Nindent=\dimen168
+\L@lraise=\dimen169
+\L@first=\dimen170
+\L@next=\dimen171
+\L@slope=\dimen172
+\L@height=\dimen173
+\L@novskip=\dimen174
+\LettrineWidth=\dimen175
+\LettrineHeight=\dimen176
+\LettrineDepth=\dimen177
 
 Loading lettrine.cfg
 (/usr/share/texmf/tex/latex/lettrine/lettrine.cfg))
@@ -469,141 +561,75 @@ Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 (/usr/share/texmf/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen154
-\captionmargin@=\dimen155
-\captionwidth=\dimen156
-\caption@tempdima=\dimen157
-\caption@indent=\dimen158
-\caption@parindent=\dimen159
-\caption@hangindent=\dimen160
+\captionmargin=\dimen178
+\captionmargin@=\dimen179
+\captionwidth=\dimen180
+\caption@tempdima=\dimen181
+\caption@indent=\dimen182
+\caption@parindent=\dimen183
+\caption@hangindent=\dimen184
 )
-\c@ContinuedFloat=\count114
+\c@ContinuedFloat=\count119
 Package caption Info: longtable package is loaded.
 
 (/usr/share/texmf/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
+Package caption Info: rotating package is loaded.
 Package caption Info: wrapfig package is loaded.
 )
-(/usr/share/texmf/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
-
-(/usr/share/texmf/tex/generic/oberdiek/hobsub-hyperref.sty
-Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
-
-
-(/usr/share/texmf/tex/generic/oberdiek/hobsub-generic.sty
-Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
-Package hobsub Info: Skipping package `infwarerr' (already loaded).
-Package hobsub Info: Skipping package `ltxcmds' (already loaded).
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
-Package hobsub Info: Skipping package `ifpdf' (already loaded).
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
-)
-Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
-Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
-)
-Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
-Package: xcolor-patch 2011/01/30 xcolor patch
-Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
-Package hobsub Info: Skipping package `atbegshi' (already loaded).
-Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
-Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
-)
-(/usr/share/texmf/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-(/usr/share/texmf/tex/latex/oberdiek/auxhook.sty
-Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
-)
-(/usr/share/texmf/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-)
-\@linkdim=\dimen161
-\Hy@linkcounter=\count115
-\Hy@pagecounter=\count116
-
-(/usr/share/texmf/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
-)
-\Hy@SavedSpaceFactor=\count117
-
-(/usr/share/texmf/tex/latex/latexconfig/hyperref.cfg
-File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
-)
-Package hyperref Info: Option `hyperfootnotes' set `false' on input line 4319.
-Package hyperref Info: Hyper figures OFF on input line 4443.
-Package hyperref Info: Link nesting OFF on input line 4448.
-Package hyperref Info: Hyper index ON on input line 4451.
-Package hyperref Info: Plain pages OFF on input line 4458.
-Package hyperref Info: Backreferencing OFF on input line 4463.
-Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count118
-
-(/usr/share/texmf/tex/latex/url/url.sty
-\Urlmuskip=\muskip10
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen162
-\Fld@menulength=\count119
-\Field@Width=\dimen163
-\Fld@charsize=\dimen164
-Package hyperref Info: Hyper figures OFF on input line 6295.
-Package hyperref Info: Link nesting OFF on input line 6300.
-Package hyperref Info: Hyper index ON on input line 6303.
-Package hyperref Info: backreferencing OFF on input line 6310.
-Package hyperref Info: Link coloring OFF on input line 6315.
-Package hyperref Info: Link coloring with OCG OFF on input line 6320.
-Package hyperref Info: PDF/A mode OFF on input line 6325.
-LaTeX Info: Redefining \ref on input line 6365.
-LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count120
-\c@Item=\count121
-)
-
-Package hyperref Message: Driver (autodetected): hpdftex.
-
-(/usr/share/texmf/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count122
-\c@bookmark@seq@number=\count123
-
-(/usr/share/texmf/tex/latex/oberdiek/rerunfilecheck.sty
-Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
-)
-\Hy@SectionHShift=\skip70
+(/usr/share/texmf/tex/latex/tools/multicol.sty
+Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
+\c@tracingmulticols=\count120
+\mult@box=\box40
+\multicol@leftmargin=\dimen185
+\c@unbalance=\count121
+\c@collectmore=\count122
+\doublecol@number=\count123
+\multicoltolerance=\count124
+\multicolpretolerance=\count125
+\full@width=\dimen186
+\page@free=\dimen187
+\premulticols=\dimen188
+\postmulticols=\dimen189
+\multicolsep=\skip72
+\multicolbaselineskip=\skip73
+\partial@page=\box41
+\last@line=\box42
+\maxbalancingoverflow=\dimen190
+\mult@rightbox=\box43
+\mult@grightbox=\box44
+\mult@gfirstbox=\box45
+\mult@firstbox=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\c@columnbadness=\count126
+\c@finalcolumnbadness=\count127
+\last@try=\dimen191
+\multicolovershoot=\dimen192
+\multicolundershoot=\dimen193
+\mult@nat@firstbox=\box64
+\colbreak@box=\box65
+\mc@col@check@num=\count128
 )
 (/usr/share/texmf/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip71
+\@mathmargin=\skip74
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf/tex/latex/amsmath/amstext.sty
@@ -611,51 +637,51 @@ Package: amstext 2000/06/29 v2.01
 
 (/usr/share/texmf/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks22
-\ex@=\dimen165
+\@emptytoks=\toks26
+\ex@=\dimen194
 ))
 (/usr/share/texmf/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen166
+\pmbraise@=\dimen195
 )
 (/usr/share/texmf/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count124
+\inf@bad=\count129
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count125
-\leftroot@=\count126
+\uproot@=\count130
+\leftroot@=\count131
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count127
-\DOTSCASE@=\count128
+\classnum@=\count132
+\DOTSCASE@=\count133
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
-\Mathstrutbox@=\box38
-\strutbox@=\box39
-\big@size=\dimen167
+\Mathstrutbox@=\box66
+\strutbox@=\box67
+\big@size=\dimen196
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count129
-\c@MaxMatrixCols=\count130
-\dotsspace@=\muskip11
-\c@parentequation=\count131
-\dspbrk@lvl=\count132
-\tag@help=\toks23
-\row@=\count133
-\column@=\count134
-\maxfields@=\count135
-\andhelp@=\toks24
-\eqnshift@=\dimen168
-\alignsep@=\dimen169
-\tagshift@=\dimen170
-\tagwidth@=\dimen171
-\totwidth@=\dimen172
-\lineht@=\dimen173
-\@envbody=\toks25
-\multlinegap=\skip72
-\multlinetaggap=\skip73
-\mathdisplay@stack=\toks26
+\macc@depth=\count134
+\c@MaxMatrixCols=\count135
+\dotsspace@=\muskip10
+\c@parentequation=\count136
+\dspbrk@lvl=\count137
+\tag@help=\toks27
+\row@=\count138
+\column@=\count139
+\maxfields@=\count140
+\andhelp@=\toks28
+\eqnshift@=\dimen197
+\alignsep@=\dimen198
+\tagshift@=\dimen199
+\tagwidth@=\dimen200
+\totwidth@=\dimen201
+\lineht@=\dimen202
+\@envbody=\toks29
+\multlinegap=\skip75
+\multlinetaggap=\skip76
+\mathdisplay@stack=\toks30
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
@@ -669,20 +695,36 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (/usr/share/texmf/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
+(/usr/share/texmf/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip77
+\enit@outerparindent=\dimen203
+\enit@toks=\toks31
+\enit@inbox=\box68
+\enitdp@description=\count141
+)
 (/usr/share/texmf/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count136
-\Gm@cntv=\count137
-\c@Gm@tempcnt=\count138
-\Gm@bindingoffset=\dimen174
-\Gm@wd@mp=\dimen175
-\Gm@odd@mp=\dimen176
-\Gm@even@mp=\dimen177
-\Gm@layoutwidth=\dimen178
-\Gm@layoutheight=\dimen179
-\Gm@layouthoffset=\dimen180
-\Gm@layoutvoffset=\dimen181
-\Gm@dimlist=\toks27
+
+(/usr/share/texmf/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texmf/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count142
+\Gm@cntv=\count143
+\c@Gm@tempcnt=\count144
+\Gm@bindingoffset=\dimen204
+\Gm@wd@mp=\dimen205
+\Gm@odd@mp=\dimen206
+\Gm@even@mp=\dimen207
+\Gm@layoutwidth=\dimen208
+\Gm@layoutheight=\dimen209
+\Gm@layouthoffset=\dimen210
+\Gm@layoutvoffset=\dimen211
+\Gm@dimlist=\toks32
 )
 (/usr/share/texmf/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
@@ -841,39 +883,18 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-(/usr/share/texmf/tex/latex/microtype/microtype.sty
-Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
-\MT@toks=\toks28
-\MT@count=\count139
-LaTeX Info: Redefining \textls on input line 766.
-\MT@outer@kern=\dimen182
-LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
-\MT@listname@count=\count140
-
-(/usr/share/texmf/tex/latex/microtype/microtype-pdftex.def
-File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
-
-LaTeX Info: Redefining \lsstyle on input line 915.
-LaTeX Info: Redefining \lslig on input line 915.
-\MT@outer@space=\skip74
-)
-Package microtype Info: Loading configuration file microtype.cfg.
-
-(/usr/share/texmf/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
-))
 (/usr/share/texmf/tex/latex/fourier/fourier-orns.sty
 Package: fourier-orns 2004/01/30 1.1 fourier-ornaments package
 )
 (/usr/share/texmf/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count141
+\c@lips@count=\count145
 )
 (/usr/share/texmf/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
-\FN@temptoken=\toks29
-\footnotemargin=\dimen183
-\c@pp@next@reset=\count142
+\FN@temptoken=\toks33
+\footnotemargin=\dimen212
+\c@pp@next@reset=\count146
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -883,52 +904,224 @@ Package footmisc Info: Declaring symbol style lamport* on input line 903.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 .
 )
+(/usr/share/texmf/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen213
+)
 (/usr/share/texmf/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2009/09/02 v1.0a change counter resetting
-) (./LaTeXed-SoS.aux)
+)
+(/usr/share/texmf/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/share/texmf/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texmf/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texmf/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen214
+\Hy@linkcounter=\count147
+\Hy@pagecounter=\count148
+
+(/usr/share/texmf/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count149
+
+(/usr/share/texmf/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `hyperfootnotes' set `false' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count150
+
+(/usr/share/texmf/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen215
+\Fld@menulength=\count151
+\Field@Width=\dimen216
+\Fld@charsize=\dimen217
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count152
+\c@Item=\count153
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texmf/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count154
+\c@bookmark@seq@number=\count155
+
+(/usr/share/texmf/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip78
+)
+(/usr/share/texmf/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count156
+)
+(/usr/share/texmf/tex/latex/microtype/microtype.sty
+Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
+\MT@toks=\toks34
+\MT@count=\count157
+LaTeX Info: Redefining \textls on input line 766.
+\MT@outer@kern=\dimen218
+LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
+\MT@listname@count=\count158
+
+(/usr/share/texmf/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 915.
+LaTeX Info: Redefining \lslig on input line 915.
+\MT@outer@space=\skip79
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/share/texmf/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
+)) (./LaTeXed-SoS.aux
+
+LaTeX Warning: Label `tab:Athletics' multiply defined.
+
+
+LaTeX Warning: Label `tab:Daggers List' multiply defined.
+
+
+LaTeX Warning: Label `tab:1H Swords' multiply defined.
+
+
+LaTeX Warning: Label `tab:1H Swords' multiply defined.
+
+
+LaTeX Warning: Label `tab:1H Blunt' multiply defined.
+
+
+LaTeX Warning: Label `tab:2H Blunt' multiply defined.
+
+
+LaTeX Warning: Label `tab:Spears' multiply defined.
+
+
+LaTeX Warning: Label `tab:Spears' multiply defined.
+
+
+LaTeX Warning: Label `tab:Polearms' multiply defined.
+
+
+LaTeX Warning: Label `tab:Polearms' multiply defined.
+
+)
 \openout1 = `LaTeXed-SoS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 104.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 113.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 113.
 
-
-(/usr/share/texmf/tex/latex/base/ts1cmr.fd
+ (/usr/share/texmf/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Try loading font information for OT1+pplj on input line 104
-.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Try loading font information for T1+pplj on input line 113.
 
-(/usr/share/texmf/tex/latex/psnfss/ot1pplj.fd
-File: ot1pplj.fd 2004/09/06 font definitions for OT1/pplj.
+
+(/usr/share/texmf/tex/latex/psnfss/t1pplj.fd
+File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
 )
+Package nag Info: Command \RaggedLeft not defined, skipping amendment on input 
+line 113.
+Package nag Info: Command \RaggedRight not defined, skipping amendment on input
+ line 113.
+
 (/usr/share/texmf/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count143
-\scratchdimen=\dimen184
-\scratchbox=\box40
-\nofMPsegments=\count144
-\nofMParguments=\count145
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count146
-\MPscratchDim=\dimen185
-\MPnumerator=\count147
-\makeMPintoPDFobject=\count148
-\everyMPtoPDFconversion=\toks31
+\scratchcounter=\count159
+\scratchdimen=\dimen219
+\scratchbox=\box69
+\nofMPsegments=\count160
+\nofMParguments=\count161
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count162
+\MPscratchDim=\dimen220
+\MPnumerator=\count163
+\makeMPintoPDFobject=\count164
+\everyMPtoPDFconversion=\toks36
 ) (/usr/share/texmf/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -944,27 +1137,10 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box41
+\AtBeginShipoutBox=\box70
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 104.
-
-(/usr/share/texmf/tex/latex/hyperref/nameref.sty
-Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
-
-(/usr/share/texmf/tex/generic/oberdiek/gettitlestring.sty
-Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
-)
-\c@section@level=\count149
-)
-LaTeX Info: Redefining \ref on input line 104.
-LaTeX Info: Redefining \pageref on input line 104.
-LaTeX Info: Redefining \nameref on input line 104.
- (./LaTeXed-SoS.out) (./LaTeXed-SoS.out)
-\@outlinefile=\write3
-\openout3 = `LaTeXed-SoS.out'.
-
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -974,15 +1150,15 @@ LaTeX Info: Redefining \nameref on input line 104.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(56.9055pt, 500.484pt, 56.9055pt)
-* v-part:(T,H,B)=(113.81102pt, 567.34795pt, 113.81102pt)
+* h-part:(L,W,R)=(42.67912pt, 528.93675pt, 42.67912pt)
+* v-part:(T,H,B)=(85.35826pt, 624.25346pt, 85.35826pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=500.484pt
-* \textheight=567.34795pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
-* \topmargin=-23.90038pt
+* \textwidth=528.93675pt
+* \textheight=624.25346pt
+* \oddsidemargin=-29.59087pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-52.35313pt
 * \headheight=42.67912pt
 * \headsep=22.76228pt
 * \topskip=11.0pt
@@ -1000,7 +1176,23 @@ LaTeX Info: Redefining \nameref on input line 104.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 104.
+Package hyperref Info: Link coloring OFF on input line 113.
+(/usr/share/texmf/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/share/texmf/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count165
+)
+LaTeX Info: Redefining \ref on input line 113.
+LaTeX Info: Redefining \pageref on input line 113.
+LaTeX Info: Redefining \nameref on input line 113.
+ (./LaTeXed-SoS.out) (./LaTeXed-SoS.out)
+\@outlinefile=\write3
+\openout3 = `LaTeXed-SoS.out'.
+
+LaTeX Info: Redefining \microtypecontext on input line 113.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1010,73 +1202,37 @@ Package microtype Info: Using default expansion set `basictext'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-(/usr/share/texmf/tex/latex/microtype/mt-ppl.cfg
+ (/usr/share/texmf/tex/latex/microtype/mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
-LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 107.
-LaTeX Font Info:    Try loading font information for TS1+pplj on input line 111
-.
-
-(/usr/share/texmf/tex/latex/psnfss/ts1pplj.fd
-File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
-)
-LaTeX Font Info:    Try loading font information for U+futs on input line 174.
+Package nag Info: Command \captionabove not defined, skipping amendment on inpu
+t line 113.
+Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
+t line 113.
+Package nag Info: Command \hc@caption not defined, skipping amendment on input 
+line 113.
+Package nag Info: Command \topcaption not defined, skipping amendment on input 
+line 113.
+LaTeX Font Info:    Try loading font information for U+futs on input line 246.
 
 (/usr/share/texmf/tex/latex/fourier/ufuts.fd
 File: ufuts.fd 2004/03/26 Fontinst v1.926 font definitions for U/futs.
 )
-Package microtype Info: Loading generic settings for font family
-(microtype)             `cmss' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <12> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 174.
-LaTeX Font Info:    Font shape `U/futs/bx/n' in size <12> not available
-(Font)              Font shape `U/futs/b/n' tried instead on input line 174.
- [1{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-] [2] [3]
-Package microtype Info: Character `013' is missing
-(microtype)             in font `OT1/pplj/m/sc/10.95'.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `013' is missing
-(microtype)             in font `OT1/pplj/m/sc/24.88'.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplj/m/sc/20.74'.
 (microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `013' is missing
-(microtype)             in font `OT1/pplj/m/sc/14.4'.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplj/m/sc/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
 
-
-LaTeX Font Warning: Font shape `TS1/pplj/m/sc' undefined
-(Font)              using `TS1/pplj/m/n' instead
-(Font)              for symbol `textcopyright' on input line 245.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.249 \end{titlepage}
-                      [1
-
-]
-LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 253.
-pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.282 \clearpage
-                 [1]
-LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 283.
- (./LaTeXed-SoS.toc
 (/usr/share/texmf/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+LaTeX Font Info:    Try loading font information for U+msa on input line 253.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1084,337 +1240,1861 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texmf/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+LaTeX Font Info:    Try loading font information for U+msb on input line 253.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (/usr/share/texmf/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.29 ... {4.2}Advancing with Arc}{20}{section.4.2}
-                                                   [2
+)
+LaTeX Font Info:    Try loading font information for TS1+pplj on input line 255
+.
 
+(/usr/share/texmf/tex/latex/psnfss/ts1pplj.fd
+File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
+)
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.iii}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.196 ...er}{\numberline {7}Skills}{99}{chapter.7}
-                                                   [3])
-\tf@toc=\write4
-\openout4 = `LaTeXed-SoS.toc'.
+LaTeX Font Warning: Font shape `TS1/pplj/m/sc' undefined
+(Font)              using `TS1/pplj/m/n' instead
+(Font)              for symbol `textcopyright' on input line 255.
 
- [4]
-Chapter 1.
-LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/pplj/b/n' tried instead on input line 285.
 [1
 
 
-] [2]
-LaTeX Font Info:    Font shape `OT1/pplj/bx/it' in size <10> not available
-(Font)              Font shape `OT1/pplj/b/it' tried instead on input line 343.
 
- [3] [4] [5] [6]
+{/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 263.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 292.
+
+
+(/usr/share/texmf/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `cmss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `U/futs/bx/n' in size <12> not available
+(Font)              Font shape `U/futs/b/n' tried instead on input line 292.
+pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.292 \clearpage
+                 [1]
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 293.
+ (./LaTeXed-SoS.toc [2
+
+
+] [3] [4] [5] [6] [7])
+\tf@toc=\write4
+\openout4 = `LaTeXed-SoS.toc'.
+
+ [8]
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 295.
+\oldintextsep=\skip80
+[1
+
+
+]
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 300.
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <12> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 327.
+ [2]
+LaTeX Font Info:    Font shape `T1/pplj/bx/it' in size <10> not available
+(Font)              Font shape `T1/pplj/b/it' tried instead on input line 335.
+ [3] [4] [5]
 Chapter 2.
-\c@ttl@toc@chapters=\count150
-(./LaTeXed-SoS.ptc) [7
+\c@ttl@toc@chapters=\count166
+(./LaTeXed-SoS.ptc) [6
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 454--455
-
- []
-
-[8] [9]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[10] [11]
+] [7] [8] [9]
 Chapter 3.
-(./LaTeXed-SoS.ptc) [12
+(./LaTeXed-SoS.ptc) [10
 
-] [13
+] [11
 
-] [14] [15] [16] [17] [18]
-Chapter 4.
-(./LaTeXed-SoS.ptc) [19
-
-] [20
-
-] [21] [22] [23] [24]
-Underfull \hbox (badness 10000) in paragraph at lines 1084--1099
-[][]
- []
-
-[25] [26]
-Chapter 5.
-(./LaTeXed-SoS.ptc) [27
-
-] [28
-
-] [29] [30] [31] [32] [33] [34] [35] [36] [37]
-[38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49]
-Overfull \hbox (30.26573pt too wide) in paragraph at lines 2146--2155
-[] \OT1/pplj/m/n/10.95 There
- []
-
-[50] [51] [52] [53] [54] [55] [56]
-Overfull \hbox (8.27338pt too wide) in paragraph at lines 2405--2409
- []\OT1/pplj/b/n/10.95 Judgement[] \OT1/pplj/m/n/10.95 A Pal-adin can chan-nel 
-the power of Geno-sus through any weapon|even his own hands|to
- []
-
-[57] [58] [59] [60] [61]
-Underfull \hbox (badness 1237) in paragraph at lines 2647--2647
-[]\OT1/pplj/m/n/10.95 Tons of Mois-ture (snow, rain,
- []
-
-[62] [63] [64] [65] [66] [67] [68] [69]
-Chapter 6.
-(./LaTeXed-SoS.ptc) [70
-
-] [71
-
-]
+] [12]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[72] [73] [74
+[13] [14] [15]
+Chapter 4.
+(./LaTeXed-SoS.ptc) [16
 
-] [75
+] [17
 
-] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86]
-[87] [88]
-Underfull \hbox (badness 10000) in paragraph at lines 3631--3632
+] [18] [19] [20] [21] [22]
+Chapter 5.
+(./LaTeXed-SoS.ptc) [23
 
- []
+] [24
 
-[89] [90] [91] [92] [93] [94] [95] [96] [97] [98]
+] [25] [26] [27] [28] [29] [30] [31] [32] [33]
+[34] [35] [36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48]
+[49] [50] [51] [52] [53] [54] [55] [56] [57] [58] [59] [60] [61]
+Chapter 6.
+(./LaTeXed-SoS.ptc) [62
+
+] [63
+
+] [64] [65] [66
+
+] [67] [68] [69] [70] [71] [72]
+[73] [74]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86]
 Chapter 7.
-(./LaTeXed-SoS.ptc) [99
+(./LaTeXed-SoS.ptc) [87
+
+] [88
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 3806--3825
 
-Package hyperref Warning: Suppressing empty link on input line 3973.
+ []
 
+[89]
+Underfull \hbox (badness 10000) in paragraph at lines 3844--3845
 
-Package hyperref Warning: Suppressing empty link on input line 3974.
-
-
-Package hyperref Warning: Suppressing empty link on input line 3975.
-
-
-Package hyperref Warning: Suppressing empty link on input line 3978.
+ []
 
 
-Package hyperref Warning: Suppressing empty link on input line 3980.
+Package wrapfig Warning: Stationary wraptable forced to float on input line 386
+2.
+
+[90] [91] [92] [93] [94]
+Underfull \hbox (badness 1014) in paragraph at lines 4029--4029
+[]\T1/pplj/m/n/9 Scale of Event (World-changing at -4, Ma-jor war/disaster at -
+2, Mi-
+ []
 
 
-Package hyperref Warning: Suppressing empty link on input line 3981.
+Underfull \hbox (badness 1248) in paragraph at lines 4029--4029
+\T1/pplj/m/n/9 nor War/battle/treaty at 0, Small war/disaster at +2, Ob-scure S
+kir-
+ []
+
+[95] [96] [97] [98] [99]
+Overfull \vbox (3.4426pt too high) has occurred while \output is active []
 
 
-Package hyperref Warning: Suppressing empty link on input line 3982.
+[100] [101]
+Underfull \hbox (badness 10000) in paragraph at lines 4341--4356
+\T1/pplj/m/n/10.95 age[] (ma-jor)
+ []
 
-[100
-
-]
-
-Package hyperref Warning: Suppressing empty link on input line 3983.
-
-
-Package hyperref Warning: Suppressing empty link on input line 3984.
-
-
-Package hyperref Warning: Suppressing empty link on input line 3985.
-
-
-Package hyperref Warning: Suppressing empty link on input line 3986.
-
-
-Package hyperref Warning: Suppressing empty link on input line 3987.
-
-
-Package hyperref Warning: Suppressing empty link on input line 3988.
-
-
-Package hyperref Warning: Suppressing empty link on input line 3989.
-
-
-Package hyperref Warning: Suppressing empty link on input line 3990.
-
-
-Package hyperref Warning: Suppressing empty link on input line 3991.
-
-
-Package hyperref Warning: Suppressing empty link on input line 3992.
-
-
-Package hyperref Warning: Suppressing empty link on input line 3995.
-
-
-Package hyperref Warning: Suppressing empty link on input line 3996.
-
-
-Package hyperref Warning: Suppressing empty link on input line 3997.
-
-[101] [102] [103] [104] [105] [106] [107] [108] [109] [110] [111] [112]
-[113] [114]
+[102] [103]
 Chapter 8.
-(./LaTeXed-SoS.ptc) [115
+(./LaTeXed-SoS.ptc) [104
 
-] [116
+] [105
 
-] [117] [118]
+] [106] [107]
 Chapter 9.
-(./LaTeXed-SoS.ptc) [119
+(./LaTeXed-SoS.ptc) [108
 
-] [120
-
-] [121] [122] [123] [124] [125] [126] [127]
-[128] [129] [130] [131] [132] [133] [134] [135] [136] [137] [138] [139]
-[140] [141] [142] [143] [144] [145] [146] [147] [148] [149] [150] [151]
-[152] [153] [154] [155] [156] [157] [158] [159] [160] [161] [162] [163]
-[164] [165]
-Overfull \hbox (4.69121pt too wide) in paragraph at lines 8808--8814
-[]\OT1/pplj/m/n/10.95 Halves Shock ef-fect from weapons +4 Blud-geon-ing AV Ig-
-nores AP Swing/Thrust X for Melee Weapons
- []
-
-[166] [167] [168]
-Overfull \hbox (1.79176pt too wide) in paragraph at lines 9026--9029
-[]\OT1/pplj/m/n/10.95 The ar-mor suits them-selves are bipedal mon-strosi-ties 
-of steel and ma-chine, of-ten laden with weaponry
- []
-
-[169] [170] [171] [172] [173] [174] [175]
-Chapter 10.
-(./LaTeXed-SoS.ptc) [176
-
-] [177
-
-] [178] [179] [180] [181] [182] [183] [184]
-[185] [186]
-Chapter 11.
-(./LaTeXed-SoS.ptc) [187
-
-] [188
-
-] [189] [190]
-Overfull \hbox (2.20624pt too wide) in paragraph at lines 10815--10824
-[]\OT1/pplj/m/n/10.95 BUTT-STRIKE [X] Type: Uni-ver-sal, At-tack, Swing-ing Re-
-quire-ments: Have a Polearm or Spear weapon,
- []
-
-[191] [192] [193]
-Overfull \hbox (14.8974pt too wide) in paragraph at lines 10988--10992
-[]\OT1/pplj/m/n/10.95 MELEE SHOOT [X+Variable] Type: Uni-ver-sal, At-tack, Thru
-st-ing Re-quire-ments: Have a loaded/spanned
- []
-
-[194] [195] [196] [197] [198] [199] [200] [201] [202] [203]
-Overfull \hbox (3.67287pt too wide) in paragraph at lines 11670--11678
-[]\OT1/pplj/m/n/10.95 Cover AV Ta-ble X.X Cover Cover AV Tall grass/hit the dir
-t 0 Hid-ing be-hind Horse Mount TOU+Mount
- []
-
-[204] [205] [206] [207]
-Overfull \hbox (7.63388pt too wide) in paragraph at lines 12009--12019
-[]\OT1/pplj/m/n/10.95 DOUBLE FLING [???????] Type: Uni-ver-sal, Mis-sile, Throw
--ing Re-quire-ments: Have Throw-ing Weapons
- []
-
-[208] [209] [210] [211] [212] [213] [214]
-Overfull \hbox (3.17569pt too wide) in paragraph at lines 12495--12500
-[]\OT1/pplj/m/n/10.95 DISENGAGE [??????] Type: XXXXXX Re-quire-ments: XXXXXX Ma
--neu-ver: XXXXXX Suc-cess: XXXXXX 
- []
-
-[215] [216] [217] [218] [219] [220] [221] [222]
-Chapter 12.
-(./LaTeXed-SoS.ptc) [223
-
-] [224
-
-] [225] [226]
-Chapter 13.
-(./LaTeXed-SoS.ptc) [227
-
-] [228
+] [109
 
 ]
-Overfull \hbox (6.43309pt too wide) in paragraph at lines 13464--13474
-[]\OT1/pplj/m/n/10.95 Combat Pool (CP) CP = (Adroit-ness+Proficiency Pool+Misc)
--(Encumbrance+Fatigue+Pain+Misc) Com-
+Chapter 10.
+(./LaTeXed-SoS.ptc) [110
+
+]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 4552.
+
+[111
+
+] [112] [113]
+Underfull \hbox (badness 10000) in paragraph at lines 4673--4673
+[]\T1/pplj/m/n/9 Weapon
  []
 
-[229]
-Overfull \hbox (15.93843pt too wide) in paragraph at lines 13487--13494
-[]\OT1/pplj/m/n/10.95 Missile Pool (MP) MP=(Missile Pro-fi-ciency Pool+Misc)-(E
-ncumbrance+Fatigue+Pain+Perception Penalty
+
+Underfull \hbox (badness 10000) in paragraph at lines 4673--4673
+[]\T1/pplj/m/n/9 Dagger,
  []
 
-[230] [231] [232] [233] [234] [235] [236] [237] [238] [239] [240] [241]
-[242] [243] [244] [245] [246] [247]
-Overfull \hbox (20.06726pt too wide) in paragraph at lines 15089--15105
-[]\OT1/pplj/m/n/10.95 Mounted Ad-van-tages/Disadvantages Mounted Char-ac-ters g
-ain the fol-low-ing ad-van-tages while Mounted.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4673--4673
+[]\T1/pplj/m/n/9 Dagger,
  []
 
-[248] [249] [250]
+
+Underfull \hbox (badness 10000) in paragraph at lines 4673--4673
+[]\T1/pplj/m/n/9 Dagger,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4673--4673
+[]\T1/pplj/m/n/9 Dagger,
+ []
+
+[114]
+Underfull \hbox (badness 10000) in paragraph at lines 4727--4727
+[]\T1/pplj/m/n/9 Weapon
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4727--4727
+[]\T1/pplj/m/n/9 Dagger,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4727--4727
+[]\T1/pplj/m/n/9 Dagger,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4727--4727
+[]\T1/pplj/m/n/9 Dagger,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4727--4727
+[]\T1/pplj/m/n/9 Dagger,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4727--4727
+[]\T1/pplj/m/n/9 Sword,
+ []
+
+[115] [116]
+Underfull \hbox (badness 10000) in paragraph at lines 4750--4750
+[]\T1/pplj/m/n/9 Weapon
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4780--4780
+[]\T1/pplj/m/n/9 Weapon
+ []
+
+[117] [118]
+Underfull \hbox (badness 10000) in paragraph at lines 4812--4812
+[]\T1/pplj/m/n/9 Weapon
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4812--4812
+[]\T1/pplj/m/n/9 Blunt,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4812--4812
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4812--4812
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4812--4812
+\T1/pplj/m/n/9 Spear,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4812--4812
+[]\T1/pplj/m/n/9 Blunt,
+ []
+
+[119]
+Underfull \hbox (badness 10000) in paragraph at lines 4857--4857
+[]\T1/pplj/m/n/9 Weapon
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4857--4857
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4857--4857
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4857--4857
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4857--4857
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4857--4857
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4857--4857
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4857--4857
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4857--4857
+\T1/pplj/m/n/9 Spear,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4857--4857
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4857--4857
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4857--4857
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4857--4857
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4857--4857
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4857--4857
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4857--4857
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4857--4857
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4857--4857
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Overfull \hbox (6.60887pt too wide) in paragraph at lines 4857--4857
+[]\T1/pplj/m/n/9 7(+2p/+2c)| 
+ []
+
+[120] [121]
+Underfull \hbox (badness 10000) in paragraph at lines 4902--4902
+[]\T1/pplj/m/n/9 Weapon
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4902--4902
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4902--4902
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4902--4902
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4902--4902
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4902--4902
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4902--4902
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4902--4902
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4902--4902
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4902--4902
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4902--4902
+\T1/pplj/m/n/9 Spear,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4902--4902
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4902--4902
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4902--4902
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4902--4902
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4902--4902
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4902--4902
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4902--4902
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4902--4902
+[]\T1/pplj/m/n/9 Polearm,
+ []
+
+
+Overfull \hbox (6.60887pt too wide) in paragraph at lines 4902--4902
+[]\T1/pplj/m/n/9 7(+2p/+2c)| 
+ []
+
+[122] [123] [124] [125] [126] [127] [128]
+Underfull \hbox (badness 6236) in paragraph at lines 5073--5073
+[]\T1/pplj/m/n/9 Integrated Pis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5073--5073
+[]\T1/pplj/m/n/9 Integrated
+ []
+
+[129]
+Chapter 11.
+(./LaTeXed-SoS.ptc) [130
+
+] [131
+
+] [132]
+Overfull \hbox (6.2968pt too wide) in paragraph at lines 5234--5234
+[]\T1/pplj/m/n/9 Crossbow| 
+ []
+
+
+Overfull \hbox (6.2968pt too wide) in paragraph at lines 5234--5234
+[]\T1/pplj/m/n/9 Crossbow| 
+ []
+
+
+Overfull \hbox (6.2968pt too wide) in paragraph at lines 5234--5234
+[]\T1/pplj/m/n/9 Crossbow| 
+ []
+
+
+Overfull \hbox (6.2968pt too wide) in paragraph at lines 5234--5234
+[]\T1/pplj/m/n/9 Crossbow| 
+ []
+
+
+Overfull \hbox (6.2968pt too wide) in paragraph at lines 5234--5234
+[]\T1/pplj/m/n/9 Crossbow| 
+ []
+
+
+Overfull \hbox (6.2968pt too wide) in paragraph at lines 5234--5234
+[]\T1/pplj/m/n/9 Crossbow| 
+ []
+
+[133] [134] [135] [136] [137] [138]
+Chapter 12.
+(./LaTeXed-SoS.ptc) [139
+
+] [140
+
+] [141] [142]
+Chapter 13.
+(./LaTeXed-SoS.ptc) [143
+
+] [144]
+Underfull \hbox (badness 1264) in paragraph at lines 5812--5812
+[]\T1/pplj/m/n/9 Hand*, Fore-arm* El-bow, Up-per Arm,
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 5812--5812
+\T1/pplj/m/n/9 Shoul-ders, Neck, Chest, Sides, Belly,
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 5812--5812
+[]\T1/pplj/m/n/9 Hand, Fore-arm, El-bow, Up-per Arm,
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 5812--5812
+[]\T1/pplj/m/n/9 Hand, Fore-arm, El-bow, Up-per Arm,
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 5812--5812
+[]\T1/pplj/m/n/9 Hand, Fore-arm, El-bow, Up-per Arm,
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 5812--5812
+[]\T1/pplj/m/n/9 Hand, Fore-arm, El-bow, Up-per Arm,
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 5812--5812
+[]\T1/pplj/m/n/9 Hands, Fore-arm, El-bow, Up-per Arm,
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 5812--5812
+\T1/pplj/m/n/9 Shoul-ders, Neck, Chest, Sides, Belly,
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 5812--5812
+[]\T1/pplj/m/n/9 Hand*, Fore-arm* El-bow, Up-per Arm,
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 5812--5812
+\T1/pplj/m/n/9 Shoul-ders, Neck, Chest, Sides, Belly,
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 5812--5812
+[]\T1/pplj/m/n/9 Hand*, Fore-arm* El-bow, Up-per Arm,
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 5812--5812
+\T1/pplj/m/n/9 Shoul-ders, Neck, Chest, Sides, Belly,
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 5812--5812
+[]\T1/pplj/m/n/9 Hands, Fore-arm, El-bow, Up-per Arm,
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 5812--5812
+\T1/pplj/m/n/9 Shoul-ders, Neck, Chest, Sides, Belly,
+ []
+
+[145]
 Chapter 14.
-(./LaTeXed-SoS.ptc) [251
+(./LaTeXed-SoS.ptc) [146
 
-] [252
+] [147
 
-] [253] [254] [255] [256] [257] [258] [259]
-[260] [261] [262] [263] [264] [265] [266] [267] [268] [269] [270] [271]
-[272] [273] [274] [275] [276] [277] [278] [279] [280] [281]
+] [148] [149] [150]
+Underfull \hbox (badness 10000) in paragraph at lines 6042--6042
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 6775) in paragraph at lines 6042--6042
+[]\T1/pplj/m/n/9 Hard, Lay-ers 2 (Groin, Hip,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6042--6042
+[]\T1/pplj/m/n/9 Reinforced
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 6042--6042
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6042--6042
+[]\T1/pplj/m/n/9 Quilted Long
+ []
+
+[151]
+Underfull \hbox (badness 10000) in paragraph at lines 6063--6063
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6063--6063
+[]\T1/pplj/m/n/9 Leather Leg-
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 6063--6063
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6063--6063
+[]\T1/pplj/m/n/9 Mail
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6063--6063
+[]\T1/pplj/m/n/9 Mail Long
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 6063--6063
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6063--6063
+[]\T1/pplj/m/n/9 Quilted Long
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6087--6087
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 6087--6087
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6087--6087
+[]\T1/pplj/m/n/9 Leather Neck-
+ []
+
+[152]
+Underfull \hbox (badness 10000) in paragraph at lines 6109--6109
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 6109--6109
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6109--6109
+[]\T1/pplj/m/n/9 Lamellar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6109--6109
+[]\T1/pplj/m/n/9 Lamellar Leg-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6109--6109
+[]\T1/pplj/m/n/9 Lamellar Long
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6133--6133
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6133--6133
+[]\T1/pplj/m/n/9 Anima Rere-
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 6133--6133
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6133--6133
+[]\T1/pplj/m/n/9 Quilted Long
+ []
+
+[153]
+Underfull \hbox (badness 10000) in paragraph at lines 6159--6159
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 6159--6159
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6159--6159
+[]\T1/pplj/m/n/9 Leather Neck-
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 6159--6159
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6159--6159
+[]\T1/pplj/m/n/9 Quilted Long
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6159--6159
+[]\T1/pplj/m/n/9 Reinforced
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6172--6172
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 6172--6172
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6172--6172
+[]\T1/pplj/m/n/9 Quilted Long
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6172--6172
+[]\T1/pplj/m/n/9 Reinforced
+ []
+
+[154]
+Underfull \hbox (badness 10000) in paragraph at lines 6198--6198
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6198--6198
+[]\T1/pplj/m/n/9 Heavy Quilted
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 6198--6198
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 6198--6198
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6198--6198
+[]\T1/pplj/m/n/9 Mail Long
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6198--6198
+[]\T1/pplj/m/n/9 Quilted Long
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6229--6229
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 3068) in paragraph at lines 6229--6229
+[]\T1/pplj/m/n/9 Face$\OML/cmm/m/it/9 ^^^$\T1/pplj/m/n/9 *, Lower Head, Up-per
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 6229--6229
+[]\T1/pplj/m/n/9 Hard, +1 AV vs Down-ward
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 6229--6229
+\T1/pplj/m/n/9 Helm for Layer 1 on Up-per
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 6229--6229
+[]\T1/pplj/m/n/9 Hard, +1 AV vs Down-ward
+ []
+
+
+Underfull \hbox (badness 3068) in paragraph at lines 6229--6229
+[]\T1/pplj/m/n/9 Face$\OML/cmm/m/it/9 ^^^$\T1/pplj/m/n/9 , Lower Head*, Up-per
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 6229--6229
+[]\T1/pplj/m/n/9 Hard, +2 AV vs Down-ward
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 6229--6229
+\T1/pplj/m/n/9 be worn with a Skull-cap or
+ []
+
+
+Underfull \hbox (badness 7649) in paragraph at lines 6229--6229
+[]\T1/pplj/m/n/9 Hard, No AV vs Up-ward
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6229--6229
+[]\T1/pplj/m/n/9 Lamellar Pot
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6229--6229
+[]\T1/pplj/m/n/9 Leather Pot
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6229--6229
+[]\T1/pplj/m/n/9 Leather Skull-
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 6229--6229
+[]\T1/pplj/m/n/9 Hard, +1 AV vs Down-ward
+ []
+
+
+Underfull \hbox (badness 5652) in paragraph at lines 6229--6229
+[]\T1/pplj/m/n/9 Reinforced Ro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6229--6229
+[]\T1/pplj/m/n/9 Roman Helm
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 6229--6229
+\T1/pplj/m/n/9 Helm for Layer 2 on Up-per
+ []
+
+
+Underfull \hbox (badness 3118) in paragraph at lines 6229--6229
+[]\T1/pplj/m/n/9 Face$\OML/cmm/m/it/9 ^^^$\T1/pplj/m/n/9 , Lower Head*, Neck*,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6229--6229
+[]\T1/pplj/m/n/9 Zischagge/
+ []
+
+[155]
+Underfull \hbox (badness 10000) in paragraph at lines 6251--6251
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 7704) in paragraph at lines 6251--6251
+[]\T1/pplj/m/n/9 Hard, No AV vs Up-ward
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6251--6251
+[]\T1/pplj/m/n/9 Falling Buff
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6251--6251
+\T1/pplj/m/n/9 (Hinged Gor-
+ []
+
+
+Underfull \hbox (badness 5519) in paragraph at lines 6251--6251
+[]\T1/pplj/m/n/9 Restricts Breath-ing 2, Hard,
+ []
+
+
+Underfull \hbox (badness 5519) in paragraph at lines 6251--6251
+[]\T1/pplj/m/n/9 Restricts Breath-ing 2, Hard,
+ []
+
+
+Underfull \hbox (badness 7704) in paragraph at lines 6251--6251
+[]\T1/pplj/m/n/9 Hard, No AV vs Up-ward
+ []
+
+
+Underfull \hbox (badness 7704) in paragraph at lines 6251--6251
+[]\T1/pplj/m/n/9 Hard, No AV vs Up-ward
+ []
+
+[156]
+Underfull \hbox (badness 10000) in paragraph at lines 6282--6282
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6282--6282
+[]\T1/pplj/m/n/9 Cloth
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6282--6282
+[]\T1/pplj/m/n/9 Lamellar Ven-
+ []
+
+
+Overfull \vbox (5.35374pt too high) has occurred while \output is active []
+
+
+[157]
+Underfull \hbox (badness 10000) in paragraph at lines 6293--6293
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6293--6293
+[]\T1/pplj/m/n/9 Leather Neck-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6293--6293
+[]\T1/pplj/m/n/9 Neck-Wrap
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6293--6293
+[]\T1/pplj/m/n/9 Reinforced
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6293--6293
+\T1/pplj/m/n/9 Leather Neck-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6313--6313
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6313--6313
+[]\T1/pplj/m/n/9 Bulletproof
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6313--6313
+[]\T1/pplj/m/n/9 Bulletproof
+ []
+
+
+Underfull \hbox (badness 6825) in paragraph at lines 6313--6313
+[]\T1/pplj/m/n/9 Hard, Lay-ers 2 (Groin, Hip,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6313--6313
+[]\T1/pplj/m/n/9 Munitions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6313--6313
+[]\T1/pplj/m/n/9 Munitions
+ []
+
+
+Underfull \hbox (badness 6825) in paragraph at lines 6313--6313
+[]\T1/pplj/m/n/9 Hard, Lay-ers 1 (Groin, Hip,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6323--6323
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6323--6323
+[]\T1/pplj/m/n/9 Segmented
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6338--6338
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 6338--6338
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 6338--6338
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 6338--6338
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+[158]
+Underfull \hbox (badness 10000) in paragraph at lines 6352--6352
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 6352--6352
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6352--6352
+[]\T1/pplj/m/n/9 Heavy Quilted
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 6352--6352
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6352--6352
+[]\T1/pplj/m/n/9 Heavy Quilted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6352--6352
+[]\T1/pplj/m/n/9 Heavy Quilted
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 6352--6352
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6367--6367
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 6367--6367
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 6367--6367
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6367--6367
+[]\T1/pplj/m/n/9 Hardened
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6367--6367
+\T1/pplj/m/n/9 Leather Breast-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6367--6367
+[]\T1/pplj/m/n/9 Hardened
+ []
+
+
+Underfull \hbox (badness 7168) in paragraph at lines 6367--6367
+[]\T1/pplj/m/n/9 Shagreen Great-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6388--6388
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 6388--6388
+[]\T1/pplj/m/n/9 Shoulders (Thrust only), Up-per
+ []
+
+
+Underfull \hbox (badness 6110) in paragraph at lines 6388--6388
+[]\T1/pplj/m/n/9 Munitions Paul-
+ []
+
+
+Underfull \hbox (badness 5637) in paragraph at lines 6388--6388
+[]\T1/pplj/m/n/9 Munitions Rere-
+ []
+
+
+Underfull \hbox (badness 5711) in paragraph at lines 6388--6388
+[]\T1/pplj/m/n/9 Munitions Vam-
+ []
+
+[159]
+Underfull \hbox (badness 10000) in paragraph at lines 6403--6403
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6403--6403
+[]\T1/pplj/m/n/9 Anima Paul-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6403--6403
+[]\T1/pplj/m/n/9 Anima Rere-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6403--6403
+[]\T1/pplj/m/n/9 Laminar Fore-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6403--6403
+[]\T1/pplj/m/n/9 Laminar El-bow
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6403--6403
+[]\T1/pplj/m/n/9 Laminar Paul-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6403--6403
+[]\T1/pplj/m/n/9 Laminar Rere-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6418--6418
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6418--6418
+[]\T1/pplj/m/n/9 Brigandine
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6418--6418
+[]\T1/pplj/m/n/9 Lamellar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6418--6418
+[]\T1/pplj/m/n/9 Lamellar Long
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6418--6418
+[]\T1/pplj/m/n/9 Lamellar Short
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6418--6418
+[]\T1/pplj/m/n/9 Mail
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6418--6418
+[]\T1/pplj/m/n/9 Mail Long
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6418--6418
+[]\T1/pplj/m/n/9 Mail Short
+ []
+
+[160]
+Underfull \hbox (badness 10000) in paragraph at lines 6432--6432
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6432--6432
+[]\T1/pplj/m/n/9 Hardened
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6432--6432
+\T1/pplj/m/n/9 Leather Paul-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6432--6432
+[]\T1/pplj/m/n/9 Hardened
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6432--6432
+\T1/pplj/m/n/9 Leather Rere-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6432--6432
+[]\T1/pplj/m/n/9 Hardened
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6432--6432
+\T1/pplj/m/n/9 Leather Vam-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6432--6432
+[]\T1/pplj/m/n/9 Reinforced
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6445--6445
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6445--6445
+[]\T1/pplj/m/n/9 Cloth Long
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6445--6445
+[]\T1/pplj/m/n/9 Cloth Short
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6445--6445
+[]\T1/pplj/m/n/9 Quilted Long
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6445--6445
+[]\T1/pplj/m/n/9 Quilted Short
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6445--6445
+[]\T1/pplj/m/n/9 Reinforced
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6461--6461
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6461--6461
+[]\T1/pplj/m/n/9 Bulletproof
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6461--6461
+[]\T1/pplj/m/n/9 Bulletproof
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6461--6461
+[]\T1/pplj/m/n/9 Bulletproof
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6461--6461
+[]\T1/pplj/m/n/9 Munitions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6461--6461
+[]\T1/pplj/m/n/9 Munitions
+ []
+
+[161]
+Underfull \hbox (badness 10000) in paragraph at lines 6473--6473
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6486--6486
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 5652) in paragraph at lines 6486--6486
+[]\T1/pplj/m/n/9 Brigandine Leg-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6486--6486
+[]\T1/pplj/m/n/9 Lamellar Leg-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6499--6499
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6499--6499
+[]\T1/pplj/m/n/9 Hardened
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6499--6499
+[]\T1/pplj/m/n/9 Hardened
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6499--6499
+[]\T1/pplj/m/n/9 Hardened
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6499--6499
+\T1/pplj/m/n/9 Leather Knee-
+ []
+
+[162]
+Underfull \hbox (badness 10000) in paragraph at lines 6509--6509
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6524--6524
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6524--6524
+[]\T1/pplj/m/n/9 Hardened
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6524--6524
+\T1/pplj/m/n/9 Leather Bard-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6524--6524
+[]\T1/pplj/m/n/9 Lamellar Bard-
+ []
+
+[163] [164]
+Chapter 15.
+(./LaTeXed-SoS.ptc) [165
+
+] [166
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 6651--6651
+[]\T1/pplj/m/n/9 Burdinadin Hel-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6670--6670
+[]\T1/pplj/m/n/9 Burdinadin
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6670--6670
+[]\T1/pplj/m/n/9 Burdinadin
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 6670--6670
+[]\T1/pplj/m/n/9 Belly, Chest, Lower Back,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6670--6670
+[]\T1/pplj/m/n/9 Burdinadin
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6670--6670
+[]\T1/pplj/m/n/9 Burdinadin
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6670--6670
+[]\T1/pplj/m/n/9 Burdinadin
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6670--6670
+[]\T1/pplj/m/n/9 Burdinadin Po-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6670--6670
+[]\T1/pplj/m/n/9 Burdinadin Rere-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6670--6670
+[]\T1/pplj/m/n/9 Burdinadin Saba-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6670--6670
+[]\T1/pplj/m/n/9 Burdinadin Paul-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6670--6670
+[]\T1/pplj/m/n/9 Burdinadin Vam-
+ []
+
+
+Overfull \vbox (91.93666pt too high) has occurred while \output is active []
+
+
+[167] [168] [169] [170] [171]
+Chapter 16.
+[172
+
+] [173] [174]
+Chapter 17.
+(./LaTeXed-SoS.ptc) [175
+
+] [176
+
+] [177] [178] [179] [180] [181] [182] [183]
+[184]
+Chapter 18.
+(./LaTeXed-SoS.ptc [185
+
+]) [186]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 8123.
+
+[187
+
+] [188] [189] [190] [191] [192] [193] [194] [195] [196] [197]
+Overfull \hbox (5.52097pt too wide) in paragraph at lines 8607--8608
+[]\T1/pplj/m/n/10.95 If Par-ried or Blocked, you suf-fer a Swing, Thrust, or Sh
+ield Bash (de-pend-ing on the Par-ry-ing/Blocking
+ []
+
+[198] [199] [200] [201] [202] [203] [204] [205] [206] [207] [208] [209]
+[210] [211] [212] [213] [214] [215] [216] [217] [218] [219] [220] [221]
+[222] [223] [224] [225] [226] [227] [228]
+Chapter 19.
+(./LaTeXed-SoS.ptc) [229
+
+] [230
+
+] [231] [232] [233] [234] [235]
+Chapter 20.
+(./LaTeXed-SoS.ptc) [236
+
+] [237
+
+] [238] [239]
+Chapter 21.
+(./LaTeXed-SoS.ptc) [240
+
+] [241
+
+] [242] [243] [244] [245] [246] [247] [248]
+[249] [250] [251] [252] [253]
+Chapter 22.
+(./LaTeXed-SoS.ptc) [254
+
+] [255
+
+] [256]
+Overfull \hbox (1.01445pt too wide) in paragraph at lines 11347--11347
+[][] 
+ []
+
+[257] [258] [259] [260] [261] [262] [263]
+Chapter 23.
+(./LaTeXed-SoS.ptc) [264
+
+] [265
+
+] [266] [267] [268]
+Underfull \hbox (badness 1048) in paragraph at lines 11880--11880
+\T1/pplj/m/n/9 Difficult []Surgery vs[] []Brain
+ []
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 11914--11914
+\T1/pplj/m/n/9 Difficult []Surgery vs[] []Brain
+ []
+
+[269] [270]
+Underfull \hbox (badness 2753) in paragraph at lines 11946--11946
+[]\T1/pplj/m/n/9 [Miracle Surgery vs One-
+ []
+
+
+Underfull \hbox (badness 4872) in paragraph at lines 11946--11946
+[]\T1/pplj/m/n/9 Miracle []Surgery vs[] One-
+ []
+
+
+Underfull \hbox (badness 1701) in paragraph at lines 11946--11946
+\T1/pplj/m/n/9 Miracle []Surgery vs[] Fa-cial
+ []
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 11963--11963
+[]\T1/pplj/m/n/9 Difficult Surgery vs []Mute[]
+ []
+
+
+Underfull \hbox (badness 4872) in paragraph at lines 11963--11963
+\T1/pplj/m/n/9 Miracle Surgery vs []One-
+ []
+
+[271
+
+] [272] [273
+
+] [274] [275
+
+] [276]
+Underfull \hbox (badness 10000) in paragraph at lines 12148--12148
+[]\T1/pplj/m/n/9 Autodrop [Dif-fi-culty
+ []
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 12148--12148
+\T1/pplj/m/n/9 vs Ru-ined limb], In-ter-nal
+ []
+
+[277
+
+] [278] [279
+
+] [280] [281
+
+] [282] [283
+
+] [284]
+Underfull \hbox (badness 10000) in paragraph at lines 12338--12338
+[]\T1/pplj/m/n/9 Auto-Prone [Dif-fi-cult
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12364--12364
+[]\T1/pplj/m/n/9 Auto-Prone [Dif-fi-cult
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12364--12364
+[]\T1/pplj/m/n/9 Auto-Prone [Mir-a-cle
+ []
+
+[285
+
+] [286]
+Underfull \hbox (badness 10000) in paragraph at lines 12418--12418
+[]\T1/pplj/m/n/9 KO vs 3 RS [Rou-tine
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12418--12418
+[]\T1/pplj/m/n/9 KO vs 5 RS [Dif-fi-cult
+ []
+
+
+Underfull \hbox (badness 1168) in paragraph at lines 12418--12418
+[]\T1/pplj/m/n/9 Auto-KO [Mir-a-cle Surgery
+ []
+
+[287
+
+] [288]
+Underfull \hbox (badness 1755) in paragraph at lines 12453--12453
+\T1/pplj/m/n/9 Difficult Surgery vs Crip-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12466--12466
+[]\T1/pplj/m/n/9 Auto-prone [Dif-fi-cult
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12479--12479
+[]\T1/pplj/m/n/9 Auto-prone [Rou-tine
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12479--12479
+[]\T1/pplj/m/n/9 Auto-prone [Dif-fi-cult
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12492--12492
+[]\T1/pplj/m/n/9 Auto-prone [Rou-tine
+ []
+
+[289
+
+] [290]
+Underfull \hbox (badness 10000) in paragraph at lines 12507--12507
+[]\T1/pplj/m/n/9 Auto-prone [Dif-fi-cult
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12507--12507
+[]\T1/pplj/m/n/9 Auto-prone [In-fec-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12520--12520
+[]\T1/pplj/m/n/9 Auto-prone [Dif-fi-cult
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12520--12520
+[]\T1/pplj/m/n/9 Auto-prone [Mir-a-cle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12533--12533
+[]\T1/pplj/m/n/9 Auto-prone [Dif-fi-cult
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12533--12533
+[]\T1/pplj/m/n/9 Auto-prone [Mir-a-cle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12546--12546
+[]\T1/pplj/m/n/9 Auto-prone [Dif-fi-cult
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12546--12546
+[]\T1/pplj/m/n/9 Auto-prone [Mir-a-cle
+ []
+
+[291
+
+] [292]
+Underfull \hbox (badness 10000) in paragraph at lines 12561--12561
+[]\T1/pplj/m/n/9 Auto-prone [Dif-fi-cult
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12561--12561
+[]\T1/pplj/m/n/9 Auto-prone [In-fec-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12574--12574
+[]\T1/pplj/m/n/9 Auto-prone [Rou-tine
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12574--12574
+[]\T1/pplj/m/n/9 Auto-prone [Dif-fi-cult
+ []
+
+
+Underfull \hbox (badness 1472) in paragraph at lines 12587--12587
+[]\T1/pplj/m/n/9 [Routine Surgery vs Crip-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12600--12600
+[]\T1/pplj/m/n/9 Auto-prone [Rou-tine
+ []
+
+[293
+
+] [294]
+Underfull \hbox (badness 10000) in paragraph at lines 12615--12615
+[]\T1/pplj/m/n/9 Auto-prone [In-fec-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12628--12628
+[]\T1/pplj/m/n/9 Auto-prone [Dif-fi-cult
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12641--12641
+[]\T1/pplj/m/n/9 Auto-prone [Rou-tine
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12641--12641
+[]\T1/pplj/m/n/9 Auto-prone [Mir-a-cle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12654--12654
+[]\T1/pplj/m/n/9 Auto-prone [Rou-tine
+ []
+
+[295
+
+] [296]
+Underfull \hbox (badness 1005) in paragraph at lines 12669--12669
+[]\T1/pplj/m/n/9 [Difficult Surgery vs Crip-
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 12682--12682
+[]\T1/pplj/m/n/9 [Difficult Surgery vs Crip-
+ []
+
+
+Underfull \hbox (badness 2050) in paragraph at lines 12682--12682
+[]\T1/pplj/m/n/9 [Miracle Surgery vs Crip-
+ []
+
+[297
+
+] [298]
+Underfull \hbox (badness 7740) in paragraph at lines 12736--12736
+[]\T1/pplj/m/n/9 Autodrop [Arm au-to-mat-
+ []
+
+
+Underfull \hbox (badness 6380) in paragraph at lines 12736--12736
+\T1/pplj/m/n/9 i-cally crip-pled] [In-fec-tion
+ []
+
+[299
+
+] [300]
+Underfull \hbox (badness 1418) in paragraph at lines 12803--12803
+[]\T1/pplj/m/n/9 Disarm vs 4 RS [Rou-tine
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 12816--12816
+[]\T1/pplj/m/n/9 Disarm vs 4 RS [Rou-tine
+ []
+
+[301
+
+] [302]
+Underfull \hbox (badness 1418) in paragraph at lines 12844--12844
+[]\T1/pplj/m/n/9 Disarm vs 3 RS [Rou-tine
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 12857--12857
+[]\T1/pplj/m/n/9 Disarm vs 4 RS [Rou-tine
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 12857--12857
+\T1/pplj/m/n/9 vs Crip-pled Hand] [In-fec-
+ []
+
+[303
+
+] [304]
+Underfull \hbox (badness 1194) in paragraph at lines 12898--12898
+[]\T1/pplj/m/n/9 [Miracle Surgery vs Punc-
+ []
+
+[305
+
+] [306]
+Underfull \hbox (badness 3792) in paragraph at lines 12952--12952
+[]\T1/pplj/m/n/9 [Infection Risk +3] Au-to-
+ []
+
 \tf@ptc=\write5
 \openout5 = `LaTeXed-SoS.ptc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 18080.
- [282]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 18080.
+No complaints by nag.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 12981.
+[307
 
-(./LaTeXed-SoS.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 18080.
+] [308]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 12981.
+ (./LaTeXed-SoS.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 12981.
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 18080
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 12981
 .
 Package rerunfilecheck Info: File `LaTeXed-SoS.out' has not changed.
-(rerunfilecheck)             Checksum: BB930F78FB16AF94C04C30870BC076B4;3516.
+(rerunfilecheck)             Checksum: 33735DCCF1719C2A5A749AC59759AF39;13603.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 18080.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 12981.
  ) 
 Here is how much of TeX's memory you used:
- 13019 strings out of 493091
- 188440 string characters out of 6142991
- 425664 words of memory out of 5000000
- 15579 multiletter control sequences out of 15000+600000
- 47999 words of font info for 121 fonts, out of 8000000 for 9000
+ 16482 strings out of 493091
+ 238560 string characters out of 6142991
+ 584431 words of memory out of 5000000
+ 18295 multiletter control sequences out of 15000+600000
+ 82307 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,16n,43p,1536b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/c
-mr12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/
-texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/p
-ublic/fourier/fourier-orns.pfb></usr/share/texmf/fonts/type1/public/fpl/fplbj8a
-.pfb></usr/share/texmf/fonts/type1/public/fpl/fplrc8a.pfb></usr/share/texmf/fon
-ts/type1/public/fpl/fplrij8a.pfb></usr/share/texmf/fonts/type1/urw/palatino/upl
-b8a.pfb></usr/share/texmf/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texm
-f/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf/fonts/type1/urw/palatin
-o/uplri8a.pfb>
-Output written on LaTeXed-SoS.pdf (290 pages, 925786 bytes).
+ 53i,20n,92p,1607b,782s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvi
+ps/cm-super/cm-super-t1.enc}</usr/share/texmf/fonts/type1/public/amsfonts/cm/cm
+mi10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share
+/texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cm
+r6.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/te
+xmf/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy9
+.pfb></usr/share/texmf/fonts/type1/public/fourier/fourier-orns.pfb></usr/share/
+texmf/fonts/type1/public/fpl/fplbj8a.pfb></usr/share/texmf/fonts/type1/public/f
+pl/fplrc8a.pfb></usr/share/texmf/fonts/type1/public/fpl/fplrij8a.pfb></usr/shar
+e/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/
+urw/palatino/uplb8a.pfb></usr/share/texmf/fonts/type1/urw/palatino/uplbi8a.pfb>
+</usr/share/texmf/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf/fonts/t
+ype1/urw/palatino/uplri8a.pfb>
+Output written on LaTeXed-SoS.pdf (317 pages, 1053178 bytes).
 PDF statistics:
- 2232 PDF objects out of 2487 (max. 8388607)
- 1780 compressed objects within 18 object streams
- 613 named destinations out of 1000 (max. 500000)
- 18897 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 4169 PDF objects out of 4296 (max. 8388607)
+ 3530 compressed objects within 36 object streams
+ 1266 named destinations out of 1440 (max. 500000)
+ 24169 words of extra memory for PDF output out of 24883 (max. 10000000)
 
