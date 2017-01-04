@@ -15,10 +15,10 @@
 \definecolor{darkgray}{RGB}{0,80,0}
 \definecolor{darkred}{RGB}{80,0,0}
 \definecolor{shadecolor}{rgb}{0.97,0.97,0.97}
-\usepackage[demo]{graphicx}
+\usepackage{graphicx}
 \usepackage{wallpaper}
 \usepackage{wrapfig,booktabs}
-\usepackage{tabu,longtable,ctable}
+\usepackage{tabu,longtable,ctable} %Ctable is for ???
 \usepackage{fancyhdr}
 \usepackage{lettrine}
 \usepackage[font=normalsize]{caption}     %% make caption in normal size
@@ -32,8 +32,8 @@
 \usepackage{enumitem}
 \usepackage{geometry}
 \geometry{
-	tmargin=3cm, 
-	bmargin=3cm, 
+	tmargin=2.5cm, 
+	bmargin=2.5cm, 
 	lmargin=1.5cm, 
 	rmargin=1.5cm,
 	headheight=1.5cm,
@@ -88,10 +88,8 @@
 
 \newenvironment{Section}[1]
 {\section{\vspace{0ex}#1}}
-{\vspace{12pt}\centering ------- \decofourleft\decofourright ------- \par}
+{\vspace{8pt}\centering ------- \decofourleft\decofourright ------- \par}
 
-
-\usepackage{lipsum}
 \setlength{\parindent}{1em} % Sangría española
 \pagestyle{fancy}
 
@@ -101,11 +99,11 @@
 \setlength{\footnotemargin}{0.3cm}
 \setlength{\footnotesep}{0.4cm} 
 
-\usepackage{multirow}
-\usepackage{chngcntr}
+\usepackage{multirow} %For cells in tabu spanning multiple rows
+\usepackage{chngcntr} %Changes the resetting of counters
 %\counterwithout{figure}{chapter}
 %\counterwithout{table}{chapter}
-\usepackage[hidelinks,hyperfootnotes=false]{hyperref}
+\usepackage[hyperfootnotes=false]{hyperref}
 	\usepackage{etoolbox}
 	\AtBeginEnvironment{longtabu}{\footnotesize}{}{}   %% change all longtabu content to foot note size
 	\AtBeginEnvironment{tabu}{\footnotesize}{}{} %%Do the same for tabu content, not sure if these two can be combined
@@ -113,134 +111,8 @@
 %END_FOLD
 \begin{document}
 \frontmatter
-	%\TileWallPaper{300pt}{300pt}{Descargas/fondopapelviejo.jpg}
-%\section*{Changelog:} %OBSOLETE?
-%{\footnotesize
-%	\begin{itemize}
-%	\setlength\itemsep{0mm}
-%\item 4/14/2015, K06.0: Changed “An example may be gaining the Bane of ‘Wanted” to :gaining the ‘Wanted’ 
-%Bane: 
-%\item 4/14/2015, K06.0: In progress of adding *s to boons \& banes that can be taken multiple separate times 
-%\item 4/14/2015, K06.0: Removed extra spaces at the end of Boon \& Bane names; about half of them had one 
-%\item 4/14/2015, K13.0: Added the following line to the last bullet point of Stun and also bolded all instances of 
-%Stun in that section on Stun. “The Character sustaining the Stun chooses which maneuvers to subtract 
-%from.” 
-%\item 4/14/2015 K06.0: Added the following line to the Bloodthirsty boon: (and only Red/Red)
-%\item 4/14/2015 K06.0 Under the Natural Leader Boon, I removed the word “Social” from you gain +2 to your 
-%Social score. 
-%\item 4/14/2015 K06.0 Added a clause to Prodigious boons clarifying that they only have an effect during 
-%character creation. 
-%\item 4/14/2015 K06.0 Added a clause to Prodigious Strength clarifying that it does cost 15 and not 10. 
-%\item 4/14/2015 K06.0 Clarified Tall 2’s effects on initiative 
-%\item 4/14/2015 K06.0 Capitalized the Iron, Steel, and Stone under True Grit 
-%\item 4/14/2015 K06.0 Under Bad Reputation Bane, changed For example, while intimidating some yokels. to 
-%While intimidating some yokels, for example. 
-%\item 4/14/2015 K06.0 Made changes to the Blind bane. Blind characters can no longer take the Good Eyes 
-%Boon; Blind characters treat all light levels as Evenly Lit; and Blind characters roll for MP as well as CP. 
-%Standardized all its wording to say Blind Characters rather than “Blind individual” and capitalized the ‘C’ in 
-%‘Character’ in the Boon. 
-%\item 4/14/2015 K06.0 Reduced Braggart WIL RS from 3 to 2. 
-%\item 4/14/2015 K06.0: Changes to Brain Damage Bane: 
-%Renamed the Head Trauma table to Brain Damage 
-%Capitalized all instances of “Int” to “INT” under Brain Damage 
-%Added The result is the effect of the Bane.to the level 2 Brain Damage bane 
-% Changed a great amount of the Bane’s wording 
-% Altered the Brain Damage table’s results for 4 - 7 
-% Wrote an Example for Brain Damage in use 
-%\item 4/14/2015 K13.0: Corrected the spelling of character under Knockout: [Optional]: If a character is 
-%knocked out. 
-%\item 4/14/2015 K13.0: Also in the Knockout section, corrected “etc” to “etc.”” and capitalized the M and B in 
-%“Brain Damage (Minor) Bane” 
-%\item 4/14/2015 K13.0: Changed the Knockout title to be underlined, and removed its colon and an extra blank 
-%space 
-%\item 4/14/2015 K13.0: Changed Stability to be underlined 
-%\item 4/14/2015 K13.0: Changed Falling Onto Slopes to be un-bolded and italicized, to be consistent with 
-%Septic Infections as a “sub-section” of sorts 
-%\item 4/14/2015 K13.0: Changed Electricity Damage to be underlined and renamed it Electrical Damage to be 
-%consistent with its text, which calls it Electrical Damage 
-%\item 4/14/2015 K13.0: Removed the commas after table 8.7 and table 8.8 before listing the tables’ titles. They 
-%were out of place and inconsistent with other table names, like table 8.6. 
-%\item 4/14/2015 K13.0: Changed Cold Damage to be underlined 
-%\item 4/14/2015 K13.0: Changed Infection to be underlined 
-%\item 4/14/2015 K13.0: Added to Blood Loss that a Brain Damage check made after passing out from bloodloss 
-%is done with the reduced TOU score: Note that when the character passes out, the TOU vs. 2 RS to avoid 
-%Brain Damage is done with their newly-modified TOU. (See Knockout, below.) 
-%Changed HLT reaches 1 to HLT reaches 1 or lower 
-%Changed HLT reaches 0 to HLT reaches 0 or below 
-%Changed table 8.1 Blood Loss to be un-italicized, bolded, and on the left side of the table, 
-%consistent with tables seen in the Boons \& Banes chapter. 
-%Changed table 8.1 to be more precise in its rows \& columns and added spaces at the end to fill 
-%out the page 
-%\item 4/15/2015 K08.0: Replaced the abnormal Social Class and Wealth calculations with: Combine the two 
-%costs, and divide the result by 2, rounding up. Note that this is how it was in 1.9.3. Further added the line 
-%For their potentially unbalancing nature, all abnormal Social Class and Wealth combinations are subject 
-%to GM approval. Changed the Abnormal Social Class and Wealth Combinations table appropriately. 
-%Moved the spacing between the table and the large word Wealth to keep all the Wealth parts on 
-%the same page. 
-%\item 4/15/2015 K13.0: Changed the word “make” to “pass” in “they must make a TOU vs 2 RS test”: 
-%Whenever a character is knocked out, they must pass a TOU vs. 2 RS test, or gain the Brain Damage 
-%(Minor) Bane 
-%\item 4/15/2015 K06.0: Finished heavy changes to the Brain Damage boon. 
-%\item 4/15/2015 K06.0: Changed “theoretically” to “in theory” under Broken Limb/Appendage 
-%\item 4/15/2015 K06.0: Replaced all instances of Sincerity with Subterfuge. 
-%\item 4/15/2015 K06.0: Changed Craven’s costs to -7/-15 and their effects to RS 2 and RS 4. 
-%\item 4/15/2015 K06.0: Changed each instance of is determined with to counts in the Debt bane. 
-%\item 4/15/2015 K06.0: Corrected Fat to say it affects HLT, not END 
-%\item 4/15/2015 K06.0: Reduced Hothead RSes to 2 and 1 
-%\item 4/15/2015 K06.0: Fixed the wording in Lasting Pain from “Target Zone Area” to “Hit Location”. 
-%\item 4/16/2015 K10.1: Changed Wording on Arm Parry’s Special. 
-%\item 4/24/2015 K9.6: Added Weak Points to Burdinadin Armor 
-%\item 4/29/2015 K10.1: Removed Trip Maneuver both from section and table. 
-%\item 4/29/2015 K10: Removed Superior Trip references in Proficiencies. 
-%\item 4/29/2015 K6: Added Tireless Lobster to Boons \& Banes both in section and table. 
-%\item 5/31/2015 K09: Mirror Plates now protect Chest and Belly both. 
-%\item 6/9/2015 K06: Changed Retinue and Follower rules and Costs 
-%\item 6/9/2015 K09: Changed Weapon Guard values, added descriptions 
-%\item 6/11/2015 K05: Changes to Zells, Paladins and Ohanedin. References to Prodigious removed. 
-%\item 6/11/2015 K02: Modifications to Character Creation Chart 
-%\item 6/11/2015 K04: Attributes changed to a scaling Point Buy system 
-%\item 6/24/2015: Black Bill added “Moonspear” 
-%\item 6/24/2015: Khyber Knife added to Daggers, Curved Dagger removed. 
-%\item 7/7/2015: Shields Reworked, both stats and Durability section. 
-%\item 7/7/2015: Minor changes to Fatigue penalty in Void, Closing Void, and Flee. 
-%\item 7/7/2015: BLANKET changes to Polearms. 
-%\item 7/7/2015: Defensive Disarm removed. 
-%\item 7/7/2015: Disarm 2+BS difficulty changed to BS. 
-%\item 7/8/2015: Yataghan Change 
-%\item 7/22/2015: In the Talent Grapple: Use Weapon and Trip no longer exist, other references to them in 
-%Talents have been removed. 
-%\item 7/22/2015: Good Form and Special Move now use same terminology. 
-%\item 7/25/2015: Missile Penalty Table added under Shoot Maneuver. 
-%\item 7/31/2015: Yet more changes to weapons. Just supplant all the old tables with these. 
-%\item 7/31/2015: Burdinadin Prosthetic section now mentions that Prosthetics are “Hard.” 
-%\item 7/31/2015: Section added saying that weapons mounted in Prosthetics now have to be drawn before they 
-%can be used. 
-%\item 7/31/2015: Bow proficiency now has Superior Shoot at Tier 1 instead of Tier 2. 
-%\item 7/31/2015: Strength Caps now offer diminishing Returns (Melee Weapons section.) 
-%\item 7/31/2015: Slowpoke is now only usable when literally using a Spear or Polearm. 
-%\item 7/31/2015: Shield AV counts as Hard. 
-%\item 7/31/2015: Guard AV for Weapons counts as Hard. 
-%\item 7/31/2015: Burgonet and Great Helm changed. Weight and Perception Penalty reduced. 
-%\item 7/31/2015: Whirlwind Defense now restores 2 CP after successful Parry.\ 
-%\item 7/31/2015: Modifications to Rideby Attack (Lanyard/chain rules added) 
-%\item 7/31/2015: Feint now imposes a TN penalty to defender unless he pays 2 CP. 
-%\item 7/31/2015: Gun damage changed (ammo types do more AP, guns do less damage) 
-%\item 7/31/2015: can now hide behind your own horse (you coward) 
-%\item 7/31/2015: Unarmed Wounds now heal in Days instead of Months. 
-%\item 7/31/2015: Shot gets -3 Load 
-%\item 7/31/2015: Hilt Push now has a “Tie” clause. 
-%\item 7/31/2015: Arm Parry moved to Tier 1 in Dagger, Superior Clinch added to Tier 2 in Dagger. 
-%\item 7/31/2015: Lanyard added to misc. equipment 
-%\item 7/31/2015: Shield-Breaker Talent buffed 
-%\item 7/31/2015: It was on purpose! Talent requirements changed to WIT 6. 
-%\item 7/31/2015: TZMs re-added to Combat Section. 
-%\item 7/31/2015: Noble School now has a Missile Weapon option. 
-%\item 7/31/2015: War Cleaver got Heavy Weapon. 
-%\item 7/31/2015: Several New Talents Added 
-%\item 7/31/2015: Anima and Laminar Weight Values decreased. 
-%\item 7/31/2015: Armored Skirts Re-Added. 
-%\item 8/1/2015: Shield Bind now has a Superior version, added to Maneuvers and Proficiencies. 
-%\end{itemize}}
+%	\TileWallPaper{300pt}{300pt}{Descargas/fondopapelviejo.jpg}
+
 \begin{titlepage}
 \pagestyle{empty}
 	\centering
@@ -294,9 +166,11 @@ opaque.freeforums.net\par
 \tableofcontents %BOOKMARK needs to be added here? 
 \mainmatter
 \chapter{Introduction}\label{ch:intro}
-%Save original \intextsep
+%%Save original \intextsep
 \newlength{\oldintextsep}
 \setlength{\oldintextsep}{\intextsep}
+%%Set taburowsep
+\global\tabulinesep = 1mm
 \newpage
 \section*{Foreword}
 It’s been a long time, now, since that first appearance back in 2012. We’ve gone through three names, a dozen updates, two hundred threads, and hundreds of thousands of posts. Oceans of blood have been spilled in the countless fechts fought in this game’s testing. Our little reservation on the internet should be marked forever by a mountain of human skulls.
@@ -10785,12 +10659,12 @@ Hit Location of the missile attack.
 	\end{tabu}
 \end{table}
 
-Initiative
+\subsection{Initiative}
 Unless otherwise stated, if a Defense Maneuver successfully defends against any Attack
 Maneuver, the Defender gains Initiative. If a Defense Maneuver resolves but there is no Attack
 Maneuver for it to defend against, it does not grant Initiative unless otherwise stated.
 
-Action Initiative is the order in which Maneuvers declared in an Action resolve. Action Initiative, or just Initiative, is held by one character against another character that they are
+\emph{Action Initiative} is the order in which Maneuvers declared in an Action resolve. Action Initiative, or just Initiative, is held by one character against another character that they are
 ``Targeting." If two characters are Targeting each other, only one of them can hold
 Initiative.
 
@@ -10867,10 +10741,11 @@ the enemy’s range to their disadvantage) gains a +1 bonus to the Initiative te
 advantage they enjoy over their enemy.
 If a character leaves an Encounter or Bout, and returns later or is re-engaged, the Reach is
 refreshed to the longest between the two fighters.
+\begin{quotation}
+	\emph{Goofus has a short sword, whereas Gallant has a pike. Goofus’ Short Sword has S Reach, whereas Gallant’s pike has LL Reach. If Goofus wants to attack Gallant, that’s five (5) stages of Reach he would need to pay for to try and make the attack (5 CP). If the attack succeeds, then he would move the fight to S Reach, since he got close enough to hit.}
 
-Goofus has a short sword, whereas Gallant has a pike. Goofus’ Short Sword has S Reach, whereas Gallant’s pike has LL Reach. 
-If Goofus wants to attack Gallant, that’s five (5) stages of Reach he would need to pay for to try and make the attack (5 CP). If the attack succeeds, then he would move the fight to S Reach, since he got close enough to hit. At S Reach, Gallant is now the one at the disadvantage, and Attack AND Defense Maneuvers using his weapon each suffer a 5 CP Activation Cost. He could still Void incoming attacks without penalty, since these do not use his now cumbersome weapon.
-
+	\emph{At S Reach, Gallant is now the one at the disadvantage, and Attack AND Defense Maneuvers using his weapon each suffer a 5 CP Activation Cost. He could still Void incoming attacks without penalty, since these do not use his now cumbersome weapon.}
+\end{quotation}
 \subsubsection{Range}
 When making missile attacks, the range of the weapon is measured in Yards (about three feet or one
 meter each) from the attacker to the target. Each missile weapon has a Range value, which is the number
@@ -10898,9 +10773,11 @@ Difficult Terrain RS
 4
 6
 8
+
 Terrain which might provide one character with a defensive bonus (a wall or rampart being defended, an
 overturned table being fought from behind, etc.) the attacker must pay a CP cost to make an attack,
 determined by the size and nature of the defensive work.
+
 Defense
 Overturned Table, Fence
 CP Cost for Attacker
@@ -10909,10 +10786,12 @@ Low Wall, Makeshift Barricade
 High Wall, Rampart, Crenelations
 4
 6
+
 Some terrain might produce an active danger. In this case, treat it as uneven or irregular terrain, but failing
 by more than X dice (represented as the second number beyond the slash in the table) results in falling,
 slipping into, or otherwise falling victim to the danger.
-Surprise Attacks
+
+\subsection{Surprise Attacks}
 If characters are caught unawares in an ambush or other surprise attack, they may not act in the first
 Phase, and if caught in melee their CP is halved. The Defense value of characters who have been caught
 unawares is reduced by 2, and they cannot benefit from Talents or other bonuses to Defense that are not
@@ -10944,7 +10823,9 @@ Back Attacks replace the Chest Target Zone with the Upper Back Target Zone, and 
 with the Lower Back Target Zone, but otherwise roll exactly the same as normal attacks. Both Swinging
 and Thrusting attacks work this way.
 
-Bobby is Outflanking his enemy, Bill, and declares a Torso Swing on Bill, and hits. The Hit Location roll determines that theattack hits the Chest. However, because Bobby is making a Back Attack, it actually hits Bill’s Upper Back.
+\begin{quotation}
+	\emph{Bobby is Outflanking his enemy, Bill, and declares a Torso Swing on Bill, and hits. The Hit Location roll determines that the attack hits the Chest. However, because Bobby is making a Back Attack, it actually hits Bill’s Upper Back.}
+\end{quotation}
 
 \subsection{Scatterfire} %SCATTERFIRE
 Weapons that use ammunition with the Scatter special rule (Buck and Ball, Heavy Shot, and Shot) can be
@@ -11349,6 +11230,7 @@ Multiple Electrical Wounds combine, creating a new Wound with a Level equal to t
 Wound +1. (So if a character has a Level 3 Electrical Wound, and suffers an additional Level 1-3 
 Electrical Wound, he instead upgrades the original Level 3 Wound to a Level 4, and suffers its effects 
 instead.)
+
 Each Action (second) that a character stays in contact with the source of Electricity, he suffers the damage 
 again.
 On top of any actual damage inflicted, Electricity always inflicts Shock equal to the amount of damage 
@@ -11449,10 +11331,10 @@ If the Infection Roll fails, then the Wound becomes Infected. Once a Wound becom
 character’s body begins to fight against the infection by all means possible, some of which are quite 
 detrimental. Characters with Infections become Feverish within 24 hours, and remain Feverish until the 
 Infection is defeated. (See Illness and Disease section for the effects of Fever. Short version: The 
-character suffers a Halved Combat and Mobility pool, and gains Exhaustion at double the normal rate). 
+character suffers a Halved Combat and Mobility pool, and gains Fatigue at double the normal rate). 
 
 Every 24 hours, the character must roll a Health Check at RS equal to the Infection Level of the Wound. 
-This roll can be modified with Medical skill, as detailed on Table 7.2, and this will greatly increase a 
+This roll can be modified with the \nameref{skill:Surgery} skill, as detailed on Table 7.2, and this will greatly increase a 
 character’s chance of survival. If unsuccessful, the character’s Health is reduced temporarily by 1. This 
 Health does not recover until after the Infection is defeated. If the character’s Health is reduced to 1 by 
 Infection, then all current Infections become Septic. 
@@ -11465,7 +11347,7 @@ In the case of multiple Infections developing, only one Health Check is rolled p
 highest Infection Level of the infected wounds suffered. If the Check succeeds, all of the Infections are 
 resisted. If the Check fails, the character only loses 1 point of Health, not 1 per Infection. 
 
-Table 8.8 Infection Treatment
+Infection Treatment
 Modifier Amount
 Character’s infections are treated by a Surgeon -2 
 Character is kept in a comfortable, clean environment -2 
@@ -11538,10 +11420,9 @@ side of their bodies when fighting, so if an opponent is right-handed, and you l
 an upwards swing, you probably hit him on his right thigh.
 
 Alternatively, flip a coin or roll for it. GMs, be sure to be consistent about this sort of thing!
-%SIDE BY SIDE TARGET ZONES?
 \newpage
-\section{Target Zone Hit Locations}
-\begin{table}[hb]
+\section{Target Zone Hit Locations} \vspace{-15pt} %ADD BACK ATTACKS?
+\begin{table}[!hb]
 \label{tab:Hit Locations}
 	\parbox{0.5\linewidth}{
 		\centering
@@ -11552,7 +11433,7 @@ Alternatively, flip a coin or roll for it. GMs, be sure to be consistent about t
 	&	1-3: \nameref{sec:shoulder}\\
 	&	4-5: \nameref{sec:lower-head}\\
 	&	6-7: \nameref{sec:face}\\
-	&	8-10 Upper Head\\
+	&	8-10 \nameref{sec:upper-head}\\
 		\\
 	\multirow{4}{*}{Upwards Head Swing}
 	&	1-3: \nameref{sec:chest}\\
@@ -11680,7 +11561,7 @@ Character is rendered unconscious for 1d10*6 minutes. Increase the RS of any fur
 This Wound suffers an increased~\nameref{sec:Infection}~Risk equal to X.
 
 \vspace{-5pt}\paragraph[Total]{\label{par:Stun: Total}Stun: Total}---\quad
-Automatically reduces Combat Pool to 0, and immediately renders you Prone without a test.
+Automatically reduces Combat Pool to 0, and immediately renders you \nameref{par:Prone} without a test.
 
 \vspace{-5pt}\paragraph[Total]{\label{par:Pain: Total}Pain: Total}---\quad
 Your effective Pain is considered infinite until this Wound has healed.
@@ -11774,8 +11655,8 @@ Level 1& 1& 6& 1& - &Cut vertically across the chin or lips. May leave a scar.\\
 Level 2& 2& 8& 3& - &Deeper cut, possible chipping of jaw, may contact chin, lip, cheek, or brow.\\
 Level 3& 4& 16& 8&Miracle \nameref{par:Surgery vs}~\nameref{bane:One-Eyed} &Slash catches eye! Severe damage, may lose eye.\\
 Level 4& 6& 20& 18
-	&Miracle \nameref{par:Surgery vs}~One-Eyed OR,\newline
-	Miracle \nameref{par:Surgery vs}~Facial Deformity,\newline
+	&Miracle \nameref{par:Surgery vs}~\nameref{bane:One-Eyed} OR,\newline
+	Miracle \nameref{par:Surgery vs}~\nameref{bane:Facial Deformity},\newline
 	\nameref{par:Infection Risk} +2
 &Face bisected, extreme damage to jaw, teeth, and skull. May lose eye (1-5) or nose (6-10), serious medical complications either way.\\
 Level 5& - &- &- &\nameref{par:Dead}& Head cloven through to the teeth, instant death.\\
@@ -11995,7 +11876,7 @@ Level 4& 8& 10& 5
 		Difficult~\nameref{par:Surgery vs} Ruined Limb] &Shoulder broken, may not recover properly.\\ %RUINED LIMB?
 Level 5& 12& 15& 12
 	&\nameref{par:Autodrop}, \newline
-		[Miracle~\nameref{par:Surgery vs} Ruined limb], \newline
+		Miracle~\nameref{par:Surgery vs} Ruined limb, \newline
 		\nameref{par:Internal Bleeding}.
 	&Shoulder collapsed, internal bleeding, recovery unlikely, death possible.\\
 	\end{tabu}
@@ -12100,8 +11981,8 @@ Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
 Level 1& 0& 4& 4& - &Shallow penetration to the side, bit of blood, nothing serious.\\
 Level 2& 1& 5& 6& - &Penetration at an oblique angle, might be through-and-through, significant bleeding but no lasting harm.\\
 Level 3& 2& 9& 9& - &Side pierced, severe bleeding but no organ damage.\\
-Level 4& 3& 12& 14& \nameref{Infection Risk}~+2& Deep penetration, organ damage, severe bleeding, serious risk of infection. \\
-Level 5& 5& 16& 18& \nameref{Infection Risk}~+5& Extreme penetration, possible exit wound, organ and intestinal damage!\\
+Level 4& 3& 12& 14& \nameref{par:Infection Risk}~+2& Deep penetration, organ damage, severe bleeding, serious risk of infection. \\
+Level 5& 5& 16& 18& \nameref{par:Infection Risk}~+5& Extreme penetration, possible exit wound, organ and intestinal damage!\\
 	\end{tabu}
 \end{table}
 
@@ -12156,8 +12037,8 @@ Level 5& - &- &- &\nameref{par:Dead}& Blade cleaves into belly, through organs a
 Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
 Level 1& 1& 4& 3& - &Shallow stab to side of midriff. No real damage.\\
 Level 2& 3& 6& 6& - &Deeper stab, muscle damage and lots of bleeding, but mercifully no organs hit.\\
-Level 3& 5& 12& 10& \nameref{par:Infection Chance} +4 &Stabbed in the gut, organ and intestine damage. This is serious.\\
-Level 4& 7& 14& 20& \nameref{par:Infection Chance} +4 &Severe internal damage. If this happened in a hospital today, your odds would be poor.\\
+Level 3& 5& 12& 10& \nameref{par:Infection Risk} +4 &Stabbed in the gut, organ and intestine damage. This is serious.\\
+Level 4& 7& 14& 20& \nameref{par:Infection Risk} +4 &Severe internal damage. If this happened in a hospital today, your odds would be poor.\\
 Level 5& - &- &- &\nameref{par:Dead}& Point slams straight through guts to sever central artery of trunk. Exsanguination occurs within seconds, unconsciousness is instant.\\
 	\end{tabu}
 \end{table}
@@ -12231,7 +12112,7 @@ Level 1& 2& 3& 0& - &Glancing blow to the hip.\\
 Level 2& 3& 5& 1& \nameref{par:Stability vs} 2 RS &Solid blow to hip, jarring and painful.\\
 Level 3& 5& 10& 3& \nameref{par:Stability vs} 3 RS &Cracked hip, bruised bone.\\
 Level 4& 6& 12& 5
-	&\nameref{bane:Auto-Prone}, \newline
+	&\nameref{par:Auto-Prone}, \newline
 		Difficult~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Leg}.
 	&Hip broken, leg may be crippled permanently.\\
 Level 5& 8& 18& 7
@@ -12340,7 +12221,7 @@ Level 1& 1& 4& 2& - &Shallow cut on thigh.\\
 Level 2& 2& 5& 4& - &Deeper cut on thigh. Superficial damage.\\
 Level 3& 3& 12& 10& \nameref{par:Stability vs} 3 RS &Serious cut cleaves to bone, anguish, possible knockdown.\\
 Level 4& 4& 15& 20
-	&Auto-prone,\newline
+	&\nameref{par:Auto-Prone},\newline
 		Difficult~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Leg}.
 &Deep cut to thigh, chipped femur, severed artery. Medic!\\
 Level 5& Total& Total& 25 
@@ -12671,8 +12552,8 @@ Level 5& 5& 20& 20& \nameref{par:Autodrop}, \newline
 	\label{wound:Elbow - Piercing}
 	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
 Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
-Level 1& 1& 4& 3& Disarm vs RS 1 &Painful stab in elbow. May drop item.\\
-Level 2& 2& 6& 6& Disarm vs RS 3 &Deeper penetration, nerve injury, may drop item.\\
+Level 1& 1& 4& 3& \nameref{par:Disarm vs} RS 1 &Painful stab in elbow. May drop item.\\
+Level 2& 2& 6& 6& \nameref{par:Disarm vs} RS 3 &Deeper penetration, nerve injury, may drop item.\\
 Level 3& 3& 10& 10& \nameref{par:Autodrop}, \newline
 	Difficult~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Spike penetrates clear through elbow, automatic weapon drop, arm may not recover.\\
 Level 4& 4& 14& 14& \nameref{par:Autodrop}, \newline
@@ -12721,9 +12602,9 @@ Level 5& 3& 5& 0& \nameref{par:Autodrop} &Bruised bone and injured tendons. Arm 
 		Level 1& 1& 3& 1& - &Shallow cut on the forearm. Will be fine without treatment.\\
 		Level 2& 2& 6& 3& - &Deep cut, painful but not debilitating.\\
 		Level 3& 3& 10& 6& \nameref{par:Disarm vs} 4 RS &Serious cut, muscle and tendon damage, possible fracture. May drop held item.\\
-		Level 4& 4& 15& 8& \nameref{Autodrop}, \newline
-		Difficult \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Broken bones, serious muscle damage, automatically drop held item, arm may not recover.\\
-		Level 5& 5& 20& 20& \nameref{Autodrop}, \newline
+Level 4& 4& 15& 8& \nameref{par:Autodrop}, \newline
+Difficult \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Broken bones, serious muscle damage, automatically drop held item, arm may not recover.\\
+		Level 5& 5& 20& 20& \nameref{par:Autodrop}, \newline
 	\nameref{par:Infection Risk} +3, \newline
 	\nameref{par:Limb Severed}
 &Arm cloven off just beneath the elbow. Serious blood loss.\\
@@ -12739,7 +12620,7 @@ Level 1& 1& 2& 2& - &Puncture wound on the forearm.\\
 Level 2& 2& 5& 5& - &Deep puncture on the forearm, more blood, no vital damage.\\
 Level 3& 3& 7& 10& Disarm vs 2 RS &A deep puncture to the forearm, chipping bone, nicked vein. May drop item. \\
 Level 4& 4& 9& 14& Disarm vs 3 RS &Veins are torn, blood everywhere. May drop item.\\
-Level 5& 5& 12& 18& \nameref{Autodrop}, \newline
+Level 5& 5& 12& 18& \nameref{par:Autodrop}, \newline
 Difficult \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm}, \newline
 \nameref{par:Infection Risk} +4 &Complete penetration of the arm, blood loss serious. Item automatically dropped.\\
 	\end{tabu}
@@ -12756,11 +12637,11 @@ Level 3& 6& 10& 3
 &\nameref{par:Disarm vs} 4 RS, \newline
 Routine \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Broken bones, possible snapped wrist. May drop held items.\\
 Level 4& 8& 14& 6
-	&\nameref{Autodrop}, \newline
+	&\nameref{par:Autodrop}, \newline
 	Difficult \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm}
 	&Forearm is shattered, automatically drop held items.\\
 Level 5& 10& 15& 10
-	&\nameref{Autodrop}, \newline
+	&\nameref{par:Autodrop}, \newline
 		Difficult \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm}
 		&Forearm crushed, staggering damage, automatically drop item, limb may never recover.\\
 	\end{tabu}
@@ -12792,9 +12673,9 @@ Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
 Level 1& 1& 4& 1& - &Painful cut on hand.\\
 Level 2& 2& 6& 3& \nameref{par:Disarm vs} 2 RS &Deep cut, bruised bones, may drop held item.\\
 Level 3& 3& 9& 5& \nameref{par:Disarm vs} 5 RS &Broken hand, may drop held item.\\
-Level 4& 4& 12& 8& \nameref{Autodrop} &Severe damage to hand, 1-3 fingers severed, automatically drop held items.\\
+Level 4& 4& 12& 8& \nameref{par:Autodrop} &Severe damage to hand, 1-3 fingers severed, automatically drop held items.\\
 Level 5& 5& 15& 15
-	&\nameref{Autodrop}, \newline
+	&\nameref{par:Autodrop}, \newline
 		\nameref{par:Infection Risk} +5, \newline
 		\nameref{par:Limb Severed}
 	&Hand destroyed or severed. Jet of blood erupts from wound.\\
@@ -12813,11 +12694,11 @@ Level 3& 3& 6& 4
 		Routine \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Hand}
 	&Hand impaled, item automatically dropped, may not recover.\\
 Level 4&4&10&4
-	&\nameref{Autodrop}, \newline
+	&\nameref{par:Autodrop}, \newline
 		Difficult \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Hand} 
 	&Hand seriously damaged, probably won't recover.\\
 Level 5& 5& 15& 18
-	&\nameref{Autodrop}, \newline
+	&\nameref{par:Autodrop}, \newline
 		Miracle \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Hand}
 	&Point tears through hand to forearm, tearing open vein. Extreme blood loss.\\
 	\end{tabu}
@@ -12835,11 +12716,11 @@ Level 3& 6& 6& 2
 		Routine \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Hand}
 	&Hand smashed, items probably dropped.\\
 Level 4& 8& 8& 3
-	&\nameref{Autodrop}, \newline
+	&\nameref{par:Autodrop}, \newline
 		Difficult \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Hand}
 	&Hand bones shattered, damage severe, item automatically dropped, may not recover.\\
 Level 5& 10& 12& 8
-	&\nameref{Autodrop}, \newline
+	&\nameref{par:Autodrop}, \newline
 		Miracle \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Hand}, \newline
 		\nameref{par:Infection Risk} +3
 	&Hand completely smashed. Will probably need to be amputated. Time to consider a hook.\\
@@ -12854,14 +12735,15 @@ Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
 Level 1& 0& 0& 0& - &Stings for a second.\\
 Level 2& 0& 0& 0& - &Trivial bruising.\\
 Level 3& 2& 1& 0& - &Bruised hand.\\
-Level 4& 5& 5& 0& \nameref{Autodrop} &Fractured bones in hand.\\
-Level 5& 10& 10& 0& \nameref{Autodrop} &Broken fist.\\
+Level 4& 5& 5& 0& \nameref{par:Autodrop} &Fractured bones in hand.\\
+Level 5& 10& 10& 0& \nameref{par:Autodrop} &Broken fist.\\
 	\end{tabu}
 \end{table}
 \clearpage
 
 \section{Upper Back} \vspace{-25pt} \label{sec:upper-back}
 \begin{table}[!hb] %Upper Back - Cutting
+	\centering
 	\caption{Upper Back - Cutting}
 	\label{wound:Upper Back - Cutting}
 	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
@@ -12875,6 +12757,7 @@ Level 5& 10& 10& 0& \nameref{Autodrop} &Broken fist.\\
 \end{table}
 
 \begin{table}[!hb] %Upper Back - Piercing
+	\centering
 	\caption{Upper Back - Piercing}
 	\label{wound:Upper Back - Piercing}
 	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
@@ -12897,9 +12780,9 @@ Level 2& 7& 3& 1& - &Heavy bruising, feels like something chipped.\\
 Level 3& 10& 4& 2& \nameref{par:Stability vs} 1 RS &Severe bruising, noticeable bleeding.\\
 Level 4& 13& 5& 3
 	&\nameref{par:Auto-Prone}, \newline
-		[Paralyzed (Not in Beta)]
+		Paralyzed (Not in Beta)
 	&Something definitely made a cracking sound. Spine damaged, may never walk again.\\
-Level 5& - &- &- &Dead& Spine completely destroyed, severe rupturing of internal organs, instant death.\\
+Level 5& - &- &- &\nameref{par:Dead}& Spine completely destroyed, severe rupturing of internal organs, instant death.\\
 	\end{tabu}
 \end{table}
 
@@ -12919,7 +12802,7 @@ Level 5& - &- &- &Dead& Spine completely destroyed, severe rupturing of internal
 
 \section{Lower Back} \vspace{-25pt} \label{sec:lower-back}
 \begin{table}[!hb] %Lower Back - Cutting
-	\caption{Lower Back - Cutting}
+	\caption{Lower Back - Cutting} \vspace{-8pt}
 	\label{wound:Lower Back - Cutting}
 	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
 		Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
@@ -12935,7 +12818,7 @@ Level 5& - &- &- &Dead& Spine completely destroyed, severe rupturing of internal
 \end{table}
 
 \begin{table}[!hb] %Lower Back - Piercing
-	\caption{Lower Back - Piercing}
+	\caption{Lower Back - Piercing} \vspace{-8pt}
 	\label{wound:Lower Back - Piercing}
 	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
 Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
@@ -12954,7 +12837,7 @@ Level 5& - &- &- &\nameref{par:Dead} &Total impalement, main artery of the trunk
 \end{table}
 
 \begin{table}[!hb] %Lower Back - Unarmed
-	\caption{Lower Back - Bludgeoning}
+	\caption{Lower Back - Bludgeoning} \vspace{-8pt}
 	\label{wound:Lower Back - Bludgeoning}
 	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
 Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
@@ -12974,10 +12857,10 @@ Level 5& - &- &- &\nameref{par:Dead} &Spine broken just above tailbone, intestin
 \end{table}
 
 \begin{table}[!hb] %Lower Back - Unarmed
-	\caption{Lower Back - Unarmed}
+	\caption{Lower Back - Unarmed} \vspace{-8pt}
 	\label{wound:Lower Back - Unarmed}
 	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level& Stun&Pain&Bleed&Special&Description\\\toprule\toprule
+Wound Level& Stun&Pain&Bleed&Special&Description\\\toprule
 Level 1 &3 &1 &0 &- &Blow to the kidney. Painful.\\
 Level 2 &5 &2 &0 &- &Severe blow to the kidney.\\
 Level 3 &6 &4 &0 & \nameref{par:KO vs} 2&Savage kidney blow. Possible unconsciousness.\\
