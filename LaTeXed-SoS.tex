@@ -1,13 +1,15 @@
 %BEGIN_FOLD%including all packages, settings etc.
 %LETTRINE and \ornamento are to be learned
-%FIX ROWSEP IN TABU
 \RequirePackage[l2tabu,orthodox]{nag}
 \documentclass[oneside,11pt,english]{book}
 \usepackage{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{xcolor}
-\usepackage{titletoc} %Used for the mini-tables of content in each chapter
+\usepackage{titletoc,titlesec} %Used for the mini-tables of content in each chapter, and reducing the header
+	\titlespacing*{\chapter}{0pt}{*-5}{*1.5}
+	\titleformat{\chapter}[display]{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+	\dottedcontents{<section>}[<left>]{<above-code>}{<label width>}{<leader width>}
 \definecolor{marron}{RGB}{60,30,10}
 \definecolor{darkblue}{RGB}{0,0,80}
 \definecolor{lightblue}{RGB}{80,80,80}
@@ -19,22 +21,23 @@
 \usepackage{wallpaper}
 \usepackage{wrapfig,booktabs}
 \usepackage{tabu,longtable,ctable}
+	\tabulinesep = 1.2mm
 \usepackage{fancyhdr}
 \usepackage{lettrine}
 \usepackage[font=normalsize]{caption}     %% make caption in normal size
 	\DeclareCaptionLabelFormat{blank}{} %For hidden captions
 \usepackage{multicol}
+\usepackage{sidecap}
 %\input Acorn.fd
 %\newcommand*\initfamily{\usefont{U}{Acorn}{xl}{n}}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{rotating}
 \usepackage{enumitem}
 \usepackage{geometry}
 \geometry{
 	tmargin=3cm, 
 	bmargin=3cm, 
-	lmargin=1.5cm, 
+	lmargin=1.5cm,
 	rmargin=1.5cm,
 	headheight=1.5cm,
 	headsep=0.8cm,
@@ -62,6 +65,12 @@
 
 \makeatletter
 \def\headrule{{\color{darkgray}\raisebox{-2.1pt}[10pt][10pt]{\leafright} \hrulefill \raisebox{-2.1pt}[10pt][10pt]{~~~\decofourleft \decotwo\decofourright~~~} \hrulefill \raisebox{-2.1pt}[10pt][10pt]{ \leafleft}}}
+\makeatother
+
+\makeatletter
+	\renewcommand{\l@section}{\@dottedtocline{1}{1.5em}{2.6em}}
+	\renewcommand{\l@subsection}{\@dottedtocline{2}{4.0em}{3.6em}}
+	\renewcommand{\l@subsubsection}{\@dottedtocline{3}{7.4em}{4.5em}}
 \makeatother
 
 \fancyhf{}%ADD a reset button in the footer, maybe linked with the leaf
@@ -128,6 +137,7 @@
 	{\huge\LaTeX ified Revision of \today}\par
 	\vspace{0.2 cm}
 	 \textsc{\copyright~Zachary Irwin, James Lacombe}, 2015. All Rights Reserved
+	
 	 \ornamento
 \end{titlepage}
 \newpage
@@ -203,7 +213,9 @@ The Gods of the Copybook Headings with terror and slaughter return! \\}
 \section{What is Song of Swords?}
 	\begin{quotation}
 {\small \emph{Mago laughed despite himself as he vaulted the barricade. The routing nomads were scrambling to reform in their 
-makeshift wagon fort. Mago landed before a man struggling with the match of his arquebus. The man looked up. With an exultant whoop, Mago drew his saber and cut the man’s right arm off at the elbow in the same motion. The limb fell, its fingers still holding the powder-horn, and Mago walked past, pushing the man out of his way just as he began to scream at the stump of his own arm. A lancer approached, and Mago wove out of the way of the polearm, two-stepped forward, and snapped out with a cut that caught fingers between blade and haft, cleaving all of the digits from the spearman’s forward hand. He barked aloud in wordless triumph, and swept in to hammer aside a high blow from another swordsman. Grasping his foe by the collar, Mago saw his face. Little more than a child, brown eyes wide, mouth moving in wordless fear. Mago blinked, and then caved the boy’s head in with three terrible blows from the spiked pommel of his sword. He threw the corpse away, and flung himself into the melee, as his brothers closed the net. The slaughter was absolute, men who had raided and pillaged Dacian land for years died on their knees, begging for Dacian mercy.}\par
+makeshift wagon fort. Mago landed before a man struggling with the match of his arquebus. The man looked up. With an exultant whoop, Mago drew his saber and cut the man’s right arm off at the elbow in the same motion. The limb fell, its fingers still holding the powder-horn, and Mago walked past, pushing the man out of his way just as he began to scream at the stump of his own arm.}
+
+\emph{A lancer approached, and Mago wove out of the way of the polearm, two-stepped forward, and snapped out with a cut that caught fingers between blade and haft, cleaving all of the digits from the spearman’s forward hand. He barked aloud in wordless triumph, and swept in to hammer aside a high blow from another swordsman. Grasping his foe by the collar, Mago saw his face. Little more than a child, brown eyes wide, mouth moving in wordless fear. Mago blinked, and then caved the boy’s head in with three terrible blows from the spiked pommel of his sword. He threw the corpse away, and flung himself into the melee, as his brothers closed the net. The slaughter was absolute, men who had raided and pillaged Dacian land for years died on their knees, begging for Dacian mercy.}\par
 \emph{Mago brought his sword down, cleaving a pleading nomad’s head down through to the teeth. He wrenched his sword free and flung his arms wide. There were no more left to kill. The Fighting Volkodavs howled in triumph on a mountain of corpses. A gunshot rang out. Mago heard someone scream. The voice sounded familiar.}\par
 \emph{Then he hit the ground. White-hot pain erupted from his upper thigh, where the bullet had struck him in the back. He realized that he was screaming, and all at once it hit him. The cold mud in his hair, on his face. The clawing agony in his leg. He knew that he would live, somehow. Limping for life, but alive. He forced open his eyes, through the tears of pain, and scanned the perimeter for the source. \textbf{Who?} He tried to breathe through gritted teeth, pain and fury foaming in his mouth. \textbf{Who shot me? I must know.} He felt a tooth crack as his eyes settled on the source of his ruin.}\par
 \emph{The one-armed man, pale from loss of blood and fading fast, grinned over the smoking barrel of his arquebus.}}\par
@@ -6992,10 +7004,10 @@ chosen Proficiency and have access to a Novice Talent, and a character with a Pr
 use Tier 2 Maneuvers and has access to up to three Journeyman Talents and two Novice Talents. A 
 character has access to every Maneuver in his Tier, as well as in the Tiers below. 
 
-\begin{longtabu} spread 0pt {X[-2,l] X[c] X[c] X[-1,c]}
+\begin{longtabu} spread 0pt {X[-2,c] X[c] X[c] X[-1,c]}
 	\caption{Proficiency Progression}
 	\label{tab:Proficiency Progression}\\
-\rowfont[c]{}Proficiency Level&Maneuver Tiers Unlocked&Talents Unlocked (Not available to Missile Proficiencies)&Proficiency Point/Arc Point Cost\\\toprule
+\rowfont[c]{}Proficiency Level&Maneuver Tiers Unlocked&Talents Unlocked (Not available to Missile Proficiencies)&Proficiency Point / Arc Point Cost\\\toprule
 1&	Core Maneuvers&	-&	1\\
 2&	-& 	Novice Talent&	1\\
 3&	-& 	-&	1\\
@@ -7084,72 +7096,53 @@ Polearm &-5 &-5 &-4 &-4 &-3 &-3 &-3 &-1 &0\\
 	\end{tabu}
 \end{table}
 
-Dual Wielding 
+\subsubsection{Dual Wielding}
 Dual Wielding involves using a weapon in each hand. This has come up many times throughout history 
 and legend, and is often associated with exceptional skill or prodigious talent. In reality, two-weapon 
 fighting was not merely the province of legendary swordsmen like Miyamoto Musashi, or Pal Kiniszi. 
 Though fighting with two swords was very unusual, fighting with a sword and a smaller companion 
 weapon, like a dagger, was not at all unusual at many points in history. References to double-rapier styles 
 (the infamous ‘Case of Rapiers’) abound, though it was never taken as seriously as the more formal styles 
-of dueling. 
-
- 
+of dueling.
 
 The chief advantage of using two weapons instead of a single weapon, or a weapon and a shield, is that 
 the secondary weapon can be used to parry, trap, or bind the opponent’s weapon, or make a counter-attack 
 on its own. The disadvantages range from not having a shield to the awkwardness of using a large weapon 
 in one’s off-hand, or the inability to quickly grasp something with the free hand. 
 \begin{itemize}
-\item When Dual Wielding, always use the Proficiency of the weapon in your primary hand (if you are 
+	\item When Dual Wielding, always use the Proficiency of the weapon in your primary hand (if you are 
 Ambidextrous, you may choose which Proficiency you use) for terms of CP and available 
 Maneuvers. 
-\item Dual Wielding with a dagger or other weapon with Short Reach or less in the off-hand and a 
+	\item Dual Wielding with a dagger or other weapon with Short Reach or less in the off-hand and a 
 another weapon in the primary hand incurs no penalty. 
-\item Dual Wielding with two larger weapons in each hand incurs a -2 penalty to CP, unless the 
+	\item Dual Wielding with two larger weapons in each hand incurs a -2 penalty to CP, unless the 
 character is Ambidextrous, in which case no penalty is suffered. 
 \end{itemize}
- 
 
-Hand-Off Weapons 
+\subsubsection{Hand-Off Weapons}
 Certain weapons, while designed primarily to be used with two hands, could be wielded in one when the 
 situation demanded it, most often as cavalry swords while mounted, where one hand is needed to control 
 the reins. 
 
- 
-
 To represent this, certain 2H weapons (generally swords) have an ‘Hand-Off’ rule, and a second profile 
 that is 1H instead of 2H. Use the stats appropriate to the number of hands being used to hold the weapon. 
-
- 
 
 Switching from the 2H grip of a sword to a 1H grip has no cost, and can be done at the beginning of any 
 Action. Switching back, assuming the other hand is still free (and attached to the body), can be done the 
 same way. 
 
- 
-
-
-Schools 
-
- 
-
+\section{Schools}
 A School in Song of Swords is a group of Proficiencies that are all leveled up at once for a discounted 
 cost. Schools cost more Arc Points for a character to take, but they’re much cheaper to level up, thus 
 allowing a character to have multiple high-level Proficiencies at a lower cost. 
 
- 
-
 There are several different kinds of Schools, each with a different structure and unique benefits, as well as 
 their own costs for buying in (either at Character Creation or afterwards) and leveling. 
 
- 
-
-Becoming part of a School 
+\paragraph{Becoming part of a School}---\quad
 A character can be part of a School at Character Creation, or can form a School during gameplay, as long 
 as they have access to the proper facilities or training. (Self-Taught schools require no teachers or 
 infrastructure). 
-
- 
 
 Buying into a School in order to gain its benefits is easy. The base cost in Arc of a School is listed in 
 brackets in its Cost section. After this is paid, a number of Proficiencies can be selected and purchased at 
@@ -7158,27 +7151,19 @@ Humans, because of their racial characteristic Willing to Learn, purchase Profic
 of 2. Some Schools have an additional cost per Proficiency that must be paid to add one to the School. In 
 the case of ‘Primary’ and ‘Secondary’ Proficiencies in Schools, these sometimes have different costs. 
 
- 
-
 Once Proficiencies are chosen and paid for, the School is complete. All Proficiencies within the School 
 are at level 1. Some Schools have bonuses or penalties for Primary or Secondary Proficiencies, listed in 
 brackets (i.e. 1 Primary [0]) that alter the CP of the Proficiencies in question. 
 
- 
-
-Tosca is part of a Self-Taught School, and he has the School at level 1. His Primary Proficiency is 1H 
-Sword. His Secondary Proficiency is Wrestling. 
-
- 
-
+\begin{quote}
+	\emph{Tosca is part of a Self-Taught School, and he has the School at level 1. His Primary Proficiency is 1H 
+Sword. His Secondary Proficiency is Wrestling.
 Self-Taught Schools have Primary at 0, so his 1H Sword Proficiency’s CP is 1 (1+0). Self-Taught Schools 
 have Secondary at -1, so his Wrestling Proficiency’s CP is actually 0 (1-1), meaning that while he has the 
 School and access to Core Maneuvers, he does not get any CP from the Proficiency when he fights with 
-it. 
-
- 
-
-Leveling a School
+it.}
+\end{quote}
+\paragraph{Leveling a School}---\quad
 Once you’ve bought into a School, it levels just like any other proficiency, using the same number of 
 points as individual proficiencies. The ‘level’ of the School is tracked independently. The individual 
 proficiencies in the School are listed as ‘-1,’ ‘0,’ or ‘+1,’ this being their level relative to the School’s 
@@ -7196,12 +7181,12 @@ than one Ace. Self-Taught Schools tend to contain few weapons, and practitioners
 habits, but at the same time they are also uniquely well-suited for picking up dirty tricks and thinking 
 outside of the box. 
 
-\subparagraph{Entry Requirements:} Nothing. Who would you pay, yourself?
-\subparagraph{Who Uses it:} Criminals, peasants, militia without formal training, and bored eccentric nobles. What Weapons: Self-Taught Schools can involve any weapons, but tend to use swords and polearms used afoot, pugilism, wrestling, and perhaps a missile proficiency.
-\subparagraph{Proficiencies:} 1 Primary [0], 0-2 Secondary [-1]
-\subparagraph{Bonuses:} Gain Special Move for either Weapon Throw, Blind Toss, or Quickdraw (Special Move means that one time per opponent, you may use a Maneuver at -1 TN and no Activation Cost. You may never use your Special Move against an opponent after you’ve used it once--they’re onto you). 
-\subparagraph{Penalties:} When you reach a new Tier of Maneuvers (including Core Maneuvers) with any Proficiency within this School, you must pick two non-Universal Maneuvers that you can perform in or before that Tier. You suffer from Poor Form when using those Maneuvers with that Proficiency (Poor Form increases the Activation Cost of the Maneuver when used in combat by 1. An instance of Poor Form can be bought off for 1 Arc Point so that it no longer applies to that Maneuver).
-\subparagraph{Cost:} [0]+1 per Proficiency at adoption.
+\vspace{-15pt}\subparagraph{Entry Requirements:} Nothing. Who would you pay, yourself?
+\vspace{-15pt}\subparagraph{Who Uses it:} Criminals, peasants, militia without formal training, and bored eccentric nobles. What Weapons: Self-Taught Schools can involve any weapons, but tend to use swords and polearms used afoot, pugilism, wrestling, and perhaps a missile proficiency.
+\vspace{-15pt}\subparagraph{Proficiencies:} 1 Primary [0], 0-2 Secondary [-1]
+\vspace{-15pt}\subparagraph{Bonuses:} Gain Special Move for either Weapon Throw, Blind Toss, or Quickdraw (Special Move means that one time per opponent, you may use a Maneuver at -1 TN and no Activation Cost. You may never use your Special Move against an opponent after you’ve used it once--they’re onto you). 
+\vspace{-15pt}\subparagraph{Penalties:} When you reach a new Tier of Maneuvers (including Core Maneuvers) with any Proficiency within this School, you must pick two non-Universal Maneuvers that you can perform in or before that Tier. You suffer from Poor Form when using those Maneuvers with that Proficiency (Poor Form increases the Activation Cost of the Maneuver when used in combat by 1. An instance of Poor Form can be bought off for 1 Arc Point so that it no longer applies to that Maneuver).
+\vspace{-15pt}\subparagraph{Cost:} [0]+1 per Proficiency at adoption.
 
 \subsection{Noble}
 Noble Schools exist to teach wealthy aristocrats and other interested, affluent parties how to conduct 
@@ -7211,18 +7196,18 @@ exquisite form and speed that comes from constant repetition, constant correctio
 training equipment. These assets come together to produce excellently practiced fighters with a great 
 technical understanding of combat. 
 
-\subparagraph{Entry Requirements:} 5 gp upon entry. Additionally, each Tier costs 5 gp to ‘unlock,’ as a member of a Noble School must pay exorbitant dues to his school in order to gain access to their secrets (this also serves to keep poor people out on the street, where they belong).
-\subparagraph{Who Uses it:} Young aristocrats, the sons of very wealthy merchants, prodigious peasants allowed access because of natural talent.
-\subparagraph{What Weapons:} Noble Schools tend to include civilized upper-class weapons, like long swords, sabers, lances, rapiers, and perhaps some missile weapons like bows or crossbows. Pugilism and wrestling are generally beneath the dignity of these men, but sometimes are included if dueling in armor is in vogue.
-\subparagraph{Proficiencies:} 1-2 Primary [+2], 1-5 Secondary [+0] 
-\subparagraph{Bonuses:} You automatically gain a Novice Talent for your Primary Proficiency at School level 1, a Journeyman Talent at level 5, and a Master Talent at level 10. You may also choose whether the Noble School you attended teaches Armored, Unarmored, or Missile fighting:
+\vspace{-15pt}\subparagraph{Entry Requirements:} 5 gp upon entry. Additionally, each Tier costs 5 gp to ‘unlock,’ as a member of a Noble School must pay exorbitant dues to his school in order to gain access to their secrets (this also serves to keep poor people out on the street, where they belong).
+\vspace{-15pt}\subparagraph{Who Uses it:} Young aristocrats, the sons of very wealthy merchants, prodigious peasants allowed access because of natural talent.
+\vspace{-15pt}\subparagraph{What Weapons:} Noble Schools tend to include civilized upper-class weapons, like long swords, sabers, lances, rapiers, and perhaps some missile weapons like bows or crossbows. Pugilism and wrestling are generally beneath the dignity of these men, but sometimes are included if dueling in armor is in vogue.
+\vspace{-15pt}\subparagraph{Proficiencies:} 1-2 Primary [+2], 1-5 Secondary [+0] 
+\vspace{-15pt}\subparagraph{Bonuses:} You automatically gain a Novice Talent for your Primary Proficiency at School level 1, a Journeyman Talent at level 5, and a Master Talent at level 10. You may also choose whether the Noble School you attended teaches Armored, Unarmored, or Missile fighting:
 	\begin{description}
 		\item [Armored:] Your END counts as being 2 higher for the purposes of Carry.
 		\item [Unarmored:] For each Primary Proficiency you have in the Noble School, you may choose an individual weapon or shield that is compatible with that Proficiency. When using that weapon or shield with that Proficiency, you reduce the Parry/Block TN of the weapon/shield by 1.
 		\item [Missile:] When taking this School, Choose either Rapid Shot or Power Draw. You gain +2 MP whenever performing that Maneuver.
 	\end{description}
-\subparagraph{Penalties:} None. You’re just superior. 
-\subparagraph{Cost:}[2]+2 per Primary, +1 per Secondary
+\vspace{-15pt}\subparagraph{Penalties:} None. You’re just superior. 
+\vspace{-15pt}\subparagraph{Cost:}[2]+2 per Primary, +1 per Secondary
 
 \subsection{Soldier}
 Soldier Schools emphasize quantity and practicality. These schools are intended to instruct large numbers 
@@ -7230,13 +7215,13 @@ of men on how to use a large variety of weapons, and to confront whatever situat
 into on the battlefield. The methods used are often rough, with less focus on sparring and more on the use 
 of pells, training posts and courses to build strength and skill. 
 
-\subparagraph{Entry Requirements:} 10 sp upon entry, or 5 sp if the character served in an army, town guard, or militia. 
-\subparagraph{Who Uses it:} Soldiers, mercenaries, civilian militia with training.
-\subparagraph{What Weapons:} Soldier Schools can include a broad array of weapons, including swords, daggers, spears, maces, axes, bows, crossbows, javelins and slings, and as well as these, almost certainly including wrestling in their regimen. 
-\subparagraph{Proficiencies:} 3-9 Primary [+0]
-\subparagraph{Bonuses:} Tier 1 Maneuvers and Tier 2 Maneuvers cost 1 less for this School. 
-\subparagraph{Penalties:} Mastery Maneuvers Tier costs 1 more for this School. 
-\subparagraph{Cost:}[1]+1 per Proficiency at adoption.
+\vspace{-15pt}\subparagraph{Entry Requirements:} 10 sp upon entry, or 5 sp if the character served in an army, town guard, or militia. 
+\vspace{-15pt}\subparagraph{Who Uses it:} Soldiers, mercenaries, civilian militia with training.
+\vspace{-15pt}\subparagraph{What Weapons:} Soldier Schools can include a broad array of weapons, including swords, daggers, spears, maces, axes, bows, crossbows, javelins and slings, and as well as these, almost certainly including wrestling in their regimen. 
+\vspace{-15pt}\subparagraph{Proficiencies:} 3-9 Primary [+0]
+\vspace{-15pt}\subparagraph{Bonuses:} Tier 1 Maneuvers and Tier 2 Maneuvers cost 1 less for this School. 
+\vspace{-15pt}\subparagraph{Penalties:} Mastery Maneuvers Tier costs 1 more for this School. 
+\vspace{-15pt}\subparagraph{Cost:}[1]+1 per Proficiency at adoption.
 
 \subsection{Officer}
 Officer Schools can be considered as more refined than a Soldier School, but lacking the finesse and 
@@ -7244,16 +7229,16 @@ prestige of a Noble School. Officers may not necessarily be of noble birth, but 
 dignity and decorum to uphold, while also expecting to get their hands dirty from time to time. Officer 
 Schools teach the weapons of a gentleman as well as the weapons of war. 
 
-\subparagraph{Entry Requirements:} 1 gp upon entry. Additionally, each Tier costs 1 gp to ‘unlock.’ The officer’s corps will generally try to dissuade the unmonied classes from advancing anywhere, but particularly in martial skill. 
-\subparagraph{Who Uses it:} Officers, the sons of officers, martially-minded aristocrats, the sons of martially-minded aristocrats, janissaries. 
-\subparagraph{What Weapons:} Officer Schools teach a mix of weapons of both martial and civilian bent, including missile and melee weapons. Many officers will expect to do their fighting mounted even if they command 
+\vspace{-15pt}\subparagraph{Entry Requirements:} 1 gp upon entry. Additionally, each Tier costs 1 gp to ‘unlock.’ The officer’s corps will generally try to dissuade the unmonied classes from advancing anywhere, but particularly in martial skill. 
+\vspace{-15pt}\subparagraph{Who Uses it:} Officers, the sons of officers, martially-minded aristocrats, the sons of martially-minded aristocrats, janissaries. 
+\vspace{-15pt}\subparagraph{What Weapons:} Officer Schools teach a mix of weapons of both martial and civilian bent, including missile and melee weapons. Many officers will expect to do their fighting mounted even if they command 
 infantry units, and schools that cater to cavalry officers may focus on weapons like sabers, lances, 
 horsebows, carbines, and so on. 
-\subparagraph{Proficiencies:} 1-3 Primary [+1], 1-6 Secondary [+0] 
-\subparagraph{Bonuses:} You automatically gain a Novice Talent for your Primary Proficiency at School level 1, a 
+\vspace{-15pt}\subparagraph{Proficiencies:} 1-3 Primary [+1], 1-6 Secondary [+0] 
+\vspace{-15pt}\subparagraph{Bonuses:} You automatically gain a Novice Talent for your Primary Proficiency at School level 1, a 
 Journeyman Talent at level 5, and a Master Talent at level 10. 
-\subparagraph{Penalties:} None.
-\subparagraph{Cost:} [1]+2 per Primary at adoption, +1 per Secondary 
+\vspace{-15pt}\subparagraph{Penalties:} None.
+\vspace{-15pt}\subparagraph{Cost:} [1]+2 per Primary at adoption, +1 per Secondary 
 
 \subsection{Esoteric}
 Esoteric Schools are those in which the chief aim is some intellectual or spiritual goal, where martial 
@@ -7269,97 +7254,95 @@ and discipline, is born of this sort of style, and it creates unnerving and skil
 to read, and even more difficult to counter. Archery traditions in Esoteric Schools often involved 
 controlled breathing and a holistic approach to aiming rather than a technical one, and are frequently 
 practiced in conjunction with shouts or chants. 
-\subparagraph{Entry Requirements:} 1/10th of starting Wealth at Character Creation. Esoteric Schools cannot be entered during regular play without the GM’s approval.
-\subparagraph{Who Uses It:} Mystics, sword-sages, wandering duelists, Illuminati, and certain religious men. 
-\subparagraph{What Weapons:} Esoteric Schools tend to focus on civilian weapons, simply because warfare is not 
-usually their element. Swords are most common, but some may practice the quarterstaff, truncheon, spear, 
-or even unarmed combat and wrestling if the culture is right. Bows and sometimes throwing weapons are 
+\vspace{-15pt}\subparagraph{Entry Requirements:} 1/10th of starting Wealth at Character Creation. Esoteric Schools cannot be entered during regular play without the GM’s approval.
+\vspace{-15pt}\subparagraph{Who Uses It:} Mystics, sword-sages, wandering duelists, Illuminati, and certain religious men. 
+\vspace{-15pt}\subparagraph{What Weapons:} Esoteric Schools tend to focus on civilian weapons, simply because warfare is not 
+usually their element. Swords are most common, but some may practice the quarterstaff, truncheon, spear, or even unarmed combat and wrestling if the culture is right. Bows and sometimes throwing weapons are 
 common in Esoteric Schools, but it is EXTREMELY rare for to see crossbows or firearms included (+2 
 cost when adding to School) 
-\subparagraph{Proficiencies:} 1-2 Primary [+1], 0-3 Secondary [+0] 
-\subparagraph{Bonuses:} Any Advanced offensive or defensive maneuver made against you has a +2 Activation Cost. 
+\vspace{-15pt}\subparagraph{Proficiencies:} 1-2 Primary [+1], 0-3 Secondary [+0] 
+\vspace{-15pt}\subparagraph{Bonuses:} Any Advanced offensive or defensive maneuver made against you has a +2 Activation Cost. 
 Missile Attacks made while benefiting from Aim may adjust the Hit Location by 1 automatically. 
-\subparagraph{Penalties:} All Advanced offensive or defensive maneuvers you perform have +2 Activation Cost. 
-\subparagraph{Cost:} [2]+2 per Primary, +1 per Secondary 
+\vspace{-15pt}\subparagraph{Penalties:} All Advanced offensive or defensive maneuvers you perform have +2 Activation Cost. 
+\vspace{-15pt}\subparagraph{Cost:} [2]+2 per Primary, +1 per Secondary 
 
 \section*{Proficiency List}
 These are the Proficiencies available to be taken either individually or as part of Schools. Each weapon 
 may be able to be used with more than one Proficiency (e.g. certain pole weapons can be used with both 
-the spear and polearm Proficiencies), so be sure to check which Proficiencies your character’s favored 
-weapons use.
+the spear and polearm Proficiencies), so be sure to check which Proficiencies your character’s favored weapons use.
 
 \section{Melee Proficiencies}
 \subsection{Wrestling}
-Grappling, wrestling, and throwing, both in unarmed and armed situations. Very useful in and out of 
-armor, wrestling is one of the few ways to defeat a foe in armor without a heavy armor penetrating 
-weapon.
+Grappling, wrestling, and throwing, both in unarmed and armed situations. Very useful in and out of armor, wrestling is one of the few ways to defeat a foe in armor without a heavy armor penetrating weapon.
 
 Wrestling has access to a great number of superior grappling Maneuvers. 
 
 \subsubsection{Core Maneuvers}
-Clinch [Superior]
-
-Upgrade one Clinch Maneuver to Superior
-
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item \nameref{man:CLINCH (DEFENSE)} [Superior]
+	\item Upgrade one Clinch Maneuver to Superior
+\end{itemize}
 \subsubsection{Tier 1 Maneuvers}
-Upgrade one Clinch Maneuver to Superior
-
-Disarm [Superior]
-
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item Upgrade one Clinch Maneuver to Superior
+	\item \nameref{man:DISARM} [Superior]
+\end{itemize}
 \subsubsection{Tier 2 Maneuvers}
-All remaining Clinch Maneuvers gain Superior 
+All remaining Clinch Maneuvers gain Superior
 
 \subsection{Pugilism}
-Fighting with fists, feet, knees, elbows, and so on. Pugilism is the striking component of unarmed combat, 
-and focuses less on wrestling and grappling, and more on striking the opponent. 
+Fighting with fists, feet, knees, elbows, and so on. Pugilism is the striking component of unarmed combat, and focuses less on wrestling and grappling, and more on striking the opponent. 
 
 Pugilism has access to a great number of Superior Maneuvers. 
 
 \subsubsection{Core Maneuvers}
-Upgrade an Unarmed Maneuver to Superior (choose three: Kick, Straight Punch, Hook Punch, 
-Elbow, Knee, Shoulder Charge) 
-
-One-Two Punch
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item Upgrade an Unarmed Maneuver to Superior (choose three: Kick, Straight Punch, Hook Punch, Elbow, Knee, Shoulder Charge)
+	\item One-Two Punch
+\end{itemize}
 
 \subsubsection{Tier 1 Maneuvers}
-Upgrade an Unarmed Maneuver to Superior (choose one: Kick, Straight Punch, Hook Punch, 
-Elbow, Knee, Shoulder Charge) 
-
-Disarm [Superior] 
-
-Arm Parry [Superior] 
-
+\vspace{-5pt} \begin{itemize}
+	[itemsep=0.5mm]
+	\item Upgrade an Unarmed Maneuver to Superior (choose one: Kick, Straight Punch, Hook Punch, Elbow, Knee, Shoulder Charge)
+	\item Disarm [Superior]
+	\item Arm Parry [Superior]
+\end{itemize}
 \subsubsection{Tier 2 Maneuvers}
-Upgrade an Unarmed Maneuver to Superior (choose one: Kick, Straight Punch, Hook Punch, 
-Elbow, Knee, Shoulder Charge) 
-
-Clinch [Superior]
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item Upgrade an Unarmed Maneuver to Superior (choose one: Kick, Straight Punch, Hook Punch, Elbow, Knee, Shoulder Charge)
+	\item Clinch [Superior]
+\end{itemize}
 
 \subsection{Dagger}
 Fighting with knives, daggers, and other short cutting and stabbing weapons. Certain daggers may tread 
-the line between dagger and sword. Dagger fighting is useful both in a civilian and military setting--the 
+the line between dagger and sword. Dagger fighting is useful both in a civilian and military setting -- the 
 dagger is often the last line of defense a fighter has, as well as being useful for finishing off grounded 
 opponents. The weapon also has darker applications for assassins and murderers, as its size lends well to 
-easy concealment. Stilettos, Rondel Daggers, Cinquedeas, and Misericordes are all useful daggers for 
-various situations. 
+easy concealment. Stilettos, Rondel Daggers, Cinquedeas, and Misericordes are all useful daggers for various situations.
 
 Using a dagger allows access to a combination of both armed and unarmed Maneuvers, making it highly 
 versatile. 
 
 \subsubsection{Core Maneuvers}
-Deep Draw Cut 
-
-Pommel Strike 
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item Deep Draw Cut
+	\item Pommel Strike
+\end{itemize}
 
 \subsubsection{Tier 1 Maneuvers}
-Dacian Rush
-
-Arm Parry [Superior]
-
-Pommel Strike [Superior]
-
-Disarm [Superior]
-
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item Dacian Rush
+	\item Arm Parry [Superior]
+	\item Pommel Strike [Superior]
+	\item Disarm [Superior]
+\end{itemize}
 \subsubsection{Tier 2 Maneuvers}
 Clinch [Superior]
 
@@ -7369,139 +7352,111 @@ professional soldier. As such, practice with the sword has always been associate
 professionalism, from the ascendancy of the Roman Legion to the collapse of Napoleon’s Empire. The 
 Gladius, the Arming Sword, the Rapier, Saber and Backsword, all carry a respectable legacy of violence. 
 
-1H Sword has access to many highly technical Maneuvers, as well as early access to many advanced 
-Maneuvers, including Shield Maneuvers.
+1H Sword has access to many highly technical Maneuvers, as well as early access to many advanced Maneuvers, including Shield Maneuvers.
 
 \subsubsection{Core Maneuvers}
 Pommel Strike
 
 \subsubsection{Tier 1 Maneuvers}
-Shield Bind
-
-Deep Draw Cut
-
-Riposte
-
-Murder-Strike
-
-Half-Sword
-
-Quickdraw
-
-Shield Bash [Superior]
-
-Shield Beat [Superior]
-
-Pommel Strike [Superior]
-
-Simultaneous Parry/Attack
-
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item Shield Bind
+	\item Deep Draw Cut
+	\item Riposte
+	\item Murder-Strike
+	\item Half-Sword
+	\item Quickdraw
+	\item Shield Bash [Superior]
+	\item Shield Beat [Superior]
+	\item Pommel Strike [Superior]
+	\item Simultaneous Parry/Attack
+\end{itemize}
 \subsubsection{Tier 2 Maneuvers}
-Beat [Superior]
-
-Simultaneous Parry/Attack [Superior]
-
-Disarm [Superior]
-
-Hilt Push [Superior]
-
-Push Cut [Superior]
-
-Riposte [Superior]
-
-Shield Bind [Superior]
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item Beat [Superior]
+	\item Simultaneous Parry/Attack [Superior]
+	\item Disarm [Superior]
+	\item Hilt Push [Superior]
+	\item Push Cut [Superior]
+	\item Riposte [Superior]
+	\item Shield Bind [Superior]
+\end{itemize}
 
 \subsection{2H Sword}
 Two handed swords, though less common than their single-handed cousins throughout 
-history, were frequently weapons of war intended for use in the thick of battle by elite troops. The 
-Landsknechts with their Zweihanders were the defenders of battle standards and were also the bodyguards 
+history, were frequently weapons of war intended for use in the thick of battle by elite troops. The Landsknechts with their Zweihanders were the defenders of battle standards and were also the bodyguards 
 of generals. Spanish Montante manuals contain detailed plays for the fighting of many foes at once. The 
 more modest Longsword, Bastard Sword and other similar weapons dominated the dueling scene in 
 Europe for centuries as well. 
 
-2H Sword has access to many highly technical Maneuvers, as well as early access to many advanced 
-Maneuvers. 
+2H Sword has access to many highly technical Maneuvers, as well as early access to many advanced Maneuvers. 
 
 \subsubsection{Core Maneuvers}
-Pommel Strike
-
-Simultaneous Parry/Attack
-
-Half-Sword
-
-Murder-Strike
-
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item Pommel Strike
+	\item Simultaneous Parry/Attack
+	\item Half-Sword
+	\item Murder-Strike
+\end{itemize}
 \subsubsection{Tier 1 Maneuvers}
-Quickdraw
-
-Riposte
-
-Deep Draw Cut
-
-Hilt Push [Superior]
-
-Disarm [Superior]
-
-Pommel Strike [Superior]
-
-Simultaneous Parry/Attack [Superior]
-
-Shield Bash [Superior]
-
-Shield Beat [Superior]
-
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item Quickdraw
+	\item Riposte
+	\item Deep Draw Cut
+	\item Hilt Push [Superior]
+	\item Disarm [Superior]
+	\item Pommel Strike [Superior]
+	\item Simultaneous Parry/Attack [Superior]
+	\item Shield Bash [Superior]
+	\item Shield Beat [Superior]
+\end{itemize}
 \subsubsection{Tier 2 Maneuvers}
-Beat [Superior]
-
-Riposte [Superior]
-
-Break [Superior]
-
-Push Cut [Superior]
-
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item Beat [Superior]
+	\item Riposte [Superior]
+	\item Break [Superior]
+	\item Push Cut [Superior]
+\end{itemize}
 \subsection{1H Blunt}
 Swords are all well and good, but sometimes you’ve just got to hit someone with an axe. Blunt 
-weapons weren’t always blunt--axes meant for war were actually thinner than wood-splitting axes, and 
-were lighter and sharper. The end-heavy weighting of the weapons does lend them a similar technique. 
+weapons weren’t always blunt--axes meant for war were actually thinner than wood-splitting axes, and were lighter and sharper. The end-heavy weighting of the weapons does lend them a similar technique. 
 Warhammers, Maces, Battleaxes and Truncheons are more effective against armor than slashing weapons 
 like swords, and were useful tools against plate-armored adversaries. 
 
 1H Blunt has access to fewer Maneuvers than the Sword Proficiencies, but makes up for this with 
-powerful versions of Maneuvers meant to destroy enemy armor, shields, and weapons, as well as Shield 
-Maneuvers.
+powerful versions of Maneuvers meant to destroy enemy armor, shields, and weapons, as well as Shield Maneuvers.
 
 \subsubsection{Core Maneuvers}
 Universal Maneuvers only
 
 \subsubsection{Tier 1 Maneuvers}
-Shield Bind
-
-Beat [Superior]
-
-Hook [Superior] 
-
-Break [Superior] 
-
-Hew [Superior] 
-
-Shield Bash [Superior] 
-
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item Shield Bind
+	\item Beat [Superior]
+	\item Hook [Superior]
+	\item Break [Superior]
+	\item Hew [Superior]
+	\item Shield Bash [Superior]
+\end{itemize}
 \subsubsection{Tier 2 Maneuvers}
-Riposte
-
-Disarm [Superior] 
-
-Shield Beat [Superior] 
-
-Shield Bind [Superior] 
-
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item Riposte
+	\item Disarm [Superior] 
+	\item Shield Beat [Superior] 
+	\item Shield Bind [Superior] 
+\end{itemize}
 \subsection{2H Blunt}
 Heavy blunt weapons hold a particular place in history, as both the tools of elite warriors and 
 peasants alike. The Dane Axe was used by the Huscarl elite of Scandinavia and England, whereas the 
 Pole-Flail was reportedly used by the peasant armies of the Hussites and the Belgians during their various 
 revolts. The Morningstar and Heavy Mace were often used by professional soldiers as late as the 16th 
-Century. Cheaper than swords, but more effective against heavy armor, these were often the weapons of 
-choice in the age of high chivalry.
+Century. Cheaper than swords, but more effective against heavy armor, these were often the weapons of choice in the age of high chivalry.
 
 2H Blunt has access to fewer Maneuvers than the Sword Proficiencies, but makes up for this with 
 powerful versions of Maneuvers meant to destroy enemy armor, shields, and weapons. 
@@ -7510,21 +7465,21 @@ powerful versions of Maneuvers meant to destroy enemy armor, shields, and weapon
 Universal Maneuvers only
 
 \subsubsection{Tier 1 Maneuvers}
-Beat [Superior]
-
-Shield Bind 
-
-Hook [Superior] 
-
-Break [Superior] 
-
-Hew [Superior] 
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item Beat [Superior]
+	\item Shield Bind
+	\item Hook [Superior]
+	\item Break [Superior]
+	\item Hew [Superior]
+\end{itemize}
 
 \subsubsection{Tier 2 Maneuvers}
-Riposte
-
-Disarm [Superior]
-
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item Riposte
+	\item Disarm [Superior]
+\end{itemize}
 \subsection{Spear}
 Spears have always been ubiquitous weapons. Cheap, easy to make, and easy to train with, they 
 were useful for every kind of soldier from the conscript to the professional, and remained the most 
@@ -7537,28 +7492,25 @@ Spear has access to many highly technical Maneuvers, just like Sword, but it lac
 Maneuvers of the Polearm and Blunt. 
 
 \subsubsection{Core Maneuvers}
-Universal Maneuvers only 
+Universal Maneuvers only
 
 \subsubsection{Tier 1 Maneuvers}
-Riposte 
-
-Simultaneous Parry/Attack 
-
-Shield Bind 
-
-Shield Bash [Superior] 
-
-Shield Beat [Superior] 
-
-Push Cut [Superior] 
-
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item Riposte
+	\item Simultaneous Parry/Attack
+	\item Shield Bind
+	\item Shield Bash [Superior]
+	\item Shield Beat [Superior]
+	\item Push Cut [Superior]
+\end{itemize}
 \subsubsection{Tier 2 Maneuvers}
-Simultaneous Parry/Attack [Superior] 
-
-Riposte [Superior] 
-
-Shield Bind [Superior] 
-
+\begin{itemize}
+	[itemsep=0.5mm]
+	\item Simultaneous Parry/Attack [Superior] 
+	\item Riposte [Superior] 
+	\item Shield Bind [Superior]
+\end{itemize}
 \subsection{Polearm}
 Fighting with Polearms is the most important skill for most soldiers. Polearms were present on 
 battlefields the world over, but especially in the Medieval world. Polearms can thrust, smash through 
@@ -7572,16 +7524,14 @@ Maneuvers. It lacks Shield Maneuvers since most polearms were meant to be used t
 Universal Maneuvers only
 
 \subsubsection{Tier 1 Maneuvers}
-Riposte 
-
-Hook [Superior] 
-
-Disarm [Superior] 
-
-Hew [Superior] 
-
-Break [Superior] 
-
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item Riposte 
+	\item Hook [Superior] 
+	\item Disarm [Superior] 
+	\item Hew [Superior] 
+	\item Break [Superior] 
+\end{itemize}
 \subsubsection{Tier 2 Maneuvers}
 Simultaneous Parry/Attack 
 
@@ -7595,10 +7545,11 @@ available to them.
 Universal Maneuvers only 
 
 \subsubsection{Tier 1 Maneuvers}
-Power Draw 
-
-Shoot [Superior]
-
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item Power Draw
+	\item Shoot [Superior]
+\end{itemize}
 \subsubsection{Tier 2 Maneuvers}
 Rapid Shot [Superior] OR Power Draw [Superior]
 
@@ -7607,21 +7558,21 @@ Rapid Shot [Superior] OR Power Draw [Superior]
 Universal Maneuvers only 
 
 \subsubsection{Tier 1 Maneuvers}
-Aim [Superior] 
-
-Shoot [Superior]
-
-\subsubsection{Tier 2 Maneuvers}
-
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item Aim [Superior]
+	\item Shoot [Superior]
+\end{itemize}
 \subsection{Firearms}
 \subsubsection{Core Maneuvers}
 Universal Maneuvers only
 
 \subsubsection{Tier 1 Maneuvers}
-Aim [Superior]
-
-Shoot [Superior]
-
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item Aim [Superior]
+	\item Shoot [Superior]
+\end{itemize}
 \subsection{Throwing Weapons}
 \subsubsection{Core Maneuvers}
 Universal Maneuvers only
@@ -7829,7 +7780,7 @@ Unarmed Attack, a Weapon Maneuver in this category is a Weapon Attack, etc.)
 	\item[Superior:] Break inflicts +2 additional damage. 
 \end{description}
 
-\begin{table}[!ht]
+\begin{table}[!hb]
 	\centering
 	\caption{Weapon Damage Threshold}
 	\label{tab:Weapon Damage Threshold}
@@ -7862,17 +7813,21 @@ Langetted/Reinforced Spear/Polearm&12 \\
 \paragraph{\large\label{man:DACIAN RUSH}DACIAN RUSH }---\quad{\large[2+X+Y]}
 \vspace{-10pt}\begin{description}
 \item [Type:] Advanced, Attack, Thrusting 
-\item [Requirements:] Have a Dagger. If Opponent declares a Quickdraw, you may treat this Maneuver as an Instant that occurs before their Quickdraw.
+\item [Requirements:] Have a Dagger. If opponent declares a Quickdraw, you may treat this Maneuver as an Instant that occurs before their Quickdraw.
 \item [Maneuver:] Unarmed Attack at Hand Reach with X at Hand Blind TN 7 vs Opponent PER at TN 7. If Opponent has declared a Quickdraw, it is delayed until after this Action is completed. Any defense declared against this Maneuver is not resolved against the Hand Blind, but against the Thrust to follow. Success [Hand Blind]: Opponent suffers [BS] Stun. If a Quickdraw was declared, it is cancelled. You may immediately roll a Thrust Attack with Y as normal. Any non-Weapon Defense against your Thrust Attack is resolved at +2 TN.
-\item [Failure [Hand Blind]:] You may immediately roll a Thrust Attack with Y as normal. 
-\item [Success [Thrust]:] Resolve Thrust as normal. 
-\item [Special [Rapid Thrust]:] Weapons of Short Reach or Shorter only. If Thrust is successful, you may pay 1+X additional CP to make another Thrust with X dice as part of the same Action. Resolve Thrust as normal. The Opponent may use Quick Defense against this Maneuver. 
+\item [Failure - Hand Blind:] You may immediately roll a Thrust Attack with Y as normal. 
+\item [Success Thrust:] Resolve Thrust as normal. 
+\item [Special Rapid Thrust:] Weapons of Short Reach or Shorter only. If Thrust is successful, you may pay 1+X additional CP to make another Thrust with X dice as part of the same Action. Resolve Thrust as normal. The Opponent may use Quick Defense against this Maneuver. 
 \end{description}
 \begin{quotation}
-\emph{Vlatko rushes out of concealment to assassinate a Marju Khan, who has just left the bathhouse in a robe. He has a Pishkan Toothpick as his weapon, and declares a Dacian Rush. Vlatko has 15 CP. The Khan has 20 normally, but this Action he is surprised, and has only 10. Vlatko declares a Dacian Rush with 2+6+7 dice. The Khan tries to Quickdraw his saber by spending 1 CP, so that he can Parry the Dacian's knife with 8 dice. First the Khan must roll his PER (5) versus Vlatko's 6 dice, both at TN 7. Vlatko succeeds by 1 BS, and in doing so inflicts 1 Stun, cancels the Khan's Quickdraw, and also his Parry, returning half of the dice spent (0 from Quickdraw, 4 from the Parry) to his pool. Stun reduces this to 3, meaning the Khan only has 4 CP left. Vlatko now resolves his Thrust with 7 dice, the Khan tries to use Quick Defense with an Arm Parry by spending 2 and then defending with his remaining 2 dice. However, this Arm Parry is made at +2 TN (TN 9 for Arm Parry) meaning the Khan is less than likely to succeed. Vlatko gets 4 successes, the Khan gets 0. Vlatko inflicts STR+Weapon Damage+BS for 5+1+4 piercing damage to the Khan’s TOU of 5 and the AV of his clothing (ruled to be 1) inflicting a level 4 piercing Wound to the Belly through the Khan's robe. The Khan takes more damage than he can handle, and fails his Overshock test, becoming prone. Both parties have 0 CP left. If Vlatko had a few more dice, he could declare a Rapid Thrust to stab the man again, but instead he'll just wait for the Refresh to finish the injured warlord off.}
+\emph{Vlatko rushes out of concealment to assassinate a Marju Khan, who has just left the bathhouse in a robe. He has a Pishkan Toothpick as his weapon, and declares a Dacian Rush. Vlatko has 15 CP. The Khan has 20 normally, but this Action he is surprised, and has only 10. Vlatko declares a Dacian Rush with 2+6+7 dice. The Khan tries to Quickdraw his saber by spending 1 CP, so that he can Parry the Dacian's knife with 8 dice.}
+
+\emph{First the Khan must roll his PER (5) versus Vlatko's 6 dice, both at TN 7. Vlatko succeeds by 1 BS, and in doing so inflicts 1 Stun, cancels the Khan's Quickdraw, and also his Parry, returning half of the dice spent (0 from Quickdraw, 4 from the Parry) to his pool. Stun reduces this to 3, meaning the Khan only has 4 CP left. Vlatko now resolves his Thrust with 7 dice, the Khan tries to use Quick Defense with an Arm Parry by spending 2 and then defending with his remaining 2 dice. However, this Arm Parry is made at +2 TN (TN 9 for Arm Parry) meaning the Khan is less than likely to succeed. Vlatko gets 4 successes, the Khan gets 0. Vlatko inflicts STR+Weapon Damage+BS for 5+1+4 piercing damage to the Khan’s TOU of 5 and the AV of his clothing (ruled to be 1) inflicting a level 4 piercing Wound to the Belly through the Khan's robe. The Khan takes more damage than he can handle, and fails his Overshock test, becoming prone.}
+
+\emph{Both parties have 0 CP left. If Vlatko had a few more dice, he could declare a Rapid Thrust to stab the man again, but instead he'll just wait for the Refresh to finish the injured warlord off.}
 \end{quotation}
 
-\paragraph{\large\label{man:DEEP DRAW CUT} DEEP DRAW CUT}---\quad{\large[0]}
+\paragraph{\large\label{man:DEEP DRAW CUT}DEEP DRAW CUT}---\quad{\large[0]}
 \vspace{-10pt}\begin{description}
 \item [Type:] Advanced, Attack, Swinging 
 \item [Requirements:] Wielding a weapon which inflicts Cutting damage on Swing. 
@@ -7894,11 +7849,10 @@ Langetted/Reinforced Spear/Polearm&12 \\
 stability test.
 \end{description}
 \begin{quotation}
-\emph{Dusan and Mirza are practicing their swordsmanship. Dusan has declared a Disarm with 6 dice, and Mirza has declared a 
-Parry with 5. Dusan scores 3 successes to Mirza’s 2. Mirza must now make an AGI test at RS 3 (2 base +1 for BS). He has 5 AGI, but only rolls 2 successes. He is disarmed, and his weapon is tossed some distance away. Mirza grins bitterly as he goes to retrieve his sword.}
+\emph{Dusan and Mirza are practicing their swordsmanship. Dusan has declared a Disarm with 6 dice, and Mirza has declared a Parry with 5. Dusan scores 3 successes to Mirza’s 2. Mirza must now make an AGI test at RS 3 (2 base +1 for BS). He has 5 AGI, but only rolls 2 successes. He is disarmed, and his weapon is tossed some distance away. Mirza grins bitterly as he goes to retrieve his sword.}
 \end{quotation}
 
-\paragraph{\large\label{man:FEINT} FEINT}---\quad{\large[2+Variable]}
+\paragraph{\large\label{man:FEINT}FEINT}---\quad{\large[2+Variable]}
 \vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Instant 
 \item [Requirements:] Activate after having declared a Swinging or Thrusting Maneuver, and after any other Maneuvers have been declared, but before any are resolved. You may only activate this Maneuver from a Thrusting Maneuver if the weapon being used has the Fluid Thrusts quality. 
@@ -8359,18 +8313,17 @@ maintain the Strangle as normal in the coming rounds.
 
 \section{Defense Maneuvers}
 \subsection{Parry Defense Maneuvers}
-\paragraph{\large\label{man:DISARM (DEFENSE)} DISARM (DEFENSE)}---\quad{\large[X+2]}
+\paragraph{\large\label{man:DISARM (DEFENSE)}DISARM (DEFENSE)}---\quad{\large[X+2]}
 \vspace{-10pt}\begin{description} 
-\item [Type:] Universal, Defense, Parrying 
+\item [Type:] Universal, Defense, Parrying
 \item [Requirements:] Have a weapon, device or anything with a Defense TN. 
 \item [Maneuver:] Defense at X with Defense TN. 
 \item [Success:] Opponent attack negated. Opponent must make an AGI test with [2+BS] RS. If this test is failed, 
 the targeted weapon is removed from the Opponent's grasp, and either retained by you, dropped at your 
 feet, or thrown several yards away at your discretion. 
-\item [Failure:] Opponent attack is not reduced by Successes from this Maneuver, and hits with all Successes as 
-BS.
+\item [Failure:] Opponent attack is not reduced by Successes from this Maneuver, and hits with all Successes as BS.
 \end{description}
-\paragraph{\large\label{man:PARRY} PARRY}---\quad{\large[X]}
+\paragraph{\large\label{man:PARRY}PARRY}---\quad{\large[X]}
 \vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Defense, Parrying 
 \item [Requirements:] Have a weapon, device or anything with a Defense TN. 
@@ -8389,7 +8342,7 @@ in all ways as the Parrying party being successful, except that the extra hit to
 does not apply here. 
 \end{description}
 
-\paragraph{\large\label{man:QUICK DEFENSE} QUICK DEFENSE}---\quad{\large[2]}
+\paragraph{\large\label{man:QUICK DEFENSE}QUICK DEFENSE}---\quad{\large[2]}
 \vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Defense, Instant 
 \item [Requirements:] You may declare this Maneuver in response to having any attack declared at you, 
@@ -8402,7 +8355,7 @@ resolved by adding CP to it on a 1 for 1 basis.
 However, the Defensive Maneuvers chosen cannot be used more times than normally allowed. 
 \end{description}
 
-\paragraph{\large\label{man:Riposte} Riposte}---\quad{\large[2+X]}
+\paragraph{\large\label{man:RIPOSTE}RIPOSTE}---\quad{\large[2+X]}
 \vspace{-10pt}\begin{description}
 \item [Advanced:] 1H Sword, 2H Sword, Polearm, Spear, 1H Blunt, 2H Blunt %this is not following the standard format
 \item [Requirement:] Have a weapon with a Parry TN and a Strike or Cut TN. 
@@ -8421,7 +8374,7 @@ attack as normal.
 \end{description}
 
 \subsection{Unarmed Defense Maneuvers}
-\paragraph{\large\label{man:ARM PARRY} ARM PARRY}---\quad{\large[X]}
+\paragraph{\large\label{man:ARM PARRY}ARM PARRY}---\quad{\large[X]}
 \vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Defense, Parrying 
 Requirement: Have a free arm that extends (at least) to the forearm (prosthetics can be used for this) with 
@@ -8440,7 +8393,7 @@ allows a return Strike/Thrust on Parry, use an Elbow instead. This Elbow does no
 of Superior. 
 \end{description}
 
-\paragraph{\large\label{man:CLINCH (DEFENSE)} CLINCH (DEFENSE)}---\quad{\large[??????]}
+\paragraph{\large\label{man:CLINCH (DEFENSE)} CLINCH (DEFENSE)}---\quad{[X]}
 Refer to \nameref{man:CLINCH (ATTACK)}, as the Maneuver is mechanically the same.
 
 \paragraph{\large\label{man:MISSILE CATCH} MISSILE CATCH}---\quad{\large[2+X]}
@@ -9857,47 +9810,23 @@ like a large framed backpack or a harness may further decrease these numbers, si
 There are five Levels of Encumbrance. Unencumbered, Light, Medium, Heavy, and Overloaded. 
 Each Encumbrance Level has a different effect on a character’s Combat Pool, Mobility, certain Skill 
 Checks, and also on Exhaustion. 
-Skills that suffer additional difficulty from Encumbrance have a special tag, as shown in the Skills 
-section. 
+Skills that suffer additional difficulty from Encumbrance have a special tag, as shown in the Skills section.
 
- 
+\begin{table}[hb]
+	\centering
+	\caption{Encumbrance Level}
+	\label{tab:Encumbrance}
+	\begin{tabu} spread 0pt {X[1.5]X*{5}{X[c]}}
+\rowfont[c]{}Weight& Encumbrance Level &CP Effect &Mobility Effect &Skill Penalty &Exhaustion Speed &Recover Speed\\\toprule
+	Less than CARRY &Unencumbered &0 &0 &0 &$ \times1 $ &$ 1\times $\\
+	Equal to CARRY &Light &-1 &-2 &+1 RS &$ \times1.5 $ &$ 1\times $\\
+	2$ \times $ CARRY& Medium &-2 &-4 &+2 RS &$ \times2 $ &$ \dfrac{1}{2}\times $\\
+	3$ \times $ CARRY& Heavy &-3 &-6 &+3 RS &$ \times3 $ &$\dfrac{1}{4}\times $\\
+	4$ \times $ CARRY& Overloaded &-4 &-8 &+4 RS &$ \times3.5 $ &None\\
+	\end{tabu}
 
-Table X.X Encumbrance Level 
-Weight Encumbrance 
-Level 
-
-CP 
-Effect 
-
-Mobility 
-Effect 
-
-Skill 
-Penalty 
-
-Exhaustion 
-Speed 
-
-Recover 
-Speed 
-
-Less than 
-CARRY 
-
-Unencumbered 0 0 0 x1 1x 
-
-Equal to CARRY Light -1 -2 +1 RS x 1.5 1x 
-
-
-2x CARRY Medium -2 -4 +2 RS x 2 1/2x 
-3x CARRY Heavy -3 -6 +3 RS x 3 1/4x 
-4x CARRY Overloaded -4 -8 +4 RS x3.5 None 
-
- 
-At 5x Carry and beyond, the character is too heavily encumbered to move, and cannot engage in combat 
-or make any sort of skill or attribute tests that involves moving. Reducing the load is the only way to 
-continue moving. 
-
+	\caption*{At 5x Carry and beyond, the character is too heavily encumbered to move, and cannot engage in combat or make any sort of skill or attribute tests that involves moving. Reducing the load is the only way to continue moving.}
+\end{table}
 
 \section{\label{sec:exhaustion}Exhaustion}
 \subsection{Exhaustion \& Fatigue}
@@ -9977,8 +9906,7 @@ Lighting
 			You shouldn’t learn to fight.”}\par
 		\hfill--\textbf{Johannes Lichtenhauer}
 \end{quote}
-Let’s face it. The game’s called Song of Swords; you’re going to end up in combat sooner or later. The
-Song of Swords’ combat system is detailed, but straight-forward; combat is intense, lethal, and fast. A
+Let’s face it. The game’s called Song of Swords; you’re going to end up in combat sooner or later. The Song of Swords’ combat system is detailed, but straight-forward; combat is intense, lethal, and fast. A
 single good blow from a weapon can put anyone down, even the mightiest hero. You won’t be racing to
 deplete an enemy’s hit points until they reach zero and die -- you’re inflicting Wounds. Injuries and sheer
 exhaustion seriously deteriorate a character’s ability to fight.
@@ -9993,21 +9921,23 @@ higher ADR (as shown in the table below) can act in Phases 2 and 1. This represe
 fighters involved. A fast man can get a lot more done in a short time than a slow one. Characters who
 can’t act in a Phase simply do not take any Actions. If a character who cannot act in a Phase is engaged in
 Melee Combat by another character, however, they may participate as normal in the Melee.
-Characters declare Actions in reverse ADR order (from lowest to highest), but the Actions are resolved in
-ADR Order (from highest to lowest.)
-
-\begin{tabu} spread 0pt {X[2,l] *{3}{X}}
-	Initiative&ADR 1-3&ADR 4-6&ADR 7+\\
-	Phase 1&  	N  &	N & 	Y\\
-	Phase 2&  	N  &	Y & 	Y\\
-	Phase 3&  	Y  &	Y & 	Y\\
-\end{tabu}
-
+Characters declare Actions in reverse ADR order (from lowest to highest), but the Actions are resolved in ADR Order (from highest to lowest.)
+\begin{table}[!hb]
+	\centering
+	\caption{Round Structure}
+	\label{tab:Round Structure}
+	\begin{tabu} spread 0pt {X[2,l] *{3}{X}}
+		Initiative&ADR 1-3&ADR 4-6&ADR 7+\\\toprule
+		Phase 1&  	N  &	N & 	Y\\
+		Phase 2&  	N  &	Y & 	Y\\
+		Phase 3&  	Y  &	Y & 	Y\\
+	\end{tabu}
+\end{table}
 \subsubsection{Stealing the Initiative}
 In the general Round, you can temporarily raise your ADR to act in lower Phases and to improve your
 place in the Initiative Order, but doing so incurs a penalty to all Actions this Round equal to the amount
 by which you raise your ADR. (This penalty also applies to your Combat Pool if you end up in Melee this
-Round) You cannot raise your ADR to more than double its normal amount this way. Opponents and
+Round). You cannot raise your ADR to more than double its normal amount this way. Opponents and
 other characters may raise their ADR in response to any other character doing so, in the same way.
 Beware overusing this option, as the penalties can quickly become so high as to make you useless, even if
 you can act!
@@ -10016,7 +9946,8 @@ you can act!
 You may perform one Action per phase. Sometimes Actions can span multiple phases if they take longer
 than a single beat in combat.
 
-Base Movement: You can move a number of yards equal to your Mobility per Phase normally, or more
+\paragraph{Base Movement}---\quad 
+You can move a number of yards equal to your Mobility per Phase normally, or more
 when Sprinting. If moving into Cover, you do not gain the Cover Bonus to your Defense until the
 beginning of the next Phase.
 Moving normally does not count as an Action, but any Action taken while moving suffers a -4 Penalty.
@@ -10044,12 +9975,12 @@ make. Each attack after the first reduces your Missile Pool for all of the attac
 all weapons are capable of being used with Rapid Shot. Weapons that can only make a certain
 number of attacks “normally” may be able to exceed this limit with the appropriate Talents or
 weapon special rules.
-\begin{itemize}
+\begin{description}
 	\item [Bows:] Up to 5 shots can be made with Rapid Shot normally.
 	\item	[Crossbows:] Cannot use Rapid Shot.
 	\item	[Firearms:] Cannot use Rapid Shot normally. Some weapons with multiple-shot capacity can make up to 5.
 	\item 	[Throwing Weapons:] Up to 2 shots can be made with Rapid Shot normally.
-\end{itemize}
+\end{description}
 
 \paragraph{\label{par:Covering Fire} Covering Fire}---\quad lets you wait for an enemy to show himself, and then shoot him if he does.
 Covering Fire suffers an additional -4 penalty if have Moved in this Phase. If a character steps
@@ -10110,7 +10041,7 @@ attack lands on. If the attack is coming from the character’s front arc, and t
 possible that the attack will resolve in a Hit Location covered by the shield, in which case its damage is
 reduced by the shield’s AV. Attacks from the sides and rear will not hit a shield being carried normally,
 but may hit a shield being carried on the character’s back.
-Damage is inflicted in the following manner: $ [Base~Weapon~Damage+Bonus~Successes+Misc] $versus the
+Damage is inflicted in the following manner: $ Base~Weapon~Damage+Bonus~Successes+Misc $~versus the
 target’s TOU+AV. Excess damage over the target’s total inflicts Wounds as-per melee attacks. The one
 exception is attacks that hit with 0 BS (exactly matching the target’s Defense) which, unlike melee
 attacks, still inflict damage, but can never inflict a Wound higher than Level 1.
@@ -11231,9 +11162,9 @@ side of their bodies when fighting, so if an opponent is right-handed, and you l
 an upwards swing, you probably hit him on his right thigh.
 
 Alternatively, flip a coin or roll for it. GMs, be sure to be consistent about this sort of thing!
-%SIDE BY SIDE TARGET ZONES?
+
 \newpage
-\section{Target Zone Hit Locations}
+\subsection{Hit Location Tables} %NEED REF TO BACK ATTACKS AND MISSILES?
 \begin{table}[hb]
 \label{tab:Hit Locations}
 	\parbox{0.5\linewidth}{
@@ -11387,82 +11318,112 @@ You’re Dead. You get the \nameref{bane:Dead}~Bane.
 \vspace{-5pt}\paragraph{\label{par:Internal Bleeding}Internal Bleeding}---\quad
 Halting this bleeding requires a Surgery roll at +3 RS from normal.
 \newpage
-
-\section{Upper Head}\vspace{-25pt} \label{sec:upper-head}
-\begin{table}[hb] %Upper Head - Cutting
-	\caption{Upper Head - Cutting}
-	\label{wound:Upper Head - Cutting}
-	\begin{tabu} to \linewidth {X[l] *{3}{X[-2,c]} X[2]X[4]}
-\rowfont[c]{} Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+		\captionsetup{font=small} %Set captions for wound tables to smaller size
+		\AtBeginEnvironment{tabu}{\scriptsize}{}{}
+\section{Upper Head}\label{sec:upper-head}
+\begin{table}[!hb] %Upper Head - Cutting
+%	\captionsetup{textformat=empty, labelformat=blank}
+%	\caption{Upper Head - Cutting}\vspace{-15pt}
+%	\label{wound:Upper Head - Cutting}
+	\begin{tabu} to 1\linewidth {X[1.1] *{3}{X[-2,c]} X[3]X[5]}
+Wound Level &Stun &Pain &Bleed &Special{\hfill \large Cutting ~~~} &Description\\\toprule
 Level 1& 1 &7 &1 &- &Shallow cut on scalp, not serious.\\
 Level 2& 2 &9 &3 &- &Deep cut on scalp, blood runs into face.\\
-Level 3 &4 &13&5 &\nameref{par:KO vs} 4 RS &Cracked skull, nearly invisible, but devastating.\\
+Level 3 &4 &13&5 &\nameref{par:KO vs}4 RS &Cracked skull, nearly invisible, but devastating.\\
 Level 4& Total &Total &8
 	&\nameref{par:Auto-KO},\newline
-	Difficult \nameref{par:Surgery vs} \nameref{bane:Brain Damage},\newline
-	\nameref{par:Internal Bleeding}
-&Severe skull fracture, brain damage, immediate unconsciousness.\\
+		Difficult \nameref{par:Surgery vs}\nameref{bane:Brain Damage},\newline
+		\nameref{par:Internal Bleeding}.
+	&Severe skull fracture, brain damage, immediate unconsciousness.\\
 Level 5& - &- &- &\nameref{par:Dead} &Blade cleaves through top of skull down to the teeth. Instant death.\\
-	\end{tabu}
-\end{table}
-
-\begin{table}[hb] %Upper Head - Piercing
-	\caption{Upper Head - Piercing}
-	\label{wound:Upper Head - Piercing}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%	\end{tabu}
+%\end{table}
+%	\marginpar{
+%		\begin{sideways}
+%			\qquad \quad Cutting
+%		\end{sideways}
+%	}
+%
+%\begin{table}[hb] %Upper Head - Piercing
+%	\captionsetup{textformat=empty, labelformat=blank}
+%	\caption{Upper Head - Piercing}\vspace{-15pt}
+%	\label{wound:Upper Head - Piercing}
+%	\begin{tabu} to \linewidth {X *{3}{X[-2,c]} X[3]X[4]}
+%Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+		\\
+	&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Piercing~~~~}&\\\toprule
 Level 1 &0 &4 &0 &- &Raking glance to the side of the head. \\
 Level 2 &1 &6 &3 &- &Deeper rake across scalp, lots of blood.\\
-Level 3 &2 &10 &5 &\nameref{par:KO vs} 3 RS &Skull cracked, possible unconsciousness. \\
+Level 3 &2 &10 &5 &\nameref{par:KO vs}3 RS &Skull cracked, possible unconsciousness. \\
 Level 4 &Total &Total &20
 	&\nameref{par:Auto-KO},\newline
-	Miracle~\nameref{par:Surgery vs} \nameref{bane:Brain Damage},\newline
+	Miracle~\nameref{par:Surgery vs}\nameref{bane:Brain Damage},\newline
 	\nameref{par:Internal Bleeding}
 &Skull penetrated, instantly unconscious.\\
 Level 5 &- &- &- &\nameref{par:Dead} &Point penetrates straight through skull into brain, instant death.\\
-	\end{tabu}
-\end{table}
-
-\begin{table}[hb] %Upper Head - Bludgeoning
-	\caption{Upper Head - Bludgeoning}
-	\label{wound:Upper Head - Bludgeoning}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%	\end{tabu}
+%\end{table}
+%	\marginpar{
+%		\begin{sideways}
+%			\quad \qquad Piercing
+%		\end{sideways}
+%	}
+%\begin{table}[!hb] %Upper Head - Bludgeoning
+%	\captionsetup{textformat=empty, labelformat=blank}
+%	\caption{Upper Head - Bludgeoning}\vspace{-15pt}
+%	\label{wound:Upper Head - Bludgeoning}
+%	\begin{tabu} to \linewidth {X *{3}{X[-2,c]} X[3.3]X[4.3]}
+%Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+		\\
+	&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Bludgeoning}&\\\toprule
 Level 1& 1& 4& 1& - &Blow to the side of the head. Ow.\\
-Level 2& 3& 6& 2& \nameref{par:KO vs} 1 RS &Temple is glanced. May lose consciousness.\\
-Level 3& 5& 8& 4& \nameref{par:KO vs} 5 RS &Skull fracture, may lose consciousness.\\
+Level 2& 3& 6& 2& \nameref{par:KO vs}1 RS &Temple is glanced. May lose consciousness.\\
+Level 3& 5& 8& 4& \nameref{par:KO vs}5 RS &Skull fracture, may lose consciousness.\\
 Level 4& Total &Total &6 
 	&\nameref{par:Auto-KO},\newline
 	Difficult \nameref{par:Surgery vs}~\nameref{bane:Brain Damage},\newline
 	\nameref{par:Internal Bleeding}.
 &Skull shatters, immediately unconscious.\\
 Level 5& - &- &- &\nameref{par:Dead} &Skull crushed. Brain and bone everywhere. Death. \\
-	\end{tabu}
-\end{table}
-
-\begin{table}[!hb] %Upper Head - Unarmed
-	\caption{Upper Head - Unarmed}
-	\label{wound: Upper Head - Unarmed}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%	\end{tabu}
+%\end{table}
+%	\marginpar{
+%		\begin{sideways}
+%			\qquad Bludgeoning
+%		\end{sideways}
+%	}
+%\begin{table}[!hb] %Upper Head - Unarmed
+%	\captionsetup{textformat=empty, labelformat=blank}
+%	\centering
+%	\caption{Upper Head - Unarmed}\vspace{-15pt}
+%	\label{wound: Upper Head - Unarmed}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[1.5]X[5]}
+%Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+		\\
+	&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed~~~~}&\\\toprule
 Level 1& 0& 0& 0& - &Blow to the forehead. Negligible effect.\\
 Level 2& 0& 0& 0& - &Graze to the side of the head. Painful but nothing special.\\
-Level 3& 1& 1& 0& \nameref{par:KO vs} 1 RS &Hard blow to the dome of the head. Bruising, possible blackout.\\
-Level 4& 3& 3& 0& \nameref{par:KO vs} 3 RS &Straight blow to the temple. Probably unconscious. \\
+Level 3& 1& 1& 0& \nameref{par:KO vs}1 RS &Hard blow to the dome of the head. Bruising, possible blackout.\\
+Level 4& 3& 3& 0& \nameref{par:KO vs}3 RS &Straight blow to the temple. Probably unconscious. \\
 Level 5& Total& 10 &3 
 	&\nameref{par:Auto-KO}, \newline
 	\nameref{par:Internal Bleeding}.
 &Severe blow to the temple, fractured bones, possible brain damage.\\
 	\end{tabu}
 \end{table}
+%	\marginpar{
+%		\begin{sideways}
+%			\qquad Unarmed
+%		\end{sideways}
+%	}
 	\clearpage
 
-\section{Face} \vspace{-25pt} \label{sec:face}
-\begin{table}[hb] %Face - Cutting
-	\caption{Face - Cutting}
-	\label{wound:Face - Cutting}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+\section{Face}  \label{sec:face}
+\begin{table}[!hb] %Face - Cutting
+%	\caption{Face - Cutting}\vspace{-3pt}
+%	\label{wound:Face - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3.8]X[5]}
+Wound Level &Stun &Pain &Bleed &Special{\hfill \large Cutting ~~~} &Description\\\toprule
 Level 1& 1& 6& 1& - &Cut vertically across the chin or lips. May leave a scar.\\
 Level 2& 2& 8& 3& - &Deeper cut, possible chipping of jaw, may contact chin, lip, cheek, or brow.\\
 Level 3& 4& 16& 8&Miracle \nameref{par:Surgery vs}~\nameref{bane:One-Eyed} &Slash catches eye! Severe damage, may lose eye.\\
@@ -11472,169 +11433,172 @@ Level 4& 6& 20& 18
 	\nameref{par:Infection Risk} +2
 &Face bisected, extreme damage to jaw, teeth, and skull. May lose eye (1-5) or nose (6-10), serious medical complications either way.\\
 Level 5& - &- &- &\nameref{par:Dead}& Head cloven through to the teeth, instant death.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Face - Piercing
-	\caption{Face - Piercing}
-	\label{wound:Face - Piercing}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Face - Piercing
+%	\caption{Face - Piercing}\vspace{-3pt}
+%	\label{wound:Face - Piercing}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]} %UGLY FACE PIERCING TABLE
+\\
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Piercing~~~~}&\\\toprule
 Level 1& 1& 5& 1& - &Facial scratch.\\
 Level 2& 2& 6& 2& - &Point glances off facial bones, bleeding occurs, but nothing serious.\\
 Level 3& 3& 8& 3& - &Point hits, but fails to penetrate facial bone, very painful, but still no significant damage.\\
 Level 4& 5& 15& 10
-	&Difficult~\nameref{par:Surgery vs} \nameref{bane:Mute} OR,\newline
-	Miracle~\nameref{par:Surgery vs} \nameref{bane:One-Eyed}~OR,\newline
+	&Difficult~\nameref{par:Surgery vs}\nameref{bane:Mute}~OR, \newline
+	Miracle~\nameref{par:Surgery vs}\nameref{bane:One-Eyed}~OR, \newline
 	+5 to wound’s Bleed.
 &Point penetrates face, either through mouth (1-3) eye (4-6) or facial bones (7-10.) Severe injury, lots of bleeding, extremely painful.\\ %CHECK THIS WOUND OUT IF WE WANNA SPREAD THE d10 LOCATION
 Level 5& - &- &- &Dead& Head impaled, instant death.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Face - Bludgeoning
-	\caption{Face - Bludgeoning}
-	\label{wound:Face - Bludgeoning}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Face - Bludgeoning
+%	\caption{Face - Bludgeoning}\vspace{-3pt}
+%	\label{wound:Face - Bludgeoning}
+%	\begin{tabu} to \linewidth {X[-1] *{3}{X[-2,c]} X[1.5]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Bludgeoning}&\\\toprule
 Level 1 &2 &4 &0 &- &Blow to the jaw, head rolls with it well. \\
 Level 2 &3 &5 &2 &- &Firmer blow, blood in mouth, possible lost tooth. Youch. \\
-Level 3 &5 &8 &3 &\nameref{par:KO vs} 3 RS &Serious damage to jaw, fracture maybe, head jerked hard, may lose consciousness and several teeth.\\
-Level 4 &7 &12&7 &\nameref{par:KO vs} 5 RS &\nameref{bane:Mute} as the Bane until healed Broken jaw, almost certain unconsciousness.\\
+Level 3 &5 &8 &3 &\nameref{par:KO vs}3 RS &Serious damage to jaw, fracture maybe, head jerked hard, may lose consciousness and several teeth.\\
+Level 4 &7 &12&7 &\nameref{par:KO vs}5 RS &\nameref{bane:Mute} as the Bane until healed Broken jaw, almost certain unconsciousness.\\
 Level 5 &- &- &- &\nameref{bane:Dead} &Jaw smashed, skull shattered, neck broken. Instant death.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Face - Unarmed
-	\caption{Face - Unarmed}
-	\label{wound:Face - Unarmed}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Face - Unarmed
+%	\caption{Face - Unarmed}\vspace{-3pt}
+%	\label{wound:Face - Unarmed}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[1.5]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed}&\\\toprule
 Level 1 &1 &0 &0& - &Grazing blow.\\
 Level 2 &2 &0 &0& - &Firmer blow, might leave a bruise. \\
-Level 3 &3 &2 &0 &\nameref{par:KO vs} 2 RS &Hard hit, swelling!\\
-Level 4 &4 &10&3 &\nameref{par:KO vs} 5 RS &Broken nose or orbital fracture of eye socket. Severely debilitating and painful, probable KO.\\
+Level 3 &3 &2 &0 &\nameref{par:KO vs}2 RS &Hard hit, swelling!\\
+Level 4 &4 &10&3 &\nameref{par:KO vs}5 RS &Broken nose or orbital fracture of eye socket. Severely debilitating and painful, probable KO.\\
 Level 5& Total& 15 &3 &\nameref{par:Auto-KO} &Perfect hit, nose probably broken, Several teeth probably lost, instant KO.\\
 	\end{tabu}
 \end{table}
 	\clearpage
 
-\section{Lower Head} \vspace{-25pt} \label{sec:lower-head}
+\section{Lower Head}  \label{sec:lower-head}
 \begin{table}[hb] %Lower Head - Cutting
-	\caption{Lower Head - Cutting}
-	\label{wound:Lower Head - Cutting}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%	\caption{Lower Head - Cutting}\vspace{-3pt}
+%	\label{wound:Lower Head - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[4.3]X[6]}
+Wound Level &Stun &Pain &Bleed &Special{\hfill \large Cutting ~~~} &Description\\\toprule
 Level 1& 1& 6& 1& - &Cross cut on the face, probably on the cheek, mouth or chin.\\
 Level 2& 2& 8& 4& - &Direct hit on side of face, classic German dueling scar.\\
-Level 3& 3& 12& 8& \nameref{par:KO vs} 3 RS &Direct hit cleaves through cheek, damaging several teeth.\\
+Level 3& 3& 12& 8& \nameref{par:KO vs}3 RS &Direct hit cleaves through cheek, damaging several teeth.\\
 Level 4& 4& 18& 12
-	&\nameref{par:KO vs} 4 RS,\newline
-		Difficult~\nameref{par:Surgery vs} \nameref{bane:Facial Deformity}.
+	&\nameref{par:KO vs}4 RS,\newline
+		Difficult~\nameref{par:Surgery vs}\nameref{bane:Facial Deformity}.
 	&Blade cuts cheek from corner of mouth to behind the ear, lots of teeth lost, cheek muscle damage.\\
 Level 5& - &- &- &\nameref{par:Dead}& Blade either cleaves through entire side of head, decapitating above the jaw, or most of the way through. Death is mercifully instantaneous.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Lower Head - Piercing
-	\caption{Lower Head - Piercing}
-	\label{wound:Lower Head - Piercing}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Lower Head - Piercing
+%	\caption{Lower Head - Piercing}\vspace{-3pt}
+%	\label{wound:Lower Head - Piercing}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+\\
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Piercing~~~~}&\\\toprule
 Level 1& 0& 4& 2& - &Grazed jaw.\\
 Level 2& 1& 6& 4& - &Stabs through cheek, chipped tooth!\\
-Level 3& 2& 9& 8& \nameref{par:KO vs} 3 RS &Several teeth broken, cheek ripped open, jaw fractured.\\
+Level 3& 2& 9& 8& \nameref{par:KO vs}3 RS &Several teeth broken, cheek ripped open, jaw fractured.\\
 Level 4& 3& 14& 14
-	&\nameref{par:KO vs} 5 RS,\newline
-	Difficult~\nameref{par:Surgery vs} \nameref{bane:Mute}
+	&\nameref{par:KO vs}5 RS,\newline
+	Difficult~\nameref{par:Surgery vs}\nameref{bane:Mute}
 &Jaw shattered, many teeth destroyed, may lose tongue.\\
 Level 5& - &- &- &\nameref{par:Dead}& Point slams through brainstem. Instant death.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Lower Head - Bludgeoning
-	\caption{Lower Head - Bludgeoning}
-	\label{wound:Lower Head - Bludgeoning}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Lower Head - Bludgeoning
+%	\caption{Lower Head - Bludgeoning}\vspace{-3pt}
+%	\label{wound:Lower Head - Bludgeoning}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Bludgeoning}&\\\toprule
 Level 1& 2& 3& 0& - &Tapped jaw, possibly bruised.\\
-Level 2& 4& 4& 1& \nameref{par:KO vs} 3 RS &Solid strike to jaw, jarring!\\
-Level 3& 6& 6& 3& \nameref{par:KO vs} 4 RS &Fractured jaw, possibly several lost teeth! \\
+Level 2& 4& 4& 1& \nameref{par:KO vs}3 RS &Solid strike to jaw, jarring!\\
+Level 3& 6& 6& 3& \nameref{par:KO vs}4 RS &Fractured jaw, possibly several lost teeth! \\
 Level 4& 8& 10&4
-	&\nameref{par:KO vs} 5 RS,\newline
+	&\nameref{par:KO vs}5 RS,\newline
 		Routine~\nameref{par:Surgery vs}~\nameref{bane:Facial Deformity}.
 	&Broken jaw.\\
 Level 5& - &- &- &\nameref{par:Dead}& Neck Broken. Instant death.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Lower Head - Unarmed
-	\caption{Lower Head - Unarmed}
-	\label{wound:Lower Head - Unarmed}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Lower Head - Unarmed
+%	\caption{Lower Head - Unarmed}\vspace{-3pt}
+%	\label{wound:Lower Head - Unarmed}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed}&\\\toprule
 Level 1& 2& 0& 0& - &Grazing blow to the jaw.\\
-Level 2& 3& 0& 0& \nameref{par:KO vs} 1 RS &Hit on the jaw. Better hope it ain’t glass... \\
-Level 3& 5& 2& 0& \nameref{par:KO vs} 3 RS &Good hit, head jerked to the side, KO is a distinct possibility. \\
-Level 4& 10& 5& 0& \nameref{par:KO vs} 8 RS &Jaw battered, significant chance of unconsciousness. \\
+Level 2& 3& 0& 0& \nameref{par:KO vs}1 RS &Hit on the jaw. Better hope it ain’t glass... \\
+Level 3& 5& 2& 0& \nameref{par:KO vs}3 RS &Good hit, head jerked to the side, KO is a distinct possibility. \\
+Level 4& 10& 5& 0& \nameref{par:KO vs}8 RS &Jaw battered, significant chance of unconsciousness. \\
 Level 5& Total &15 &3 &\nameref{par:Auto-KO} &Jaw broken, instant unconsciousness. \\
 	\end{tabu}
 \end{table}
 	\clearpage
 
-\section{Neck} \vspace{-25pt} \label{sec:neck}
-\begin{table}[hb] %Neck - Cutting
-	\caption{Neck - Cutting}
-	\label{wound:Neck - Cutting}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+\section{Neck} \label{sec:neck}
+\begin{table}[!hb] %Neck - Cutting
+%	\caption{Neck - Cutting}\vspace{-3pt}
+%	\label{wound:Neck - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+Wound Level &Stun &Pain &Bleed &Special{\hfill \large Cutting ~~~} &Description\\\toprule
 Level 1& 1& 4& 4& - &Cut on the neck, painful but not deep.\\
 Level 2& 2& 8& 6& - &Serious cut to the side of neck, passes dangerously close to windpipe.\\
 Level 3& 3& 12& 12& Difficult~\nameref{par:Surgery vs}~\nameref{bane:Mute} &Slashed throat, possible vocal chord damage.\\
 Level 4& 5& 14& 20& Miracle~\nameref{par:Surgery vs}~\nameref{bane:Mute}&Throat and jugular cut, spray of blood, needs a surgeon immediately.\\
 Level 5& - &- &- &\nameref{par:Dead}& Decapitation. Instant death.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Neck - Piercing
-	\caption{Neck - Piercing}
-	\label{wound:Neck - Piercing}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Neck - Piercing
+%	\caption{Neck - Piercing}\vspace{-3pt}
+%	\label{wound:Neck - Piercing}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+\\
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Piercing~~~~}&\\\toprule
 Level 1& 1& 5& 6& - &Puncture wound in neck, not good!\\
 Level 2& 2& 5& 10& - &Deeper puncture wound, neck’s major artery!\\
 Level 3& 3& 8& 20& Difficult~\nameref{par:Surgery vs}~\nameref{bane:Mute} &Punctured carotid or jugular, extreme bleeding! Possible vocal chord damage.\\
 Level 4& 5& 12& 25& Miracle~\nameref{par:Surgery vs}~\nameref{bane:Mute} &Severed carotid or jugular, cracked vertebrae, vocal chord damage!\\
 Level 5& - &- &- &\nameref{par:Dead}& Throat impaled, neck possibly broken. Exsanguination is almost instant. Death.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Neck - Bludgeoning
-	\caption{Neck - Bludgeoning}
-	\label{wound:Neck - Bludgeoning}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Neck - Bludgeoning
+%	\caption{Neck - Bludgeoning}\vspace{-3pt}
+%	\label{wound:Neck - Bludgeoning}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Bludgeoning}&\\\toprule
 Level 1& 2& 2& 0& - &Painful blow to neck, bruised flesh. \\
 Level 2& 4& 3& 0& - &Heavy blow, momentary choking, significantly \\
 stunned. 
 Level 3& 6& 6& 3& - &Severely bruised windpipe, vocal cords damaged. \\
 Level 4 &8 &Total &7 
-	&\nameref{par:KO vs} 3 RS, \newline
+	&\nameref{par:KO vs}3 RS, \newline
 		Hard~\nameref{par:Surgery vs}~\nameref{bane:Mute}.
 	&Severe damage to windpipe, brachial nerve damage, chipped spinal cord.\\
 Level 5& - &- &- &\nameref{par:Dead}& Snapped neck, instantaneous death. \\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Neck - Unarmed
-	\caption{Neck - Unarmed}
-	\label{wound:Neck - Unarmed}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Neck - Unarmed
+%	\caption{Neck - Unarmed}\vspace{-3pt}
+%	\label{wound:Neck - Unarmed}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed}&\\\toprule
 Level 1& 1& 0& 0& - &Chin too tucked in for a good hit, glances off.\\
 Level 2& 1& 0& 0& - &Glancing blow to side of neck. Minimal effect.\\
 Level 3& 3& 2& 0& - &Solid hit to throat. Might be hard to talk for a while.\\
-Level 4& 5& 5& 0& \nameref{par:KO vs} 3 RS &Severe hit to the throat, breathing is difficult. Possible unconsciousness.\\
+Level 4& 5& 5& 0& \nameref{par:KO vs}3 RS &Severe hit to the throat, breathing is difficult. Possible unconsciousness.\\
 Level 5& Total &15 &3 
 	&\nameref{par:Auto-KO}, \newline
 		HLT vs 3 RS vs Death.
@@ -11643,62 +11607,63 @@ Level 5& Total &15 &3
 \end{table}
 	\clearpage
 
-\section{Shoulder} \vspace{-25pt} \label{sec:shoulder}
-\begin{table}[hb] %Shoulder - Cutting
-	\caption{Shoulder - Cutting}
-	\label{wound:Shoulder - Cutting}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+\section{Shoulder} \label{sec:shoulder}
+\begin{table}[!hb] %Shoulder - Cutting
+%	\caption{Shoulder - Cutting}\vspace{-3pt}
+%	\label{wound:Shoulder - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+Wound Level &Stun &Pain &Bleed &Special{\hfill \large Cutting ~~~} &Description\\\toprule
 Level 1& 0& 4& 1& - &Shallow cut to the shoulder.\\
 Level 2& 0& 6& 3& - &Deep cut, significant pain and bleeding.\\
 Level 3& 1& 12& 6& \nameref{par:Autodrop} &Cleaves into the meat of shoulder, halts at collarbone.\\
 Level 4& 2& 14& 8
 	&\nameref{par:Autodrop}, \newline
-		Difficult~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Limb}.
+		Difficult~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Limb}.
 	&Broken collarbone and cracked ribs, shoulder severely injured\\
 Level 5& - &- &- &\nameref{par:Dead}& Cloven from shoulder to hip. Near or near-instant death.\\
-	\end{tabu}
-\end{table}
-\begin{table}[hb] %Shoulder - Piercing
-	\caption{Shoulder - Piercing}
-	\label{wound:Shoulder - Piercing}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%	\end{tabu}
+%\end{table}
+%\begin{table}[hb] %Shoulder - Piercing
+%	\caption{Shoulder - Piercing}\vspace{-3pt}
+%	\label{wound:Shoulder - Piercing}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+\\
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Piercing~~~~}&\\\toprule
 Level 1& 0& 3& 2& - &Shallow stab to the shoulder. Painful, bloody, not serious.\\
 Level 2& 0& 5& 5& - &Deeper stab, point halts in muscle.\\
 Level 3& 1& 9& 7& - &Deep into the muscle, chipped collarbone.\\
 Level 4& 2& 12& 12& - &Collarbone cracked, nicked artery, lots of blood.\\
 Level 5& 5& 15& 20& - &Penetration into the subclavicular area. Artery severed.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Shoulder - Bludgeoning
-	\caption{Shoulder - Bludgeoning}
-	\label{wound:Shoulder - Bludgeoning}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Shoulder - Bludgeoning
+%	\caption{Shoulder - Bludgeoning}\vspace{-3pt}
+%	\label{wound:Shoulder - Bludgeoning}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Bludgeoning}&\\\toprule
 Level 1& 2& 3& 0& - &Blow to the shoulder. No real damage.\\
 Level 2& 4& 5& 2& - &Hard blow to the shoulder, severe muscle bruising.\\
 Level 3& 6& 6& 4
 	&\nameref{par:Autodrop}, \newline
-		[Routine~\nameref{par:Surgery vs} Ruined limb. %THIS bane doesn't exist
+		Routine~\nameref{par:Surgery vs}Ruined limb. %THIS bane doesn't exist
 	&Dislocated shoulder, arm useless.\\
 Level 4& 8& 10& 5
 	&\nameref{par:Autodrop}, \newline
-		Difficult~\nameref{par:Surgery vs} Ruined Limb] &Shoulder broken, may not recover properly.\\ %RUINED LIMB?
+		Difficult~\nameref{par:Surgery vs}Ruined Limb &Shoulder broken, may not recover properly.\\ %RUINED LIMB?
 Level 5& 12& 15& 12
 	&\nameref{par:Autodrop}, \newline
-		[Miracle~\nameref{par:Surgery vs} Ruined limb], \newline
+		Miracle~\nameref{par:Surgery vs}Ruined Limb, \newline
 		\nameref{par:Internal Bleeding}.
 	&Shoulder collapsed, internal bleeding, recovery unlikely, death possible.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Shoulder - Unarmed
-	\caption{Shoulder - Unarmed}
-	\label{wound:Should - Unarmed}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Shoulder - Unarmed
+%	\caption{Shoulder - Unarmed}\vspace{-3pt}
+%	\label{wound:Should - Unarmed}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed}&\\\toprule
 Level 1& 0& 0& 0& - &Light thump, almost friendly.\\
 Level 2& 0& 0& 0& - &Slightly painful, though nothing lasting.\\
 Level 3& 1& 3& 0& - &Shoulder deadened, arm feels funny for quite some time.\\
@@ -11708,57 +11673,58 @@ Level 4& 2& 8& 0
 	&Shoulder joint dislocated, tendons torn. Arm may never be the same again.\\
 Level 5& 8& 18& 0
 	&\nameref{par:Autodrop}, \newline
-		Difficult~\nameref{par:Surgery vs} Ruined Limb]. %RUINED LIMB?
+		Difficult~\nameref{par:Surgery vs}Ruined Limb. %RUINED LIMB?
 	&Shoulder joint smashed, arm may twist in unnatural ways.\\
 	\end{tabu}
 \end{table}
 	\clearpage
 
-\section{Chest} \vspace{-25pt} \label{sec:chest}
+\section{Chest}  \label{sec:chest}
 \begin{table}[hb] %Chest - Cutting
-	\caption{Chest - Cutting}
-	\label{wound:Chest - Cutting}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%	\caption{Chest - Cutting}\vspace{-3pt}
+%	\label{wound:Chest - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+Wound Level &Stun &Pain &Bleed &Special{\hfill \large Cutting ~~~} &Description\\\toprule
 Level 1& 0& 4& 0& - &Shallow cut across chest, ribs do their job, no serious effect.\\
 Level 2& 1& 5& 2& - &Deeper cut, raking ribs.\\
 Level 3& 2& 10& 5& - &Cracked ribs, laceration within ribcage, no organ damage but very painful.\\
 Level 4& 3& 15& 20& - &Ribs broken or cloven, bleeding in chest cavity.\\
 Level 5& - &- &- &\nameref{par:Dead}& Blade cleaves through ribs and into center of chest cavity. Lungs, heart, major blood vessels cut, near-instant death.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Chest - Piercing
-	\caption{Chest - Piercing}
-	\label{wound:Chest - Piercing}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Chest - Piercing
+%	\caption{Chest - Piercing}\vspace{-3pt}
+%	\label{wound:Chest - Piercing}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+\\
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Piercing~~~~}&\\\toprule
 Level 1& 0& 3& 2& - &Attack rakes across ribs.\\
 Level 2& 1& 4& 4& - &Minor penetration, point halted by ribs.\\
 Level 3& 3& 7& 6& - &Penetration into chest, no organ damage but significant bleeding.\\
-Level 4& 4& 14& 25& Difficult~\nameref{par:Surgery vs} Punctured Lung &Deep penetration into chest cavity! Extreme bleeding and organ damage!\\ %PUNCTURED LUNG?
+Level 4& 4& 14& 25& Difficult~\nameref{par:Surgery vs}Punctured Lung &Deep penetration into chest cavity! Extreme bleeding and organ damage!\\ %PUNCTURED LUNG?
 Level 5& - &- &- &\nameref{par:Dead}& Heart or spine pierced, death is instantaneous.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Chest - Bludgeoning
-	\caption{Chest - Bludgeoning}
-	\label{wound:Chest - Bludgeoning}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Chest - Bludgeoning
+%	\caption{Chest - Bludgeoning}\vspace{-3pt}
+%	\label{wound:Chest - Bludgeoning}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Bludgeoning}&\\\toprule
 Level 1& 1& 3& 0& - &Blow to chest, shock absorbed by ribs.\\
 Level 2& 2& 6& 0& - &Bruised ribs.\\
 Level 3& 3& 8& 0& - &Cracked ribs, exceptional pain. \\
 Level 4& 5& 12& 8& \nameref{par:Internal Bleeding} &Ribs broken, fragments lacerate flesh, severe bleeding internally\\
 Level 5& Total& Total& 15 &\nameref{par:Internal Bleeding} &Ribcage shattered, possible organ damage, definite internal bleeding.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Chest - Unarmed
-	\caption{Chest - Unarmed}
-	\label{wound:Chest - Unarmed}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Chest - Unarmed
+%	\caption{Chest - Unarmed}\vspace{-3pt}
+%	\label{wound:Chest - Unarmed}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed}&\\\toprule
 Level 1& 0& 0& 0& - &Blow to the chest. Trivial damage.\\
 Level 2& 0& 1& 0& - &Good blow to the chest. Might leave a bruise.\\
 Level 3& 1& 2& 0& - &Serious hit to the chest. Possible bone damage.\\
@@ -11768,41 +11734,42 @@ Level 5& 3& 15& 5&\nameref{par:Internal Bleeding}&Severe rib damage, might have 
 \end{table}
 	\clearpage
 
-\section{Side} \vspace{-25pt} \label{sec:side}
+\section{Side}  \label{sec:side}
 \begin{table}[hb] %Side - Cutting
-	\caption{Side - Cutting}
-	\label{wound:Side - Cutting}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%	\caption{Side - Cutting}\vspace{-3pt}
+%	\label{wound:Side - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+Wound Level &Stun &Pain &Bleed &Special{\hfill \large Cutting ~~~} &Description\\\toprule
 Level 1& 0& 6& 2& - &Cut across the side and belly, painful but shallow.\\
 Level 2& 1& 7& 4& - &Deeper cut, lots of blood.\\
 Level 3& 2& 12& 6& \nameref{par:Infection Risk} +3 &Blade penetrates into side, serious but survivable. Possible organ damage.\\
 Level 4& 3& 20& 20
-	&\nameref{par:KO vs} 5 RS,
+	&\nameref{par:KO vs}5 RS,
 		\nameref{par:Infection Risk} +5.
 	&Disembowelment, extreme damage and survival is close to unthinkable.\\
 Level 5& - &- &- &\nameref{par:Dead}& Individual is cloven nearly or totally in half. Death is instantaneous.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Side - Piercing
-	\caption{Side - Piercing}
-	\label{wound:Side - Piercing}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Side - Piercing
+%	\caption{Side - Piercing}\vspace{-3pt}
+%	\label{wound:Side - Piercing}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+\\
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Piercing~~~~}&\\\toprule
 Level 1& 0& 4& 4& - &Shallow penetration to the side, bit of blood, nothing serious.\\
 Level 2& 1& 5& 6& - &Penetration at an oblique angle, might be through-and-through, significant bleeding but no lasting harm.\\
 Level 3& 2& 9& 9& - &Side pierced, severe bleeding but no organ damage.\\
-Level 4& 3& 12& 14& \nameref{Infection Risk}~+2& Deep penetration, organ damage, severe bleeding, serious risk of infection. \\
-Level 5& 5& 16& 18& \nameref{Infection Risk}~+5& Extreme penetration, possible exit wound, organ and intestinal damage!\\
-	\end{tabu}
-\end{table}
+Level 4& 3& 12& 14& \nameref{par:Infection Risk}~+2& Deep penetration, organ damage, severe bleeding, serious risk of infection. \\
+Level 5& 5& 16& 18& \nameref{par:Infection Risk}~+5& Extreme penetration, possible exit wound, organ and intestinal damage!\\
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Side - Bludgeoning
-	\caption{Side - Bludgeoning}
-	\label{wound:Side - Bludgeoning}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Side - Bludgeoning
+%	\caption{Side - Bludgeoning}\vspace{-3pt}
+%	\label{wound:Side - Bludgeoning}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Bludgeoning}&\\\toprule
 Level 1& 2& 4& 0& - &Smacked in the side. Bad bruise, but that’s it.\\
 Level 2& 4& 5& 0& - &Hard blow, winded, may cause nausea.\\
 Level 3& 6& 7& 1& \nameref{par:Internal Bleeding} &Severe blow to side or belly, nausea and pain, but no internal damage.\\
@@ -11811,14 +11778,14 @@ Level 5& Total& Total& 25
 	&\nameref{par:Infection Risk} +5, \newline
 		\nameref{par:Internal Bleeding}.
 	&Internal organs ruptured, survival would be nothing short of a miracle.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Side - Unarmed
-	\caption{Side - Unarmed}
-	\label{wound:Side - Unarmed}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Side - Unarmed
+%	\caption{Side - Unarmed}\vspace{-3pt}
+%	\label{wound:Side - Unarmed}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed}&\\\toprule
 Level 1& 1& 0& 0& - &Grazing blow, little effect.\\
 Level 2& 1& 1& 0& - &Blow absorbed mostly by muscle, little effect.\\
 Level 3& 8& 8& 0& - &Liver blow! That’s gonna hurt tomorrow.\\
@@ -11828,511 +11795,519 @@ Level 5& 20& 15& 3& \nameref{par:Internal Bleeding} &Liver damaged, unbearable p
 \end{table}
 	\clearpage
 
-\section{Belly} \vspace{-25pt} \label{sec:belly}
+\section{Belly}  \label{sec:belly}
 \begin{table}[hb] %Belly - Cutting
-	\caption{Belly - Cutting}
-	\label{wound:Belly - Cutting}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%	\caption{Belly - Cutting}\vspace{-3pt}
+%	\label{wound:Belly - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[5]}
+Wound Level &Stun &Pain &Bleed &Special{\hfill \large Cutting ~~~} &Description\\\toprule
 Level 1& 1& 5& 1& - &Cut straight up across navel. Not deep, but damn close.\\
 Level 2& 3& 8& 4& - &Deeper cut, significant flesh wound, some muscle damage. Not pretty.\\
 Level 3& 4& 10& 10& - &Serious cut belly, muscle damage, lots of bleeding, near organ damage.\\
 Level 4& 5& 15& 15& \nameref{par:Infection Risk} +4 &Cut belly, intestinal and organ damage. Get a doctor. Get one fast.\\
 Level 5& - &- &- &\nameref{par:Dead}& Blade cleaves into belly, through organs and sternum. Instant death.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Belly - Piercing
-	\caption{Belly - Piercing}
-	\label{wound:Belly - Piercing}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Belly - Piercing
+%	\caption{Belly - Piercing}\vspace{-3pt}
+%	\label{wound:Belly - Piercing}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[5]}
+\\
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Piercing~~~~}&\\\toprule
 Level 1& 1& 4& 3& - &Shallow stab to side of midriff. No real damage.\\
 Level 2& 3& 6& 6& - &Deeper stab, muscle damage and lots of bleeding, but mercifully no organs hit.\\
-Level 3& 5& 12& 10& \nameref{par:Infection Chance} +4 &Stabbed in the gut, organ and intestine damage. This is serious.\\
-Level 4& 7& 14& 20& \nameref{par:Infection Chance} +4 &Severe internal damage. If this happened in a hospital today, your odds would be poor.\\
+Level 3& 5& 12& 10& \nameref{par:Infection Risk} +4 &Stabbed in the gut, organ and intestine damage. This is serious.\\
+Level 4& 7& 14& 20& \nameref{par:Infection Risk} +4 &Severe internal damage. If this happened in a hospital today, your odds would be poor.\\
 Level 5& - &- &- &\nameref{par:Dead}& Point slams straight through guts to sever central artery of trunk. Exsanguination occurs within seconds, unconsciousness is instant.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Belly - Bludgeoning
-	\caption{Belly - Bludgeoning}
-	\label{wound:Belly - Bludgeoning}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Belly - Bludgeoning
+%	\caption{Belly - Bludgeoning}\vspace{-3pt}
+%	\label{wound:Belly - Bludgeoning}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Bludgeoning}&\\\toprule
 Level 1& 3& 4& 0& - &A solid blow to the stomach, winding but not serious.\\
 Level 2& 6& 5& 0& - &A harder, bruising blow to the midriff.\\
-Level 3& 9& 6& 0& \nameref{par:KO vs} 3 RS &Severe blow to the stomach, brachial response might result in unconsciousness.\\
-Level 4& 11& 7& 3& \nameref{par:KO vs} 4 RS &Tremendous winding blow to the stomach, may vomit (END at 2), may lose consciousness.\\
-Level 5& 15& 8& 5& \nameref{par:KO vs} 6 RS &Possible organ damage, will be sick, will almost certainly lose consciousness.\\
-	\end{tabu}
-\end{table}
+Level 3& 9& 6& 0& \nameref{par:KO vs}3 RS &Severe blow to the stomach, brachial response might result in unconsciousness.\\
+Level 4& 11& 7& 3& \nameref{par:KO vs}4 RS &Tremendous winding blow to the stomach, may vomit (END at 2), may lose consciousness.\\
+Level 5& 15& 8& 5& \nameref{par:KO vs}6 RS &Possible organ damage, will be sick, will almost certainly lose consciousness.\\
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Belly - Unarmed
-	\caption{Belly - Unarmed}
-	\label{wound:Belly - Unarmed}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Belly - Unarmed
+%	\caption{Belly - Unarmed}\vspace{-3pt}
+%	\label{wound:Belly - Unarmed}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed}&\\\toprule
 Level 1& 1& 0& 0& - &Gut shot.\\
 Level 2& 3& 3& 0& - &A harder, bruising blow to the midriff.\\
-Level 3& 5& 5& 0& \nameref{par:KO vs} 3 RS &Severe blow to the stomach, brachial response might result in unconsciousness.\\
-Level 4& 7& 7& 0& \nameref{par:KO vs} 4 RS &Tremendous winding blow to the stomach, may vomit (END at 2), may lose consciousness.\\
-Level 5& 9& 12& 3& \nameref{par:KO vs} 6 RS &Possible organ damage, will be sick, will almost certainly lose consciousness.\\
+Level 3& 5& 5& 0& \nameref{par:KO vs}3 RS &Severe blow to the stomach, brachial response might result in unconsciousness.\\
+Level 4& 7& 7& 0& \nameref{par:KO vs}4 RS &Tremendous winding blow to the stomach, may vomit (END at 2), may lose consciousness.\\
+Level 5& 9& 12& 3& \nameref{par:KO vs}6 RS &Possible organ damage, will be sick, will almost certainly lose consciousness.\\
 	\end{tabu}
 \end{table}
 	\clearpage
 
-\section{Hip} \vspace{-25pt} \label{sec:hip}
-\begin{table}[hb] %Hip - Cutting
-	\caption{Hip - Cutting}
-	\label{wound:Hip - Cutting}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+\section{Hip}  \label{sec:hip}
+\begin{table}[!hb] %Hip - Cutting
+%	\caption{Hip - Cutting}\vspace{-3pt}
+%	\label{wound:Hip - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[5]}
+Wound Level &Stun &Pain &Bleed &Special{\hfill \large Cutting ~~~} &Description\\\toprule
 Level 1& 1& 5& 1& - &Shallow cut on the hip. No significant damage.\\
 Level 2& 2& 7& 2& - &Deeper cut, bleeding, painful.\\
-Level 3& 3& 12& 5& \nameref{par:Stability vs} 3 RS &Blade chips hip bone, excruciatingly painful.\\
-Level 4& 4& 16& 10& \nameref{par:Stability vs} 4 RS &Broken hip, blade nicks artery.\\
+Level 3& 3& 12& 5& \nameref{par:Stability vs}3 RS &Blade chips hip bone, excruciatingly painful.\\
+Level 4& 4& 16& 10& \nameref{par:Stability vs}4 RS &Broken hip, blade nicks artery.\\
 Level 5& 5& 20& 20
 	&\nameref{par:Auto-Prone}, \newline
-		Difficult~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Leg}.
+		Difficult~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Leg}.
 	&Blade cleaves fully into hip, cuts artery, severe, and very likely lethal injury.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Hip - Piercing
-	\caption{Hip - Piercing}
-	\label{wound:Hip - Piercing}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Hip - Piercing
+%	\caption{Hip - Piercing}\vspace{-3pt}
+%	\label{wound:Hip - Piercing}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+\\
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Piercing~~~~}&\\\toprule
 Level 1& 1& 4& 1& - &Shallow penetration over the hip.\\
-Level 2& 2& 6& 3& \nameref{par:Stability vs} 1 RS &Deeper penetration, glances off bone.\\
-Level 3& 3& 10& 6& \nameref{par:Stability vs} 3 RS &Bone chips, but weapon does not penetrate deeper.\\
-Level 4& 4& 12& 8& \nameref{par:Stability vs} 4 RS &Hip fractures beneath penetration, severe bleeding.\\
+Level 2& 2& 6& 3& \nameref{par:Stability vs}1 RS &Deeper penetration, glances off bone.\\
+Level 3& 3& 10& 6& \nameref{par:Stability vs}3 RS &Bone chips, but weapon does not penetrate deeper.\\
+Level 4& 4& 12& 8& \nameref{par:Stability vs}4 RS &Hip fractures beneath penetration, severe bleeding.\\
 Level 5& 5& 14& 12
-	&\nameref{par:Stability vs} 5 RS, \newline
-		Miracle~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Leg}.
+	&\nameref{par:Stability vs}5 RS, \newline
+		Miracle~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Leg}.
 	&Hip is smashed, may never recover, potentially lethal.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Hip - Bludgeoning
-	\caption{Hip - Bludgeoning}
-	\label{wound:Hip - Bludgeoning}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Hip - Bludgeoning
+%	\caption{Hip - Bludgeoning}\vspace{-3pt}
+%	\label{wound:Hip - Bludgeoning}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Bludgeoning}&\\\toprule
 Level 1& 2& 3& 0& - &Glancing blow to the hip.\\
-Level 2& 3& 5& 1& \nameref{par:Stability vs} 2 RS &Solid blow to hip, jarring and painful.\\
-Level 3& 5& 10& 3& \nameref{par:Stability vs} 3 RS &Cracked hip, bruised bone.\\
+Level 2& 3& 5& 1& \nameref{par:Stability vs}2 RS &Solid blow to hip, jarring and painful.\\
+Level 3& 5& 10& 3& \nameref{par:Stability vs}3 RS &Cracked hip, bruised bone.\\
 Level 4& 6& 12& 5
 	&\nameref{par:Auto-Prone}, \newline
-		Difficult~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Leg}.
+		Difficult~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Leg}.
 	&Hip broken, leg may be crippled permanently.\\
 Level 5& 8& 18& 7
 	&\nameref{par:Auto-Prone}, \newline
-		Miracle~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Leg}.
+		Miracle~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Leg}.
 	&Hip is destroyed. Leg probably won’t recover.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Hip - Unarmed
-	\caption{Hip - Unarmed}
-	\label{wound:Hip - Unarmed}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Hip - Unarmed
+%	\caption{Hip - Unarmed}\vspace{-3pt}
+%	\label{wound:Hip - Unarmed}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed}&\\\toprule
 Level 1& 0& 0& 0& - &Grazing blow, on a very inopportune location.\\
 Level 2& 0& 0& 0& - &Minor damage to the hip.\\
 Level 3& 1& 1& 0& - &Bruised hip. It stings a bit.\\
 Level 4& 2& 3& 0& - &Severely bruised hip. Still not much damage.\\
-Level 5& 3& 6& 0& \nameref{par:Stability vs} 3 RS &Possible fractured hip, loss of balance probable.\\
+Level 5& 3& 6& 0& \nameref{par:Stability vs}3 RS &Possible fractured hip, loss of balance probable.\\
 	\end{tabu}
 \end{table}
 	\clearpage
 
-\section{Groin} \vspace{-25pt} \label{sec:groin}
-\begin{table}[hb] %Groin - Cutting
-	\caption{Groin - Cutting}
-	\label{wound:Groin - Cutting}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+\section{Groin} \label{sec:groin}
+\begin{table}[!hb] %Groin - Cutting
+%	\caption{Groin - Cutting}\vspace{-3pt}
+%	\label{wound:Groin - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+Wound Level &Stun &Pain &Bleed &Special{\hfill \large Cutting ~~~} &Description\\\toprule
 Level 1& 2& 14& 2& - &Jimmies rustled, not a good day.\\
-Level 2& 3& 16& 4& Difficult~\nameref{par:Surgery vs} \hyperref[bane:Barren/Sterility]{Sterility} &Severe cut, significant damage. May lose consciousness.\\
+Level 2& 3& 16& 4& Difficult~\nameref{par:Surgery vs}\hyperref[bane:Barren/Sterility]{Sterility} &Severe cut, significant damage. May lose consciousness.\\
 Level 3& 5& 20& 8
-	&\nameref{par:KO vs} 3 RS, \newline
-		Miracle~\nameref{par:Surgery vs} \hyperref[bane:Barren/Sterility]{Sterility}.
+	&\nameref{par:KO vs}3 RS, \newline
+		Miracle~\nameref{par:Surgery vs}\hyperref[bane:Barren/Sterility]{Sterility}.
 	&Excessive damage, blade strikes pelvis, internal bleeding and terrible damage.\\
 Level 4& Total& Total& 20
-	&\nameref{par:KO vs} 5 RS, \newline
+	&\nameref{par:KO vs}5 RS, \newline
 		\hyperref[bane:Barren/Sterility]{Sterility}.
 	&Blade cleaves deep, artery cut, excessive damage to reproductive organs within and without.\\
 Level 5& - &- &- &\nameref{par:Dead}& Blade cleaves pelvis in twain, coming to rest deep in torso. Mercifully near-instant death.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Groin - Piercing
-	\caption{Groin - Piercing}
-	\label{wound:Groin - Piercing}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Groin - Piercing
+%	\caption{Groin - Piercing}\vspace{-3pt}
+%	\label{wound:Groin - Piercing}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2.3]X[5]}
+\\
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Piercing~~~~}&\\\toprule
 Level 1& 2& 12& 4& - &Your lizard brain cries, vehemently, ‘Do not make a habit of getting hit like this.’\\
-Level 2& 3& 15& 8& Difficult~\nameref{par:Surgery vs} \hyperref[bane:Barren/Sterility]{Sterility}&Stabbed in groin. Excruciatingly painful, chance of reproductive organ damage.\\
-Level 3& 4& 18& 15& Miracle~\nameref{par:Surgery vs} \hyperref[bane:Barren/Sterility]{Sterility} &Deep stab in groin, nicks artery. Possible loss of reproductive capability.\\
+Level 2& 3& 15& 8& Difficult~\nameref{par:Surgery vs}\hyperref[bane:Barren/Sterility]{Sterility}&Stabbed in groin. Excruciatingly painful, chance of reproductive organ damage.\\
+Level 3& 4& 18& 15& Miracle~\nameref{par:Surgery vs}\hyperref[bane:Barren/Sterility]{Sterility} &Deep stab in groin, nicks artery. Possible loss of reproductive capability.\\
 Level 4& Total& Total& 25 
-	&\nameref{par:KO vs} 5 RS, \newline
+	&\nameref{par:KO vs}5 RS, \newline
 		\hyperref[bane:Barren/Sterility]{Sterility}.
 	&Artery severed, reproductive organs damaged beyond repair, unconsciousness likely.\\
 Level 5& - &- &- &\nameref{par:Dead}& Point slams through groin into abdomen, severing major artery and cracking pelvis. Death from shock and exsanguination follow instantly.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Groin - Bludgeoning
-	\caption{Groin - Bludgeoning}
-	\label{wound:Groin - Bludgeoning}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Groin - Bludgeoning
+%	\caption{Groin - Bludgeoning}\vspace{-3pt}
+%	\label{wound:Groin - Bludgeoning}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Bludgeoning}&\\\toprule
 Level 1& 4& 10& 0& - &A modest thump between the legs. Painful and debilitating.\\
-Level 2& 6& 15& 0& \nameref{par:KO vs} 2 RS &A harder blow, enough to cause bruising and extreme nausea. May lose consciousness.\\
+Level 2& 6& 15& 0& \nameref{par:KO vs}2 RS &A harder blow, enough to cause bruising and extreme nausea. May lose consciousness.\\
 Level 3& 8& 20& 3
-	&\nameref{par:KO vs} 3 RS, \newline
-		Routine~\nameref{par:Surgery vs} \hyperref[bane:Barren/Sterility]{Sterility}.
+	&\nameref{par:KO vs}3 RS, \newline
+		Routine~\nameref{par:Surgery vs}\hyperref[bane:Barren/Sterility]{Sterility}.
 	&Serious damage, reproductive organs may be damaged, surgical assessment advised. May lose consciousness.\\
 Level 4& Total& Total& 10 
-	&\nameref{par:KO vs} 5 RS, \newline
-		Difficult~\nameref{par:Surgery vs} \hyperref[bane:Barren/Sterility]{Sterility}.
+	&\nameref{par:KO vs}5 RS, \newline
+		Difficult~\nameref{par:Surgery vs}\hyperref[bane:Barren/Sterility]{Sterility}.
 	&Severe damage to reproductive organs, but also to pelvis and innards. Possible organ damage. May lose consciousness.\\
 Level 5& Total& Total& 15
 	&\nameref{par:Auto-KO}, \newline
-		Miracle~\nameref{par:Surgery vs} \hyperref[bane:Barren/Sterility]{Sterility}.
+		Miracle~\nameref{par:Surgery vs}\hyperref[bane:Barren/Sterility]{Sterility}.
 	&The horrors borne within this wound level do not bear consideration. Severe internal organ damage, instant knockout, may never recover.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Groin - Unarmed
-	\caption{Groin - Unarmed}
-	\label{wound:Groin - Unarmed}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Groin - Unarmed
+%	\caption{Groin - Unarmed}\vspace{-3pt}
+%	\label{wound:Groin - Unarmed}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed}&\\\toprule
 Level 1& 2& 3& 0& - &The schoolyard standby, eh? Pain vanishes after 5 Rounds.\\
 Level 2& 4& 5& 0& - &Blow to the groin, cringeworthy. Pain vanishes after 5 Rounds.\\
-Level 3& 6& 8& 0& \nameref{par:KO vs} 2 RS &Severe blow, agonizing.\\
-Level 4& 8& 12& 0& \nameref{par:KO vs} 5 RS &Hard blow, instant nausea, significant chance of losing consciousness.\\
+Level 3& 6& 8& 0& \nameref{par:KO vs}2 RS &Severe blow, agonizing.\\
+Level 4& 8& 12& 0& \nameref{par:KO vs}5 RS &Hard blow, instant nausea, significant chance of losing consciousness.\\
 Level 5& Total& Total& 3 
 	&\nameref{par:Auto-KO}, \newline
-		Difficult~\nameref{par:Surgery vs} \hyperref[bane:Barren/Sterility]{Sterility}.
+		Difficult~\nameref{par:Surgery vs}\hyperref[bane:Barren/Sterility]{Sterility}.
 	&Mother of God.\\
 	\end{tabu}
 \end{table}
 	\clearpage
 
-\section{Thigh} \vspace{-25pt} \label{sec:thigh}
-\begin{table}[hb] %Thigh - Cutting
-	\caption{Thigh - Cutting}
-	\label{wound:Thigh - Cutting}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+\section{Thigh}  \label{sec:thigh}
+\begin{table}[!hb] %Thigh - Cutting
+%	\caption{Thigh - Cutting}\vspace{-3pt}
+%	\label{wound:Thigh - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+Wound Level &Stun &Pain &Bleed &Special{\hfill \large Cutting ~~~} &Description\\\toprule
 Level 1& 1& 4& 2& - &Shallow cut on thigh.\\
 Level 2& 2& 5& 4& - &Deeper cut on thigh. Superficial damage.\\
-Level 3& 3& 12& 10& \nameref{par:Stability vs} 3 RS &Serious cut cleaves to bone, anguish, possible knockdown.\\
+Level 3& 3& 12& 10& \nameref{par:Stability vs}3 RS &Serious cut cleaves to bone, anguish, possible knockdown.\\
 Level 4& 4& 15& 20
 	&Auto-prone,\newline
-		Difficult~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Leg}.
+		Difficult~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Leg}.
 &Deep cut to thigh, chipped femur, severed artery. Medic!\\
 Level 5& Total& Total& 25 
 	&\nameref{par:Auto-Prone},\newline
 		\nameref{par:Infection Risk} +5,\newline
 		\nameref{par:Limb Severed}
 	&Blade cleaves through the femur and either severs leg entirely or gets stuck in hip/pelvis. This is close to unsurvivable.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Thigh - Piercing
-	\caption{Thigh - Piercing}
-	\label{wound:Thigh - Piercing}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Thigh - Piercing
+%	\caption{Thigh - Piercing}\vspace{-3pt}
+%	\label{wound:Thigh - Piercing}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+\\
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Piercing~~~~}&\\\toprule
 Level 1& 1& 3& 4& - &Shallow penetration of thigh.\\
 Level 2& 2& 5& 6& - &Deeper penetration of thigh, lots of blood.\\
-Level 3& 3& 10& 10& \nameref{par:Stability vs} 1 RS &Bone is glanced, artery nicked.\\
-Level 4& 4& 12& 15& \nameref{par:Stability vs} 3 RS &Femur cracked, artery severed.\\
+Level 3& 3& 10& 10& \nameref{par:Stability vs}1 RS &Bone is glanced, artery nicked.\\
+Level 4& 4& 12& 15& \nameref{par:Stability vs}3 RS &Femur cracked, artery severed.\\
 Level 5& 5& 14& 20
 	&\nameref{par:Auto-Prone}, \newline
-		Difficult~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Leg}.
+		Difficult~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Leg}.
 	&Leg completely impaled, artery severed, bone broken. Automatic knockdown\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Thigh - Bludgeoning
-	\caption{Thigh - Bludgeoning}
-	\label{wound:Thigh - Bludgeoning}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Thigh - Bludgeoning
+%	\caption{Thigh - Bludgeoning}\vspace{-3pt}
+%	\label{wound:Thigh - Bludgeoning}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Bludgeoning}&\\\toprule
 Level 1& 2& 0& 0& - &Hit on thigh. Impact totally absorbed by dense muscle.\\
 Level 2& 4& 2& 0& - &More solid hit, painful bruising on thigh, still nothing serious.\\
-Level 3& 6& 4& 1& \nameref{par:Stability vs} 2 RS &Severe bruising, minor femur damage, possible knockdown.\\
+Level 3& 6& 4& 1& \nameref{par:Stability vs}2 RS &Severe bruising, minor femur damage, possible knockdown.\\
 Level 4& 8& 10& 3
 	&\nameref{par:Auto-Prone}, \newline
-		Routine~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Leg}.
+		Routine~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Leg}.
 	&Femur fractured, automatic knockdown.\\
 Level 5& 10& 20& 5
 	&\nameref{par:Auto-Prone}, \newline
-		Difficult~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Leg}.
+		Difficult~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Leg}.
 	&Compound fracture of femur. Unspeakably horrific, does not bear thinking about.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Thigh - Unarmed
-	\caption{Thigh - Unarmed}
-	\label{wound:Thigh - Unarmed}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Thigh - Unarmed
+%	\caption{Thigh - Unarmed}\vspace{-3pt}
+%	\label{wound:Thigh - Unarmed}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed}&\\\toprule
 Level 1& 0& 0& 0& - &Hit on thigh. Impact totally absorbed by dense muscle.\\
 Level 2& 0& 0& 0& - &Hit on thigh. Impact mostly absorbed by dense muscle.\\
 Level 3& 0& 1& 0& - &More solid hit, painful bruising on thigh, still nothing serious.\\
 Level 4& 1& 2& 0& \nameref{par:Stability vs}~2 RS &Severe bruising, minor femur damage, possible knockdown.\\
 Level 5& 2& 10& 3
 	&\nameref{par:Auto-Prone}, \newline
-		Routine~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Leg}.
+		Routine~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Leg}.
 	&Femur fractured, automatic knockdown.\\
 	\end{tabu}
 \end{table}
 	\clearpage
 
-\section{Knee} \vspace{-25pt} \label{sec:knee}
-\begin{table}[hb] %Knee - Cutting
-	\caption{Knee - Cutting}
-	\label{wound:Knee - Cutting}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+\section{Knee}  \label{sec:knee}
+\begin{table}[!hb] %Knee - Cutting
+%	\caption{Knee - Cutting}\vspace{-3pt}
+%	\label{wound:Knee - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+Wound Level &Stun &Pain &Bleed &Special{\hfill \large Cutting ~~~} &Description\\\toprule
 Level 1& 1& 6& 0& - &‘Motherf-’\\
-Level 2& 1& 8& 1& \nameref{par:Stability vs} 1 RS &Deep cut to knee, painful contact with bone. May fall.\\
-Level 3& 3& 10& 2& \nameref{par:Stability vs} 3 RS &Chipped bone, jarring and painful.\\
+Level 2& 1& 8& 1& \nameref{par:Stability vs}1 RS &Deep cut to knee, painful contact with bone. May fall.\\
+Level 3& 3& 10& 2& \nameref{par:Stability vs}3 RS &Chipped bone, jarring and painful.\\
 Level 4& 5& 15& 3& \nameref{par:Auto-Prone}, \newline
-Difficult~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Knee} &Knee shattered. Automatic Knockdown. Leg may never recover.\\
+Difficult~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Knee} &Knee shattered. Automatic Knockdown. Leg may never recover.\\
 Level 5& Total& Total& 20 &
 	\nameref{par:Auto-Prone}, \newline
 		\nameref{par:Infection Risk} +3, \newline
 		\nameref{par:Limb Severed}
 	&Leg severed at knee. Knockdown automatic. Death by exsanguination likely to follow without medical attention.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Knee - Piercing
-	\caption{Knee - Piercing}
-	\label{wound:Knee - Piercing}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Knee - Piercing
+%	\caption{Knee - Piercing}\vspace{-3pt}
+%	\label{wound:Knee - Piercing}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+\\
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Piercing~~~~}&\\\toprule
 Level 1& 1& 5& 2& - &A glancing stab to the knee.\\
-Level 2& 1& 7& 4& \nameref{par:Stability vs} 2 RS &Knee injured.\\
-Level 3& 2& 9& 7& \nameref{par:Stability vs} 4 RS &Knee fractures, pain is intense.\\
+Level 2& 1& 7& 4& \nameref{par:Stability vs}2 RS &Knee injured.\\
+Level 3& 2& 9& 7& \nameref{par:Stability vs}4 RS &Knee fractures, pain is intense.\\
 Level 4& 3& 16& 12& \nameref{par:Auto-Prone}, \newline
-Difficult~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Knee}. &Kneecap shattered. Probably won't recover. Automatic knockdown.\\
+Difficult~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Knee}. &Kneecap shattered. Probably won't recover. Automatic knockdown.\\
 Level 5& 8& 20& 15& \nameref{par:Auto-Prone}, \newline
-Miracle~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Knee} &Knee shatters, leg bends wrong way. Automatic knockdown. Odds of recovery are dubious at best.\\
-	\end{tabu}
-\end{table}
+Miracle~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Knee} &Knee shatters, leg bends wrong way. Automatic knockdown. Odds of recovery are dubious at best.\\
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Knee - Bludgeoning
-	\caption{Knee - Bludgeoning}
-	\label{wound:Knee - Bludgeoning}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
-Level 1 &2 &3 &0 &\nameref{par:Stability vs} 2 RS &Glancing blow to the knee. Disruptive, but no major damage. May trip.\\
-Level 2 &4 &5& 0& \nameref{par:Stability vs} 3 RS &Solid blow to the knee, bruising, may trip.\\
-Level 3 &6 &7& 2& \nameref{par:Stability vs} 5 RS &Damaged knee, bruised or chipped bone, may fall down.\\
+%\begin{table}[hb] %Knee - Bludgeoning
+%	\caption{Knee - Bludgeoning}\vspace{-3pt}
+%	\label{wound:Knee - Bludgeoning}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Bludgeoning}&\\\toprule
+Level 1 &2 &3 &0 &\nameref{par:Stability vs}2 RS &Glancing blow to the knee. Disruptive, but no major damage. May trip.\\
+Level 2 &4 &5& 0& \nameref{par:Stability vs}3 RS &Solid blow to the knee, bruising, may trip.\\
+Level 3 &6 &7& 2& \nameref{par:Stability vs}5 RS &Damaged knee, bruised or chipped bone, may fall down.\\
 Level 4 &8 &10& 3& \nameref{par:Auto-Prone}, \newline
-Difficult~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Knee} &Broken knee, automatic knockdown, may never recover.\\
+Difficult~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Knee} &Broken knee, automatic knockdown, may never recover.\\
 Level 5 &Total &18 &5 &\nameref{par:Auto-Prone}, \newline
-	Miracle~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Knee} &Knee smashed, automatic knockdown. Would take an act of God to recover.\\
-	\end{tabu}
-\end{table}
+	Miracle~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Knee} &Knee smashed, automatic knockdown. Would take an act of God to recover.\\
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Knee - Unarmed
-	\caption{Knee - Unarmed}
-	\label{wound:Knee - Unarmed}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Knee - Unarmed
+%	\caption{Knee - Unarmed}\vspace{-3pt}
+%	\label{wound:Knee - Unarmed}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed}&\\\toprule
 Level 1& 0& 0& 0& - &Didn’t even feel it.\\
 Level 2& 1& 0& 0& - &Unpleasant stinging sensation.\\
-Level 3& 2& 5& 0&\nameref{par:Stability vs} 5 RS &Knee hurt, possible knockdown.\\
+Level 3& 2& 5& 0&\nameref{par:Stability vs}5 RS &Knee hurt, possible knockdown.\\
 Level 4& 3& 10& 0& \nameref{par:Auto-Prone}, \newline 
-Difficult~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Knee} &Knee fractured, possible tendon/muscle tear. Could be a crippling injury. Extreme pain.\\
+Difficult~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Knee} &Knee fractured, possible tendon/muscle tear. Could be a crippling injury. Extreme pain.\\
 Level 5& 8& 18& 0& \nameref{par:Auto-Prone}, \newline
-Miracle~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Knee} &Knee snapped backwards. Onlookers may faint. Leg will probably never recover.\\
+Miracle~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Knee} &Knee snapped backwards. Onlookers may faint. Leg will probably never recover.\\
 	\end{tabu}
 \end{table}
 	\clearpage
 
-\section{Shin} \vspace{-25pt} \label{sec:shin}
+\section{Shin}  \label{sec:shin}
 \begin{table}[hb] %Shin - Cutting
-	\caption{Shin - Cutting}
-	\label{wound:Shin - Cutting}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%	\caption{Shin - Cutting}\vspace{-3pt}
+%	\label{wound:Shin - Cutting}
+	\begin{tabu} to \linewidth {X[-1] *{3}{X[-2,c]} X[3]X[5]}
+Wound Level &Stun &Pain &Bleed &Special{\hfill \large Cutting ~~~} &Description\\\toprule
 Level 1& 1& 5& 1& - &Grazed shin, painful but no lasting harm.\\
-Level 2& 2& 7& 4& \nameref{par:Stability vs} 1 RS &Deep cut, bone contact.\\
-Level 3& 3& 9& 7& \nameref{par:Stability vs} 3 RS &Chipped shinbone, some blood, may fall.\\
+Level 2& 2& 7& 4& \nameref{par:Stability vs}1 RS &Deep cut, bone contact.\\
+Level 3& 3& 9& 7& \nameref{par:Stability vs}3 RS &Chipped shinbone, some blood, may fall.\\
 Level 4& 4& 14& 10& \nameref{par:Auto-Prone}, \newline
-Difficult~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Leg} &Deep cut cleaves into bone, automatic knockdown. May never recover.\\
+Difficult~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Leg} &Deep cut cleaves into bone, automatic knockdown. May never recover.\\
 Level 5& 5& 20& 15& \nameref{par:Auto-Prone}, \newline
 \nameref{par:Infection Risk} +3, \newline
 \nameref{par:Limb Severed} &Leg severed halfway down shin. Automatic knockdown.\\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Shin - Piercing
-	\caption{Shin - Piercing}
-	\label{wound:Shin - Piercing}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Shin - Piercing
+%	\caption{Shin - Piercing}\vspace{-3pt}
+%	\label{wound:Shin - Piercing}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+\\
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Piercing~~~~}&\\\toprule
 Level 1& 1& 4& 2& - &A light fracture to the shin.\\
-Level 2& 2& 6& 5& \nameref{par:Stability vs} 2 RS &Deep puncture, chipped bone.\\
-Level 3& 3& 8& 8& \nameref{par:Stability vs} 3 RS &Tendon grazed, leg freezes up. Possible bone fracture.\\
+Level 2& 2& 6& 5& \nameref{par:Stability vs}2 RS &Deep puncture, chipped bone.\\
+Level 3& 3& 8& 8& \nameref{par:Stability vs}3 RS &Tendon grazed, leg freezes up. Possible bone fracture.\\
 Level 4& 4& 10& 10& \nameref{par:Auto-Prone}, \newline
-	Routine~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Leg} &Shinbone breaks, tendon damage. Severe muscle damage. Automatic knockdown.\\
+	Routine~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Leg} &Shinbone breaks, tendon damage. Severe muscle damage. Automatic knockdown.\\
 Level 5& 5& 20& 17& \nameref{par:Auto-Prone}, \newline
-Difficult~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Leg} &Compound fracture of shinbone, leg ruined, may never recover. Automatic knockdown.\\
-	\end{tabu}
-\end{table}
+Difficult~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Leg} &Compound fracture of shinbone, leg ruined, may never recover. Automatic knockdown.\\
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Shin - Bludgeoning
-	\caption{Shin - Bludgeoning}
-	\label{wound:Shin - Bludgeoning}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Shin - Bludgeoning
+%	\caption{Shin - Bludgeoning}\vspace{-3pt}
+%	\label{wound:Shin - Bludgeoning}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Bludgeoning}&\\\toprule
 Level 1& 2& 4& 0& - &Glancing blow to shin. No real damage, but man that stings.\\
-Level 2& 3& 6& 0& \nameref{par:Stability vs} 1 RS &Harder blow, may fall.\\
-Level 3& 5& 8& 3& \nameref{par:Stability vs} 4 RS &Fractured shin, agonizing, and may fall.\\
+Level 2& 3& 6& 0& \nameref{par:Stability vs}1 RS &Harder blow, may fall.\\
+Level 3& 5& 8& 3& \nameref{par:Stability vs}4 RS &Fractured shin, agonizing, and may fall.\\
 Level 4& 7& 14& 5& \nameref{par:Auto-Prone}, \newline
-	Routine~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Leg} &Shin breaks, excessive pain. Automatic knockdown.\\
+	Routine~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Leg} &Shin breaks, excessive pain. Automatic knockdown.\\
 Level 5& 9& 16& 10& \nameref{par:Auto-Prone}, \newline
-	Miracle~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Leg} &Compound fracture of the shinbone, excessive damage. Leg may never recover. Automatic knockdown.\\
-	\end{tabu}
-\end{table}
+	Miracle~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Leg} &Compound fracture of the shinbone, excessive damage. Leg may never recover. Automatic knockdown.\\
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Shin - Unarmed
-	\caption{Shin - Unarmed}
-	\label{wound:Shin - Unarmed}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Shin - Unarmed
+%	\caption{Shin - Unarmed}\vspace{-3pt}
+%	\label{wound:Shin - Unarmed}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed}&\\\toprule
 Level 1& 0& 0& 0& - &Glancing blow to shin. No real damage, but man that stings. \\
-Level 2& 1& 0& 0& \nameref{par:Stability vs} 1 RS &Glancing blow to shin. No real damage, but man that stings. Might fall.\\
-Level 3& 2& 5& 0& \nameref{par:Stability vs} 3 RS &Bruising, minor damage to shinbone\\
-Level 4& 3& 8& 0& \nameref{par:Stability vs} 4 RS &Fractured shin, agonizing, and may fall.\\
+Level 2& 1& 0& 0& \nameref{par:Stability vs}1 RS &Glancing blow to shin. No real damage, but man that stings. Might fall.\\
+Level 3& 2& 5& 0& \nameref{par:Stability vs}3 RS &Bruising, minor damage to shinbone\\
+Level 4& 3& 8& 0& \nameref{par:Stability vs}4 RS &Fractured shin, agonizing, and may fall.\\
 Level 5& 6& 14& 0& \nameref{par:Auto-Prone}, \newline
-	Routine~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Leg} &Ever seen Silva vs Weidman?\\
+	Routine~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Leg} &Ever seen Silva vs Weidman?\\
 	\end{tabu}
 \end{table}
 	\clearpage
 
-\section{Foot}\vspace{-25pt} \label{sec:foot}
+\section{Foot} \label{sec:foot}
 \begin{table}[hb] %Foot - Cutting
-	\caption{Foot - Cutting}
-	\label{wound:Foot - Cutting}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%	\caption{Foot - Cutting}\vspace{-3pt}
+%	\label{wound:Foot - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+Wound Level &Stun &Pain &Bleed &Special{\hfill \large Cutting ~~~} &Description\\\toprule
 Level 1& 1& 4& 0& - &Light cut on foot, unpleasant.\\
 Level 2& 2& 5& 1& - &Deep cut into the meat of foot. Painful but not serious.\\
-Level 3& 3& 6& 1& \nameref{par:Stability vs} 3 RS &Serious damage to foot, possible bone fractures.\\
+Level 3& 3& 6& 1& \nameref{par:Stability vs}3 RS &Serious damage to foot, possible bone fractures.\\
 Level 4& 4& 10& 3& \nameref{par:Auto-Prone} &Broken foot, tendon damage, possible toe loss. Automatic knockdown.\\
 Level 5& 5& 12& 10& \nameref{par:Auto-Prone}, \newline
 	\nameref{par:Infection Risk} +3, \newline
 	\nameref{par:Limb Severed} &Foot destroyed or severed at the ankle. Automatic knockdown, severe bleeding.\\
-	\end{tabu}
-\end{table}
+	%\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Foot - Piercing
-	\caption{Foot - Piercing}
-	\label{wound:Foot - Piercing}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Foot - Piercing
+%	\caption{Foot - Piercing}\vspace{-3pt}
+%	\label{wound:Foot - Piercing}
+	%\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+\\
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Piercing~~~~}&\\\toprule
 Level 1& 1& 2& 2& - &Glancing blow to foot, no major damage.\\
-Level 2& 2& 5& 3& \nameref{par:Stability vs} 1 RS &Foot stabbed.\\
-Level 3& 3& 10&4& \nameref{par:Stability vs} 3 RS &Foot impaled, fracture of small bones.\\
-Level 4& 4& 12&5& \nameref{par:Stability vs} 5 RS &Foot is nailed to the floor.\\
+Level 2& 2& 5& 3& \nameref{par:Stability vs}1 RS &Foot stabbed.\\
+Level 3& 3& 10&4& \nameref{par:Stability vs}3 RS &Foot impaled, fracture of small bones.\\
+Level 4& 4& 12&5& \nameref{par:Stability vs}5 RS &Foot is nailed to the floor.\\
 Level 5& 5& 18&7& \nameref{par:Auto-Prone}, \newline
-	Difficult~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Leg} &Foot impaled, ankle damaged, tendons damaged. Automatic knockdown, may not regain functionality.\\
-	\end{tabu}
-\end{table}
+	Difficult~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Leg} &Foot impaled, ankle damaged, tendons damaged. Automatic knockdown, may not regain functionality.\\
+	%\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Foot - Bludgeoning
-	\caption{Foot - Bludgeoning}
-	\label{wound:Foot - Bludgeoning}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Foot - Bludgeoning
+%	\caption{Foot - Bludgeoning}\vspace{-3pt}
+%	\label{wound:Foot - Bludgeoning}
+	%\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Bludgeoning}&\\\toprule
 Level 1& 2& 2& 0& - &Foot thumped. Unfortunately, feet are kind of designed for that. Minimal damage.\\
-Level 2& 3& 3& 0& \nameref{par:Stability vs} 2 RS &Foot hit harder, actual pain, may trip.\\
-Level 3& 5& 7& 2& \nameref{par:Stability vs} 4 RS &Equivalent to an ankle sprain, painful and debilitating.\\
+Level 2& 3& 3& 0& \nameref{par:Stability vs}2 RS &Foot hit harder, actual pain, may trip.\\
+Level 3& 5& 7& 2& \nameref{par:Stability vs}4 RS &Equivalent to an ankle sprain, painful and debilitating.\\
 Level 4& 7& 10& 3& \nameref{par:Auto-Prone}, \newline
-	Routine~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Leg} &Foot is broken, automatic knockdown. May not recover, stay off it.\\
+	Routine~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Leg} &Foot is broken, automatic knockdown. May not recover, stay off it.\\
 Level 5& 9& 18& 5& \nameref{par:Auto-Prone}, \newline
-	Miracle~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Leg} &Foot is smashed entirely, multiple compound fractures. May not recover, amputation worth considering.\\
-	\end{tabu}
-\end{table}
+	Miracle~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Leg} &Foot is smashed entirely, multiple compound fractures. May not recover, amputation worth considering.\\
+	%\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Foot - Unarmed
-	\caption{Foot - Unarmed}
-	\label{wound:Foot - Unarmed}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Foot - Unarmed
+%	\caption{Foot - Unarmed}\vspace{-3pt}
+%	\label{wound:Foot - Unarmed}
+	%\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed}&\\\toprule
 Level 1& 0& 0& 0& - &Foot stings for a minute.\\
-Level 2& 0& 1& 0& \nameref{par:Stability vs} 1 RS &Slightly more painful. Like, hopping up and down painful.\\
-Level 3& 1& 3& 0& \nameref{par:Stability vs} 2 RS &Foot bruised, actually painful.\\
-Level 4& 2& 7& 0& \nameref{par:Stability vs} 3 RS &Equivalent to an ankle sprain, painful and debilitating.\\
+Level 2& 0& 1& 0& \nameref{par:Stability vs}1 RS &Slightly more painful. Like, hopping up and down painful.\\
+Level 3& 1& 3& 0& \nameref{par:Stability vs}2 RS &Foot bruised, actually painful.\\
+Level 4& 2& 7& 0& \nameref{par:Stability vs}3 RS &Equivalent to an ankle sprain, painful and debilitating.\\
 Level 5& 3& 10& 0& \nameref{par:Auto-Prone}, \newline
-	Routine~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Leg} &Foot is broken, automatic knockdown. May not recover, stay off it.\\
+	Routine~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Leg} &Foot is broken, automatic knockdown. May not recover, stay off it.\\
 	\end{tabu}
 \end{table}
 	\clearpage
 
-\section{Upper Arm} \vspace{-25pt} \label{sec:upper-arm}
-\begin{table}[hb] %Upper Arm - Cutting
-	\caption{Upper Arm - Cutting}
-	\label{wound:Upper Arm - Cutting}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+\section{Upper Arm}  \label{sec:upper-arm}
+\begin{table}[!hb] %Upper Arm - Cutting
+%	\caption{Upper Arm - Cutting}\vspace{-3pt}
+%	\label{wound:Upper Arm - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+Wound Level &Stun &Pain &Bleed &Special{\hfill \large Cutting ~~~} &Description\\\toprule
 Level 1& 1& 4& 1& - &Cut on arm. Trivial.\\
 Level 2& 2& 7& 2& - &Painful cut on upper arm. No serious damage, but some blood.\\
 Level 3& 3& 10& 3& - &Blade cuts through muscle, chips humerus.\\
-Level 4& 4& 14& 6& Difficult~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Blade breaks humerus, arm is severely damaged, may never recover use of arm.\\
+Level 4& 4& 14& 6& Difficult~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Blade breaks humerus, arm is severely damaged, may never recover use of arm.\\
 Level 5& 5& 15& 20&
 	\nameref{par:Limb Severed} \newline
 	\nameref{par:Infection Risk} +3 &Arm severed just below the shoulder! Extreme blood loss, seek help!\\
-	\end{tabu}
-\end{table}
+	%\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Upper Arm - Piercing
-	\caption{Upper Arm - Piercing}
-	\label{wound:Upper Arm - Piercing}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Upper Arm - Piercing
+%	\caption{Upper Arm - Piercing}\vspace{-3pt}
+%	\label{wound:Upper Arm - Piercing}
+	%\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+\\
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Piercing~~~~}&\\\toprule
 Level 1& 1& 4& 2& - &Shallow puncture on upper arm. Trivial injury.\\
 Level 2& 2& 5& 3& - &Deeper puncture, some muscle damage, bleeding.\\
 Level 3& 3& 8& 5& - &Penetration deep into humerus, terrible bleeding and extreme pain.\\
-Level 4& 4& 12& 8&Difficult~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Grievous bone damage, going to be difficult to set.\\
-Level 5& 5& 15& 15&Miracle~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm}&Bone shattered, clipped artery, may never recover, extreme bleeding.\\
-	\end{tabu}
-\end{table}
+Level 4& 4& 12& 8&Difficult~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Grievous bone damage, going to be difficult to set.\\
+Level 5& 5& 15& 15&Miracle~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Arm}&Bone shattered, clipped artery, may never recover, extreme bleeding.\\
+	%\end{tabu}
+%\end{table}
 
-\begin{table}[hb] %Upper Arm - Bludgeoning
-	\caption{Upper Arm - Bludgeoning}
-	\label{wound:Upper Arm - Bludgeoning}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[hb] %Upper Arm - Bludgeoning
+%	\caption{Upper Arm - Bludgeoning}\vspace{-3pt}
+%	\label{wound:Upper Arm - Bludgeoning}
+	%\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Bludgeoning}&\\\toprule
 Level 1& 2& 2& 0& - &Bruise on the upper arm, no significant harm.\\
 Level 2& 3& 3& 0& - &Harder blow, severe bruising on tricep.\\
 Level 3& 5& 5& 1& \nameref{par:Autodrop} &Intense trauma, fractured humerus.\\
 Level 4& 7& 9& 2& \nameref{par:Autodrop}, \newline
-	Difficult~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Broken humerus, extreme pain, needs treatment.\\
+	Difficult~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Broken humerus, extreme pain, needs treatment.\\
 Level 5& 9& 12& 5& \nameref{par:Autodrop}, \newline
-	Miracle~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm}, \newline
+	Miracle~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Arm}, \newline
 	\nameref{par:Infection Risk} +2 &Humerus shattered, fragments driven into surrounding flesh, limb may be unsalvageable.\\
-	\end{tabu}
-\end{table}
+	%\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Upper Arm - Unarmed
-	\caption{Upper Arm - Unarmed}
-	\label{wound: Upper arm - Unarmed}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Upper Arm - Unarmed
+%	\caption{Upper Arm - Unarmed}\vspace{-3pt}
+%	\label{wound: Upper arm - Unarmed}
+	%\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed}&\\\toprule
 Level 1 &0 &0 &0 &- &Two for flinching.\\
 Level 2 &1 &0 &0 &- &Dead arm.\\
 Level 3 &2 &  &0 &- &Bruise, nothing serious.\\ %MISSING NUMBER IN ORIGINAL DOC
@@ -12342,60 +12317,61 @@ Level 5 &4 &5 &0 &\nameref{par:Autodrop} &Severe bruise, minor fractures in uppe
 \end{table}
 	\clearpage
 
-\section{Elbow} \vspace{-25pt} \label{sec:elbow}
+\section{Elbow}  \label{sec:elbow}
 \begin{table}[!hb] %Elbow - Cutting
-	\caption{Elbow - Cutting}
-	\label{wound:Elbow - Cutting}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%	\caption{Elbow - Cutting}\vspace{-3pt}
+%	\label{wound:Elbow - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+Wound Level &Stun &Pain &Bleed &Special{\hfill \large Cutting ~~~} &Description\\\toprule
 Level 1& 1& 5& 1& - &Shallow cut to elbow.\\
-Level 2& 2& 6& 3& \nameref{par:Disarm vs} 2 RS &Deeper cut to elbow, nerves nicked, may drop item.\\
+Level 2& 2& 6& 3& \nameref{par:Disarm vs}2 RS &Deeper cut to elbow, nerves nicked, may drop item.\\
 Level 3& 3& 8& 5& \nameref{par:Autodrop} &Nerves cut, bone chipped, item automatically dropped. Arm will not function until healed.\\
 Level 4& 4& 12& 7& \nameref{par:Autodrop}, \newline
-	Difficult~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Nerves severed, arm nearly cloven off, bone broken. Item automatically dropped. Arm may not recover functionality.\\
+	Difficult~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Nerves severed, arm nearly cloven off, bone broken. Item automatically dropped. Arm may not recover functionality.\\
 Level 5& 5& 20& 20& \nameref{par:Autodrop}, \newline
 	\nameref{par:Infection Risk} +3, \newline
 	\nameref{par:Limb Severed} &Arm severed at the elbow, massive blood loss, limb irrecoverable, infection is a serious risk.\\
-		\end{tabu}
-\end{table}
+		%\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Elbow - Piercing
-	\caption{Elbow - Piercing}
-	\label{wound:Elbow - Piercing}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Elbow - Piercing
+%	\caption{Elbow - Piercing}\vspace{-3pt}
+%	\label{wound:Elbow - Piercing}
+	%\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+\\
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Piercing~~~~}&\\\toprule
 Level 1& 1& 4& 3& Disarm vs RS 1 &Painful stab in elbow. May drop item.\\
 Level 2& 2& 6& 6& Disarm vs RS 3 &Deeper penetration, nerve injury, may drop item.\\
 Level 3& 3& 10& 10& \nameref{par:Autodrop}, \newline
-	Difficult~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Spike penetrates clear through elbow, automatic weapon drop, arm may not recover.\\
+	Difficult~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Spike penetrates clear through elbow, automatic weapon drop, arm may not recover.\\
 Level 4& 4& 14& 14& \nameref{par:Autodrop}, \newline
-	Miracle~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Extreme injury to elbow joint, nerves destroyed, arm loses functionality and may not recover.\\
+	Miracle~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Extreme injury to elbow joint, nerves destroyed, arm loses functionality and may not recover.\\
 Level 5& 5& 18& 20& \nameref{par:Autodrop}, \newline
 	Arm automatically \hyperref[bane:Crippled Limb/Appendage]{crippled}, \newline
 	\nameref{par:Infection Risk} +4 &Arm rendered totally unusable, will probably need to be amputated, definitely will not recover functionality.\\
-	\end{tabu}
-\end{table}
+	%\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Elbow - Bludgeoning
-	\caption{Elbow - Bludgeoning}
-	\label{wound:Elbow - Bludgeoning}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
-Level 1& 2& 4& 0& \nameref{par:Disarm vs} 1 RS &Straight blow to the elbow. Arm goes temporarily numb, but no lasting damage.\\
-Level 2& 4& 6& 0& \nameref{par:Disarm vs} 3 RS &More severe impact, bruising, impact to nerves, painful tingling and numbness in whole arm.\\
-Level 3& 6& 10& 1& \nameref{par:Disarm vs} 5 RS &Fractured elbow, severe pain, hopefully no lasting damage.\\
+%\begin{table}[!hb] %Elbow - Bludgeoning
+%	\caption{Elbow - Bludgeoning}\vspace{-3pt}
+%	\label{wound:Elbow - Bludgeoning}
+	%\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Bludgeoning}&\\\toprule
+Level 1& 2& 4& 0& \nameref{par:Disarm vs}1 RS &Straight blow to the elbow. Arm goes temporarily numb, but no lasting damage.\\
+Level 2& 4& 6& 0& \nameref{par:Disarm vs}3 RS &More severe impact, bruising, impact to nerves, painful tingling and numbness in whole arm.\\
+Level 3& 6& 10& 1& \nameref{par:Disarm vs}5 RS &Fractured elbow, severe pain, hopefully no lasting damage.\\
 Level 4& 8& 14& 3& \nameref{par:Autodrop}, \newline
-	Easy~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Elbow broken or severely dislocated. Needs treatment.\\
+	Easy~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Elbow broken or severely dislocated. Needs treatment.\\
 Level 5& 10& 18& 6& \nameref{par:Autodrop}, \newline
-	Miracle~\nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Elbow smashed to pieces, arm bent the wrong way, exquisite pain. Unfathomable horror.\\
-	\end{tabu}
-\end{table}
+	Miracle~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Elbow smashed to pieces, arm bent the wrong way, exquisite pain. Unfathomable horror.\\
+	%\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Elbow - Unarmed
-	\caption{Elbow - Unarmed}
-	\label{wound:Elbow - Unarmed}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Elbow - Unarmed
+%	\caption{Elbow - Unarmed}\vspace{-3pt}
+%	\label{wound:Elbow - Unarmed}
+	%\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed}&\\\toprule
 Level 1& 0& 0& 0& - &No effect.\\
 Level 2& 0& 0& 0& - &Still no effect.\\
 Level 3& 1& 0& 0& - &Funnybone effect. Minor bruising.\\
@@ -12405,202 +12381,205 @@ Level 5& 3& 5& 0& \nameref{par:Autodrop} &Bruised bone and injured tendons. Arm 
 \end{table}
 	\clearpage
 
-\section{Forearm} \vspace{-25pt} \label{sec:forearm}
+\section{Forearm}  \label{sec:forearm}
 \begin{table}[!hb] %Forearm - Cutting
-	\caption{Forearm - Cutting}
-	\label{wound:Forearm - Cutting}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-		Wound Level &Stun &Pain &Bleed &Special &Description\\
+%	\caption{Forearm - Cutting}\vspace{-3pt}
+%	\label{wound:Forearm - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+		Wound Level &Stun &Pain &Bleed &Special{\hfill \large Cutting ~~~} &Description\\\toprule
 		Level 1& 1& 3& 1& - &Shallow cut on the forearm. Will be fine without treatment.\\
 		Level 2& 2& 6& 3& - &Deep cut, painful but not debilitating.\\
-		Level 3& 3& 10& 6& \nameref{par:Disarm vs} 4 RS &Serious cut, muscle and tendon damage, possible fracture. May drop held item.\\
+		Level 3& 3& 10& 6& \nameref{par:Disarm vs}4 RS &Serious cut, muscle and tendon damage, possible fracture. May drop held item.\\
 		Level 4& 4& 15& 8& \nameref{Autodrop}, \newline
-		Difficult \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Broken bones, serious muscle damage, automatically drop held item, arm may not recover.\\
+		Difficult \nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Broken bones, serious muscle damage, automatically drop held item, arm may not recover.\\
 		Level 5& 5& 20& 20& \nameref{Autodrop}, \newline
 	\nameref{par:Infection Risk} +3, \newline
 	\nameref{par:Limb Severed}
 &Arm cloven off just beneath the elbow. Serious blood loss.\\
-	\end{tabu}
-\end{table}
+	%\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Forearm - Piercing
-	\caption{Forearm - Piercing}
-	\label{wound:Forearm - Piercing}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\
+%\begin{table}[!hb] %Forearm - Piercing
+%	\caption{Forearm - Piercing}\vspace{-3pt}
+%	\label{wound:Forearm - Piercing}
+	%\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+\\
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Piercing~~~~}&\\\toprule
 Level 1& 1& 2& 2& - &Puncture wound on the forearm.\\
 Level 2& 2& 5& 5& - &Deep puncture on the forearm, more blood, no vital damage.\\
 Level 3& 3& 7& 10& Disarm vs 2 RS &A deep puncture to the forearm, chipping bone, nicked vein. May drop item. \\
 Level 4& 4& 9& 14& Disarm vs 3 RS &Veins are torn, blood everywhere. May drop item.\\
 Level 5& 5& 12& 18& \nameref{Autodrop}, \newline
-Difficult \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm}, \newline
+Difficult \nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Arm}, \newline
 \nameref{par:Infection Risk} +4 &Complete penetration of the arm, blood loss serious. Item automatically dropped.\\
-	\end{tabu}
-\end{table}
+	%\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Forearm - Bludgeoning
-	\caption{Forearm - Bludgeoning}
-	\label{wound:Forearm - Bludgeoning}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Forearm - Bludgeoning
+%	\caption{Forearm - Bludgeoning}\vspace{-3pt}
+%	\label{wound:Forearm - Bludgeoning}
+	%\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Bludgeoning}&\\\toprule
 Level 1& 2& 2& 0& - &Sharp blow to the forearm. That stings!\\
-Level 2& 4& 4& 1& \nameref{par:Disarm vs} 3 RS &Hard strike to the wrist, severe bruise, may drop held items.\\
+Level 2& 4& 4& 1& \nameref{par:Disarm vs}3 RS &Hard strike to the wrist, severe bruise, may drop held items.\\
 Level 3& 6& 10& 3
-&\nameref{par:Disarm vs} 4 RS, \newline
-Routine \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Broken bones, possible snapped wrist. May drop held items.\\
+&\nameref{par:Disarm vs}4 RS, \newline
+Routine \nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Broken bones, possible snapped wrist. May drop held items.\\
 Level 4& 8& 14& 6
 	&\nameref{Autodrop}, \newline
-	Difficult \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm}
+	Difficult \nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Arm}
 	&Forearm is shattered, automatically drop held items.\\
 Level 5& 10& 15& 10
 	&\nameref{Autodrop}, \newline
-		Difficult \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm}
+		Difficult \nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Arm}
 		&Forearm crushed, staggering damage, automatically drop item, limb may never recover.\\
-	\end{tabu}
-\end{table}
+	%\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Forearm - Unarmed
-	\caption{Forearm - Unarmed}
-	\label{wound:Forearm - Unarmed}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Forearm - Unarmed
+%	\caption{Forearm - Unarmed}\vspace{-3pt}
+%	\label{wound:Forearm - Unarmed}
+	%\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed}&\\\toprule
 Level 1& 0& 0& 0& - &Ow.\\
 Level 2& 1& 0& 0& - &Ow!\\
 Level 3& 2& 1& 0& - &Seriously, stop.\\
 Level 4& 3& 2& 0& - &Agh! You jerk!\\
 Level 5& 5& 8& 3
-	&\nameref{par:Disarm vs} 4 RS, \newline
-		Routine \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Arm}
+	&\nameref{par:Disarm vs}4 RS, \newline
+		Routine \nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Arm}
 	&FFFFFFFF \\
 	\end{tabu}
 \end{table}
 \clearpage
 
-\section{Hand} \vspace{-25pt} \label{sec:hand}
+\section{Hand}  \label{sec:hand}
 \begin{table}[!hb] %Hand - Cutting
-	\caption{Hand - Cutting}
-	\label{wound:Hand - Cutting}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%	\caption{Hand - Cutting}\vspace{-3pt}
+%	\label{wound:Hand - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+Wound Level &Stun &Pain &Bleed &Special{\hfill \large Cutting ~~~} &Description\\\toprule
 Level 1& 1& 4& 1& - &Painful cut on hand.\\
-Level 2& 2& 6& 3& \nameref{par:Disarm vs} 2 RS &Deep cut, bruised bones, may drop held item.\\
-Level 3& 3& 9& 5& \nameref{par:Disarm vs} 5 RS &Broken hand, may drop held item.\\
-Level 4& 4& 12& 8& \nameref{Autodrop} &Severe damage to hand, 1-3 fingers severed, automatically drop held items.\\
+Level 2& 2& 6& 3& \nameref{par:Disarm vs}2 RS &Deep cut, bruised bones, may drop held item.\\
+Level 3& 3& 9& 5& \nameref{par:Disarm vs}5 RS &Broken hand, may drop held item.\\
+Level 4& 4& 12& 8& \nameref{par:Autodrop} &Severe damage to hand, 1-3 fingers severed, automatically drop held items.\\
 Level 5& 5& 15& 15
-	&\nameref{Autodrop}, \newline
+	&\nameref{par:Autodrop}, \newline
 		\nameref{par:Infection Risk} +5, \newline
 		\nameref{par:Limb Severed}
 	&Hand destroyed or severed. Jet of blood erupts from wound.\\
-	\end{tabu}
-\end{table}
+	%\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Hand - Piercing
-	\caption{Hand - Piercing}
-	\label{wound:Hand - Piercing}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Hand - Piercing
+%	\caption{Hand - Piercing}\vspace{-3pt}
+%	\label{wound:Hand - Piercing}
+	%\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+\\
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Piercing~~~~}&\\\toprule
 Level 1& 1& 3& 1& - &Glancing hit on back of hand.\\
-Level 2& 2& 4& 2& \nameref{par:Disarm vs} 1 RS &Deeper penetration of hand. May drop held items.\\
+Level 2& 2& 4& 2& \nameref{par:Disarm vs}1 RS &Deeper penetration of hand. May drop held items.\\
 Level 3& 3& 6& 4
-	&\nameref{par:Disarm vs} 3 RS, \newline
-		Routine \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Hand}
+	&\nameref{par:Disarm vs}3 RS, \newline
+		Routine \nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Hand}
 	&Hand impaled, item automatically dropped, may not recover.\\
 Level 4&4&10&4
-	&\nameref{Autodrop}, \newline
-		Difficult \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Hand} 
+	&\nameref{par:Autodrop}, \newline
+		Difficult \nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Hand} 
 	&Hand seriously damaged, probably won't recover.\\
 Level 5& 5& 15& 18
-	&\nameref{Autodrop}, \newline
-		Miracle \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Hand}
+	&\nameref{par:Autodrop}, \newline
+		Miracle \nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Hand}
 	&Point tears through hand to forearm, tearing open vein. Extreme blood loss.\\
-	\end{tabu}
-\end{table}
+	%\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Hand - Bludgeoning
-	\caption{Hand - Bludgeoning}
-	\label{wound:Hand - Bludgeoning}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Hand - Bludgeoning
+%	\caption{Hand - Bludgeoning}\vspace{-3pt}
+%	\label{wound:Hand - Bludgeoning}
+	%\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Bludgeoning}&\\\toprule
 Level 1& 2& 3& 1& - &Painful strike on hand.\\
-Level 2& 4& 5& 2& \nameref{par:Disarm vs} 2 RS &A severe blow to hand. Fractured phalanges. May drop items.\\
+Level 2& 4& 5& 2& \nameref{par:Disarm vs}2 RS &A severe blow to hand. Fractured phalanges. May drop items.\\
 Level 3& 6& 6& 2
-	&\nameref{par:Disarm vs} 4 RS, \newline
-		Routine \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Hand}
+	&\nameref{par:Disarm vs}4 RS, \newline
+		Routine \nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Hand}
 	&Hand smashed, items probably dropped.\\
 Level 4& 8& 8& 3
 	&\nameref{Autodrop}, \newline
-		Difficult \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Hand}
+		Difficult \nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Hand}
 	&Hand bones shattered, damage severe, item automatically dropped, may not recover.\\
 Level 5& 10& 12& 8
 	&\nameref{Autodrop}, \newline
-		Miracle \nameref{par:Surgery vs} \hyperref[bane:Crippled Limb/Appendage]{Crippled Hand}, \newline
+		Miracle \nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Hand}, \newline
 		\nameref{par:Infection Risk} +3
 	&Hand completely smashed. Will probably need to be amputated. Time to consider a hook.\\
-	\end{tabu}
-\end{table}
+	%\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Hand - Unarmed
-	\caption{Hand - Unarmed}
-	\label{wound:Hand - Unarmed}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Hand - Unarmed
+%	\caption{Hand - Unarmed}\vspace{-3pt}
+%	\label{wound:Hand - Unarmed}
+	%\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed}&\\\toprule
 Level 1& 0& 0& 0& - &Stings for a second.\\
 Level 2& 0& 0& 0& - &Trivial bruising.\\
 Level 3& 2& 1& 0& - &Bruised hand.\\
-Level 4& 5& 5& 0& \nameref{Autodrop} &Fractured bones in hand.\\
-Level 5& 10& 10& 0& \nameref{Autodrop} &Broken fist.\\
+Level 4& 5& 5& 0& \nameref{par:Autodrop} &Fractured bones in hand.\\
+Level 5& 10& 10& 0& \nameref{oar:Autodrop} &Broken fist.\\
 	\end{tabu}
 \end{table}
 \clearpage
 
-\section{Upper Back} \vspace{-25pt} \label{sec:upper-back}
+\section{Upper Back}  \label{sec:upper-back}
 \begin{table}[!hb] %Upper Back - Cutting
-	\caption{Upper Back - Cutting}
-	\label{wound:Upper Back - Cutting}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-		Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%	\caption{Upper Back - Cutting}\vspace{-3pt}
+%	\label{wound:Upper Back - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+		Wound Level &Stun &Pain &Bleed &Special{\hfill \large Cutting ~~~} &Description\\\toprule
 		Level 1& 2& 2& 2& - &Light lacerations, noticeable discomfort.\\
 		Level 2& 4& 4& 4& - &Long cuts, heavy bleeding.\\
 		Level 3& 7& 9& 6& - &Deep gashes, wounds noticeable. Scars that will never heal.\\
-		Level 4& 10& 15& 8& \nameref{par:Stability vs} 3 RS &Spinal fracture, shoulder blades cracked, no organ damage, but extreme pain.\\
+		Level 4& 10& 15& 8& \nameref{par:Stability vs}3 RS &Spinal fracture, shoulder blades cracked, no organ damage, but extreme pain.\\
 		Level 5& - &- &- &\nameref{par:Dead}& Shoulders cleaved, spine severed. Spine destroyed. While death is not instantaneous, it will come within 24 hours.\\
-	\end{tabu}
-\end{table}
+	%\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Upper Back - Piercing
-	\caption{Upper Back - Piercing}
-	\label{wound:Upper Back - Piercing}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-		Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Upper Back - Piercing
+%	\caption{Upper Back - Piercing}\vspace{-3pt}
+%	\label{wound:Upper Back - Piercing}
+	%\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+		\\
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Piercing~~~~}&\\\toprule
 		Level 1& 1& 3& 2& - &Light piercing, minor bleeding, noticeable pain.\\
 		Level 2& 3& 4& 5& - &Minor penetration, glances off shoulder blade. \\
 		Level 3& 5& 9& 8& - &Penetrates through flesh, halted deep in shoulder blade. \\
-		Level 4& 10& 13& 20& Miracle \nameref{par:Surgery vs} Punctured Lung &Point hits home, piercing deep and causing significant bleeding. Possible organ damage.\\ %PUNCTURED LUNG?
+		Level 4& 10& 13& 20& Miracle \nameref{par:Surgery vs}Punctured Lung &Point hits home, piercing deep and causing significant bleeding. Possible organ damage.\\ %PUNCTURED LUNG?
 		Level 5& - &- &- &\nameref{par:Dead}& Spine severed or heart pierced, it’s all bad. Spine destroyed. While death is not instantaneous,it will come within 24 hours.\\
-	\end{tabu}
-\end{table}
+	%\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Upper Back - Bludgeoning
-	\caption{Upper Back - Bludgeoning}
-	\label{wound:Upper Back - Bludgeoning}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Upper Back - Bludgeoning
+%	\caption{Upper Back - Bludgeoning}\vspace{-3pt}
+%	\label{wound:Upper Back - Bludgeoning}
+	%\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Bludgeoning}&\\\toprule
 Level 1& 4& 2& 0& - &Light bruising, minor displacement.\\
 Level 2& 7& 3& 1& - &Heavy bruising, feels like something chipped.\\
-Level 3& 10& 4& 2& \nameref{par:Stability vs} 1 RS &Severe bruising, noticeable bleeding.\\
+Level 3& 10& 4& 2& \nameref{par:Stability vs}1 RS &Severe bruising, noticeable bleeding.\\
 Level 4& 13& 5& 3
 	&\nameref{par:Auto-Prone}, \newline
 		[Paralyzed (Not in Beta)]
 	&Something definitely made a cracking sound. Spine damaged, may never walk again.\\
 Level 5& - &- &- &Dead& Spine completely destroyed, severe rupturing of internal organs, instant death.\\
-	\end{tabu}
-\end{table}
+	%\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Upper Back - Unarmed
-	\caption{Upper Back - Unarmed}
-	\label{wound:Upper Back - Unarmed}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-		Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Upper Back - Unarmed
+%	\caption{Upper Back - Unarmed}\vspace{-3pt}
+%	\label{wound:Upper Back - Unarmed}
+	%\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+		&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed}&\\\toprule
 		Level 1& 0& 0& 0& - &Negligible effect.\\
 		Level 2& 1& 0& 0& - &Still nothing.\\
 		Level 3& 3& 1& 0& - &Bruising. Starting to hurt now.\\
@@ -12610,32 +12589,33 @@ Level 5& - &- &- &Dead& Spine completely destroyed, severe rupturing of internal
 \end{table}
 \clearpage
 
-\section{Lower Back} \vspace{-25pt} \label{sec:lower-back}
+\section{Lower Back}
 \begin{table}[!hb] %Lower Back - Cutting
-	\caption{Lower Back - Cutting}
-	\label{wound:Lower Back - Cutting}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-		Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%	\caption{Lower Back - Cutting}\vspace{-3pt}
+%	\label{wound:Lower Back - Cutting}
+	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+		Wound Level &Stun &Pain &Bleed &Special{\hfill \large Cutting ~~~} &Description\\\toprule
 		Level 1& 3& 5& 1& - &Light lacerations, painful.\\
 		Level 2& 5& 8& 5& - &Long cuts, significant bleeding.\\
-		Level 3& 8& 10& 10& \nameref{par:Stability vs} 2 RS &Deep gashes, wounds noticeable. Terrible scarring.\\
+		Level 3& 8& 10& 10& \nameref{par:Stability vs}2 RS &Deep gashes, wounds noticeable. Terrible scarring.\\
 		Level 4& 12& 15& 15
 		&\nameref{par:Auto-Prone}, \newline
-			[Paralyzed (Not in Beta)]
+			Paralyzed (Not in Beta)
 		&Blow cracks spine, and cleaves muscle and flesh. Possible paralysis.\\
 		Level 5& - &- &- &\nameref{par:Dead} &Spine severed, severe intestinal damage, central artery in trunk severed. Near-instant death.\\
-	\end{tabu}
-\end{table}
+	%\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Lower Back - Piercing
-	\caption{Lower Back - Piercing}
-	\label{wound:Lower Back - Piercing}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Lower Back - Piercing
+%	\caption{Lower Back - Piercing}\vspace{-3pt}
+%	\label{wound:Lower Back - Piercing}
+	%\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+\\
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Piercing~~~~}&\\\toprule
 Level 1 &5 &2 &3 &- &Shallow penetration halted by back muscles.\\
 Level 2& 7& 4& 6& - &Deeper penetration into the lower back, severe bleeding but no organ damage.\\
 Level 3& 12& 10& 10
-	&\nameref{par:Stability vs} 1 RS, \newline
+	&\nameref{par:Stability vs}1 RS, \newline
 		\nameref{par:Infection Risk} +2
 	&Deep penetration, possible organ damage, severe bleeding.\\
 Level 4& 14& 12& 20
@@ -12643,18 +12623,18 @@ Level 4& 14& 12& 20
 		\nameref{par:Infection Risk} +3
 	&Deep penetration, kidney, liver, or intestinal damage, possible spinal damage.\\
 Level 5& - &- &- &\nameref{par:Dead} &Total impalement, main artery of the trunk severed, major organ damage, instant death.\\
-	\end{tabu}
-\end{table}
+	%\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Lower Back - Unarmed
-	\caption{Lower Back - Bludgeoning}
-	\label{wound:Lower Back - Bludgeoning}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
+%\begin{table}[!hb] %Lower Back - Unarmed
+%	\caption{Lower Back - Bludgeoning}\vspace{-3pt}
+%	\label{wound:Lower Back - Bludgeoning}
+	%\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Bludgeoning}&\\\toprule
 Level 1& 5& 4& 0& - &Light bruising, shocking pain.\\
 Level 2& 8& 5& 0& - &Heavy bruising, stunning pain.\\
 Level 3& 10& 6& 1 
-	&\nameref{par:Stability vs} 3 RS, \newline
+	&\nameref{par:Stability vs}3 RS, \newline
 		\nameref{par:Internal Bleeding}
 	&Blow to the kidneys from behind. Agony.\\
 Level 4& 15& 7& 3
@@ -12663,20 +12643,20 @@ Level 4& 15& 7& 3
 		\nameref{par:Internal Bleeding}.
 	&Spine damaged, footing lost instantly.\\
 Level 5& - &- &- &\nameref{par:Dead} &Spine broken just above tailbone, intestinal rupture, unconsciousness instant, death follows shortly. \\
-	\end{tabu}
-\end{table}
+%	\end{tabu}
+%\end{table}
 
-\begin{table}[!hb] %Lower Back - Unarmed
-	\caption{Lower Back - Unarmed}
-	\label{wound:Lower Back - Unarmed}
-	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[2]X[4]}
-Wound Level& Stun&Pain&Bleed&Special&Description\\\toprule\toprule
+%\begin{table}[!hb] %Lower Back - Unarmed
+%	\caption{Lower Back - Unarmed}\vspace{-3pt}
+%	\label{wound:Lower Back - Unarmed}
+%	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed}&\\\toprule
 Level 1 &3 &1 &0 &- &Blow to the kidney. Painful.\\
 Level 2 &5 &2 &0 &- &Severe blow to the kidney.\\
-Level 3 &6 &4 &0 & \nameref{par:KO vs} 2&Savage kidney blow. Possible unconsciousness.\\
-Level 4 &5 &2 &0 & \nameref{par:KO vs} 3&Agonizing kidney shot, unconsciousness likely.\\
+Level 3 &6 &4 &0 & \nameref{par:KO vs}2&Savage kidney blow. Possible unconsciousness.\\
+Level 4 &5 &2 &0 & \nameref{par:KO vs}3&Agonizing kidney shot, unconsciousness likely.\\
 Level 5 &10 &5 &1 
-	&\nameref{par:KO vs} 4, \newline
+	&\nameref{par:KO vs}4, \newline
 		\nameref{par:Internal Bleeding}.
 	&Kidney damage! Jesus Christ!\\
 	\end{tabu}
