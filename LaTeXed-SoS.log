@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/TeX Live for SUSE Linux) (preloaded format=pdflatex 2016.11.16)  7 JAN 2017 03:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/TeX Live for SUSE Linux) (preloaded format=pdflatex 2016.11.16)  7 JAN 2017 21:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -529,16 +529,21 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 \ctbl@t=\box38
 \@ctblcurftwidth=\dimen166
 )
+(/usr/share/texmf/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+\everycr=\toks27
+\minrowclearance=\skip65
+)
 (/usr/share/texmf/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip65
-\f@ncyO@elh=\skip66
-\f@ncyO@erh=\skip67
-\f@ncyO@olh=\skip68
-\f@ncyO@orh=\skip69
-\f@ncyO@elf=\skip70
-\f@ncyO@erf=\skip71
-\f@ncyO@olf=\skip72
-\f@ncyO@orf=\skip73
+\fancy@headwidth=\skip66
+\f@ncyO@elh=\skip67
+\f@ncyO@erh=\skip68
+\f@ncyO@olh=\skip69
+\f@ncyO@orh=\skip70
+\f@ncyO@elf=\skip71
+\f@ncyO@erf=\skip72
+\f@ncyO@olf=\skip73
+\f@ncyO@orf=\skip74
 )
 (/usr/share/texmf/tex/latex/lettrine/lettrine.sty
 File: lettrine.sty 2015/02/16 v1.8 (Daniel Flipo)
@@ -604,8 +609,8 @@ Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
 \page@free=\dimen192
 \premulticols=\dimen193
 \postmulticols=\dimen194
-\multicolsep=\skip74
-\multicolbaselineskip=\skip75
+\multicolsep=\skip75
+\multicolbaselineskip=\skip76
 \partial@page=\box42
 \last@line=\box43
 \maxbalancingoverflow=\dimen195
@@ -650,7 +655,7 @@ Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
 )
 (/usr/share/texmf/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip76
+\@mathmargin=\skip77
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf/tex/latex/amsmath/amstext.sty
@@ -658,7 +663,7 @@ Package: amstext 2000/06/29 v2.01
 
 (/usr/share/texmf/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks27
+\@emptytoks=\toks28
 \ex@=\dimen203
 ))
 (/usr/share/texmf/tex/latex/amsmath/amsbsy.sty
@@ -688,21 +693,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \dotsspace@=\muskip10
 \c@parentequation=\count137
 \dspbrk@lvl=\count138
-\tag@help=\toks28
+\tag@help=\toks29
 \row@=\count139
 \column@=\count140
 \maxfields@=\count141
-\andhelp@=\toks29
+\andhelp@=\toks30
 \eqnshift@=\dimen206
 \alignsep@=\dimen207
 \tagshift@=\dimen208
 \tagwidth@=\dimen209
 \totwidth@=\dimen210
 \lineht@=\dimen211
-\@envbody=\toks30
-\multlinegap=\skip77
-\multlinetaggap=\skip78
-\mathdisplay@stack=\toks31
+\@envbody=\toks31
+\multlinegap=\skip78
+\multlinetaggap=\skip79
+\mathdisplay@stack=\toks32
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
@@ -718,9 +723,9 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 (/usr/share/texmf/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip79
+\labelindent=\skip80
 \enit@outerparindent=\dimen212
-\enit@toks=\toks32
+\enit@toks=\toks33
 \enit@inbox=\box70
 \enitdp@description=\count142
 )
@@ -745,7 +750,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutheight=\dimen218
 \Gm@layouthoffset=\dimen219
 \Gm@layoutvoffset=\dimen220
-\Gm@dimlist=\toks33
+\Gm@dimlist=\toks34
 )
 (/usr/share/texmf/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
@@ -907,15 +912,11 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 (/usr/share/texmf/tex/latex/fourier/fourier-orns.sty
 Package: fourier-orns 2004/01/30 1.1 fourier-ornaments package
 )
-(/usr/share/texmf/tex/latex/lipsum/lipsum.sty
-Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count146
-)
 (/usr/share/texmf/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
-\FN@temptoken=\toks34
+\FN@temptoken=\toks35
 \footnotemargin=\dimen221
-\c@pp@next@reset=\count147
+\c@pp@next@reset=\count146
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -981,15 +982,15 @@ Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen223
-\Hy@linkcounter=\count148
-\Hy@pagecounter=\count149
+\Hy@linkcounter=\count147
+\Hy@pagecounter=\count148
 
 (/usr/share/texmf/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count150
+\Hy@SavedSpaceFactor=\count149
 
 (/usr/share/texmf/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1002,7 +1003,7 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count151
+\c@Hy@tempcnt=\count150
 
 (/usr/share/texmf/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
@@ -1010,7 +1011,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen224
-\Fld@menulength=\count152
+\Fld@menulength=\count151
 \Field@Width=\dimen225
 \Fld@charsize=\dimen226
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -1022,43 +1023,43 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count153
-\c@Item=\count154
+\Hy@abspage=\count152
+\c@Item=\count153
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/share/texmf/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count155
-\c@bookmark@seq@number=\count156
+\Fld@listcount=\count154
+\c@bookmark@seq@number=\count155
 
 (/usr/share/texmf/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip80
+\Hy@SectionHShift=\skip81
 )
 (/usr/share/texmf/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count157
+\etb@tempcnta=\count156
 )
 (/usr/share/texmf/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
-\MT@toks=\toks35
-\MT@count=\count158
+\MT@toks=\toks36
+\MT@count=\count157
 LaTeX Info: Redefining \textls on input line 766.
 \MT@outer@kern=\dimen227
 LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
-\MT@listname@count=\count159
+\MT@listname@count=\count158
 
 (/usr/share/texmf/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 915.
 LaTeX Info: Redefining \lslig on input line 915.
-\MT@outer@space=\skip81
+\MT@outer@space=\skip82
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
@@ -1071,51 +1072,51 @@ LaTeX Warning: Label `tab:Athletics' multiply defined.
 )
 \openout1 = `LaTeXed-SoS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 123.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 123.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 121.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 121.
 
  (/usr/share/texmf/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Try loading font information for T1+pplj on input line 123.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Try loading font information for T1+pplj on input line 121.
 
 
 (/usr/share/texmf/tex/latex/psnfss/t1pplj.fd
 File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
 )
 Package nag Info: Command \RaggedLeft not defined, skipping amendment on input 
-line 123.
+line 121.
 Package nag Info: Command \RaggedRight not defined, skipping amendment on input
- line 123.
+ line 121.
 
 (/usr/share/texmf/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count160
+\scratchcounter=\count159
 \scratchdimen=\dimen228
 \scratchbox=\box71
-\nofMPsegments=\count161
-\nofMParguments=\count162
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count163
+\nofMPsegments=\count160
+\nofMParguments=\count161
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count162
 \MPscratchDim=\dimen229
-\MPnumerator=\count164
-\makeMPintoPDFobject=\count165
-\everyMPtoPDFconversion=\toks37
+\MPnumerator=\count163
+\makeMPintoPDFobject=\count164
+\everyMPtoPDFconversion=\toks38
 ) (/usr/share/texmf/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1146,20 +1147,20 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 126.
 )
-\CenteringLeftskip=\skip82
-\RaggedLeftLeftskip=\skip83
-\RaggedRightLeftskip=\skip84
-\CenteringRightskip=\skip85
-\RaggedLeftRightskip=\skip86
-\RaggedRightRightskip=\skip87
-\CenteringParfillskip=\skip88
-\RaggedLeftParfillskip=\skip89
-\RaggedRightParfillskip=\skip90
-\JustifyingParfillskip=\skip91
-\CenteringParindent=\skip92
-\RaggedLeftParindent=\skip93
-\RaggedRightParindent=\skip94
-\JustifyingParindent=\skip95
+\CenteringLeftskip=\skip83
+\RaggedLeftLeftskip=\skip84
+\RaggedRightLeftskip=\skip85
+\CenteringRightskip=\skip86
+\RaggedLeftRightskip=\skip87
+\RaggedRightRightskip=\skip88
+\CenteringParfillskip=\skip89
+\RaggedLeftParfillskip=\skip90
+\RaggedRightParfillskip=\skip91
+\JustifyingParfillskip=\skip92
+\CenteringParindent=\skip93
+\RaggedLeftParindent=\skip94
+\RaggedRightParindent=\skip95
+\JustifyingParindent=\skip96
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1195,23 +1196,23 @@ LaTeX Info: Redefining \selectfont on input line 126.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 123.
+Package hyperref Info: Link coloring OFF on input line 121.
 (/usr/share/texmf/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texmf/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count166
+\c@section@level=\count165
 )
-LaTeX Info: Redefining \ref on input line 123.
-LaTeX Info: Redefining \pageref on input line 123.
-LaTeX Info: Redefining \nameref on input line 123.
+LaTeX Info: Redefining \ref on input line 121.
+LaTeX Info: Redefining \pageref on input line 121.
+LaTeX Info: Redefining \nameref on input line 121.
  (./LaTeXed-SoS.out) (./LaTeXed-SoS.out)
 \@outlinefile=\write3
 \openout3 = `LaTeXed-SoS.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 123.
+LaTeX Info: Redefining \microtypecontext on input line 121.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1225,14 +1226,14 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
-t line 123.
+t line 121.
 Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
-t line 123.
+t line 121.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 123.
+line 121.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
-line 123.
-LaTeX Font Info:    Try loading font information for U+futs on input line 130.
+line 121.
+LaTeX Font Info:    Try loading font information for U+futs on input line 128.
 
 (/usr/share/texmf/tex/latex/fourier/ufuts.fd
 File: ufuts.fd 2004/03/26 Fontinst v1.926 font definitions for U/futs.
@@ -1251,7 +1252,7 @@ Package microtype Info: Character `029' is missing
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 137.
+LaTeX Font Info:    Try loading font information for U+msa on input line 135.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1259,7 +1260,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texmf/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 137.
+LaTeX Font Info:    Try loading font information for U+msb on input line 135.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1267,7 +1268,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/share/texmf/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for TS1+pplj on input line 139
+LaTeX Font Info:    Try loading font information for TS1+pplj on input line 137
 .
 
 (/usr/share/texmf/tex/latex/psnfss/ts1pplj.fd
@@ -1276,7 +1277,7 @@ File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
 
 LaTeX Font Warning: Font shape `TS1/pplj/m/sc' undefined
 (Font)              using `TS1/pplj/m/n' instead
-(Font)              for symbol `textcopyright' on input line 139.
+(Font)              for symbol `textcopyright' on input line 137.
 
 [1
 
@@ -1284,8 +1285,8 @@ LaTeX Font Warning: Font shape `TS1/pplj/m/sc' undefined
 
 {/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 146.
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 177.
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 144.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 175.
 
 
 (/usr/share/texmf/tex/latex/base/t1cmss.fd
@@ -1296,17 +1297,17 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `U/futs/bx/n' in size <12> not available
-(Font)              Font shape `U/futs/b/n' tried instead on input line 177.
+(Font)              Font shape `U/futs/b/n' tried instead on input line 175.
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.177 \clearpage
+l.175 \clearpage
                  [1]
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 179.
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 177.
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 179.
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 177.
  (./LaTeXed-SoS.toc [2
 
 
@@ -1317,24 +1318,29 @@ LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <24.88> not available
 
 [10]
 Chapter 1.
-\oldintextsep=\skip96
+\oldintextsep=\skip97
 [1
 
 
 ]
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 186.
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 184.
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <12> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 211.
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 209.
  [2]
 LaTeX Font Info:    Font shape `T1/pplj/bx/it' in size <10> not available
-(Font)              Font shape `T1/pplj/b/it' tried instead on input line 220.
+(Font)              Font shape `T1/pplj/b/it' tried instead on input line 218.
  [3] [4] [5]
 Chapter 2.
-\c@ttl@toc@chapters=\count167
+\c@ttl@toc@chapters=\count166
 (./LaTeXed-SoS.ptc) [6
 
-] [7] [8] [9] [10]
+] [7]
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 403.
+ (/usr/share/texmf/tex/latex/psnfss/t1ppl.fd
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+)
+[8] [9] [10]
 Chapter 3.
 (./LaTeXed-SoS.ptc) [11
 
@@ -1380,19 +1386,19 @@ Chapter 7.
 ] [90
 
 ] [91] [92] [93] [94] [95] [96]
-Underfull \hbox (badness 1014) in paragraph at lines 3871--3871
+Underfull \hbox (badness 1014) in paragraph at lines 3867--3867
 []\T1/pplj/m/n/9 Scale of Event (World-changing at -4, Ma-jor war/disaster at -
 2, Mi-
  []
 
 
-Underfull \hbox (badness 1248) in paragraph at lines 3871--3871
+Underfull \hbox (badness 1248) in paragraph at lines 3867--3867
 \T1/pplj/m/n/9 nor War/battle/treaty at 0, Small war/disaster at +2, Ob-scure S
 kir-
  []
 
 [97] [98] [99] [100] [101] [102] [103] [104] [105]
-Underfull \hbox (badness 10000) in paragraph at lines 4183--4199
+Underfull \hbox (badness 10000) in paragraph at lines 4179--4195
 \T1/pplj/m/n/10.95 age[] (ma-jor)
  []
 
@@ -1402,7 +1408,10 @@ Chapter 8.
 
 ] [108
 
-] [109] [110] [111] [112]
+]
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 4341.
+ [109] [110] [111] [112]
 Chapter 9.
 (./LaTeXed-SoS.ptc) [113
 
@@ -1415,297 +1424,297 @@ Chapter 10.
 ]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 4379.
+(hyperref)                than one, level fixed on input line 4375.
 
 [116
 
 ] [117] [118]
-Underfull \hbox (badness 10000) in paragraph at lines 4500--4500
+Underfull \hbox (badness 10000) in paragraph at lines 4496--4496
 []\T1/pplj/m/n/9 Weapon
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4500--4500
+Underfull \hbox (badness 10000) in paragraph at lines 4496--4496
 []\T1/pplj/m/n/9 Dagger,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4500--4500
+Underfull \hbox (badness 10000) in paragraph at lines 4496--4496
 []\T1/pplj/m/n/9 Dagger,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4500--4500
+Underfull \hbox (badness 10000) in paragraph at lines 4496--4496
 []\T1/pplj/m/n/9 Dagger,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4500--4500
+Underfull \hbox (badness 10000) in paragraph at lines 4496--4496
 []\T1/pplj/m/n/9 Dagger,
  []
 
 [119]
-Underfull \hbox (badness 10000) in paragraph at lines 4554--4554
+Underfull \hbox (badness 10000) in paragraph at lines 4550--4550
 []\T1/pplj/m/n/9 Weapon
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4554--4554
+Underfull \hbox (badness 10000) in paragraph at lines 4550--4550
 []\T1/pplj/m/n/9 Dagger,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4554--4554
+Underfull \hbox (badness 10000) in paragraph at lines 4550--4550
 []\T1/pplj/m/n/9 Dagger,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4554--4554
+Underfull \hbox (badness 10000) in paragraph at lines 4550--4550
 []\T1/pplj/m/n/9 Dagger,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4554--4554
+Underfull \hbox (badness 10000) in paragraph at lines 4550--4550
 []\T1/pplj/m/n/9 Dagger,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4554--4554
+Underfull \hbox (badness 10000) in paragraph at lines 4550--4550
 []\T1/pplj/m/n/9 Sword,
  []
 
 [120] [121]
-Underfull \hbox (badness 10000) in paragraph at lines 4577--4577
+Underfull \hbox (badness 10000) in paragraph at lines 4573--4573
 []\T1/pplj/m/n/9 Weapon
  []
 
 [122]
-Underfull \hbox (badness 10000) in paragraph at lines 4607--4607
+Underfull \hbox (badness 10000) in paragraph at lines 4603--4603
 []\T1/pplj/m/n/9 Weapon
  []
 
 [123]
-Underfull \hbox (badness 10000) in paragraph at lines 4646--4646
+Underfull \hbox (badness 10000) in paragraph at lines 4642--4642
 []\T1/pplj/m/n/9 Weapon
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4646--4646
+Underfull \hbox (badness 10000) in paragraph at lines 4642--4642
 []\T1/pplj/m/n/9 Blunt,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4646--4646
+Underfull \hbox (badness 10000) in paragraph at lines 4642--4642
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4646--4646
+Underfull \hbox (badness 10000) in paragraph at lines 4642--4642
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4646--4646
+Underfull \hbox (badness 10000) in paragraph at lines 4642--4642
 \T1/pplj/m/n/9 Spear,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4646--4646
+Underfull \hbox (badness 10000) in paragraph at lines 4642--4642
 []\T1/pplj/m/n/9 Blunt,
  []
 
 [124] [125]
-Underfull \hbox (badness 10000) in paragraph at lines 4690--4690
+Underfull \hbox (badness 10000) in paragraph at lines 4686--4686
 []\T1/pplj/m/n/9 Weapon
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4690--4690
+Underfull \hbox (badness 10000) in paragraph at lines 4686--4686
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4690--4690
+Underfull \hbox (badness 10000) in paragraph at lines 4686--4686
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4690--4690
+Underfull \hbox (badness 10000) in paragraph at lines 4686--4686
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4690--4690
+Underfull \hbox (badness 10000) in paragraph at lines 4686--4686
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4690--4690
+Underfull \hbox (badness 10000) in paragraph at lines 4686--4686
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4690--4690
+Underfull \hbox (badness 10000) in paragraph at lines 4686--4686
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4690--4690
+Underfull \hbox (badness 10000) in paragraph at lines 4686--4686
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4690--4690
+Underfull \hbox (badness 10000) in paragraph at lines 4686--4686
 \T1/pplj/m/n/9 Spear,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4690--4690
+Underfull \hbox (badness 10000) in paragraph at lines 4686--4686
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4690--4690
+Underfull \hbox (badness 10000) in paragraph at lines 4686--4686
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4690--4690
+Underfull \hbox (badness 10000) in paragraph at lines 4686--4686
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4690--4690
+Underfull \hbox (badness 10000) in paragraph at lines 4686--4686
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4690--4690
+Underfull \hbox (badness 10000) in paragraph at lines 4686--4686
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4690--4690
+Underfull \hbox (badness 10000) in paragraph at lines 4686--4686
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4690--4690
+Underfull \hbox (badness 10000) in paragraph at lines 4686--4686
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4690--4690
+Underfull \hbox (badness 10000) in paragraph at lines 4686--4686
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4690--4690
+Underfull \hbox (badness 10000) in paragraph at lines 4686--4686
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Overfull \hbox (6.60887pt too wide) in paragraph at lines 4690--4690
+Overfull \hbox (6.60887pt too wide) in paragraph at lines 4686--4686
 []\T1/pplj/m/n/9 7(+2p/+2c)| 
  []
 
 [126] [127]
-Underfull \hbox (badness 10000) in paragraph at lines 4733--4733
+Underfull \hbox (badness 10000) in paragraph at lines 4729--4729
 []\T1/pplj/m/n/9 Weapon
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4733--4733
+Underfull \hbox (badness 10000) in paragraph at lines 4729--4729
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4733--4733
+Underfull \hbox (badness 10000) in paragraph at lines 4729--4729
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4733--4733
+Underfull \hbox (badness 10000) in paragraph at lines 4729--4729
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4733--4733
+Underfull \hbox (badness 10000) in paragraph at lines 4729--4729
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4733--4733
+Underfull \hbox (badness 10000) in paragraph at lines 4729--4729
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4733--4733
+Underfull \hbox (badness 10000) in paragraph at lines 4729--4729
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4733--4733
+Underfull \hbox (badness 10000) in paragraph at lines 4729--4729
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4733--4733
+Underfull \hbox (badness 10000) in paragraph at lines 4729--4729
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4733--4733
+Underfull \hbox (badness 10000) in paragraph at lines 4729--4729
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4733--4733
+Underfull \hbox (badness 10000) in paragraph at lines 4729--4729
 \T1/pplj/m/n/9 Spear,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4733--4733
+Underfull \hbox (badness 10000) in paragraph at lines 4729--4729
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4733--4733
+Underfull \hbox (badness 10000) in paragraph at lines 4729--4729
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4733--4733
+Underfull \hbox (badness 10000) in paragraph at lines 4729--4729
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4733--4733
+Underfull \hbox (badness 10000) in paragraph at lines 4729--4729
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4733--4733
+Underfull \hbox (badness 10000) in paragraph at lines 4729--4729
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4733--4733
+Underfull \hbox (badness 10000) in paragraph at lines 4729--4729
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4733--4733
+Underfull \hbox (badness 10000) in paragraph at lines 4729--4729
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4733--4733
+Underfull \hbox (badness 10000) in paragraph at lines 4729--4729
 []\T1/pplj/m/n/9 Polearm,
  []
 
 
-Overfull \hbox (6.60887pt too wide) in paragraph at lines 4733--4733
+Overfull \hbox (6.60887pt too wide) in paragraph at lines 4729--4729
 []\T1/pplj/m/n/9 7(+2p/+2c)| 
  []
 
@@ -1715,1178 +1724,1181 @@ Chapter 11.
 
 ] [138
 
-] [139] [140] [141
+] [139] [140]
+Underfull \hbox (badness 10000) in paragraph at lines 5083--5095
+[][]
+ []
 
-] [142] [143] [144] [145]
-[146]
+[141
+
+] [142] [143] [144] [145] [146] [147]
 Chapter 12.
-(./LaTeXed-SoS.ptc) [147
+(./LaTeXed-SoS.ptc) [148
 
-] [148
+] [149
 
-] [149] [150]
+] [150]
+
+LaTeX Warning: Reference `par:Pegleg' on page 151 undefined on input line 5401.
+
+
+[151]
+
+LaTeX Warning: Reference `par:Long Pegleg' on page 152 undefined on input line 
+5404.
+
+[152]
 Chapter 13.
-(./LaTeXed-SoS.ptc) [151
+(./LaTeXed-SoS.ptc) [153
 
-] [152]
-Underfull \hbox (badness 1264) in paragraph at lines 5590--5590
+] [154]
+Underfull \hbox (badness 1264) in paragraph at lines 5494--5494
 []\T1/pplj/m/n/9 Hand*, Fore-arm* El-bow, Up-per Arm,
  []
 
 
-Underfull \hbox (badness 1845) in paragraph at lines 5590--5590
+Underfull \hbox (badness 1845) in paragraph at lines 5494--5494
 \T1/pplj/m/n/9 Shoul-ders, Neck, Chest, Sides, Belly,
  []
 
 
-Underfull \hbox (badness 2293) in paragraph at lines 5590--5590
+Underfull \hbox (badness 2293) in paragraph at lines 5494--5494
 []\T1/pplj/m/n/9 Hand, Fore-arm, El-bow, Up-per Arm,
  []
 
 
-Underfull \hbox (badness 2293) in paragraph at lines 5590--5590
+Underfull \hbox (badness 2293) in paragraph at lines 5494--5494
 []\T1/pplj/m/n/9 Hand, Fore-arm, El-bow, Up-per Arm,
  []
 
 
-Underfull \hbox (badness 2293) in paragraph at lines 5590--5590
+Underfull \hbox (badness 2293) in paragraph at lines 5494--5494
 []\T1/pplj/m/n/9 Hand, Fore-arm, El-bow, Up-per Arm,
  []
 
 
-Underfull \hbox (badness 2293) in paragraph at lines 5590--5590
+Underfull \hbox (badness 2293) in paragraph at lines 5494--5494
 []\T1/pplj/m/n/9 Hand, Fore-arm, El-bow, Up-per Arm,
  []
 
 
-Underfull \hbox (badness 1264) in paragraph at lines 5590--5590
+Underfull \hbox (badness 1264) in paragraph at lines 5494--5494
 []\T1/pplj/m/n/9 Hands, Fore-arm, El-bow, Up-per Arm,
  []
 
 
-Underfull \hbox (badness 1845) in paragraph at lines 5590--5590
+Underfull \hbox (badness 1845) in paragraph at lines 5494--5494
 \T1/pplj/m/n/9 Shoul-ders, Neck, Chest, Sides, Belly,
  []
 
 
-Underfull \hbox (badness 1264) in paragraph at lines 5590--5590
+Underfull \hbox (badness 1264) in paragraph at lines 5494--5494
 []\T1/pplj/m/n/9 Hand*, Fore-arm* El-bow, Up-per Arm,
  []
 
 
-Underfull \hbox (badness 1845) in paragraph at lines 5590--5590
+Underfull \hbox (badness 1845) in paragraph at lines 5494--5494
 \T1/pplj/m/n/9 Shoul-ders, Neck, Chest, Sides, Belly,
  []
 
 
-Underfull \hbox (badness 1264) in paragraph at lines 5590--5590
+Underfull \hbox (badness 1264) in paragraph at lines 5494--5494
 []\T1/pplj/m/n/9 Hand*, Fore-arm* El-bow, Up-per Arm,
  []
 
 
-Underfull \hbox (badness 1845) in paragraph at lines 5590--5590
+Underfull \hbox (badness 1845) in paragraph at lines 5494--5494
 \T1/pplj/m/n/9 Shoul-ders, Neck, Chest, Sides, Belly,
  []
 
 
-Underfull \hbox (badness 1264) in paragraph at lines 5590--5590
+Underfull \hbox (badness 1264) in paragraph at lines 5494--5494
 []\T1/pplj/m/n/9 Hands, Fore-arm, El-bow, Up-per Arm,
  []
 
 
-Underfull \hbox (badness 1845) in paragraph at lines 5590--5590
+Underfull \hbox (badness 1845) in paragraph at lines 5494--5494
 \T1/pplj/m/n/9 Shoul-ders, Neck, Chest, Sides, Belly,
  []
 
-[153]
+[155]
 Chapter 14.
-(./LaTeXed-SoS.ptc) [154
+(./LaTeXed-SoS.ptc) [156
 
-] [155
+] [157
 
-] [156] [157] [158] [159]
-Underfull \hbox (badness 10000) in paragraph at lines 5812--5812
+] [158] [159] [160] [161]
+Underfull \hbox (badness 10000) in paragraph at lines 5716--5716
 []\T1/pplj/m/n/9 Component
  []
 
 
-Underfull \hbox (badness 6775) in paragraph at lines 5812--5812
+Underfull \hbox (badness 6775) in paragraph at lines 5716--5716
 []\T1/pplj/m/n/9 Hard, Lay-ers 2 (Groin, Hip,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5812--5812
+Underfull \hbox (badness 10000) in paragraph at lines 5716--5716
 []\T1/pplj/m/n/9 Reinforced
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 5812--5812
+Underfull \hbox (badness 1715) in paragraph at lines 5716--5716
 []\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5812--5812
+Underfull \hbox (badness 10000) in paragraph at lines 5716--5716
 []\T1/pplj/m/n/9 Quilted Long
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5833--5833
+Underfull \hbox (badness 10000) in paragraph at lines 5737--5737
 []\T1/pplj/m/n/9 Component
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5833--5833
+Underfull \hbox (badness 10000) in paragraph at lines 5737--5737
 []\T1/pplj/m/n/9 Leather Leg-
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 5833--5833
+Underfull \hbox (badness 1490) in paragraph at lines 5737--5737
 []\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5833--5833
+Underfull \hbox (badness 10000) in paragraph at lines 5737--5737
 []\T1/pplj/m/n/9 Mail
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5833--5833
+Underfull \hbox (badness 10000) in paragraph at lines 5737--5737
 []\T1/pplj/m/n/9 Mail Long
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 5833--5833
+Underfull \hbox (badness 1490) in paragraph at lines 5737--5737
 []\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5833--5833
-[]\T1/pplj/m/n/9 Quilted Long
- []
-
-[160]
-Underfull \hbox (badness 10000) in paragraph at lines 5857--5857
-[]\T1/pplj/m/n/9 Component
- []
-
-
-Underfull \hbox (badness 2057) in paragraph at lines 5857--5857
-[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5857--5857
-[]\T1/pplj/m/n/9 Leather Neck-
- []
-
-[161]
-Underfull \hbox (badness 10000) in paragraph at lines 5879--5879
-[]\T1/pplj/m/n/9 Component
- []
-
-
-Underfull \hbox (badness 1735) in paragraph at lines 5879--5879
-[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5879--5879
-[]\T1/pplj/m/n/9 Lamellar
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5879--5879
-[]\T1/pplj/m/n/9 Lamellar Leg-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5879--5879
-[]\T1/pplj/m/n/9 Lamellar Long
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5903--5903
-[]\T1/pplj/m/n/9 Component
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5903--5903
-[]\T1/pplj/m/n/9 Anima Rere-
- []
-
-
-Underfull \hbox (badness 1715) in paragraph at lines 5903--5903
-[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5903--5903
+Underfull \hbox (badness 10000) in paragraph at lines 5737--5737
 []\T1/pplj/m/n/9 Quilted Long
  []
 
 [162]
-Underfull \hbox (badness 10000) in paragraph at lines 5929--5929
+Underfull \hbox (badness 10000) in paragraph at lines 5761--5761
 []\T1/pplj/m/n/9 Component
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 5929--5929
+Underfull \hbox (badness 2057) in paragraph at lines 5761--5761
 []\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5929--5929
+Underfull \hbox (badness 10000) in paragraph at lines 5761--5761
 []\T1/pplj/m/n/9 Leather Neck-
- []
-
-
-Underfull \hbox (badness 1715) in paragraph at lines 5929--5929
-[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5929--5929
-[]\T1/pplj/m/n/9 Quilted Long
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5929--5929
-[]\T1/pplj/m/n/9 Reinforced
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5942--5942
-[]\T1/pplj/m/n/9 Component
- []
-
-
-Underfull \hbox (badness 1715) in paragraph at lines 5942--5942
-[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5942--5942
-[]\T1/pplj/m/n/9 Quilted Long
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5942--5942
-[]\T1/pplj/m/n/9 Reinforced
  []
 
 [163]
-Underfull \hbox (badness 10000) in paragraph at lines 5968--5968
+Underfull \hbox (badness 10000) in paragraph at lines 5783--5783
 []\T1/pplj/m/n/9 Component
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5968--5968
-[]\T1/pplj/m/n/9 Heavy Quilted
- []
-
-
-Underfull \hbox (badness 2057) in paragraph at lines 5968--5968
+Underfull \hbox (badness 1735) in paragraph at lines 5783--5783
 []\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
  []
 
 
-Underfull \hbox (badness 2057) in paragraph at lines 5968--5968
-[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5968--5968
-[]\T1/pplj/m/n/9 Mail Long
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5968--5968
-[]\T1/pplj/m/n/9 Quilted Long
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5999--5999
-[]\T1/pplj/m/n/9 Component
- []
-
-
-Underfull \hbox (badness 3068) in paragraph at lines 5999--5999
-[]\T1/pplj/m/n/9 Face$\OML/cmm/m/it/9 ^^^$\T1/pplj/m/n/9 *, Lower Head, Up-per
- []
-
-
-Underfull \hbox (badness 2245) in paragraph at lines 5999--5999
-[]\T1/pplj/m/n/9 Hard, +1 AV vs Down-ward
- []
-
-
-Underfull \hbox (badness 1546) in paragraph at lines 5999--5999
-\T1/pplj/m/n/9 Helm for Layer 1 on Up-per
- []
-
-
-Underfull \hbox (badness 2245) in paragraph at lines 5999--5999
-[]\T1/pplj/m/n/9 Hard, +1 AV vs Down-ward
- []
-
-
-Underfull \hbox (badness 3068) in paragraph at lines 5999--5999
-[]\T1/pplj/m/n/9 Face$\OML/cmm/m/it/9 ^^^$\T1/pplj/m/n/9 , Lower Head*, Up-per
- []
-
-
-Underfull \hbox (badness 2245) in paragraph at lines 5999--5999
-[]\T1/pplj/m/n/9 Hard, +2 AV vs Down-ward
- []
-
-
-Underfull \hbox (badness 1668) in paragraph at lines 5999--5999
-\T1/pplj/m/n/9 be worn with a Skull-cap or
- []
-
-
-Underfull \hbox (badness 7649) in paragraph at lines 5999--5999
-[]\T1/pplj/m/n/9 Hard, No AV vs Up-ward
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5999--5999
-[]\T1/pplj/m/n/9 Lamellar Pot
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5999--5999
-[]\T1/pplj/m/n/9 Leather Pot
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5999--5999
-[]\T1/pplj/m/n/9 Leather Skull-
- []
-
-
-Underfull \hbox (badness 2245) in paragraph at lines 5999--5999
-[]\T1/pplj/m/n/9 Hard, +1 AV vs Down-ward
- []
-
-
-Underfull \hbox (badness 5652) in paragraph at lines 5999--5999
-[]\T1/pplj/m/n/9 Reinforced Ro-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5999--5999
-[]\T1/pplj/m/n/9 Roman Helm
- []
-
-
-Underfull \hbox (badness 1546) in paragraph at lines 5999--5999
-\T1/pplj/m/n/9 Helm for Layer 2 on Up-per
- []
-
-
-Underfull \hbox (badness 3118) in paragraph at lines 5999--5999
-[]\T1/pplj/m/n/9 Face$\OML/cmm/m/it/9 ^^^$\T1/pplj/m/n/9 , Lower Head*, Neck*,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5999--5999
-[]\T1/pplj/m/n/9 Zischagge/
- []
-
-[164] [165]
-Underfull \hbox (badness 10000) in paragraph at lines 6021--6021
-[]\T1/pplj/m/n/9 Component
- []
-
-
-Underfull \hbox (badness 7704) in paragraph at lines 6021--6021
-[]\T1/pplj/m/n/9 Hard, No AV vs Up-ward
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6021--6021
-[]\T1/pplj/m/n/9 Falling Buff
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6021--6021
-\T1/pplj/m/n/9 (Hinged Gor-
- []
-
-
-Underfull \hbox (badness 5519) in paragraph at lines 6021--6021
-[]\T1/pplj/m/n/9 Restricts Breath-ing 2, Hard,
- []
-
-
-Underfull \hbox (badness 5519) in paragraph at lines 6021--6021
-[]\T1/pplj/m/n/9 Restricts Breath-ing 2, Hard,
- []
-
-
-Underfull \hbox (badness 7704) in paragraph at lines 6021--6021
-[]\T1/pplj/m/n/9 Hard, No AV vs Up-ward
- []
-
-
-Underfull \hbox (badness 7704) in paragraph at lines 6021--6021
-[]\T1/pplj/m/n/9 Hard, No AV vs Up-ward
- []
-
-[166]
-Underfull \hbox (badness 10000) in paragraph at lines 6052--6052
-[]\T1/pplj/m/n/9 Component
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6052--6052
-[]\T1/pplj/m/n/9 Cloth
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6052--6052
-[]\T1/pplj/m/n/9 Lamellar Ven-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6063--6063
-[]\T1/pplj/m/n/9 Component
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6063--6063
-[]\T1/pplj/m/n/9 Leather Neck-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6063--6063
-[]\T1/pplj/m/n/9 Neck-Wrap
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6063--6063
-[]\T1/pplj/m/n/9 Reinforced
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6063--6063
-\T1/pplj/m/n/9 Leather Neck-
- []
-
-[167]
-Underfull \hbox (badness 10000) in paragraph at lines 6083--6083
-[]\T1/pplj/m/n/9 Component
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6083--6083
-[]\T1/pplj/m/n/9 Bulletproof
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6083--6083
-[]\T1/pplj/m/n/9 Bulletproof
- []
-
-
-Underfull \hbox (badness 6825) in paragraph at lines 6083--6083
-[]\T1/pplj/m/n/9 Hard, Lay-ers 2 (Groin, Hip,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6083--6083
-[]\T1/pplj/m/n/9 Munitions
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6083--6083
-[]\T1/pplj/m/n/9 Munitions
- []
-
-
-Underfull \hbox (badness 6825) in paragraph at lines 6083--6083
-[]\T1/pplj/m/n/9 Hard, Lay-ers 1 (Groin, Hip,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6093--6093
-[]\T1/pplj/m/n/9 Component
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6093--6093
-[]\T1/pplj/m/n/9 Segmented
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6108--6108
-[]\T1/pplj/m/n/9 Component
- []
-
-
-Underfull \hbox (badness 1735) in paragraph at lines 6108--6108
-[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
- []
-
-
-Underfull \hbox (badness 1735) in paragraph at lines 6108--6108
-[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
- []
-
-
-Underfull \hbox (badness 1735) in paragraph at lines 6108--6108
-[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
- []
-
-[168]
-Underfull \hbox (badness 10000) in paragraph at lines 6122--6122
-[]\T1/pplj/m/n/9 Component
- []
-
-
-Underfull \hbox (badness 1715) in paragraph at lines 6122--6122
-[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6122--6122
-[]\T1/pplj/m/n/9 Heavy Quilted
- []
-
-
-Underfull \hbox (badness 1715) in paragraph at lines 6122--6122
-[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6122--6122
-[]\T1/pplj/m/n/9 Heavy Quilted
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6122--6122
-[]\T1/pplj/m/n/9 Heavy Quilted
- []
-
-
-Underfull \hbox (badness 1715) in paragraph at lines 6122--6122
-[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6137--6137
-[]\T1/pplj/m/n/9 Component
- []
-
-
-Underfull \hbox (badness 2057) in paragraph at lines 6137--6137
-[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
- []
-
-
-Underfull \hbox (badness 2057) in paragraph at lines 6137--6137
-[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6137--6137
-[]\T1/pplj/m/n/9 Hardened
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6137--6137
-\T1/pplj/m/n/9 Leather Breast-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6137--6137
-[]\T1/pplj/m/n/9 Hardened
- []
-
-
-Underfull \hbox (badness 7168) in paragraph at lines 6137--6137
-[]\T1/pplj/m/n/9 Shagreen Great-
- []
-
-[169]
-Underfull \hbox (badness 10000) in paragraph at lines 6158--6158
-[]\T1/pplj/m/n/9 Component
- []
-
-
-Underfull \hbox (badness 1742) in paragraph at lines 6158--6158
-[]\T1/pplj/m/n/9 Shoulders (Thrust only), Up-per
- []
-
-
-Underfull \hbox (badness 6110) in paragraph at lines 6158--6158
-[]\T1/pplj/m/n/9 Munitions Paul-
- []
-
-
-Underfull \hbox (badness 5637) in paragraph at lines 6158--6158
-[]\T1/pplj/m/n/9 Munitions Rere-
- []
-
-
-Underfull \hbox (badness 5711) in paragraph at lines 6158--6158
-[]\T1/pplj/m/n/9 Munitions Vam-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6173--6173
-[]\T1/pplj/m/n/9 Component
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6173--6173
-[]\T1/pplj/m/n/9 Anima Paul-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6173--6173
-[]\T1/pplj/m/n/9 Anima Rere-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6173--6173
-[]\T1/pplj/m/n/9 Laminar Fore-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6173--6173
-[]\T1/pplj/m/n/9 Laminar El-bow
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6173--6173
-[]\T1/pplj/m/n/9 Laminar Paul-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6173--6173
-[]\T1/pplj/m/n/9 Laminar Rere-
- []
-
-[170]
-Underfull \hbox (badness 10000) in paragraph at lines 6188--6188
-[]\T1/pplj/m/n/9 Component
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6188--6188
-[]\T1/pplj/m/n/9 Brigandine
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6188--6188
+Underfull \hbox (badness 10000) in paragraph at lines 5783--5783
 []\T1/pplj/m/n/9 Lamellar
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6188--6188
-[]\T1/pplj/m/n/9 Lamellar Long
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6188--6188
-[]\T1/pplj/m/n/9 Lamellar Short
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6188--6188
-[]\T1/pplj/m/n/9 Mail
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6188--6188
-[]\T1/pplj/m/n/9 Mail Long
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6188--6188
-[]\T1/pplj/m/n/9 Mail Short
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6202--6202
-[]\T1/pplj/m/n/9 Component
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6202--6202
-[]\T1/pplj/m/n/9 Hardened
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6202--6202
-\T1/pplj/m/n/9 Leather Paul-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6202--6202
-[]\T1/pplj/m/n/9 Hardened
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6202--6202
-\T1/pplj/m/n/9 Leather Rere-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6202--6202
-[]\T1/pplj/m/n/9 Hardened
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6202--6202
-\T1/pplj/m/n/9 Leather Vam-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6202--6202
-[]\T1/pplj/m/n/9 Reinforced
- []
-
-[171]
-Underfull \hbox (badness 10000) in paragraph at lines 6215--6215
-[]\T1/pplj/m/n/9 Component
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6215--6215
-[]\T1/pplj/m/n/9 Cloth Long
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6215--6215
-[]\T1/pplj/m/n/9 Cloth Short
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6215--6215
-[]\T1/pplj/m/n/9 Quilted Long
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6215--6215
-[]\T1/pplj/m/n/9 Quilted Short
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6215--6215
-[]\T1/pplj/m/n/9 Reinforced
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6231--6231
-[]\T1/pplj/m/n/9 Component
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6231--6231
-[]\T1/pplj/m/n/9 Bulletproof
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6231--6231
-[]\T1/pplj/m/n/9 Bulletproof
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6231--6231
-[]\T1/pplj/m/n/9 Bulletproof
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6231--6231
-[]\T1/pplj/m/n/9 Munitions
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6231--6231
-[]\T1/pplj/m/n/9 Munitions
- []
-
-[172]
-Underfull \hbox (badness 10000) in paragraph at lines 6243--6243
-[]\T1/pplj/m/n/9 Component
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6256--6256
-[]\T1/pplj/m/n/9 Component
- []
-
-
-Underfull \hbox (badness 5652) in paragraph at lines 6256--6256
-[]\T1/pplj/m/n/9 Brigandine Leg-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6256--6256
+Underfull \hbox (badness 10000) in paragraph at lines 5783--5783
 []\T1/pplj/m/n/9 Lamellar Leg-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6269--6269
+Underfull \hbox (badness 10000) in paragraph at lines 5783--5783
+[]\T1/pplj/m/n/9 Lamellar Long
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5807--5807
 []\T1/pplj/m/n/9 Component
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6269--6269
+Underfull \hbox (badness 10000) in paragraph at lines 5807--5807
+[]\T1/pplj/m/n/9 Anima Rere-
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 5807--5807
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5807--5807
+[]\T1/pplj/m/n/9 Quilted Long
+ []
+
+[164]
+Underfull \hbox (badness 10000) in paragraph at lines 5833--5833
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 5833--5833
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5833--5833
+[]\T1/pplj/m/n/9 Leather Neck-
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 5833--5833
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5833--5833
+[]\T1/pplj/m/n/9 Quilted Long
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5833--5833
+[]\T1/pplj/m/n/9 Reinforced
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5846--5846
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 5846--5846
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5846--5846
+[]\T1/pplj/m/n/9 Quilted Long
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5846--5846
+[]\T1/pplj/m/n/9 Reinforced
+ []
+
+[165]
+Underfull \hbox (badness 10000) in paragraph at lines 5872--5872
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5872--5872
+[]\T1/pplj/m/n/9 Heavy Quilted
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 5872--5872
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 5872--5872
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5872--5872
+[]\T1/pplj/m/n/9 Mail Long
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5872--5872
+[]\T1/pplj/m/n/9 Quilted Long
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5903--5903
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 3068) in paragraph at lines 5903--5903
+[]\T1/pplj/m/n/9 Face$\OML/cmm/m/it/9 ^^^$\T1/pplj/m/n/9 *, Lower Head, Up-per
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 5903--5903
+[]\T1/pplj/m/n/9 Hard, +1 AV vs Down-ward
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 5903--5903
+\T1/pplj/m/n/9 Helm for Layer 1 on Up-per
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 5903--5903
+[]\T1/pplj/m/n/9 Hard, +1 AV vs Down-ward
+ []
+
+
+Underfull \hbox (badness 3068) in paragraph at lines 5903--5903
+[]\T1/pplj/m/n/9 Face$\OML/cmm/m/it/9 ^^^$\T1/pplj/m/n/9 , Lower Head*, Up-per
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 5903--5903
+[]\T1/pplj/m/n/9 Hard, +2 AV vs Down-ward
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 5903--5903
+\T1/pplj/m/n/9 be worn with a Skull-cap or
+ []
+
+
+Underfull \hbox (badness 7649) in paragraph at lines 5903--5903
+[]\T1/pplj/m/n/9 Hard, No AV vs Up-ward
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5903--5903
+[]\T1/pplj/m/n/9 Lamellar Pot
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5903--5903
+[]\T1/pplj/m/n/9 Leather Pot
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5903--5903
+[]\T1/pplj/m/n/9 Leather Skull-
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 5903--5903
+[]\T1/pplj/m/n/9 Hard, +1 AV vs Down-ward
+ []
+
+
+Underfull \hbox (badness 5652) in paragraph at lines 5903--5903
+[]\T1/pplj/m/n/9 Reinforced Ro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5903--5903
+[]\T1/pplj/m/n/9 Roman Helm
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 5903--5903
+\T1/pplj/m/n/9 Helm for Layer 2 on Up-per
+ []
+
+
+Underfull \hbox (badness 3118) in paragraph at lines 5903--5903
+[]\T1/pplj/m/n/9 Face$\OML/cmm/m/it/9 ^^^$\T1/pplj/m/n/9 , Lower Head*, Neck*,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5903--5903
+[]\T1/pplj/m/n/9 Zischagge/
+ []
+
+[166] [167]
+Underfull \hbox (badness 10000) in paragraph at lines 5925--5925
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 7704) in paragraph at lines 5925--5925
+[]\T1/pplj/m/n/9 Hard, No AV vs Up-ward
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5925--5925
+[]\T1/pplj/m/n/9 Falling Buff
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5925--5925
+\T1/pplj/m/n/9 (Hinged Gor-
+ []
+
+
+Underfull \hbox (badness 5519) in paragraph at lines 5925--5925
+[]\T1/pplj/m/n/9 Restricts Breath-ing 2, Hard,
+ []
+
+
+Underfull \hbox (badness 5519) in paragraph at lines 5925--5925
+[]\T1/pplj/m/n/9 Restricts Breath-ing 2, Hard,
+ []
+
+
+Underfull \hbox (badness 7704) in paragraph at lines 5925--5925
+[]\T1/pplj/m/n/9 Hard, No AV vs Up-ward
+ []
+
+
+Underfull \hbox (badness 7704) in paragraph at lines 5925--5925
+[]\T1/pplj/m/n/9 Hard, No AV vs Up-ward
+ []
+
+[168]
+Underfull \hbox (badness 10000) in paragraph at lines 5956--5956
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5956--5956
+[]\T1/pplj/m/n/9 Cloth
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5956--5956
+[]\T1/pplj/m/n/9 Lamellar Ven-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5967--5967
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5967--5967
+[]\T1/pplj/m/n/9 Leather Neck-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5967--5967
+[]\T1/pplj/m/n/9 Neck-Wrap
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5967--5967
+[]\T1/pplj/m/n/9 Reinforced
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5967--5967
+\T1/pplj/m/n/9 Leather Neck-
+ []
+
+[169]
+Underfull \hbox (badness 10000) in paragraph at lines 5987--5987
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5987--5987
+[]\T1/pplj/m/n/9 Bulletproof
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5987--5987
+[]\T1/pplj/m/n/9 Bulletproof
+ []
+
+
+Underfull \hbox (badness 6825) in paragraph at lines 5987--5987
+[]\T1/pplj/m/n/9 Hard, Lay-ers 2 (Groin, Hip,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5987--5987
+[]\T1/pplj/m/n/9 Munitions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5987--5987
+[]\T1/pplj/m/n/9 Munitions
+ []
+
+
+Underfull \hbox (badness 6825) in paragraph at lines 5987--5987
+[]\T1/pplj/m/n/9 Hard, Lay-ers 1 (Groin, Hip,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5997--5997
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5997--5997
+[]\T1/pplj/m/n/9 Segmented
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6012--6012
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 6012--6012
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 6012--6012
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 6012--6012
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+[170]
+Underfull \hbox (badness 10000) in paragraph at lines 6026--6026
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 6026--6026
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6026--6026
+[]\T1/pplj/m/n/9 Heavy Quilted
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 6026--6026
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6026--6026
+[]\T1/pplj/m/n/9 Heavy Quilted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6026--6026
+[]\T1/pplj/m/n/9 Heavy Quilted
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 6026--6026
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6041--6041
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 6041--6041
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 6041--6041
+[]\T1/pplj/m/n/9 Full Torso, Groin, Hip, Knees,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6041--6041
 []\T1/pplj/m/n/9 Hardened
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6269--6269
+Underfull \hbox (badness 10000) in paragraph at lines 6041--6041
+\T1/pplj/m/n/9 Leather Breast-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6041--6041
 []\T1/pplj/m/n/9 Hardened
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6269--6269
+Underfull \hbox (badness 7168) in paragraph at lines 6041--6041
+[]\T1/pplj/m/n/9 Shagreen Great-
+ []
+
+[171]
+Underfull \hbox (badness 10000) in paragraph at lines 6062--6062
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 6062--6062
+[]\T1/pplj/m/n/9 Shoulders (Thrust only), Up-per
+ []
+
+
+Underfull \hbox (badness 6110) in paragraph at lines 6062--6062
+[]\T1/pplj/m/n/9 Munitions Paul-
+ []
+
+
+Underfull \hbox (badness 5637) in paragraph at lines 6062--6062
+[]\T1/pplj/m/n/9 Munitions Rere-
+ []
+
+
+Underfull \hbox (badness 5711) in paragraph at lines 6062--6062
+[]\T1/pplj/m/n/9 Munitions Vam-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6077--6077
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6077--6077
+[]\T1/pplj/m/n/9 Anima Paul-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6077--6077
+[]\T1/pplj/m/n/9 Anima Rere-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6077--6077
+[]\T1/pplj/m/n/9 Laminar Fore-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6077--6077
+[]\T1/pplj/m/n/9 Laminar El-bow
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6077--6077
+[]\T1/pplj/m/n/9 Laminar Paul-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6077--6077
+[]\T1/pplj/m/n/9 Laminar Rere-
+ []
+
+[172]
+Underfull \hbox (badness 10000) in paragraph at lines 6092--6092
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6092--6092
+[]\T1/pplj/m/n/9 Brigandine
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6092--6092
+[]\T1/pplj/m/n/9 Lamellar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6092--6092
+[]\T1/pplj/m/n/9 Lamellar Long
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6092--6092
+[]\T1/pplj/m/n/9 Lamellar Short
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6092--6092
+[]\T1/pplj/m/n/9 Mail
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6092--6092
+[]\T1/pplj/m/n/9 Mail Long
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6092--6092
+[]\T1/pplj/m/n/9 Mail Short
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6106--6106
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6106--6106
 []\T1/pplj/m/n/9 Hardened
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6269--6269
-\T1/pplj/m/n/9 Leather Knee-
+Underfull \hbox (badness 10000) in paragraph at lines 6106--6106
+\T1/pplj/m/n/9 Leather Paul-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6106--6106
+[]\T1/pplj/m/n/9 Hardened
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6106--6106
+\T1/pplj/m/n/9 Leather Rere-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6106--6106
+[]\T1/pplj/m/n/9 Hardened
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6106--6106
+\T1/pplj/m/n/9 Leather Vam-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6106--6106
+[]\T1/pplj/m/n/9 Reinforced
  []
 
 [173]
-Underfull \hbox (badness 10000) in paragraph at lines 6279--6279
+Underfull \hbox (badness 10000) in paragraph at lines 6119--6119
 []\T1/pplj/m/n/9 Component
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6294--6294
+Underfull \hbox (badness 10000) in paragraph at lines 6119--6119
+[]\T1/pplj/m/n/9 Cloth Long
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6119--6119
+[]\T1/pplj/m/n/9 Cloth Short
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6119--6119
+[]\T1/pplj/m/n/9 Quilted Long
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6119--6119
+[]\T1/pplj/m/n/9 Quilted Short
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6119--6119
+[]\T1/pplj/m/n/9 Reinforced
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6135--6135
 []\T1/pplj/m/n/9 Component
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6294--6294
+Underfull \hbox (badness 10000) in paragraph at lines 6135--6135
+[]\T1/pplj/m/n/9 Bulletproof
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6135--6135
+[]\T1/pplj/m/n/9 Bulletproof
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6135--6135
+[]\T1/pplj/m/n/9 Bulletproof
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6135--6135
+[]\T1/pplj/m/n/9 Munitions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6135--6135
+[]\T1/pplj/m/n/9 Munitions
+ []
+
+[174]
+Underfull \hbox (badness 10000) in paragraph at lines 6147--6147
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6160--6160
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 5652) in paragraph at lines 6160--6160
+[]\T1/pplj/m/n/9 Brigandine Leg-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6160--6160
+[]\T1/pplj/m/n/9 Lamellar Leg-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6173--6173
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6173--6173
 []\T1/pplj/m/n/9 Hardened
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6294--6294
+Underfull \hbox (badness 10000) in paragraph at lines 6173--6173
+[]\T1/pplj/m/n/9 Hardened
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6173--6173
+[]\T1/pplj/m/n/9 Hardened
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6173--6173
+\T1/pplj/m/n/9 Leather Knee-
+ []
+
+[175]
+Underfull \hbox (badness 10000) in paragraph at lines 6183--6183
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6198--6198
+[]\T1/pplj/m/n/9 Component
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6198--6198
+[]\T1/pplj/m/n/9 Hardened
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6198--6198
 \T1/pplj/m/n/9 Leather Bard-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6294--6294
+Underfull \hbox (badness 10000) in paragraph at lines 6198--6198
 []\T1/pplj/m/n/9 Lamellar Bard-
  []
 
-[174] [175]
+[176] [177]
 Chapter 15.
-(./LaTeXed-SoS.ptc) [176
+(./LaTeXed-SoS.ptc) [178
 
-] [177
+] [179
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 6421--6421
-[]\T1/pplj/m/n/9 Burdinadin Hel-
+Underfull \hbox (badness 10000) in paragraph at lines 6325--6325
+[]\T1/ppl/m/n/9 Burdinadin Hel-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6440--6440
+Underfull \hbox (badness 10000) in paragraph at lines 6344--6344
 []\T1/pplj/m/n/9 Burdinadin
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6440--6440
+Underfull \hbox (badness 10000) in paragraph at lines 6344--6344
 []\T1/pplj/m/n/9 Burdinadin
  []
 
 
-Underfull \hbox (badness 2005) in paragraph at lines 6440--6440
+Underfull \hbox (badness 2005) in paragraph at lines 6344--6344
 []\T1/pplj/m/n/9 Belly, Chest, Lower Back,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6440--6440
+Underfull \hbox (badness 10000) in paragraph at lines 6344--6344
 []\T1/pplj/m/n/9 Burdinadin
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6440--6440
+Underfull \hbox (badness 10000) in paragraph at lines 6344--6344
 []\T1/pplj/m/n/9 Burdinadin
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6440--6440
+Underfull \hbox (badness 10000) in paragraph at lines 6344--6344
 []\T1/pplj/m/n/9 Burdinadin
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6440--6440
+Underfull \hbox (badness 10000) in paragraph at lines 6344--6344
 []\T1/pplj/m/n/9 Burdinadin Po-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6440--6440
+Underfull \hbox (badness 10000) in paragraph at lines 6344--6344
 []\T1/pplj/m/n/9 Burdinadin Rere-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6440--6440
+Underfull \hbox (badness 10000) in paragraph at lines 6344--6344
 []\T1/pplj/m/n/9 Burdinadin Saba-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6440--6440
+Underfull \hbox (badness 10000) in paragraph at lines 6344--6344
 []\T1/pplj/m/n/9 Burdinadin Paul-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6440--6440
+Underfull \hbox (badness 10000) in paragraph at lines 6344--6344
 []\T1/pplj/m/n/9 Burdinadin Vam-
  []
 
-[178] [179] [180
+[180] [181] [182] [183] [184]
 
-] [181] [182]
-Overfull \hbox (6.69118pt too wide) in paragraph at lines 6617--6617
- []\T1/pplj/m/n/9 Ammunition| 
+LaTeX Warning: Hyper reference `' on page 185 undefined on input line 6534.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6534--6534
+[]\T1/ppl/m/n/9 textExplodes R:10 P:15
  []
 
-[183]
-
-LaTeX Warning: Hyper reference `' on page 184 undefined on input line 6633.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6633--6633
-[]\T1/pplj/m/n/9 textExplodes R:10 P:15
- []
-
-[184] [185]
+[185] [186]
 Chapter 16.
-(./LaTeXed-SoS.ptc) [186
+(./LaTeXed-SoS.ptc) [187
 
-] [187
+] [188
 
-] [188] [189] [190] [191
+] [189] [190] [191] [192
 
-] [192] [193
+] [193] [194
 
 ]
 Chapter 17.
-(./LaTeXed-SoS.ptc) [194
+(./LaTeXed-SoS.ptc) [195
 
-] [195
+] [196
 
-] [196] [197] [198] [199] [200] [201] [202]
-[203] [204] [205] [206] [207] [208] [209] [210]
+] [197] [198] [199] [200] [201] [202] [203]
+[204] [205] [206] [207] [208] [209] [210] [211]
 Chapter 18.
-(./LaTeXed-SoS.ptc [211
+(./LaTeXed-SoS.ptc [212
 
-]) [212]
+]) [213]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 7585.
+(hyperref)                than one, level fixed on input line 7497.
 
-[213
+[214
 
-] [214] [215] [216] [217] [218] [219] [220] [221] [222] [223]
-Overfull \hbox (5.52097pt too wide) in paragraph at lines 8067--8068
+] [215] [216] [217] [218] [219] [220] [221] [222] [223] [224]
+Overfull \hbox (5.52097pt too wide) in paragraph at lines 7979--7980
 []\T1/pplj/m/n/10.95 If Par-ried or Blocked, you suf-fer a Swing, Thrust, or Sh
 ield Bash (de-pend-ing on the Par-ry-ing/Blocking
  []
 
-[224] [225] [226] [227] [228] [229] [230] [231] [232] [233] [234] [235]
-[236] [237] [238] [239] [240] [241] [242] [243] [244] [245] [246] [247]
-[248] [249] [250] [251] [252] [253] [254]
+[225] [226] [227] [228] [229] [230] [231] [232] [233] [234] [235] [236]
+[237] [238] [239] [240] [241] [242] [243] [244] [245] [246] [247] [248]
+[249] [250] [251] [252] [253] [254] [255]
 Chapter 19.
-(./LaTeXed-SoS.ptc) [255
+(./LaTeXed-SoS.ptc) [256
 
-] [256
+] [257
 
-] [257] [258] [259] [260] [261] [262] [263]
-[264] [265] [266]
+] [258] [259] [260] [261] [262] [263] [264]
+[265] [266] [267]
 Chapter 20.
-(./LaTeXed-SoS.ptc) [267
+(./LaTeXed-SoS.ptc) [268
 
 ]
-Overfull \hbox (2.08862pt too wide) in paragraph at lines 9698--9698
- []\T1/pplj/m/n/9 Encumbrance 
+Overfull \hbox (8.93991pt too wide) in paragraph at lines 9611--9611
+[]\T1/ppl/m/n/9 Unencumbered| 
  []
 
+[269
 
-Overfull \hbox (9.17159pt too wide) in paragraph at lines 9698--9698
-[]\T1/pplj/m/n/9 Unencumbered| 
- []
-
-[268
-
-] [269] [270]
+] [270] [271]
 Chapter 21.
-(./LaTeXed-SoS.ptc) [271
+(./LaTeXed-SoS.ptc) [272
 
-] [272
+] [273
 
-] [273] [274] [275] [276] [277] [278] [279]
-[280] [281] [282] [283] [284] [285] [286] [287]
+] [274] [275] [276] [277] [278] [279] [280]
+[281] [282] [283] [284] [285] [286] [287] [288]
 Chapter 22.
-(./LaTeXed-SoS.ptc) [288
+(./LaTeXed-SoS.ptc) [289
 
-] [289
+] [290
 
-] [290]
-Overfull \hbox (1.01445pt too wide) in paragraph at lines 10629--10629
+] [291]
+Overfull \hbox (1.01436pt too wide) in paragraph at lines 10542--10542
 [][] 
  []
 
-[291] [292] [293] [294] [295] [296] [297] [298]
+[292] [293] [294] [295] [296] [297] [298] [299]
 Chapter 23.
-(./LaTeXed-SoS.ptc) [299
+(./LaTeXed-SoS.ptc) [300
 
 ]
-Overfull \hbox (3.89705pt too wide) detected at line 10985
+Overfull \hbox (3.89705pt too wide) detected at line 10896
 [] \OT1/cmr/m/n/10.95 ([] + [])  \OMS/cmsy/m/n/10.95 ^^@  [] \OT1/cmr/m/n/10.95
  ([] + [] + [])
  []
 
-[300
+[301
 
 ]
-Overfull \hbox (2.41994pt too wide) in paragraph at lines 11065--11120
+Overfull \hbox (2.08049pt too wide) in paragraph at lines 10976--11031
 []$[]$  $[]$ 
  []
 
-[301] [302
+[302] [303
 
 ]
+Underfull \hbox (badness 1142) in paragraph at lines 11171--11171
+[]\T1/ppl/m/n/8 Point pen-e-trates straight through skull into brain, in-stant
+ []
 
-Package nag Warning: table with no \caption on input line 11261.
 
-[303]
+Package nag Warning: table with no \caption on input line 11172.
 
-Package nag Warning: table with no \caption on input line 11331.
+[304]
 
-[304
-
-]
-
-Package nag Warning: table with no \caption on input line 11398.
+Package nag Warning: table with no \caption on input line 11243.
 
 [305
 
 ]
 
-Package nag Warning: table with no \caption on input line 11463.
+Package nag Warning: table with no \caption on input line 11310.
 
 [306
 
 ]
 
-Package nag Warning: table with no \caption on input line 11537.
+Package nag Warning: table with no \caption on input line 11374.
 
 [307
 
 ]
 
-Package nag Warning: table with no \caption on input line 11595.
+Package nag Warning: table with no \caption on input line 11448.
 
 [308
 
 ]
 
-Package nag Warning: table with no \caption on input line 11659.
+Package nag Warning: table with no \caption on input line 11506.
 
 [309
 
 ]
 
-Package nag Warning: table with no \caption on input line 11717.
+Package nag Warning: table with no \caption on input line 11570.
 
 [310
 
 ]
-Overfull \hbox (1.32877pt too wide) in paragraph at lines 11786--11786
- []\T1/pplj/m/n/8 Wound Level| 
- []
 
-
-Package nag Warning: table with no \caption on input line 11787.
+Package nag Warning: table with no \caption on input line 11628.
 
 [311
 
 ]
+Overfull \hbox (1.51234pt too wide) in paragraph at lines 11697--11697
+ \T1/ppl/m/n/8 Wound Level| 
+ []
 
-Package nag Warning: table with no \caption on input line 11865.
+
+Package nag Warning: table with no \caption on input line 11698.
 
 [312
 
 ]
 
-Package nag Warning: table with no \caption on input line 11941.
+Package nag Warning: table with no \caption on input line 11776.
 
 [313
 
 ]
 
-Package nag Warning: table with no \caption on input line 12009.
+Package nag Warning: table with no \caption on input line 11852.
 
 [314
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 12073--12073
-[]\T1/pplj/m/n/8 Wound
- []
 
-
-Package nag Warning: table with no \caption on input line 12074.
+Package nag Warning: table with no \caption on input line 11920.
 
 [315
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 11984--11984
+[]\T1/ppl/m/n/8 Wound
+ []
 
-Package nag Warning: table with no \caption on input line 12137.
+
+Package nag Warning: table with no \caption on input line 11985.
 
 [316
 
 ]
 
-Package nag Warning: table with no \caption on input line 12199.
+Package nag Warning: table with no \caption on input line 12048.
 
 [317
 
 ]
 
-Package nag Warning: table with no \caption on input line 12265.
+Package nag Warning: table with no \caption on input line 12110.
 
 [318
 
 ]
 
-LaTeX Warning: Reference `Autodrop' on page 319 undefined on input line 12338.
-
-
-Package nag Warning: table with no \caption on input line 12339.
+Package nag Warning: table with no \caption on input line 12176.
 
 [319
 
 ]
 
-LaTeX Warning: Reference `oar:Autodrop' on page 320 undefined on input line 124
-18.
-
-
-Package nag Warning: table with no \caption on input line 12419.
+Package nag Warning: table with no \caption on input line 12250.
 
 [320
 
 ]
+Underfull \hbox (badness 1867) in paragraph at lines 12329--12329
+[]\T1/ppl/m/n/8 Hand bones shat-tered, dam-age se-vere, item au-to-mat-i-cally
+ []
 
-Package nag Warning: table with no \caption on input line 12479.
+
+Package nag Warning: table with no \caption on input line 12330.
 
 [321
 
 ]
 
-Package nag Warning: table with no \caption on input line 12555.
+Package nag Warning: table with no \caption on input line 12390.
+
+[322
+
+]
+
+Package nag Warning: table with no \caption on input line 12466.
 
 \tf@ptc=\write5
 \openout5 = `LaTeXed-SoS.ptc'.
@@ -2894,19 +2906,25 @@ Package nag Warning: table with no \caption on input line 12555.
 
 Package nag Warning: 20 complaints in total.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 12556.
-[322
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 12467.
+[323
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 12556.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 12467.
  (./LaTeXed-SoS.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 12556.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 12467.
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 12556
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 12467
 .
-Package rerunfilecheck Info: File `LaTeXed-SoS.out' has not changed.
-(rerunfilecheck)             Checksum: 9A6A287D47D8D5682C8DF986332D959C;16670.
 
+
+Package rerunfilecheck Warning: File `LaTeXed-SoS.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `LaTeXed-SoS.out':
+(rerunfilecheck)             Before: 7ED80C662A4D1E26A2F2CFA4D67BAA5F;16807
+(rerunfilecheck)             After:  8AF148F4A11ABF8EC2C73BF116863E42;16872.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2916,35 +2934,98 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 12556.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 12467.
  ) 
 Here is how much of TeX's memory you used:
- 17104 strings out of 493091
- 248723 string characters out of 6142991
- 597669 words of memory out of 5000000
- 18751 multiletter control sequences out of 15000+600000
- 90104 words of font info for 161 fonts, out of 8000000 for 9000
+ 17083 strings out of 493091
+ 249016 string characters out of 6142991
+ 504546 words of memory out of 5000000
+ 18653 multiletter control sequences out of 15000+600000
+ 93628 words of font info for 165 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,21n,92p,1535b,794s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvi
-ps/cm-super/cm-super-t1.enc}</usr/share/texmf/fonts/type1/public/amsfonts/cm/cm
-mi10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share
-/texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf/fonts/type1/p
-ublic/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cm
-r6.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/te
-xmf/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf/fonts/type1/publi
-c/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy9
-.pfb></usr/share/texmf/fonts/type1/public/fourier/fourier-orns.pfb></usr/share/
-texmf/fonts/type1/public/fpl/fplbj8a.pfb></usr/share/texmf/fonts/type1/public/f
-pl/fplrc8a.pfb></usr/share/texmf/fonts/type1/public/fpl/fplrij8a.pfb></usr/shar
-e/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/
-urw/palatino/uplb8a.pfb></usr/share/texmf/fonts/type1/urw/palatino/uplbi8a.pfb>
-</usr/share/texmf/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf/fonts/t
-ype1/urw/palatino/uplri8a.pfb>
-Output written on LaTeXed-SoS.pdf (333 pages, 1100114 bytes).
+ 53i,22n,92p,1535b,818s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{paragraph*.759} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph*.768} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph*.758} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph*.765} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph*.769} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph*.761} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph*.764} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.756} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.755} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.752} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.757} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.720} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph*.534} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph*.539} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph*.544} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph*.542} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph*.375} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph*.543} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph*.711} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph*.546} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{paragraph*.770} has been referenced but does not ex
+ist, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips
+/cm-super/cm-super-t1.enc}</usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi
+10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/t
+exmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr6
+.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texm
+f/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy9.p
+fb></usr/share/texmf/fonts/type1/public/fourier/fourier-orns.pfb></usr/share/te
+xmf/fonts/type1/public/fpl/fplbj8a.pfb></usr/share/texmf/fonts/type1/public/fpl
+/fplrc8a.pfb></usr/share/texmf/fonts/type1/public/fpl/fplrij8a.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/ur
+w/palatino/uplb8a.pfb></usr/share/texmf/fonts/type1/urw/palatino/uplbi8a.pfb></
+usr/share/texmf/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf/fonts/typ
+e1/urw/palatino/uplri8a.pfb>
+Output written on LaTeXed-SoS.pdf (334 pages, 1101480 bytes).
 PDF statistics:
- 5997 PDF objects out of 6186 (max. 8388607)
- 4449 compressed objects within 45 object streams
- 1404 named destinations out of 1440 (max. 500000)
- 27609 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 6126 PDF objects out of 6186 (max. 8388607)
+ 4564 compressed objects within 46 object streams
+ 1478 named destinations out of 1728 (max. 500000)
+ 31209 words of extra memory for PDF output out of 35830 (max. 10000000)
 

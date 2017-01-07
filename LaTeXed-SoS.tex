@@ -20,7 +20,7 @@
 \usepackage[demo]{graphicx}
 \usepackage{wallpaper}
 \usepackage{wrapfig,booktabs}
-\usepackage{tabu,longtable,ctable}
+\usepackage{tabu,longtable,ctable,colortbl}
 	\tabulinesep = 1.2mm
 \usepackage{fancyhdr}
 \usepackage{lettrine}
@@ -43,7 +43,7 @@
 	headsep=0.8cm,
 	footskip=0.5cm}
 \usepackage[full]{textcomp}
-\renewcommand{\familydefault}{pplj} 
+\renewcommand{\familydefault}{pplj}
 %	\usepackage
 %	[
 %	final,
@@ -55,7 +55,6 @@
 %	expansion=true]
 %	{microtype}
 \setlength{\parskip}{1.3ex plus 0.2ex minus 0.2ex}
-
 
 \usepackage{fourier-orns}
 
@@ -99,8 +98,6 @@
 {\section{\vspace{0ex}#1}}
 {\vspace{12pt}\centering ------- \decofourleft\decofourright ------- \par}
 
-
-\usepackage{lipsum}
 \setlength{\parindent}{1em} % Sangría española
 \pagestyle{fancy}
 
@@ -118,6 +115,7 @@
 	\usepackage{etoolbox}
 	\AtBeginEnvironment{longtabu}{\footnotesize}{}{}   %% change all longtabu content to foot note size
 	\AtBeginEnvironment{tabu}{\footnotesize}{}{} %%Do the same for tabu content, not sure if these two can be combined
+	\AtBeginEnvironment{table}{\renewcommand*{\familydefault}{ppl}}{}{}
 \usepackage{microtype}
 %END_FOLD
 \begin{document}
@@ -134,7 +132,7 @@
 	\vspace{0.1 cm}
 	{\huge Opaque Studios \par}
 	\vfill
-	{\Large\LaTeX ified Revision - Alpha version 0.1\\\today }\par
+	{\Large\LaTeX ified Revision - Alpha version 0.1.1\\\today }\par
 	\vspace{0.2 cm}
 	 \textsc{\copyright~Zachary Irwin, James Lacombe}, 2015. All Rights Reserved
 	
@@ -179,9 +177,9 @@ opaque.freeforums.net
 \tableofcontents %BOOKMARK needs to be added here? 
 \mainmatter
 \chapter{Introduction}\label{ch:intro}
-%Save original \intextsep
-\newlength{\oldintextsep}
-\setlength{\oldintextsep}{\intextsep}
+%%Save original \intextsep
+	\newlength{\oldintextsep}
+	\setlength{\oldintextsep}{\intextsep}
 \newpage
 \section*{Foreword}
 It’s been a long time, now, since that first appearance back in 2012. We’ve gone through three names, a dozen updates, two hundred threads, and hundreds of thousands of posts. Oceans of blood have been spilled in the countless fechts fought in this game’s testing. Our little reservation on the internet should be marked forever by a mountain of human skulls.
@@ -888,8 +886,6 @@ around before being encumbered. See \autoref{sec:exhaustion} for more details.
 Toughness refers to how resilient your character is to harm. It represents thickness of skin, hardness of 
 bone, and layers of callous and scar tissue. Toughness reduces the amount of damage your character takes 
 when they are attacked. 
-
- 
 
 \subsection*{Charisma (CHA): ($\frac{\mathrm{WIL+PER+WIT}} {2}$)}
 Charisma determines how well your character interacts with other characters. It’s their animal magnetism, 
@@ -4990,7 +4986,8 @@ This outlines the type of ammunition that can be fired from the weapon. Ammuniti
 before it can be fired. Ammunition may have Special qualities, which may make it more or less effective 
 in certain circumstances.
 
-\paragraph{Catch Chance}---\quad
+\paragraph{Catch Chance}\label{par:Catch Chance}
+---\quad
 Some missile weapons, and their projectiles, have a significant chance of becoming stuck in their victims. 
 If a missile with a Catch Chance inflicts a Wound on a character, roll 1d10. If the result is equal to or 
 under the Catch Chance, then the head of the missile becomes stuck in the Wound. This adds +4 Pain to 
@@ -5030,7 +5027,7 @@ Zellish Wheelbow &Bow &40 &7 &7p &5 &- &3 &5 gp\\
 	\caption{Ammunition for Bows and Crossbows}
 	\label{tab:Ammunition for Bows and Crossbows}
 	\begin{tabu} spread 0pt {XX[2.5] X[-2,c] X[-2,l]}
-\rowfont[c]{}Ammunition Name&Special&Catch Chance&Cost\\\toprule
+\rowfont[c]{}Ammunition Name&Special&\nameref{par:Catch Chance}&Cost\\\toprule
 Barbed Broadhead &Winged 2 &10/10 &4 sp/20\\
 Bodkin &+10 Range, Narrow &1/10 &1 sp/20\\
 Bludgeon/Stun &Bludgeon, Shock 2, -5 Range &0/10 &10 cp/20\\
@@ -5217,91 +5214,89 @@ Papier-Mâché Cartridge &TN 4 &300\% \\
 	\end{tabu}
 \end{table}
 
-\subsection{Throwing Weapons} %THROWING WEAPONS SECTION
+\subsection{Throwing Weapons}
 Explain how weapons are used/what is required for it.
 
-Table X.X Throwing Weapons 
-Weapon Name Weapon Type Range Missile TN Damage Special Stuck Chance Wt Cost 
-Axe Thrown 10 8 +3c/+1b - 5/10 - - 
-Chakram Thrown 15 7 +1c Winged 2 0/10 - 1 sp 
-Club Thrown 10 7 +1b - 0/10 - - 
-Hammer Thrown 10 7 +2b AP 1 0/10 - - 
-Heavy Dart Thrown 20 8 +2p AP 1 6/10 0 1 sp 
-Javelin (Heavy) Thrown 10 8 +3p AP 1 5/10 1 2 sp 
-Javelin (Lead) Thrown 5 8 +4p AP 2, Shield Stick 10/10 1 3 sp 
-Javelin (Light) Thrown 15 7 +2p - 5/10 0 1 sp 
-Knife Thrown 5 8 +1p/+0c - 4/10 0 - 
-Knife (Throwing) Thrown 10 7 +1p/+0c - 4/10 0 8 cp 
-Metal Weight Thrown 10 7 +2b - 0/10 1 1 cp 
-Pole-Sling Thrown 25 7 +3b - 0/10 2 5 cp 
-Rock Thrown 15 7 +1b - 0/10 0 - 
-Sling (Light) Thrown 15 7 +1b - 0/10 0 1 cp 
-Sling (Long) Thrown 20 7 +2b - 0/10 0 2 cp 
-Soliferrum Thrown 5 8 +3p AP 3, Shield Stick 8/10 1 4 sp 
-Spear Thrown 10 7 +2p - 5/10 - - 
-Sword Thrown 5 8 +3p - 8/10 - - 
-
+\begin{table}[hb]
+	\centering
+	\caption{Throwing Weapons}
+	\label{tab:Throwing Weapons}
+	\begin{tabu} spread 0pt {*{9}{X[-1]}}
+		\rowfont[c]{}Weapon Name & Weapon Type & Range & Missile TN & Damage       & Special            & \nameref{par:Catch Chance}&Wt   & Cost \\ \toprule
+		Axe                      & Thrown   & 10  & 8  & +3c/+1b      &-                   & 5/10    & -  & -\\
+		Chakram                  & Thrown   & 15  & 7  & +1c          &Winged 2 & 0/10               & -  & 1 sp\\
+		Club                     & Thrown   & 10  & 7  & +1b          & -                  & 0/10    & -  & -    \\
+		Hammer                   & Thrown   & 10  & 7  & +2b          & AP 1               & 0/10    & -  & -    \\
+		Heavy Dart               & Thrown   & 20  & 8  & +2p          & AP 1               & 6/10    & 0  & 1 sp \\
+		Javelin (Heavy)          & Thrown   & 10  & 8  & +3p          & AP 1               & 5/10    & 1  & 2 sp \\
+		Javelin (Lead)           & Thrown   & 5   & 8  & +4p          & AP 2, Shield Stick & 10/10   & 1  & 3 sp \\
+		Javelin (Light)          & Thrown   & 15  & 7  & +2p          & -                  & 5/10    & 0  & 1 sp \\
+		Knife                    & Thrown   & 5   & 8  & +1p/+0c      & -                  & 4/10    & 0  & -    \\
+		Knife (Throwing)         & Thrown   & 10  & 7  & +1p/+0c      & -                  & 4/10    & 0  & 8 cp \\
+		Metal Weight             & Thrown   & 10  & 7  & +2b          & -                  & 0/10    & 1  & 1 cp \\
+		Pole-Sling               & Thrown   & 25  & 7  & +3b          & -                  & 0/10    & 2  & 5 cp \\
+		Rock                     & Thrown   & 15  & 7  & +1b          & -                  & 0/10    & 0  & -    \\
+		Sling (Light)            & Thrown   & 15  & 7  & +1b          & -                  & 0/10    & 0  & 1 cp \\
+		Sling (Long)             & Thrown   & 20  & 7  & +2b          & -                  & 0/10    & 0  & 2 cp \\
+		Soliferrum               & Thrown   & 5   & 8  & +3p          & AP 3, Shield Stick & 8/10    & 1  & 4 sp \\
+		Spear                    & Thrown   & 10  & 7  & +2p          & -                  & 5/10    & -  & -    \\
+		Sword                    & Thrown   & 5   & 8  & +3p          & -                  & 8/10    & -  & -
+	\end{tabu}
+\end{table}
 
 \section{Special Qualities}\label{sec:Missile Special Qualities} %MISSILE SPECIAL QUALITIES
-Table X.X Missile Weapon Special Qualities 
-Quality Effect 
-AP [X] Armor Piercing [X]. Inflicts X additional damage against any Armor, up to the AV of the Armor. Has 
-no effect on Armor with the Bulletproof quality. 
-Bleed [X] Any Wounds inflicted by this missile cause X additional Bleeding damage. 
-Bludgeon Inflicts Bludgeoning damage regardless of the weapon’s damage type. 
-Cavalry 
-Bow [X] 
 
+\vspace{-5pt}\paragraph[AP]{\label{rangequal:AP [X]}AP [X]}---\quad Armor Piercing [X]. Inflicts X additional damage against any Armor, up to the AV of the Armor. Has no effect on Armor with the Bulletproof quality. 
+
+\vspace{-5pt}\paragraph[Bleed]{\label{rangequal:Bleed [X]}Bleed [X]}---\quad Any Wounds inflicted by this missile cause X additional Bleeding damage. 
+
+\vspace{-5pt}\paragraph{\label{rangequal:Bludgeon}Bludgeon}---\quad Inflicts Bludgeoning damage regardless of the weapon’s damage type. 
+
+\vspace{-5pt}\paragraph[Cavalry Bow]{\label{rangequal:Cavalry Bow [X]}Cavalry Bow [X]}---\quad
 This bow is easier to use while riding horseback. The penalty for shooting from horseback while 
 moving (4 CP normally) is reduced by X for this weapon. 
 
-Flaming 
-[X] 
-
+\vspace{-5pt}\paragraph[Flaming]{\label{rangequal:Flaming [X]}Flaming [X]}---\quad
 On hit inflicts X/TN 5 Burn for 3 Rounds to Hit Location. 
 
-Narrow
+\vspace{-5pt}\paragraph{\label{rangequal:Narrow}Narrow}---\quad
 This weapon gains AP 4 against armor with the Mail special quality. 
 
-Scatter 
-[X/Y] 
-
+\vspace{-5pt}\paragraph[Scatter]{\label{rangequal:Scatter [X/Y]}Scatter [X/Y]}---\quad 
 In addition to the primary Shot, which resolves normally, you automatically hit with a number of 
 additional attacks equal to X (roll for Hit Location on the Random Missile Hit Table with each for a 
 Shoot Maneuver, roll for Hit Location on appropriate Thrust Table for Melee Shot Maneuver) at 
 Damage Y. Attacks that hit the same Hit Location combine their Damage before subtracting AV and 
 TOU. 
+
 Hard Armor without the Mail quality halves Scatter damage. 
 
- 
-
- No special rules apply to these additional attacks unless they are listed after X/Y. Scattered attacks do 
+No special rules apply to these additional attacks unless they are listed after X/Y. Scattered attacks do 
 not gain BS as damage. 
-
- 
 
 Weapons with Scatter do not suffer the normal penalties for Range. Instead, each Range increment 
 past the first reduces X by 1. Once X is 0, the next Range increment renders the weapon totally 
 ineffective. It may be possible (GM’s discretion) to hit multiple opponents with Scatter (see 
 Scatterfire in the Combat chapter) 
+
 Voids made against attacks with Scatter (if they can be made at all, i.e. with Stains of Time) have an 
 additional Activation Cost equal to X. 
 
-Shield 
-Stick 
+Shield Stick 
 
 If a Fling attempt made by this missile is blocked, or if it hits an area protected by a shield’s passive 
 AV, it becomes ‘stuck’ in the shield. The shield’s Block TN is increased by 2, and its Weight is 
 increased by 2 as well. Removing the missile is very difficult, requiring several minutes of work that 
 cannot be done in combat. 
-Shock [X] Successful hit inflicts Stun equal to X. 
+
+Shock [X] 
+Successful hit inflicts Stun equal to X. 
+
 Winged 
 [X] 
 
 When this weapon hits, it inflicts 1 bonus damage per X BS scored. This damage is not inflicted if the 
 missile hits Hard armor. The Textile quality of armor is negated by a Winged missile. 
-
- 
 
 \chapter{Prosthetics}\label{ch:Prosthetics} %WHOLE PROSTHETICS CHAPTER
 \startcontents[chapters]
@@ -5326,8 +5321,6 @@ most basic, a prosthetic can be a simple stick, like the idiosyncratic ‘peg le
 pirates as sporting. At their most complex, they can be jointed mechanical replicas of the lost limb that 
 can actually provide surprising functionality, even in combat. 
 
- 
-
 If you are missing more than one part of a limb, you must take prosthetics for the pieces closer to the 
 remaining arm before you take prosthetics for the extremities. That is, if you are missing your arm below 
 the elbow, and you want to take a Clamp, you must first take an Extender.
@@ -5337,172 +5330,88 @@ Some notes with the following tables:
 \item Armor may not be worn over prosthetics unless otherwise specified. 
 \item Damage does not stack between attacks. 
 \item Location refers to the area the prosthetic is replacing. 
-\item Prosthetics count as “Hard” armor for all purposes, including Draw, Armor Piercing effects, etc. 
+\item Prosthetics count as “Hard” armor for all purposes, including Draw, Armor Piercing effects, etc.
 \end{itemize}
- 
-Table XX Arm Prosthetics 
-Prosthetic Location Cost Effect 
-Stick Any 8 cp The limb can punch or arm-parry as normal, but will break upon 
-receiving 4 or more damage. May be armored. 
-Extender Forearm 2 cp A hand prosthetic may be attached to this. 5 damage breaks the 
-prosthetic. 
-Hook Hand 5 sp Grappling suffers no penalties, but a Hook cannot hold a weapon, 
-including a 1H or 2H weapon. Punch becomes a swing and does 
-piercing damage. 6 damage breaks the prosthetic. 
-Clamp Hand 10 sp Grappling suffers no penalties. A Clamp can hold either a 1H weapon, 
-or be used in combination with a real hand to hold a 2H weapon. CP 
-is reduced by 2 when using a Clamp in combat. 
-Because of the locked design of the Clamp, Disarming or Beating a 
-weapon held by a Clamp has a +2 Activation Cost. 
-A successful disarm breaks the clamp, rendering it useless. 6 damage 
-breaks the prosthetic. 
-Weapon Hand/Forearm Weapon 
-+10 sp 
 
-A 1H melee weapon, or a hand crossbow, pistol, or dragon, may be 
-attached to the stump, and functions as the weapon would. If attached 
-at the Forearm, decrease Range and Damage by 1 unless ranged. 
-Ranged weapons must be fired using the other hand, or by the lost 
-limb using a special mechanism costing 5 sp. 
-
-Articulated 
-Hand 
-
-Hand 25 gp The hand functions as normal except for a +1 Activation Cost to 
-Weapon Maneuvers when using it to hold a 1H weapon by itself. 
-Wielding a 2H weapon with an Articulated Hand and a real hand 
-incurs no penalty. Wielding a 2H weapon with two Articulated Hands 
-incurs a +1 Activation Cost for all maneuvers. 3 damage breaks the 
-prosthetic. 
-
-Armored 
-Articulated 
-Hand 
-
-Hand 75 gp The hand functions as normal except for a +1 Activation Cost on all 
-maneuvers involving it. 8 damage breaks the prosthetic. 
-
-Burdinadin 
-Prosthetic 
-Hand 
-
-Hand 30 gp Functions like an Armored Hand until activated. While active, the 
-limb reduces your END by 1 temporarily, but suffers NO penalties 
-whatsoever, and the hand can do anything (such as write, manipulate 
-fine objects, and press buttons) that a normal hand can do. Burdinadin 
-Prosthetics can sustain 15 damage before being destroyed. 
-
-Burdinadin 
-Prosthetic 
-
-Hand/Forearm 50 gp Functions like an Armored Hand until activated. While active, the 
-limb reduces your END by 1 temporarily, but suffers NO penalties 
+\subsubsection{Example Prosthetic}
+	\vspace{-5pt}\paragraph{Prosthetic Name}---\quad Location, cost
+	\vspace{-15pt}\subparagraph{Effect:} Rules effect of the prosthetic in question.
+\section{Arm Prosthetics}
+\paragraph{Stick}---\quad Any Location, 8 cp
+	\vspace{-15pt}%\begin{description}
+	\subparagraph{Effect:} The limb can punch or arm-parry as normal, but will break upon receiving 4 or more damage. May be armored.
+\paragraph{Extender}---\quad Forearm, 2 cp
+	\vspace{-15pt} \subparagraph{Effect:} A hand prosthetic may be attached to this. 5 damage breaks the prosthetic.
+\paragraph{Hook}---\quad Hand, 5 sp
+	\vspace{-15pt} \subparagraph{Effect:} Grappling suffers no penalties, but a Hook cannot hold a weapon, including a 1H or 2H weapon. Punch becomes a swing and does piercing damage. 6 damage breaks the prosthetic.
+\paragraph{Clamp}---\quad Hand, 10 sp 
+	\vspace{-15pt} \subparagraph{Effect:} Grappling suffers no penalties. A Clamp can hold either a 1H weapon, or be used in combination with a real hand to hold a 2H weapon. CP is reduced by 2 when using a Clamp in combat. Because of the locked design of the Clamp, Disarming or Beating a weapon held by a Clamp has a +2 Activation Cost. A successful disarm breaks the clamp, rendering it useless. 6 damage breaks the prosthetic. 
+\paragraph{Weapon}---\quad Hand/Forearm, Weapon Cost $+$ 10 sp
+	\vspace{-15pt} \subparagraph{Effect:} A 1H melee weapon, or a hand crossbow, pistol, or dragon, may be attached to the stump, and functions as the weapon would. If attached at the Forearm, decrease Range and Damage by 1 unless ranged. Ranged weapons must be fired using the other hand, or by the lost limb using a special mechanism costing 5 sp.
+\paragraph{Articulated Hand}---\quad Hand, 25 gp
+	\vspace{-15pt} \subparagraph{Effect:} The hand functions as normal except for a +1 Activation Cost to Weapon Maneuvers when using it to hold a 1H weapon by itself. Wielding a 2H weapon with an Articulated Hand and a real hand incurs no penalty. Wielding a 2H weapon with two Articulated Hands incurs a +1 Activation Cost for all maneuvers. 3 damage breaks the prosthetic
+\paragraph{Armored Articulated Hand}---\quad Hand, 75 gp
+	\vspace{-15pt} \subparagraph{Effect:} The hand functions as normal except for a +1 Activation Cost on all maneuvers involving it. 8 damage breaks the prosthetic.
+\paragraph{Burdinadin Prosthetic Hand}---\quad Hand, 30 gp
+	\vspace{-15pt} \subparagraph{Effect:} Functions like an Armored Hand until activated. While active, the limb reduces your END by 1 temporarily, but suffers NO penalties whatsoever, and the hand can do anything (such as write, manipulate fine objects, and press buttons) that a normal hand can do. Burdinadin Prosthetics can sustain 15 damage before being destroyed.
+\paragraph{Burdinadin Prosthetic Forearm}---\quad Hand/Forearm, 50 gp
+	\vspace{-15pt} \subparagraph{Effect:} Functions like an Armored Hand until activated. While active, the limb reduces your END by 1 temporarily, but suffers NO penalties whatsoever, and the hand can do anything (such as write, manipulate fine objects, and press buttons) that a normal hand can do. Burdinadin Prosthetics can sustain 15 damage before being destroyed.
+\paragraph{Burdinadin Prosthetic Full Arm}---\quad Full Arm, 80 gp
+	\vspace{-15pt} \subparagraph{Effect:} Does not function unless activated. While Active, the limb reduces your END by 1 temporarily, but suffers NO penalties whatsoever, and the hand can do anything (such as write, manipulate fine objects, and press buttons) that a normal hand can do. Burdinadin Prosthetics can sustain 15 damage before being destroyed.
 
 
-Forearm whatsoever, and the hand can do anything (such as write, manipulate 
-fine objects, and press buttons) that a normal hand can do. Burdinadin 
-Prosthetics can sustain 15 damage before being destroyed. 
-Burdinadin 
-Prosthetic Full 
-Arm 
+%\end{description}
+%%Decided to not make a table because it'd look like shit, but keeping the code in case I change my mind
+	%\begin{longtabu} to \linewidth{*{3}{X[-1]}X[4]}
+	%	\captionsetup{textformat=empty, labelformat=blank}
+	%	\caption{Arm Prosthetics}\vspace{-25pt}
+	%	\label{tab:Arm Prosthetics}\\
+	%	Prosthetic &Location &Cost &Effect\\\toprule
+	%	Stick &Any &8 cp &The limb can punch or arm-parry as normal, but will break upon receiving 4 or more damage. May be armored.\\
+	%	Extender &Forearm &2 cp &A hand prosthetic may be attached to this. 5 damage breaks the prosthetic. \\
+	%	Hook &Hand &5 sp &Grappling suffers no penalties, but a Hook cannot hold a weapon, including a 1H or 2H weapon. Punch becomes a swing and does piercing damage. 6 damage breaks the prosthetic. \\
+	%	Clamp &Hand &10 sp &Grappling suffers no penalties. A Clamp can hold either a 1H weapon, or be used in combination with a real hand to hold a 2H weapon. CP is reduced by 2 when using a Clamp in combat. Because of the locked design of the Clamp, Disarming or Beating a weapon held by a Clamp has a +2 Activation Cost. A successful disarm breaks the clamp, rendering it useless. 6 damage breaks the prosthetic. \\
+	%	Weapon &Hand/Forearm &Weapon + 10 sp &A 1H melee weapon, or a hand crossbow, pistol, or dragon, may be attached to the stump, and functions as the weapon would. If attached at the Forearm, decrease Range and Damage by 1 unless ranged. Ranged weapons must be fired using the other hand, or by the lost limb using a special mechanism costing 5 sp. \\
+	%	Articulated Hand &Hand &25 gp &The hand functions as normal except for a +1 Activation Cost to Weapon Maneuvers when using it to hold a 1H weapon by itself. Wielding a 2H weapon with an Articulated Hand and a real hand incurs no penalty. Wielding a 2H weapon with two Articulated Hands incurs a +1 Activation Cost for all maneuvers. 3 damage breaks the prosthetic\\
+	%	Armored Articulated Hand &Hand &75 gp &The hand functions as normal except for a +1 Activation Cost on all maneuvers involving it. 8 damage breaks the prosthetic.\\
+	%	
+	%	Burdinadin Prosthetic Hand &Hand &30 gp &Functions like an Armored Hand until activated. While active, the limb reduces your END by 1 temporarily, but suffers NO penalties whatsoever, and the hand can do anything (such as write, manipulate fine objects, and press buttons) that a normal hand can do. Burdinadin Prosthetics can sustain 15 damage before being destroyed.\\
+	%	Burdinadin Prosthetic &Hand/Forearm &50 gp &Functions like an Armored Hand until activated. While active, the limb reduces your END by 1 temporarily, but suffers NO penalties Forearm whatsoever, and the hand can do anything (such as write, manipulate fine objects, and press buttons) that a normal hand can do. Burdinadin Prosthetics can sustain 15 damage before being destroyed.\\
+	%	Burdinadin Prosthetic Full Arm &Full Arm &80 gp &Does not function unless activated. While Active, the limb reduces your END by 1 temporarily, but suffers NO penalties whatsoever, and the hand can do anything (such as write, manipulate fine objects, and press buttons) that a normal hand can do. Burdinadin Prosthetics can sustain 15 damage before being destroyed.\\
+	%\end{longtabu}
+\section{Leg Prosthetics}
+\paragraph{Wood Foot}---\quad Foot, 10 cp
+\vspace{-15pt} \subparagraph{Effect:} Allows you to move with -2 MOB. 5 damage breaks the prosthetic. May be armored.
+\paragraph{Pegleg}\label{par:Pegleg}
+---\quad Shin, 1 sp
+\vspace{-15pt} \subparagraph{Effect:} Allows you to move with $ -\frac{1}{4} $ MOB. 4 damage breaks the prosthetic. May be armored.
+\paragraph{Long Pegleg}\label{par:Long Pegleg}
+---\quad Thigh/Shin, 1 sp
+\vspace{-15pt} \subparagraph{Effect:} Allows you to move with $ -\frac{1}{2} $ MOB. 4 damage breaks the prosthetic. May be armored.
+\paragraph{Cane}---\quad Any, 10 cp
+\vspace{-15pt} \subparagraph{Effect:} Allows you to move with $ -\frac{1}{2} $ MOB. Requires a free hand to use. May include a weapon of medium length or shorter (add the cost of the weapon). 5 damage breaks the cane.
 
-Full Arm 80 gp Does not function unless activated. While Active, the limb reduces 
-your END by 1 temporarily, but suffers NO penalties whatsoever, and 
-the hand can do anything (such as write, manipulate fine objects, and 
-press buttons) that a normal hand can do. Burdinadin Prosthetics can 
-sustain 15 damage before being destroyed. 
+\paragraph{Crutch}---\quad Any, 10 cp
+\vspace{-15pt} \subparagraph{Effect:} Allows you to move with $ \frac{1}{2} $ MOB, or normal MOB if two are used. Each requires a free arm to use. May be used as a Large Club with +1 to Range and all TNs. 5 damage breaks the crutch.
 
- 
-Table XX Leg Prosthetics 
-Prosthetic Location Cost Effect 
-Wood Foot Foot 10 
-cp 
+\paragraph{Burdinadin Prosthetic Foot}---\quad Foot, 10 gp
+\vspace{-15pt} \subparagraph{Effect:} Functions like a normal foot.
 
-Allows you to move with -2 MOB. 5 damage breaks the prosthetic. 
-May be armored. 
-Pegleg Shin 1 sp Allows you to move with $ -\frac{1}{4} $ MOB. 4 damage breaks the prosthetic. 
-May be armored. 
-Long Pegleg Thigh/Shin 1 sp Allows you to move with $ -\frac{1}{2} $ MOB. 4 damage breaks the prosthetic. 
-May be armored. 
-Cane Any 10 
-cp 
+\paragraph{Burdinadin Prosthetic Lower Leg/Foot}---\quad Foot/Lower Leg, 25 gp
+\vspace{-15pt} \subparagraph{Effect:} Functions like a \nameref{par:Pegleg} unless activated. While active, the limb reduces your END by 1 temporarily, but suffers NO penalties whatsoever, and can do anything that a real leg can do (such as wiggle toes, tap dance, and C-walk). Burdinadin Prosthetics can sustain 15 damage before being destroyed. 
 
-Allows you to move with $ -\frac{1}{2} $ MOB. Requires a free hand to use. May 
-include a weapon of medium length or shorter (add the cost of the 
-weapon). 5 damage breaks the cane. 
+\paragraph{Burdinadin Prosthetic Full Leg}---\quad Foot/Lower Leg/Upper Leg, 50 gp
+\vspace{-15pt} \subparagraph{Effect:} Functions like a \nameref{par:Long Pegleg} unless activated. While active, the limb reduces your END by 1 temporarily, but suffers NO penalties whatsoever, and can do anything that a real leg can do (such as wiggle toes, tap dance, and C-walk) Burdinadin Prosthetics can sustain 15 damage before being destroyed.
 
-Crutch Any 10 
-cp 
-
-Allows you to move with $ \frac{1}{2} $ MOB, or normal MOB if two are used. 
-Each requires a free arm to use. May be used as a Large Club with +1 to 
-Range and all TNs. 5 damage breaks the crutch. 
-
-Burdinadin 
-Prosthetic Foot 
-
-Foot 10 
-gp 
-
-Functions like a normal foot. 
-
-Burdinadin 
-Prosthetic 
-Lower Leg/Foot 
-
-Foot/Lower 
-Leg 
-
-25 
-gp 
-
-Functions like a Pegleg unless activated. While active, the limb reduces 
-your END by 1 temporarily, but suffers NO penalties whatsoever, and 
-can do anything that a real leg can do (such as wiggle toes, tap dance, 
-and C-walk). Burdinadin Prosthetics can sustain 15 damage before 
-being destroyed. 
-
-Burdinadin 
-Prosthetic Full 
-Leg 
-
-Foot/Lower 
-Leg/Upper 
-Leg 
-
-50 
-gp 
-
-Functions like a Long Pegleg unless activated. While active, the limb 
-reduces your END by 1 temporarily, but suffers NO penalties 
-whatsoever, and can do anything that a real leg can do (such as wiggle 
-toes, tap dance, and C-walk) Burdinadin Prosthetics can sustain 15 
-damage before being destroyed. 
-
- 
-
-Burdinadin Prosthetics 
+\section{Burdinadin Prosthetics}
 Do these sound like weird cybernetics? 
 
- 
-
-That’s because they are. The Burdinadin in the Tattered Realms have access to technologies that even we 
-today have not quite matched because of their Natural Philosophy powers. Burdinadin limbs range from 
+That’s because they are. The Burdinadin in the Tattered Realms have access to technologies that even we today have not quite matched because of their Natural Philosophy powers. Burdinadin limbs range from 
 appearing smooth and realistic, to rugged and boxish. They are typically attached to sockets grafted to the 
+flesh of the wearer, so that they can be removed and replaced in the event of catastrophic damage, or for maintenance. 
 
-
-flesh of the wearer, so that they can be removed and replaced in the event of catastrophic damage, or for 
-maintenance. 
-
- 
-
-These limbs are powered by human body heat, and the sockets contain devices that essentially siphon 
-caloric energy from the body to burn and use to power the limb. Much as a regular limb does, but far, far 
-less efficiently. Wearers of these prosthetics are advised not to keep them active for long periods of time, 
-as the siphoning of energy causes fatigue and hunger, and can eventually lead to malnutrition, and even 
-death. 
-
- 
+These limbs are powered by human body heat, and the sockets contain devices that essentially siphon caloric energy from the body to burn and use to power the limb. Much as a regular limb does, but far, far less efficiently. Wearers of these prosthetics are advised not to keep them active for long periods of time, 
+as the siphoning of energy causes fatigue and hunger, and can eventually lead to malnutrition, and even death. 
 
 Any Burdinadin limb can have a weapon installed in it, to jut out from some angle and be used in 
 violence, at an additional cost of 5 gp plus the cost of the weapon. Obviously the weapon would have to 
@@ -5511,19 +5420,14 @@ of Short or lower Reach, or a Buckler. You may additionally mount a Blunderbuss,
 Melee Weapon of Medium Reach or shorter inside a full limb. This weapon must be Drawn like any other 
 weapon before it can be used, but counts as “readily available” for the purposes of Quickdraw. 
 
- 
-
-Optional Fatigue Rules 
+\subsubsection{Optional Fatigue Rules}
 If you are using Fatigue rules to track character Exhaustion in combat, then instead of having activated 
 Burdinadin Prosthetics reduce END, simply have them add 1 Fatigue per round per replaced limb. So a 
 character with a prosthetic hand and a full prosthetic leg would add 2 Fatigue per round, whereas one with 
 two prosthetic legs and a prosthetic forearm would add 3. 
 
- 
-
 There are also Enhancements that can be attached to limbs to increase their performance, also detailed in 
 the Burdinadin Armory. 
- 
 \chapter{Shields}\label{ch:Shields}
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
@@ -6439,7 +6343,6 @@ Burdinadin Pauldrons&10&9&8&Shoulder, Upper Arm& Bulletproof, Hard, Insulation 1
 Burdinadin Vambraces&8&7&6&Forearm& Hard, Insulation 1&1&5 sp\\
 \end{longtabu}
 
-\clearpage
 \subsection{Myrmidon Armor}
 Myrmidon armor is a marvel of modern Burdinadin engineering, and far outclasses any other form of 
 armor yet developed.
@@ -6516,7 +6419,7 @@ The interior of the suit auto-inflates when damaged significantly, acting as a t
 loss. Activating the Hemostatic Pressure System reduces your current Bleed from any wounds in the area 
 by 20 for the purposes of Blood Loss rolls. The Bleed is still there, and has to be treated separately, but
 will not contribute to your immediate Blood Loss.
-\vspace{-15pt}\subparagraph{Cost:} 5 gp
+\subparagraph{Cost:} 5 gp
 \vspace{-15pt}\subparagraph{Fitted To:} Any
 
 \paragraph{Hardened}---\quad[1]
@@ -6602,14 +6505,11 @@ design. This can be adequately represented by applying Burdinadin Craftsmanship,
 regular weapons. However, there are certain weapons which are totally unique to the Burdinadin, which will be listed below. 
 
 \subsection{Burdinadin Ukabilla}
-The Ukabilla is a steel tube in which a complex system exists to ignore the fuse of a chemical rocket and 
-shoot it out of one side towards the enemy. The Burdinadin developed these weapons to fill a gap in their 
-weapons capabilities between stationary artillery pieces and personal firearms. The Ukabilla can fire a 
-variety of rockets, each designed for a different purpose. 
+The Ukabilla is a steel tube in which a complex system exists to ignore the fuse of a chemical rocket and shoot it out of one side towards the enemy. The Burdinadin developed these weapons to fill a gap in their weapons capabilities between stationary artillery pieces and personal firearms. The Ukabilla can fire a variety of rockets, each designed for a different purpose.
 \begin{table}[hb]
 	\centering
 	\captionsetup{textformat=empty, labelformat=blank}
-	\caption{Ukabilla Firearm}
+	\caption{Ukabilla Firearm}\vspace{-20pt}
 	\label{tab:Ukabilla Firearm}
 	\begin{tabu} spread 0pt {XXXXXXXXX}
 \rowfont[c]{}Weapon Name &Weapon Type &Range &Missile TN &Damage &Load &Ammunition &Wt &Cost\\\toprule
@@ -6618,6 +6518,7 @@ Ukabilla &Firearm &25 &8 &See Round &50 &See Below &10 &100 sp\\
 \end{table}
 
 \begin{table}[hb]
+	\centering
 	\caption{Ukabilla Rocket Types}
 	\label{tab:Ukabilla Rocket Types}
 	\begin{tabu} spread 0pt {XXXX}
@@ -6640,19 +6541,30 @@ liquid at the target, and sets it ablaze after it has left the hose. The momentu
 prevents it from “following” the stream back to the weapon and potentially causing an explosion, and the 
 sophisticated pressure mechanism makes sure that that momentum is maintained until the weapon is out 
 of fuel. 
+
 The Lanzalamas is a unique weapon in that it does not inflict damage through force or impact, but rather 
 by setting the target on fire. When using a Lanzalamas, do not inflict damage for Bonus Successes. Any 
 target hit using the Lanzalamas is instead set on fire. The fire damage is Full Body (in certain situations 
 the GM may decide otherwise) and is 5/TN5. The flame burns for 10 rounds, and even water will not 
 extinguish it. Sand, mud, and clay can extinguish it. 
+
 A Lanzalamas cannot be reloaded normally--the tank of fuel that accompanies must be refilled using 
 special tools. It can be fired 10 separate times (Multi-Shots and similar things only count as a single 
 firing) before it must be refilled. 
+
 Taking Cover does not reduce the effect of this attack in any way, unless the cover is some sort of solid 
 barrier with no permeation that would actually halt a jet of burning fuel. 
 
-Weapon Name Weapon Type Range Missile TN Damage Load Ammunition Wt Cost 
-Lanzalamas Firearm 10 5 See Description - See Description 15 300 sp 
+\begin{table}[!hb]
+	\centering
+	\captionsetup{textformat=empty, labelformat=blank}
+	\caption{Lanzalamas Firearm}\vspace{-20pt}
+	\label{tab:Lanzalamas Firearm}
+	\begin{tabu} spread 0pt {*{9}{X[-1]}}
+		\rowfont[c]{}Weapon Name &Weapon Type &Range &Missile TN &Damage &Load &Ammunition &Wt &Cost\\\toprule
+Lanzalamas &Firearm &10 &5 &See Description &- &See Description &15 &300 sp\\
+	\end{tabu}
+\end{table}
 
 \subsection{Burdinadin Weapon Enhancements}
 \paragraph{REQUIRED: Burdinadin Craftsmanship}---\quad [+150\%]
@@ -6957,13 +6869,13 @@ House slave &A house slave must be made of sharper, gentler stuff than a worker.
 Educated slave &A ‘marsupial attendant,’ always carrying around his notes in a pouch on his apron. &10 gp\\
 Pit fighter/gladiator &Why is it easier to train a vicious man than a vicious dog? &20 gp\\
 	\\
-Exotic (feature) &Strange, but alluring features and language. &$ \text{Cost} \times 2 $\\
+Exotic (feature) &Strange, but alluring features and language. &Cost $\times\ 2 $\\
 Inferior race (feature) &Goblins, ex-bandits. &$ \dfrac{\text{Cost}}{2} $\\
-Exotic race (feature) &Non-Human race (Burdinadin, Zell, etc). &Cost $ \times 3$\\
-Especially loyal (feature) &Conditioned to be loyal to the death. &Cost $ \times 1.5 $\\
-Especially beautiful (feature) &Beauty isn’t just about features, it’s about habit, too. &Cost $ \times 2 $\\
-Especially intelligent (feature) &Any idiot can learn to scribble on a tablet. True intelligence is rare. &Cost $ \times 2 $\\
-Especially strong (feature) &Ever move a piano up a staircase? Don’t worry, you’ll never have to. &Cost $ \times 2.5 $\\
+Exotic race (feature) &Non-Human race (Burdinadin, Zell, etc). &Cost $ \times\ 3$\\
+Especially loyal (feature) &Conditioned to be loyal to the death. &Cost $ \times\ 1.5 $\\
+Especially beautiful (feature) &Beauty isn’t just about features, it’s about habit, too. &Cost $ \times\ 2 $\\
+Especially intelligent (feature) &Any idiot can learn to scribble on a tablet. True intelligence is rare. &Cost $ \times\ 2 $\\
+Especially strong (feature) &Ever move a piano up a staircase? Don’t worry, you’ll never have to. &Cost $ \times\ 2.5 $\\
 	\end{tabu}
 \end{table}
 \chapter{Proficiencies}\label{ch:proficiencies} 
@@ -7293,8 +7205,8 @@ Pugilism has access to a great number of Superior Maneuvers.
 \subsubsection{Core Maneuvers}
 \vspace{-5pt}\begin{itemize}
 	[itemsep=0.5mm]
-	\item Upgrade an Unarmed Maneuver to Superior (choose three: Kick, Straight Punch, Hook Punch, Elbow, Knee, Shoulder Charge)
-	\item One-Two Punch
+	\item Upgrade an Unarmed Maneuver to Superior (choose three: \nameref{man:Kick}, \nameref{man:Straight Punch}, \nameref{man:Hook Punch}, \nameref{man:Elbow}, \nameref{man:Knee}, \nameref{man:Shoulder Charge})
+	\item \nameref{man:One-Two Punch}
 \end{itemize}
 
 \subsubsection{Tier 1 Maneuvers}
@@ -9048,6 +8960,7 @@ reduced by Opponent BS, and resolves at full BS. The Maneuver still reduces Oppo
 \section{Mobility Maneuvers}
 \subsection{General Mobility Maneuvers}
 \paragraph{\large\label{man:Obstruction}Obstruction}---\quad{\large[????????]}
+
 XXXXXXXXXXXXXXXXXXXXXX 
 
 \paragraph{\large\label{man:Outmaneuver}Outmaneuver}---\quad{\large[X+2+Encumbrance Penalty]}
@@ -10974,11 +10887,9 @@ as some of it may have already spread beyond the limb.
 
 \section{Target Zones and Hit Locations}
 When a character is hit by an attack, there are two key aspects of the hit that need to be noted: the Target 
-Zone (which is the general area of the body that the attack hits) and the Hit Location (which is the precise 
-point of the body that is hit). 
+Zone (which is the general area of the body that the attack hits) and the Hit Location (which is the precise point of the body that is hit).
 
-Each Target Zone contains three to four Hit Locations, which are listed below. Swinging and Thrusting 
-attacks have different Target Zones available to them.  
+Each Target Zone contains three to four Hit Locations, which are listed below. Swinging and Thrusting attacks have different Target Zones available to them.
 
 If an attack hits, roll 1d10 to decide the Hit Location that the attack actually lands on, and then calculate 
 damage based on the following formula: 
@@ -11177,7 +11088,7 @@ Level 4& Total &Total &8
 		Difficult \nameref{par:Surgery vs}\nameref{bane:Brain Damage},\newline
 		\nameref{par:Internal Bleeding}.
 	&Severe skull fracture, brain damage, immediate unconsciousness.\\
-Level 5& - &- &- &\nameref{par:Dead} &Blade cleaves through top of skull down to the teeth. Instant death.\\
+\rowcolor{red!30} Level 5& - &- &- &\nameref{par:Dead} &Blade cleaves through top of skull down to the teeth. Instant death.\\
 %	\end{tabu}
 %\end{table}
 %	\marginpar{
@@ -11201,10 +11112,10 @@ Level 2 &1 &6 &3 &- &Deeper rake across scalp, lots of blood.\\
 Level 3 &2 &10 &5 &\nameref{par:KO vs}3 RS &Skull cracked, possible unconsciousness. \\
 Level 4 &Total &Total &20
 	&\nameref{par:Auto-KO},\newline
-	Miracle~\nameref{par:Surgery vs}\nameref{bane:Brain Damage},\newline
-	\nameref{par:Internal Bleeding}
-&Skull penetrated, instantly unconscious.\\
-Level 5 &- &- &- &\nameref{par:Dead} &Point penetrates straight through skull into brain, instant death.\\
+		Miracle~\nameref{par:Surgery vs}\nameref{bane:Brain Damage},\newline
+		\nameref{par:Internal Bleeding}
+	&Skull penetrated, instantly unconscious.\\
+\rowcolor{red!30} Level 5 &- &- &- &\nameref{par:Dead} &Point penetrates straight through skull into brain, instant death.\\
 %	\end{tabu}
 %\end{table}
 %	\marginpar{
@@ -11230,7 +11141,7 @@ Level 4& Total &Total &6
 	Difficult \nameref{par:Surgery vs}~\nameref{bane:Brain Damage},\newline
 	\nameref{par:Internal Bleeding}.
 &Skull shatters, immediately unconscious.\\
-Level 5& - &- &- &\nameref{par:Dead} &Skull crushed. Brain and bone everywhere. Death. \\
+\rowcolor{red!30} Level 5& - &- &- &\nameref{par:Dead} &Skull crushed. Brain and bone everywhere. Death. \\
 %	\end{tabu}
 %\end{table}
 %	\marginpar{
@@ -11280,7 +11191,7 @@ Level 4& 6& 20& 18
 	Miracle \nameref{par:Surgery vs}~Facial Deformity,\newline
 	\nameref{par:Infection Risk} +2
 &Face bisected, extreme damage to jaw, teeth, and skull. May lose eye (1-5) or nose (6-10), serious medical complications either way.\\
-Level 5& - &- &- &\nameref{par:Dead}& Head cloven through to the teeth, instant death.\\
+\rowcolor{red!30} Level 5& - &- &- &\nameref{par:Dead}& Head cloven through to the teeth, instant death.\\
 %	\end{tabu}
 %\end{table}
 
@@ -11299,7 +11210,7 @@ Level 4& 5& 15& 10
 	Miracle~\nameref{par:Surgery vs}\nameref{bane:One-Eyed}~OR, \newline
 	+5 to wound’s Bleed.
 &Point penetrates face, either through mouth (1-3) eye (4-6) or facial bones (7-10.) Severe injury, lots of bleeding, extremely painful.\\ %CHECK THIS WOUND OUT IF WE WANNA SPREAD THE d10 LOCATION
-Level 5& - &- &- &Dead& Head impaled, instant death.\\
+\rowcolor{red!30} Level 5& - &- &- &\nameref{par:Dead}& Head impaled, instant death.\\
 %	\end{tabu}
 %\end{table}
 
@@ -11313,7 +11224,7 @@ Level 1 &2 &4 &0 &- &Blow to the jaw, head rolls with it well. \\
 Level 2 &3 &5 &2 &- &Firmer blow, blood in mouth, possible lost tooth. Youch. \\
 Level 3 &5 &8 &3 &\nameref{par:KO vs}3 RS &Serious damage to jaw, fracture maybe, head jerked hard, may lose consciousness and several teeth.\\
 Level 4 &7 &12&7 &\nameref{par:KO vs}5 RS &\nameref{bane:Mute} as the Bane until healed Broken jaw, almost certain unconsciousness.\\
-Level 5 &- &- &- &\nameref{bane:Dead} &Jaw smashed, skull shattered, neck broken. Instant death.\\
+\rowcolor{red!30}Level 5 &- &- &- &\nameref{bane:Dead} &Jaw smashed, skull shattered, neck broken. Instant death.\\
 %	\end{tabu}
 %\end{table}
 
@@ -11321,7 +11232,8 @@ Level 5 &- &- &- &\nameref{bane:Dead} &Jaw smashed, skull shattered, neck broken
 %	\caption{Face - Unarmed}\vspace{-3pt}
 %	\label{wound:Face - Unarmed}
 %	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[1.5]X[5]}
-~
+\\
+&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed~~~~}&\\\toprule
 Level 1 &1 &0 &0& - &Grazing blow.\\
 Level 2 &2 &0 &0& - &Firmer blow, might leave a bruise. \\
 Level 3 &3 &2 &0 &\nameref{par:KO vs}2 RS &Hard hit, swelling!\\
@@ -11344,7 +11256,7 @@ Level 4& 4& 18& 12
 	&\nameref{par:KO vs}4 RS,\newline
 		Difficult~\nameref{par:Surgery vs}\nameref{bane:Facial Deformity}.
 	&Blade cuts cheek from corner of mouth to behind the ear, lots of teeth lost, cheek muscle damage.\\
-Level 5& - &- &- &\nameref{par:Dead}& Blade either cleaves through entire side of head, decapitating above the jaw, or most of the way through. Death is mercifully instantaneous.\\
+\rowcolor{red!30} Level 5& - &- &- &\nameref{par:Dead}& Blade either cleaves through entire side of head, decapitating above the jaw, or most of the way through. Death is mercifully instantaneous.\\
 %	\end{tabu}
 %\end{table}
 
@@ -11362,7 +11274,7 @@ Level 4& 3& 14& 14
 	&\nameref{par:KO vs}5 RS,\newline
 	Difficult~\nameref{par:Surgery vs}\nameref{bane:Mute}
 &Jaw shattered, many teeth destroyed, may lose tongue.\\
-Level 5& - &- &- &\nameref{par:Dead}& Point slams through brainstem. Instant death.\\
+\rowcolor{red!30} Level 5& - &- &- &\nameref{par:Dead}& Point slams through brainstem. Instant death.\\
 %	\end{tabu}
 %\end{table}
 
@@ -11379,7 +11291,7 @@ Level 4& 8& 10&4
 	&\nameref{par:KO vs}5 RS,\newline
 		Routine~\nameref{par:Surgery vs}~\nameref{bane:Facial Deformity}.
 	&Broken jaw.\\
-Level 5& - &- &- &\nameref{par:Dead}& Neck Broken. Instant death.\\
+\rowcolor{red!30} Level 5& - &- &- &\nameref{par:Dead}& Neck Broken. Instant death.\\
 %	\end{tabu}
 %\end{table}
 
@@ -11408,7 +11320,7 @@ Level 1& 1& 4& 4& - &Cut on the neck, painful but not deep.\\
 Level 2& 2& 8& 6& - &Serious cut to the side of neck, passes dangerously close to windpipe.\\
 Level 3& 3& 12& 12& Difficult~\nameref{par:Surgery vs}~\nameref{bane:Mute} &Slashed throat, possible vocal chord damage.\\
 Level 4& 5& 14& 20& Miracle~\nameref{par:Surgery vs}~\nameref{bane:Mute}&Throat and jugular cut, spray of blood, needs a surgeon immediately.\\
-Level 5& - &- &- &\nameref{par:Dead}& Decapitation. Instant death.\\
+\rowcolor{red!30} Level 5& - &- &- &\nameref{par:Dead}& Decapitation. Instant death.\\
 %	\end{tabu}
 %\end{table}
 
@@ -11423,7 +11335,7 @@ Level 1& 1& 5& 6& - &Puncture wound in neck, not good!\\
 Level 2& 2& 5& 10& - &Deeper puncture wound, neck’s major artery!\\
 Level 3& 3& 8& 20& Difficult~\nameref{par:Surgery vs}~\nameref{bane:Mute} &Punctured carotid or jugular, extreme bleeding! Possible vocal chord damage.\\
 Level 4& 5& 12& 25& Miracle~\nameref{par:Surgery vs}~\nameref{bane:Mute} &Severed carotid or jugular, cracked vertebrae, vocal chord damage!\\
-Level 5& - &- &- &\nameref{par:Dead}& Throat impaled, neck possibly broken. Exsanguination is almost instant. Death.\\
+\rowcolor{red!30} Level 5& - &- &- &\nameref{par:Dead}& Throat impaled, neck possibly broken. Exsanguination is almost instant. Death.\\
 %	\end{tabu}
 %\end{table}
 
@@ -11434,14 +11346,13 @@ Level 5& - &- &- &\nameref{par:Dead}& Throat impaled, neck possibly broken. Exsa
 	\\ 
 &Stun&Pain&Bleed&\multicolumn{1}{r}{\large Bludgeoning}&\\\toprule
 Level 1& 2& 2& 0& - &Painful blow to neck, bruised flesh. \\
-Level 2& 4& 3& 0& - &Heavy blow, momentary choking, significantly \\
-stunned. 
+Level 2& 4& 3& 0& - &Heavy blow, momentary choking, significantly stunned.\\
 Level 3& 6& 6& 3& - &Severely bruised windpipe, vocal cords damaged. \\
 Level 4 &8 &Total &7 
 	&\nameref{par:KO vs}3 RS, \newline
 		Hard~\nameref{par:Surgery vs}~\nameref{bane:Mute}.
 	&Severe damage to windpipe, brachial nerve damage, chipped spinal cord.\\
-Level 5& - &- &- &\nameref{par:Dead}& Snapped neck, instantaneous death. \\
+\rowcolor{red!30} Level 5& - &- &- &\nameref{par:Dead}& Snapped neck, instantaneous death. \\
 %	\end{tabu}
 %\end{table}
 
@@ -11476,7 +11387,7 @@ Level 4& 2& 14& 8
 	&\nameref{par:Autodrop}, \newline
 		Difficult~\nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Limb}.
 	&Broken collarbone and cracked ribs, shoulder severely injured\\
-Level 5& - &- &- &\nameref{par:Dead}& Cloven from shoulder to hip. Near or near-instant death.\\
+\rowcolor{red!30} Level 5& - &- &- &\nameref{par:Dead}& Cloven from shoulder to hip. Near or near-instant death.\\
 %	\end{tabu}
 %\end{table}
 %\begin{table}[hb] %Shoulder - Piercing
@@ -11547,7 +11458,7 @@ Level 1& 0& 4& 0& - &Shallow cut across chest, ribs do their job, no serious eff
 Level 2& 1& 5& 2& - &Deeper cut, raking ribs.\\
 Level 3& 2& 10& 5& - &Cracked ribs, laceration within ribcage, no organ damage but very painful.\\
 Level 4& 3& 15& 20& - &Ribs broken or cloven, bleeding in chest cavity.\\
-Level 5& - &- &- &\nameref{par:Dead}& Blade cleaves through ribs and into center of chest cavity. Lungs, heart, major blood vessels cut, near-instant death.\\
+\rowcolor{red!30} Level 5& - &- &- &\nameref{par:Dead}& Blade cleaves through ribs and into center of chest cavity. Lungs, heart, major blood vessels cut, near-instant death.\\
 %	\end{tabu}
 %\end{table}
 
@@ -11562,7 +11473,7 @@ Level 1& 0& 3& 2& - &Attack rakes across ribs.\\
 Level 2& 1& 4& 4& - &Minor penetration, point halted by ribs.\\
 Level 3& 3& 7& 6& - &Penetration into chest, no organ damage but significant bleeding.\\
 Level 4& 4& 14& 25& Difficult~\nameref{par:Surgery vs}Punctured Lung &Deep penetration into chest cavity! Extreme bleeding and organ damage!\\ %PUNCTURED LUNG?
-Level 5& - &- &- &\nameref{par:Dead}& Heart or spine pierced, death is instantaneous.\\
+\rowcolor{red!30} Level 5& - &- &- &\nameref{par:Dead}& Heart or spine pierced, death is instantaneous.\\
 %	\end{tabu}
 %\end{table}
 
@@ -11608,7 +11519,7 @@ Level 4& 3& 20& 20
 	&\nameref{par:KO vs}5 RS, \newline
 		\nameref{par:Infection Risk} +5.
 	&Disembowelment, extreme damage and survival is close to unthinkable.\\
-Level 5& - &- &- &\nameref{par:Dead}& Individual is cloven nearly or totally in half. Death is instantaneous.\\
+\rowcolor{red!30} Level 5& - &- &- &\nameref{par:Dead}& Individual is cloven nearly or totally in half. Death is instantaneous.\\
 %	\end{tabu}
 %\end{table}
 
@@ -11669,7 +11580,7 @@ Level 1& 1& 5& 1& - &Cut straight up across navel. Not deep, but damn close.\\
 Level 2& 3& 8& 4& - &Deeper cut, significant flesh wound, some muscle damage. Not pretty.\\
 Level 3& 4& 10& 10& - &Serious cut belly, muscle damage, lots of bleeding, near organ damage.\\
 Level 4& 5& 15& 15& \nameref{par:Infection Risk} +4 &Cut belly, intestinal and organ damage. Get a doctor. Get one fast.\\
-Level 5& - &- &- &\nameref{par:Dead}& Blade cleaves into belly, through organs and sternum. Instant death.\\
+\rowcolor{red!30} Level 5& - &- &- &\nameref{par:Dead}& Blade cleaves into belly, through organs and sternum. Instant death.\\
 %	\end{tabu}
 %\end{table}
 
@@ -11684,7 +11595,7 @@ Level 1& 1& 4& 3& - &Shallow stab to side of midriff. No real damage.\\
 Level 2& 3& 6& 6& - &Deeper stab, muscle damage and lots of bleeding, but mercifully no organs hit.\\
 Level 3& 5& 12& 10& \nameref{par:Infection Risk} +4 &Stabbed in the gut, organ and intestine damage. This is serious.\\
 Level 4& 7& 14& 20& \nameref{par:Infection Risk} +4 &Severe internal damage. If this happened in a hospital today, your odds would be poor.\\
-Level 5& - &- &- &\nameref{par:Dead}& Point slams straight through guts to sever central artery of trunk. Exsanguination occurs within seconds, unconsciousness is instant.\\
+\rowcolor{red!30} Level 5& - &- &- &\nameref{par:Dead}& Point slams straight through guts to sever central artery of trunk. Exsanguination occurs within seconds, unconsciousness is instant.\\
 %	\end{tabu}
 %\end{table}
 
@@ -11803,7 +11714,7 @@ Level 4& Total& Total& 20
 	&\nameref{par:KO vs}5 RS, \newline
 		\hyperref[bane:Barren/Sterility]{Sterility}.
 	&Blade cleaves deep, artery cut, excessive damage to reproductive organs within and without.\\
-Level 5& - &- &- &\nameref{par:Dead}& Blade cleaves pelvis in twain, coming to rest deep in torso. Mercifully near-instant death.\\
+\rowcolor{red!30} Level 5& - &- &- &\nameref{par:Dead}& Blade cleaves pelvis in twain, coming to rest deep in torso. Mercifully near-instant death.\\
 %	\end{tabu}
 %\end{table}
 
@@ -11820,7 +11731,7 @@ Level 4& Total& Total& 25
 	&\nameref{par:KO vs}5 RS, \newline
 		\hyperref[bane:Barren/Sterility]{Sterility}.
 	&Artery severed, reproductive organs damaged beyond repair, unconsciousness likely.\\
-Level 5& - &- &- &\nameref{par:Dead}& Point slams through groin into abdomen, severing major artery and cracking pelvis. Death from shock and exsanguination follow instantly.\\
+\rowcolor{red!30} Level 5& - &- &- &\nameref{par:Dead}& Point slams through groin into abdomen, severing major artery and cracking pelvis. Death from shock and exsanguination follow instantly.\\
 %	\end{tabu}
 %\end{table}
 
@@ -12274,7 +12185,7 @@ Level 5& 3& 5& 0& \nameref{par:Autodrop} &Bruised bone and injured tendons. Arm 
 		Level 1& 1& 3& 1& - &Shallow cut on the forearm. Will be fine without treatment.\\
 		Level 2& 2& 6& 3& - &Deep cut, painful but not debilitating.\\
 		Level 3& 3& 10& 6& \nameref{par:Disarm vs}4 RS &Serious cut, muscle and tendon damage, possible fracture. May drop held item.\\
-		Level 4& 4& 15& 8& \nameref{Autodrop}, \newline
+		Level 4& 4& 15& 8& \nameref{par:Autodrop}, \newline
 		Difficult \nameref{par:Surgery vs}\hyperref[bane:Crippled Limb/Appendage]{Crippled Arm} &Broken bones, serious muscle damage, automatically drop held item, arm may not recover.\\
 		Level 5& 5& 20& 20& \nameref{par:Autodrop}, \newline
 	\nameref{par:Infection Risk} +3, \newline
@@ -12414,7 +12325,7 @@ Level 1& 0& 0& 0& - &Stings for a second.\\
 Level 2& 0& 0& 0& - &Trivial bruising.\\
 Level 3& 2& 1& 0& - &Bruised hand.\\
 Level 4& 5& 5& 0& \nameref{par:Autodrop} &Fractured bones in hand.\\
-Level 5& 10& 10& 0& \nameref{oar:Autodrop} &Broken fist.\\
+Level 5& 10& 10& 0& \nameref{par:Autodrop} &Broken fist.\\
 	\end{tabu}
 \end{table}
 \clearpage
@@ -12429,7 +12340,7 @@ Level 5& 10& 10& 0& \nameref{oar:Autodrop} &Broken fist.\\
 		Level 2& 4& 4& 4& - &Long cuts, heavy bleeding.\\
 		Level 3& 7& 9& 6& - &Deep gashes, wounds noticeable. Scars that will never heal.\\
 		Level 4& 10& 15& 8& \nameref{par:Stability vs}3 RS &Spinal fracture, shoulder blades cracked, no organ damage, but extreme pain.\\
-		Level 5& - &- &- &\nameref{par:Dead}& Shoulders cleaved, spine severed. Spine destroyed. While death is not instantaneous, it will come within 24 hours.\\
+\rowcolor{red!30} 		Level 5& - &- &- &\nameref{par:Dead}& Shoulders cleaved, spine severed. Spine destroyed. While death is not instantaneous, it will come within 24 hours.\\
 	%\end{tabu}
 %\end{table}
 
@@ -12443,7 +12354,7 @@ Level 5& 10& 10& 0& \nameref{oar:Autodrop} &Broken fist.\\
 		Level 2& 3& 4& 5& - &Minor penetration, glances off shoulder blade. \\
 		Level 3& 5& 9& 8& - &Penetrates through flesh, halted deep in shoulder blade. \\
 		Level 4& 10& 13& 20& Miracle \nameref{par:Surgery vs}Punctured Lung &Point hits home, piercing deep and causing significant bleeding. Possible organ damage.\\ %PUNCTURED LUNG?
-		Level 5& - &- &- &\nameref{par:Dead}& Spine severed or heart pierced, it’s all bad. Spine destroyed. While death is not instantaneous,it will come within 24 hours.\\
+\rowcolor{red!30} 		Level 5& - &- &- &\nameref{par:Dead}& Spine severed or heart pierced, it’s all bad. Spine destroyed. While death is not instantaneous,it will come within 24 hours.\\
 	%\end{tabu}
 %\end{table}
 
@@ -12458,9 +12369,9 @@ Level 2& 7& 3& 1& - &Heavy bruising, feels like something chipped.\\
 Level 3& 10& 4& 2& \nameref{par:Stability vs}1 RS &Severe bruising, noticeable bleeding.\\
 Level 4& 13& 5& 3
 	&\nameref{par:Auto-Prone}, \newline
-		[Paralyzed (Not in Beta)]
+		Paralyzed (Not in Beta)
 	&Something definitely made a cracking sound. Spine damaged, may never walk again.\\
-Level 5& - &- &- &Dead& Spine completely destroyed, severe rupturing of internal organs, instant death.\\
+\rowcolor{red!30} Level 5& - &- &- &\nameref{par:Dead}& Spine completely destroyed, severe rupturing of internal organs, instant death.\\
 	%\end{tabu}
 %\end{table}
 
@@ -12492,7 +12403,7 @@ Level 5& - &- &- &Dead& Spine completely destroyed, severe rupturing of internal
 		&\nameref{par:Auto-Prone}, \newline
 			Paralyzed (Not in Beta)
 		&Blow cracks spine, and cleaves muscle and flesh. Possible paralysis.\\
-		Level 5& - &- &- &\nameref{par:Dead} &Spine severed, severe intestinal damage, central artery in trunk severed. Near-instant death.\\
+\rowcolor{red!30} Level 5& - &- &- &\nameref{par:Dead} &Spine severed, severe intestinal damage, central artery in trunk severed. Near-instant death.\\
 	%\end{tabu}
 %\end{table}
 
@@ -12512,7 +12423,7 @@ Level 4& 14& 12& 20
 	&\nameref{par:Auto-Prone}, \newline
 		\nameref{par:Infection Risk} +3
 	&Deep penetration, kidney, liver, or intestinal damage, possible spinal damage.\\
-Level 5& - &- &- &\nameref{par:Dead} &Total impalement, main artery of the trunk severed, major organ damage, instant death.\\
+\rowcolor{red!30} Level 5& - &- &- &\nameref{par:Dead} &Total impalement, main artery of the trunk severed, major organ damage, instant death.\\
 	%\end{tabu}
 %\end{table}
 
@@ -12533,7 +12444,7 @@ Level 4& 15& 7& 3
 		Paralyzed (Not in Beta), \newline
 		\nameref{par:Internal Bleeding}.
 	&Spine damaged, footing lost instantly.\\
-Level 5& - &- &- &\nameref{par:Dead} &Spine broken just above tailbone, intestinal rupture, unconsciousness instant, death follows shortly. \\
+\rowcolor{red!30} Level 5& - &- &- &\nameref{par:Dead} &Spine broken just above tailbone, intestinal rupture, unconsciousness instant, death follows shortly. \\
 %	\end{tabu}
 %\end{table}
 
@@ -12541,7 +12452,7 @@ Level 5& - &- &- &\nameref{par:Dead} &Spine broken just above tailbone, intestin
 %	\caption{Lower Back - Unarmed}\vspace{-3pt}
 %	\label{wound:Lower Back - Unarmed}
 %	\begin{tabu} to \linewidth {X[c] *{3}{X[-2,c]} X[3]X[5]}
-	\\ 
+	\\
 &Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed~~~~}&\\\toprule
 Level 1 &3 &1 &0 &- &Blow to the kidney. Painful.\\
 Level 2 &5 &2 &0 &- &Severe blow to the kidney.\\
