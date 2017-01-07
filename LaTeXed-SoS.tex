@@ -5573,7 +5573,7 @@ The cost of the shield.
 \begin{longtabu} to \linewidth {X[2,l] X[c] *{3}{X[-1,c]} X[3] *{2}{X[-1,c]}}
 	\caption{Shields}
 	\label{tab:Shields}\\
-Shield Name								&Bash TN&Block TN&AV&Dur.&Coverage& Wt.& Cost\\
+Shield Name								&Bash TN&Block TN&AV&Dur.&Coverage& Wt.& Cost\\\toprule
 Buckler									&6(+0b)	&7	&8	&15	&Hand*, Forearm*&0&5 sp\\
 Oval Shield 							&7(+1b)	&7	&6	&10	&Hand*, Forearm* Elbow, Upper Arm, Shoulders, Neck, Chest, Sides, Belly, Hips, Groin, Thighs&1&2 sp\\
 Wooden Targe 							&7(+0b)	&7	&6	&10	&Hand, Forearm, Chest&0&10 cp\\
@@ -6133,7 +6133,7 @@ Leather Lamellar Vest& 3& 4& 3& Full Torso &-& 0& 3 sp\\
 Leather Vest& 3& 2& 2& Full Torso &-& 0& 1 sp\\
 Hardened Leather Breastplate& 4& 3& 3& Belly, Chest, Side &-& 0& 5 sp\\
 Hardened Leather Cuirass& 4& 3& 3& Belly, Chest, Lower Back, Side, Upper Back &-& 1& 8 sp\\
-Shagreen Greatcoat& 4& 3& 3& Full Torso, Full Arms, Groin, Hip, Knees, Shins, Thighs &-& 0& 1 gp\\\bottomrule
+Shagreen Greatcoat& 4& 3& 3& Full Torso, Full Arms, Groin, Hip, Knees, Shins, Thighs &-& 0& 1 gp\\
 \end{longtabu}
 
 \subsection{Arm Armor}
@@ -6169,7 +6169,7 @@ Anima Vambrace& 7& 7& 7& Forearm& Hard& 2& 3 gp\\
 Laminar Forearm  Guard& 8& 7& 5& Forearm$\phi$& Hard& 2& 3 sp\\
 Laminar Elbow Joint& 8& 7& 5& Elbow$\phi$& Hard& 2& 3 sp\\
 Laminar Pauldrons& 8& 7& 5& Shoulder$\phi$, Upper Arm$\phi$& Hard& 3& 10 sp\\
-Laminar Rerebrace& 8& 7& 5& Upper Arm$\phi$& Hard& 1& 3 sp\\\bottomrule
+Laminar Rerebrace& 8& 7& 5& Upper Arm$\phi$& Hard& 1& 3 sp\\
 \end{longtabu}
 
 \begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
@@ -6693,265 +6693,279 @@ Fitted To: Ranged Weapon
 I feel there needs to be an introduction of sorts here. Why are we buying other items?
 
 \section{Everyday Items}
-Table XX Animals 
-Item Notes Cost 
-Chicken Annoying 5 cp 
-Courser (battle horse) Fast 60 sp 
-Cow Mercifully ignorant of the ways of the world 10 sp 
-Donkey Plotting something 5 sp 
-Friendly doge Much fur 1 cp 
-Goat Will eat anything 8 cp 
-Destrier (heavy warhorse) Thirsts for blood 100 sp 
-Hunting falcon Ruthless towards rabbits 20 sp 
-Ox Stubborn 12 sp 
-Palfrey (riding horse) Noble 40 sp 
-Pig Disgusting 3 sp 
+\begin{table}[hb]
+	\centering
+	\caption{Animals}
+	\label{tab:Animals}
+	\begin{tabu} spread 0pt {*{3}{X[-1]}}
+		Item& Notes &Cost\\\toprule
+Chicken &Annoying &5 c\\
+Courser (battle horse) &Fast &60 sp\\
+Cow &Mercifully ignorant of the ways of the world &10 sp\\
+Donkey &Plotting something &5 sp\\
+Friendly doge &Much fur &1 cp\\
+Goat &Will eat anything &8 cp\\
+Destrier (heavy warhorse) &Thirsts for blood &100 sp\\
+Hunting falcon &Ruthless towards rabbits &20 sp\\
+Ox &Stubborn &12 sp\\
+Palfrey (riding horse) &Noble &40 sp\\
+Pig &Disgusting &3 sp\\
+Sheep &Fluffy &6 sp\\
+Tiger &Fearfully symmetrical, not at all tame &15 gp\\
+Workhorse &Feathering optional &15 sp\\
+	\end{tabu}
+\end{table}
+
+\begin{table}[hb]
+	\centering
+	\caption{Clothing}
+	\label{tab:Clothing}
+	\begin{tabu} spread 0pt {*{3}{X[-1]}}
+		Item &Notes &Cost\\\toprule
+Work clothes &Full outfit &1 cp\\
+Traveling cloak &Single item &1 cp\\
+Urban attire &Full outfit &1 sp\\
+Wealthy garment &Full outfit &1 gp\\
+Noble dress &Full outfit &5 gp\\
+Court attire &Full outfit &10 gp\\
+Finery fit for a king &Full outfit &20-50 gp\\
+Fine horse caparison &Single item &10 gp\\
+Obscenely decadent horse ornamentation &Single item &20-50 gp\\
+	\end{tabu}
+\end{table}
+
+\begin{table}[hb]
+	\centering
+	\caption{Drink}
+	\label{tab:Drink}
+	\begin{tabu} spread 0pt {*{3}{X[-1]}}
+		Item &Unit &Cost\\\toprule
+Ale/Beer &Flagon &1 cp per 10\\
+Ale/Beer &Gallon &1-2 cp\\
+Brandy &Flask &2 cp\\
+Cider &Gallon &1 cp\\
+Mead &Gallon &2 cp\\
+Rakia &Flask &1 cp\\
+Waterskin &Skin (1 Gallon) &1 cp (water not included)\\
+Wine &Flagon &1 cp per 8\\
+Wine &Gallon &2-4 cp\\
+	\end{tabu}
+\end{table}
+
+\begin{table}[hb]
+	\centering
+	\caption{Food}
+	\label{tab:Food}
+	\begin{tabu} spread 0pt {*{3}{X[-1]}}
+		Item &Unit &Cost\\\toprule
+Traveling bread &Brick &1 cp/10\\
+Black bread &Loaf &1 cp\\
+Brown bread &Loaf &5 cp\\
+Fine white bread &Loaf &10 cp\\
+Cheap meat (beef, pork, chicken) &Pound &3 cp\\
+Cheese &Pound &1 cp\\
+Common fish &Pound &1 cp\\
+Expensive meat (swan, dormouse, giraffe, bork) &Pound &1 sp\\
+Fruit &Pound &1 cp\\
+Lavish banquet &Per 10 people &5 sp\\
+Meal (poor) &Per 1 person &1 cp\\
+Meal (good) &Per 1 person &4 cp\\
+Meal (fine) &Per 1 person &1 sp\\
+Meal (exquisite) &Per 1 person &1 gp\\
+Vegetables &Pound &1 cp\\
+Rare fish &Pound &6 cp\\
+Week's rations &Pound &4 cp\\
+Cheap grain (kesh, sorghum, rye) &Pound &1 cp\\
+Regular grain (oats, barley, hops) &Pound &3 cp\\
+Fine grain (wheat) &Pound &5 cp\\
+	\end{tabu}
+\end{table}
+
+\begin{table}[hb]
+	\centering
+	\caption{Torches and Illumination}
+	\label{tab:Torches and Illumination}
+	\begin{tabu} spread 0pt {*{3}{X[-1]}}
+		Item &Unit &Cost\\\toprule
+Candle (low quality) &5 items &2 cp\\
+Candle (high quality) &5 items &7 cp\\
+Torch &10 items &3 cp\\
+Lamp &Per item &5 cp\\
+Candle lantern &Per item &9 cp\\
+Oil lantern &Per item &1 sp\\
+Oil &Pint &1 sp\\
+	\end{tabu}
+\end{table}
+
+\begin{table}[hb]
+	\centering
+	\caption{Medical and Surgical Items}
+	\label{tab:Medical and Surgical Items}
+	\begin{tabu} spread 0pt {*{3}{X[-1]}}
+		Item &Inclusions &Cost\\\toprule
+Surgeon’s tools &Needles, blades, splints, tongs, pliers, tweezers, mirrors, prongs, clamps &15 sp\\
+Surgeon’s kit (5 uses) &Bandages, plasters, ointments, oils, select herbs. Enough to treat ~5 serious injuries &5 sp\\
+Surgeon’s kit (1 use) &Bandages, plasters, ointments, oils, select herbs. Enough to treat 1 serious injury &6 cp\\
+Poultice Single use. &Made from honey, bread, mercury, and the gods know what else Cannot be stored for long! &1 gp\\
+Poultice (ingredients) &All ingredients required to make a Poultice (See Skill [Insert Skill]) &10 sp\\
+Prescription remedy &One month’s supply for illness 1 cp to &1 gp\\
+Hired surgeon (cheap) &1 operation (Skill 3) &1 sp\\
+Hired surgeon (regular) &1 operation (Skill 6) &1 gp\\
+Hired surgeon (excellent) &1 operation (Skill 9) &10 gp\\
+	\end{tabu}
+\end{table}
+
+\begin{table}[hb]
+	\centering
+	\caption{Miscellanea}
+	\label{tab:Miscellanea}
+	\begin{tabu} spread 0pt {*{3}{X[-1]}}
+		Item &Unit &Cost\\\toprule
+Anvil &One, heavy &5 sp\\
+Farm implement (hoe, shovel, etc) &One, handy &1 sp\\
+Flints (flintlock) &10, also good for lighting fires &1 cp\\
+Gunpowder &Pound, good for about 50 shots from an arquebus &5 cp\\
+Light Hand Grenade &One, throwable &1 sp\\
+Heavy Hand Grenade &One, flingable &5 sp\\
+Incindiary Bomb &One, careful now &4 sp\\
+Light Landmine &One, watch your feet &1 gp\\
+Heavy Landmine &One, do not drop &1 gp, 10 sp\\
+Instrument (lute, drum, flute, horn) &One, pleasant &1 sp to 10 gp\\
+Leather (cowskin) &One, tanned &1 sp\\
+Lanyard for Weapon &One, in color of choice &1 cp\\
+Matchcord &50 feet, you’ll go through it quick &1 cp\\
+Musketballs/shot &10 balls/10 loads of shot &1 cp\\
+Paper &One sheet, useful &4 cp\\
+Parchment &One sheet, fancy &8 cp\\
+Rope &50 feet, useful &2 cp\\
+Smith’s tools &Set, anvil not included &4 sp\\
+Tinderbox &One, rugged &3 cp\\
+Tradesman’s tools &Set, guild approved! &10 sp\\
+Whetstone &One, dry &1 cp\\
+Woodsman’s axe &One, trusty &1 sp\\
+	\end{tabu}
+\end{table}
+\clearpage
+\section{Services}
+\begin{table}[hb]
+	\centering
+	\caption{Services}
+	\label{tab:Services}
+	\begin{tabu} spread 0pt {*{3}{X[-1]}}
+		Item &Duration &Cost\\\toprule
+Guide (frontier) &1 day &6 cp\\
+Mercenary (poor) &1 week &1 sp\\
+Mercenary (mediocre) &1 week &3 sp\\
+Mercenary (good) &1 week &6 sp\\
+Mercenary (excellent) &1 week &1 gp\\
+Servant (domestic) &1 year &1 gp (including board)\\
+Ship (cog) &1 month &10 gp\\
+Ship (caravel) &1 month &25 gp\\
+Inn (poor) &1 night &1 cp/Person\\
+Inn (decent) &1 night &4 cp/Person\\
+Inn (fine) &1 night &1 sp/Person\\
+Stabling (summer/temperate) &1 night &1 cp/horse\\
+Stabling (winter/cold) &1 night &3 cp/horse\\
+	\end{tabu}
+\end{table}
 
 
-Sheep Fluffy 6 sp 
-Tiger Fearfully symmetrical, not at all tame 15 gp 
-Workhorse Feathering optional 15 sp 
+\section{Trade Goods}
+\begin{table}[hb]
+	\centering
+	\caption{Textiles}
+	\label{tab:Textiles}
+	\begin{tabu} spread 0pt {*{3}{X[-1]}}
+		Item &Unit &Cost\\\toprule
+Canvas &Yard &2 cp\\
+Linen &Yard &6 cp\\
+Kersey &Yard &3 cp\\
+Broadcloth &Yard &20 cp\\
+Broadcloth (dyed) &Yard &30-40 cp\\
+Broadcloth (scarlet) &Yard &150 cp\\
+Silk (plain) &Yard &100 cp\\
+Velvet (plain) &Yard &180 cp\\
+Velvet (exquisite) &Yard &280 cp\\
+	\end{tabu}
+\end{table}
 
- 
-Table XX Clothing 
-Item Notes Cost 
-Work clothes Full outfit 1 cp 
-Traveling cloak Single item 1 cp 
-Urban attire Full outfit 1 sp 
-Wealthy garment Full outfit 1 gp 
-Noble dress Full outfit 5 gp 
-Court attire Full outfit 10 gp 
-Finery fit for a king Full outfit 20-50 gp 
-Fine horse caparison Single item 10 gp 
-Obscenely decadent horse ornamentation Single item 20-50 gp 
+\begin{table}[hb]
+	\centering
+	\caption{Spices}
+	\label{tab:Spices}
+	\begin{tabu} spread 0pt {*{3}{X[-1]}}
+		Item &Unit &Cost\\\toprule
+Cyrv &Pound &1 cp\\
+Pepper &Pound &18 cp\\
+Ginger &Pound &12 cp\\
+Cinnamon &Pound &24 cp\\
+Cloves &Pound &35 cp\\
+Salt &Pound &12 cp\\
+Saffron &Pound &182 cp\\
+Sugar &Pound &16 cp\\
+Karspice &Pound &150 cp\\
+	\end{tabu}
+\end{table}
 
- 
-Table XX Drink 
-Item Unit Cost 
-Ale/Beer Flagon 1 cp per 10 
-Ale/Beer Gallon 1-2 cp 
-Brandy Flask 2 cp 
-Cider Gallon 1 cp 
-Mead Gallon 2 cp 
-Rakia Flask 1 cp 
-Waterskin Skin (1 Gallon) 1 cp (water not included) 
-Wine Flagon 1 cp per 8 
-Wine Gallon 2-4 cp 
-
- 
-Table XX Food 
-Item Unit Cost 
-
-
-Traveling bread Brick 1 cp/10 
-Black bread Loaf 1 cp 
-Brown bread Loaf 5 cp 
-Fine white bread Loaf 10 cp 
-Cheap meat (beef, pork, chicken) Pound 3 cp 
-Cheese Pound 1 cp 
-Common fish Pound 1 cp 
-Expensive meat (swan, dormouse, giraffe, bork) Pound 1 sp 
-Fruit Pound 1 cp 
-Lavish banquet Per 10 people 5 sp 
-Meal (poor) Per 1 person 1 cp 
-Meal (good) Per 1 person 4 cp 
-Meal (fine) Per 1 person 1 sp 
-Meal (exquisite) Per 1 person 1 gp 
-Vegetables Pound 1 cp 
-Rare fish Pound 6 cp 
-Week's rations Pound 4 cp 
-Cheap grain (kesh, sorghum, rye) Pound 1 cp 
-Regular grain (oats, barley, hops) Pound 3 cp 
-Fine grain (wheat) Pound 5 cp 
-
- 
-Table XX Torches and Illumination 
-Item Unit Cost 
-Candle (low quality) 5 items 2 cp 
-Candle (high quality) 5 items 7 cp 
-Torch 10 items 3 cp 
-Lamp Per item 5 cp 
+\begin{table}[hb]
+	\centering
+	\caption{Metals}
+	\label{tab:Metals}
+	\begin{tabu} spread 0pt {*{3}{X[-1]}}
+		Item &Unit &Cost\\\toprule
+Copper &Ingot: 7x3x2 inches, 11 lbs &Ingot: 33 cp, Pound: 3 cp\\
+Tin &Ingot: 7x3x2 inches, 9 lbs &Ingot: 54 cp, Pound: 6 cp\\
+Iron &Ingot: 7x3x2 inches, 10 lbs &Ingot: 30 cp, Pound: 3 cp\\
+Silver &Ingot: 7x3x2 inches, 14 lbs &Ingot: 14 gp, Pound: 1 gp\\
+Gold &Ingot: 7x3x2 inches, 27 lbs &Ingot: 135 gp, Pound: 5 gp\\
+Bronze &Ingot: 7x3x2 inches, 11 lbs &Ingot: 55 cp, Pound: 5 cp\\
+Steel &Ingot: 7x3x2 inches, 10 lbs &Ingot: 50 cp, Pound: 5 cp\\
+Magestone &Not available in ingots, stones are of varying sizes &Stone: 50 gp\\
+Orichalcum &Ingot: 7x3x2 inches, 11 lbs &Ingot: 5500 gp, Pound: 500 gp\\
+	\end{tabu}
+\end{table}
 
 
-Candle lantern Per item 9 cp 
-Oil lantern Per item 1 sp 
-Oil Pint 1 sp 
-
- 
-Table XX Medical and Surgical Items 
-Item Inclusions Cost 
-Surgeon’s tools Needles, blades, splints, tongs, pliers, tweezers, mirrors, prongs, clamps 15 sp 
-Surgeon’s kit (5 uses) Bandages, plasters, ointments, oils, select herbs. Enough to treat ~5 serious 
-injuries 
-
-5 sp 
-
-Surgeon’s kit (1 use) Bandages, plasters, ointments, oils, select herbs. Enough to treat 1 serious 
-injury 
-
-6 cp 
-
-Poultice Single use. Made from honey, bread, mercury, and the gods know what else 
-Cannot be stored for long! 
-
-1 gp 
-
-Poultice (ingredients) All ingredients required to make a Poultice (See Skill [Insert Skill]) 10 sp 
-Prescription remedy One month’s supply for illness 1 cp to 1 
-gp 
-Hired surgeon (cheap) 1 operation (Skill 3) 1 sp 
-Hired surgeon (regular) 1 operation (Skill 6) 1 gp 
-Hired surgeon 
-(excellent) 
-
-1 operation (Skill 9) 10 gp 
-
- 
-Table XX Miscellanea 
-Item Unit Cost 
-Anvil One, heavy 5 sp 
-Farm implement (hoe, shovel, etc) One, handy 1 sp 
-Flints (flintlock) 10, also good for lighting fires 1 cp 
-Gunpowder Pound, good for about 50 shots from an arquebus 5 cp 
-Light Hand Grenade One, throwable 1 sp 
-Heavy Hand Grenade One, flingable 5 sp 
-Incindiary Bomb One, careful now 4 sp 
-Light Landmine One, watch your feet 1 gp 
-Heavy Landmine One, do not drop 1 gp, 10 sp 
-
-
-Instrument (lute, drum, flute, horn) One, pleasant 1 sp to 10 gp 
-Leather (cowskin) One, tanned 1 sp 
-Lanyard for Weapon One, in color of choice 1 cp 
-Matchcord 50 feet, you’ll go through it quick 1 cp 
-Musketballs/shot 10 balls/10 loads of shot 1 cp 
-Paper One sheet, useful 4 cp 
-Parchment One sheet, fancy 8 cp 
-Rope 50 feet, useful 2 cp 
-Smith’s tools Set, anvil not included 4 sp 
-Tinderbox One, rugged 3 cp 
-Tradesman’s tools Set, guild approved! 10 sp 
-Whetstone One, dry 1 cp 
-Woodsman’s axe One, trusty 1 sp 
-
- 
-
-Services 
-
- 
-Table XX Services 
-Item Duration Cost 
-Guide (frontier) 1 day 6 cp 
-Mercenary (poor) 1 week 1 sp 
-Mercenary (mediocre) 1 week 3 sp 
-Mercenary (good) 1 week 6 sp 
-Mercenary (excellent) 1 week 1 gp 
-Servant (domestic) 1 year 1 gp (including board) 
-Ship (cog) 1 month 10 gp 
-Ship (caravel) 1 month 25 gp 
-Inn (poor) 1 night 1 cp/Person 
-Inn (decent) 1 night 4 cp/Person 
-
-
-Inn (fine) 1 night 1 sp/Person 
-Stabling (summer/temperate) 1 night 1 cp/horse 
-Stabling (winter/cold) 1 night 3 cp/horse 
-
- 
-
-Trade Goods 
-
- 
-Table XX Textiles 
-Item Unit Cost 
-Canvas Yard 2 cp 
-Linen Yard 6 cp 
-Kersey Yard 3 cp 
-Broadcloth Yard 20 cp 
-Broadcloth (dyed) Yard 30-40 cp 
-Broadcloth (scarlet) Yard 150 cp 
-Silk (plain) Yard 100 cp 
-Velvet (plain) Yard 180 cp 
-Velvet (exquisite) Yard 280 cp 
-
- 
-Table XX Spices 
-Item Unit Cost 
-Cyrv Pound 1 cp 
-Pepper Pound 18 cp 
-Ginger Pound 12 cp 
-Cinnamon Pound 24 cp 
-Cloves Pound 35 cp 
-Salt Pound 12 cp 
-Saffron Pound 182 cp 
-Sugar Pound 16 cp 
-
-
-Karspice Pound 150 cp 
-
- 
-Table XX Metals 
-Item Unit Cost 
-Copper Ingot: 7x3x2 inches, 11 lbs Ingot: 33 cp, Pound: 3 cp 
-Tin Ingot: 7x3x2 inches, 9 lbs Ingot: 54 cp, Pound: 6 cp 
-Iron Ingot: 7x3x2 inches, 10 lbs Ingot: 30 cp, Pound: 3 cp 
-Silver Ingot: 7x3x2 inches, 14 lbs Ingot: 14 gp, Pound: 1 gp 
-Gold Ingot: 7x3x2 inches, 27 lbs Ingot: 135 gp, Pound: 5 gp 
-Bronze Ingot: 7x3x2 inches, 11 lbs Ingot: 55 cp, Pound: 5 cp 
-Steel Ingot: 7x3x2 inches, 10 lbs Ingot: 50 cp, Pound: 5 cp 
-Magestone Not available in ingots, stones are of varying sizes Stone: 50 gp 
-Orichalcum Ingot: 7x3x2 inches, 11 lbs Ingot: 5500 gp, Pound: 500 gp 
-
- 
-Table XX Goods 
-Item Unit Cost 
-Cotton Ton 30 gp 
-Coffee Pound 1 sp 
-Coffee (bulk) Ton 100 gp 
-Cocoa Pound 10 cp 
-Cocoa (bulk) Ton 80 gp 
-Fine Rug Throw 5 gp 
-Common tea Pound 1 sp 
-Common tea (bulk) Ton 100 gp 
-Fine tea Pound 1 gp 
-Fine tea (bulk) Ton 2000 gp 
-
- 
-
-
-Slaves 
-Table XX Slaves 
-Item Notes Cost 
-Labor slave Oh, anyone with all their limbs will do. 1 gp 
-House slave A house slave must be made of sharper, gentler stuff than a worker. 3 gp 
-Educated slave A ‘marsupial attendant,’ always carrying around his notes in a pouch on 
-his apron. 
-
-10 gp 
-
-Pit fighter/gladiator Why is it easier to train a vicious man than a vicious dog? 20 gp 
-Exotic (feature) Strange, but alluring features and language. Cost x 2 
-Inferior race (feature) Goblins, ex-bandits. Cost / 2 
-Exotic race (feature) Non-Human race (Burdinadin, Zell, etc). Cost x 3 
-Especially loyal (feature) Conditioned to be loyal to the death. Cost x 
-1.5 
-Especially beautiful 
-(feature) 
-
-Beauty isn’t just about features, it’s about habit, too. Cost x 2 
-
-Especially intelligent 
-(feature) 
-
-Any idiot can learn to scribble on a tablet. True intelligence is rare. Cost x 2 
-
-Especially strong (feature) Ever move a piano up a staircase? Don’t worry, you’ll never have to. Cost x 
-2.5 
-
- 
-
- 
-
+\begin{table}[hb]
+	\centering
+	\caption{Goods}
+	\label{tab:Goods}
+	\begin{tabu} spread 0pt {*{3}{X[-1]}}
+		Item &Unit &Cost\\\toprule
+Cotton &Ton &30 gp\\
+Coffee &Pound &1 sp\\
+Coffee (bulk) &Ton &100 gp\\
+Cocoa &Pound &10 cp\\
+Cocoa (bulk) &Ton &80 gp\\
+Fine Rug &Throw &5 gp\\
+Common tea &Pound &1 sp\\
+Common tea (bulk) &Ton &100 gp\\
+Fine tea &Pound &1 gp\\
+Fine tea (bulk) &Ton &2000 gp\\
+	\end{tabu}
+\end{table}
+\clearpage
+\section{Slaves}
+\begin{table}[hb]
+	\centering
+	\caption{Slaves}
+	\label{tab:Slaves}
+	\begin{tabu} spread 0pt {*{3}{X[-1]}}
+		Item &Notes &Cost\\\toprule
+Labor slave &Oh, anyone with all their limbs will do. &1 gp\\
+House slave &A house slave must be made of sharper, gentler stuff than a worker. &3 gp\\
+Educated slave &A ‘marsupial attendant,’ always carrying around his notes in a pouch on his apron. &10 gp\\
+Pit fighter/gladiator &Why is it easier to train a vicious man than a vicious dog? &20 gp\\
+	\\
+Exotic (feature) &Strange, but alluring features and language. &$ \text{Cost} \times 2 $\\
+Inferior race (feature) &Goblins, ex-bandits. &$ \dfrac{\text{Cost}}{2} $\\
+Exotic race (feature) &Non-Human race (Burdinadin, Zell, etc). &Cost $ \times 3$\\
+Especially loyal (feature) &Conditioned to be loyal to the death. &Cost $ \times 1.5 $\\
+Especially beautiful (feature) &Beauty isn’t just about features, it’s about habit, too. &Cost $ \times 2 $\\
+Especially intelligent (feature) &Any idiot can learn to scribble on a tablet. True intelligence is rare. &Cost $ \times 2 $\\
+Especially strong (feature) &Ever move a piano up a staircase? Don’t worry, you’ll never have to. &Cost $ \times 2.5 $\\
+	\end{tabu}
+\end{table}
 \chapter{Proficiencies}\label{ch:proficiencies} 
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
@@ -7505,11 +7519,11 @@ Universal Maneuvers only
 \subsubsection{Tier 1 Maneuvers}
 \vspace{-5pt}\begin{itemize}
 	[itemsep=0.5mm]
-	\item Riposte 
-	\item Hook [Superior] 
-	\item Disarm [Superior] 
-	\item Hew [Superior] 
-	\item Break [Superior] 
+	\item \nameref{man:Riposte}
+	\item \nameref{man:Hook} [Superior] 
+	\item \nameref{man:Disarm} [Superior] 
+	\item \nameref{man:Hew} [Superior] 
+	\item \nameref{man:Break} [Superior] 
 \end{itemize}
 \subsubsection{Tier 2 Maneuvers}
 Simultaneous Parry/Attack 
