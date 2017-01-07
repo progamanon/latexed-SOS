@@ -4,844 +4,912 @@
 \contentsline {section}{\numberline {1.2}What is a Roleplaying Game?}{4}{section.1.2}
 \contentsline {section}{\numberline {1.3}Basic Mechanics Explained}{4}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Basics of the Dice Pool}{4}{subsection.1.3.1}
-\contentsline {subsubsection}{Basic Check}{4}{section*.3}
-\contentsline {subsubsection}{Opposed Rolls}{5}{section*.4}
-\contentsline {paragraph}{Non-Standard TNs:}{5}{section*.5}
-\contentsline {paragraph}{Rounding:}{5}{section*.6}
+\contentsline {subsubsection}{Basic Check}{4}{subsubsection*.3}
+\contentsline {subsubsection}{Opposed Rolls}{5}{subsubsection*.4}
+\contentsline {paragraph}{Non-Standard TNs:}{5}{paragraph*.5}
+\contentsline {paragraph}{Rounding:}{5}{paragraph*.6}
 \contentsline {chapter}{\numberline {2}Character Creation}{6}{chapter.2}
 \contentsline {section}{\numberline {2.1}How to Create a Character}{7}{section.2.1}
-\contentsline {subparagraph}{Step 1: Set the Campaign Power}{7}{section*.7}
-\contentsline {subparagraph}{Step 2: Develop Your Character Concept}{7}{section*.8}
-\contentsline {subparagraph}{Step 3: Spend PCP on Categories}{7}{section*.9}
-\contentsline {subparagraph}{Step 4: Buy Equipment and Supplies}{8}{section*.10}
-\contentsline {subparagraph}{Step 5: Review Your Character with the GM}{8}{section*.11}
-\contentsline {subparagraph}{Step 6: Determine Arcs}{8}{section*.12}
-\contentsline {subparagraph}{Step 7: Name and Describe the Character}{8}{section*.13}
+\contentsline {subparagraph}{Step 1: Set the Campaign Power}{7}{subparagraph*.7}
+\contentsline {subparagraph}{Step 2: Develop Your Character Concept}{7}{subparagraph*.8}
+\contentsline {subparagraph}{Step 3: Spend PCP on Categories}{7}{subparagraph*.9}
+\contentsline {subparagraph}{Step 4: Buy Equipment and Supplies}{8}{subparagraph*.10}
+\contentsline {subparagraph}{Step 5: Review Your Character with the GM}{8}{subparagraph*.11}
+\contentsline {subparagraph}{Step 6: Determine Arcs}{8}{subparagraph*.12}
+\contentsline {subparagraph}{Step 7: Name and Describe the Character}{8}{subparagraph*.13}
 \contentsline {section}{\numberline {2.2}Campaign Power}{8}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Player Creation Points}{9}{subsection.2.2.1}
-\contentsline {subsubsection}{General Rules for PCP Investment}{9}{section*.16}
-\contentsline {chapter}{\numberline {3}Arc and Advancement}{10}{chapter.3}
-\contentsline {section}{\numberline {3.1}Arc Categories}{11}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Saga Arc}{11}{subsection.3.1.1}
-\contentsline {subsubsection}{Suspending a Saga Arc}{12}{section*.18}
-\contentsline {subsection}{\numberline {3.1.2}Epic Arc}{12}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Belief Arc}{12}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Glory Arc}{13}{subsection.3.1.4}
-\contentsline {subsection}{\numberline {3.1.5}Flaw Arc}{13}{subsection.3.1.5}
-\contentsline {section}{\numberline {3.2}Awarding Arc Points}{14}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Arcs Ending and Changing}{15}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Character Advancement}{15}{subsection.3.2.2}
-\contentsline {chapter}{\numberline {4}Attributes}{16}{chapter.4}
-\contentsline {section}{\numberline {4.1}Character Creation}{17}{section.4.1}
-\contentsline {section}{\numberline {4.2}Advancing with Arc}{18}{section.4.2}
-\contentsline {subsubsection}{Non-Human Races and Attribute Maximums}{18}{section*.23}
-\contentsline {section}{\numberline {4.3}Core Attributes}{18}{section.4.3}
-\contentsline {section}{\numberline {4.4}Compound Attributes}{20}{section.4.4}
-\contentsline {section}{\numberline {4.5}How to Increase Grit}{21}{section.4.5}
-\contentsline {chapter}{\numberline {5}Races}{23}{chapter.5}
-\contentsline {subsubsection}{Historical Campaigns and Race}{24}{section*.40}
-\contentsline {section}{\numberline {5.1}Humans, Dwarves and Goblins}{25}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Humans}{25}{subsection.5.1.1}
-\contentsline {paragraph}{Attribute Modifiers:}{25}{section*.44}
-\contentsline {paragraph}{Willing to Learn}{25}{section*.45}
-\contentsline {paragraph}{The Human Condition}{26}{section*.46}
-\contentsline {subsection}{\numberline {5.1.2}Goblins}{26}{subsection.5.1.2}
-\contentsline {paragraph}{Attribute Modifiers:}{27}{section*.52}
-\contentsline {paragraph}{Regeneration}{27}{section*.53}
-\contentsline {paragraph}{Small}{27}{section*.54}
-\contentsline {paragraph}{Sneaky}{27}{section*.55}
-\contentsline {paragraph}{Scarce Environment}{27}{section*.56}
-\contentsline {paragraph}{Tight Spot}{27}{section*.57}
-\contentsline {paragraph}{See in Darkness}{27}{section*.58}
-\contentsline {paragraph}{Photophobia}{27}{section*.59}
-\contentsline {subsection}{\numberline {5.1.3}Dwarves}{28}{subsection.5.1.3}
-\contentsline {paragraph}{Attribute Modifiers:}{29}{section*.65}
-\contentsline {paragraph}{Short and Stout}{29}{section*.66}
-\contentsline {paragraph}{Robust Immunities}{29}{section*.67}
-\contentsline {paragraph}{See in Shadow}{29}{section*.68}
-\contentsline {paragraph}{Prodigious Livers}{29}{section*.69}
-\contentsline {paragraph}{The Call of the Deep}{29}{section*.70}
-\contentsline {paragraph}{Hammer of Industry}{29}{section*.71}
-\contentsline {section}{\numberline {5.2}Din}{31}{section.5.2}
-\contentsline {subsubsection}{Focus}{31}{section*.74}
-\contentsline {subsection}{\numberline {5.2.1}Zells}{32}{subsection.5.2.1}
-\contentsline {paragraph}{Attribute Modifiers:}{32}{section*.83}
-\contentsline {paragraph}{Elvish Agelessness}{32}{section*.84}
-\contentsline {paragraph}{Focus}{33}{section*.85}
-\contentsline {subparagraph}{Zellish Dream}{33}{section*.86}
-\contentsline {paragraph}{Zellislava}{33}{section*.87}
-\contentsline {subsection}{\numberline {5.2.2}Burdinadin}{36}{subsection.5.2.2}
-\contentsline {paragraph}{Attribute Modifiers:}{36}{section*.93}
-\contentsline {paragraph}{Elvish Agelessness}{36}{section*.94}
-\contentsline {paragraph}{Focus}{37}{section*.95}
-\contentsline {paragraph}{Natural Philosophy}{37}{section*.96}
-\contentsline {paragraph}{The Stains of Time}{37}{section*.98}
-\contentsline {paragraph}{Sterile Soul}{38}{section*.99}
-\contentsline {paragraph}{Burdinadin Armory}{38}{section*.100}
-\contentsline {paragraph}{How to Roleplay a Burdinadin}{39}{section*.103}
-\contentsline {subsection}{\numberline {5.2.3}Ohanedin}{39}{subsection.5.2.3}
-\contentsline {paragraph}{Attribute Modifiers:}{40}{section*.107}
-\contentsline {paragraph}{Elvish Agelessness}{40}{section*.108}
-\contentsline {paragraph}{Focus}{40}{section*.109}
-\contentsline {paragraph}{Metallophobia}{40}{section*.110}
-\contentsline {paragraph}{Focus Oaths}{40}{section*.111}
-\contentsline {paragraph}{Natural Awareness}{40}{section*.112}
-\contentsline {paragraph}{Murderous Speed}{41}{section*.113}
-\contentsline {paragraph}{The Feeling Disappears}{41}{section*.114}
-\contentsline {paragraph}{Rules of Nature}{41}{section*.115}
-\contentsline {subsubsection}{How to Roleplay an Ohanedin}{42}{section*.118}
-\contentsline {subsection}{\numberline {5.2.4}Orredin}{42}{subsection.5.2.4}
-\contentsline {paragraph}{Attribute Modifiers:}{43}{section*.122}
-\contentsline {paragraph}{Focus:}{43}{section*.123}
-\contentsline {paragraph}{Apotheosis:}{43}{section*.124}
-\contentsline {paragraph}{The Godhead is a Spring:}{44}{section*.125}
-\contentsline {paragraph}{From it flows Everything:}{44}{section*.126}
-\contentsline {paragraph}{And then returns once more, and so is like a Spring:}{44}{section*.127}
-\contentsline {subsubsection}{Bloodline Powers}{44}{section*.128}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Killing Glare}{44}{section*.129}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Kneel!}{44}{section*.131}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Majesty}{44}{section*.132}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Purple Vortex}{45}{section*.133}
-\contentsline {subparagraph}{Success:}{45}{section*.134}
-\contentsline {subsubsection}{How to Roleplay an Orredin}{46}{section*.137}
-\contentsline {subsection}{\numberline {5.2.5}Star Vampire}{47}{subsection.5.2.5}
-\contentsline {paragraph}{Attribute Modifiers:}{47}{section*.141}
-\contentsline {subsection}{\numberline {5.2.6}Paleolithic Elf}{47}{subsection.5.2.6}
-\contentsline {paragraph}{Attribute Modifiers:}{47}{section*.147}
-\contentsline {section}{\numberline {5.3}Ascended Humans}{48}{section.5.3}
-\contentsline {paragraph}{Bonuses}{48}{section*.150}
-\contentsline {subsubsection}{Touched by the Source}{48}{section*.151}
-\contentsline {subsubsection}{Divine Power}{49}{section*.155}
-\contentsline {subsection}{\numberline {5.3.1}Genosian Paladin}{49}{subsection.5.3.1}
-\contentsline {paragraph}{Attribute Modifiers:}{50}{section*.159}
-\contentsline {paragraph}{Genosian Ideal}{50}{section*.160}
-\contentsline {paragraph}{Glory, Amen}{50}{section*.161}
-\contentsline {paragraph}{Judgement}{50}{section*.162}
-\contentsline {paragraph}{Shield of Dawn}{51}{section*.163}
-\contentsline {paragraph}{Healing}{51}{section*.165}
-\contentsline {paragraph}{Wrath of God}{52}{section*.166}
-\contentsline {paragraph}{I See You}{52}{section*.167}
-\contentsline {subsection}{\numberline {5.3.2}Dessian Silver Guard}{53}{subsection.5.3.2}
-\contentsline {paragraph}{Attribute Modifiers:}{54}{section*.173}
-\contentsline {paragraph}{Perfect}{54}{section*.174}
-\contentsline {paragraph}{The Moon Also Rises}{54}{section*.175}
-\contentsline {paragraph}{Moonstrike}{55}{section*.176}
-\contentsline {paragraph}{The White Fog}{55}{table.caption.178}
-\contentsline {paragraph}{Moonlit Twostep}{56}{section*.179}
-\contentsline {paragraph}{Soaring Charge}{56}{section*.180}
-\contentsline {paragraph}{Mark of the Moon}{56}{section*.181}
-\contentsline {paragraph}{Forcible Marking}{57}{section*.182}
-\contentsline {paragraph}{Succor}{57}{section*.183}
-\contentsline {paragraph}{A Thousand Stars, One Moon}{58}{section*.184}
-\contentsline {subsection}{\numberline {5.3.3}Sarturi Chosen}{58}{subsection.5.3.3}
-\contentsline {paragraph}{Attribute Modifiers:}{59}{section*.188}
-\contentsline {subsubsection}{Give unto Sartur\dots }{59}{section*.189}
-\contentsline {paragraph}{From the Depths to the Soil}{59}{table.caption.191}
-\contentsline {paragraph}{A River of Blood}{60}{section*.192}
-\contentsline {paragraph}{Not Today!}{60}{section*.193}
-\contentsline {paragraph}{Band of Blood:}{60}{section*.194}
-\contentsline {paragraph}{Sartur Hungers!:}{61}{section*.195}
-\contentsline {paragraph}{No Hard Feelings:}{61}{section*.196}
-\contentsline {chapter}{\numberline {6}Boons and Banes}{62}{chapter.6}
-\contentsline {section}{\numberline {6.1}Character Creation}{63}{section.6.1}
-\contentsline {subparagraph}{1-3 PCP Investment}{63}{section*.200}
-\contentsline {subparagraph}{4-10 PCP Investment}{63}{section*.201}
-\contentsline {section}{\numberline {6.2}Advancing with Arc}{64}{section.6.2}
-\contentsline {section}{\numberline {6.3}Boons List}{64}{section.6.3}
-\contentsline {section}{\numberline {6.4}Banes List}{65}{section.6.4}
-\contentsline {section}{\numberline {6.5}Boons}{66}{section.6.5}
-\contentsline {paragraph}{Allies}{66}{section*.202}
-\contentsline {paragraph}{Ambidextrous}{66}{section*.203}
-\contentsline {paragraph}{Animal Affinity}{66}{section*.204}
-\contentsline {paragraph}{Beautiful}{66}{section*.205}
-\contentsline {paragraph}{Berserker}{67}{section*.206}
-\contentsline {paragraph}{Bloodthirsty}{67}{section*.207}
-\contentsline {paragraph}{Brave}{68}{section*.208}
-\contentsline {paragraph}{Contacts}{68}{section*.209}
-\contentsline {paragraph}{Direction Sense}{68}{section*.210}
-\contentsline {paragraph}{Estate}{68}{section*.211}
-\contentsline {paragraph}{Favor}{69}{section*.212}
-\contentsline {paragraph}{Famous}{69}{section*.213}
-\contentsline {paragraph}{Folks Back Home}{69}{section*.214}
-\contentsline {paragraph}{Follower}{69}{section*.215}
-\contentsline {paragraph}{Good Ears}{70}{section*.216}
-\contentsline {paragraph}{Good Eyes}{70}{section*.217}
-\contentsline {paragraph}{Good Nose}{70}{section*.218}
-\contentsline {paragraph}{Hale and Hearty}{70}{section*.219}
-\contentsline {paragraph}{Impressive Voice}{70}{section*.220}
-\contentsline {paragraph}{Known for Virtue}{71}{section*.221}
-\contentsline {paragraph}{Languages}{71}{section*.222}
-\contentsline {paragraph}{Literate}{71}{section*.223}
-\contentsline {paragraph}{Natural Born Killer}{71}{section*.224}
-\contentsline {paragraph}{Natural Leader}{72}{section*.225}
-\contentsline {paragraph}{Retinue}{72}{section*.226}
-\contentsline {paragraph}{Tall}{72}{section*.227}
-\contentsline {paragraph}{True Grit}{72}{section*.228}
-\contentsline {paragraph}{Rich}{73}{section*.229}
-\contentsline {paragraph}{Tireless Lobster}{73}{section*.230}
-\contentsline {section}{\numberline {6.6}Banes}{73}{section.6.6}
-\contentsline {paragraph}{Arrow Magnet}{73}{section*.231}
-\contentsline {paragraph}{Bad Ears}{73}{section*.232}
-\contentsline {paragraph}{Bad Eyes}{74}{section*.233}
-\contentsline {paragraph}{Bad Reputation}{74}{section*.234}
-\contentsline {paragraph}{Barren/Sterility}{74}{section*.235}
-\contentsline {paragraph}{Blind}{75}{section*.236}
-\contentsline {paragraph}{Braggart}{75}{section*.237}
-\contentsline {paragraph}{Brain Damage}{75}{section*.238}
-\contentsline {paragraph}{Broken Limb/Appendage}{75}{section*.240}
-\contentsline {paragraph}{Complete Monster}{76}{section*.241}
-\contentsline {paragraph}{Craven}{76}{section*.242}
-\contentsline {paragraph}{Crippled Limb/Appendage}{77}{section*.243}
-\contentsline {paragraph}{Dead}{77}{section*.244}
-\contentsline {paragraph}{Debt}{77}{section*.245}
-\contentsline {paragraph}{Dependent}{78}{section*.246}
-\contentsline {subparagraph}{6:}{78}{section*.247}
-\contentsline {subparagraph}{12:}{78}{section*.248}
-\contentsline {subparagraph}{Special:}{78}{section*.249}
-\contentsline {paragraph}{Dire Past}{78}{section*.250}
-\contentsline {paragraph}{Enemies}{79}{section*.251}
-\contentsline {paragraph}{Facial Deformity}{79}{section*.252}
-\contentsline {paragraph}{Fat}{80}{section*.253}
-\contentsline {paragraph}{Haemophilia}{80}{section*.254}
-\contentsline {paragraph}{Hothead}{80}{section*.255}
-\contentsline {paragraph}{Honorable}{80}{section*.256}
-\contentsline {paragraph}{Lasting Pain}{81}{section*.257}
-\contentsline {paragraph}{Mute}{81}{section*.258}
-\contentsline {paragraph}{Oath}{82}{section*.259}
-\contentsline {paragraph}{Old Wound}{82}{section*.260}
-\contentsline {paragraph}{One-Eyed}{82}{section*.261}
-\contentsline {paragraph}{Poor}{83}{section*.262}
-\contentsline {paragraph}{Severed Limb/Appendage:}{83}{section*.263}
-\contentsline {paragraph}{Sheltered}{84}{section*.270}
-\contentsline {paragraph}{Short}{85}{section*.271}
-\contentsline {paragraph}{Skinny}{85}{section*.272}
-\contentsline {paragraph}{Technologically Impaired}{85}{section*.273}
-\contentsline {paragraph}{Unhappily Married}{86}{section*.274}
-\contentsline {paragraph}{Virtuous}{86}{section*.275}
-\contentsline {paragraph}{Wanted}{86}{section*.276}
-\contentsline {chapter}{\numberline {7}Skills}{87}{chapter.7}
-\contentsline {section}{\numberline {7.1}Skills}{88}{section.7.1}
-\contentsline {paragraph}{Trained}{89}{section*.277}
-\contentsline {paragraph}{Teacher}{89}{section*.278}
-\contentsline {paragraph}{Mastery}{89}{section*.280}
-\contentsline {paragraph}{Skill Level}{89}{section*.281}
-\contentsline {paragraph}{Skill Pool (SP)}{89}{section*.282}
-\contentsline {paragraph}{TN}{89}{section*.283}
-\contentsline {paragraph}{Skill Tests}{89}{section*.284}
-\contentsline {paragraph}{Untrained}{90}{section*.285}
-\contentsline {paragraph}{Leveling up Skills}{90}{section*.286}
-\contentsline {paragraph}{Retrying Skill Attempts}{90}{section*.287}
-\contentsline {paragraph}{Encumbrance}{90}{section*.289}
-\contentsline {subsection}{\numberline {7.1.1}Character Creation}{90}{subsection.7.1.1}
-\contentsline {section}{\numberline {7.2}Skill Descriptions}{91}{section.7.2}
-\contentsline {paragraph}{Athletics}{91}{section*.290}
-\contentsline {paragraph}{Climbing}{92}{section*.291}
-\contentsline {paragraph}{Cooking}{92}{section*.292}
-\contentsline {paragraph}{Crafting}{93}{section*.293}
-\contentsline {paragraph}{Engineering}{94}{section*.294}
-\contentsline {paragraph}{History}{94}{section*.295}
-\contentsline {paragraph}{Hunting}{95}{section*.296}
-\contentsline {paragraph}{Intimidate}{95}{section*.297}
-\contentsline {paragraph}{Navigation}{96}{section*.298}
-\contentsline {paragraph}{Observation}{96}{section*.299}
-\contentsline {paragraph}{Orate}{97}{section*.300}
-\contentsline {paragraph}{Perform}{98}{section*.301}
-\contentsline {paragraph}{Persuasion}{98}{section*.302}
-\contentsline {paragraph}{Politics}{99}{section*.303}
-\contentsline {paragraph}{Research}{99}{section*.304}
-\contentsline {paragraph}{Riding}{100}{section*.305}
-\contentsline {paragraph}{Sailing}{100}{section*.306}
-\contentsline {paragraph}{Stealth}{100}{section*.307}
-\contentsline {paragraph}{Subterfuge}{101}{section*.308}
-\contentsline {paragraph}{Surgery}{101}{section*.309}
-\contentsline {subparagraph}{Perform Surgery:}{101}{section*.310}
-\contentsline {paragraph}{Swimming}{102}{section*.311}
-\contentsline {subparagraph}{When failed: Drowning}{102}{section*.312}
-\contentsline {chapter}{\numberline {8}Social Class and Wealth}{104}{chapter.8}
-\contentsline {section}{\numberline {8.1}Character Creation}{105}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Social Class Benefits}{105}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}Abnormal Social Class and Wealth Combinations}{105}{subsection.8.1.2}
-\contentsline {section}{\numberline {8.2}Wealth}{106}{section.8.2}
-\contentsline {section}{\numberline {8.3}Assets}{106}{section.8.3}
-\contentsline {chapter}{\numberline {9}Equipment}{108}{chapter.9}
-\contentsline {chapter}{\numberline {10}Melee Weapons}{110}{chapter.10}
-\contentsline {subsection}{\numberline {10.0.1}Which Weapon for Me?}{111}{subsection.10.0.1}
-\contentsline {subsubsection}{Attack TN}{111}{section*.320}
-\contentsline {subsubsection}{Attack Damage}{111}{section*.321}
-\contentsline {subsubsection}{Defense TN / Guard}{111}{section*.322}
-\contentsline {subsubsection}{Reach}{112}{section*.323}
-\contentsline {subsubsection}{Special}{112}{section*.324}
-\contentsline {subsubsection}{How Many Weapons?}{112}{section*.325}
-\contentsline {subsection}{\numberline {10.0.2}Melee Weapon Characteristics}{112}{subsection.10.0.2}
-\contentsline {subsubsection}{Weapon Name}{112}{section*.326}
-\contentsline {subsubsection}{Weapon Type}{112}{section*.327}
-\contentsline {subsubsection}{Hands}{112}{section*.328}
-\contentsline {subsubsection}{Reach}{113}{section*.329}
-\contentsline {subsubsection}{Swing}{113}{section*.331}
-\contentsline {subsubsection}{Thrust}{113}{section*.332}
-\contentsline {subsubsection}{Defense / Guard}{113}{section*.333}
-\contentsline {subsubsection}{Special}{114}{section*.334}
-\contentsline {subsubsection}{Weight}{114}{section*.335}
-\contentsline {subsubsection}{Cost}{114}{section*.336}
-\contentsline {section}{\numberline {10.1}Daggers}{114}{section.10.1}
-\contentsline {section}{\numberline {10.2}Swords}{115}{section.10.2}
-\contentsline {subsection}{\numberline {10.2.1}1H Swords}{115}{subsection.10.2.1}
-\contentsline {subsection}{\numberline {10.2.2}2H Swords}{116}{subsection.10.2.2}
-\contentsline {section}{\numberline {10.3}Blunt}{117}{section.10.3}
-\contentsline {subsection}{\numberline {10.3.1}1H Blunt}{117}{subsection.10.3.1}
-\contentsline {subsection}{\numberline {10.3.2}2H Blunt}{119}{subsection.10.3.2}
-\contentsline {subsubsection}{2H Blunt Weapon Attachments}{120}{section*.337}
-\contentsline {section}{\numberline {10.4}Spears}{120}{section.10.4}
-\contentsline {subsection}{\numberline {10.4.1}Spear Weapon Attachments}{121}{subsection.10.4.1}
-\contentsline {section}{\numberline {10.5}Polearms}{121}{section.10.5}
-\contentsline {subsection}{\numberline {10.5.1}Polearm Weapon Attachments}{123}{subsection.10.5.1}
-\contentsline {section}{\numberline {10.6}Special Qualities}{123}{section.10.6}
-\contentsline {paragraph}{AP Swing [X]}{123}{section*.338}
-\contentsline {paragraph}{AP Thrust [X]}{123}{section*.339}
-\contentsline {paragraph}{Bleed [X]}{124}{section*.340}
-\contentsline {paragraph}{Brace}{124}{section*.341}
-\contentsline {paragraph}{Cavalry Sword}{124}{section*.342}
-\contentsline {paragraph}{Chain [X]}{124}{section*.343}
-\contentsline {paragraph}{Companion Weapon}{124}{section*.344}
-\contentsline {paragraph}{Couched Charge}{124}{section*.345}
-\contentsline {paragraph}{Crushing [X]}{124}{section*.346}
-\contentsline {paragraph}{Draw [X]}{124}{section*.347}
-\contentsline {paragraph}{Fluid Thrusts}{124}{section*.348}
-\contentsline {paragraph}{Forward Swept}{125}{section*.349}
-\contentsline {paragraph}{Freakishly Large}{125}{section*.350}
-\contentsline {paragraph}{Hand-Off}{125}{section*.351}
-\contentsline {paragraph}{Heavy Weapon}{125}{section*.352}
-\contentsline {paragraph}{Hook}{125}{section*.353}
-\contentsline {paragraph}{Light Blade}{125}{section*.354}
-\contentsline {paragraph}{Multi-Hit [Y] [X]}{125}{section*.355}
-\contentsline {paragraph}{Parrying Teeth}{125}{section*.356}
-\contentsline {paragraph}{Shock [X]}{125}{section*.357}
-\contentsline {paragraph}{Spatulate Tip [X]}{125}{section*.358}
-\contentsline {paragraph}{Swinging Slot}{125}{section*.359}
-\contentsline {paragraph}{Thin Blade}{126}{section*.360}
-\contentsline {paragraph}{Thrusting Slot}{126}{section*.361}
-\contentsline {paragraph}{Tight Grip [X]}{126}{section*.362}
-\contentsline {paragraph}{Weapon Attachment}{126}{section*.363}
-\contentsline {section}{\numberline {10.7}Materials}{126}{section.10.7}
-\contentsline {paragraph}{Limited Supply}{127}{section*.364}
-\contentsline {section}{\numberline {10.8}Customization Options}{127}{section.10.8}
-\contentsline {paragraph}{Ridiculously Sharp}{127}{section*.365}
-\contentsline {paragraph}{Bizarre Gimmick}{127}{section*.366}
-\contentsline {paragraph}{Examples for Bizarre Gimmick:}{128}{section*.367}
-\contentsline {paragraph}{Custom Hilt (+50\% Cost)}{128}{section*.368}
-\contentsline {paragraph}{Custom Grip (+50\% Cost)}{128}{section*.369}
-\contentsline {paragraph}{Exquisite Decoration}{128}{section*.370}
-\contentsline {paragraph}{Fine Forging (+50\% Cost)}{128}{section*.371}
-\contentsline {paragraph}{Integrated Pistol (+100\% Cost AND 1 gp)}{128}{section*.372}
-\contentsline {chapter}{\numberline {11}Missile Weapons}{130}{chapter.11}
-\contentsline {section}{\numberline {11.1}Missile Weapon Characteristics}{131}{section.11.1}
-\contentsline {subsubsection}{Weapon Name}{131}{section*.374}
-\contentsline {subsubsection}{Weapon Type}{131}{section*.375}
-\contentsline {subsubsection}{Range}{131}{section*.376}
-\contentsline {subsubsection}{Missile TN}{131}{section*.377}
-\contentsline {subsubsection}{Damage}{131}{section*.378}
-\contentsline {subsubsection}{Special}{131}{section*.379}
-\contentsline {subsubsection}{Weight}{131}{section*.380}
-\contentsline {subsubsection}{Cost}{132}{section*.381}
-\contentsline {subsubsection}{Required STR}{132}{section*.382}
-\contentsline {subsubsection}{Span}{132}{section*.383}
-\contentsline {subsubsection}{Spanning Tool}{132}{section*.384}
-\contentsline {subsubsection}{Load}{132}{section*.385}
-\contentsline {subsubsection}{Loading Mechanism}{132}{section*.386}
-\contentsline {subsubsection}{Firing Mechanism}{133}{section*.387}
-\contentsline {subsubsection}{Ammunition}{133}{section*.388}
-\contentsline {paragraph}{Catch Chance}{133}{section*.389}
-\contentsline {subsubsection}{Ammunition Capacity}{133}{section*.390}
-\contentsline {section}{\numberline {11.2}Missile Weapons}{134}{section.11.2}
-\contentsline {subsection}{\numberline {11.2.1}Bows}{134}{subsection.11.2.1}
-\contentsline {subsection}{\numberline {11.2.2}Crossbows}{134}{subsection.11.2.2}
-\contentsline {subsubsection}{Ammunition}{135}{section*.394}
-\contentsline {subsection}{\numberline {11.2.3}Firearms}{135}{subsection.11.2.3}
-\contentsline {subsubsection}{Ammunition Capacity}{136}{section*.398}
-\contentsline {paragraph}{Double}{136}{section*.399}
-\contentsline {paragraph}{Single}{136}{section*.400}
-\contentsline {paragraph}{Magazine (X)}{136}{section*.401}
-\contentsline {paragraph}{Multishot (X)}{136}{section*.402}
-\contentsline {paragraph}{Revolver (X)}{136}{section*.403}
-\contentsline {paragraph}{High Caliber (X)}{137}{section*.404}
-\contentsline {subsubsection}{Firing Mechanism}{137}{section*.405}
-\contentsline {subsection}{\numberline {11.2.4}Throwing Weapons}{137}{subsection.11.2.4}
-\contentsline {section}{\numberline {11.3}Special Qualities}{138}{section.11.3}
-\contentsline {chapter}{\numberline {12}Prosthetics}{139}{chapter.12}
-\contentsline {chapter}{\numberline {13}Shields}{143}{chapter.13}
-\contentsline {section}{\numberline {13.1}Shield Characteristics}{144}{section.13.1}
-\contentsline {paragraph}{Shield Name}{144}{section*.408}
-\contentsline {paragraph}{Shield Bash TN/Damage}{144}{section*.409}
-\contentsline {paragraph}{Block TN}{144}{section*.410}
-\contentsline {paragraph}{AV}{144}{section*.411}
-\contentsline {paragraph}{Durability}{144}{section*.412}
-\contentsline {paragraph}{Coverage}{144}{section*.413}
-\contentsline {paragraph}{Weight}{144}{section*.414}
-\contentsline {paragraph}{Cost}{144}{section*.415}
-\contentsline {section}{\numberline {13.2}Shield List}{145}{section.13.2}
-\contentsline {chapter}{\numberline {14}Armor}{146}{chapter.14}
-\contentsline {section}{\numberline {14.1}What Armor Should I Wear?}{147}{section.14.1}
-\contentsline {subsection}{\numberline {14.1.1}Armor Value}{147}{subsection.14.1.1}
-\contentsline {subsubsection}{Cutting Through Armor (Optional Rule)}{148}{section*.416}
-\contentsline {section}{\numberline {14.2}Armor Characteristics}{148}{section.14.2}
-\contentsline {subsubsection}{Component Name}{148}{section*.417}
-\contentsline {subsubsection}{AVC / AVP / AVB}{148}{section*.418}
-\contentsline {subsection}{\numberline {14.2.1}Layering Armor}{148}{subsection.14.2.1}
-\contentsline {subsection}{\numberline {14.2.2}Underarmor}{149}{subsection.14.2.2}
-\contentsline {subsubsection}{Coverage}{149}{section*.419}
-\contentsline {section}{\numberline {14.3}Pre-made Armor Sets}{150}{section.14.3}
-\contentsline {section}{\numberline {14.4}Armor Components}{155}{section.14.4}
-\contentsline {subsection}{\numberline {14.4.1}Head and Neck Armor}{155}{subsection.14.4.1}
-\contentsline {subsubsection}{Optional Visors}{156}{section*.428}
-\contentsline {paragraph}{Movable Visors}{156}{section*.429}
-\contentsline {subsubsection}{Optional Helmet Crests}{157}{section*.430}
-\contentsline {paragraph}{Identifying Crest}{157}{section*.431}
-\contentsline {paragraph}{Intimidating Crest}{157}{section*.432}
-\contentsline {paragraph}{Ruthlessly Fashionable Crest}{157}{section*.433}
-\contentsline {subsection}{\numberline {14.4.2}Torso Armor}{158}{subsection.14.4.2}
-\contentsline {subsection}{\numberline {14.4.3}Arm Armor}{159}{subsection.14.4.3}
-\contentsline {subsection}{\numberline {14.4.4}Leg Armor}{161}{subsection.14.4.4}
-\contentsline {subsection}{\numberline {14.4.5}Horse Armor}{163}{subsection.14.4.5}
-\contentsline {section}{\numberline {14.5}Special Qualities}{163}{section.14.5}
-\contentsline {paragraph}{Hard}{163}{section*.434}
-\contentsline {paragraph}{Mail}{163}{section*.435}
-\contentsline {paragraph}{Layer}{163}{section*.436}
-\contentsline {paragraph}{Textile}{163}{section*.437}
-\contentsline {paragraph}{Bulletproof}{163}{section*.438}
-\contentsline {paragraph}{Restricts Breathing}{164}{section*.439}
-\contentsline {subsubsection}{Materials}{164}{section*.440}
-\contentsline {chapter}{\numberline {15}Burdinadin Armory}{165}{chapter.15}
-\contentsline {section}{\numberline {15.1}Burdinadin Armor}{166}{section.15.1}
-\contentsline {subsection}{\numberline {15.1.1}Burdinadin Armor}{167}{subsection.15.1.1}
-\contentsline {subsection}{\numberline {15.1.2}Myrmidon Armor}{168}{subsection.15.1.2}
-\contentsline {subsection}{\numberline {15.1.3}Armor Augmentations}{168}{subsection.15.1.3}
-\contentsline {paragraph}{Augmentation Name}{168}{section*.443}
-\contentsline {subparagraph}{Cost:}{168}{section*.444}
-\contentsline {subparagraph}{Fitted To:}{168}{section*.445}
-\contentsline {paragraph}{Illumination}{168}{section*.446}
-\contentsline {subparagraph}{Cost:}{168}{section*.447}
-\contentsline {subparagraph}{Fitted To:}{168}{section*.448}
-\contentsline {paragraph}{Quick-Release}{168}{section*.449}
-\contentsline {subparagraph}{Cost:}{169}{section*.450}
-\contentsline {subparagraph}{Fitted To:}{169}{section*.451}
-\contentsline {paragraph}{Enhanced Strength}{169}{section*.452}
-\contentsline {subparagraph}{Cost:}{169}{section*.453}
-\contentsline {subparagraph}{Fitted To:}{169}{section*.454}
-\contentsline {paragraph}{Enhanced Endurance}{169}{section*.455}
-\contentsline {subparagraph}{Cost:}{169}{section*.456}
-\contentsline {subparagraph}{Fitted To:}{169}{section*.457}
-\contentsline {paragraph}{Sensory Suite}{169}{section*.458}
-\contentsline {subparagraph}{Cost:}{169}{section*.459}
-\contentsline {subparagraph}{Fitted To:}{169}{section*.460}
-\contentsline {subparagraph}{Fitted To:}{169}{section*.461}
-\contentsline {paragraph}{Hemostatic Pressure System}{169}{section*.462}
-\contentsline {subparagraph}{Cost:}{169}{section*.463}
-\contentsline {subparagraph}{Fitted To:}{169}{section*.464}
-\contentsline {paragraph}{Hardened}{170}{section*.465}
-\contentsline {subparagraph}{Cost:}{170}{section*.466}
-\contentsline {subparagraph}{Fitted to:}{170}{section*.467}
-\contentsline {paragraph}{Ablative Armor}{170}{section*.468}
-\contentsline {subparagraph}{Cost:}{170}{section*.469}
-\contentsline {subparagraph}{Fitted To:}{170}{section*.470}
-\contentsline {paragraph}{Integrated Weapon}{170}{section*.471}
-\contentsline {subparagraph}{Cost:}{170}{section*.472}
-\contentsline {subparagraph}{Fitted To:}{170}{section*.473}
-\contentsline {paragraph}{Integrated Tool System}{170}{section*.474}
-\contentsline {subparagraph}{Cost:}{170}{section*.475}
-\contentsline {subparagraph}{Fitted To:}{170}{section*.476}
-\contentsline {paragraph}{Independent Air Supply}{170}{section*.477}
-\contentsline {subparagraph}{Cost:}{170}{section*.478}
-\contentsline {subparagraph}{Fitted To:}{170}{section*.479}
-\contentsline {paragraph}{Dark Vision}{171}{section*.480}
-\contentsline {subparagraph}{Cost:}{171}{section*.481}
-\contentsline {subparagraph}{Fitted To:}{171}{section*.482}
-\contentsline {paragraph}{Mobility Enhancement}{171}{section*.483}
-\contentsline {subparagraph}{Example Environments:}{171}{section*.484}
-\contentsline {subparagraph}{Cost:}{171}{section*.485}
-\contentsline {subparagraph}{Fitted To:}{171}{section*.486}
-\contentsline {paragraph}{Self-Sealing}{171}{section*.487}
-\contentsline {subparagraph}{Cost:}{171}{section*.488}
-\contentsline {subparagraph}{Fitted To:}{171}{section*.489}
-\contentsline {paragraph}{Helian Fire Caster}{171}{section*.490}
-\contentsline {subparagraph}{Cost:}{171}{section*.491}
-\contentsline {subparagraph}{Fitted To:}{171}{section*.492}
-\contentsline {section}{\numberline {15.2}Burdinadin Weapons}{172}{section.15.2}
-\contentsline {subsection}{\numberline {15.2.1}Burdinadin Ukabilla}{172}{subsection.15.2.1}
-\contentsline {subsection}{\numberline {15.2.2}Burdinadin Lanzalamas}{172}{subsection.15.2.2}
-\contentsline {subsection}{\numberline {15.2.3}Burdinadin Weapon Enhancements}{173}{subsection.15.2.3}
-\contentsline {paragraph}{REQUIRED: Burdinadin Craftsmanship}{173}{section*.495}
-\contentsline {subparagraph}{Cost:}{173}{section*.496}
-\contentsline {subparagraph}{Fitted To:}{173}{section*.497}
-\contentsline {paragraph}{Electrified}{173}{section*.498}
-\contentsline {subparagraph}{Cost:}{173}{section*.499}
-\contentsline {subparagraph}{Fitted To:}{173}{section*.500}
-\contentsline {paragraph}{Magestone Sight}{173}{section*.501}
-\contentsline {chapter}{\numberline {16}Other Items}{174}{chapter.16}
-\contentsline {section}{\numberline {16.1}Everyday Items}{175}{section.16.1}
-\contentsline {chapter}{\numberline {17}Proficiencies}{178}{chapter.17}
-\contentsline {section}{\numberline {17.1}Character Creation}{180}{section.17.1}
-\contentsline {subsection}{\numberline {17.1.1}Advancing with Arc}{181}{subsection.17.1.1}
-\contentsline {section}{\numberline {17.2}Using Proficiencies}{181}{section.17.2}
-\contentsline {subsection}{\numberline {17.2.1}Alternate Weapon Usage}{182}{subsection.17.2.1}
-\contentsline {subsubsection}{Proficiency Defaults}{182}{section*.502}
-\contentsline {section}{\numberline {17.3}School Types}{184}{section.17.3}
-\contentsline {subsection}{\numberline {17.3.1}Self-Taught}{184}{subsection.17.3.1}
-\contentsline {subparagraph}{Entry Requirements:}{184}{section*.504}
-\contentsline {subparagraph}{Who Uses it:}{184}{section*.505}
-\contentsline {subparagraph}{Proficiencies:}{184}{section*.506}
-\contentsline {subparagraph}{Bonuses:}{184}{section*.507}
-\contentsline {subparagraph}{Penalties:}{184}{section*.508}
-\contentsline {subparagraph}{Cost:}{184}{section*.509}
-\contentsline {subsection}{\numberline {17.3.2}Noble}{185}{subsection.17.3.2}
-\contentsline {subparagraph}{Entry Requirements:}{185}{section*.510}
-\contentsline {subparagraph}{Who Uses it:}{185}{section*.511}
-\contentsline {subparagraph}{What Weapons:}{185}{section*.512}
-\contentsline {subparagraph}{Proficiencies:}{185}{section*.513}
-\contentsline {subparagraph}{Bonuses:}{185}{section*.514}
-\contentsline {subparagraph}{Penalties:}{185}{section*.515}
-\contentsline {subparagraph}{Cost:}{185}{section*.516}
-\contentsline {subsection}{\numberline {17.3.3}Soldier}{186}{subsection.17.3.3}
-\contentsline {subparagraph}{Entry Requirements:}{186}{section*.517}
-\contentsline {subparagraph}{Who Uses it:}{186}{section*.518}
-\contentsline {subparagraph}{What Weapons:}{186}{section*.519}
-\contentsline {subparagraph}{Proficiencies:}{186}{section*.520}
-\contentsline {subparagraph}{Bonuses:}{186}{section*.521}
-\contentsline {subparagraph}{Penalties:}{186}{section*.522}
-\contentsline {subparagraph}{Cost:}{186}{section*.523}
-\contentsline {subsection}{\numberline {17.3.4}Officer}{186}{subsection.17.3.4}
-\contentsline {subparagraph}{Entry Requirements:}{186}{section*.524}
-\contentsline {subparagraph}{Who Uses it:}{186}{section*.525}
-\contentsline {subparagraph}{What Weapons:}{187}{section*.526}
-\contentsline {subparagraph}{Proficiencies:}{187}{section*.527}
-\contentsline {subparagraph}{Bonuses:}{187}{section*.528}
-\contentsline {subparagraph}{Penalties:}{187}{section*.529}
-\contentsline {subparagraph}{Cost:}{187}{section*.530}
-\contentsline {subsection}{\numberline {17.3.5}Esoteric}{187}{subsection.17.3.5}
-\contentsline {subparagraph}{Entry Requirements:}{187}{section*.531}
-\contentsline {subparagraph}{Who Uses It:}{187}{section*.532}
-\contentsline {subparagraph}{What Weapons:}{187}{section*.533}
-\contentsline {subparagraph}{Proficiencies:}{188}{section*.534}
-\contentsline {subparagraph}{Bonuses:}{188}{section*.535}
-\contentsline {subparagraph}{Penalties:}{188}{section*.536}
-\contentsline {subparagraph}{Cost:}{188}{section*.537}
-\contentsline {section}{\numberline {17.4}Melee Proficiencies}{188}{section.17.4}
-\contentsline {subsection}{\numberline {17.4.1}Wrestling}{188}{subsection.17.4.1}
-\contentsline {subsubsection}{Core Maneuvers}{188}{section*.539}
-\contentsline {subsubsection}{Tier 1 Maneuvers}{188}{section*.540}
-\contentsline {subsubsection}{Tier 2 Maneuvers}{188}{section*.541}
-\contentsline {subsection}{\numberline {17.4.2}Pugilism}{189}{subsection.17.4.2}
-\contentsline {subsubsection}{Core Maneuvers}{189}{section*.542}
-\contentsline {subsubsection}{Tier 1 Maneuvers}{189}{section*.543}
-\contentsline {subsubsection}{Tier 2 Maneuvers}{189}{section*.544}
-\contentsline {subsection}{\numberline {17.4.3}Dagger}{189}{subsection.17.4.3}
-\contentsline {subsubsection}{Core Maneuvers}{189}{section*.545}
-\contentsline {subsubsection}{Tier 1 Maneuvers}{190}{section*.546}
-\contentsline {subsubsection}{Tier 2 Maneuvers}{190}{section*.547}
-\contentsline {subsection}{\numberline {17.4.4}1H Sword}{190}{subsection.17.4.4}
-\contentsline {subsubsection}{Core Maneuvers}{190}{section*.548}
-\contentsline {subsubsection}{Tier 1 Maneuvers}{190}{section*.549}
-\contentsline {subsubsection}{Tier 2 Maneuvers}{191}{section*.550}
-\contentsline {subsection}{\numberline {17.4.5}2H Sword}{191}{subsection.17.4.5}
-\contentsline {subsubsection}{Core Maneuvers}{191}{section*.551}
-\contentsline {subsubsection}{Tier 1 Maneuvers}{191}{section*.552}
-\contentsline {subsubsection}{Tier 2 Maneuvers}{192}{section*.553}
-\contentsline {subsection}{\numberline {17.4.6}1H Blunt}{192}{subsection.17.4.6}
-\contentsline {subsubsection}{Core Maneuvers}{192}{section*.554}
-\contentsline {subsubsection}{Tier 1 Maneuvers}{192}{section*.555}
-\contentsline {subsubsection}{Tier 2 Maneuvers}{192}{section*.556}
-\contentsline {subsection}{\numberline {17.4.7}2H Blunt}{193}{subsection.17.4.7}
-\contentsline {subsubsection}{Core Maneuvers}{193}{section*.557}
-\contentsline {subsubsection}{Tier 1 Maneuvers}{193}{section*.558}
-\contentsline {subsubsection}{Tier 2 Maneuvers}{193}{section*.559}
-\contentsline {subsection}{\numberline {17.4.8}Spear}{193}{subsection.17.4.8}
-\contentsline {subsubsection}{Core Maneuvers}{194}{section*.560}
-\contentsline {subsubsection}{Tier 1 Maneuvers}{194}{section*.561}
-\contentsline {subsubsection}{Tier 2 Maneuvers}{194}{section*.562}
-\contentsline {subsection}{\numberline {17.4.9}Polearm}{194}{subsection.17.4.9}
-\contentsline {subsubsection}{Core Maneuvers}{194}{section*.563}
-\contentsline {subsubsection}{Tier 1 Maneuvers}{195}{section*.564}
-\contentsline {subsubsection}{Tier 2 Maneuvers}{195}{section*.565}
-\contentsline {section}{\numberline {17.5}Missile Proficiencies}{195}{section.17.5}
-\contentsline {subsection}{\numberline {17.5.1}Bow}{195}{subsection.17.5.1}
-\contentsline {subsubsection}{Core Maneuvers}{195}{section*.566}
-\contentsline {subsubsection}{Tier 1 Maneuvers}{195}{section*.567}
-\contentsline {subsubsection}{Tier 2 Maneuvers}{195}{section*.568}
-\contentsline {subsection}{\numberline {17.5.2}Crossbow}{195}{subsection.17.5.2}
-\contentsline {subsubsection}{Core Maneuvers}{195}{section*.569}
-\contentsline {subsubsection}{Tier 1 Maneuvers}{196}{section*.570}
-\contentsline {subsubsection}{Tier 2 Maneuvers}{196}{section*.571}
-\contentsline {subsection}{\numberline {17.5.3}Firearms}{196}{subsection.17.5.3}
-\contentsline {subsubsection}{Core Maneuvers}{196}{section*.572}
-\contentsline {subsubsection}{Tier 1 Maneuvers}{196}{section*.573}
-\contentsline {subsection}{\numberline {17.5.4}Throwing Weapons}{196}{subsection.17.5.4}
-\contentsline {subsubsection}{Core Maneuvers}{196}{section*.574}
-\contentsline {subsubsection}{Tier 1 Maneuvers}{196}{section*.575}
-\contentsline {chapter}{\numberline {18}Maneuvers}{197}{chapter.18}
-\contentsline {subsection}{\numberline {18.0.1}Gaining Maneuvers}{199}{subsection.18.0.1}
-\contentsline {subsection}{\numberline {18.0.2}Using Maneuvers}{199}{subsection.18.0.2}
-\contentsline {section}{\numberline {18.1}The Anatomy of a Maneuver}{199}{section.18.1}
-\contentsline {section}{\numberline {18.2}Attack Maneuvers}{201}{section.18.2}
-\contentsline {subsection}{\numberline {18.2.1}Weapon Attack Maneuvers}{201}{subsection.18.2.1}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont BEAT}{201}{section*.576}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont BREAK}{202}{section*.577}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont BUTT-STRIKE}{202}{section*.579}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont DACIAN RUSH }{203}{section*.580}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont DEEP DRAW CUT}{203}{section*.581}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont DISARM}{204}{section*.582}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont FEINT}{204}{section*.583}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont HALF-SWORD}{205}{section*.584}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont HEW}{205}{section*.585}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont HOOK}{205}{section*.586}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont JOINT THRUST}{206}{section*.587}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont MELEE SHOOT}{206}{section*.588}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont MURDER-STRIKE}{207}{section*.589}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont POMMEL STRIKE}{207}{section*.590}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont PUSH CUT}{207}{section*.591}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont QUICKDRAW}{208}{section*.592}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont SWING}{208}{section*.594}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont THRUST}{208}{section*.595}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont WEAPON THROW}{209}{section*.596}
-\contentsline {subsection}{\numberline {18.2.2}Unarmed Attack Maneuvers}{209}{subsection.18.2.2}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont CLINCH (ATTACK)}{209}{section*.597}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont ELBOW}{210}{section*.598}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont HEADBUTT}{211}{section*.599}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont HOOK PUNCH}{211}{section*.600}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont KICK}{211}{section*.601}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont KNEE}{212}{section*.602}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont ONE-TWO PUNCH}{212}{section*.603}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont SHOULDER CHARGE}{213}{section*.604}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont STRAIGHT PUNCH}{213}{section*.605}
-\contentsline {subsection}{\numberline {18.2.3}Shield Attack Maneuvers}{214}{subsection.18.2.3}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont SHIELD BASH}{214}{section*.606}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont SHIELD BEAT}{214}{section*.607}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont SHIELD FEINT}{214}{section*.608}
-\contentsline {subsection}{\numberline {18.2.4}Special Attack Maneuvers}{215}{subsection.18.2.4}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont BLIND TOSS}{215}{section*.609}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont STRANGLE}{215}{section*.610}
-\contentsline {section}{\numberline {18.3}Defense Maneuvers}{216}{section.18.3}
-\contentsline {subsection}{\numberline {18.3.1}Parry Defense Maneuvers}{216}{subsection.18.3.1}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont DISARM (DEFENSE)}{216}{section*.611}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont PARRY}{216}{section*.612}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont QUICK DEFENSE}{216}{section*.613}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Riposte}{217}{section*.614}
-\contentsline {subsection}{\numberline {18.3.2}Unarmed Defense Maneuvers}{217}{subsection.18.3.2}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont ARM PARRY}{217}{section*.615}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont CLINCH (DEFENSE)}{218}{section*.616}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont MISSILE CATCH}{218}{section*.617}
-\contentsline {subsection}{\numberline {18.3.3}Block Defense Maneuvers}{218}{subsection.18.3.3}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont BLOCK}{218}{section*.618}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont SHIELD BIND}{218}{section*.619}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont TOTAL BLOCK}{219}{section*.620}
-\contentsline {subsection}{\numberline {18.3.4}Void Defense Maneuvers}{219}{subsection.18.3.4}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont CLOSING VOID}{219}{section*.621}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont DART-OUT}{219}{section*.622}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont FLEE}{220}{section*.623}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont TAKE COVER}{220}{section*.624}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont VOID}{221}{section*.626}
-\contentsline {subsection}{\numberline {18.3.5}Special Defense Maneuvers}{221}{subsection.18.3.5}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont PASS (DO NOTHING)}{221}{section*.627}
-\contentsline {section}{\numberline {18.4}Cross-Fighting Maneuvers}{221}{section.18.4}
-\contentsline {subsection}{\numberline {18.4.1}Attack Cross-Fighting Maneuvers}{221}{subsection.18.4.1}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont CLEAVING BLOW}{221}{section*.628}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont TARGET CHANGE}{222}{section*.629}
-\contentsline {subsection}{\numberline {18.4.2}Defense Cross-Fighting Maneuvers}{222}{subsection.18.4.2}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont ALLY DEFENSE}{222}{section*.630}
-\contentsline {section}{\numberline {18.5}Simultaneous Maneuvers}{222}{section.18.5}
-\contentsline {subsection}{\numberline {18.5.1}General Simultaneous Maneuvers}{222}{subsection.18.5.1}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont DOUBLE ATTACK}{222}{section*.631}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont DOUBLE SHOT}{223}{section*.632}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont SIMULTANEOUS BLOCK/ATTACK}{223}{section*.633}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont SIMULTANEOUS OFF-HAND PARRY/ATTACK}{223}{section*.634}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont SIMULTANEOUS PARRY/ATTACK}{224}{section*.635}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont SIMULTANEOUS VOID/ATTACK}{224}{section*.636}
-\contentsline {section}{\numberline {18.6}Missile Maneuvers}{224}{section.18.6}
-\contentsline {subsection}{\numberline {18.6.1}General Missile Maneuvers}{224}{subsection.18.6.1}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont AIM}{224}{section*.637}
-\contentsline {subsection}{\numberline {18.6.2}Shooting Missile Maneuvers}{225}{subsection.18.6.2}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont BRACED SHOT}{225}{section*.638}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont POWER DRAW}{225}{section*.639}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont RAPID SHOT}{226}{section*.640}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont RELOAD}{226}{section*.641}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont SHOOT}{226}{section*.642}
-\contentsline {subsubsection}{Missile Attack Penalties}{227}{section*.643}
-\contentsline {subsection}{\numberline {18.6.3}Throwing Missile Maneuvers}{227}{subsection.18.6.3}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont DOUBLE FLING}{227}{section*.645}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont FLING}{227}{section*.646}
-\contentsline {section}{\numberline {18.7}Grapple Maneuvers}{228}{section.18.7}
-\contentsline {subsection}{\numberline {18.7.1}Advantage Grapple Maneuvers}{228}{subsection.18.7.1}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont GRAPPLING: CHOKE}{228}{section*.647}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont GRAPPLING: COUP DE GRACE}{229}{section*.648}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont GRAPPLING: LIMB-BREAK}{229}{section*.649}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont GRAPPLING: PIN}{229}{section*.650}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont GRAPPLING: TAKEDOWN}{230}{section*.651}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont GRAPPLING: THROW}{230}{section*.652}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont GRAPPLING: TRAP}{230}{section*.653}
-\contentsline {subsection}{\numberline {18.7.2}Disadvantage Grapple Maneuvers}{231}{subsection.18.7.2}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont GRAPPLING: SLIP}{231}{section*.654}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont GRAPPLING: TWIST}{231}{section*.655}
-\contentsline {subsection}{\numberline {18.7.3}General Grapple Maneuvers}{231}{subsection.18.7.3}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont GRAPPLING: BITE}{231}{section*.656}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont GRAPPLING: FORCE}{232}{section*.657}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont GRAPPLING: UNARMED ATTACK}{232}{section*.658}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont GRAPPLING: USE WEAPON}{232}{section*.659}
-\contentsline {section}{\numberline {18.8}Hilt Push Maneuvers}{232}{section.18.8}
-\contentsline {subsection}{\numberline {18.8.1}Advantage Hilt Push Maneuvers}{232}{subsection.18.8.1}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont HILT PUSH}{232}{section*.660}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Hilt Push: Lever Down}{234}{section*.661}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Hilt Push: Evasion*}{234}{section*.662}
-\contentsline {section}{\numberline {18.9}Mobility Maneuvers}{234}{section.18.9}
-\contentsline {subsection}{\numberline {18.9.1}General Mobility Maneuvers}{234}{subsection.18.9.1}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont OBSTRUCTION}{234}{section*.663}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont OUTMANEUVER}{234}{section*.664}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont RAPID RISE}{235}{section*.665}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont SLIP-ABOUT}{235}{section*.666}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont STEAL INITIATIVE}{235}{section*.667}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont THREAD THE NEEDLE}{236}{section*.668}
-\contentsline {section}{\numberline {18.10}Mounted Maneuvers}{236}{section.18.10}
-\contentsline {subsection}{\numberline {18.10.1}Attack Mounted Maneuvers}{236}{subsection.18.10.1}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont LANCE CHARGE}{236}{section*.669}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont MOUNT BITE}{236}{section*.670}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont MOUNT KICK}{237}{section*.671}
-\contentsline {subsection}{\numberline {18.10.2}Defense Mounted Maneuvers}{237}{subsection.18.10.2}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont DISENGAGE}{237}{section*.672}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont LEAN}{237}{section*.673}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont MOUNT DODGE}{238}{section*.674}
-\contentsline {subsection}{\numberline {18.10.3}Passing Mounted Maneuvers}{238}{subsection.18.10.3}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont RIDE-BY}{238}{section*.675}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont TRAMPLE}{238}{section*.676}
-\contentsline {section}{\numberline {18.11}Dog Maneuvers}{239}{section.18.11}
-\contentsline {subsection}{\numberline {18.11.1}Attack Dog Maneuvers}{239}{subsection.18.11.1}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont DOG BITE}{239}{section*.677}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont SAVAGE}{239}{section*.678}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont TACKLE}{240}{section*.679}
-\contentsline {chapter}{\numberline {19}Talents}{241}{chapter.19}
-\contentsline {section}{\numberline {19.1}Gaining Talents}{242}{section.19.1}
-\contentsline {subsection}{\numberline {19.1.1}Choosing Talents}{242}{subsection.19.1.1}
-\contentsline {section}{\numberline {19.2}Using Talents}{242}{section.19.2}
-\contentsline {section}{\numberline {19.3}Talent List}{242}{section.19.3}
-\contentsline {subsection}{\numberline {19.3.1}Novice Talents}{242}{subsection.19.3.1}
-\contentsline {chapter}{\numberline {20}Adventuring}{248}{chapter.20}
-\contentsline {section}{\numberline {20.1}Encumbrance}{249}{section.20.1}
-\contentsline {section}{\numberline {20.2}Exhaustion}{250}{section.20.2}
-\contentsline {subsection}{\numberline {20.2.1}Exhaustion \& Fatigue}{250}{subsection.20.2.1}
-\contentsline {subsubsection}{Fatigue Points}{250}{section*.680}
-\contentsline {paragraph}{Resting}{250}{section*.682}
-\contentsline {subsubsection}{Wearing Armor Long-Term}{250}{section*.683}
-\contentsline {chapter}{\numberline {21}Combat}{252}{chapter.21}
-\contentsline {section}{\numberline {21.1}Combat Encounters}{253}{section.21.1}
-\contentsline {subsection}{\numberline {21.1.1}Rounds}{253}{subsection.21.1.1}
-\contentsline {subsubsection}{3-Phase Combat Round}{253}{section*.684}
-\contentsline {subsubsection}{Stealing the Initiative}{253}{section*.685}
-\contentsline {subsection}{\numberline {21.1.2}Actions}{254}{subsection.21.1.2}
-\contentsline {subsubsection}{Action Types}{254}{section*.686}
-\contentsline {paragraph}{Aim}{254}{section*.687}
-\contentsline {paragraph}{Missile Attack}{254}{section*.688}
-\contentsline {subparagraph}{Shoot}{254}{section*.689}
-\contentsline {subparagraph}{Rapid Shot}{254}{section*.690}
-\contentsline {paragraph}{ Covering Fire}{255}{section*.691}
-\contentsline {paragraph}{Throw}{255}{section*.692}
-\contentsline {paragraph}{ Active Defense}{255}{section*.693}
-\contentsline {paragraph}{ Take Cover}{255}{section*.694}
-\contentsline {paragraph}{UReload}{255}{section*.695}
-\contentsline {paragraph}{ Sprint}{255}{section*.696}
-\contentsline {paragraph}{ Melee Attack}{255}{section*.697}
-\contentsline {paragraph}{ Charge}{256}{section*.698}
-\contentsline {subsection}{\numberline {21.1.3}Missile Defense}{256}{subsection.21.1.3}
-\contentsline {subsubsection}{Missile Hits \& Damage}{256}{section*.699}
-\contentsline {section}{\numberline {21.2}Melee Combat}{256}{section.21.2}
-\contentsline {subparagraph}{An Example of a Melee Combat}{256}{section*.700}
-\contentsline {subsection}{\numberline {21.2.1}Round Preparation}{257}{subsection.21.2.1}
-\contentsline {subsubsection}{Orientation}{257}{section*.701}
-\contentsline {paragraph}{Aggressive}{257}{section*.702}
-\contentsline {paragraph}{Cautious}{257}{section*.703}
-\contentsline {paragraph}{Defensive}{257}{section*.704}
-\contentsline {paragraph}{Aggressive/Aggressive}{258}{section*.707}
-\contentsline {paragraph}{Aggressive/Anyone Else}{258}{section*.708}
-\contentsline {paragraph}{Cautious/Defensive}{258}{section*.709}
-\contentsline {paragraph}{Defensive/Defensive}{258}{section*.710}
-\contentsline {subsection}{\numberline {21.2.2}Maneuver Resolution}{259}{subsection.21.2.2}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont THRUST}{259}{section*.711}
-\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont BLOCK}{259}{section*.712}
-\contentsline {subsection}{\numberline {21.2.3}Overwatch Phase}{260}{subsection.21.2.3}
-\contentsline {subsection}{\numberline {21.2.4}Round Conclusion}{260}{subsection.21.2.4}
-\contentsline {subparagraph}{Lock:}{260}{section*.713}
-\contentsline {subparagraph}{Disengage:}{260}{section*.714}
-\contentsline {paragraph}{Encounter Ends}{260}{section*.715}
-\contentsline {section}{\numberline {21.3}Combat Concepts}{260}{section.21.3}
-\contentsline {subsection}{\numberline {21.3.1}Combat Pool (CP)}{260}{subsection.21.3.1}
-\contentsline {subsection}{\numberline {21.3.2}Missile Target Zones}{261}{subsection.21.3.2}
-\contentsline {subsection}{\numberline {21.3.3}Reach}{261}{subsection.21.3.3}
-\contentsline {subsubsection}{Range}{262}{section*.717}
-\contentsline {section}{\numberline {21.4}Additional Combat Rules}{262}{section.21.4}
-\contentsline {subsection}{\numberline {21.4.1}Declaring Defense Maneuvers without Initiative}{262}{subsection.21.4.1}
-\contentsline {subsection}{\numberline {21.4.2}Battlefield Terrain}{262}{subsection.21.4.2}
-\contentsline {subsubsection}{Terrain}{263}{section*.718}
-\contentsline {subsection}{\numberline {21.4.3}Outflanking}{263}{subsection.21.4.3}
-\contentsline {subsection}{\numberline {21.4.4}Back Attacks}{263}{subsection.21.4.4}
-\contentsline {subsection}{\numberline {21.4.5}Scatterfire}{264}{subsection.21.4.5}
-\contentsline {subsection}{\numberline {21.4.6}Mounted Combat}{264}{subsection.21.4.6}
-\contentsline {subsection}{\numberline {21.4.7}Explosions}{264}{subsection.21.4.7}
-\contentsline {chapter}{\numberline {22}Injury and Recovery}{266}{chapter.22}
-\contentsline {section}{\numberline {22.1}Wounds --- The Basics of Injury}{267}{section.22.1}
-\contentsline {subsection}{\numberline {22.1.1}Anatomy of a Wound}{267}{subsection.22.1.1}
-\contentsline {paragraph}{Hit Location}{267}{section*.719}
-\contentsline {paragraph}{Type}{267}{section*.720}
-\contentsline {paragraph}{Blood Loss}{267}{section*.721}
-\contentsline {paragraph}{Stun}{267}{section*.722}
-\contentsline {paragraph}{Pain}{268}{section*.723}
-\contentsline {section}{\numberline {22.2}Blood Loss and Bleeding Rolls}{268}{section.22.2}
-\contentsline {subsubsection}{Losing Health:}{268}{section*.725}
-\contentsline {subsubsection}{Regaining Health:}{269}{section*.726}
-\contentsline {subsubsection}{Staunching Blood Loss}{269}{section*.727}
-\contentsline {subsubsection}{Treating Wounds}{269}{section*.728}
-\contentsline {section}{\numberline {22.3}Damage Conditions and Tests}{269}{section.22.3}
-\contentsline {paragraph}{Knockout}{269}{section*.730}
-\contentsline {subparagraph}{Optional:}{270}{section*.731}
-\contentsline {paragraph}{Stability}{270}{section*.732}
-\contentsline {paragraph}{Prone}{270}{section*.733}
-\contentsline {subsection}{\numberline {22.3.1}Falling Damage}{270}{subsection.22.3.1}
-\contentsline {subsubsection}{Falling onto Slopes}{271}{section*.736}
-\contentsline {subsection}{\numberline {22.3.2}Burning \& Fire Damage}{272}{subsection.22.3.2}
-\contentsline {subsection}{\numberline {22.3.3}Electrical Damage}{273}{subsection.22.3.3}
-\contentsline {subsection}{\numberline {22.3.4}Cold Damage}{274}{subsection.22.3.4}
-\contentsline {section}{\numberline {22.4}Infection}{274}{section.22.4}
-\contentsline {subsection}{\numberline {22.4.1}Septic Infections}{275}{subsection.22.4.1}
-\contentsline {subsection}{\numberline {22.4.2}Amputation}{275}{subsection.22.4.2}
-\contentsline {chapter}{\numberline {23}Wound Charts}{277}{chapter.23}
-\contentsline {section}{\numberline {23.1}Target Zones and Hit Locations}{278}{section.23.1}
-\contentsline {section}{\numberline {23.2}Target Zone Hit Locations}{279}{section.23.2}
-\contentsline {section}{\numberline {23.3}Wound Qualities}{280}{section.23.3}
-\contentsline {paragraph}{Stability vs. }{280}{section*.745}
-\contentsline {paragraph}{Disarm vs. }{280}{section*.746}
-\contentsline {paragraph}{KO vs. }{280}{section*.747}
-\contentsline {paragraph}{Surgery vs. }{280}{section*.748}
-\contentsline {paragraph}{Autodrop}{280}{section*.749}
-\contentsline {paragraph}{Auto-Prone}{280}{section*.750}
-\contentsline {paragraph}{Auto-KO}{280}{section*.751}
-\contentsline {paragraph}{Infection Risk}{280}{section*.752}
-\contentsline {paragraph}{Total}{280}{section*.753}
-\contentsline {paragraph}{Total}{280}{section*.754}
-\contentsline {paragraph}{Limb Severed!}{280}{section*.755}
-\contentsline {paragraph}{Dead}{280}{section*.756}
-\contentsline {paragraph}{Internal Bleeding}{280}{section*.757}
-\contentsline {section}{\numberline {23.4}Upper Head}{281}{section.23.4}
-\contentsline {section}{\numberline {23.5}Face}{282}{section.23.5}
-\contentsline {section}{\numberline {23.6}Lower Head}{283}{section.23.6}
-\contentsline {section}{\numberline {23.7}Neck}{284}{section.23.7}
-\contentsline {section}{\numberline {23.8}Shoulder}{285}{section.23.8}
-\contentsline {section}{\numberline {23.9}Chest}{286}{section.23.9}
-\contentsline {section}{\numberline {23.10}Side}{287}{section.23.10}
-\contentsline {section}{\numberline {23.11}Belly}{288}{section.23.11}
-\contentsline {section}{\numberline {23.12}Hip}{290}{section.23.12}
-\contentsline {section}{\numberline {23.13}Groin}{291}{section.23.13}
-\contentsline {section}{\numberline {23.14}Thigh}{293}{section.23.14}
-\contentsline {section}{\numberline {23.15}Knee}{294}{section.23.15}
-\contentsline {section}{\numberline {23.16}Shin}{296}{section.23.16}
-\contentsline {section}{\numberline {23.17}Foot}{297}{section.23.17}
-\contentsline {section}{\numberline {23.18}Upper Arm}{298}{section.23.18}
-\contentsline {section}{\numberline {23.19}Elbow}{299}{section.23.19}
-\contentsline {section}{\numberline {23.20}Forearm}{301}{section.23.20}
-\contentsline {section}{\numberline {23.21}Hand}{303}{section.23.21}
-\contentsline {section}{\numberline {23.22}Upper Back}{305}{section.23.22}
-\contentsline {section}{\numberline {23.23}Lower Back}{306}{section.23.23}
+\contentsline {subsubsection}{General Rules for PCP Investment}{9}{subsubsection*.16}
+\contentsline {chapter}{\numberline {3}Arc and Advancement}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Arc Categories}{12}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Saga Arc}{12}{subsection.3.1.1}
+\contentsline {subsubsection}{Suspending a Saga Arc}{13}{subsubsection*.17}
+\contentsline {subsection}{\numberline {3.1.2}Epic Arc}{13}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Belief Arc}{13}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Glory Arc}{14}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Flaw Arc}{14}{subsection.3.1.5}
+\contentsline {section}{\numberline {3.2}Awarding Arc Points}{15}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Arcs Ending and Changing}{16}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Character Advancement}{16}{subsection.3.2.2}
+\contentsline {chapter}{\numberline {4}Attributes}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Character Creation}{18}{section.4.1}
+\contentsline {section}{\numberline {4.2}Advancing with Arc}{19}{section.4.2}
+\contentsline {subsubsection}{Non-Human Races and Attribute Maximums}{19}{subsubsection*.22}
+\contentsline {section}{\numberline {4.3}Core Attributes}{20}{section.4.3}
+\contentsline {section}{\numberline {4.4}Compound Attributes}{21}{section.4.4}
+\contentsline {section}{\numberline {4.5}How to Increase Grit}{22}{section.4.5}
+\contentsline {chapter}{\numberline {5}Races}{24}{chapter.5}
+\contentsline {subsubsection}{Historical Campaigns and Race}{25}{subsubsection*.24}
+\contentsline {section}{\numberline {5.1}Humans, Dwarves and Goblins}{26}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Humans}{26}{subsection.5.1.1}
+\contentsline {paragraph}{Attribute Modifiers:}{26}{paragraph*.25}
+\contentsline {paragraph}{Willing to Learn}{26}{paragraph*.26}
+\contentsline {paragraph}{The Human Condition}{27}{paragraph*.27}
+\contentsline {subsection}{\numberline {5.1.2}Goblins}{27}{subsection.5.1.2}
+\contentsline {paragraph}{Attribute Modifiers:}{28}{paragraph*.28}
+\contentsline {paragraph}{Regeneration}{28}{paragraph*.29}
+\contentsline {paragraph}{Small}{28}{paragraph*.30}
+\contentsline {paragraph}{Sneaky}{28}{paragraph*.31}
+\contentsline {paragraph}{Scarce Environment}{28}{paragraph*.32}
+\contentsline {paragraph}{Tight Spot}{28}{paragraph*.33}
+\contentsline {paragraph}{See in Darkness}{28}{paragraph*.34}
+\contentsline {paragraph}{Photophobia}{28}{paragraph*.35}
+\contentsline {subsection}{\numberline {5.1.3}Dwarves}{29}{subsection.5.1.3}
+\contentsline {paragraph}{Attribute Modifiers:}{30}{paragraph*.36}
+\contentsline {paragraph}{Short and Stout}{30}{paragraph*.37}
+\contentsline {paragraph}{Robust Immunities}{30}{paragraph*.38}
+\contentsline {paragraph}{See in Shadow}{30}{paragraph*.39}
+\contentsline {paragraph}{Prodigious Livers}{30}{paragraph*.40}
+\contentsline {paragraph}{The Call of the Deep}{30}{paragraph*.41}
+\contentsline {paragraph}{Hammer of Industry}{30}{paragraph*.42}
+\contentsline {section}{\numberline {5.2}Din}{32}{section.5.2}
+\contentsline {subsubsection}{Focus}{32}{subsubsection*.43}
+\contentsline {subsection}{\numberline {5.2.1}Zells}{33}{subsection.5.2.1}
+\contentsline {paragraph}{Attribute Modifiers:}{33}{paragraph*.44}
+\contentsline {paragraph}{Elvish Agelessness}{33}{paragraph*.45}
+\contentsline {paragraph}{Focus}{34}{paragraph*.46}
+\contentsline {subparagraph}{Zellish Dream}{34}{subparagraph*.47}
+\contentsline {paragraph}{Zellislava}{34}{paragraph*.48}
+\contentsline {subsection}{\numberline {5.2.2}Burdinadin}{37}{subsection.5.2.2}
+\contentsline {paragraph}{Attribute Modifiers:}{37}{paragraph*.49}
+\contentsline {paragraph}{Elvish Agelessness}{37}{paragraph*.50}
+\contentsline {paragraph}{Focus}{38}{paragraph*.51}
+\contentsline {paragraph}{Natural Philosophy}{38}{paragraph*.52}
+\contentsline {paragraph}{The Stains of Time}{38}{paragraph*.54}
+\contentsline {paragraph}{Sterile Soul}{39}{paragraph*.55}
+\contentsline {paragraph}{Burdinadin Armory}{39}{paragraph*.56}
+\contentsline {paragraph}{How to Roleplay a Burdinadin}{40}{paragraph*.57}
+\contentsline {subsection}{\numberline {5.2.3}Ohanedin}{40}{subsection.5.2.3}
+\contentsline {paragraph}{Attribute Modifiers:}{41}{paragraph*.58}
+\contentsline {paragraph}{Elvish Agelessness}{41}{paragraph*.59}
+\contentsline {paragraph}{Focus}{41}{paragraph*.60}
+\contentsline {paragraph}{Metallophobia}{41}{paragraph*.61}
+\contentsline {paragraph}{Focus Oaths}{41}{paragraph*.62}
+\contentsline {paragraph}{Natural Awareness}{42}{paragraph*.63}
+\contentsline {paragraph}{Murderous Speed}{42}{paragraph*.64}
+\contentsline {paragraph}{The Feeling Disappears}{42}{paragraph*.65}
+\contentsline {paragraph}{Rules of Nature}{42}{paragraph*.66}
+\contentsline {subsubsection}{How to Roleplay an Ohanedin}{43}{subsubsection*.67}
+\contentsline {subsection}{\numberline {5.2.4}Orredin}{43}{subsection.5.2.4}
+\contentsline {paragraph}{Attribute Modifiers:}{44}{paragraph*.68}
+\contentsline {paragraph}{Focus:}{44}{paragraph*.69}
+\contentsline {paragraph}{Apotheosis:}{44}{paragraph*.70}
+\contentsline {paragraph}{The Godhead is a Spring:}{45}{paragraph*.71}
+\contentsline {paragraph}{From it flows Everything:}{45}{paragraph*.72}
+\contentsline {paragraph}{And then returns once more, and so is like a Spring:}{45}{paragraph*.73}
+\contentsline {subsubsection}{Bloodline Powers}{45}{subsubsection*.74}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Killing Glare}{45}{paragraph*.75}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Kneel!}{45}{paragraph*.77}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Majesty}{46}{paragraph*.78}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Purple Vortex}{46}{paragraph*.79}
+\contentsline {subparagraph}{Success:}{46}{subparagraph*.80}
+\contentsline {subsubsection}{How to Roleplay an Orredin}{47}{subsubsection*.81}
+\contentsline {subsection}{\numberline {5.2.5}Star Vampire}{48}{subsection.5.2.5}
+\contentsline {paragraph}{Attribute Modifiers:}{48}{paragraph*.82}
+\contentsline {subsection}{\numberline {5.2.6}Paleolithic Elf}{48}{subsection.5.2.6}
+\contentsline {paragraph}{Attribute Modifiers:}{48}{paragraph*.83}
+\contentsline {section}{\numberline {5.3}Ascended Humans}{49}{section.5.3}
+\contentsline {paragraph}{Bonuses}{49}{paragraph*.84}
+\contentsline {subsubsection}{Touched by the Source}{49}{subsubsection*.85}
+\contentsline {subsubsection}{Divine Power}{50}{subsubsection*.86}
+\contentsline {subsection}{\numberline {5.3.1}Genosian Paladin}{50}{subsection.5.3.1}
+\contentsline {paragraph}{Attribute Modifiers:}{51}{paragraph*.87}
+\contentsline {paragraph}{Genosian Ideal}{51}{paragraph*.88}
+\contentsline {paragraph}{Glory, Amen}{51}{paragraph*.89}
+\contentsline {paragraph}{Judgement}{52}{paragraph*.90}
+\contentsline {paragraph}{Shield of Dawn}{52}{paragraph*.91}
+\contentsline {paragraph}{Healing}{52}{paragraph*.93}
+\contentsline {paragraph}{Wrath of God}{53}{paragraph*.94}
+\contentsline {paragraph}{I See You}{54}{paragraph*.95}
+\contentsline {subsection}{\numberline {5.3.2}Dessian Silver Guard}{54}{subsection.5.3.2}
+\contentsline {paragraph}{Attribute Modifiers:}{55}{paragraph*.96}
+\contentsline {paragraph}{Perfect}{55}{paragraph*.97}
+\contentsline {paragraph}{The Moon Also Rises}{55}{paragraph*.98}
+\contentsline {paragraph}{Moonstrike}{56}{paragraph*.99}
+\contentsline {paragraph}{The White Fog}{56}{paragraph*.100}
+\contentsline {paragraph}{Moonlit Twostep}{57}{paragraph*.102}
+\contentsline {paragraph}{Soaring Charge}{57}{paragraph*.103}
+\contentsline {paragraph}{Mark of the Moon}{57}{paragraph*.104}
+\contentsline {paragraph}{Forcible Marking}{58}{paragraph*.105}
+\contentsline {paragraph}{Succor}{58}{paragraph*.106}
+\contentsline {paragraph}{A Thousand Stars, One Moon}{59}{paragraph*.107}
+\contentsline {subsection}{\numberline {5.3.3}Sarturi Chosen}{59}{subsection.5.3.3}
+\contentsline {paragraph}{Attribute Modifiers:}{60}{paragraph*.108}
+\contentsline {subsubsection}{Give unto Sartur\dots }{60}{subsubsection*.109}
+\contentsline {paragraph}{From the Depths to the Soil}{60}{paragraph*.110}
+\contentsline {paragraph}{A River of Blood}{61}{paragraph*.112}
+\contentsline {paragraph}{Not Today!}{61}{paragraph*.113}
+\contentsline {paragraph}{Band of Blood:}{61}{paragraph*.114}
+\contentsline {paragraph}{Sartur Hungers!:}{62}{paragraph*.115}
+\contentsline {paragraph}{No Hard Feelings:}{62}{paragraph*.116}
+\contentsline {chapter}{\numberline {6}Boons and Banes}{63}{chapter.6}
+\contentsline {section}{\numberline {6.1}Character Creation}{64}{section.6.1}
+\contentsline {subparagraph}{1-3 PCP Investment}{64}{subparagraph*.118}
+\contentsline {subparagraph}{4-10 PCP Investment}{64}{subparagraph*.119}
+\contentsline {section}{\numberline {6.2}Advancing with Arc}{65}{section.6.2}
+\contentsline {section}{\numberline {6.3}Boons List}{66}{section.6.3}
+\contentsline {section}{\numberline {6.4}Banes List}{66}{section.6.4}
+\contentsline {section}{\numberline {6.5}Boons}{68}{section.6.5}
+\contentsline {paragraph}{Allies}{68}{paragraph*.120}
+\contentsline {paragraph}{Ambidextrous}{68}{paragraph*.121}
+\contentsline {paragraph}{Animal Affinity}{68}{paragraph*.122}
+\contentsline {paragraph}{Beautiful}{68}{paragraph*.123}
+\contentsline {paragraph}{Berserker}{69}{paragraph*.124}
+\contentsline {paragraph}{Bloodthirsty}{69}{paragraph*.125}
+\contentsline {paragraph}{Brave}{70}{paragraph*.126}
+\contentsline {paragraph}{Contacts}{70}{paragraph*.127}
+\contentsline {paragraph}{Direction Sense}{70}{paragraph*.128}
+\contentsline {paragraph}{Estate}{70}{paragraph*.129}
+\contentsline {paragraph}{Favor}{71}{paragraph*.130}
+\contentsline {paragraph}{Famous}{71}{paragraph*.131}
+\contentsline {paragraph}{Folks Back Home}{71}{paragraph*.132}
+\contentsline {paragraph}{Follower}{71}{paragraph*.133}
+\contentsline {paragraph}{Good Ears}{72}{paragraph*.134}
+\contentsline {paragraph}{Good Eyes}{72}{paragraph*.135}
+\contentsline {paragraph}{Good Nose}{72}{paragraph*.136}
+\contentsline {paragraph}{Hale and Hearty}{72}{paragraph*.137}
+\contentsline {paragraph}{Impressive Voice}{72}{paragraph*.138}
+\contentsline {paragraph}{Known for Virtue}{73}{paragraph*.139}
+\contentsline {paragraph}{Languages}{73}{paragraph*.140}
+\contentsline {paragraph}{Literate}{73}{paragraph*.141}
+\contentsline {paragraph}{Natural Born Killer}{73}{paragraph*.142}
+\contentsline {paragraph}{Natural Leader}{74}{paragraph*.143}
+\contentsline {paragraph}{Retinue}{74}{paragraph*.144}
+\contentsline {paragraph}{Tall}{74}{paragraph*.145}
+\contentsline {paragraph}{True Grit}{74}{paragraph*.146}
+\contentsline {paragraph}{Rich}{75}{paragraph*.147}
+\contentsline {paragraph}{Tireless Lobster}{75}{paragraph*.148}
+\contentsline {section}{\numberline {6.6}Banes}{75}{section.6.6}
+\contentsline {paragraph}{Arrow Magnet}{75}{paragraph*.149}
+\contentsline {paragraph}{Bad Ears}{75}{paragraph*.150}
+\contentsline {paragraph}{Bad Eyes}{76}{paragraph*.151}
+\contentsline {paragraph}{Bad Reputation}{76}{paragraph*.152}
+\contentsline {paragraph}{Barren/Sterility}{76}{paragraph*.153}
+\contentsline {paragraph}{Blind}{77}{paragraph*.154}
+\contentsline {paragraph}{Braggart}{77}{paragraph*.155}
+\contentsline {paragraph}{Brain Damage}{77}{paragraph*.156}
+\contentsline {paragraph}{Broken Limb/Appendage}{77}{paragraph*.158}
+\contentsline {paragraph}{Complete Monster}{78}{paragraph*.159}
+\contentsline {paragraph}{Craven}{78}{paragraph*.160}
+\contentsline {paragraph}{Crippled Limb/Appendage}{79}{paragraph*.161}
+\contentsline {paragraph}{Dead}{79}{paragraph*.162}
+\contentsline {paragraph}{Debt}{79}{paragraph*.163}
+\contentsline {paragraph}{Dependent}{80}{paragraph*.164}
+\contentsline {subparagraph}{6:}{80}{subparagraph*.165}
+\contentsline {subparagraph}{12:}{80}{subparagraph*.166}
+\contentsline {subparagraph}{Special:}{80}{subparagraph*.167}
+\contentsline {paragraph}{Dire Past}{80}{paragraph*.168}
+\contentsline {paragraph}{Enemies}{81}{paragraph*.169}
+\contentsline {paragraph}{Facial Deformity}{81}{paragraph*.170}
+\contentsline {paragraph}{Fat}{82}{paragraph*.171}
+\contentsline {paragraph}{Haemophilia}{82}{paragraph*.172}
+\contentsline {paragraph}{Hothead}{82}{paragraph*.173}
+\contentsline {paragraph}{Honorable}{82}{paragraph*.174}
+\contentsline {paragraph}{Lasting Pain}{83}{paragraph*.175}
+\contentsline {paragraph}{Mute}{83}{paragraph*.176}
+\contentsline {paragraph}{Oath}{83}{paragraph*.177}
+\contentsline {paragraph}{Old Wound}{84}{paragraph*.178}
+\contentsline {paragraph}{One-Eyed}{84}{paragraph*.179}
+\contentsline {paragraph}{Poor}{85}{paragraph*.180}
+\contentsline {paragraph}{Severed Limb/Appendage:}{85}{paragraph*.181}
+\contentsline {paragraph}{Sheltered}{86}{paragraph*.182}
+\contentsline {paragraph}{Short}{87}{paragraph*.183}
+\contentsline {paragraph}{Skinny}{87}{paragraph*.184}
+\contentsline {paragraph}{Technologically Impaired}{87}{paragraph*.185}
+\contentsline {paragraph}{Unhappily Married}{88}{paragraph*.186}
+\contentsline {paragraph}{Virtuous}{88}{paragraph*.187}
+\contentsline {paragraph}{Wanted}{88}{paragraph*.188}
+\contentsline {chapter}{\numberline {7}Skills}{89}{chapter.7}
+\contentsline {section}{\numberline {7.1}Skills}{90}{section.7.1}
+\contentsline {paragraph}{Trained}{91}{paragraph*.189}
+\contentsline {paragraph}{Teacher}{91}{paragraph*.190}
+\contentsline {paragraph}{Mastery}{91}{paragraph*.192}
+\contentsline {paragraph}{Skill Level}{91}{paragraph*.193}
+\contentsline {paragraph}{Skill Pool (SP)}{91}{paragraph*.194}
+\contentsline {paragraph}{TN}{91}{paragraph*.195}
+\contentsline {paragraph}{Skill Tests}{91}{paragraph*.196}
+\contentsline {paragraph}{Untrained}{92}{paragraph*.197}
+\contentsline {paragraph}{Leveling up Skills}{92}{paragraph*.198}
+\contentsline {paragraph}{Retrying Skill Attempts}{92}{paragraph*.199}
+\contentsline {paragraph}{Encumbrance}{92}{paragraph*.201}
+\contentsline {subsection}{\numberline {7.1.1}Character Creation}{92}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}Skill Descriptions}{93}{section.7.2}
+\contentsline {paragraph}{Athletics}{93}{paragraph*.202}
+\contentsline {paragraph}{Climbing}{94}{paragraph*.203}
+\contentsline {paragraph}{Cooking}{95}{paragraph*.204}
+\contentsline {paragraph}{Crafting}{96}{paragraph*.205}
+\contentsline {paragraph}{Engineering}{96}{paragraph*.206}
+\contentsline {paragraph}{History}{97}{paragraph*.207}
+\contentsline {paragraph}{Hunting}{97}{paragraph*.208}
+\contentsline {paragraph}{Intimidate}{98}{paragraph*.209}
+\contentsline {paragraph}{Navigation}{99}{paragraph*.210}
+\contentsline {paragraph}{Observation}{99}{paragraph*.211}
+\contentsline {paragraph}{Orate}{100}{paragraph*.212}
+\contentsline {paragraph}{Perform}{101}{paragraph*.213}
+\contentsline {paragraph}{Persuasion}{102}{paragraph*.214}
+\contentsline {paragraph}{Politics}{102}{paragraph*.215}
+\contentsline {paragraph}{Research}{102}{paragraph*.216}
+\contentsline {paragraph}{Riding}{103}{paragraph*.217}
+\contentsline {paragraph}{Sailing}{103}{paragraph*.218}
+\contentsline {paragraph}{Stealth}{104}{paragraph*.219}
+\contentsline {paragraph}{Subterfuge}{104}{paragraph*.220}
+\contentsline {paragraph}{Surgery}{105}{paragraph*.221}
+\contentsline {subparagraph}{Perform Surgery:}{105}{subparagraph*.222}
+\contentsline {paragraph}{Swimming}{106}{paragraph*.223}
+\contentsline {subparagraph}{When failed: Drowning}{106}{subparagraph*.224}
+\contentsline {chapter}{\numberline {8}Social Class and Wealth}{107}{chapter.8}
+\contentsline {section}{\numberline {8.1}Character Creation}{108}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Social Class Benefits}{108}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Abnormal Social Class and Wealth Combinations}{108}{subsection.8.1.2}
+\contentsline {section}{\numberline {8.2}Wealth}{109}{section.8.2}
+\contentsline {section}{\numberline {8.3}Assets}{109}{section.8.3}
+\contentsline {chapter}{\numberline {9}Equipment}{113}{chapter.9}
+\contentsline {chapter}{\numberline {10}Melee Weapons}{115}{chapter.10}
+\contentsline {subsection}{\numberline {10.0.1}Which Weapon for Me?}{116}{subsection.10.0.1}
+\contentsline {subsubsection}{Attack TN}{116}{subsubsection*.232}
+\contentsline {subsubsection}{Attack Damage}{116}{subsubsection*.233}
+\contentsline {subsubsection}{Defense TN / Guard}{116}{subsubsection*.234}
+\contentsline {subsubsection}{Reach}{117}{subsubsection*.235}
+\contentsline {subsubsection}{Special}{117}{subsubsection*.236}
+\contentsline {subsubsection}{How Many Weapons?}{117}{subsubsection*.237}
+\contentsline {subsection}{\numberline {10.0.2}Melee Weapon Characteristics}{117}{subsection.10.0.2}
+\contentsline {subsubsection}{Weapon Name}{117}{subsubsection*.238}
+\contentsline {subsubsection}{Weapon Type}{117}{subsubsection*.239}
+\contentsline {subsubsection}{Hands}{117}{subsubsection*.240}
+\contentsline {subsubsection}{Reach}{118}{subsubsection*.241}
+\contentsline {subsubsection}{Swing}{118}{subsubsection*.243}
+\contentsline {subsubsection}{Thrust}{118}{subsubsection*.244}
+\contentsline {subsubsection}{Defense / Guard}{118}{subsubsection*.245}
+\contentsline {subsubsection}{Special}{119}{subsubsection*.246}
+\contentsline {subsubsection}{Weight}{119}{subsubsection*.247}
+\contentsline {subsubsection}{Cost}{119}{subsubsection*.248}
+\contentsline {section}{\numberline {10.1}Daggers}{119}{section.10.1}
+\contentsline {section}{\numberline {10.2}Swords}{120}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}1H Swords}{120}{subsection.10.2.1}
+\contentsline {subsection}{\numberline {10.2.2}2H Swords}{122}{subsection.10.2.2}
+\contentsline {section}{\numberline {10.3}Blunt}{123}{section.10.3}
+\contentsline {subsection}{\numberline {10.3.1}1H Blunt}{123}{subsection.10.3.1}
+\contentsline {subsection}{\numberline {10.3.2}2H Blunt}{124}{subsection.10.3.2}
+\contentsline {section}{\numberline {10.4}Spears}{126}{section.10.4}
+\contentsline {section}{\numberline {10.5}Polearms}{128}{section.10.5}
+\contentsline {section}{\numberline {10.6}Special Qualities}{131}{section.10.6}
+\contentsline {paragraph}{AP Swing [X]}{131}{paragraph*.249}
+\contentsline {paragraph}{AP Thrust [X]}{131}{paragraph*.250}
+\contentsline {paragraph}{Bleed}{131}{paragraph*.251}
+\contentsline {paragraph}{Brace}{131}{paragraph*.252}
+\contentsline {paragraph}{Cavalry Sword}{131}{paragraph*.253}
+\contentsline {paragraph}{Chain}{131}{paragraph*.254}
+\contentsline {paragraph}{Companion Weapon}{131}{paragraph*.255}
+\contentsline {paragraph}{Couched Charge}{131}{paragraph*.256}
+\contentsline {paragraph}{Chain}{132}{paragraph*.257}
+\contentsline {paragraph}{Draw}{132}{paragraph*.258}
+\contentsline {paragraph}{Fluid Thrusts}{132}{paragraph*.259}
+\contentsline {paragraph}{Forward Swept}{132}{paragraph*.260}
+\contentsline {paragraph}{Freakishly Large}{132}{paragraph*.261}
+\contentsline {paragraph}{Hand-Off}{132}{paragraph*.262}
+\contentsline {paragraph}{Heavy Weapon}{132}{paragraph*.263}
+\contentsline {paragraph}{Hook}{132}{paragraph*.264}
+\contentsline {paragraph}{Light Blade}{132}{paragraph*.265}
+\contentsline {paragraph}{Multhit}{132}{paragraph*.266}
+\contentsline {paragraph}{Parrying Teeth}{132}{paragraph*.267}
+\contentsline {paragraph}{Shock}{132}{paragraph*.268}
+\contentsline {paragraph}{Spatulate Tip}{133}{paragraph*.269}
+\contentsline {paragraph}{Swinging Slot}{133}{paragraph*.270}
+\contentsline {paragraph}{Thin Blade}{133}{paragraph*.271}
+\contentsline {paragraph}{Thrusting Slot}{133}{paragraph*.272}
+\contentsline {paragraph}{Tight Grip}{133}{paragraph*.273}
+\contentsline {paragraph}{Weapon Attachment}{133}{paragraph*.274}
+\contentsline {section}{\numberline {10.7}Materials}{133}{section.10.7}
+\contentsline {paragraph}{Limited Supply}{134}{paragraph*.275}
+\contentsline {section}{\numberline {10.8}Customization Options}{134}{section.10.8}
+\contentsline {paragraph}{Ridiculously Sharp}{134}{paragraph*.276}
+\contentsline {paragraph}{Bizarre Gimmick}{134}{paragraph*.277}
+\contentsline {paragraph}{Examples for Bizarre Gimmick:}{135}{paragraph*.278}
+\contentsline {paragraph}{Custom Hilt (+50\% Cost)}{135}{paragraph*.279}
+\contentsline {paragraph}{Custom Grip (+50\% Cost)}{135}{paragraph*.280}
+\contentsline {paragraph}{Exquisite Decoration}{135}{paragraph*.281}
+\contentsline {paragraph}{Fine Forging (+50\% Cost)}{135}{paragraph*.282}
+\contentsline {paragraph}{Integrated Pistol (+100\% Cost AND 1 gp)}{135}{paragraph*.283}
+\contentsline {chapter}{\numberline {11}Missile Weapons}{137}{chapter.11}
+\contentsline {section}{\numberline {11.1}Missile Weapon Characteristics}{138}{section.11.1}
+\contentsline {subsubsection}{Weapon Name}{138}{subsubsection*.285}
+\contentsline {subsubsection}{Weapon Type}{138}{subsubsection*.286}
+\contentsline {subsubsection}{Range}{138}{subsubsection*.287}
+\contentsline {subsubsection}{Missile TN}{138}{subsubsection*.288}
+\contentsline {subsubsection}{Damage}{138}{subsubsection*.289}
+\contentsline {subsubsection}{Special}{138}{subsubsection*.290}
+\contentsline {subsubsection}{Weight}{138}{subsubsection*.291}
+\contentsline {subsubsection}{Cost}{138}{subsubsection*.292}
+\contentsline {subsubsection}{Required STR}{139}{subsubsection*.293}
+\contentsline {subsubsection}{Span}{139}{subsubsection*.294}
+\contentsline {subsubsection}{Spanning Tool}{139}{subsubsection*.295}
+\contentsline {subsubsection}{Load}{139}{subsubsection*.296}
+\contentsline {subsubsection}{Loading Mechanism}{139}{subsubsection*.297}
+\contentsline {subsubsection}{Firing Mechanism}{140}{subsubsection*.298}
+\contentsline {subsubsection}{Ammunition}{140}{subsubsection*.299}
+\contentsline {paragraph}{Catch Chance}{140}{paragraph*.300}
+\contentsline {subsubsection}{Ammunition Capacity}{140}{subsubsection*.301}
+\contentsline {section}{\numberline {11.2}Missile Weapons}{141}{section.11.2}
+\contentsline {subsection}{\numberline {11.2.1}Bows}{141}{subsection.11.2.1}
+\contentsline {subsection}{\numberline {11.2.2}Crossbows}{141}{subsection.11.2.2}
+\contentsline {subsubsection}{Ammunition}{141}{subsubsection*.305}
+\contentsline {subsection}{\numberline {11.2.3}Firearms}{141}{subsection.11.2.3}
+\contentsline {subsubsection}{Ammunition Capacity}{142}{subsubsection*.309}
+\contentsline {paragraph}{Double}{142}{paragraph*.310}
+\contentsline {paragraph}{Single}{142}{paragraph*.311}
+\contentsline {paragraph}{Magazine (X)}{142}{paragraph*.312}
+\contentsline {paragraph}{Multishot (X)}{142}{paragraph*.313}
+\contentsline {paragraph}{Revolver (X)}{144}{paragraph*.314}
+\contentsline {paragraph}{High Caliber (X)}{144}{paragraph*.315}
+\contentsline {subsubsection}{Firing Mechanism}{144}{subsubsection*.316}
+\contentsline {subsection}{\numberline {11.2.4}Throwing Weapons}{144}{subsection.11.2.4}
+\contentsline {section}{\numberline {11.3}Special Qualities}{145}{section.11.3}
+\contentsline {chapter}{\numberline {12}Prosthetics}{147}{chapter.12}
+\contentsline {chapter}{\numberline {13}Shields}{151}{chapter.13}
+\contentsline {section}{\numberline {13.1}Shield Characteristics}{152}{section.13.1}
+\contentsline {paragraph}{Shield Name}{152}{paragraph*.319}
+\contentsline {paragraph}{Shield Bash TN/Damage}{152}{paragraph*.320}
+\contentsline {paragraph}{Block TN}{152}{paragraph*.321}
+\contentsline {paragraph}{AV}{152}{paragraph*.322}
+\contentsline {paragraph}{Durability}{152}{paragraph*.323}
+\contentsline {paragraph}{Coverage}{152}{paragraph*.324}
+\contentsline {paragraph}{Weight}{152}{paragraph*.325}
+\contentsline {paragraph}{Cost}{152}{paragraph*.326}
+\contentsline {section}{\numberline {13.2}Shield List}{153}{section.13.2}
+\contentsline {chapter}{\numberline {14}Armor}{154}{chapter.14}
+\contentsline {section}{\numberline {14.1}What Armor Should I Wear?}{155}{section.14.1}
+\contentsline {subsection}{\numberline {14.1.1}Armor Value}{155}{subsection.14.1.1}
+\contentsline {subsubsection}{Cutting Through Armor (Optional Rule)}{156}{subsubsection*.327}
+\contentsline {section}{\numberline {14.2}Armor Characteristics}{156}{section.14.2}
+\contentsline {subsubsection}{Component Name}{156}{subsubsection*.328}
+\contentsline {subsubsection}{AVC / AVP / AVB}{156}{subsubsection*.329}
+\contentsline {subsection}{\numberline {14.2.1}Layering Armor}{156}{subsection.14.2.1}
+\contentsline {subsection}{\numberline {14.2.2}Underarmor}{157}{subsection.14.2.2}
+\contentsline {subsubsection}{Coverage}{157}{subsubsection*.330}
+\contentsline {subsubsection}{Half AV Coverage}{157}{subsubsection*.331}
+\contentsline {subsubsection}{Weak Spots}{158}{subsubsection*.332}
+\contentsline {subsubsection}{Special}{158}{subsubsection*.333}
+\contentsline {subsubsection}{Weight}{158}{subsubsection*.334}
+\contentsline {subsubsection}{Perception Penalty}{158}{subsubsection*.335}
+\contentsline {subsubsection}{Cost}{158}{subsubsection*.336}
+\contentsline {section}{\numberline {14.3}Pre-made Armor Sets}{158}{section.14.3}
+\contentsline {section}{\numberline {14.4}Armor Components}{165}{section.14.4}
+\contentsline {subsection}{\numberline {14.4.1}Head and Neck Armor}{165}{subsection.14.4.1}
+\contentsline {subsubsection}{Optional Visors}{166}{subsubsection*.337}
+\contentsline {paragraph}{Movable Visors}{166}{paragraph*.338}
+\contentsline {subsubsection}{Optional Helmet Crests}{167}{subsubsection*.339}
+\contentsline {paragraph}{Identifying Crest}{167}{paragraph*.340}
+\contentsline {paragraph}{Intimidating Crest}{167}{paragraph*.341}
+\contentsline {paragraph}{Ruthlessly Fashionable Crest}{167}{paragraph*.342}
+\contentsline {subsection}{\numberline {14.4.2}Torso Armor}{168}{subsection.14.4.2}
+\contentsline {subsection}{\numberline {14.4.3}Arm Armor}{170}{subsection.14.4.3}
+\contentsline {subsection}{\numberline {14.4.4}Leg Armor}{172}{subsection.14.4.4}
+\contentsline {subsection}{\numberline {14.4.5}Horse Armor}{174}{subsection.14.4.5}
+\contentsline {section}{\numberline {14.5}Special Qualities}{174}{section.14.5}
+\contentsline {paragraph}{Hard}{174}{paragraph*.343}
+\contentsline {paragraph}{Mail}{174}{paragraph*.344}
+\contentsline {paragraph}{Layer}{174}{paragraph*.345}
+\contentsline {paragraph}{Textile}{175}{paragraph*.346}
+\contentsline {paragraph}{Bulletproof}{175}{paragraph*.347}
+\contentsline {paragraph}{Restricts Breathing}{175}{paragraph*.348}
+\contentsline {subsubsection}{Materials}{175}{subsubsection*.349}
+\contentsline {chapter}{\numberline {15}Burdinadin Armory}{176}{chapter.15}
+\contentsline {section}{\numberline {15.1}Burdinadin Armor}{177}{section.15.1}
+\contentsline {subsection}{\numberline {15.1.1}Burdinadin Armor}{178}{subsection.15.1.1}
+\contentsline {subsection}{\numberline {15.1.2}Myrmidon Armor}{180}{subsection.15.1.2}
+\contentsline {subsection}{\numberline {15.1.3}Armor Augmentations}{180}{subsection.15.1.3}
+\contentsline {paragraph}{Augmentation Name}{180}{paragraph*.352}
+\contentsline {subparagraph}{Cost:}{180}{subparagraph*.353}
+\contentsline {subparagraph}{Fitted To:}{180}{subparagraph*.354}
+\contentsline {paragraph}{Illumination}{180}{paragraph*.355}
+\contentsline {subparagraph}{Cost:}{180}{subparagraph*.356}
+\contentsline {subparagraph}{Fitted To:}{180}{subparagraph*.357}
+\contentsline {paragraph}{Quick-Release}{180}{paragraph*.358}
+\contentsline {subparagraph}{Cost:}{181}{subparagraph*.359}
+\contentsline {subparagraph}{Fitted To:}{181}{subparagraph*.360}
+\contentsline {paragraph}{Enhanced Strength}{181}{paragraph*.361}
+\contentsline {subparagraph}{Cost:}{181}{subparagraph*.362}
+\contentsline {subparagraph}{Fitted To:}{181}{subparagraph*.363}
+\contentsline {paragraph}{Enhanced Endurance}{181}{paragraph*.364}
+\contentsline {subparagraph}{Cost:}{181}{subparagraph*.365}
+\contentsline {subparagraph}{Fitted To:}{181}{subparagraph*.366}
+\contentsline {paragraph}{Sensory Suite}{181}{paragraph*.367}
+\contentsline {subparagraph}{Cost:}{181}{subparagraph*.368}
+\contentsline {subparagraph}{Fitted To:}{181}{subparagraph*.369}
+\contentsline {subparagraph}{Fitted To:}{181}{subparagraph*.370}
+\contentsline {paragraph}{Hemostatic Pressure System}{181}{paragraph*.371}
+\contentsline {subparagraph}{Cost:}{181}{subparagraph*.372}
+\contentsline {subparagraph}{Fitted To:}{181}{subparagraph*.373}
+\contentsline {paragraph}{Hardened}{181}{paragraph*.374}
+\contentsline {subparagraph}{Cost:}{182}{subparagraph*.375}
+\contentsline {subparagraph}{Fitted to:}{182}{subparagraph*.376}
+\contentsline {paragraph}{Ablative Armor}{182}{paragraph*.377}
+\contentsline {subparagraph}{Cost:}{182}{subparagraph*.378}
+\contentsline {subparagraph}{Fitted To:}{182}{subparagraph*.379}
+\contentsline {paragraph}{Integrated Weapon}{182}{paragraph*.380}
+\contentsline {subparagraph}{Cost:}{182}{subparagraph*.381}
+\contentsline {subparagraph}{Fitted To:}{182}{subparagraph*.382}
+\contentsline {paragraph}{Integrated Tool System}{182}{paragraph*.383}
+\contentsline {subparagraph}{Cost:}{182}{subparagraph*.384}
+\contentsline {subparagraph}{Fitted To:}{182}{subparagraph*.385}
+\contentsline {paragraph}{Independent Air Supply}{182}{paragraph*.386}
+\contentsline {subparagraph}{Cost:}{182}{subparagraph*.387}
+\contentsline {subparagraph}{Fitted To:}{182}{subparagraph*.388}
+\contentsline {paragraph}{Dark Vision}{182}{paragraph*.389}
+\contentsline {subparagraph}{Cost:}{183}{subparagraph*.390}
+\contentsline {subparagraph}{Fitted To:}{183}{subparagraph*.391}
+\contentsline {paragraph}{Mobility Enhancement}{183}{paragraph*.392}
+\contentsline {subparagraph}{Example Environments:}{183}{subparagraph*.393}
+\contentsline {subparagraph}{Cost:}{183}{subparagraph*.394}
+\contentsline {subparagraph}{Fitted To:}{183}{subparagraph*.395}
+\contentsline {paragraph}{Self-Sealing}{183}{paragraph*.396}
+\contentsline {subparagraph}{Cost:}{183}{subparagraph*.397}
+\contentsline {subparagraph}{Fitted To:}{183}{subparagraph*.398}
+\contentsline {paragraph}{Helian Fire Caster}{183}{paragraph*.399}
+\contentsline {subparagraph}{Cost:}{183}{subparagraph*.400}
+\contentsline {subparagraph}{Fitted To:}{183}{subparagraph*.401}
+\contentsline {section}{\numberline {15.2}Burdinadin Weapons}{183}{section.15.2}
+\contentsline {subsection}{\numberline {15.2.1}Burdinadin Ukabilla}{184}{subsection.15.2.1}
+\contentsline {subsection}{\numberline {15.2.2}Burdinadin Lanzalamas}{184}{subsection.15.2.2}
+\contentsline {subsection}{\numberline {15.2.3}Burdinadin Weapon Enhancements}{184}{subsection.15.2.3}
+\contentsline {paragraph}{REQUIRED: Burdinadin Craftsmanship}{184}{paragraph*.404}
+\contentsline {subparagraph}{Cost:}{185}{subparagraph*.405}
+\contentsline {subparagraph}{Fitted To:}{185}{subparagraph*.406}
+\contentsline {paragraph}{Electrified}{185}{paragraph*.407}
+\contentsline {subparagraph}{Cost:}{185}{subparagraph*.408}
+\contentsline {subparagraph}{Fitted To:}{185}{subparagraph*.409}
+\contentsline {paragraph}{Magestone Sight}{185}{paragraph*.410}
+\contentsline {chapter}{\numberline {16}Other Items}{186}{chapter.16}
+\contentsline {section}{\numberline {16.1}Everyday Items}{187}{section.16.1}
+\contentsline {chapter}{\numberline {17}Proficiencies}{190}{chapter.17}
+\contentsline {section}{\numberline {17.1}Character Creation}{191}{section.17.1}
+\contentsline {subsection}{\numberline {17.1.1}Advancing with Arc}{192}{subsection.17.1.1}
+\contentsline {section}{\numberline {17.2}Using Proficiencies}{192}{section.17.2}
+\contentsline {subsection}{\numberline {17.2.1}Alternate Weapon Usage}{193}{subsection.17.2.1}
+\contentsline {subsubsection}{Proficiency Defaults}{193}{subsubsection*.411}
+\contentsline {subsubsection}{Dual Wielding}{194}{subsubsection*.413}
+\contentsline {subsubsection}{Hand-Off Weapons}{194}{subsubsection*.414}
+\contentsline {section}{\numberline {17.3}Schools}{194}{section.17.3}
+\contentsline {paragraph}{Becoming part of a School}{195}{paragraph*.415}
+\contentsline {paragraph}{Leveling a School}{195}{paragraph*.416}
+\contentsline {section}{\numberline {17.4}School Types}{195}{section.17.4}
+\contentsline {subsection}{\numberline {17.4.1}Self-Taught}{195}{subsection.17.4.1}
+\contentsline {subparagraph}{Entry Requirements:}{195}{subparagraph*.417}
+\contentsline {subparagraph}{Who Uses it:}{195}{subparagraph*.418}
+\contentsline {subparagraph}{Proficiencies:}{195}{subparagraph*.419}
+\contentsline {subparagraph}{Bonuses:}{196}{subparagraph*.420}
+\contentsline {subparagraph}{Penalties:}{196}{subparagraph*.421}
+\contentsline {subparagraph}{Cost:}{196}{subparagraph*.422}
+\contentsline {subsection}{\numberline {17.4.2}Noble}{196}{subsection.17.4.2}
+\contentsline {subparagraph}{Entry Requirements:}{196}{subparagraph*.423}
+\contentsline {subparagraph}{Who Uses it:}{196}{subparagraph*.424}
+\contentsline {subparagraph}{What Weapons:}{196}{subparagraph*.425}
+\contentsline {subparagraph}{Proficiencies:}{196}{subparagraph*.426}
+\contentsline {subparagraph}{Bonuses:}{196}{subparagraph*.427}
+\contentsline {subparagraph}{Penalties:}{196}{subparagraph*.428}
+\contentsline {subparagraph}{Cost:}{196}{subparagraph*.429}
+\contentsline {subsection}{\numberline {17.4.3}Soldier}{197}{subsection.17.4.3}
+\contentsline {subparagraph}{Entry Requirements:}{197}{subparagraph*.430}
+\contentsline {subparagraph}{Who Uses it:}{197}{subparagraph*.431}
+\contentsline {subparagraph}{What Weapons:}{197}{subparagraph*.432}
+\contentsline {subparagraph}{Proficiencies:}{197}{subparagraph*.433}
+\contentsline {subparagraph}{Bonuses:}{197}{subparagraph*.434}
+\contentsline {subparagraph}{Penalties:}{197}{subparagraph*.435}
+\contentsline {subparagraph}{Cost:}{197}{subparagraph*.436}
+\contentsline {subsection}{\numberline {17.4.4}Officer}{197}{subsection.17.4.4}
+\contentsline {subparagraph}{Entry Requirements:}{197}{subparagraph*.437}
+\contentsline {subparagraph}{Who Uses it:}{197}{subparagraph*.438}
+\contentsline {subparagraph}{What Weapons:}{197}{subparagraph*.439}
+\contentsline {subparagraph}{Proficiencies:}{197}{subparagraph*.440}
+\contentsline {subparagraph}{Bonuses:}{197}{subparagraph*.441}
+\contentsline {subparagraph}{Penalties:}{197}{subparagraph*.442}
+\contentsline {subparagraph}{Cost:}{197}{subparagraph*.443}
+\contentsline {subsection}{\numberline {17.4.5}Esoteric}{198}{subsection.17.4.5}
+\contentsline {subparagraph}{Entry Requirements:}{198}{subparagraph*.444}
+\contentsline {subparagraph}{Who Uses It:}{198}{subparagraph*.445}
+\contentsline {subparagraph}{What Weapons:}{198}{subparagraph*.446}
+\contentsline {subparagraph}{Proficiencies:}{198}{subparagraph*.447}
+\contentsline {subparagraph}{Bonuses:}{198}{subparagraph*.448}
+\contentsline {subparagraph}{Penalties:}{198}{subparagraph*.449}
+\contentsline {subparagraph}{Cost:}{198}{subparagraph*.450}
+\contentsline {section}{\numberline {17.5}Melee Proficiencies}{198}{section.17.5}
+\contentsline {subsection}{\numberline {17.5.1}Wrestling}{198}{subsection.17.5.1}
+\contentsline {subsubsection}{Core Maneuvers}{199}{subsubsection*.451}
+\contentsline {subsubsection}{Tier 1 Maneuvers}{199}{subsubsection*.452}
+\contentsline {subsubsection}{Tier 2 Maneuvers}{199}{subsubsection*.453}
+\contentsline {subsection}{\numberline {17.5.2}Pugilism}{199}{subsection.17.5.2}
+\contentsline {subsubsection}{Core Maneuvers}{199}{subsubsection*.454}
+\contentsline {subsubsection}{Tier 1 Maneuvers}{199}{subsubsection*.455}
+\contentsline {subsubsection}{Tier 2 Maneuvers}{199}{subsubsection*.456}
+\contentsline {subsection}{\numberline {17.5.3}Dagger}{200}{subsection.17.5.3}
+\contentsline {subsubsection}{Core Maneuvers}{200}{subsubsection*.457}
+\contentsline {subsubsection}{Tier 1 Maneuvers}{200}{subsubsection*.458}
+\contentsline {subsubsection}{Tier 2 Maneuvers}{200}{subsubsection*.459}
+\contentsline {subsection}{\numberline {17.5.4}1H Sword}{200}{subsection.17.5.4}
+\contentsline {subsubsection}{Core Maneuvers}{200}{subsubsection*.460}
+\contentsline {subsubsection}{Tier 1 Maneuvers}{201}{subsubsection*.461}
+\contentsline {subsubsection}{Tier 2 Maneuvers}{201}{subsubsection*.462}
+\contentsline {subsection}{\numberline {17.5.5}2H Sword}{201}{subsection.17.5.5}
+\contentsline {subsubsection}{Core Maneuvers}{201}{subsubsection*.463}
+\contentsline {subsubsection}{Tier 1 Maneuvers}{202}{subsubsection*.464}
+\contentsline {subsubsection}{Tier 2 Maneuvers}{202}{subsubsection*.465}
+\contentsline {subsection}{\numberline {17.5.6}1H Blunt}{202}{subsection.17.5.6}
+\contentsline {subsubsection}{Core Maneuvers}{202}{subsubsection*.466}
+\contentsline {subsubsection}{Tier 1 Maneuvers}{202}{subsubsection*.467}
+\contentsline {subsubsection}{Tier 2 Maneuvers}{203}{subsubsection*.468}
+\contentsline {subsection}{\numberline {17.5.7}2H Blunt}{203}{subsection.17.5.7}
+\contentsline {subsubsection}{Core Maneuvers}{203}{subsubsection*.469}
+\contentsline {subsubsection}{Tier 1 Maneuvers}{203}{subsubsection*.470}
+\contentsline {subsubsection}{Tier 2 Maneuvers}{203}{subsubsection*.471}
+\contentsline {subsection}{\numberline {17.5.8}Spear}{204}{subsection.17.5.8}
+\contentsline {subsubsection}{Core Maneuvers}{204}{subsubsection*.472}
+\contentsline {subsubsection}{Tier 1 Maneuvers}{204}{subsubsection*.473}
+\contentsline {subsubsection}{Tier 2 Maneuvers}{204}{subsubsection*.474}
+\contentsline {subsection}{\numberline {17.5.9}Polearm}{204}{subsection.17.5.9}
+\contentsline {subsubsection}{Core Maneuvers}{205}{subsubsection*.475}
+\contentsline {subsubsection}{Tier 1 Maneuvers}{205}{subsubsection*.476}
+\contentsline {subsubsection}{Tier 2 Maneuvers}{205}{subsubsection*.477}
+\contentsline {section}{\numberline {17.6}Missile Proficiencies}{205}{section.17.6}
+\contentsline {subsection}{\numberline {17.6.1}Bow}{205}{subsection.17.6.1}
+\contentsline {subsubsection}{Core Maneuvers}{205}{subsubsection*.478}
+\contentsline {subsubsection}{Tier 1 Maneuvers}{205}{subsubsection*.479}
+\contentsline {subsubsection}{Tier 2 Maneuvers}{205}{subsubsection*.480}
+\contentsline {subsection}{\numberline {17.6.2}Crossbow}{205}{subsection.17.6.2}
+\contentsline {subsubsection}{Core Maneuvers}{205}{subsubsection*.481}
+\contentsline {subsubsection}{Tier 1 Maneuvers}{206}{subsubsection*.482}
+\contentsline {subsection}{\numberline {17.6.3}Firearms}{206}{subsection.17.6.3}
+\contentsline {subsubsection}{Core Maneuvers}{206}{subsubsection*.483}
+\contentsline {subsubsection}{Tier 1 Maneuvers}{206}{subsubsection*.484}
+\contentsline {subsection}{\numberline {17.6.4}Throwing Weapons}{206}{subsection.17.6.4}
+\contentsline {subsubsection}{Core Maneuvers}{206}{subsubsection*.485}
+\contentsline {subsubsection}{Tier 1 Maneuvers}{206}{subsubsection*.486}
+\contentsline {chapter}{\numberline {18}Maneuvers}{207}{chapter.18}
+\contentsline {subsection}{\numberline {18.0.1}Gaining Maneuvers}{209}{subsection.18.0.1}
+\contentsline {subsection}{\numberline {18.0.2}Using Maneuvers}{209}{subsection.18.0.2}
+\contentsline {section}{\numberline {18.1}The Anatomy of a Maneuver}{209}{section.18.1}
+\contentsline {section}{\numberline {18.2}Attack Maneuvers}{211}{section.18.2}
+\contentsline {subsection}{\numberline {18.2.1}Weapon Attack Maneuvers}{211}{subsection.18.2.1}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Beat}{211}{paragraph*.487}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Break}{212}{paragraph*.488}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Butt-Strike}{212}{paragraph*.490}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Dacian Rush}{213}{paragraph*.491}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Deep Draw Cut}{213}{paragraph*.492}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Disarm}{214}{paragraph*.493}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Feint}{214}{paragraph*.494}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Half-Sword}{215}{paragraph*.495}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Hew}{215}{paragraph*.496}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Hook}{215}{paragraph*.497}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Joint Thrust}{216}{paragraph*.498}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Melee Shoot}{216}{paragraph*.499}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Murder-Strike}{216}{paragraph*.500}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Pommel Strike}{217}{paragraph*.501}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont PUSH CUT}{217}{paragraph*.502}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Quickdraw}{218}{paragraph*.503}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Swing}{218}{paragraph*.505}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Thrust}{219}{paragraph*.506}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Weapon Throw}{219}{paragraph*.507}
+\contentsline {subsection}{\numberline {18.2.2}Unarmed Attack Maneuvers}{220}{subsection.18.2.2}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Clinch (Attack)}{220}{paragraph*.508}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Elbow}{220}{paragraph*.509}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Headbutt}{221}{paragraph*.510}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Hook Punch}{221}{paragraph*.511}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Kick}{222}{paragraph*.512}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Knee}{222}{paragraph*.513}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont One-Two Punch}{223}{paragraph*.514}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Shoulder Charge}{223}{paragraph*.515}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Straight Punch}{223}{paragraph*.516}
+\contentsline {subsection}{\numberline {18.2.3}Shield Attack Maneuvers}{224}{subsection.18.2.3}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Shield Bash}{224}{paragraph*.517}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Shield Beat}{224}{paragraph*.518}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Shield Feint}{225}{paragraph*.519}
+\contentsline {subsection}{\numberline {18.2.4}Special Attack Maneuvers}{225}{subsection.18.2.4}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Blind Toss}{225}{paragraph*.520}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Strangle}{225}{paragraph*.521}
+\contentsline {section}{\numberline {18.3}Defense Maneuvers}{226}{section.18.3}
+\contentsline {subsection}{\numberline {18.3.1}Parry Defense Maneuvers}{226}{subsection.18.3.1}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Disarm (Defense)}{226}{paragraph*.522}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Parry}{226}{paragraph*.523}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Quick Defense}{227}{paragraph*.524}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Riposte}{227}{paragraph*.525}
+\contentsline {subsection}{\numberline {18.3.2}Unarmed Defense Maneuvers}{227}{subsection.18.3.2}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Arm Parry}{227}{paragraph*.526}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Clinch (Defense)}{228}{paragraph*.527}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Missile Catch}{228}{paragraph*.528}
+\contentsline {subsection}{\numberline {18.3.3}Block Defense Maneuvers}{228}{subsection.18.3.3}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Block}{228}{paragraph*.529}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Shield Bind}{229}{paragraph*.530}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Total Block}{229}{paragraph*.531}
+\contentsline {subsection}{\numberline {18.3.4}Void Defense Maneuvers}{229}{subsection.18.3.4}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Closing Void}{229}{paragraph*.532}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Dart-Out}{230}{paragraph*.533}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Flee}{230}{paragraph*.534}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Take Cover}{230}{paragraph*.535}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Void}{231}{paragraph*.537}
+\contentsline {subsection}{\numberline {18.3.5}Special Defense Maneuvers}{232}{subsection.18.3.5}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Pass (Do Nothing)}{232}{paragraph*.538}
+\contentsline {section}{\numberline {18.4}Cross-Fighting Maneuvers}{232}{section.18.4}
+\contentsline {subsection}{\numberline {18.4.1}Attack Cross-Fighting Maneuvers}{232}{subsection.18.4.1}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Cleaving Blow}{232}{paragraph*.539}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Target Change}{232}{paragraph*.540}
+\contentsline {subsection}{\numberline {18.4.2}Defense Cross-Fighting Maneuvers}{233}{subsection.18.4.2}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Ally Defense}{233}{paragraph*.541}
+\contentsline {section}{\numberline {18.5}Simultaneous Maneuvers}{233}{section.18.5}
+\contentsline {subsection}{\numberline {18.5.1}General Simultaneous Maneuvers}{233}{subsection.18.5.1}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Double Attack}{233}{paragraph*.542}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Double Shot}{233}{paragraph*.543}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Simultaneous Block/Attack}{233}{paragraph*.544}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Simultaneous Off-Hand Parry/Attack}{234}{paragraph*.545}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Simultaneous Parry/Attack}{234}{paragraph*.546}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Simultaneous Void/Attack}{234}{paragraph*.547}
+\contentsline {section}{\numberline {18.6}Missile Maneuvers}{235}{section.18.6}
+\contentsline {subsection}{\numberline {18.6.1}General Missile Maneuvers}{235}{subsection.18.6.1}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Aim}{235}{paragraph*.548}
+\contentsline {subsection}{\numberline {18.6.2}Shooting Missile Maneuvers}{235}{subsection.18.6.2}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Braced Shot}{235}{paragraph*.549}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Power Draw}{236}{paragraph*.550}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Rapid Shot}{236}{paragraph*.551}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Reload}{236}{paragraph*.552}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Shoot}{237}{paragraph*.553}
+\contentsline {subsubsection}{Missile Attack Penalties}{237}{subsubsection*.554}
+\contentsline {subsection}{\numberline {18.6.3}Throwing Missile Maneuvers}{237}{subsection.18.6.3}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Double Fling}{237}{paragraph*.556}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Fling}{238}{paragraph*.557}
+\contentsline {section}{\numberline {18.7}Grapple Maneuvers}{238}{section.18.7}
+\contentsline {subsection}{\numberline {18.7.1}Advantage Grapple Maneuvers}{238}{subsection.18.7.1}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Grappling: Choke}{238}{paragraph*.558}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Grappling: Coup De Grace}{239}{paragraph*.559}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Grappling: Limb-Break}{239}{paragraph*.560}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Grappling: Pin}{240}{paragraph*.561}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Grappling: Takedown}{240}{paragraph*.562}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Grappling: Throw}{240}{paragraph*.563}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Grappling: Trap}{241}{paragraph*.564}
+\contentsline {subsection}{\numberline {18.7.2}Disadvantage Grapple Maneuvers}{241}{subsection.18.7.2}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Grappling: Slip}{241}{paragraph*.565}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Grappling: Twist}{241}{paragraph*.566}
+\contentsline {subsection}{\numberline {18.7.3}General Grapple Maneuvers}{242}{subsection.18.7.3}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Grappling: Bite}{242}{paragraph*.567}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Grappling: Force}{242}{paragraph*.568}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Grappling: Unarmed Attack}{242}{paragraph*.569}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Grappling: Use Weapon}{243}{paragraph*.570}
+\contentsline {section}{\numberline {18.8}Hilt Push Maneuvers}{243}{section.18.8}
+\contentsline {subsection}{\numberline {18.8.1}Advantage Hilt Push Maneuvers}{243}{subsection.18.8.1}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Hilt Push}{243}{paragraph*.571}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Hilt Push: Lever Down}{244}{paragraph*.572}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Hilt Push: Evasion*}{245}{paragraph*.573}
+\contentsline {section}{\numberline {18.9}Mobility Maneuvers}{245}{section.18.9}
+\contentsline {subsection}{\numberline {18.9.1}General Mobility Maneuvers}{245}{subsection.18.9.1}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Obstruction}{245}{paragraph*.574}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Outmaneuver}{245}{paragraph*.575}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Rapid Rise}{245}{paragraph*.576}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Slip-About}{246}{paragraph*.577}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Steal Initiative}{246}{paragraph*.578}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Thread the Needle}{246}{paragraph*.579}
+\contentsline {section}{\numberline {18.10}Mounted Maneuvers}{247}{section.18.10}
+\contentsline {subsection}{\numberline {18.10.1}Attack Mounted Maneuvers}{247}{subsection.18.10.1}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Lance Charge}{247}{paragraph*.580}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Mount Bite}{247}{paragraph*.581}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Mount Kick}{247}{paragraph*.582}
+\contentsline {subsection}{\numberline {18.10.2}Defense Mounted Maneuvers}{248}{subsection.18.10.2}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Disengage}{248}{paragraph*.583}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Lean}{248}{paragraph*.584}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Mount Dodge}{248}{paragraph*.585}
+\contentsline {subsection}{\numberline {18.10.3}Passing Mounted Maneuvers}{248}{subsection.18.10.3}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Ride-By}{248}{paragraph*.586}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Trample}{249}{paragraph*.587}
+\contentsline {section}{\numberline {18.11}Dog Maneuvers}{249}{section.18.11}
+\contentsline {subsection}{\numberline {18.11.1}Attack Dog Maneuvers}{249}{subsection.18.11.1}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Dog Bite}{249}{paragraph*.588}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Savage}{250}{paragraph*.589}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont Tackle}{250}{paragraph*.590}
+\contentsline {chapter}{\numberline {19}Talents}{251}{chapter.19}
+\contentsline {section}{\numberline {19.1}Gaining Talents}{252}{section.19.1}
+\contentsline {subsection}{\numberline {19.1.1}Choosing Talents}{252}{subsection.19.1.1}
+\contentsline {section}{\numberline {19.2}Using Talents}{252}{section.19.2}
+\contentsline {section}{\numberline {19.3}Novice Talents}{252}{section.19.3}
+\contentsline {paragraph}{Accuracy}{252}{paragraph*.591}
+\contentsline {paragraph}{Boar Piercer}{253}{paragraph*.592}
+\contentsline {paragraph}{Bonk!}{253}{paragraph*.593}
+\contentsline {paragraph}{Flourishing Drills}{253}{paragraph*.594}
+\contentsline {paragraph}{Good Form}{253}{paragraph*.595}
+\contentsline {paragraph}{Helm-Splitter}{254}{paragraph*.596}
+\contentsline {paragraph}{Shield-Breaker}{254}{paragraph*.597}
+\contentsline {paragraph}{Shield Trick}{254}{paragraph*.598}
+\contentsline {paragraph}{Slowpoke}{254}{paragraph*.599}
+\contentsline {paragraph}{Impaler}{254}{paragraph*.600}
+\contentsline {paragraph}{Special Move}{255}{paragraph*.601}
+\contentsline {paragraph}{Rapid Reaction}{255}{paragraph*.602}
+\contentsline {paragraph}{Specialist}{255}{paragraph*.603}
+\contentsline {paragraph}{Smash Punch}{255}{paragraph*.604}
+\contentsline {paragraph}{Head Guard}{256}{paragraph*.605}
+\contentsline {paragraph}{Infighter}{256}{paragraph*.606}
+\contentsline {paragraph}{Counter Attack}{256}{paragraph*.607}
+\contentsline {section}{\numberline {19.4}Journeyman Talents}{256}{section.19.4}
+\contentsline {paragraph}{Art of Eight Limbs}{256}{paragraph*.608}
+\contentsline {paragraph}{Bear Piercer}{256}{paragraph*.609}
+\contentsline {paragraph}{Grappling at the Sword}{257}{paragraph*.610}
+\contentsline {paragraph}{Swift Sword}{257}{paragraph*.611}
+\contentsline {paragraph}{Roll With It}{257}{paragraph*.612}
+\contentsline {paragraph}{Ground Wrestler}{257}{paragraph*.613}
+\contentsline {paragraph}{Stepping Parry}{258}{paragraph*.614}
+\contentsline {paragraph}{Kebab Master}{258}{paragraph*.615}
+\contentsline {paragraph}{Rapid Strike}{258}{paragraph*.616}
+\contentsline {paragraph}{Spartan Sole}{258}{paragraph*.617}
+\contentsline {paragraph}{Slippery}{258}{paragraph*.618}
+\contentsline {paragraph}{Quick Reload}{259}{paragraph*.619}
+\contentsline {paragraph}{Spear-Sunderer}{259}{paragraph*.620}
+\contentsline {paragraph}{Straight Blast}{259}{paragraph*.621}
+\contentsline {paragraph}{Rolling Hooks}{259}{paragraph*.622}
+\contentsline {paragraph}{Long Jab}{259}{paragraph*.623}
+\contentsline {paragraph}{Ironwall}{260}{paragraph*.624}
+\contentsline {paragraph}{Shield Charge}{260}{paragraph*.625}
+\contentsline {paragraph}{Rim Bash}{260}{paragraph*.626}
+\contentsline {section}{\numberline {19.5}Master Talents}{260}{section.19.5}
+\contentsline {paragraph}{It Was On Purpose!}{260}{paragraph*.627}
+\contentsline {paragraph}{Whirlwind Defense}{260}{paragraph*.628}
+\contentsline {paragraph}{Bad War}{261}{paragraph*.629}
+\contentsline {paragraph}{Stern}{261}{paragraph*.630}
+\contentsline {paragraph}{Superior Void}{261}{paragraph*.631}
+\contentsline {paragraph}{Juggernaut}{261}{paragraph*.632}
+\contentsline {paragraph}{Jarring Blows}{261}{paragraph*.633}
+\contentsline {paragraph}{Bruiser}{262}{paragraph*.634}
+\contentsline {paragraph}{Flicker Jab}{262}{paragraph*.635}
+\contentsline {paragraph}{The Spear that Pierced the Sky}{262}{paragraph*.636}
+\contentsline {chapter}{\numberline {20}Adventuring}{263}{chapter.20}
+\contentsline {section}{\numberline {20.1}Encumbrance}{264}{section.20.1}
+\contentsline {section}{\numberline {20.2}Exhaustion}{265}{section.20.2}
+\contentsline {subsection}{\numberline {20.2.1}Exhaustion \& Fatigue}{265}{subsection.20.2.1}
+\contentsline {subsubsection}{Fatigue Points}{265}{subsubsection*.638}
+\contentsline {paragraph}{Resting}{265}{paragraph*.640}
+\contentsline {subsubsection}{Wearing Armor Long-Term}{265}{subsubsection*.641}
+\contentsline {chapter}{\numberline {21}Combat}{267}{chapter.21}
+\contentsline {section}{\numberline {21.1}Combat Encounters}{268}{section.21.1}
+\contentsline {subsection}{\numberline {21.1.1}Rounds}{268}{subsection.21.1.1}
+\contentsline {subsubsection}{3-Phase Combat Round}{268}{subsubsection*.642}
+\contentsline {subsubsection}{Stealing the Initiative}{268}{subsubsection*.644}
+\contentsline {subsection}{\numberline {21.1.2}Actions}{269}{subsection.21.1.2}
+\contentsline {paragraph}{Base Movement}{269}{paragraph*.645}
+\contentsline {subsubsection}{Action Types}{269}{subsubsection*.646}
+\contentsline {paragraph}{Aim}{269}{paragraph*.647}
+\contentsline {paragraph}{Missile Attack}{269}{paragraph*.648}
+\contentsline {subparagraph}{Shoot}{269}{subparagraph*.649}
+\contentsline {subparagraph}{Rapid Shot}{269}{subparagraph*.650}
+\contentsline {paragraph}{ Covering Fire}{270}{paragraph*.651}
+\contentsline {paragraph}{Throw}{270}{paragraph*.652}
+\contentsline {paragraph}{ Active Defense}{270}{paragraph*.653}
+\contentsline {paragraph}{ Take Cover}{270}{paragraph*.654}
+\contentsline {paragraph}{Reload}{270}{paragraph*.655}
+\contentsline {paragraph}{ Sprint}{270}{paragraph*.656}
+\contentsline {paragraph}{ Melee Attack}{270}{paragraph*.657}
+\contentsline {paragraph}{ Charge}{270}{paragraph*.658}
+\contentsline {subsection}{\numberline {21.1.3}Missile Defense}{271}{subsection.21.1.3}
+\contentsline {subsubsection}{Missile Hits \& Damage}{271}{subsubsection*.659}
+\contentsline {section}{\numberline {21.2}Melee Combat}{271}{section.21.2}
+\contentsline {subparagraph}{An Example of a Melee Combat}{271}{subparagraph*.660}
+\contentsline {subsection}{\numberline {21.2.1}Round Preparation}{272}{subsection.21.2.1}
+\contentsline {subsubsection}{Orientation}{272}{subsubsection*.661}
+\contentsline {paragraph}{Aggressive}{272}{paragraph*.662}
+\contentsline {paragraph}{Cautious}{272}{paragraph*.663}
+\contentsline {paragraph}{Defensive}{272}{paragraph*.664}
+\contentsline {paragraph}{Aggressive/Aggressive}{273}{paragraph*.665}
+\contentsline {paragraph}{Aggressive/Anyone Else}{273}{paragraph*.666}
+\contentsline {paragraph}{Cautious/Cautious}{273}{paragraph*.667}
+\contentsline {paragraph}{Cautious/Defensive}{273}{paragraph*.668}
+\contentsline {paragraph}{Defensive/Defensive}{274}{paragraph*.669}
+\contentsline {subsection}{\numberline {21.2.2}Maneuver Resolution}{274}{subsection.21.2.2}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont THRUST}{274}{paragraph*.670}
+\contentsline {paragraph}{\nag@@warning@xxiv \relax \fontsize {12}{14}\selectfont BLOCK}{274}{paragraph*.671}
+\contentsline {subsubsection}{Target Changes}{275}{subsubsection*.672}
+\contentsline {subsection}{\numberline {21.2.3}Overwatch Phase}{275}{subsection.21.2.3}
+\contentsline {subsection}{\numberline {21.2.4}Round Conclusion}{275}{subsection.21.2.4}
+\contentsline {paragraph}{Encounter Ends}{276}{paragraph*.673}
+\contentsline {section}{\numberline {21.3}Combat Concepts}{276}{section.21.3}
+\contentsline {subsection}{\numberline {21.3.1}Combat Pool (CP)}{276}{subsection.21.3.1}
+\contentsline {subsection}{\numberline {21.3.2}Missile Target Zones}{276}{subsection.21.3.2}
+\contentsline {subsection}{\numberline {21.3.3}Initiative}{276}{subsection.21.3.3}
+\contentsline {subsection}{\numberline {21.3.4}Reach}{277}{subsection.21.3.4}
+\contentsline {subsubsection}{Range}{278}{subsubsection*.675}
+\contentsline {section}{\numberline {21.4}Additional Combat Rules}{279}{section.21.4}
+\contentsline {subsection}{\numberline {21.4.1}Declaring Defense Maneuvers without Initiative}{279}{subsection.21.4.1}
+\contentsline {subsection}{\numberline {21.4.2}Battlefield Terrain}{279}{subsection.21.4.2}
+\contentsline {subsubsection}{Terrain}{279}{subsubsection*.676}
+\contentsline {subsection}{\numberline {21.4.3}Surprise Attacks}{279}{subsection.21.4.3}
+\contentsline {subsection}{\numberline {21.4.4}Outflanking}{279}{subsection.21.4.4}
+\contentsline {subsection}{\numberline {21.4.5}Back Attacks}{280}{subsection.21.4.5}
+\contentsline {subsection}{\numberline {21.4.6}Scatterfire}{280}{subsection.21.4.6}
+\contentsline {subsection}{\numberline {21.4.7}Mounted Combat}{281}{subsection.21.4.7}
+\contentsline {subsection}{\numberline {21.4.8}Explosions}{281}{subsection.21.4.8}
+\contentsline {subsubsection}{Resolving an Explosion}{281}{subsubsection*.677}
+\contentsline {subsubsection}{Explosives}{282}{subsubsection*.678}
+\contentsline {paragraph}{Light Hand Grenade}{282}{paragraph*.679}
+\contentsline {paragraph}{Heavy Hand Grenade}{282}{paragraph*.680}
+\contentsline {paragraph}{Incendiary Bomb}{282}{paragraph*.681}
+\contentsline {paragraph}{Light Landmine}{282}{paragraph*.682}
+\contentsline {paragraph}{Heavy Landmine}{283}{paragraph*.683}
+\contentsline {paragraph}{Explosive Cannonball}{283}{paragraph*.684}
+\contentsline {paragraph}{Barrel of Gunpowder}{283}{paragraph*.685}
+\contentsline {paragraph}{Barrel of Gunpowder Filled with Shrapnel (nails, ball bearings, broken glass, etc)}{283}{paragraph*.686}
+\contentsline {subsection}{\numberline {21.4.9}GM Arbitration}{283}{subsection.21.4.9}
+\contentsline {chapter}{\numberline {22}Injury and Recovery}{284}{chapter.22}
+\contentsline {section}{\numberline {22.1}Wounds --- The Basics of Injury}{285}{section.22.1}
+\contentsline {subsection}{\numberline {22.1.1}Anatomy of a Wound}{285}{subsection.22.1.1}
+\contentsline {paragraph}{Hit Location}{285}{paragraph*.687}
+\contentsline {paragraph}{Type}{285}{paragraph*.688}
+\contentsline {paragraph}{Blood Loss}{285}{paragraph*.689}
+\contentsline {paragraph}{Stun}{285}{paragraph*.690}
+\contentsline {paragraph}{Pain}{286}{paragraph*.691}
+\contentsline {section}{\numberline {22.2}Blood Loss and Bleeding Rolls}{286}{section.22.2}
+\contentsline {subsubsection}{Losing Health:}{286}{subsubsection*.693}
+\contentsline {subsubsection}{Regaining Health:}{287}{subsubsection*.694}
+\contentsline {subsubsection}{Staunching Blood Loss}{287}{subsubsection*.695}
+\contentsline {subsubsection}{Treating Wounds}{287}{subsubsection*.696}
+\contentsline {section}{\numberline {22.3}Damage Conditions and Tests}{287}{section.22.3}
+\contentsline {paragraph}{Knockout}{287}{paragraph*.698}
+\contentsline {subparagraph}{Optional:}{288}{subparagraph*.699}
+\contentsline {paragraph}{Stability}{288}{paragraph*.700}
+\contentsline {paragraph}{Prone}{288}{paragraph*.701}
+\contentsline {subsection}{\numberline {22.3.1}Falling Damage}{288}{subsection.22.3.1}
+\contentsline {subsubsection}{Falling onto Slopes}{288}{subsubsection*.704}
+\contentsline {subsection}{\numberline {22.3.2}Burning \& Fire Damage}{290}{subsection.22.3.2}
+\contentsline {subsection}{\numberline {22.3.3}Electrical Damage}{291}{subsection.22.3.3}
+\contentsline {subsection}{\numberline {22.3.4}Cold Damage}{291}{subsection.22.3.4}
+\contentsline {section}{\numberline {22.4}Infection}{291}{section.22.4}
+\contentsline {subsection}{\numberline {22.4.1}Septic Infections}{293}{subsection.22.4.1}
+\contentsline {subsection}{\numberline {22.4.2}Amputation}{294}{subsection.22.4.2}
+\contentsline {chapter}{\numberline {23}Wound Charts}{295}{chapter.23}
+\contentsline {section}{\numberline {23.1}Target Zones and Hit Locations}{296}{section.23.1}
+\contentsline {subsection}{\numberline {23.1.1}Hit Location Tables}{297}{subsection.23.1.1}
+\contentsline {section}{\numberline {23.2}Wound Qualities}{298}{section.23.2}
+\contentsline {paragraph}{Stability vs. }{298}{paragraph*.712}
+\contentsline {paragraph}{Disarm vs. }{298}{paragraph*.713}
+\contentsline {paragraph}{KO vs. }{298}{paragraph*.714}
+\contentsline {paragraph}{Surgery vs. }{298}{paragraph*.715}
+\contentsline {paragraph}{Autodrop}{298}{paragraph*.716}
+\contentsline {paragraph}{Auto-Prone}{298}{paragraph*.717}
+\contentsline {paragraph}{Auto-KO}{298}{paragraph*.718}
+\contentsline {paragraph}{Infection Risk}{298}{paragraph*.719}
+\contentsline {paragraph}{Total}{298}{paragraph*.720}
+\contentsline {paragraph}{Total}{298}{paragraph*.721}
+\contentsline {paragraph}{Limb Severed!}{298}{paragraph*.722}
+\contentsline {paragraph}{Dead}{298}{paragraph*.723}
+\contentsline {paragraph}{Internal Bleeding}{298}{paragraph*.724}
+\contentsline {section}{\numberline {23.3}Upper Head}{299}{section.23.3}
+\contentsline {section}{\numberline {23.4}Face}{300}{section.23.4}
+\contentsline {section}{\numberline {23.5}Lower Head}{301}{section.23.5}
+\contentsline {section}{\numberline {23.6}Neck}{302}{section.23.6}
+\contentsline {section}{\numberline {23.7}Shoulder}{303}{section.23.7}
+\contentsline {section}{\numberline {23.8}Chest}{304}{section.23.8}
+\contentsline {section}{\numberline {23.9}Side}{305}{section.23.9}
+\contentsline {section}{\numberline {23.10}Belly}{306}{section.23.10}
+\contentsline {section}{\numberline {23.11}Hip}{307}{section.23.11}
+\contentsline {section}{\numberline {23.12}Groin}{308}{section.23.12}
+\contentsline {section}{\numberline {23.13}Thigh}{309}{section.23.13}
+\contentsline {section}{\numberline {23.14}Knee}{310}{section.23.14}
+\contentsline {section}{\numberline {23.15}Shin}{311}{section.23.15}
+\contentsline {section}{\numberline {23.16}Foot}{312}{section.23.16}
+\contentsline {section}{\numberline {23.17}Upper Arm}{313}{section.23.17}
+\contentsline {section}{\numberline {23.18}Elbow}{314}{section.23.18}
+\contentsline {section}{\numberline {23.19}Forearm}{315}{section.23.19}
+\contentsline {section}{\numberline {23.20}Hand}{316}{section.23.20}
+\contentsline {section}{\numberline {23.21}Upper Back}{317}{section.23.21}
+\contentsline {section}{\numberline {23.22}Lower Back}{318}{section.23.22}
 \contentsfinish 
