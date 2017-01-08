@@ -4494,8 +4494,13 @@ In the above \autoref{tab:Social Classes and Wealth}, the number in brackets is 
 \printcontents[chapters]{}{1}{}
 \clearpage
 \begin{quotation}
-	\raggedright
-	\emph{“Imagine walking five hundred miles over the course of two weeks, carrying an arquebus, a bardiche, a stone of grain, another stone of water, ten pounds of shot, your own armor, your tent, whatever amenities you want for yourself, and your lord’s favorite dog. In the rain. In winter. With dysentery. Alright, are you imagining that? Now imagine that as soon as you’re done with that, you need to actually fight the enemy. You have a horse, but a senator’s nephew is riding it. You’re knee-deep in mud, and you’ve just been assigned a new recruit to train. He speaks four languages, none of which are yours, and has something to prove. Now he’s drunk and arguing with your superiors, you haven’t slept in thirty hours, you’ve just discovered that the fop nephew has broken your horse’s leg in a gopher hole, and your gun’s wheellock is broken. At that moment, the beating of war-drums echoes from the darkness. Someone screams, and a cannonball lands in your cooking fire, where you were drying your boots. Welcome to war. Enjoy your stay.”}
+	\emph{“Imagine walking five hundred miles over the course of two weeks, carrying an arquebus, a bardiche, a stone of grain, another stone of water, ten pounds of shot, your own armor, your tent, whatever amenities you want for yourself, and your lord’s favorite dog. In the rain. In winter. With dysentery. Alright, are you imagining that?}
+
+	\emph{Now imagine that as soon as you’re done with that, you need to actually fight the enemy. You have a horse, but a senator’s nephew is riding it. You’re knee-deep in mud, and you’ve just been assigned a new recruit to train. He speaks four languages, none of which are yours, and has something to prove. Now he’s drunk and arguing with your superiors, you haven’t slept in thirty hours, you’ve just discovered that the fop nephew has broken your horse’s leg in a gopher hole, and your gun’s wheellock is broken.}
+
+	\emph{At that moment, the beating of war-drums echoes from the darkness. Someone screams, and a cannonball lands in your cooking fire, where you were drying your boots.}
+		
+	\emph{Welcome to war. Enjoy your stay.”}
 
 		\hfill--\textbf{Mago Straddock}, Dacian Volkodav
 \end{quotation}
@@ -6309,7 +6314,7 @@ Mail Groin Gusset& 6& 4& 3& Groin& Hard, Layer 1, Mail& 0& 3 sp\\
 Mail Leggings& 6& 4& 3& Groin, Hip, Knees, Shins, Thighs& Hard, Layer 1, Mail& 2.5& 8 sp\\
 \end{longtabu}
 
-\begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
+\begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X *{2}{X[-1,c]}}
 	\caption{Leather Leg Armor}
 	\label{tab:Leather Leg Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\\toprule
@@ -6575,7 +6580,7 @@ will not contribute to your immediate Blood Loss.
 \paragraph{Hardened}---\quad[1]
 
 Additional armoring and technology to seal up potential gaps in the armor through which attacks might 
-penetrate. All Weak Points on this piece of Armor are removed, preventing \nameref{man:Joint Thrust} and \nameref{man:Grappling: Coup De Grace} Maneuvers from functioning against them. %NEEDS REF TO WEAK POINTS
+penetrate. All Weak Points on this piece of Armor are removed, preventing \nameref{man:Joint Thrust} and \nameref{man:Grappling: Coup de Grace} Maneuvers from functioning against them. %NEEDS REF TO WEAK POINTS
 \vspace{-15pt}\subparagraph{Cost:} 1 gp
 \vspace{-15pt}\subparagraph{Fitted to:} Any
 
@@ -6868,9 +6873,9 @@ Oil &Pint &1 sp\\
 Surgeon’s tools &Needles, blades, splints, tongs, pliers, tweezers, mirrors, prongs, clamps &15 sp\\
 Surgeon’s kit (5 uses) &Bandages, plasters, ointments, oils, select herbs. Enough to treat ~5 serious injuries &5 sp\\
 Surgeon’s kit (1 use) &Bandages, plasters, ointments, oils, select herbs. Enough to treat 1 serious injury &6 cp\\
-Poultice Single use. &Made from honey, bread, mercury, and the gods know what else Cannot be stored for long! &1 gp\\
+Poultice (single use) &Made from honey, bread, mercury, and the gods know what else. Cannot be stored for long! &1 gp\\
 Poultice (ingredients) &All ingredients required to make a Poultice (See Skill [Insert Skill]) &10 sp\\
-Prescription remedy &One month’s supply for illness 1 cp to &1 gp\\
+Prescription remedy &One month’s supply for illness &1 cp to 1 gp\\
 Hired surgeon (cheap) &1 operation (Skill 3) &1 sp\\
 Hired surgeon (regular) &1 operation (Skill 6) &1 gp\\
 Hired surgeon (excellent) &1 operation (Skill 9) &10 gp\\
@@ -7647,11 +7652,10 @@ Maneuvers are divided into simple categories based on what they do, and when the
 \subsection{Gaining Maneuvers}
 Some Maneuvers are automatically gained at Character Creation, and are able to be used by all characters with any Proficiency. These Maneuvers are identified as ‘Universal.’
 
-
 Other Maneuvers, identified as ‘Advanced’ must be earned through leveling Proficiencies and unlocking Maneuver Tiers (refer to \autoref{ch:proficiencies} for more information). Advanced Maneuvers can only be used when a character is currently using a Proficiency with the Advanced Maneuver unlocked. That means, if your character is using a Bow, they cannot utilize the Advanced Maneuvers available to a 2H Blunt weapon, even if that Maneuver is unlocked.
 
 \subsection{Using Maneuvers}
-\emph{The Superior versions of Maneuvers are considered Advanced for all purposes.}
+The Superior versions of Maneuvers are considered Advanced for all purposes.
 
 Some Maneuvers, such as Grappling and Hilt Push, result in a special state in which additional Maneuvers become available. These are indicated by having the parent Maneuver’s name before theirs (i.e. Hilt Push: Grapple, or Hilt Push: Lever-Down).
 
@@ -7659,148 +7663,137 @@ Some Maneuvers, such as Grappling and Hilt Push, result in a special state in wh
 All Maneuvers follow this format:
 
 
-MANEUVER NAME [Cost]
-Type: [This is the type of the maneuver, for reference to how it can be used. If the proficiency is tagged as ‘Universal,’ it can be used with any Proficiency. If it is tagged as ‘Advanced’ instead, the entry will also list which Proficiencies receive the Maneuver. Some Maneuvers are tagged as being ‘Instant’ and specify their base type, such as ‘Swinging’ or ‘Thrusting.’]
-
-Requirements: [These are the requirements to perform the Maneuver.]
-
-Maneuver: [This is the actual mechanic for performing the Maneuver.]
-
-Success: [This is what happens if the Maneuver succeeds.]
-
-Failure: [This is what happens if the Maneuver fails. If a Maneuver has no Failure listed, then it is simply ‘Negated,’ a generic failure that has no special effect.]
-
-
-Special: [Additional mechanics, conditions and restrictions are explained here.]
-
-
-Superior: [Some Maneuvers have ‘Superior’ versions that increase the effectiveness of the Maneuver, reduce its cost, or otherwise improve it. Using the Superior version of a Maneuver is optional, the lesser version can always be used. Superior Maneuvers count as the same Maneuver for the purposes of Poor Form, Good Form, and so on.]
-
-
-Maneuver List 
+\paragraph{\large Maneuver Name}---\quad [\large Cost]
+		\vspace{-10pt}\begin{description}
+		\item [Type:] This is the type of the maneuver, for reference to how it can be used. If the proficiency is tagged as ‘Universal,’ it can be used with any Proficiency. If it is tagged as ‘Advanced’ instead, the entry will also list which Proficiencies receive the Maneuver. Some Maneuvers are tagged as being ‘Instant’ and specify their base type, such as ‘Swinging’ or ‘Thrusting.’
+		\item [Requirements:] These are the requirements to perform the Maneuver.
+		\item [Maneuver:] This is the actual mechanic for performing the Maneuver.
+		\item [Success:] This is what happens if the Maneuver succeeds.
+		\item [Failure:] This is what happens if the Maneuver fails. If a Maneuver has no Failure listed, then it is simply ‘Negated,’ a generic failure that has no special effect.
+		\item [Special:] Additional mechanics, conditions and restrictions are explained here.
+		\item [Superior:] Some Maneuvers have ‘Superior’ versions that increase the effectiveness of the Maneuver, reduce its cost, or otherwise improve it. Using the Superior version of a Maneuver is optional, the lesser version can always be used. Superior Maneuvers count as the same Maneuver for the purposes of Poor Form, Good Form, and so on.
+\end{description}
 The table below lists all Maneuvers by their Primary and Secondary roles (a Swing is an Attack using a 
 Weapon). It also shows whether a Maneuver is Universal or Advanced (noted as ‘U’ and ‘A’), as well as 
 if the Maneuver has a Superior version (‘S’). The cost of the Maneuver is shown, however it is always a 
 good idea to read the full text of a Maneuver to understand how it is used and how much it will cost you 
 to activate. Some Maneuvers are categorized by type, and certain types of Maneuvers may be affected by 
-others, or Boons, Banes and Talents. 
+others, or Boons, Banes and Talents.
 
- 
-
-Maneuver U A S Primary Secondary Type Cost 
-Beat U S Attack Weapon Swinging X 
-Break U S Attack Weapon Swinging X+2 
-Butt-Strike U Attack Weapon Swinging X+2 
-Dacian Rush A Attack Weapon Thrusting 2+X+Y 
-Deep Draw Cut A Attack Weapon Swinging 0 
-Disarm (Attack) U S Attack Weapon (Swinging, Punching) X+1 
-Feint U Attack Weapon Instant 2+Variable
-Half-Sword A Attack Weapon Instant 1
-Hew U S Attack Weapon Swinging 0 
-Hook U S Attack Weapon (Swinging, Thrusting) 1
-Joint Thrust U Attack Weapon Thrusting X+2
-Melee Shoot U Attack Weapon Thrusting X+Variable
-Murder-Strike A Attack Weapon Instant 2
-Pommel Strike A S Attack Weapon Thrusting X 
-Push Cut U S Attack Weapon Thrusting X+1 
-Quickdraw U Attack Weapon Instant 1 
-Swing U Attack Weapon Swinging X 
-Thrust U Attack Weapon Thrusting X 
-Weapon Throw U Attack Weapon Thrusting X+1 
-Clinch (Attack) U S Attack Unarmed Grappling X 
-Elbow U S Attack Unarmed Unarmed X 
-Headbutt U Attack Unarmed Unarmed X+1 
-Hook Punch U S Attack Unarmed (Unarmed, Punching) X
-Kick U S Attack Unarmed Unarmed X 
-Knee U S Attack Unarmed Unarmed X 
-One-Two Punch A Attack Unarmed (Unarmed, Punching) X+2 
-Shoulder Charge U Attack Unarmed Unarmed X 
-Straight Punch U S Attack Unarmed (Unarmed, Punching) X
-Shield Bash U S Attack Shield Bash X 
-Shield Beat U S Attack Shield Bash X+2 
-Shield Feint U Attack Shield ????????????? 1 
-Blind Toss U Attack Special ????????????? X+Variable 
-Strangle U Attack Special Clinching X 
-Parry U Defense Parry Parrying X 
-Quick Defense U Defense Parry Instant 2 
-Riposte A S Defense Parry (Parrying, Instant) X+2 
-Arm Parry U S Defense Unarmed Parrying X
-Clinch (Defense) ? ? ? Defense Unarmed Grappling ???
-Missile Catch U Defense Unarmed ????????????? 2+X 
-Block U Defense Block Blocking X 
-Shield Bind A Defense Block Blocking X+1 
-Total Block U Defense Block Blocking X 
-Closing Void U Defense Void Void X 
-Dart-Out U Defense Void Void X+ENC 
-Flee U Defense Void Void X+ENC 
-Take Cover U Defense Void Void X+ENC 
-Void U Defense Void Void X+ENC 
-Pass (Do Nothing) U Defense Special ????????????? 0 
-Cleaving Blow U Cross Fighting Attack Swinging 2 
-Target Change U Cross Fighting Attack ????????????? 1 
-Ally Defense U Cross Fighting Defense ????????????? 2 
-Double Attack U Simultaneous General Attack X+Y+1 
-Double Shot U Simultaneous General Attack X+Y+2 
-Simultaneous Block/Attack U Simultaneous General (Blocking, Attack) X+Y 
-Simultaneous Off-Hand Parry/Attack U Simultaneous General (Parrying, Attack) X+Y+2 
-Simultaneous Parry/Attack A S Simultaneous General (Parrying, Attack) X+Y+2 
-Simultaneous Void/Attack U Simultaneous General (Void, Attack) X+Y+2 
-Aim U S Missile General ????????????? 0 
-Braced Shot A Missile Shooting Shooting ???
-Power-Draw A S Missile Shooting Shooting ??? 
-Rapid Shot U S Missile Shooting Shooting ??? 
-Reload U Missile Shooting ???????????? ??? 
-Shoot U S Missile Shooting Shooting ??? 
-Double Fling U S Missile Throwing Throwing ??? 
-Fling U S Missile Throwing Throwing ??? 
-Grapple: Choke U Grapple Advantage ???????????? X 
-Grapple: Coup de Grace U Grapple Advantage Thrusting X+2 
-Grapple: Limb-Break U S Grapple Advantage ???????????? X 
-Grapple: Pin U Grapple Advantage ???????????? X 
-Grapple: Takedown U Grapple Advantage ???????????? X 
-Grapple: Throw U S Grapple Advantage ???????????? X+2 
-Grapple: Trap U S Grapple Advantage ???????????? X 
-Grapple: Slip U Grapple Disadvantage ???????????? X 
-Grapple: Twist U Grapple Disadvantage ???????????? X 
-Grapple: Bite U Grapple General Unarmed X+1 
-Grapple: Force U Grapple General ???????????? X+1 
-Grapple: Unarmed Attack ? ? ? Grapple General ???????????? ??? 
-Grapple: Use Weapon ? ? ? Grapple General ???????????? ??? 
-Hilt Push U S Hilt Push ??? Instant 2 
-Hilt Push: Butt-Strike U 
-Hilt Push: Evasion U Hilt Push ??? ??? 
-Hilt Push: Clinch U Hilt Push Advantage ??? 
-Hilt Push: Half-Sword U Hilt Push Advantage ??? 
-Hilt Push: Lever Down U Hilt Push Advantage 2+X 
-Hilt Push: Pommel Strike U Hilt Push Advantage ??? 
-Hilt Push: Slide-Cut U Hilt Push Advantage ??? 
-Hilt Push: Slide-Thrust U Hilt Push Advantage ??? 
-Hilt Push: Bind U Hilt Push Disadvantage ??? 
-Hilt Push: Wind U Hilt Push Disadvantage ??? 
-Hilt Push: Withdraw U Hilt Push Disadvantage ??? 
-Obstruction U Mobility General ??? 
-Outmaneuver U Mobility General Instant X+2+ENC 
-Rapid Rise U Mobility General Instant 3+(ENC*2) 
-Slip-About U Mobility General Instant X+ENC+Special 
-Steal Initiative U Mobility General Instant X+Opponent PER 
-Thread the Needle U Mobility General Instant X+Y+ENC 
-Lance Charge U Mounted Attack X+2\^ 
-Mount Bite U Mounted Attack 2\^ 
-Mount Kick U Mounted Attack 2\^ 
-Disengage ? ? ? Mounted Defense ??? 
-Lean U Mounted Defense Void X+ENC\^ 
-Mount Dodge U Mounted Defense Void 2\^ 
-Ride-By U Mounted Passing 2\^ 
-Trample U Mounted Passing 4\^ 
-Dog Bite U Dog Attack X 
-Savage U Dog Attack X 
-Tackle U Dog Attack 2+X 
-
-\^ = Check required. Refer to Maneuver details. 
-U = Universal Maneuver
-A = Advanced Maneuver 
-S = Superior Maneuver 
-ENC = Encumbrance Penalty (presumably to CP). 
+\begin{longtabu} to \linewidth {*{8}{X[-1]}}
+Maneuver& U &A &S &Primary &Secondary &Type &Cost\\\toprule
+\nameref{man:Beat} &U &&S &Attack&Weapon&Swinging& X \\
+\nameref{man:Break} &U &&S &Attack&Weapon&Swinging& X+2 \\
+\nameref{man:Butt-Strike} &U&& &Attack&Weapon&Swinging& X+2 \\
+\nameref{man:Dacian Rush} &&A& &Attack&Weapon&Thrusting& 2+X+Y \\
+\nameref{man:Deep Draw Cut} &&A& &Attack&Weapon&Swinging& 0 \\
+\nameref{man:Disarm} (Attack) &U&& S &Attack&Weapon& (Swinging, Punching) &X+1\\
+\nameref{man:Feint} &U&& &Attack&Weapon&Instant& 2+Variable\\
+\nameref{man:Half-Sword} &  &A &  &Attack&Weapon&Instant& 1\\
+\nameref{man:Hew}  &U&&S &Attack&Weapon&Swinging& 0 \\
+\nameref{man:Hook} &U&&S &Attack&Weapon& (Swinging, Thrusting) &1\\
+\nameref{man:Joint Thrust} &U&& &Attack&Weapon&Thrusting& X+2\\
+\nameref{man:Melee Shoot} &U &&&Attack&Weapon&Thrusting& X+Variable\\
+\nameref{man:Murder-Strike} &&A& &Attack&Weapon&Instant& 2\\
+\nameref{man:Pommel Strike} &&A& S &Attack&Weapon&Thrusting& X \\
+\nameref{man:Push Cut} &U&& S &Attack&Weapon&Thrusting& X+1\\
+\nameref{man:Quickdraw} &U&&&Attack&Weapon&Instant& 1 \\
+\nameref{man:Swing} &U&& &Attack&Weapon&Swinging& X \\
+\nameref{man:Thrust} &U&& &Attack&Weapon&Thrusting& X \\
+\nameref{man:Weapon Throw} &U&& &Attack&Weapon&Thrusting& X+1 \\
+\nameref{man:Clinch (Attack)} &U&& S& Attack &Unarmed &Grappling &X\\
+\nameref{man:Elbow} &U&& S &Attack &Unarmed &Unarmed & X \\
+\nameref{man:Headbutt} &U &&&Attack &Unarmed &Unarmed & X+1 \\
+\nameref{man:Hook Punch} &U&&S &Attack &Unarmed &(Unarmed, Punching) &X\\
+\nameref{man:Kick} & U&&S& Attack &Unarmed &Unarmed & X \\
+\nameref{man:Knee} & U&&S& Attack &Unarmed &Unarmed & X \\
+\nameref{man:One-Two Punch} & &A&& Attack &Unarmed &(Unarmed, Punching) &X+2 \\
+\nameref{man:Shoulder Charge} & U &&&Attack &Unarmed &Unarmed & X \\
+\nameref{man:Straight Punch} & U&&S &Attack &Unarmed &(Unarmed, Punching) &X\\
+\nameref{man:Shield Bash} & U&&S &Attack &Shield &Bash & X \\
+\nameref{man:Shield Beat} & U&&S &Attack &Shield &Bash & X+2 \\
+\nameref{man:Shield Feint} & U&&& Attack &Shield & ????????????? &1 \\
+\nameref{man:Blind Toss} & U&& &Attack &Special &????????????? &X+Variable \\
+\nameref{man:Strangle} & U&&& Attack &Special &Clinching &X \\
+\nameref{man:Parry} & U &&&Defense &Parry &Parrying &X \\
+\nameref{man:Quick Defense} & U &&&Defense &Parry &Instant &2 \\
+\nameref{man:Riposte} & &A &S &Defense &Parry& (Parrying, Instant) &X+2 \\
+\nameref{man:Arm Parry} & U&&S &Defense &Unarmed &Parrying &X\\
+\nameref{man:Clinch (Defense)} & ? &? &? &Defense &Unarmed &Grappling &???\\
+\nameref{man:Missile Catch} & U &&&Defense &Unarmed &????????????? &2+X \\
+\nameref{man:Block} & U&& &Defense &Block &Blocking &X \\
+\nameref{man:Shield Bind} & &A&& Defense &Block &Blocking &X+1 \\
+\nameref{man:Total Block} & U &&&Defense &Block &Blocking &X \\
+\nameref{man:Closing Void} & U&&& Defense &Void &Void &X \\
+\nameref{man:Dart-Out} & U &&&Defense &Void &Void &X+ENC \\
+\nameref{man:Flee} & U &&&Defense &Void &Void &X+ENC \\
+\nameref{man:Take Cover} & U &&&Defense &Void &Void &X+ENC \\
+\nameref{man:Void} & U &&&Defense &Void &Void &X+ENC \\
+\nameref{man:Pass (Do Nothing)} & U &&&Defense &Special &????????????? &0 \\
+\nameref{man:Cleaving Blow} & U &&&Cross Fighting &Attack &Swinging &2 \\
+\nameref{man:Target Change} & U &&&Cross Fighting &Attack &????????????? &1 \\
+\nameref{man:Ally Defense} & U &&&Cross Fighting &Defense &????????????? &2 \\
+\nameref{man:Double Attack} & U&&&Simultaneous &General &Attack &X+Y+1 \\
+\nameref{man:Double Shot} & U&&&Simultaneous &General &Attack &X+Y+2 \\
+\nameref{man:Simultaneous Block/Attack} & U&&&Simultaneous &General &(Blocking, Attack) &X+Y \\
+\nameref{man:Simultaneous Off-Hand Parry/Attack} & U&&&Simultaneous &General &(Parrying, Attack) &X+Y+2 \\
+\nameref{man:Simultaneous Parry/Attack} & &A &S& Simultaneous &General &(Parrying, Attack) &X+Y+2 \\
+\nameref{man:Simultaneous Void/Attack} & U&&&Simultaneous &General &(Void, Attack) &X+Y+2 \\
+\nameref{man:Aim} & U&&S &Missile &General &????????????? &0 \\
+\nameref{man:Braced Shot} & &A&& Missile &Shooting &Shooting &???\\
+\nameref{man:Power Draw} & &A &S &Missile &Shooting &Shooting &??? \\
+\nameref{man:Rapid Shot} & U&&S &Missile &Shooting &Shooting &??? \\
+\nameref{man:Reload} & U&& &Missile &Shooting &???????????? &??? \\
+\nameref{man:Shoot} & U&&S& Missile &Shooting &Shooting& ??? \\
+\nameref{man:Double Fling} & U&&S &Missile &Throwing &Throwing &??? \\
+\nameref{man:Fling} & U&&S& Missile &Throwing &Throwing &??? \\
+\nameref{man:Grappling: Choke} & U &&&Grapple &Advantage& ???????????? &X \\
+\nameref{man:Grappling: Coup de Grace} & U &&&Grapple &Advantage &Thrusting &X+2\\
+\nameref{man:Grappling: Limb-Break} & U&&S &Grapple &Advantage &???????????? &X \\
+\nameref{man:Grappling: Pin} & U&& &Grapple &Advantage &???????????? &X \\
+\nameref{man:Grappling: Takedown} & U &&&Grapple &Advantage &???????????? &X \\
+\nameref{man:Grappling: Throw} & U&&S &Grapple &Advantage &???????????? &X+2 \\
+\nameref{man:Grappling: Trap} & U&&S &Grapple &Advantage &??????????? &X \\
+\nameref{man:Grappling: Slip} & U &&&Grapple &Disadvantage &??????????? &X \\
+\nameref{man:Grappling: Twist} & U &&&Grapple &Disadvantage &???????????? &X \\
+\nameref{man:Grappling: Bite} & U &&&Grapple &General &Unarmed &X+1 \\
+\nameref{man:Grappling: Force} & U&& &Grapple &General &???????????? &X+1 \\
+\nameref{man:Grappling: Unarmed Attack} & ? &?& ? &Grapple &General &???????????? &??? \\
+\nameref{man:Grappling: Use Weapon} & ? &? &? &Grapple &General& ???????????? &??? \\
+\nameref{man:Hilt Push} & U&&S& Hilt Push &??? &Instant &2 \\
+\nameref{man:Hilt Push}: Butt-Strike &U&&&&&& \\
+\nameref{man:Hilt Push}: Evasion &U&&&Hilt Push &??? &???& \\
+\nameref{man:Hilt Push}: Clinch &U&&&Hilt Push &Advantage& &??? \\
+\nameref{man:Hilt Push}: Half-Sword &U &&&Hilt Push &Advantage& &??? \\
+\nameref{man:Hilt Push}: Lever Down &U &&&Hilt Push &Advantage& &2+X \\
+\nameref{man:Hilt Push}: Pommel Strike& U&&& Hilt Push &Advantage &&??? \\
+\nameref{man:Hilt Push}: Slide-Cut &U &&&Hilt Push &Advantage &&??? \\
+\nameref{man:Hilt Push}: Slide-Thrust &U&& &Hilt Push &Advantage &&??? \\
+\nameref{man:Hilt Push}: Bind &U&& &Hilt Push &Disadvantage &&??? \\
+\nameref{man:Hilt Push}: Wind &U&& &Hilt Push &Disadvantage &&??? \\
+\nameref{man:Hilt Push}: Withdraw &U &&&Hilt Push &Disadvantage &&??? \\
+\nameref{man:Obstruction} & U &&&Mobility &General& &??? \\
+\nameref{man:Outmaneuver} & U &&&Mobility &General &Instant &X+2+ENC \\
+\nameref{man:Rapid Rise} & U &&&Mobility &General &Instant &3+(ENC*2) \\
+\nameref{man:Slip-About} & U &&&Mobility &General &Instant &X+ENC+Special \\
+\nameref{man:Steal Initiative} & U &&&Mobility &General &Instant &X+Opponent PER \\
+\nameref{man:Thread the Needle} & U &&&Mobility &General &Instant &X+Y+ENC \\
+\nameref{man:Lance Charge} & U &&&Mounted &Attack& &X+2\textasciicircum \\
+\nameref{man:Mount Bite} & U&& &Mounted &Attack& &2\textasciicircum \\
+\nameref{man:Mount Kick} & U &&&Mounted &Attack& &2\textasciicircum \\
+\nameref{man:Disengage} & ? &? &? &Mounted &Defense& &??? \\
+\nameref{man:Lean} & U &&&Mounted &Defense &Void &X+ENC\textasciicircum \\
+\nameref{man:Mount Dodge} & U &&Mounted &Defense &Void &&2\textasciicircum \\
+\nameref{man:Ride-By} & U &&&Mounted &Passing& &2\textasciicircum \\
+\nameref{man:Trample} & U &&&Mounted &Passing& &4\textasciicircum \\
+\nameref{man:Dog Bite} & U&&& Dog &Attack &&X \\
+\nameref{man:Savage} & U&&& Dog& Attack &&X \\
+\nameref{man:Tackle} & U&&& Dog& Attack &&2+X \\
+\\
+\caption*{\textasciicircum Check required. Refer to Maneuver details.}\\
+\caption*{U = Universal Maneuver \hfill A = Advanced Maneuver \hfill S = Superior Maneuver}\\
+\caption*{ENC = Encumbrance Penalty (presumably to CP).}\\
+\end{longtabu}
 
 \section{Attack Maneuvers}
 Attack Maneuvers are generally (though not always) declared with Initiative (see \autoref{ch:combat}). These all 
@@ -8011,7 +8004,7 @@ Maneuver, you may roll 1 additional die in the test. If you are Half-Swording wh
 Pommel Strike, add +1 to its damage, as explained in the Half-Sword maneuver. 
 \end{description}
 
-\paragraph{\large\label{man:PUSH CUT} PUSH CUT}---\quad{\large[X+1]}
+\paragraph{\large\label{man:Push Cut}Push Cut}---\quad{\large[X+1]}
 \vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Attack, Thrusting 
 \item [Requirements:] You have a weapon with both a Thrust TN, and a Swing TN that inflicts cutting damage. 
@@ -8439,7 +8432,7 @@ allows a return Strike/Thrust on Parry, use an Elbow instead. This Elbow does no
 of Superior. 
 \end{description}
 
-\paragraph{\large\label{man:Clinch (Defense)} Clinch (Defense)}---\quad{[X]}
+\paragraph{\large\label{man:Clinch (Defense)}Clinch (Defense)}---\quad{[X]}
 Refer to \nameref{man:Clinch (Attack)}, as the Maneuver is mechanically the same.
 
 \paragraph{\large\label{man:Missile Catch}Missile Catch}---\quad{\large[2+X]}
@@ -8881,7 +8874,7 @@ If the neck is protected by plate armor like a gorget or bevor, the TN of Choke 
 maintaining it increases to TN 8. Garrotes cannot be used over characters with such protection. 
 \end{description}
 
-\paragraph{\large\label{man:Grappling: Coup De Grace}Grappling: Coup De Grace}---\quad{\large[X+2]}
+\paragraph{\large\label{man:Grappling: Coup de Grace}Grappling: Coup de Grace}---\quad{\large[X+2]}
 \vspace{-10pt}\begin{description} 
 \item [Type:] Universal, Grapple, Advantage, Thrusting 
 \item [Requirements:] Grappling, have Advantage, wielding a weapon of S Reach or shorter with an arm that is 
