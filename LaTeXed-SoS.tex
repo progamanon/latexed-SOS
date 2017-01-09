@@ -454,6 +454,7 @@ campaigns must spend 1 PCP in the Race Category, even if the only option is a Hu
 As \autoref{tab:campaign_power}: \nameref{tab:campaign_power} explains, no Category can have more PCP devoted to it than the maximum allowed for the 
 set Campaign Power. For example, if your Campaign Power is set at 'Gritty Power`, you may not spend 
 more than 6 PCP in any Category. 
+\part[Vital Stats]{De Humani Corporis Fabrica}
 \chapter{Arc and Advancement}\label{ch:arc}
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
@@ -4490,6 +4491,7 @@ In the above \autoref{tab:Social Classes and Wealth}, the number in brackets is 
 3 &Major Asset &18 gp\\
 	\end{tabu}
 \end{table}
+\part{Equipment}
 \chapter{Equipment}\label{ch:equipment}
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
@@ -5039,7 +5041,7 @@ This customization can be taken multiple times to represent a revolver-type weap
 You may purchase a Firing Mechanism for the Integrated Pistol, if you are so inclined, otherwise it is assumed to use a flintlock.
 
 The idea of designing a sword with a pistol built into it may sound like fantasy, but if so, it’s the sort of fantasy that appealed to the medieval mind enough for them to give it a shot. Integrated pistols usually fire in-line with the blade, but a few are built into the crossguard, and fire forward from the hand like regular pistols. Either way, they’re not very accurate and they tend to make the weapon more cumbersome. However, they can be a huge advantage at close range, or when closing with longer-ranged adversaries.
-\begin{table}[!hb]
+\begin{table}[ht]
 	\centering
 	\caption{Integrated Firearms}
 	\label{tab:Integrated Firearms}
@@ -6129,9 +6131,9 @@ Reinforced Leather Neck-Stock& 4& 3& 3& Neck& \nameref{par:Hard}& 0& 0& 1 sp\\
 	\label{tab:Plate Torso Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\\toprule
 Breastplate& 8& 7& 6& Belly, Chest, Side& \nameref{par:Hard}& 1.5& 1 gp\\
-Bulletproof Breastplate& 10& 9& 8& Belly, Chest, Side& Bulletproof, \nameref{par:Hard}& 3.5& 2 gp\\
-Bulletproof Cuirass& 10& 9& 8& Belly, Chest, Lower Back, Side, Upper Back& Bulletproof, \nameref{par:Hard}& 4.5& 4 gp\\
-Bulletproof Codpiece& 10& 9& 8& Groin& Bulletproof, \nameref{par:Hard}& 0.5& 1 gp\\
+Bulletproof Breastplate& 10& 9& 8& Belly, Chest, Side& \nameref{par:Bulletproof}, \nameref{par:Hard}& 3.5& 2 gp\\
+Bulletproof Cuirass& 10& 9& 8& Belly, Chest, Lower Back, Side, Upper Back& \nameref{par:Bulletproof}, \nameref{par:Hard}& 4.5& 4 gp\\
+Bulletproof Codpiece& 10& 9& 8& Groin& \nameref{par:Bulletproof}, \nameref{par:Hard}& 0.5& 1 gp\\
 Cuirass& 8& 7& 6& Belly, Chest, Lower Back, Side, Upper Back& \nameref{par:Hard}& 2.5& 2 gp\\
 Codpiece& 8& 7& 6& Groin& \nameref{par:Hard}& 0& 5 sp\\
 Fauld& 8& 7& 6& Groin\hyperref[sec:Weak Spots]{$\phi$}, Hip\hyperref[sec:Weak Spots]{$\phi$}, Thighs\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}, \nameref{par:Layer} 2 (Groin, Hip, Thighs)& 1.5& 10 sp\\
@@ -6209,7 +6211,7 @@ Shagreen Greatcoat& 4& 3& 3& Full Torso, Full Arms, Groin, Hip, Knees, Shins, Th
 	\label{tab:Plate Arm Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\\toprule
 Besagews& 8& 7& 6& Shoulders (Thrust only), Upper Arm* (Thrust only)& \nameref{par:Hard}, When \nameref{par:Layer}ed with Spaulders use Besagews value against Thrusts.& 0.5& 8 sp\\
-Bulletproof Vambraces& 10& 9& 8& Forearm& Bulletproof, \nameref{par:Hard}& 2& 1 gp\\
+Bulletproof Vambraces& 10& 9& 8& Forearm& \nameref{par:Bulletproof}, \nameref{par:Hard}& 2& 1 gp\\
 Couters& 8& 7& 6& Elbow\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}& 1& 5 sp\\
 Gauntlets& 8& 7& 6& Hand\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}& 2& 5 sp\\
 Jack Chains& 6& 0& 3& Elbow\hyperref[sec:Weak Spots]{$\phi$}, Forearm\hyperref[sec:Weak Spots]{$\phi$}, Upper Arm\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}, No AV against Thrust attacks of any damage type& 0.5& 1 sp\\
@@ -6217,7 +6219,7 @@ Munitions Pauldrons& 8& 7& 6& Shoulder\hyperref[sec:Weak Spots]{$\phi$}, Upper A
 Munitions Rerebraces& 7& 6& 5& Upper Arm\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}& 3& 2 sp\\
 Munitions Spaulders& 7& 6& 5& Shoulder\hyperref[sec:Weak Spots]{$\phi$}, Upper Arm\hyperref[sec:Weak Spots]{$\phi$}*& \nameref{par:Hard}, Provides half AV against Thrust attacks to the Shoulder and Upper Arm& 1& 4 sp\\
 Munitions Vambraces& 7& 6& 5& Forearm\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}& 1.5& 2 sp\\
-Pauldrons& 10& 9& 8& Shoulder, Upper Arm& Bulletproof, \nameref{par:Hard}& 3& 1 gp\\
+Pauldrons& 10& 9& 8& Shoulder, Upper Arm& \nameref{par:Bulletproof}, \nameref{par:Hard}& 3& 1 gp\\
 Rerebraces& 8& 7& 6& Upper Arm& \nameref{par:Hard}& 1& 5 sp\\
 Spaulders& 8& 7& 6& Shoulder\hyperref[sec:Weak Spots]{$\phi$}, Upper Arm\hyperref[sec:Weak Spots]{$\phi$}*& \nameref{par:Hard}, Provides half AV against Thrust attacks to the Shoulder 
 and Upper Arm& 0.5& 6 sp\\
@@ -6292,9 +6294,9 @@ Reinforced Quilted Gloves& 4& 4& 5& Hand& \nameref{par:Textile}& 0& 1 sp\\
 	\caption{Plate Leg Armor} \vspace{-15pt}
 	\label{tab:Plate Leg Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\\toprule
-Bulletproof Cuisses& 10& 9& 8& Thigh& Bulletproof, \nameref{par:Hard}& 4& 2 gp\\
-Bulletproof Greaves& 10& 9& 8& Shin& Bulletproof, \nameref{par:Hard}& 2& 2 gp\\
-Bulletproof Poleyns& 10& 9& 8& Knee& Bulletproof, \nameref{par:Hard}& 2& 1 gp\\
+Bulletproof Cuisses& 10& 9& 8& Thigh& \nameref{par:Bulletproof}, \nameref{par:Hard}& 4& 2 gp\\
+Bulletproof Greaves& 10& 9& 8& Shin& \nameref{par:Bulletproof}, \nameref{par:Hard}& 2& 2 gp\\
+Bulletproof Poleyns& 10& 9& 8& Knee& \nameref{par:Bulletproof}, \nameref{par:Hard}& 2& 1 gp\\
 Cuisses& 8& 7& 6& Thigh& \nameref{par:Hard}& 2& 8 sp\\
 Greaves& 8& 7& 6& Shin& \nameref{par:Hard}& 1.5& 6 sp\\
 Munitions Cuisses& 7& 6& 5& Thigh\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}& 3& 4 sp\\
@@ -6512,7 +6514,7 @@ Burdinadin Greaves &8 &7 &6& Shin &Hard, Insulation 0, Augmentations (1) &1.5 &6
 Burdinadin Poleyns &8 &7 &6& Knee$\phi$ &Hard, Insulation 0 &1.5 &5 sp\\
 Burdinadin Rerebraces &8 &7 &6& Upper Arm &Hard, Insulation 1, Augmentations (1) &1 &5 sp\\
 Burdinadin Sabatons&8&7&6&Foot& Hard, Insulation 0, Augmentations (1) &1.5 &5 sp\\
-Burdinadin Pauldrons&10&9&8&Shoulder, Upper Arm& Bulletproof, Hard, Insulation 1, Augmentations (1) &3 &1 gp\\
+Burdinadin Pauldrons&10&9&8&Shoulder, Upper Arm& \nameref{par:Bulletproof}, Hard, Insulation 1, Augmentations (1) &3 &1 gp\\
 Burdinadin Vambraces&8&7&6&Forearm& Hard, Insulation 1&1&5 sp\\
 \end{longtabu}
 
@@ -7051,6 +7053,7 @@ Especially intelligent (feature) &Any idiot can learn to scribble on a tablet. T
 Especially strong (feature) &Ever move a piano up a staircase? Don’t worry, you’ll never have to. &Cost $ \times\ 2.5 $\\
 	\end{tabu}
 \end{table}
+\part{The Riddle of Steel}
 \chapter{Proficiencies}\label{ch:proficiencies} 
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
@@ -7087,20 +7090,20 @@ character has access to every Maneuver in his Tier, as well as in the Tiers belo
 	\label{tab:Proficiency Progression}\\
 \rowfont[c]{}Proficiency Level&Maneuver Tiers Unlocked&Talents Unlocked (Not available to Missile Proficiencies)&Proficiency Point / Arc Point Cost\\\toprule
 1&	Core Maneuvers&	-&	1\\
-2&	-& 	Novice Talent&	1\\
+2&	-& 	\hyperref[sec:Novice Talents]{Novice Talent}&	1\\
 3&	-& 	-&	1\\
-4&	-& 	Novice Talent&	1\\
+4&	-& 	\hyperref[sec:Novice Talents]{Novice Talent}&1\\
 5&	Tier 1 Maneuvers&	-&	2 \\
-6&	-&  	Journeyman Talent  	&2 \\
+6&	-&  	\hyperref[sec:Journeyman Talents]{Journeyman Talent}&2 \\
 7&	-&  	-  	&2 \\
-8&	-&  	Journeyman Talent  	&2 \\
+8&	-&  	\hyperref[sec:Journeyman Talents]{Journeyman Talent}		&2 \\
 9&	-&  	-  	&3 \\
-10&	Tier 2 Maneuvers&	Journeyman Talent  	&3 \\
+10&	Tier 2 Maneuvers&	\hyperref[sec:Journeyman Talents]{Journeyman Talent}		&3 \\
 11&	-&  	-  	&3 \\
-12&	-&  	Master Talent  	&3 \\
+12&	-&  	\hyperref[sec:Master Talents]{Master Talent}  	&3 \\
 13&	-&  	-  	&3 \\
-14&	-&  	Master Talent  	&6 \\
-15&	Mastery Maneuvers&	-&	6 \\
+14&	-&  	\hyperref[sec:Master Talents]{Master Talent}  	&6 \\
+15&	\hyperref[sec:Master Talents]{Master Talent}&	-&	6 \\
 16&	-&-&6 \\
 17&	-&-&6 \\
 18&	-&-&8 \\
@@ -9366,7 +9369,7 @@ If it is simply an automatic improvement to a Maneuver or similar, assume that i
 Unless the Talent is chosen for a School, Talents can not be used for Proficiencies they are not linked to, or when Defaulting from a Proficiency. 
 
 \section*{Talent List}
-\section{Novice Talents}
+\section{Novice Talents}\label{sec:Novice Talents}
 \paragraph{\label{talent:Accuracy}Accuracy}
 	\begin{description}
 		\item [Requirements:] Universal, AGI 4. 
@@ -9660,7 +9663,7 @@ good footwork, this technique can be devastating.
 		\item [Effect:] When you force a Stability test through a Superior Shield Bash, add 1 to the Stability test RS. 
 This is cumulative with Shield Charge. 
 	\end{description}
-\section{Master Talents}\label{sec:master-talents}
+\section{Master Talents}\label{sec:Master Talents}
 \paragraph{\label{talent:It Was On Purpose!}It Was On Purpose!}
 	\begin{description}
 		\item [Requirements:] Missile Weapon, WIT 6.
