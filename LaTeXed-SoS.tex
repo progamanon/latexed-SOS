@@ -1170,7 +1170,8 @@ never become decrepit, they simply persist in a sort of middle age until droppin
 -1 Reach, -2 MOB 
 \paragraph{Robust Immunities}---\quad
 -1 to Infection Chance against all wounds, +2 to \nameref{sec:Blood Loss} rolls. 
-\paragraph{See in Shadow}---\quad
+\paragraph{See in Shadow}\label{par:Dwarf - See in Shadow}
+---\quad
 When in low-light conditions, Dwarves treat each stage of Lighting as one step less severe on the 
 table, because of their excellent eyesight in the dark (i.e. Pitch Black becomes Poorly Lit, Poorly 
 Lit becomes Dimly Lit, and Dimly Lit becomes Evenly Lit). However, they cannot see colors 
@@ -1538,7 +1539,8 @@ WIL test at RS 1, +1 per hour since That Which Stares Back has fixed its gaze up
 	\end{tabu}
 \end{table}
 
-\paragraph{The Stains of Time}---\quad
+\paragraph{The Stains of Time}\label{par:Stains of Time}
+---\quad
 The Burdinadin can see trails of causality through the air before them when in tense situations, 
 much as Humans see strange patterns on the insides of their eyelids after looking at bright lights. 
 Unlike the Human visions, which are thoroughly ignorable traces of dying cells on the cornea, the 
@@ -4497,6 +4499,211 @@ In the above \autoref{tab:Social Classes and Wealth}, the number in brackets is 
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
 \clearpage
+\section{The Unkindlies}
+\begin{quote}
+	\emph{This isn't for you. Leave, and never think on this meeting again. Nothing you could learn here 
+	will better you, and nothing you could see here will aid your sleep. This is your only warning. If you choose to ignore it, then the consequences are on your head.}
+\end{quote}
+Also called the King's Ravenkeepers, the Unkindlies are a secretive society of monster hunters
+who also conduct experiments on the Spawn to further their knowledge of the arcane. 
+
+The Unkindlies experiment with blood magic and with specialized weapons for hunting 
+monsters. They are also occasionally employed by the King (to whom they owe fealty) as assassins or bodyguards.
+\begin{table}[!ht] %MAKE WRAPTABLE
+	\centering
+	\caption{Starting with Blood Magic}
+	\label{tab:Starting with Blood Magic}
+	\begin{tabu} spread 0pt {X[-1,c]X[-1,c]}
+	Magic Points &Starting Honors\\\toprule
+		5  &2\\
+		10 &4\\
+		15 &6\\
+		20 &8\\
+	\end{tabu}
+\end{table}
+\subsection{Blood Corruption}
+Whenever a character gains an Honor, his Blood Corruption increases by 1. In order to avoid 
+“going feral,” and essentially becoming a Spawn himself, the character must roll a Willpower 
+Test at RS equal to $ \text{Corruption}-\text{HLT} $. Certain miscellaneous bonuses apply -- most of them 
+involve performing the Honoring ceremony under tightly controlled conditions with the proper 
+tools, hence why Honors are rarely awarded in the field.
+
+\begin{table}[ht]
+	\centering
+	\caption{Blood Corruption Modifiers}
+	\label{tab: Blood Corruption Mods}
+	\begin{tabu} spread 0pt {*{2}{X[-1]}}
+		Factor&Bonus\\\toprule
+		Character is \nameref{bane:Virtuous} or \nameref{bane:Honorable} (or Both) &-1 RS\\
+		Character is a \nameref{bane:Complete Monster}&+2 RS\\
+		Character has the Pure Heart Boon &-1 RS\\
+		Ceremony is performed over the course of twelve hours&-1 RS\\
+		Ceremony is performed in a proper laboratory with the proper tools, under controlled conditions &-1 RS\\
+		A Grandmaster with the \nameref{honor:Blood Ministration} ability is conducting the ceremony&-2 RS\\
+	\end{tabu}
+\end{table}
+
+If a character fails the Corruption Roll, he gains a Mutation. Roll on the chart below, and add the 
+character’s current Blood Corruption to the roll. 
+
+\begin{table}[ht]
+	\centering
+	\caption{Mutation Chart}
+	\label{tab:Mutation Chart}
+	\begin{tabu} spread 0pt {X[r]@{~to~}X[l]X[2]}
+	\multicolumn{2}{c}{d10 $\ +\ $}&\multirow{2}{*}{Mutation}\\
+	\multicolumn{2}{c}{Blood Corruption}&\\\toprule
+	1&6&\hyperref[sec:Mutation-Minor]{Minor}\\
+	7&11&\hyperref[sec:Mutation-Moderate]{Moderate}\\
+	12&14&\hyperref[sec:Mutation-Serious]{Serious}\\
+	\multicolumn{2}{c}{15+}&\hyperref[sec:Mutation-Cataclysmic]{Cataclysmic}\\
+	\end{tabu}
+\end{table}
+\subsection{Mutations}
+\subsubsection{Minor Mutations}\label{sec:Mutation-Minor}
+\begin{itemize}
+	[noitemsep]
+	\item Strange Eyes 
+	\item Strange Teeth 
+	\item Hirsuit 
+	\item Tic 
+\end{itemize}
+
+\subsubsection{Moderate Mutations}\label{sec:Mutation-Moderate}
+\begin{itemize}
+	[noitemsep]
+	\item Spawn Eyes 
+	\item Fangs 
+	\item Strange Nails 
+	\item Monstrous Fur 
+	\item Strange Tastes 
+	\item Strange Habits 
+	\item Minor Hallucinations 
+\end{itemize}
+
+\subsubsection{Serious Mutations}\label{sec:Mutation-Serious}
+\begin{itemize}
+	[noitemsep]
+	\item Jaw Mutation 
+	\item Claws 
+	\item Limb Mutation 
+	\item Stature Increase 
+	\item Carapace/Bone Mutation 
+	\item Major Hallucinations 
+	\item Corrupted Heart 
+\end{itemize}
+
+\subsubsection{Cataclysmic Mutations}\label{sec:Mutation-Cataclysmic}
+\begin{itemize}
+	[noitemsep]
+	\item Inhuman Mutation
+	\item Flesh Wasting
+	\item Vocal Chord Mutation
+	\item Blood Madness
+\end{itemize}
+\subsection{Honors}
+\subsubsection{Enhancement Honors}
+\subparagraph{Attribute}\label{honor:Attribute}
+---\quad Increase an Attribute by 1. Such Honors can be taken multiple times for the same or 
+different Attributes. This can bring a character’s Attributes above their normal race maximum, up 
+to the Mortal maximum of 13. 
+
+\subparagraph{Sight}\label{honor:Sight}
+---\quad A Sight Enhancement allows the bearer to see in the dark the same as a Dwarf (see \hyperref[par:Dwarf - See in Shadow]{Dwarf entry} for details).
+
+\subparagraph{Hearing}\label{honor:Hearing}
+---\quad A Hearing Enhancement allows the bearer to hear as well as a Zell, benefiting from 
+Echolocation (see Zell entry for details). 
+
+\subparagraph{Smell}\label{honor:Smell}
+---\quad A Smell Enhancement allows the bearer to track opponents by smell, functionally the 
+same as an Ohanedin can track an opponent by fear (see Ohanedin entry for details). 
+
+\subparagraph{Touch}\label{honor:Touch}
+---\quad A Touch Enhancement grants a +4 bonus to any roll that involves delicate manipulation 
+of the hands. Picking locks, surgery, etc. It also allows characters to “read” text simply by 
+touching it with their fingers, feeling the indentations in parchment.
+
+\subparagraph{Sense}\label{honor:Sense}
+---\quad A Sense Enhancement grants a +4 bonus to detecting the presence of Spawn or of any 
+Magical energies. 
+
+\subparagraph{Regeneration}\label{honor:Regeneration}
+---\quad A Regeneration Enhancement halves the Healing Time (see \autoref{tab:Wound Healing}) from injuries. Two 
+Regeneration Enhancements further halve \nameref{par:Pain} and \nameref{sec:Blood Loss} from Wounds, as well as 
+halving the Surgery RS for any Wound Effects like Crippled Limb or Blind.
+
+\subsubsection{Ability Honors}
+\subparagraph{Blood Potion}\label{honor:Blood Potion}
+---\quad \emph{Requires \nameref{honor:Regeneration} 1 and at least 6 Health}
+
+You may create up to four doses
+of a special potion out of your own blood. This reduces your Health by 1 for 24 hours, but the 
+potions can be consumed to heal others. Drinking a potion causes a character to heal 1 level of 
+Wound per Round for 3 Rounds, starting with the most severe wounds and then moving to less 
+severe ones. 
+
+A character cannot drink more than two potions in a day, and you cannot drink your own 
+potions. After 24 hours, the potions become inert, and you regain your lost Health. 
+
+\subparagraph{Hunger}---\quad\label{honor:Hunger}
+\emph{Requires \nameref{honor:Regeneration} 2 and at least 6 Health}
+
+Consuming flesh allows for immediate regeneration. A pound of flesh or two quarts of blood consumed will heal 1 wound level over the 
+course of an hour. At second level, the process is much faster, healing 1 wound level over the 
+course of a minute.
+
+\subparagraph{Disintegrate}\label{honor:Disintegrate}
+---\quad \emph{Requires \nameref{honor:Regeneration} 2 and at least 6 Willpower}
+
+If ever you would be hit by an attack that succeeds by 4 BS or fewer, you may temporarily lose 1 Health (it returns in 24 hours) 
+to ignore the attack. Your armor and personal possessions are not protected, however. 
+
+\subparagraph{Insight}\label{honor:Insight}
+---\quad \emph{Requires \nameref{honor:Sight} and \nameref{honor:Sense}, and at least 6 Willpower}
+
+You can now penetrate the Veil 
+around Spawn and other monsters, and see/attack them normally. You are also immune to 
+magical invisibility and illusions. 
+
+\subparagraph{Speed}\label{honor:Speed}
+---\quad \emph{Requires \nameref{honor:Sight}, and at least 6 Wit and Agility}
+
+Your Mobility increases by 50\% for the 
+purposes of Movement, and you benefit from \nameref{par:Stains of Time} as per the Burdinadin racial ability, 
+allowing you to dodge or parry bullets and benefit from lower TNs. 
+
+\subsubsection{High Honors (Grandmaster Only)}
+\subparagraph{Blood Ministration}\label{honor:Blood Ministration}
+---\quad \emph{Requires \nameref{honor:Blood Potion} and at least 10 Health}
+
+The number of Potions you can produce doubles to 8, and rather than lasting 24 hours, they last indefinitely (or until you 
+choose to render them inert to regain your Health.) Additionally each Potion will restore 5 levels of Wound instead of 3.
+Additionally, a Grandmaster with Blood Ministration who is present for an 
+Honoring Ceremony may reduce the RS of the character’s Corruption Roll by 2. 
+
+\subparagraph{Contact}\label{honor:Contact}
+---\quad \emph{Requires Insight and at least 10 Willpower}
+
+With this power, you can communicate 
+with powerful eldritch entities, including Spawn, the Dark Watchers themselves, the Genius Loci 
+of an area, and even with beings like Bocanadessia and Genosus. 
+This ability is not to be used lightly. Establishing contact with an entity requires a lengthy (twelve 
+hour at least) long ritual, and oftentimes is extremely mentally and even physically taxing.
+
+\subparagraph{Sublime}\label{honor:Sublime}
+---\quad \emph{Requires \nameref{honor:Hunger}, \nameref{honor:Disintegrate}, and at least 10 Health}
+
+You may explode into a cloud 
+of blood, and reform some distance away. It takes 1 Round per 50 yards you want to move, and 
+using this ability reduces your Health by 1 for 24 hours. You can recover that Health in a minute 
+by consuming a liter of blood, or a pound of meat. 
+
+\subparagraph{Macrocosm}\label{honor:Macrocosm}
+---\quad \emph{Requires \nameref{honor:Insight} and at least 10 Perception}
+
+\subsection{Unkindly Weapons}
+
 \part{The Tools of the Trade}
 \chapter{Equipment}\label{ch:equipment}
 \startcontents[chapters]
@@ -9229,7 +9436,7 @@ the Thrusting Table to either Head, Neck, or Arm. You do not pay Reach Costs for
 does. 
 \item [Success:] Inflict damage equal to [Half Mount Strength+Mount Bite Damage+BS] in Cutting Damage to 
 Thrusting Hit Location. 
-[Ride Fail:] You cannot convince your mount to bite anything this Action.
+\item [Ride Fail:] You cannot convince your mount to bite anything this Action.
 \end{description}
 
 \paragraph{\large\label{man:Mount Kick}Mount Kick}---\quad{\large[2] (RS 3 Ride Check)}
