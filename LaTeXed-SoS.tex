@@ -43,7 +43,7 @@
 	headsep=0.8cm,
 	footskip=0.5cm}
 \usepackage[full]{textcomp}
-\renewcommand{\familydefault}{pplj}
+\renewcommand*{\familydefault}{pplj}
 %	\usepackage
 %	[
 %	final,
@@ -116,6 +116,7 @@
 	\AtBeginEnvironment{longtabu}{\footnotesize}{}{}   %% change all longtabu content to foot note size
 	\AtBeginEnvironment{tabu}{\footnotesize}{}{} %%Do the same for tabu content, not sure if these two can be combined
 	\AtBeginEnvironment{table}{\renewcommand*{\familydefault}{ppl}}{}{}
+	\AtBeginEnvironment{longtabu}{\renewcommand*{\familydefault}{ppl}}{}{}
 \usepackage{microtype}
 %END_FOLD
 \begin{document}
@@ -5778,12 +5779,10 @@ the other, then the Weight of the armor is averaged between them (combine the We
 \end{itemize}
 
 \subsubsection{Half AV Coverage}
-Some Hit Locations will be listed with this symbol: *. This means that the armor provides only half AV Coverage to 
-that Hit Location. 
+Some Hit Locations will be listed with this symbol: *. This means that the armor provides only half AV Coverage to that Hit Location. 
 	
-\subsubsection{Weak Spots}
-Some Hit Locations will be listed with this symbol: $\phi$. This indicates a weak spot in the armor. Weak spots can be 
-targeted using the Joint-Thrust Maneuver.
+\subsubsection{Weak Spots}\label{sec:Weak Spots}
+Some Hit Locations will be listed with this symbol: $\phi$. This indicates a weak spot in the armor. Weak spots can be targeted using the \nameref{man:Joint Thrust} Maneuver.
 
 \subsubsection{Special}
 The Special Qualities of an armor component note unusual and special effects of that armor, such as it layering with other armor in a unique way, providing unique armor bonuses against certain types of attacks, and influencing Encumbrance/Exhaustion differently than normal, and so on. These Special Qualities are detailed at the end of the chapter.
@@ -5821,13 +5820,13 @@ Helmet not included.
 	\label{tab:Full Plate Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\\toprule
 Besagews& 8& 7& 6& Shoulders (Thrust only), Upper Arm* (Thrust only) &Hard, When layered with Spaulders use Besagews value against Thrusts.&0.5&8 sp\\
-Couters& 8& 7& 6& Elbow$\phi$& Hard& 1& 5 sp\\
+Couters& 8& 7& 6& Elbow\hyperref[sec:Weak Spots]{$\phi$}& Hard& 1& 5 sp\\
 Cuirass& 8& 7& 6& Belly, Chest, Lower 
 Back, Side, Upper Back& Hard& 2.5& 2 gp\\
 Cuisses& 8& 7& 6& Thigh& Hard& 2& 8 sp\\
-Fauld& 8& 7& 6& Groin$\phi$, Hip$\phi$, Thighs$\phi$ &Hard, Layers 2 (Groin, Hip, 
+Fauld& 8& 7& 6& Groin\hyperref[sec:Weak Spots]{$\phi$}, Hip\hyperref[sec:Weak Spots]{$\phi$}, Thighs\hyperref[sec:Weak Spots]{$\phi$} &Hard, Layers 2 (Groin, Hip, 
 Thighs)&1.5& 10 sp\\
-Gauntlets& 8& 7& 6& Hand$\phi$& Hard& 2& 5 sp\\
+Gauntlets& 8& 7& 6& Hand\hyperref[sec:Weak Spots]{$\phi$}& Hard& 2& 5 sp\\
 Gorget& 8& 7& 6& Neck& Hard& 1& 10 sp\\
 Greaves& 8& 7& 6& Shin& Hard& 1.5& 6 sp\\
 Mail Coat& 6& 4& 3& Full Torso, Groin, Hip, 
@@ -5835,7 +5834,7 @@ Knees, Shoulders,
 Thighs &Hard, Layer 1, Mail& 2.5& 2 gp\\
 Mail Long Sleeves& 6& 4& 3& Elbow, Forearm, 
 Shoulder, Upper Arm &Hard, Layer 1, Mail& 1.5& 1 gp\\
-Poleyns& 8& 7& 6& Knee$\phi$& Hard& 1.5& 5 sp\\
+Poleyns& 8& 7& 6& Knee\hyperref[sec:Weak Spots]{$\phi$}& Hard& 1.5& 5 sp\\
 Quilted Shirt& 2& 3& 4& Full Torso, Groin, Hip, 
 Thighs& Textile& 0& 1 sp\\
 Quilted Leggings& 2& 3& 4& Groin, Hip, Knees, 
@@ -5845,7 +5844,7 @@ Sleeves& 2& 3& 4& Elbow, Forearm,
 Shoulder, Upper Arm& Textile& 0& 6 cp\\
 Rerebraces& 8& 7& 6& Upper Arm& Hard& 1& 5 sp\\
 Sabatons& 8& 7& 6& Foot& Hard& 1.5& 5 sp\\
-Spaulders& 8& 7& 6& Shoulder$\phi$, Upper Arm$\phi$* &Hard, Provides half AV against Thrust attacks to the Shoulder 
+Spaulders& 8& 7& 6& Shoulder\hyperref[sec:Weak Spots]{$\phi$}, Upper Arm\hyperref[sec:Weak Spots]{$\phi$}* &Hard, Provides half AV against Thrust attacks to the Shoulder 
 and Upper Arm& 0.5& 6 sp\\
 Vambraces& 8& 7& 6& Forearm& Hard& 1& 5 sp\\\cmidrule(lr){1-8}
 \multicolumn{8}{c}{\textbf{TOTAL}:\hfill 21.5 Wt \quad 6 gp 19 sp 8 cp}\\
@@ -5860,13 +5859,13 @@ who dislike the weight of heavier armor. Helmet not included.
 	\label{tab:Half-Plate Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\\toprule
 Cuirass& 8& 7& 6& Belly, Chest, Lower Back, Side, Upper Back& Hard& 2.5& 2 gp\\
-Fauld& 8& 7& 6& Groin$\phi$, Hip$\phi$, Thighs$\phi$& Hard, Layers 2 (Groin, Hip, Thighs)& 1.5& 10 sp\\
+Fauld& 8& 7& 6& Groin\hyperref[sec:Weak Spots]{$\phi$}, Hip\hyperref[sec:Weak Spots]{$\phi$}, Thighs\hyperref[sec:Weak Spots]{$\phi$}& Hard, Layers 2 (Groin, Hip, Thighs)& 1.5& 10 sp\\
 Leather Boots& 3& 2& 2& Feet& -& 0& 1 sp\\
 Leather Leggings& 3& 2& 2& Groin, Hip, Knees, Shins, Thighs& -& 0& 2 sp\\
 Reinforced Leather Gloves& 4& 3& 3& Hand& -& 0& 2 sp\\
 Quilted Coat& 2& 3& 4& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& Textile& 0.5& 17 cp\\
 Quilted Long Sleeves& 2& 3& 4& Elbow, Forearm, Shoulder, Upper Arm& Textile& 0& 6 cp\\
-Spaulders& 8& 7& 6& Shoulder$\phi$, Upper Arm$\phi$*& Hard, Provides half AV against Thrust attacks to the Shoulder and Upper Arm& 0.5& 6 sp\\\cmidrule(lr){1-8}
+Spaulders& 8& 7& 6& Shoulder\hyperref[sec:Weak Spots]{$\phi$}, Upper Arm\hyperref[sec:Weak Spots]{$\phi$}*& Hard, Provides half AV against Thrust attacks to the Shoulder and Upper Arm& 0.5& 6 sp\\\cmidrule(lr){1-8}
 \multicolumn{8}{c}{\textbf{TOTAL}:\hfill  5 Wt \quad 3 gp 2 sp 11 cp}\\
 \end{longtabu}
 \subsection*{Plate and Mail Armor}
@@ -5877,7 +5876,7 @@ plate doesn’t cover are still armored. Attacks that slip through gaps must sti
 	\caption{Plate and Mail Armor}
 	\label{tab:Plate and Mail Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special&Wt.&Cost\\
-Couters& 8& 7& 6& Elbow $\phi$& Hard& 1& 5 sp\\
+Couters& 8& 7& 6& Elbow \hyperref[sec:Weak Spots]{$\phi$}& Hard& 1& 5 sp\\
 Cuirass& 8& 7& 6& Belly, Chest, Lower Back, Side, Upper Back& Hard& 2.5& 2 gp\\
 Greaves& 8& 7& 6& Shin& Hard& 1.5& 6 sp\\
 Leather Leggings& 3& 2& 2& Groin, Hip, Knees, Shins, Thighs& -& 0& 2 sp\\
@@ -5885,7 +5884,7 @@ Mail Boots& 6& 4& 3& Feet& Hard, Layer 1, Mail& 1& 3 sp\\
 Mail Coat& 6& 4& 3& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& Hard, Layer 1, Mail& 2.5& 2 gp\\
 Mail Gloves/Mittens& 6& 4& 3& Hand& Hard, Layer 1, Mail& 0.5& 3 sp\\
 Mail Long Sleeves& 6& 4& 3& Elbow, Forearm, Shoulder, Upper Arm& Hard, Layer 1, Mail& 1.5& 1 gp\\
-Poleyns& 8& 7& 6& Knee$\phi$& Hard& 1.5& 5 sp\\
+Poleyns& 8& 7& 6& Knee\hyperref[sec:Weak Spots]{$\phi$}& Hard& 1.5& 5 sp\\
 Quilted Coat& 2& 3& 4& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& Textile& 0.5& 17 cp\\
 Quilted Long Sleeves& 2& 3& 4& Elbow, Forearm, Shoulder, Upper Arm& Textile& 0& 6 cp\\\cmidrule(lr){1-8}
 \multicolumn{8}{c}{\textbf{TOTAL}:\hfill  12.5 Wt \quad 6 gp 5 sp 11 cp}\\
@@ -5953,7 +5952,7 @@ Anima Cuisses& 7& 7& 7& Thigh& Hard& 3& 1 gp\\
 Anima Greaves& 7& 7& 7& Shin& Hard& 2& 1 gp\\
 Anima Poleyns& 7& 7& 7& Knee& Hard& 2& 10 sp\\
 Anima Rerebraces& 7& 7& 7& Upper Arm& Hard& 1& 1 gp\\
-Anima Spaulders& 7& 7& 7& Shoulder, Upper Arm$\phi$*& Hard, Provides half AV against Thrust attacks to the Shoulder and Upper Arm& 2& 1 gp\\
+Anima Spaulders& 7& 7& 7& Shoulder, Upper Arm\hyperref[sec:Weak Spots]{$\phi$}*& Hard, Provides half AV against Thrust attacks to the Shoulder and Upper Arm& 2& 1 gp\\
 Gorget& 8& 7& 6& Neck& Hard& 1& 10 sp\\
 Quilted Coat& 2& 3& 4& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& Textile& 0.5& 17 cp\\
 Quilted Long Sleeves& 2& 3& 4& Elbow, Forearm, Shoulder, Upper Arm& Textile& 0& 6 cp\\
@@ -5976,8 +5975,8 @@ obscenely fashionable.
 	\label{tab:Krajini Footman's Uniform}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\
 Brigandine Coat& 5& 6& 4& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& Hard& 3& 3 gp\\
-Couters& 8& 7& 6& Elbow$\phi$& Hard& 1& 5 sp\\
-Jack Chains& 6& 0& 3& Elbow$\phi$, Forearm$\phi$, Upper Arm$\phi$& Hard, No AV against Thrust attacks of any damage type& 0.5& 1 sp\\
+Couters& 8& 7& 6& Elbow\hyperref[sec:Weak Spots]{$\phi$}& Hard& 1& 5 sp\\
+Jack Chains& 6& 0& 3& Elbow\hyperref[sec:Weak Spots]{$\phi$}, Forearm\hyperref[sec:Weak Spots]{$\phi$}, Upper Arm\hyperref[sec:Weak Spots]{$\phi$}& Hard, No AV against Thrust attacks of any damage type& 0.5& 1 sp\\
 Leather Boots& 3& 2& 2& Feet& -& 0& 1 sp\\
 Leather Leggings& 3& 2& 2& Groin, Hip, Knees, Shins, Thighs& -& 0& 2 sp\\
 Leather Neck-Stock& 3& 2& 2& Neck& -& 0& 8 cp\\
@@ -5992,7 +5991,7 @@ Reinforced Leather Gloves& 4& 3& 3& Hand& -& 0& 2 sp\\\cmidrule(lr){1-8}
 	\label{tab:DIS Uniform}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\
 Leather Boots& 3& 2& 2& Feet& -& 0& 1 sp\\
-Mirror Plate& 10& 9& 8& Chest$\phi$& Hard& 1.5& 1 gp\\
+Mirror Plate& 10& 9& 8& Chest\hyperref[sec:Weak Spots]{$\phi$}& Hard& 1.5& 1 gp\\
 Quilted Leggings& 2& 3& 4& Groin, Hip, Knees, Shins, Thighs& Textile& 0& 2 sp\\
 Quilted Coat& 2& 3& 4& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& Textile& 0.5& 17 cp\\
 Quilted Long Sleeves& 2& 3& 4& Elbow, Forearm, Shoulder, Upper Arm& Textile& 0& 6 cp\\
@@ -6019,45 +6018,46 @@ Heavy Quilted Coat& 3& 4& 5& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& T
 Leather Boots& 3& 2& 2& Feet& -& 0& 1 sp\\
 Mail Coat& 6& 4& 3& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& Hard, Layer 1, Mail& 2.5& 2 gp\\
 Mail Long Sleeves& 6& 4& 3& Elbow, Forearm, Shoulder, Upper Arm& Hard, Layer 1, Mail& 1.5& 1 gp\\
-Mirror Plate& 10& 9& 8& Chest$\phi$& Hard& 1.5& 1 gp\\
-Poleyns& 8& 7& 6& Knee$\phi$& Hard& 1.5& 5 sp\\
+Mirror Plate& 10& 9& 8& Chest\hyperref[sec:Weak Spots]{$\phi$}& Hard& 1.5& 1 gp\\
+Poleyns& 8& 7& 6& Knee\hyperref[sec:Weak Spots]{$\phi$}& Hard& 1.5& 5 sp\\
 Quilted Leggings& 2& 3& 4& Groin, Hip, Knees, Shins, Thighs& Textile& 0& 2 cp\\
 Quilted Long Sleeves& 2& 3& 4& Elbow, Forearm, Shoulder, Upper Arm& Textile& 0& 6 cp\\\cmidrule(lr){1-8}
 \multicolumn{8}{c}{\textbf{TOTAL}:\hfill 9.5 Wt \quad 4 gp 17 sp 8 cp}\\
 \end{longtabu}
 
-\section{Armor Components}
-\subsection{Head and Neck Armor}\label{sec:Head and Neck Armor}
+\section*{Armor Components}
+\section{Head and Neck Armor}\label{sec:Head and Neck Armor}
 \begin{longtabu}to \linewidth {X *{3}{X[-1,c]} X[2] X[2] *{3}{X[-1,c]}}
-	\caption{Helmets}
+	\captionsetup{textformat=empty, labelformat=blank}
+	\caption{Helmets} \vspace{-15pt}
 	\label{tab:Helmets}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&PP& Cost\\\toprule
-Armet& 8& 7& 6& Full Head, Face$\phi$, Neck &Restricts Breathing 2, Integrated Visor, Hard& 4& -2& 2 gp\\
-Barbute& 8& 7& 6& Face$\phi$*, Lower Head, Upper Head &Hard& 1 &-1& 10 sp\\
-Bascinet& 8& 7& 6& Lower Head, Upper Head &Hard, +1 AV vs Downward Swings, Can be worn with Great Helm for Layer 1 on Upper Head and Lower Head& 1.5& 0& 12 sp\\
-Burgonet& 8& 7& 6& Lower Head, Upper Head &Hard, +1 AV vs Downward Swings &2 &-1& 10 sp\\
-Close Helmet& 8& 7& 6& Full Head, Face$\phi$, Neck &Restricts Breathing 2, Integrated Visor, Hard& 3.5 &-1& 3 gp\\
-Closed Sallet& 8& 7& 6& Face$\phi$, Lower Head*, Upper Head &Hard, No AV on Face vs Upward Swings &2 &-1& 10 sp\\
-Conical Helm& 8& 7& 6& Upper Head &Hard, +2 AV vs Downward Swings 2& 0& 2& sp\\
-Great Bascinet& 8& 7& 6& Full Head, Face$\phi$, Neck, Shoulder &Restricts Breathing 2, Integrated Visor, Hard& 3.5 &-2& 15 sp\\
-Great Helm& 8& 7& 6& Full Head, Face$\phi$, Neck$\phi$ &Restricts Breathing 3, Hard, Can be worn with a Skullcap or Bascinet for Layer 1 on overlapping areas& 5 &-3& 30 sp\\
+Armet& 8& 7& 6& Full Head, Face\hyperref[sec:Weak Spots]{$\phi$}, Neck &\nameref{par:Restricts Breathing} 2, Integrated Visor, \nameref{par:Hard}& 4& -2& 2 gp\\
+Barbute& 8& 7& 6& Face\hyperref[sec:Weak Spots]{$\phi$}*, Lower Head, Upper Head &\nameref{par:Hard}& 1 &-1& 10 sp\\
+Bascinet& 8& 7& 6& Lower Head, Upper Head &\nameref{par:Hard}, +1 AV vs Downward Swings, Can be worn with Great Helm for \nameref{par:Layer} 1 on Upper Head and Lower Head& 1.5& 0& 12 sp\\
+Burgonet& 8& 7& 6& Lower Head, Upper Head &\nameref{par:Hard}, +1 AV vs Downward Swings &2 &-1& 10 sp\\
+Close Helmet& 8& 7& 6& Full Head, Face\hyperref[sec:Weak Spots]{$\phi$}, Neck &\nameref{par:Restricts Breathing} 2, Integrated Visor, \nameref{par:Hard}& 3.5 &-1& 3 gp\\
+Closed Sallet& 8& 7& 6& Face\hyperref[sec:Weak Spots]{$\phi$}, Lower Head*, Upper Head &\nameref{par:Hard}, No AV on Face vs Upward Swings &2 &-1& 10 sp\\
+Conical Helm& 8& 7& 6& Upper Head &\nameref{par:Hard}, +2 AV vs Downward Swings 2& 0& 2& sp\\
+Great Bascinet& 8& 7& 6& Full Head, Face\hyperref[sec:Weak Spots]{$\phi$}, Neck, Shoulder &\nameref{par:Restricts Breathing} 2, Integrated Visor, \nameref{par:Hard}& 3.5 &-2& 15 sp\\
+Great Helm& 8& 7& 6& Full Head, Face\hyperref[sec:Weak Spots]{$\phi$}, Neck\hyperref[sec:Weak Spots]{$\phi$} &\nameref{par:Restricts Breathing} 3, \nameref{par:Hard}, Can be worn with a Skullcap or Bascinet for \nameref{par:Layer} 1 on overlapping areas& 5 &-3& 30 sp\\
 Hat/Cap& 1& 1& 1& Upper Head &-& 0& 0& 1 cp\\
-Kettle Helm& 8& 7& 6& Lower Head*, Upper Head &Hard, No AV vs Upward Swings 0& 0& 3& sp\\
-Lamellar Pot Helm& 5& 5& 5& Lower Head, Upper Head &Hard& 2 &-1& 8 sp\\
+Kettle Helm& 8& 7& 6& Lower Head*, Upper Head &\nameref{par:Hard}, No AV vs Upward Swings &0& 0& 3 sp\\
+Lamellar Pot Helm& 5& 5& 5& Lower Head, Upper Head &\nameref{par:Hard}& 2 &-1& 8 sp\\
 Leather Pot Helm& 4& 3& 3& Lower Head, Upper Head &-& 1 &-1& 10 cp\\
 Leather Skullcap& 4& 3& 3& Upper Head &-& 0& 0& 6 cp\\
-Morion& 8& 7& 6& Lower Head*, Upper Head &Hard, +1 AV vs Downward Swings 1& 0& 1&2 sp\\
-Open Sallet& 8& 7& 6& Lower Head*, Upper Head &Hard& 2& 0& 5 sp\\
-Quilted Helmet& 2& 4& 5& Lower Head, Upper Head &Textile& 0& 0& 8 cp\\
-Reinforced Roman Helm& 8& 7& 6& Lower Head, Neck*, Shoulders*, Upper Head &Hard, +4 AV on Upper Head& 2.5& 0& 1 gp\\
-Roman Helm (Gallic Style)& 8& 7& 6& Lower Head, Neck* Shoulders*, Upper Head, &Hard& 2& 0& 15 sp\\
-Skullcap& 8& 7& 6& Upper Head &Hard, Can be worn with Great Helm for Layer 2 on Upper Head& 0& 0& 1 sp\\
-Stechhelm& 10& 9& 8& Full Head, Neck &Restricts Breathing 3, Hard, +4 AV on Lower Head, Face, and Neck& 8 &-3& 1 gp\\
-Tailed Sallet& 8& 7& 6& Face$\phi$, Lower Head*, Neck*, Shoulders*, Upper Head &Hard, No AV on Face vs Upward Swings &2& -1& 12 sp\\
-Zischagge/ Szyszak& 8& 7& 6& Lower Head, Neck*, Shoulders*, Upper Head &Hard, +4 AV on Upper Head& 2.5& 0& 10 sp\\
+Morion& 8& 7& 6& Lower Head*, Upper Head &\nameref{par:Hard}, +1 AV vs Downward Swings 1& 0& 1&2 sp\\
+Open Sallet& 8& 7& 6& Lower Head*, Upper Head &\nameref{par:Hard}& 2& 0& 5 sp\\
+Quilted Helmet& 2& 4& 5& Lower Head, Upper Head &\nameref{par:Textile}& 0& 0& 8 cp\\
+Reinforced Roman Helm& 8& 7& 6& Lower Head, Neck*, Shoulders*, Upper Head &\nameref{par:Hard}, +4 AV on Upper Head& 2.5& 0& 1 gp\\
+Roman Helm (Gallic Style)& 8& 7& 6& Lower Head, Neck* Shoulders*, Upper Head, &\nameref{par:Hard}& 2& 0& 15 sp\\
+Skullcap& 8& 7& 6& Upper Head &\nameref{par:Hard}, Can be worn with Great Helm for \nameref{par:Layer} 2 on Upper Head& 0& 0& 1 sp\\
+Stechhelm& 10& 9& 8& Full Head, Neck &\nameref{par:Restricts Breathing} 3, \nameref{par:Hard}, +4 AV on Lower Head, Face, and Neck& 8 &-3& 1 gp\\
+Tailed Sallet& 8& 7& 6& Face\hyperref[sec:Weak Spots]{$\phi$}, Lower Head*, Neck*, Shoulders*, Upper Head &\nameref{par:Hard}, No AV on Face vs Upward Swings &2& -1& 12 sp\\
+Zischagge/ Szyszak& 8& 7& 6& Lower Head, Neck*, Shoulders*, Upper Head &\nameref{par:Hard}, +4 AV on Upper Head& 2.5& 0& 10 sp\\
 \end{longtabu}
 
-\subsubsection{\label{sec:Visors}Optional Visors}
+\subsection{\label{sec:Visors}Optional Visors}
 Any Helmet that does not cover the Face can be equipped with a visor, which can be chosen from the list below. The visor then becomes part of the helmet, applying AV and Coverage as normal. If a visor type covers more than the Face, it cannot be attached to any helmet that already covers any of those additional areas.
 
 \paragraph{\label{par:Movable Visors}Movable Visors}---\quad
@@ -6067,16 +6067,16 @@ A visor can be opened or closed at will (in combat this requires an ADR test at 
 	\caption{Visors}
 	\label{tab:Visors}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&PP&Cost\\\toprule
-Bar-Nasel& 4& 2& 1& Face$\phi$& Hard, No AV vs Upward Swings &0& 0& 1 sp\\
-Cage Visor& 7& 3& 5& Face$\phi$& Hard, Movable& 1& 0& 5 sp\\
+Bar-Nasel& 4& 2& 1& Face\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}, No AV vs Upward Swings &0& 0& 1 sp\\
+Cage Visor& 7& 3& 5& Face\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}, Movable& 1& 0& 5 sp\\
 Falling Buff 
-(Hinged Gorget)& 8& 7& 6& Face$\phi$, Neck& Restricts Breathing 2, Hard, 
+(Hinged Gorget)& 8& 7& 6& Face\hyperref[sec:Weak Spots]{$\phi$}, Neck& \nameref{par:Restricts Breathing} 2, \nameref{par:Hard}, 
 Movable& 2 &-1& 1 gp\\
-Full Visor& 8& 7& 6& Face$\phi$& Restricts Breathing 2, Hard, 
+Full Visor& 8& 7& 6& Face\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Restricts Breathing} 2, \nameref{par:Hard}, 
 Movable& 1.5 &-1& 10 sp\\
-Goggle Type& 5& 4& 3& Face$\phi$& Hard, No AV vs Upward Swings &0.5 &-1& 3 sp\\
-Mail Ventail& 6& 4& 3& Face& Layer 1, Hard& 1 &-1& 2 sp\\
-Tri-Bar Nasel& 6& 3& 2& Face$\phi$& Hard, No AV vs Upward Swings &0.5& 0& 3 sp\\
+Goggle Type& 5& 4& 3& Face\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}, No AV vs Upward Swings &0.5 &-1& 3 sp\\
+Mail Ventail& 6& 4& 3& Face& \nameref{par:Layer} 1, \nameref{par:Hard}& 1 &-1& 2 sp\\
+Tri-Bar Nasel& 6& 3& 2& Face\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}, No AV vs Upward Swings &0.5& 0& 3 sp\\
 \end{longtabu}
 
 \subsubsection{Optional Helmet Crests}
@@ -6099,89 +6099,95 @@ movements. You gain a +1 bonus to Leadership rolls made in combat.
 	\caption{Non-Helmet Head Protection}
 	\label{tab:Non-Helmet Head Protection}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&PP&Cost\\\toprule
-Cloth Mask/Scarf& 1& 1& 1& Face, Lower Head &Textile&0&0&1 cp\\
-Lamellar Ventail& 5& 5& 5& Face, Neck &Hard &1.5 &-1 &2 sp\\
-Mail Camail& 6& 4& 3& Lower Head, Neck, Shoulders &Hard, Layer 1, Mail& 1& 0& 4 sp\\
-Mail Coif& 6& 4& 3& Lower Head, Neck, Upper Head& Hard, Layer 1, Mail& 1& 0& 2 sp\\
-Mail Ventail& 6& 4& 3& Face& Hard, Layer 1, Mail& 1.5 &-1& 1 sp\\
-Quilted Camail& 2& 3& 4& Lower Head, Neck, Shoulders& Textile& 0& 0& 8 cp\\
-Quilted Coif& 2& 3& 4& Lower Head, Neck, Upper Head& Textile& 0& 0& 4 cp\\
-Quilted Ventail& 2& 3& 4& Face& Textile& 0 &-1& 1 cp\\
-Steel Facemask& 8& 7& 6& Face$\phi$& Restricts Breathing 1, Hard& 2 &-1& 8 sp\\
+Cloth Mask/Scarf& 1& 1& 1& Face, Lower Head &\nameref{par:Textile}&0&0&1 cp\\
+Lamellar Ventail& 5& 5& 5& Face, Neck &\nameref{par:Hard} &1.5 &-1 &2 sp\\
+Mail Camail& 6& 4& 3& Lower Head, Neck, Shoulders &\nameref{par:Hard}, \nameref{par:Layer} 1, \nameref{par:Mail}& 1& 0& 4 sp\\
+Mail Coif& 6& 4& 3& Lower Head, Neck, Upper Head& \nameref{par:Hard}, \nameref{par:Layer} 1, \nameref{par:Mail}& 1& 0& 2 sp\\
+Mail Ventail& 6& 4& 3& Face& \nameref{par:Hard}, \nameref{par:Layer} 1, \nameref{par:Mail}& 1.5 &-1& 1 sp\\
+Quilted Camail& 2& 3& 4& Lower Head, Neck, Shoulders& \nameref{par:Textile}& 0& 0& 8 cp\\
+Quilted Coif& 2& 3& 4& Lower Head, Neck, Upper Head& \nameref{par:Textile}& 0& 0& 4 cp\\
+Quilted Ventail& 2& 3& 4& Face& \nameref{par:Textile}& 0 &-1& 1 cp\\
+Steel Facemask& 8& 7& 6& Face\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Restricts Breathing} 1, \nameref{par:Hard}& 2 &-1& 8 sp\\
 \end{longtabu}
 
 \begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{3}{X[-1,c]}}
 	\caption{Neck Protection}
 	\label{tab:Neck Protection}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&PP& Cost\\\toprule
-Bevor& 8& 7& 6& Face$\phi$*, Lower Head, Neck& Restricts Breathing 1, Hard& 2& 0& 12 sp\\
-Gorget& 8& 7& 6& Neck& Hard& 1& 0& 10 sp\\
+Bevor& 8& 7& 6& Face\hyperref[sec:Weak Spots]{$\phi$}*, Lower Head, Neck& \nameref{par:Restricts Breathing} 1, \nameref{par:Hard}& 2& 0& 12 sp\\
+Gorget& 8& 7& 6& Neck& \nameref{par:Hard}& 1& 0& 10 sp\\
 Leather Neck-Stock& 3& 2& 2& Neck &-& 0& 0& 8 cp\\
-Neck-Wrap (such as a Scarf)& 1& 1& 1& Neck& Textile& 0& 0& 1 cp\\
-Reinforced Leather Neck-Stock& 4& 3& 3& Neck& Hard& 0& 0& 1 sp\\
+Neck-Wrap (such as a Scarf)& 1& 1& 1& Neck& \nameref{par:Textile}& 0& 0& 1 cp\\
+Reinforced Leather Neck-Stock& 4& 3& 3& Neck& \nameref{par:Hard}& 0& 0& 1 sp\\
 \end{longtabu}
 
-\subsection{Torso Armor}
+\section{Torso Armor}
+\subsection{Plate Torso Armor}
 \begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
-	\caption{Plate Torso Armor}
+	\captionsetup{textformat=empty, labelformat=blank}
+	\caption{Plate Torso Armor} \vspace{-15pt}
 	\label{tab:Plate Torso Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\\toprule
-Breastplate& 8& 7& 6& Belly, Chest, Side& Hard& 1.5& 1 gp\\
-Bulletproof Breastplate& 10& 9& 8& Belly, Chest, Side& Bulletproof, Hard& 3.5& 2 gp\\
-Bulletproof Cuirass& 10& 9& 8& Belly, Chest, Lower Back, Side, Upper Back& Bulletproof, Hard& 4.5& 4 gp\\
-Bulletproof Codpiece& 10& 9& 8& Groin& Bulletproof, Hard& 0.5& 1 gp\\
-Cuirass& 8& 7& 6& Belly, Chest, Lower Back, Side, Upper Back& Hard& 2.5& 2 gp\\
-Codpiece& 8& 7& 6& Groin& Hard& 0& 5 sp\\
-Fauld& 8& 7& 6& Groin$\phi$, Hip$\phi$, Thighs$\phi$& Hard, Layers 2 (Groin, Hip, Thighs)& 1.5& 10 sp\\
-Heartguard& 8& 7& 6& Chest$\phi$& Hard& 0& 1 sp\\
-Mirror Plate& 10& 9& 8& Chest$\phi$& Hard& 1.5& 1 gp\\
-Munitions Breastplate& 7& 6& 5& Chest& Hard& 2.5& 10 sp\\
-Munitions Cuirass& 7& 6& 5& Belly$\phi$, Chest$\phi$, Side$\phi$& Hard& 3.5& 15 sp\\
-Munitions Fauld& 7& 6& 5& Groin$\phi$, Hip$\phi$, Thighs$\phi$& Hard, Layers 1 (Groin, Hip, Thighs)& 2.5& 10 sp\\
-Plackart& 8& 7& 6& Belly$\phi$, Hip$\phi$, Side$\phi$,& Hard, Layers 2 (Belly, Side)& 0.5& 1 gp\\
+Breastplate& 8& 7& 6& Belly, Chest, Side& \nameref{par:Hard}& 1.5& 1 gp\\
+Bulletproof Breastplate& 10& 9& 8& Belly, Chest, Side& Bulletproof, \nameref{par:Hard}& 3.5& 2 gp\\
+Bulletproof Cuirass& 10& 9& 8& Belly, Chest, Lower Back, Side, Upper Back& Bulletproof, \nameref{par:Hard}& 4.5& 4 gp\\
+Bulletproof Codpiece& 10& 9& 8& Groin& Bulletproof, \nameref{par:Hard}& 0.5& 1 gp\\
+Cuirass& 8& 7& 6& Belly, Chest, Lower Back, Side, Upper Back& \nameref{par:Hard}& 2.5& 2 gp\\
+Codpiece& 8& 7& 6& Groin& \nameref{par:Hard}& 0& 5 sp\\
+Fauld& 8& 7& 6& Groin\hyperref[sec:Weak Spots]{$\phi$}, Hip\hyperref[sec:Weak Spots]{$\phi$}, Thighs\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}, \nameref{par:Layer} 2 (Groin, Hip, Thighs)& 1.5& 10 sp\\
+Heartguard& 8& 7& 6& Chest\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}& 0& 1 sp\\
+Mirror Plate& 10& 9& 8& Chest\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}& 1.5& 1 gp\\
+Munitions Breastplate& 7& 6& 5& Chest& \nameref{par:Hard}& 2.5& 10 sp\\
+Munitions Cuirass& 7& 6& 5& Belly\hyperref[sec:Weak Spots]{$\phi$}, Chest\hyperref[sec:Weak Spots]{$\phi$}, Side\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}& 3.5& 15 sp\\
+Munitions Fauld& 7& 6& 5& Groin\hyperref[sec:Weak Spots]{$\phi$}, Hip\hyperref[sec:Weak Spots]{$\phi$}, Thighs\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}, \nameref{par:Layer} 1 (Groin, Hip, Thighs)& 2.5& 10 sp\\
+Plackart& 8& 7& 6& Belly\hyperref[sec:Weak Spots]{$\phi$}, Hip\hyperref[sec:Weak Spots]{$\phi$}, Side\hyperref[sec:Weak Spots]{$\phi$},& \nameref{par:Hard}, \nameref{par:Layer} 2 (Belly, Side)& 0.5& 1 gp\\
 \end{longtabu}
-
+\subsection{Laminar Torso Armor}
 \begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
-	\caption{Laminar Torso Armor}
+	\captionsetup{textformat=empty, labelformat=blank}
+	\caption{Laminar Torso Armor} \vspace{-15pt}
 	\label{tab:Laminar Torso Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\\toprule
-Anima Cuirass& 7& 7& 7& Belly, Chest, Side& Hard& 3& 48 sp\\
-Anima Fauld& 7& 7& 7& Groin$\phi$, Hip, Thighs$\phi$& Hard& 3& 1 gp\\
-Laminar Cuirass& 8& 7& 5& Belly$\phi$, Chest$\phi$, Side$\phi$& Hard& 3& 1 gp\\
-Segmented Tassets& 8& 7& 5& Groin, Hip& Hard& 3& 12 sp\\
+Anima Cuirass& 7& 7& 7& Belly, Chest, Side& \nameref{par:Hard}& 3& 48 sp\\
+Anima Fauld& 7& 7& 7& Groin\hyperref[sec:Weak Spots]{$\phi$}, Hip, Thighs\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}& 3& 1 gp\\
+Laminar Cuirass& 8& 7& 5& Belly\hyperref[sec:Weak Spots]{$\phi$}, Chest\hyperref[sec:Weak Spots]{$\phi$}, Side\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}& 3& 1 gp\\
+Segmented Tassets& 8& 7& 5& Groin, Hip& \nameref{par:Hard}& 3& 12 sp\\
 \end{longtabu}
-
+\subsection{Mail Torso Armor}
 \begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
-	\caption{Mail Torso Armor}
+	\captionsetup{textformat=empty, labelformat=blank}
+	\caption{Mail Torso Armor} \vspace{-15pt}
 	\label{tab:Mail Torso Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\\toprule
-Brigandine Coat& 5& 6& 4& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& Hard& 3& 3 gp\\
-Brigandine Shirt& 5& 6& 4& Full Torso, Groin, Hip, Thighs& Hard& 2& 30 sp\\
-Brigandine Vest& 5& 6& 4& Full Torso& Hard& 1& 1 gp\\
-Lamellar Coat& 5& 5& 5& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& Hard& 3& 3 gp\\
-Lamellar Shirt& 5& 5& 5& Full Torso, Groin, Hip, Thighs& Hard& 2& 2 gp\\
-Lamellar Vest& 5& 5& 5& Full Torso& Hard& 1& 1 gp\\
-Mail Coat& 6& 4& 3& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& Hard, Layer 1, Mail& 2.5& 2 gp\\
-Mail Shirt& 6& 4& 3& Full Torso, Groin, Hip, Thighs& Hard, Layer 1, Mail& 1.5& 1 gp\\
-Mail Vest& 6& 4& 3& Full Torso& Hard, Layer 1, Mail& 0.5& 18 sp\\
+Brigandine Coat& 5& 6& 4& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& \nameref{par:Hard}& 3& 3 gp\\
+Brigandine Shirt& 5& 6& 4& Full Torso, Groin, Hip, Thighs& \nameref{par:Hard}& 2& 30 sp\\
+Brigandine Vest& 5& 6& 4& Full Torso& \nameref{par:Hard}& 1& 1 gp\\
+Lamellar Coat& 5& 5& 5& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& \nameref{par:Hard}& 3& 3 gp\\
+Lamellar Shirt& 5& 5& 5& Full Torso, Groin, Hip, Thighs& \nameref{par:Hard}& 2& 2 gp\\
+Lamellar Vest& 5& 5& 5& Full Torso& \nameref{par:Hard}& 1& 1 gp\\
+Mail Coat& 6& 4& 3& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& \nameref{par:Hard}, \nameref{par:Layer} 1, \nameref{par:Mail}& 2.5& 2 gp\\
+Mail Shirt& 6& 4& 3& Full Torso, Groin, Hip, Thighs& \nameref{par:Hard}, \nameref{par:Layer} 1, \nameref{par:Mail}& 1.5& 1 gp\\
+Mail Vest& 6& 4& 3& Full Torso& \nameref{par:Hard}, \nameref{par:Layer} 1, \nameref{par:Mail}& 0.5& 18 sp\\
 \end{longtabu}
-
+\subsection{Textile Torso Armor}
 \begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
-	\caption{Textile Torso Armor}
+	\captionsetup{textformat=empty, labelformat=blank}
+	\caption{Textile Torso Armor} \vspace{-15pt}
 	\label{tab:Textile Torso Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\\toprule
-Cloth Coat& 1& 1& 1& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& Textile& 0& 2 cp\\
-Cloth Shirt/Vest& 1& 1& 1& Full Torso, Groin, Hip, Thighs& Textile& 0& 1 cp\\
-Heavy Quilted Coat& 3& 4& 5& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& Textile& 1& 5 sp\\
-Heavy Quilted Shirt& 3& 4& 5& Full Torso, Groin, Hip, Thighs& Textile& 0.5& 3 sp\\
-Heavy Quilted Vest& 3& 4& 5& Full Torso& Textile& 0& 2 sp\\
-Quilted Coat& 2& 3& 4& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& Textile& 0.5& 17 cp\\
-Quilted Shirt& 2& 3& 4& Full Torso, Groin, Hip, Thighs& Textile& 0& 1 sp\\
-Quilted Vest& 2& 3& 4& Full Torso& Textile& 0& 5 cp\\
+Cloth Coat& 1& 1& 1& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& \nameref{par:Textile}& 0& 2 cp\\
+Cloth Shirt/Vest& 1& 1& 1& Full Torso, Groin, Hip, Thighs& \nameref{par:Textile}& 0& 1 cp\\
+Heavy Quilted Coat& 3& 4& 5& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& \nameref{par:Textile}& 1& 5 sp\\
+Heavy Quilted Shirt& 3& 4& 5& Full Torso, Groin, Hip, Thighs& \nameref{par:Textile}& 0.5& 3 sp\\
+Heavy Quilted Vest& 3& 4& 5& Full Torso& \nameref{par:Textile}& 0& 2 sp\\
+Quilted Coat& 2& 3& 4& Full Torso, Groin, Hip, Knees, Shoulders, Thighs& \nameref{par:Textile}& 0.5& 17 cp\\
+Quilted Shirt& 2& 3& 4& Full Torso, Groin, Hip, Thighs& \nameref{par:Textile}& 0& 1 sp\\
+Quilted Vest& 2& 3& 4& Full Torso& \nameref{par:Textile}& 0& 5 cp\\
 \end{longtabu}
-
+\subsection{Leather Torso Armor}
 \begin{longtabu}to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
-	\caption{Leather Torso Armor}
+	\captionsetup{textformat=empty, labelformat=blank}
+	\caption{Leather Torso Armor} \vspace{-15pt}
 	\label{tab:Leather Torso Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\\toprule
 Leather Buffcoat& 3& 2& 2& Full Torso, Groin, Hip, Knees, Shoulders, Thighs &-& 0& 5 sp\\
@@ -6190,163 +6196,175 @@ Leather Lamellar Coat& 3& 4& 3& Full Torso, Groin, Hip, Knees, Shoulders, Thighs
 Leather Lamellar Shirt& 3& 4& 3& Full Torso, Groin, Hip, Thighs &-& 0.5& 6 sp\\
 Leather Lamellar Vest& 3& 4& 3& Full Torso &-& 0& 3 sp\\
 Leather Vest& 3& 2& 2& Full Torso &-& 0& 1 sp\\
-Hardened Leather Breastplate& 4& 3& 3& Belly, Chest, Side &-& 0& 5 sp\\
-Hardened Leather Cuirass& 4& 3& 3& Belly, Chest, Lower Back, Side, Upper Back &-& 1& 8 sp\\
+\nameref{par:Hard}ened Leather Breastplate& 4& 3& 3& Belly, Chest, Side &-& 0& 5 sp\\
+\nameref{par:Hard}ened Leather Cuirass& 4& 3& 3& Belly, Chest, Lower Back, Side, Upper Back &-& 1& 8 sp\\
 Shagreen Greatcoat& 4& 3& 3& Full Torso, Full Arms, Groin, Hip, Knees, Shins, Thighs &-& 0& 1 gp\\
 \end{longtabu}
 
-\subsection{Arm Armor}
+\section{Arm Armor}
+\subsection{Plate Arm Armor}
 \begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
-	\caption{Plate Arm Armor}
+	\captionsetup{textformat=empty, labelformat=blank}
+	\caption{Plate Arm Armor} \vspace{-15pt}
 	\label{tab:Plate Arm Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\\toprule
-Besagews& 8& 7& 6& Shoulders (Thrust only), Upper Arm* (Thrust only)& Hard, When layered with Spaulders use Besagews value against Thrusts.& 0.5& 8 sp\\
-Bulletproof Vambraces& 10& 9& 8& Forearm& Bulletproof, Hard& 2& 1 gp\\
-Couters& 8& 7& 6& Elbow$\phi$& Hard& 1& 5 sp\\
-Gauntlets& 8& 7& 6& Hand$\phi$& Hard& 2& 5 sp\\
-Jack Chains& 6& 0& 3& Elbow$\phi$, Forearm$\phi$, Upper Arm$\phi$& Hard, No AV against Thrust attacks of any damage type& 0.5& 1 sp\\
-Munitions Pauldrons& 8& 7& 6& Shoulder$\phi$, Upper Arm$\phi$& Hard& 4& 8 sp\\
-Munitions Rerebraces& 7& 6& 5& Upper Arm$\phi$& Hard& 3& 2 sp\\
-Munitions Spaulders& 7& 6& 5& Shoulder$\phi$, Upper Arm$\phi$*& Hard, Provides half AV against Thrust attacks to the Shoulder and Upper Arm& 1& 4 sp\\
-Munitions Vambraces& 7& 6& 5& Forearm$\phi$& Hard& 1.5& 2 sp\\
-Pauldrons& 10& 9& 8& Shoulder, Upper Arm& Bulletproof, Hard& 3& 1 gp\\
-Rerebraces& 8& 7& 6& Upper Arm& Hard& 1& 5 sp\\
-Spaulders& 8& 7& 6& Shoulder$\phi$, Upper Arm$\phi$*& Hard, Provides half AV against Thrust attacks to the Shoulder 
+Besagews& 8& 7& 6& Shoulders (Thrust only), Upper Arm* (Thrust only)& \nameref{par:Hard}, When \nameref{par:Layer}ed with Spaulders use Besagews value against Thrusts.& 0.5& 8 sp\\
+Bulletproof Vambraces& 10& 9& 8& Forearm& Bulletproof, \nameref{par:Hard}& 2& 1 gp\\
+Couters& 8& 7& 6& Elbow\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}& 1& 5 sp\\
+Gauntlets& 8& 7& 6& Hand\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}& 2& 5 sp\\
+Jack Chains& 6& 0& 3& Elbow\hyperref[sec:Weak Spots]{$\phi$}, Forearm\hyperref[sec:Weak Spots]{$\phi$}, Upper Arm\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}, No AV against Thrust attacks of any damage type& 0.5& 1 sp\\
+Munitions Pauldrons& 8& 7& 6& Shoulder\hyperref[sec:Weak Spots]{$\phi$}, Upper Arm\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}& 4& 8 sp\\
+Munitions Rerebraces& 7& 6& 5& Upper Arm\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}& 3& 2 sp\\
+Munitions Spaulders& 7& 6& 5& Shoulder\hyperref[sec:Weak Spots]{$\phi$}, Upper Arm\hyperref[sec:Weak Spots]{$\phi$}*& \nameref{par:Hard}, Provides half AV against Thrust attacks to the Shoulder and Upper Arm& 1& 4 sp\\
+Munitions Vambraces& 7& 6& 5& Forearm\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}& 1.5& 2 sp\\
+Pauldrons& 10& 9& 8& Shoulder, Upper Arm& Bulletproof, \nameref{par:Hard}& 3& 1 gp\\
+Rerebraces& 8& 7& 6& Upper Arm& \nameref{par:Hard}& 1& 5 sp\\
+Spaulders& 8& 7& 6& Shoulder\hyperref[sec:Weak Spots]{$\phi$}, Upper Arm\hyperref[sec:Weak Spots]{$\phi$}*& \nameref{par:Hard}, Provides half AV against Thrust attacks to the Shoulder 
 and Upper Arm& 0.5& 6 sp\\
-Vambraces& 8& 7& 6& Forearm& Hard& 1& 5 sp\\
+Vambraces& 8& 7& 6& Forearm& \nameref{par:Hard}& 1& 5 sp\\
 \end{longtabu}
-
+\subsection{Laminar Arm Armor}
 \begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
-	\caption{Laminar Arm Armor}
+	\captionsetup{textformat=empty, labelformat=blank}
+	\caption{Laminar Arm Armor} \vspace{-15pt}
 	\label{tab:Laminar Arm Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\\toprule
-Anima Pauldrons& 7& 7& 7& Shoulder, Upper Arm& Hard& 2& 2 gp\\
-Anima Rerebraces& 7& 7& 7& Upper Arm& Hard& 1& 1 gp\\
-Anima Spaulders& 7& 7& 7& Shoulder, Upper Arm$\phi$*& Hard, Provides half AV against 
+Anima Pauldrons& 7& 7& 7& Shoulder, Upper Arm& \nameref{par:Hard}& 2& 2 gp\\
+Anima Rerebraces& 7& 7& 7& Upper Arm& \nameref{par:Hard}& 1& 1 gp\\
+Anima Spaulders& 7& 7& 7& Shoulder, Upper Arm\hyperref[sec:Weak Spots]{$\phi$}*& \nameref{par:Hard}, Provides half AV against 
 Thrust attacks to the Shoulder and Upper Arm& 2& 1 gp\\
-Anima Vambrace& 7& 7& 7& Forearm& Hard& 2& 3 gp\\
-Laminar Forearm  Guard& 8& 7& 5& Forearm$\phi$& Hard& 2& 3 sp\\
-Laminar Elbow Joint& 8& 7& 5& Elbow$\phi$& Hard& 2& 3 sp\\
-Laminar Pauldrons& 8& 7& 5& Shoulder$\phi$, Upper Arm$\phi$& Hard& 3& 10 sp\\
-Laminar Rerebrace& 8& 7& 5& Upper Arm$\phi$& Hard& 1& 3 sp\\
+Anima Vambrace& 7& 7& 7& Forearm& \nameref{par:Hard}& 2& 3 gp\\
+Laminar Forearm  Guard& 8& 7& 5& Forearm\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}& 2& 3 sp\\
+Laminar Elbow Joint& 8& 7& 5& Elbow\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}& 2& 3 sp\\
+Laminar Pauldrons& 8& 7& 5& Shoulder\hyperref[sec:Weak Spots]{$\phi$}, Upper Arm\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}& 3& 10 sp\\
+Laminar Rerebrace& 8& 7& 5& Upper Arm\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}& 1& 3 sp\\
 \end{longtabu}
-
+\subsection{Mail Arm Armor}
 \begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
-	\caption{Mail Arm Armor}
+	\captionsetup{textformat=empty, labelformat=blank}
+	\caption{Mail Arm Armor} \vspace{-15pt}
 	\label{tab:Mail Arm Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\\toprule
-Brigandine Gloves/Mittens& 5& 6& 4& Hand& Hard& 1& 3 sp\\
-Brigandine Long Sleeves& 5& 6& 4& Elbow, Forearm, Shoulder, Upper Arm& Hard& 3& 2 gp\\
-Brigandine Short Sleeves& 5& 6& 4& Shoulder, Upper Arm& Hard& 2& 14 sp\\
-Lamellar Gloves/Mittens& 5& 5& 5& Hand& Hard& 1& 3 sp\\
-Lamellar Long Sleeves& 5& 5& 5& Elbow, Forearm, Shoulder, Upper Arm& Hard& 4& 1 gp\\
-Lamellar Short Sleeves& 5& 5& 5& Shoulder, Upper Arm& Hard& 2& 12 sp\\
-Mail Gloves/Mittens& 6& 4& 3& Hand& Hard, Layer 1, Mail& 0.5& 3 sp\\
-Mail Long Sleeves& 6& 4& 3& Elbow, Forearm, Shoulder, Upper Arm& Hard, Layer 1, Mail& 1.5& 1 gp\\
-Mail Short Sleeves& 6& 4& 3& Shoulder, Upper Arm& Hard, Layer 1, Mail& 0.5& 12 sp\\
+Brigandine Gloves/Mittens& 5& 6& 4& Hand& \nameref{par:Hard}& 1& 3 sp\\
+Brigandine Long Sleeves& 5& 6& 4& Elbow, Forearm, Shoulder, Upper Arm& \nameref{par:Hard}& 3& 2 gp\\
+Brigandine Short Sleeves& 5& 6& 4& Shoulder, Upper Arm& \nameref{par:Hard}& 2& 14 sp\\
+Lamellar Gloves/Mittens& 5& 5& 5& Hand& \nameref{par:Hard}& 1& 3 sp\\
+Lamellar Long Sleeves& 5& 5& 5& Elbow, Forearm, Shoulder, Upper Arm& \nameref{par:Hard}& 4& 1 gp\\
+Lamellar Short Sleeves& 5& 5& 5& Shoulder, Upper Arm& \nameref{par:Hard}& 2& 12 sp\\
+Mail Gloves/Mittens& 6& 4& 3& Hand& \nameref{par:Hard}, \nameref{par:Layer} 1, \nameref{par:Mail}& 0.5& 3 sp\\
+Mail Long Sleeves& 6& 4& 3& Elbow, Forearm, Shoulder, Upper Arm& \nameref{par:Hard}, \nameref{par:Layer} 1, \nameref{par:Mail}& 1.5& 1 gp\\
+Mail Short Sleeves& 6& 4& 3& Shoulder, Upper Arm& \nameref{par:Hard}, \nameref{par:Layer} 1, \nameref{par:Mail}& 0.5& 12 sp\\
 \end{longtabu}
-
+\subsection{Leather Arm Armor}
 \begin{longtabu}to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
-	\caption{Leather Arm Armor}
+	\captionsetup{textformat=empty, labelformat=blank}
+	\caption{Leather Arm Armor} \vspace{-15pt}
 	\label{tab:Leather Arm Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\\toprule
-Hardened Leather Pauldrons& 4& 3& 3& Shoulder, Upper Arm$\phi$ &-& 0& 5 sp\\
-Hardened Leather Rerebraces& 4& 3& 3& Upper Arm &-& 0& 3 sp\\
-Hardened Leather Vambraces& 4& 3& 3& Forearm &-& 0& 3 sp\\
+\nameref{par:Hard}ened Leather Pauldrons& 4& 3& 3& Shoulder, Upper Arm\hyperref[sec:Weak Spots]{$\phi$} &-& 0& 5 sp\\
+\nameref{par:Hard}ened Leather Rerebraces& 4& 3& 3& Upper Arm &-& 0& 3 sp\\
+\nameref{par:Hard}ened Leather Vambraces& 4& 3& 3& Forearm &-& 0& 3 sp\\
 Leather Gloves& 3& 2& 2& Hand &-& 0& 1 sp\\
 Leather Sleeves& 3& 2& 2& Elbow, Forearm, Shoulder, Upper Arm &-& 0& 2 sp\\
 Leather Lamellar Long Sleeves& 3& 4& 3& Elbow, Forearm, Shoulder, Upper Arm &-& 0& 3 sp\\
 Leather Lamellar Short Sleeves& 3& 4& 3& Shoulder, Upper Arm &-& 0& 1 sp\\
 Reinforced Leather Gloves& 4& 3& 3& Hand &-& 0& 2 sp\\
 \end{longtabu}
-
+\subsection{Textile Arm Armor}
 \begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
-	\caption{Textile Arm Armor}
+	\captionsetup{textformat=empty, labelformat=blank}
+	\caption{Textile Arm Armor} \vspace{-15pt}
 	\label{tab:Textile Arm Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\\toprule
-Cloth Gloves& 1& 1& 1& Hand& Textile& 0& 1 cp\\
-Cloth Long Sleeves& 1& 1& 1& Elbow, Forearm, Shoulder, Upper Arm& Textile& 0& 2 cp\\
-Cloth Short Sleeves& 1& 1& 1& Shoulder, Upper Arm& Textile& 0& 1 cp\\
-Quilted Gloves& 2& 3& 4& Hand& Textile& 0& 1 cp\\
-Quilted Long Sleeves& 2& 3& 4& Elbow, Forearm, Shoulder, Upper Arm& Textile& 0& 6 cp\\
-Quilted Short Sleeves& 2& 3& 4& Shoulder, Upper Arm& Textile& 0& 3 cp\\
-Reinforced Quilted Gloves& 4& 4& 5& Hand& Textile& 0& 1 sp\\
+Cloth Gloves& 1& 1& 1& Hand& \nameref{par:Textile}& 0& 1 cp\\
+Cloth Long Sleeves& 1& 1& 1& Elbow, Forearm, Shoulder, Upper Arm& \nameref{par:Textile}& 0& 2 cp\\
+Cloth Short Sleeves& 1& 1& 1& Shoulder, Upper Arm& \nameref{par:Textile}& 0& 1 cp\\
+Quilted Gloves& 2& 3& 4& Hand& \nameref{par:Textile}& 0& 1 cp\\
+Quilted Long Sleeves& 2& 3& 4& Elbow, Forearm, Shoulder, Upper Arm& \nameref{par:Textile}& 0& 6 cp\\
+Quilted Short Sleeves& 2& 3& 4& Shoulder, Upper Arm& \nameref{par:Textile}& 0& 3 cp\\
+Reinforced Quilted Gloves& 4& 4& 5& Hand& \nameref{par:Textile}& 0& 1 sp\\
 \end{longtabu}
 
-\subsection{Leg Armor}
+\section{Leg Armor}
+\subsection{Plate Leg Armor}
 \begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
-	\caption{Plate Leg Armor}
+	\captionsetup{textformat=empty, labelformat=blank}
+	\caption{Plate Leg Armor} \vspace{-15pt}
 	\label{tab:Plate Leg Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\\toprule
-Bulletproof Cuisses& 10& 9& 8& Thigh& Bulletproof, Hard& 4& 2 gp\\
-Bulletproof Greaves& 10& 9& 8& Shin& Bulletproof, Hard& 2& 2 gp\\
-Bulletproof Poleyns& 10& 9& 8& Knee& Bulletproof, Hard& 2& 1 gp\\
-Cuisses& 8& 7& 6& Thigh& Hard& 2& 8 sp\\
-Greaves& 8& 7& 6& Shin& Hard& 1.5& 6 sp\\
-Munitions Cuisses& 7& 6& 5& Thigh$\phi$& Hard& 3& 4 sp\\
-Munitions Greaves& 7& 6& 5& Shin$\phi$& Hard& 2& 3 sp\\
-Poleyns& 8& 7& 6& Knee$\phi$& Hard& 1.5& 5 sp\\
-Sabatons& 8& 7& 6& Foot& Hard& 1.5& 5 sp\\
+Bulletproof Cuisses& 10& 9& 8& Thigh& Bulletproof, \nameref{par:Hard}& 4& 2 gp\\
+Bulletproof Greaves& 10& 9& 8& Shin& Bulletproof, \nameref{par:Hard}& 2& 2 gp\\
+Bulletproof Poleyns& 10& 9& 8& Knee& Bulletproof, \nameref{par:Hard}& 2& 1 gp\\
+Cuisses& 8& 7& 6& Thigh& \nameref{par:Hard}& 2& 8 sp\\
+Greaves& 8& 7& 6& Shin& \nameref{par:Hard}& 1.5& 6 sp\\
+Munitions Cuisses& 7& 6& 5& Thigh\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}& 3& 4 sp\\
+Munitions Greaves& 7& 6& 5& Shin\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}& 2& 3 sp\\
+Poleyns& 8& 7& 6& Knee\hyperref[sec:Weak Spots]{$\phi$}& \nameref{par:Hard}& 1.5& 5 sp\\
+Sabatons& 8& 7& 6& Foot& \nameref{par:Hard}& 1.5& 5 sp\\
 \end{longtabu}
-
+\subsection{Laminar Leg Armor}
 \begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
-	\caption{Laminar Leg Armor}
+	\captionsetup{textformat=empty, labelformat=blank}
+	\caption{Laminar Leg Armor} \vspace{-15pt}
 	\label{tab:Laminar Leg Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\\toprule
-Anima Cuisses& 7& 7& 7& Thigh& Hard& 3& 1 gp\\
-Anima Greaves& 7& 7& 7& Shin& Hard& 2& 1 gp\\
-Anima Poleyns& 7& 7& 7& Knee& Hard& 2& 10 sp\\
-Laminar Boots& 8& 7& 5& Foot& Hard& 2& 4 sp\\
-Laminar Cuisses& 8& 7& 5& Thigh& Hard& 3& 4 sp\\
-Laminar Greaves& 8& 7& 5& Shin& Hard& 3& 4 sp\\
+Anima Cuisses& 7& 7& 7& Thigh& \nameref{par:Hard}& 3& 1 gp\\
+Anima Greaves& 7& 7& 7& Shin& \nameref{par:Hard}& 2& 1 gp\\
+Anima Poleyns& 7& 7& 7& Knee& \nameref{par:Hard}& 2& 10 sp\\
+Laminar Boots& 8& 7& 5& Foot& \nameref{par:Hard}& 2& 4 sp\\
+Laminar Cuisses& 8& 7& 5& Thigh& \nameref{par:Hard}& 3& 4 sp\\
+Laminar Greaves& 8& 7& 5& Shin& \nameref{par:Hard}& 3& 4 sp\\
 \end{longtabu}
-
+\subsection{Mail Leg Armor}
 \begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
-	\caption{Mail Leg Armor}
+	\captionsetup{textformat=empty, labelformat=blank}
+	\caption{Mail Leg Armor} \vspace{-15pt}
 	\label{tab:Mail Leg Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\\toprule
-Brigandine Boots& 5& 6& 4& Feet& Hard& 1.5& 8 sp\\
-Brigandine Leggings& 5& 6& 4& Groin, Hip, Knees, Shins, Thighs& Hard& 3& 10 sp\\
-Lamellar Leggings& 5& 5& 5& Groin, Hip, Knees, Shins, Thighs& Hard& 3& 12 sp\\
-Lamellar Boots& 5& 5& 5& Feet& Hard& 1.5& 10 sp\\
-Mail Boots& 6& 4& 3& Feet& Hard, Layer 1, Mail& 1& 3 sp\\
-Mail Groin Gusset& 6& 4& 3& Groin& Hard, Layer 1, Mail& 0& 3 sp\\
-Mail Leggings& 6& 4& 3& Groin, Hip, Knees, Shins, Thighs& Hard, Layer 1, Mail& 2.5& 8 sp\\
+Brigandine Boots& 5& 6& 4& Feet& \nameref{par:Hard}& 1.5& 8 sp\\
+Brigandine Leggings& 5& 6& 4& Groin, Hip, Knees, Shins, Thighs& \nameref{par:Hard}& 3& 10 sp\\
+Lamellar Leggings& 5& 5& 5& Groin, Hip, Knees, Shins, Thighs& \nameref{par:Hard}& 3& 12 sp\\
+Lamellar Boots& 5& 5& 5& Feet& \nameref{par:Hard}& 1.5& 10 sp\\
+Mail Boots& 6& 4& 3& Feet& \nameref{par:Hard}, \nameref{par:Layer} 1, \nameref{par:Mail}& 1& 3 sp\\
+Mail Groin Gusset& 6& 4& 3& Groin& \nameref{par:Hard}, \nameref{par:Layer} 1, \nameref{par:Mail}& 0& 3 sp\\
+Mail Leggings& 6& 4& 3& Groin, Hip, Knees, Shins, Thighs& \nameref{par:Hard}, \nameref{par:Layer} 1, \nameref{par:Mail}& 2.5& 8 sp\\
 \end{longtabu}
-
+\subsection{Leather Leg Armor}
 \begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X *{2}{X[-1,c]}}
-	\caption{Leather Leg Armor}
+	\captionsetup{textformat=empty, labelformat=blank}
+	\caption{Leather Leg Armor} \vspace{-15pt}
 	\label{tab:Leather Leg Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\\toprule
 Leather Boots& 3& 2& 2& Feet& -& 0& 1 sp\\
 Leather Leggings& 3& 2& 2& Groin, Hip, Knees, Shins, Thighs& -& 0& 2 sp\\
-Hardened Leather Cuisses& 4& 3& 3& Hip, Thighs& -& 0& 8 cp\\
-Hardened Leather Greaves& 4& 3& 3& Shins& -& 0& 1 sp\\
-Hardened Leather Knee-Guards& 4& 3& 3& Knee& -& 0& 6 cp\\
+\nameref{par:Hard}ened Leather Cuisses& 4& 3& 3& Hip, Thighs& -& 0& 8 cp\\
+\nameref{par:Hard}ened Leather Greaves& 4& 3& 3& Shins& -& 0& 1 sp\\
+\nameref{par:Hard}ened Leather Knee-Guards& 4& 3& 3& Knee& -& 0& 6 cp\\
 Leather Lamellar Cuisses& 3& 4& 3& Hip, Thighs& -& 0& 3 sp\\
 Leather Lamellar Greaves& 3& 4& 3& Shins& -& 0& 3 sp\\
 \end{longtabu}
-
+\subsection{Textile Leg Armor}
 \begin{longtabu}to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
-	\caption{Textile Leg Armor}
+	\captionsetup{textformat=empty, labelformat=blank}
+	\caption{Textile Leg Armor} \vspace{-15pt}
 	\label{tab:Textile Leg Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\\toprule
 Cloth Leggings& 1& 1& 1& Groin, Hip, Knees, 
-Shins, Thighs& Textile& 0& 1 cp\\
+Shins, Thighs& \nameref{par:Textile}& 0& 1 cp\\
 Quilted Leggings& 2& 3& 4& Groin, Hip, Knees, 
-Shins, Thighs& Textile& 0& 2 cp\\
+Shins, Thighs& \nameref{par:Textile}& 0& 2 cp\\
 \end{longtabu}
 
-\subsection{Horse Armor}
+\section{Horse Armor}
 \begin{longtabu} to \linewidth{X *{3}{X[-1,c]} X[2] X[2] *{2}{X[-1,c]}}
-	\caption{Horse Armor}
+	\captionsetup{textformat=empty, labelformat=blank}
+	\caption{Horse Armor} \vspace{-15pt}
 	\label{tab:Horse Armor}\\
 Component Name&AVC&AVP&AVB& Coverage& Special& Wt&Cost\\\toprule
 Brigandine 
 Barding& 5& 6& 4& Horse& -& 8& 20 gp\\
-Caprisoning& 2& 4& 5& Horse& Textile& 1& 5 sp\\
-Hardened Leather 
-Barding& 4& 3& 3& Horse& -& 3& 1 gp\\
+Caprisoning& 2& 4& 5& Horse& \nameref{par:Textile}& 1& 5 sp\\
+Hardened Leather Barding& 4& 3& 3& Horse& -& 3& 1 gp\\
 Lamellar Barding& 5& 5& 5& Horse& -& 8& 15 gp\\
 Mail Barding& 6& 4& 3& Horse& -& 8& 10 gp\\
 Plate Barding& 8& 7& 6& Horse& -& 12& 30 gp\\
