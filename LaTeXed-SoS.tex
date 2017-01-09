@@ -10613,10 +10613,10 @@ The Hit Location of the injury. This is identical to the Hit Location determined
 
 \paragraph{Type}---\quad
 This is the kind of damage that has been inflicted. Most weapons inflict Cutting, Piercing, or Bludgeoning damage. Other types of damage include \hyperref[wound:Burn Damage]{Fire} and \hyperref[wound:Cold Damage]{Cold}.
-\paragraph{Bleed}---\quad
+\paragraph{Bleed\label{par:Bleed}}---\quad
 This is the amount of blood being lost from the wound. Different kinds of wounds inflict different amounts of Blood Loss, as detailed in their Wound Description. \nameref{sec:Blood Loss} is used for Bleeding Rolls, detailed below. 
 
-\paragraph{Stun}---\quad
+\paragraph{Stun\label{par:Stun}}---\quad
 Stun is a one-time deduction from a character's Combat Pool. It does not decrease a character's maximum CP, but rather their current reserves. Stun cannot reduce a character's CP below 0. If Stun would bring a character's CP below 0, the CP is only reduced to 0, and the character suffers Overshock.
 
 \label{par:Overshock}Overshock forces a Stability Test at RS equal to the excess Stun after 0. Failure results in the character becoming \nameref{par:Prone}. %REFERENCES TO OVERSHOCK SHOULD BE ADDED
@@ -10631,7 +10631,7 @@ depleted, then do the same to the other, and finally the Character’s remaining
 sustaining the Stun chooses which maneuvers to subtract from. 
 \end{itemize}
 
-\paragraph{\label{sec:Pain}Pain}---\quad
+\paragraph{\label{par:Pain}Pain}---\quad
 Pain is similar to Stun, but rather than the immediate jarring effect of the injury, it is a lasting effect. Pain inflicted by any source reduces the character’s Refresh by 1 per point of Pain, reducing the amount of Combat Pool the character gains at the start of each Round to a minimum of 0. 
 
 If Pain reduces a character’s Combat Pool at Refresh to 0, the character is rendered helpless and incapable of doing anything meaningful (talking may or may not be possible, GM’s choice).
@@ -11243,7 +11243,7 @@ Halting this bleeding requires a Surgery roll at +3 RS from normal.
 %	\caption{Upper Head - Cutting}\vspace{-15pt}
 %	\label{wound:Upper Head - Cutting}
 	\begin{tabu} to 1\linewidth {X[1.1] *{3}{X[-2,c]} X[3]X[5]}
-Wound~Level&Stun &Pain &Bleed &Special{\hfill \large Cutting ~~~} &Description\\\toprule
+Wound~Level&\nameref{par:Stun} &Pain &Bleed &Special{\hfill \large Cutting ~~~} &Description\\\toprule
 Level 1& 1 &7 &1 &- &Shallow cut on scalp, not serious.\\
 Level 2& 2 &9 &3 &- &Deep cut on scalp, blood runs into face.\\
 Level 3 &4 &13&5 &\nameref{par:KO vs}4 RS &Cracked skull, nearly invisible, but devastating.\\
@@ -11323,7 +11323,7 @@ Level 4& Total &Total &6
 %Wound Level &Stun &Pain &Bleed &Special &Description\\\toprule
 		\\
 	\\ 
-	&Stun&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed~~~~}&\\\toprule
+	&\nameref{par:Stun}&Pain&Bleed&\multicolumn{1}{r}{\large Unarmed~~~~}&\\\toprule
 Level 1& 0& 0& 0& - &Blow to the forehead. Negligible effect.\\
 Level 2& 0& 0& 0& - &Graze to the side of the head. Painful but nothing special.\\
 Level 3& 1& 1& 0& \nameref{par:KO vs}1 RS &Hard blow to the dome of the head. Bruising, possible blackout.\\
