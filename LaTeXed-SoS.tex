@@ -3,6 +3,7 @@
 \RequirePackage[l2tabu,orthodox]{nag}
 \documentclass[oneside,11pt,english]{book}
 \usepackage{babel}
+\usepackage[section,below]{placeins}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{xcolor}
@@ -116,6 +117,7 @@
 	\AtBeginEnvironment{longtabu}{\footnotesize}{}{}   %% change all longtabu content to foot note size
 	\AtBeginEnvironment{tabu}{\footnotesize}{}{} %%Do the same for tabu content, not sure if these two can be combined
 	\AtBeginEnvironment{table}{\renewcommand*{\familydefault}{ppl}}{}{}
+	\AtBeginEnvironment{description}{\normalsize}{}{}
 \usepackage{microtype}
 %END_FOLD
 \begin{document}
@@ -5596,7 +5598,7 @@ Papier-Mâché Cartridge &TN 4 &300\% \\
 \subsection{Throwing Weapons}
 Explain how weapons are used/what is required for it.
 
-\begin{table}[hb]
+\begin{table}[!hb]
 	\centering
 	\caption{Throwing Weapons}
 	\label{tab:Throwing Weapons}
@@ -7372,7 +7374,7 @@ simple rules for ease of use.
 If a character ends up wielding a weapon they are not familiar with, and has no appropriate Proficiency to 
 use it with, they can instead ‘Default’ to one of their other Proficiencies at a slight penalty. When 
 Defaulting, the character effectively gains a temporary Proficiency, which is a number of levels lower 
-than the Proficiency being Defaulted from as illustrated in Table XX. When Defaulting, a character does 
+than the Proficiency being Defaulted from as illustrated in \autoref{tab:Default Matrix}. When Defaulting, a character does 
 not enjoys the benefits of any School bonuses. They can only use the CP and Maneuvers appropriate to 
 the level of the Proficiency they are Defaulting to. 
 
@@ -7390,7 +7392,7 @@ Grappling &0 &-1 &-1 &-3 &-3 &-4 &-4 &-5 &-5\\
 Pugilism &-1 &0 &-1 &-3 &-3 &-4 &-4 &-5 &-5\\
 Dagger &-1 &-1 &0 &-1 &-1 &-3 &-3 &-4 &-4\\
 1H Sword &-3 &-3 &-1 &0 &-1 &-3 &-2 &-4 &-4\\
-1H Blunt &-3 &-3 &-1 &-1 &0 &-1 &-3 &-3 -&3\\
+1H Blunt &-3 &-3 &-1 &-1 &0 &-1 &-3 &-3 &-3\\
 2H Blunt &-4 &-4 &-3 &-3 &-1 &0 &-2 &-3 &-3\\
 2H Sword &-4 &-4 &-3 &-2 &-3 &-2 &0 &-3 &-3\\
 Spear &-5 &-5 &-4 &-4 &-3 &-3 &-3 &0 &-1\\
@@ -7920,7 +7922,7 @@ if the Maneuver has a Superior version (‘S’). The cost of the Maneuver is sh
 good idea to read the full text of a Maneuver to understand how it is used and how much it will cost you 
 to activate. Some Maneuvers are categorized by type, and certain types of Maneuvers may be affected by 
 others, or Boons, Banes and Talents.
-
+\subsection{Maneuvers List}
 \begin{longtabu} to \linewidth {*{8}{X[-1]}}
 Maneuver& U &A &S &Primary &Secondary &Type &Cost\\\toprule
 \nameref{man:Beat} &U &&S &Attack&Weapon&Swinging& X \\
@@ -11312,7 +11314,7 @@ Alternatively, flip a coin or roll for it. GMs, be sure to be consistent about t
 	&	1-3: \nameref{sec:shoulder}\\
 	&	4-5: \nameref{sec:lower-head}\\
 	&	6-7: \nameref{sec:face}\\
-	&	8-10 Upper Head\\
+	&	8-10 \nameref{sec:upper-head}\\
 		\\
 	\multirow{4}{*}{Upwards Head Swing}
 	&	1-3: \nameref{sec:chest}\\
