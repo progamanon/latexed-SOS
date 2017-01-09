@@ -116,7 +116,6 @@
 	\AtBeginEnvironment{longtabu}{\footnotesize}{}{}   %% change all longtabu content to foot note size
 	\AtBeginEnvironment{tabu}{\footnotesize}{}{} %%Do the same for tabu content, not sure if these two can be combined
 	\AtBeginEnvironment{table}{\renewcommand*{\familydefault}{ppl}}{}{}
-	\AtBeginEnvironment{longtabu}{\renewcommand*{\familydefault}{ppl}}{}{}
 \usepackage{microtype}
 %END_FOLD
 \begin{document}
@@ -4494,6 +4493,10 @@ In the above \autoref{tab:Social Classes and Wealth}, the number in brackets is 
 3 &Major Asset &18 gp\\
 	\end{tabu}
 \end{table}
+\chapter{Magic}
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
+\clearpage
 \part{The Tools of the Trade}
 \chapter{Equipment}\label{ch:equipment}
 \startcontents[chapters]
@@ -7814,7 +7817,7 @@ Maneuver& U &A &S &Primary &Secondary &Type &Cost\\\toprule
 \nameref{man:Mount Kick} & U &&&Mounted &Attack& &2\textasciicircum \\
 \nameref{man:Disengage} & ? &? &? &Mounted &Defense& &??? \\
 \nameref{man:Lean} & U &&&Mounted &Defense &Void &X+ENC\textasciicircum \\
-\nameref{man:Mount Dodge} & U &&Mounted &Defense &Void &&2\textasciicircum \\
+\nameref{man:Mount Dodge} & U &&&Mounted &Defense &Void &2\textasciicircum \\
 \nameref{man:Ride-By} & U &&&Mounted &Passing& &2\textasciicircum \\
 \nameref{man:Trample} & U &&&Mounted &Passing& &4\textasciicircum \\
 \nameref{man:Dog Bite} & U&&& Dog &Attack &&X \\
