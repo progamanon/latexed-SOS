@@ -3742,7 +3742,7 @@ Skills are a system within the game that cover things like how well and far a ch
 
 Skills are different from Proficiencies and other systems in that they typically do not often directly affect combat, but they are still very useful both in and out of combat. A knight has to know how to ride his horse, an assassin has to know how to blend into a crowd, and a hunter had better know how to live off the land.
 
-Skills List:
+\subsection{Skills List}
 \begin{itemize}
 	[noitemsep]
 	\item \nameref{skill:Athletics}
@@ -3777,9 +3777,23 @@ Skills List:
 %\nameref{skill:Tactics}
 \end{itemize}
 
-\paragraph{\label{par:Trained}Trained} No longer count as ‘Untrained’ when using the skill.
+\subsubsection{Untrained}\label{par:Untrained}
+If a character has no levels in a skill they are attempting to use, then they are considered unstrained in it. Some skills cannot be used if the character is untrained in them:
+	\begin{itemize}
+		[noitemsep]
+		\item Chymistry (Not in Beta)
+		\item \nameref{skill:Crafting}
+		\item \nameref{skill:Engineering}
+		\item \nameref{skill:History}
+		\item \nameref{skill:Navigation}
+	\end{itemize}
 
-\vspace{-10pt}\paragraph{\label{par:Teacher}Teacher} Grants the character the ability to give another character one free level of the skill the teacher is proficient in. This ability may only be used once on a person for a single skill, and only a number of skills equal to the receiving character’s INT may be trained this way total. Using this takes about a month of in-game time, give or take at the GM’s discretion, and requires the location and materials needed to perform the trained skill. Multiple characters may be trained at the same time as long as their training starts at the same time and there are adequate resources and facilities.
+\subsection{Structure of a Skill}
+\paragraph{\label{par:Trained}Trained} 
+---\quad No longer count as ‘Untrained’ when using the skill.
+
+\vspace{-10pt}\paragraph{\label{par:Teacher}Teacher}
+---\quad Grants the character the ability to give another character one free level of the skill the teacher is proficient in. This ability may only be used once on a person for a single skill, and only a number of skills equal to the receiving character’s INT may be trained this way total. Using this takes about a month of in-game time, give or take at the GM’s discretion, and requires the location and materials needed to perform the trained skill. Multiple characters may be trained at the same time as long as their training starts at the same time and there are adequate resources and facilities.
 
 \setlength{\intextsep}{0pt}
 \begin{wraptable}{r}{8 cm}
@@ -3802,22 +3816,20 @@ Skills List:
 \end{wraptable}
 \setlength{\intextsep}{\oldintextsep}
 
-\paragraph{\label{par:Mastery}Mastery} Once per session, you may automatically succeed with 1/2 dice rolled for one Skill roll.
-\paragraph{\label{par:Skill Level}Skill Level} Each skill has a level (ranged from 1 to 10) decided by the character’s investment of Skill Points (at character creation) or Arc (later game). The skill level gives the character dice equal to their skill level for skill tests, as well as other bonuses at various skill levels. Skills cost Arc to increase. Upon obtaining a level with a listed Skill Bonus, the character receives the stated bonus.
-\paragraph{\label{par:Skill Pool}Skill Pool (SP)} A skill pool is a pool of dice used during a skill test. The pool is generated from the relevant Attribute at one die per Attribute value, added with dice equal to the character’s skill level in the relevant skill. Only one attribute can be referenced per skill test; if the situation ever calls upon a different attribute, it becomes a second test. For instance, when using the Climb skill, the character might be called on to make both STR and END based tests.
-\paragraph{\label{par:TN}TN} The Target Number (TN) for skill tests is 7. It is always 7. No force can change it from 7 to anything else. Anything that suggests that it is possible to change the Target Number for skill tests to a number other than 7 is a lie. Ignore those anythings.
+\paragraph{\label{par:Mastery}Mastery}
+---\quad Once per session, you may automatically succeed with 1/2 dice rolled for one Skill roll.
+\paragraph{\label{par:Skill Level}Skill Level}
+---\quad Each skill has a level (ranged from 1 to 10) decided by the character’s investment of Skill Points (at character creation) or Arc (later game). The skill level gives the character dice equal to their skill level for skill tests, as well as other bonuses at various skill levels. Skills cost Arc to increase. Upon obtaining a level with a listed Skill Bonus, the character receives the stated bonus.
+\paragraph{\label{par:Skill Pool}Skill Pool (SP)}
+---\quad A skill pool is a pool of dice used during a skill test. The pool is generated from the relevant Attribute at one die per Attribute value, added with dice equal to the character’s skill level in the relevant skill. Only one attribute can be referenced per skill test; if the situation ever calls upon a different attribute, it becomes a second test. For instance, when using the Climb skill, the character might be called on to make both STR and END based tests.
+\paragraph{\label{par:TN}TN}
+---\quad The Target Number (TN) for skill tests is 7. It is always 7. No force can change it from 7 to anything else. Anything that suggests that it is possible to change the Target Number for skill tests to a number other than 7 is a lie. Ignore those anythings.
 \paragraph{\label{par:Skill Tests}Skill Tests} There are many situations in the game in which a character’s skills will be tested, such as trying to negotiate a hostile deal or simply leaping from one roof to another during a chase. Every test of a skill will state a required number of successes (RS) for the skill test to be successful. The character must roll their pool and get equal to or above the skill’s target number (TN), and get equal to or more than the number of required successes (RS) for the test to be passed. Skills’ tests have modifiers to the situation that affect the skill check’s RS, such as trying to climb a wall slanted against the character or knowing the history of a foreign kingdom. If the number of RS is ever raised above the character’s dice pool plus automatic successes the character might get from other factors, then the skill attempt immediately becomes impossible. Situational modifiers can lower RS as well, though it can never be lowered beneath 1. If there is a situation that a skill doesn’t seem to cover, the GM should use their best judgement to create a test based on similar difficulties to the situation.
-\paragraph{\label{par:Untrained}Untrained} If a character has no levels in a skill they are attempting to use, then they are considered unstrained in it. Some skills cannot be used if the character is untrained in them:
-\begin{itemize}
-	[noitemsep]
-	\item Chymistry (Not in Beta)
-	\item \nameref{skill:Crafting}
-	\item \nameref{skill:Engineering}
-	\item \nameref{skill:History}
-	\item \nameref{skill:Navigation}
-\end{itemize}
-\paragraph{Leveling up Skills} Skills have a leveling system based on the amount of points spent in any given skill to increase it to the next level. Skill levels are bought simply by paying the Arc price.
-\paragraph{Retrying Skill Attempts} For physical skills, they can be retried any amount of times, unless injuries or situation stops the character from doing so. For mental ones, such as History and Politics, a single check is allowed, any retries have to be done through the Research skill. For social skills, it’s best to wait before trying again, as if tried again too soon, the target may not react positively, at the GM’s discretion.
+
+\paragraph{Leveling up Skills} 
+---\quad Skills have a leveling system based on the amount of points spent in any given skill to increase it to the next level. Skill levels are bought simply by paying the Arc price.
+\paragraph{Retrying Skill Attempts}
+---\quad For physical skills, they can be retried any amount of times, unless injuries or situation stops the character from doing so. For mental ones, such as History and Politics, a single check is allowed, any retries have to be done through the Research skill. For social skills, it’s best to wait before trying again, as if tried again too soon, the target may not react positively, at the GM’s discretion.
 
 \setlength{\intextsep}{0pt}
 \vspace{-5pt}\begin{wraptable}{r}{8 cm}
@@ -3835,7 +3847,8 @@ Skills List:
 \end{wraptable}
 \setlength{\intextsep}{\oldintextsep}
 
-\paragraph{Encumbrance} The amount of gear worn can affect certain skills. There are five levels of Encumbrance: Unencumbered, Light, Medium, Heavy, and Overloaded. See \autoref{sec:Encumbrance}
+\paragraph{Encumbrance}
+---\quad The amount of gear worn can affect certain skills. There are five levels of Encumbrance: Unencumbered, Light, Medium, Heavy, and Overloaded. See \autoref{sec:Encumbrance}
 
 \subsection{Character Creation}
 At Character Creation, Skills can be purchased by spending Skill Points, given at an amount depending on the invested PCP plus an amount equal to the character’s INT, by purchasing individual skills.
@@ -3974,7 +3987,9 @@ Time (Rushed at +1 RS, Hastened at +3 RS) &+1 to +3 RS\\
 \end{longtabu}
 
 \paragraph{\label{skill:Engineering}Engineering}---\quad\textbf{(INT)}\par
-Engineering is similar to Crafting, but with a more specific focus: Engineers plan and implement large works, like bridges, siege weapons, buildings, ships, etc. Essentially any construction task that would be physically impossible to do alone will fall under an Engineering Skill rather than a Crafting one. Even mediocre laborers can accomplish great things with a skilled engineer at their head, so the Engineering skill of the extra hands employed is not absolutely important (though it can’t hurt). Many of the parts an Engineer will want to work with are on the market, but many more will need to be custom-made by the appropriate crafter, especially for more complex projects. Engineers would be smart to make friends with crafters or learn to craft for themselves lest they end up unable to make what they want or need. Like with crafting, the examples in this list are only a guide. The GM is free to use their own interpretation. The time it would take to construct these devices is also negotiable--in some cases, it could take years even with sufficient manpower.
+Engineering is similar to Crafting, but with a more specific focus: Engineers plan and implement large works, like bridges, siege weapons, buildings, ships, etc. Essentially any construction task that would be physically impossible to do alone will fall under an Engineering Skill rather than a Crafting one. Even mediocre laborers can accomplish great things with a skilled engineer at their head, so the Engineering skill of the extra hands employed is not absolutely important (though it can’t hurt).
+
+Many of the parts an Engineer will want to work with are on the market, but many more will need to be custom-made by the appropriate crafter, especially for more complex projects. Engineers would be smart to make friends with crafters or learn to craft for themselves lest they end up unable to make what they want or need. Like with crafting, the examples in this list are only a guide. The GM is free to use their own interpretation. The time it would take to construct these devices is also negotiable--in some cases, it could take years even with sufficient manpower.
 
 \begin{longtabu} to \linewidth{X[1.5]X[r]}
 	\caption{Engineering}
