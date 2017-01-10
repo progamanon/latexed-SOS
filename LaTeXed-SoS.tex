@@ -4497,6 +4497,1010 @@ In the above \autoref{tab:Social Classes and Wealth}, the number in brackets is 
 3 &Major Asset &18 gp\\
 	\end{tabu}
 \end{table}
+
+\chapter{Proficiencies}\label{ch:proficiencies} 
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
+\clearpage
+\begin{quote}
+	\centering
+	\emph{“When I was in Illegon, I had an apprentice. I forget his name. A hundred times I showed him the right way to parry, and a hundred times he did it the wrong way. On the hundred and first time, I didn’t hold back. Only in swordsmanship can a man lose an ear, but become a better listener.”}\\
+	\hfill -\textbf{Sarah Gizka}, \textit{On Swords}
+\end{quote}
+
+The Proficiency system allows characters to track their combat capabilities. An individual Proficiency 
+determines skill in a broad classification of weapon (for example, 1H Sword, a 2H Sword, and so on), not simply how effective a character is at wielding certain instruments (such as a rapier, broadsword or 
+mace). Proficiency levels directly affect a character’s CP, allowing them to perform more deadly 
+maneuvers, and also providing characters with Talents (\autoref{ch:Talents}), which offer special bonuses to certain actions in combat.
+
+Characters can take and level Proficiencies at Character Creation or during regular play.
+
+\section{Character Creation}
+When purchasing Proficiencies with PCP, you receive a number of Proficiency Points as indicated in \autoref{tab:PCPInvestment}~in \autoref{ch:charcreation}, and may then use those points to purchase and advance one or more Proficiencies.
+
+Characters unlock Maneuver Tiers and Talents as they level their Proficiency. Maneuvers are certain 
+techniques and moves that a character employs in combat (and are further detailed in \autoref{ch:Maneuvers}), and 
+Talents are small bonuses which may be universal, or specific to a Proficiency (refer to Chapter XX). 
+
+\autoref{tab:Proficiency Progression} below indicates how many Proficiency Points are required to gain different Proficiency levels. 
+
+As an example, a character whose Proficiency level is ‘2’ will have unlocked Core Maneuvers for their 
+chosen Proficiency and have access to a Novice Talent, and a character with a Proficiency level 10 can 
+use Tier 2 Maneuvers and has access to up to three Journeyman Talents and two Novice Talents. A 
+character has access to every Maneuver in his Tier, as well as in the Tiers below. 
+
+\begin{longtabu} spread 0pt {X[-2,c] X[c] X[c] X[-1,c]}
+	\caption{Proficiency Progression}
+	\label{tab:Proficiency Progression}\\
+	\rowfont[c]{}Proficiency Level&Maneuver Tiers Unlocked&Talents Unlocked (Not available to Missile Proficiencies)&Proficiency Point / Arc Point Cost\\\toprule
+	1&	Core Maneuvers&	-&	1\\
+	2&	-& 	\hyperref[sec:Novice Talents]{Novice Talent}&	1\\
+	3&	-& 	-&	1\\
+	4&	-& 	\hyperref[sec:Novice Talents]{Novice Talent}&1\\
+	5&	Tier 1 Maneuvers&	-&	2 \\
+	6&	-&  	\hyperref[sec:Journeyman Talents]{Journeyman Talent}&2 \\
+	7&	-&  	-  	&2 \\
+	8&	-&  	\hyperref[sec:Journeyman Talents]{Journeyman Talent}		&2 \\
+	9&	-&  	-  	&3 \\
+	10&	Tier 2 Maneuvers&	\hyperref[sec:Journeyman Talents]{Journeyman Talent}		&3 \\
+	11&	-&  	-  	&3 \\
+	12&	-&  	\hyperref[sec:Master Talents]{Master Talent}  	&3 \\
+	13&	-&  	-  	&3 \\
+	14&	-&  	\hyperref[sec:Master Talents]{Master Talent}  	&6 \\
+	15&	\hyperref[sec:Master Talents]{Master Talent}&	-&	6 \\
+	16&	-&-&6 \\
+	17&	-&-&6 \\
+	18&	-&-&8 \\
+	19&	-&-&10 \\
+	20&	???&  	???  	&10\\
+\end{longtabu}
+
+\subsection{Advancing with Arc}
+
+During play, your character can advance their Proficiencies and gain new Maneuvers and Talents by spending Arc Points (refer to \autoref{ch:arc} for more information on Arc).
+
+When you take a new Proficiency that you didn’t purchase at Character Creation, simply pay the level 1 Arc Point cost (detailed in \autoref{tab:Proficiency Progression}) and then note it on your Character Sheet.
+
+To level a Proficiency from level 1 to level 5, you must purchase levels 2, 3, 4 and 5. Proficiency levels 
+must be bought in order (you cannot buy only level 5 if you are currently level 1, but need to first buy 
+levels 2, 3 and 4). Once you have spent the required Arc Points to level your Proficiency, note it on your 
+Character Sheet. 
+
+\section{Using Proficiencies}
+When in combat, a character determines their CP by combining their Proficiency level with their ADR. 
+The question then is, which Proficiency should the character use? 
+
+A character must use a Proficiency of the type of weapon that they are holding.  
+
+If a character is holding a sword in their dominant hand, then they must use the 1H Sword Proficiency. If 
+the sword is double-handed, then the Proficiency being used will almost always be 2H Sword. If the 
+character is wielding a spear, then they must use the Spear Proficiency. There are a few exceptions to this, 
+such as the Hand-Off rule for some 2H weapons that allows them to be wielded one-handed while still 
+using the 2H Proficiency of their type. 
+\begin{itemize}
+	\item When Dual Wielding, a character must use the Proficiency for the weapon held in their dominant hand. 
+	\item If Ambidextrous and Dual Wielding, the character must decide which hand is being treated as dominant at the beginning of each Round.
+	\item When unarmed, a character must either use Pugilism or Wrestling as their Proficiency. 
+	\item If a character is forced to use a different Proficiency, either by Grappling, Disarming, or other circumstances, they immediately gain or lose CP equal to the difference between their current Proficiency and the one being switched to. If they’re the same level, then nothing is lost. This can result in a character being forced to use a Default from their current Proficiency, often to disastrous results. A character with CP reduced to 0 in this way is not subject to Overshock.
+	\item If a character is eligible to use multiple Proficiencies (i.e. while wielding a 2H Sword in one hand using Hand-Off) they may not change between them except at the beginning of the Round.
+	\item If a character draws a new weapon mid-action, say with Quickdraw, the new Proficiency is immediately applied.
+\end{itemize}
+
+\subsection{Alternate Weapon Usage}
+Many weapons can be used in ways that differ from their primary usage. This includes wielding two 
+weapons at once, one in each hand, and wielding certain two-handed swords in one hand. These have very 
+simple rules for ease of use. 
+
+\subsubsection{Proficiency Defaults}
+If a character ends up wielding a weapon they are not familiar with, and has no appropriate Proficiency to 
+use it with, they can instead ‘Default’ to one of their other Proficiencies at a slight penalty. When 
+Defaulting, the character effectively gains a temporary Proficiency, which is a number of levels lower 
+than the Proficiency being Defaulted from as illustrated in \autoref{tab:Default Matrix}. When Defaulting, a character does 
+not enjoys the benefits of any School bonuses. They can only use the CP and Maneuvers appropriate to 
+the level of the Proficiency they are Defaulting to. 
+
+\begin{quote}
+	\emph{Bale has been disarmed of his sword (1H Sword), and must defend himself with only a hatchet (1H Blunt). He was never trained in the weapon’s use, but he has an alright idea of how it works, and only suffers a -1 penalty with it (using a 1H Blunt weapon when Defaulting from 1H Sword). His 1H Sword level is 5, which allows him access to Tier 1 Maneuvers, but with the -1, his level in 1H Blunt is only 4, meaning he can only use Core Maneuvers. Bad luck Bale! }
+\end{quote}
+
+\begin{table}
+	\centering
+	\caption{Default Matrix}
+	\label{tab:Default Matrix}
+	\begin{tabu} spread 0pt {*{10}{X[-1,c]}}
+		&Grappling &Pugilism &Dagger &1H Sword &1H Blunt &2H Blunt &2H Sword &Spear &Polearm\\\toprule
+		Grappling &0 &-1 &-1 &-3 &-3 &-4 &-4 &-5 &-5\\
+		Pugilism &-1 &0 &-1 &-3 &-3 &-4 &-4 &-5 &-5\\
+		Dagger &-1 &-1 &0 &-1 &-1 &-3 &-3 &-4 &-4\\
+		1H Sword &-3 &-3 &-1 &0 &-1 &-3 &-2 &-4 &-4\\
+		1H Blunt &-3 &-3 &-1 &-1 &0 &-1 &-3 &-3 &-3\\
+		2H Blunt &-4 &-4 &-3 &-3 &-1 &0 &-2 &-3 &-3\\
+		2H Sword &-4 &-4 &-3 &-2 &-3 &-2 &0 &-3 &-3\\
+		Spear &-5 &-5 &-4 &-4 &-3 &-3 &-3 &0 &-1\\
+		Polearm &-5 &-5 &-4 &-4 &-3 &-3 &-3 &-1 &0\\
+	\end{tabu}
+\end{table}
+
+\subsubsection{Dual Wielding}
+Dual Wielding involves using a weapon in each hand. This has come up many times throughout history 
+and legend, and is often associated with exceptional skill or prodigious talent. In reality, two-weapon 
+fighting was not merely the province of legendary swordsmen like Miyamoto Musashi, or Pal Kiniszi. 
+Though fighting with two swords was very unusual, fighting with a sword and a smaller companion 
+weapon, like a dagger, was not at all unusual at many points in history. References to double-rapier styles 
+(the infamous ‘Case of Rapiers’) abound, though it was never taken as seriously as the more formal styles 
+of dueling.
+
+The chief advantage of using two weapons instead of a single weapon, or a weapon and a shield, is that 
+the secondary weapon can be used to parry, trap, or bind the opponent’s weapon, or make a counter-attack 
+on its own. The disadvantages range from not having a shield to the awkwardness of using a large weapon 
+in one’s off-hand, or the inability to quickly grasp something with the free hand. 
+\begin{itemize}
+	\item When Dual Wielding, always use the Proficiency of the weapon in your primary hand (if you are 
+	Ambidextrous, you may choose which Proficiency you use) for terms of CP and available 
+	Maneuvers. 
+	\item Dual Wielding with a dagger or other weapon with Short Reach or less in the off-hand and a 
+	another weapon in the primary hand incurs no penalty. 
+	\item Dual Wielding with two larger weapons in each hand incurs a -2 penalty to CP, unless the 
+	character is Ambidextrous, in which case no penalty is suffered. 
+\end{itemize}
+
+\subsubsection{Hand-Off Weapons}
+Certain weapons, while designed primarily to be used with two hands, could be wielded in one when the 
+situation demanded it, most often as cavalry swords while mounted, where one hand is needed to control 
+the reins. 
+
+To represent this, certain 2H weapons (generally swords) have an ‘Hand-Off’ rule, and a second profile 
+that is 1H instead of 2H. Use the stats appropriate to the number of hands being used to hold the weapon. 
+
+Switching from the 2H grip of a sword to a 1H grip has no cost, and can be done at the beginning of any 
+Action. Switching back, assuming the other hand is still free (and attached to the body), can be done the 
+same way. 
+
+\section{Schools}
+A School in Song of Swords is a group of Proficiencies that are all leveled up at once for a discounted 
+cost. Schools cost more Arc Points for a character to take, but they’re much cheaper to level up, thus 
+allowing a character to have multiple high-level Proficiencies at a lower cost. 
+
+There are several different kinds of Schools, each with a different structure and unique benefits, as well as 
+their own costs for buying in (either at Character Creation or afterwards) and leveling. 
+
+\paragraph{Becoming part of a School}---\quad
+A character can be part of a School at Character Creation, or can form a School during gameplay, as long 
+as they have access to the proper facilities or training. (Self-Taught schools require no teachers or 
+infrastructure). 
+
+Buying into a School in order to gain its benefits is easy. The base cost in Arc of a School is listed in 
+brackets in its Cost section. After this is paid, a number of Proficiencies can be selected and purchased at 
+level 1 as part of the School. Each Proficiency added to a School must be paid for normally, though 
+Humans, because of their racial characteristic Willing to Learn, purchase Proficiencies for 1 point instead 
+of 2. Some Schools have an additional cost per Proficiency that must be paid to add one to the School. In 
+the case of ‘Primary’ and ‘Secondary’ Proficiencies in Schools, these sometimes have different costs. 
+
+Once Proficiencies are chosen and paid for, the School is complete. All Proficiencies within the School 
+are at level 1. Some Schools have bonuses or penalties for Primary or Secondary Proficiencies, listed in 
+brackets (i.e. 1 Primary [0]) that alter the CP of the Proficiencies in question. 
+
+\begin{quote}
+	\emph{Tosca is part of a Self-Taught School, and he has the School at level 1. His Primary Proficiency is 1H 
+		Sword. His Secondary Proficiency is Wrestling.
+		Self-Taught Schools have Primary at 0, so his 1H Sword Proficiency’s CP is 1 (1+0). Self-Taught Schools 
+		have Secondary at -1, so his Wrestling Proficiency’s CP is actually 0 (1-1), meaning that while he has the 
+		School and access to Core Maneuvers, he does not get any CP from the Proficiency when he fights with 
+		it.}
+\end{quote}
+\paragraph{Leveling a School}---\quad
+Once you’ve bought into a School, it levels just like any other proficiency, using the same number of 
+points as individual proficiencies. The ‘level’ of the School is tracked independently. The individual 
+proficiencies in the School are listed as ‘-1,’ ‘0,’ or ‘+1,’ this being their level relative to the School’s 
+level, and representing the different focus that the School places on different weapons. 
+
+\begin{quote}
+	\emph{Gallant is part of a Self-Taught School that has 2H Sword at 0, Dagger at -1 and 1H Sword at 1. His School Level is 8, which means that he effectively has 2H Sword at 8 (8+0), Dagger at 7 (8-1) and 1H Sword at 9 (8+1)}
+\end{quote}
+
+\section{School Types}
+
+\subsection{Self-Taught}
+You taught yourself--or learned through hard knocks--that it’s better to have a few Jacks up your sleeve 
+than one Ace. Self-Taught Schools tend to contain few weapons, and practitioners tend to develop bad 
+habits, but at the same time they are also uniquely well-suited for picking up dirty tricks and thinking 
+outside of the box. 
+
+\vspace{-15pt}\subparagraph{Entry Requirements:} Nothing. Who would you pay, yourself?
+\vspace{-15pt}\subparagraph{Who Uses it:} Criminals, peasants, militia without formal training, and bored eccentric nobles. What Weapons: Self-Taught Schools can involve any weapons, but tend to use swords and polearms used afoot, pugilism, wrestling, and perhaps a missile proficiency.
+\vspace{-15pt}\subparagraph{Proficiencies:} 1 Primary [0], 0-2 Secondary [-1]
+\vspace{-15pt}\subparagraph{Bonuses:} Gain Special Move for either Weapon Throw, Blind Toss, or Quickdraw (Special Move means that one time per opponent, you may use a Maneuver at -1 TN and no Activation Cost. You may never use your Special Move against an opponent after you’ve used it once--they’re onto you). 
+\vspace{-15pt}\subparagraph{Penalties:} When you reach a new Tier of Maneuvers (including Core Maneuvers) with any Proficiency within this School, you must pick two non-Universal Maneuvers that you can perform in or before that Tier. You suffer from Poor Form when using those Maneuvers with that Proficiency (Poor Form increases the Activation Cost of the Maneuver when used in combat by 1. An instance of Poor Form can be bought off for 1 Arc Point so that it no longer applies to that Maneuver).
+\vspace{-15pt}\subparagraph{Cost:} [0]+1 per Proficiency at adoption.
+
+\subsection{Noble}
+Noble Schools exist to teach wealthy aristocrats and other interested, affluent parties how to conduct 
+themselves in battle. Noble schools are expensive, and this means they can afford the best tutors to school 
+their charges in how to properly murder their fellow men. The primary advantage of Noble Schools is the 
+exquisite form and speed that comes from constant repetition, constant correction, and no shortage of 
+training equipment. These assets come together to produce excellently practiced fighters with a great 
+technical understanding of combat. 
+
+\vspace{-15pt}\subparagraph{Entry Requirements:} 5 gp upon entry. Additionally, each Tier costs 5 gp to ‘unlock,’ as a member of a Noble School must pay exorbitant dues to his school in order to gain access to their secrets (this also serves to keep poor people out on the street, where they belong).
+\vspace{-15pt}\subparagraph{Who Uses it:} Young aristocrats, the sons of very wealthy merchants, prodigious peasants allowed access because of natural talent.
+\vspace{-15pt}\subparagraph{What Weapons:} Noble Schools tend to include civilized upper-class weapons, like long swords, sabers, lances, rapiers, and perhaps some missile weapons like bows or crossbows. Pugilism and wrestling are generally beneath the dignity of these men, but sometimes are included if dueling in armor is in vogue.
+\vspace{-15pt}\subparagraph{Proficiencies:} 1-2 Primary [+2], 1-5 Secondary [+0] 
+\vspace{-15pt}\subparagraph{Bonuses:} You automatically gain a Novice Talent for your Primary Proficiency at School level 1, a Journeyman Talent at level 5, and a Master Talent at level 10. You may also choose whether the Noble School you attended teaches Armored, Unarmored, or Missile fighting:
+\begin{description}
+	\item [Armored:] Your END counts as being 2 higher for the purposes of Carry.
+	\item [Unarmored:] For each Primary Proficiency you have in the Noble School, you may choose an individual weapon or shield that is compatible with that Proficiency. When using that weapon or shield with that Proficiency, you reduce the Parry/Block TN of the weapon/shield by 1.
+	\item [Missile:] When taking this School, Choose either Rapid Shot or Power Draw. You gain +2 MP whenever performing that Maneuver.
+\end{description}
+\vspace{-15pt}\subparagraph{Penalties:} None. You’re just superior. 
+\vspace{-15pt}\subparagraph{Cost:}[2]+2 per Primary, +1 per Secondary
+
+\subsection{Soldier}
+Soldier Schools emphasize quantity and practicality. These schools are intended to instruct large numbers 
+of men on how to use a large variety of weapons, and to confront whatever situation they may be forced 
+into on the battlefield. The methods used are often rough, with less focus on sparring and more on the use 
+of pells, training posts and courses to build strength and skill. 
+
+\vspace{-15pt}\subparagraph{Entry Requirements:} 10 sp upon entry, or 5 sp if the character served in an army, town guard, or militia. 
+\vspace{-15pt}\subparagraph{Who Uses it:} Soldiers, mercenaries, civilian militia with training.
+\vspace{-15pt}\subparagraph{What Weapons:} Soldier Schools can include a broad array of weapons, including swords, daggers, spears, maces, axes, bows, crossbows, javelins and slings, and as well as these, almost certainly including wrestling in their regimen. 
+\vspace{-15pt}\subparagraph{Proficiencies:} 3-9 Primary [+0]
+\vspace{-15pt}\subparagraph{Bonuses:} Tier 1 Maneuvers and Tier 2 Maneuvers cost 1 less for this School. 
+\vspace{-15pt}\subparagraph{Penalties:} Mastery Maneuvers Tier costs 1 more for this School. 
+\vspace{-15pt}\subparagraph{Cost:}[1]+1 per Proficiency at adoption.
+
+\subsection{Officer}
+Officer Schools can be considered as more refined than a Soldier School, but lacking the finesse and 
+prestige of a Noble School. Officers may not necessarily be of noble birth, but they have standards of 
+dignity and decorum to uphold, while also expecting to get their hands dirty from time to time. Officer 
+Schools teach the weapons of a gentleman as well as the weapons of war. 
+
+\vspace{-15pt}\subparagraph{Entry Requirements:} 1 gp upon entry. Additionally, each Tier costs 1 gp to ‘unlock.’ The officer’s corps will generally try to dissuade the unmonied classes from advancing anywhere, but particularly in martial skill. 
+\vspace{-15pt}\subparagraph{Who Uses it:} Officers, the sons of officers, martially-minded aristocrats, the sons of martially-minded aristocrats, janissaries. 
+\vspace{-15pt}\subparagraph{What Weapons:} Officer Schools teach a mix of weapons of both martial and civilian bent, including missile and melee weapons. Many officers will expect to do their fighting mounted even if they command 
+infantry units, and schools that cater to cavalry officers may focus on weapons like sabers, lances, 
+horsebows, carbines, and so on. 
+\vspace{-15pt}\subparagraph{Proficiencies:} 1-3 Primary [+1], 1-6 Secondary [+0] 
+\vspace{-15pt}\subparagraph{Bonuses:} You automatically gain a Novice Talent for your Primary Proficiency at School level 1, a 
+Journeyman Talent at level 5, and a Master Talent at level 10. 
+\vspace{-15pt}\subparagraph{Penalties:} None.
+\vspace{-15pt}\subparagraph{Cost:} [1]+2 per Primary at adoption, +1 per Secondary 
+
+\subsection{Esoteric}
+Esoteric Schools are those in which the chief aim is some intellectual or spiritual goal, where martial 
+prowess and skill at arms is considered a contributor. Martial skill as a pathway to enlightenment, or some 
+deeper understanding of the self, was not a new concept when the first words clawed their way from a 
+human throat. The existential dread brought on by violence and the fear of death have been motivators for 
+introspection since the first spear was knapped from flint. 
+
+Esoteric Schools tend to be minimalistic with how they deal with actual violence, even brutish. The 
+fighter himself must vanish into the technique, because it is the act of performing the technique perfectly 
+that is relevant--not the fighter, not the enemy, not even the fight. A certain fearlessness, born of fatalism 
+and discipline, is born of this sort of style, and it creates unnerving and skilled warriors who are difficult 
+to read, and even more difficult to counter. Archery traditions in Esoteric Schools often involved 
+controlled breathing and a holistic approach to aiming rather than a technical one, and are frequently 
+practiced in conjunction with shouts or chants. 
+\vspace{-15pt}\subparagraph{Entry Requirements:} 1/10th of starting Wealth at Character Creation. Esoteric Schools cannot be entered during regular play without the GM’s approval.
+\vspace{-15pt}\subparagraph{Who Uses It:} Mystics, sword-sages, wandering duelists, Illuminati, and certain religious men. 
+\vspace{-15pt}\subparagraph{What Weapons:} Esoteric Schools tend to focus on civilian weapons, simply because warfare is not 
+usually their element. Swords are most common, but some may practice the quarterstaff, truncheon, spear, or even unarmed combat and wrestling if the culture is right. Bows and sometimes throwing weapons are 
+common in Esoteric Schools, but it is EXTREMELY rare for to see crossbows or firearms included (+2 
+cost when adding to School) 
+\vspace{-15pt}\subparagraph{Proficiencies:} 1-2 Primary [+1], 0-3 Secondary [+0] 
+\vspace{-15pt}\subparagraph{Bonuses:} Any Advanced offensive or defensive maneuver made against you has a +2 Activation Cost. 
+Missile Attacks made while benefiting from Aim may adjust the Hit Location by 1 automatically. 
+\vspace{-15pt}\subparagraph{Penalties:} All Advanced offensive or defensive maneuvers you perform have +2 Activation Cost. 
+\vspace{-15pt}\subparagraph{Cost:} [2]+2 per Primary, +1 per Secondary 
+
+\section*{Proficiency List}
+These are the Proficiencies available to be taken either individually or as part of Schools. Each weapon 
+may be able to be used with more than one Proficiency (e.g. certain pole weapons can be used with both 
+the spear and polearm Proficiencies), so be sure to check which Proficiencies your character’s favored weapons use.
+
+\section{Melee Proficiencies}
+\subsection{Wrestling}
+Grappling, wrestling, and throwing, both in unarmed and armed situations. Very useful in and out of armor, wrestling is one of the few ways to defeat a foe in armor without a heavy armor penetrating weapon.
+
+Wrestling has access to a great number of superior grappling Maneuvers. 
+
+\subsubsection{Core Maneuvers}
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item \hyperref[man:Clinch (Attack)]{Clinch} [Superior]
+	\item Upgrade one Clinch Maneuver to Superior
+\end{itemize}
+\subsubsection{Tier 1 Maneuvers}
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item Upgrade one Clinch Maneuver to Superior
+	\item \nameref{man:Disarm} [Superior]
+\end{itemize}
+\subsubsection{Tier 2 Maneuvers}
+All remaining Clinch Maneuvers gain Superior
+
+\subsection{Pugilism}
+Fighting with fists, feet, knees, elbows, and so on. Pugilism is the striking component of unarmed combat, and focuses less on wrestling and grappling, and more on striking the opponent. 
+
+Pugilism has access to a great number of Superior Maneuvers. 
+
+\subsubsection{Core Maneuvers}
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item Upgrade an Unarmed Maneuver to Superior (choose three: \nameref{man:Kick}, \nameref{man:Straight Punch}, \nameref{man:Hook Punch}, \nameref{man:Elbow}, \nameref{man:Knee}, \nameref{man:Shoulder Charge})
+	\item \nameref{man:One-Two Punch}
+\end{itemize}
+
+\subsubsection{Tier 1 Maneuvers}
+\vspace{-5pt} \begin{itemize}
+	[itemsep=0.5mm]
+	\item Upgrade an Unarmed Maneuver to Superior (choose one: \nameref{man:Kick}, \nameref{man:Straight Punch}, \nameref{man:Hook Punch}, \nameref{man:Elbow}, \nameref{man:Knee}, \nameref{man:Shoulder Charge})
+	\item \nameref{man:Disarm} [Superior]
+	\item \nameref{man:Arm Parry} [Superior]
+\end{itemize}
+\subsubsection{Tier 2 Maneuvers}
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item Upgrade an Unarmed Maneuver to Superior (choose one: \nameref{man:Kick}, \nameref{man:Straight Punch}, \nameref{man:Hook Punch}, \nameref{man:Elbow}, \nameref{man:Knee}, \nameref{man:Shoulder Charge})
+	\item \hyperref[man:Clinch (Attack)]{Clinch} [Superior]
+\end{itemize}
+
+\subsection{Dagger}
+Fighting with knives, daggers, and other short cutting and stabbing weapons. Certain daggers may tread 
+the line between dagger and sword. Dagger fighting is useful both in a civilian and military setting -- the 
+dagger is often the last line of defense a fighter has, as well as being useful for finishing off grounded 
+opponents. The weapon also has darker applications for assassins and murderers, as its size lends well to 
+easy concealment. Stilettos, Rondel Daggers, Cinquedeas, and Misericordes are all useful daggers for various situations.
+
+Using a dagger allows access to a combination of both armed and unarmed Maneuvers, making it highly 
+versatile. 
+
+\subsubsection{Core Maneuvers}
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item \nameref{man:Deep Draw Cut}
+	\item \nameref{man:Pommel Strike}
+\end{itemize}
+
+\subsubsection{Tier 1 Maneuvers}
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item \nameref{man:Dacian Rush}
+	\item \nameref{man:Arm Parry} [Superior]
+	\item \nameref{man:Pommel Strike} [Superior]
+	\item \nameref{man:Disarm} [Superior]
+\end{itemize}
+\subsubsection{Tier 2 Maneuvers}
+Clinch [Superior]
+
+\subsection{1H Sword}
+The single-handed sword has always held a special place in warfare as the companion weapon of the 
+professional soldier. As such, practice with the sword has always been associated with martial virtue and 
+professionalism, from the ascendancy of the Roman Legion to the collapse of Napoleon’s Empire. The 
+Gladius, the Arming Sword, the Rapier, Saber and Backsword, all carry a respectable legacy of violence. 
+
+1H Sword has access to many highly technical Maneuvers, as well as early access to many advanced Maneuvers, including Shield Maneuvers.
+
+\subsubsection{Core Maneuvers}
+\nameref{man:Pommel Strike}
+
+\subsubsection{Tier 1 Maneuvers}
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item \nameref{man:Shield Bind}
+	\item \nameref{man:Deep Draw Cut}
+	\item \nameref{man:Riposte}
+	\item \nameref{man:Murder-Strike}
+	\item \nameref{man:Half-Sword}
+	\item \nameref{man:Quickdraw}
+	\item \nameref{man:Shield Bash} [Superior]
+	\item \nameref{man:Shield Beat} [Superior]
+	\item \nameref{man:Pommel Strike} [Superior]
+	\item \nameref{man:Simultaneous Parry/Attack}
+\end{itemize}
+\subsubsection{Tier 2 Maneuvers}
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item \nameref{man:Beat} [Superior]
+	\item \nameref{man:Simultaneous Parry/Attack} [Superior]
+	\item \nameref{man:Disarm} [Superior]
+	\item \nameref{man:Hilt Push} [Superior]
+	\item \nameref{man:Push Cut} [Superior]
+	\item \nameref{man:Riposte} [Superior]
+	\item \nameref{man:Shield Bind} [Superior]
+\end{itemize}
+
+\subsection{2H Sword}
+Two handed swords, though less common than their single-handed cousins throughout 
+history, were frequently weapons of war intended for use in the thick of battle by elite troops. The Landsknechts with their Zweihanders were the defenders of battle standards and were also the bodyguards 
+of generals. Spanish Montante manuals contain detailed plays for the fighting of many foes at once. The 
+more modest Longsword, Bastard Sword and other similar weapons dominated the dueling scene in 
+Europe for centuries as well. 
+
+2H Sword has access to many highly technical Maneuvers, as well as early access to many advanced Maneuvers. 
+
+\subsubsection{Core Maneuvers}
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item \nameref{man:Pommel Strike}
+	\item \nameref{man:Simultaneous Parry/Attack}
+	\item \nameref{man:Half-Sword}
+	\item \nameref{man:Murder-Strike}
+\end{itemize}
+\subsubsection{Tier 1 Maneuvers}
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item \nameref{man:Quickdraw}
+	\item \nameref{man:Riposte}
+	\item \nameref{man:Deep Draw Cut}
+	\item \nameref{man:Hilt Push} [Superior]
+	\item \nameref{man:Disarm} [Superior]
+	\item \nameref{man:Pommel Strike} [Superior]
+	\item \nameref{man:Simultaneous Parry/Attack} [Superior]
+	\item \nameref{man:Shield Bash} [Superior]
+	\item \nameref{man:Shield Beat} [Superior]
+\end{itemize}
+\subsubsection{Tier 2 Maneuvers}
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item \nameref{man:Beat} [Superior]
+	\item \nameref{man:Riposte} [Superior]
+	\item \nameref{man:Break} [Superior]
+	\item \nameref{man:Push Cut} [Superior]
+\end{itemize}
+\subsection{1H Blunt}
+Swords are all well and good, but sometimes you’ve just got to hit someone with an axe. Blunt 
+weapons weren’t always blunt--axes meant for war were actually thinner than wood-splitting axes, and were lighter and sharper. The end-heavy weighting of the weapons does lend them a similar technique. 
+Warhammers, Maces, Battleaxes and Truncheons are more effective against armor than slashing weapons 
+like swords, and were useful tools against plate-armored adversaries. 
+
+1H Blunt has access to fewer Maneuvers than the Sword Proficiencies, but makes up for this with 
+powerful versions of Maneuvers meant to destroy enemy armor, shields, and weapons, as well as Shield Maneuvers.
+
+\subsubsection{Core Maneuvers}
+Universal Maneuvers only
+
+\subsubsection{Tier 1 Maneuvers}
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item \nameref{man:Shield Bind}
+	\item \nameref{man:Beat} [Superior]
+	\item \nameref{man:Hook} [Superior]
+	\item \nameref{man:Break} [Superior]
+	\item \nameref{man:Hew} [Superior]
+	\item \nameref{man:Shield Bash} [Superior]
+\end{itemize}
+\subsubsection{Tier 2 Maneuvers}
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item \nameref{man:Riposte}
+	\item \nameref{man:Disarm} [Superior] 
+	\item \nameref{man:Shield Beat} [Superior] 
+	\item \nameref{man:Shield Bind} [Superior] 
+\end{itemize}
+\subsection{2H Blunt}
+Heavy blunt weapons hold a particular place in history, as both the tools of elite warriors and 
+peasants alike. The Dane Axe was used by the Huscarl elite of Scandinavia and England, whereas the 
+Pole-Flail was reportedly used by the peasant armies of the Hussites and the Belgians during their various 
+revolts. The Morningstar and Heavy Mace were often used by professional soldiers as late as the 16th 
+Century. Cheaper than swords, but more effective against heavy armor, these were often the weapons of choice in the age of high chivalry.
+
+2H Blunt has access to fewer Maneuvers than the Sword Proficiencies, but makes up for this with 
+powerful versions of Maneuvers meant to destroy enemy armor, shields, and weapons. 
+
+\subsubsection{Core Maneuvers}
+Universal Maneuvers only
+
+\subsubsection{Tier 1 Maneuvers}
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item \nameref{man:Beat} [Superior]
+	\item \nameref{man:Shield Bind}
+	\item \nameref{man:Hook} [Superior]
+	\item \nameref{man:Break} [Superior]
+	\item \nameref{man:Hew} [Superior]
+\end{itemize}
+
+\subsubsection{Tier 2 Maneuvers}
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item \nameref{man:Riposte}
+	\item \nameref{man:Disarm} [Superior]
+\end{itemize}
+\subsection{Spear}
+Spears have always been ubiquitous weapons. Cheap, easy to make, and easy to train with, they 
+were useful for every kind of soldier from the conscript to the professional, and remained the most 
+common weapon for most of history, with only various swords coming anywhere close in terms of 
+deployment. The Spear came in various lengths, from the handy Arming Spear to the extremely long Pike. 
+Certain specialized versions, such as the Ahlspiess, were designed for duties for which the regular spear 
+was unsuited, like penetrating plate. 
+
+Spear has access to many highly technical Maneuvers, just like Sword, but it lacks some of the destructive Maneuvers of the Polearm and Blunt. 
+
+\subsubsection{Core Maneuvers}
+Universal Maneuvers only
+
+\subsubsection{Tier 1 Maneuvers}
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item \nameref{man:Riposte}
+	\item \nameref{man:Simultaneous Parry/Attack}
+	\item \nameref{man:Shield Bind}
+	\item \nameref{man:Shield Bash} [Superior]
+	\item \nameref{man:Shield Beat} [Superior]
+	\item \nameref{man:Push Cut} [Superior]
+\end{itemize}
+\subsubsection{Tier 2 Maneuvers}
+\begin{itemize}
+	[itemsep=0.5mm]
+	\item \nameref{man:Simultaneous Parry/Attack} [Superior] 
+	\item \nameref{man:Riposte} [Superior] 
+	\item \nameref{man:Shield Bind} [Superior]
+\end{itemize}
+\subsection{Polearm}
+Fighting with Polearms is the most important skill for most soldiers. Polearms were present on 
+battlefields the world over, but especially in the Medieval world. Polearms can thrust, smash through 
+armor, hook foes off horses, and otherwise ruin anyone’s day. The Halberd is the best known polearm, 
+but the Bill, the Voulge, the Glaive and the Lucerne Hammer were equally common. 
+
+Polearm has access to a variety of useful Maneuvers, including a mixture of destructive and technical 
+Maneuvers. It lacks Shield Maneuvers since most polearms were meant to be used two-handed. 
+
+\subsubsection{Core Maneuvers}
+Universal Maneuvers only
+
+\subsubsection{Tier 1 Maneuvers}
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item \nameref{man:Riposte}
+	\item \nameref{man:Hook} [Superior] 
+	\item \nameref{man:Disarm} [Superior] 
+	\item \nameref{man:Hew} [Superior] 
+	\item \nameref{man:Break} [Superior] 
+\end{itemize}
+\subsubsection{Tier 2 Maneuvers}
+\nameref{man:Simultaneous Parry/Attack}
+
+\section{Missile Proficiencies}
+Missile Proficiencies work very similarly to Melee Proficiencies, but with a few small differences. 
+Notably, Missile Proficiencies have no Defaults (see below, in Alternate Weapon Usage) or Talents 
+available to them. 
+
+\subsection{Bow}
+\subsubsection{Core Maneuvers}
+Universal Maneuvers only 
+
+\subsubsection{Tier 1 Maneuvers}
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item \nameref{man:Power Draw}
+	\item \nameref{man:Shoot} [Superior]
+\end{itemize}
+\subsubsection{Tier 2 Maneuvers}
+\nameref{man:Rapid Shot} [Superior] OR \nameref{man:Power Draw} [Superior]
+
+\subsection{Crossbow}
+\subsubsection{Core Maneuvers}
+Universal Maneuvers only 
+
+\subsubsection{Tier 1 Maneuvers}
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item \nameref{man:Aim} [Superior]
+	\item \nameref{man:Shoot} [Superior]
+\end{itemize}
+\subsection{Firearms}
+\subsubsection{Core Maneuvers}
+Universal Maneuvers only
+
+\subsubsection{Tier 1 Maneuvers}
+\vspace{-5pt}\begin{itemize}
+	[itemsep=0.5mm]
+	\item \nameref{man:Aim} [Superior]
+	\item \nameref{man:Shoot} [Superior]
+\end{itemize}
+\subsection{Throwing Weapons}
+\subsubsection{Core Maneuvers}
+Universal Maneuvers only
+
+\subsubsection{Tier 1 Maneuvers}
+\nameref{man:Fling} [Superior]
+
+\chapter{Talents}\label{ch:Talents} %TALENTS NEED DOING
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
+\clearpage
+Talents are small improvements to a character’s combat skills that are acquired as the character’s Proficiency score increases. At set intervals in a Proficiency’s progression, a character earns Talents of Novice, Journeyman, or Master rank. These Talents may be chosen from the Talent list at the end of this chapter
+
+\section{Gaining Talents}
+A character gets a Talent whenever a Proficiency or a School reaches a level in which a Talent is 
+rewarded (see \autoref{tab:Proficiency Progression}~for details.)
+
+Proficiencies that are a part of a School do not gain Talents. Instead, the School as a whole gains only one 
+set of Talents, but these Talents apply to all Proficiencies within the School, and can use any Proficiency 
+in the School to satisfy their requirements. 
+
+\subsection{Choosing Talents}
+When your character receives a Talent from a Proficiency level that they’ve just acquired, you may choose any Talent under the Talent rank they have gained (Novice, Journeyman or Master) or lower, provided the character meets the requirements of the Talent. You may take a Novice Talent in a Journeyman Talent slot, but you may not take a Journeyman level Talent in a Novice slot.
+
+Some Talents have Attribute requirements, which your character must match or exceed in order to take the Talent. Others have Proficiency requirements, meaning that they can only be taken as Talents for that Proficiency or a School containing that Proficiency.
+
+Talents cannot be taken multiple times.
+
+\section{Using Talents}
+Any time a Talent would be applicable for activation, simply announce that it is in effect or not in effect.
+If it is simply an automatic improvement to a Maneuver or similar, assume that it is in effect unless you say otherwise. 
+
+Unless the Talent is chosen for a School, Talents can not be used for Proficiencies they are not linked to, or when Defaulting from a Proficiency. 
+
+\section*{Talent List}
+\section{Novice Talents}\label{sec:Novice Talents}
+\paragraph{\label{talent:Accuracy}Accuracy}
+\begin{description}
+	\item [Requirements:] Universal, AGI 4. 
+	\item [Description:] You have a natural knack for hitting in the right spot. It's not always conscious, but your 
+	attacks just seem to find their way to your intended target. 
+	\item [Effect:] Whenever you hit with a melee attack that rolls for Hit Location on a Target Zone, you may modify the Hit Location roll by 1. If your opponent has Rapid Reaction, the effects of both Talents cancel 
+	out, and the attack lands normally. 
+	Additionally, whenever you perform a Joint Thrust Maneuver, add +1 CP to that attack. 
+\end{description}
+\paragraph{\label{talent:Boar Piercer}Boar Piercer}
+\begin{description}
+	\item [Requirements:] STR 5, Throwing 
+	\item [Description:] Either you’ve got a thing for pork, or you just really like throwing spears at things. You can 
+	throw a spear like nobody’s business, especially in combat. 
+	\item [Effect:] When making a Melee Throw or Fling with a Spear or any variety of Javelin, you inflict +1 
+	damage. 
+\end{description}
+\paragraph{\label{talent:Bonk!}Bonk!}
+\begin{description}
+	\item [Requirements:] Str 6, 1H or 2H Blunt 
+	\item [Description:] See Title 
+	\item [Effect:] Whenever you Power Attack with a Blunt weapon, you inflict additional Stun with a successful attack equal to the CP spent to increase damage. 
+\end{description}
+
+\paragraph{\label{talent:Flourishing Drills}Flourishing Drills}
+\begin{description}
+	\item [Requirements:] Dagger, Sword or Blunt Proficiency (1H and 2H varieties are both eligible). 
+	\item [Description:] You have practiced a series of tight, circular cutting or striking drills to the point that you can perform them in your sleep. In battle, you are a whirlwind of rapid strikes, each snapping into another faster than the eye can see. 
+	\item [Effect:] Whenever you perform a Swinging Maneuver, if in the previous Action you also performed a Swinging Maneuver, the Maneuver rolls 2 additional dice. 
+\end{description}
+
+\paragraph{\label{talent:Good Form}Good Form}
+\begin{description}
+	\item [Requirements:] Noble School, or high-quality tutelage. 
+	\item [Description:] You have been drilled in the performance of a specific maneuver, and can now execute it 
+	flawlessly, every time. This is the hallmark of high-quality training in swordsmanship, and it requires 
+	more than just practice, but the careful guidance of more experienced masters who can correct 
+	inadequacies as they form. 
+	\item [Effect:] Choose one Maneuver. Reduce that Maneuver’s Non-[X] and Non-Range Activation Cost by 1. 
+	
+\end{description}
+\paragraph{\label{talent:Helm-Splitter}Helm-Splitter}
+\begin{description}
+	\item [Requirements:] Universal. 
+	\item [Description:] Maybe you've spent a lot of time practicing for helmet-cutting competitions, or maybe 
+	you've just chopped a lot of wood. You can hit things REALLY hard, as long as you’re swinging straight 
+	down. 
+	\item [Effect:] If you use the Power Attack function of Strike, you may spend 1 more CP to increase damage 
+	than normal. 
+	
+\end{description}
+\paragraph{\label{talent:Shield-Breaker}Shield-Breaker}
+\begin{description}
+	\item [Requirements:] 1H or 2H Blunt. 
+	\item [Description:] You have a knack for smashing shields, and have practiced at sundering them to deprive 
+	your enemies of their defenses. 
+	\item [Effect:] You inflict +2 damage when making Hew attacks. When passively inflicting damage to a Shield, 
+	increase that damage by 1. 
+	
+\end{description}
+\paragraph{\label{talent:Shield Trick}Shield Trick}
+\begin{description}
+	\item [Requirements:] Shield, STR 4. 
+	\item [Description:] When using a shield, you know how to hide your weapon behind it so that your movements 
+	are concealed until the moment you strike. 
+	\item [Effect:] After making a successful Block, Shield Bash, or other shield-related Maneuver, if you perform a 
+	Swinging or Thrusting Maneuver with the weapon in your other hand in the next Action, you gain +1 dice 
+	to the attack. This includes Melee Shoot.
+	
+\end{description}
+\paragraph{\label{talent:Slowpoke}Slowpoke}
+\begin{description}
+	\item [Requirements:] Spear or Polearm 
+	\item [Description:] Getting past the range of a spear is hard. You know how to make it even harder.
+	\item [Effect:] When using a Spear or Polearm, when your opponent makes an attack during which he would 
+	have to pay a Range Cost, increase the total Range Cost by 1. 
+	
+\end{description}
+\paragraph{\label{talent:Impaler}Impaler}
+\begin{description}
+	\item [Requirements:] Spear 
+	\item [Description:] Like ol’ Uncle Vlad, you’ve got a thing for impaling people. 
+	\item [Effect:] If you inflict a Level 5 Wound with a any sort of Thrusting attack, you regain 2 CP. 
+	
+\end{description}
+\paragraph{\label{talent:Special Move}Special Move}
+\begin{description}
+	\item [Requirements:] Universal. 
+	\item [Description:] You have a very unconventional way of performing a certain move. Those who haven't seen 
+	it before are put off by the speed and sureness with which you conduct this strange Maneuver, and, at 
+	least the first time, it's much harder to defend against. 
+	\item [Effect:] Choose a Maneuver from the following list: Weapon Throw, Blind Toss, Quickdraw, or Melee Shoot. When you use this Maneuver against an individual for the first time, you perform a Special Move 
+	version of that Maneuver. A Special Move has no Activation Cost (this includes Range) and its TN is 
+	reduced by 1. If a character witnesses you using a Special Move against someone else, on a PER test at 
+	RS 3, he can count as having had it used against him before, and as such you can never gain the bonus 
+	against him. 
+	
+\end{description}
+\paragraph{\label{talent:Rapid Reaction}Rapid Reaction}
+\begin{description}
+	\item [Requirements:] Universal, AGI 4. 
+	\item [Description:] While you might not always be able to move out of the way, you sure know how to take a hit better than most. 
+	\item [Effect:] When you are hit by a melee attack in combat, you may alter the roll to see which location is hit by 1 in either direction. If your opponent has Accuracy, the effects of both Talents cancel out, and the 
+	attack lands normally. 
+	
+	
+\end{description}
+\paragraph{Specialist}\label{talent:Specialist}
+\begin{description}
+	\item [Requirements:] Universal.
+	\item [Description:] One Maneuver is just more important to you than the rest. You’ve drilled it for countless hours, and can perform it in your sleep. 
+	\item [Effect:] Choose one Advanced Maneuver. Reduce that Maneuver’s Non-[X] and Non-Range Activation Cost by 1.
+\end{description}
+\paragraph{Smash Punch}\label{talent:Smash Punch}
+\begin{description}
+	\item [Requirements:] Universal 
+	\item [Description:] You can deliver a monstrous uppercut. This technique favors hook-heavy infighters. 
+	\item [Effect:] When making a Hook Punch, you may elect to perform a Smash. If you do, you inflict +2 
+	damage, and your Hit Location is automatically the Lower Head. However, this attack suffers a -1 penalty 
+	to Initiative Rolls. 
+\end{description}
+\paragraph{Head Guard}\label{talent:Head Guard}
+\begin{description}
+	\item [Requirements:] Universal. 
+	\item [Description:] You’ve got a good handle on protecting your head. The head is the most commonly 
+	armored part of the human body, and for good reason: it’s the obvious place to attack with any sort of 
+	weapon, and it’s not far from arm-level, making it convenient as well. 
+	\item [Effect:] Whenever Parrying or making a Parry Maneuver to defend an attack targeting your Head, Face, or 
+	Neck, you may add 2 dice to the Parry (this does not let you Parry if you have no CP remaining). 
+	
+\end{description}
+\paragraph{Infighter}\label{talent:Infighter}
+\begin{description}
+	\item [Requirements:] Universal. 
+	\item [Description:] You’re not afraid to get up close and personal. 
+	\item [Effect:] When fighting an enemy inside your weapon's reach, your penalty to attacks is 1 less than it would be normally. When attacking an enemy within their weapon’s reach, their penalty to attacks and 
+	defenses is 1 higher than it would be normally. Multiple people with Infighter cannot stack, and if both a 
+	combatant and his current target have Infighter, it cancels out. 
+	
+\end{description}
+\paragraph{Counter Attack}\label{talent:Counter Attack}
+\begin{description}
+	\item [Requirements:] Universal, AGI 4. 
+	\item [Description:] You know what they say about the best defense... 
+	\item [Effect:] If you attempt to Steal Initiative to launch an attack against an opponent who is already attacking you, you gain a +1 dice bonus to the Initiative test.
+\end{description}
+
+\section{Journeyman Talents}\label{sec:Journeyman Talents}
+\paragraph{\label{talent:Art of Eight Limbs}Art of Eight Limbs}
+\begin{description}
+	\item [Requirements:] Pugilism, Wit 6 
+	\item [Description:] How is it even possible to attack from a position like that!? 
+	\item [Effect:] You can Feint from any Unarmed Maneuver into any other Unarmed Maneuver. 
+\end{description}
+
+\paragraph{\label{talent:Bear Piercer}Bear Piercer}
+\begin{description}
+	\item [Requirements:] STR 5, Spear, Boar Piercer 
+	\item [Description:] You’re really good at throwing spears. REALLY good. 
+	\item [Effect:] When making a Melee Throw or Fling with a Spear or any variety of Javelin, any target you hit must make a Stability Test at RS 2+BS or be rendered prone. 
+\end{description}
+
+\paragraph{\label{talent:Grappling at the Sword}Grappling at the Sword}
+\begin{description}
+	\item [Requirements:] Sword or Blunt proficiency (1H or 2H varieties are both eligible). 
+	\item [Description:] You know how to use a sword in the grapple, using the weapon to gain leverage and lock joints, and also how to avoid the weapon getting in your way during a struggle on the ground. 
+	\item [Effect:] You may use an M Reach weapon in a Grapple without dropping it. This includes longer weapons that are being shortened with the Halfsword Maneuver. You may also ignore the Reach Costs for making 
+	attacks or defenses using weapons in the Grapple.
+	
+\end{description}
+\paragraph{\label{talent:Swift Sword}Swift Sword}
+\begin{description}
+	\item [Requirements:] Sword proficiency (1H or 2H varieties are both eligible), AGI 5. 
+	\item [Description:] You’ve got a swift hand when it comes to swords. 
+	\item [Effect:] You gain a +1 bonus to Initiative contests when using a 1H or 2H Sword. 
+	
+\end{description}
+\paragraph{\label{talent:Roll With It}Roll With It}
+\begin{description}
+	\item [Requirements:] Universal, AGI 5. 
+	\item [Description:] It's natural to cringe from potential injury, but your reactions are much more practical, and you have a natural understanding of how force transfers from one body to another. You instinctively roll 
+	away from blows and other sources of harm, and this tends to lessen their effects on you. 
+	\item [Effect:] Once per Round, if you are struck by an attack (missile attacks, including those made in melee, 
+	are not eligible) that would inflict damage, and you are not currently Prone, you may immediately become 
+	Prone to reduce the damage inflicted by your AGI. This has all the normal effects of being made Prone. 
+	
+\end{description}
+\paragraph{\label{talent:Ground Wrestler}Ground Wrestler}
+\begin{description}
+	\item [Requirements:] Wrestling. 
+	\item [Description:] You’re more practiced in grappling on the ground than standing. Many fighters fear this 
+	kind of fight for how it can go disastrously wrong, but you revel in it. 
+	\item [Effect:] When in a Clinch, and the fight has gone to the ground, you do not suffer the associated 
+	Activation Cost penalty for Clinch Maneuvers, and you add 1.5 your Strength instead of 1.0 to your CP 
+	(i.e., when you go to Ground, if you have 4 Strength normally, you gain a bonus of 6 to your CP as long 
+	as you are on the Ground.) 
+	
+\end{description}
+\paragraph{\label{talent:Stepping Parry}Stepping Parry}
+\begin{description}
+	\item [Requirements:] MOB 7. 
+	\item [Description:] You have learned to step close, to take the initiative, and most importantly, how to do so 
+	through clever manipulation of the opponent’s weapon, and its position relative to you. 
+	\item [Effect:] Add the following section to your Parry or Parrying Maneuver with one Proficiency. 
+	\item [Special:] On success, you may change the range between yourself and your opponent by 1 for every 2 BS.
+	
+\end{description}
+\paragraph{\label{talent:Kebab Master}Kebab Master}
+\begin{description}
+	\item [Requirements:] Impaler Talent, Spear 
+	\item [Description:] You know a thing or two about skewering things. 
+	\item [Effect:] If you inflict a Piercing Wound with a Thrusting attack, increase the Level of the Wound by 1. 
+	
+\end{description}
+\paragraph{\label{talent:Rapid Strike}Rapid Strike}
+\begin{description}
+	\item [Requirements:] Universal, AGI 5. 
+	\item [Description:] You're very skilled at attacking with weapons in both hands, striking with one while the other returns to an ideal position to strike from, and repeating this over and over to strike fast, hard, and often.
+	\item [Effect:] Whenever you make a Double Attack, you gain a +1 CP bonus to the Off-Hand attack. Each consecutive Double Attack increases this bonus by +1, to a maximum of 4. 
+	
+\end{description}
+\paragraph{\label{talent:Spartan Sole}Spartan Sole}
+\begin{description}
+	\item [Requirements:] Pugilism, Str 5 
+	\item [Description:] Talk to the Sandal, ‘cause the shield don’t care. 
+	\item [Effect:] Whenever you force a Stability Test with a Kick to knock your opponent down, increase the RS of that Test by 2. 
+	
+\end{description}
+\paragraph{\label{talent:Slippery}Slippery}
+\begin{description}
+	\item [Requirements:] Universal, AGI 6. 
+	\item [Description:] You know how to move. In combat you're fast, fluid, and can change direction on a dime. 
+	Your enemies often find themselves looking at nothing—and nothing is the last thing they see. 
+	\item [Effect:] As long as you are Unencumbered, you gain a -1 TN when performing the Outmaneuver and Thread the Needle Maneuvers.
+	
+\end{description}
+\paragraph{\label{talent:Quick Reload}Quick Reload}
+\begin{description}
+	\item [Requirements:] Pistol or Arquebus/Musket, AGI 5. 
+	\item [Description:] A great deal of practice and some finely-tuned muscle memory have made reloading a breech-loading firearm into one quick, fluid motion. 
+	\item [Effect:] When performing the Reload Maneuver, you gain an additional automatic success for every two successes you roll. This may cause your Reload’s total successes exceed the actual number of dice you rolled. 
+	
+\end{description}
+\paragraph{\label{talent:Spear-Sunderer}Spear-Sunderer}
+\begin{description}
+	\item [Requirements:] Universal, STR 5. 
+	\item [Description:] Cleaving through the shafts of spears, axes, polearms and the like isn’t easy, but it is certainly possible.
+	\item [Effect:] You inflict +2 damage when making Break attacks. 
+	
+\end{description}
+\paragraph{\label{talent:Straight Blast}Straight Blast}
+\begin{description}
+	\item [Requirements:] Pugilism, AGI 6. 
+	\item [Description:] Commonly associated with Wing Chun and certain styles of boxing, you have mastered a rapid, piston-like punching style that can wear down any defense. Combined with a strong center and 
+	good footwork, this technique can be devastating. 
+	\item [Effect:] When making a One-Two Punch with a Straight Punch into another Straight Punch, you may reduce the Activation Cost of the Maneuver chained from the first by 1. 
+	
+\end{description}
+\paragraph{\label{talent:Rolling Hooks}Rolling Hooks}
+\begin{description}
+	\item [Requirements:] Pugilism, STR 6. 
+	\item [Description:] To the untrained eye, a feral and apelike series of haymakers. But to the trained boxer, this technique is a monstrous culmination of brute strength, skill, and pugilist rhythm. 
+	\item [Effect:] When making a One-Two Punch with a Hook Punch into another Hook Punch, you may reduce the Activation Cost of the Maneuver chained from the first by 1. 
+	
+\end{description}
+\paragraph{\label{talent:Long Jab}Long Jab}
+\begin{description}
+	\item [Requirements:] Pugilism, INT 5. 
+	\item [Description:] You are a more measured fighter, preferring to fight at longer ranges, peppering opponents with strikes intended to wear them down, and only striking them when they present an opening. 
+	\item [Effect:] Your Straight Punch Maneuvers (not the Hook Punch or One-Two Punch) are made at +1 Reach.
+	
+\end{description}
+\paragraph{\label{talent:Ironwall}Ironwall}
+\begin{description}
+	\item [Requirements:] Universal, END 5. 
+	\item [Description:] You’re hard to dislodge from your feet. It takes a singular force to put you on the ground.
+	\item [Effect:] You gain +2 bonus dice to Stability tests made to avoid falling over or being shoved, pushed, or dislodged from your position. 
+	
+\end{description}
+\paragraph{\label{talent:Shield Charge}Shield Charge}
+\begin{description}
+	\item [Requirements:] Shield, STR 5, MOB 8, Superior Shield Bash. 
+	\item [Description:] When slamming a shield properly into someone’s face, you know how to throw your shoulder into it, potentially flinging them from their feet. 
+	\item [Effect:] When you force a Stability test through a Superior Shield Bash, add 1 to the Stability test RS. 
+	
+\end{description}
+\paragraph{\label{talent:Rim Bash}Rim Bash}
+\begin{description}
+	\item [Requirements:] Shield, STR 5, MOB 8, Superior Shield Bash, Shield Charge 
+	\item [Description:] You know just the right spot to get that extra bit of Oomph out of a shield bash. 
+	\item [Effect:] When you force a Stability test through a Superior Shield Bash, add 1 to the Stability test RS. 
+	This is cumulative with Shield Charge. 
+\end{description}
+\section{Master Talents}\label{sec:Master Talents}
+\paragraph{\label{talent:It Was On Purpose!}It Was On Purpose!}
+\begin{description}
+	\item [Requirements:] Missile Weapon, WIT 6.
+	\item [Description:] No really, it was totally intentional! You seem to have a skill for putting small missiles 
+	through narrow slits and chinks in armor. You’re every knight’s worst nightmare. 
+	\item [Effect:] Whenever a Shoot, Melee Shoot or Fling attack you make hits an opponent on a Hit Location 
+	where the target’s armor has a Weak Point, the attack inflicts +2 damage. This does not apply to Scatter 
+	damage, except for the primary shot from the weapon. 
+	
+\end{description}
+\paragraph{\label{talent:Whirlwind Defense}Whirlwind Defense}
+\begin{description}
+	\item [Requirements:] Spear, Polearm, 2H Sword or 2H Blunt, AGI 6 
+	\item [Description:] You can move your weapon in a whirlwind of defensive patterns, intercepting enemy attacks as you do. 
+	\item [Effect:] There is no limit to the number of Parries you can make with a weapon in one Action. After any successful Parry, you regain 2 CP. 
+	
+\end{description}
+\paragraph{\label{talent:Bad War}Bad War}
+\begin{description}
+	\item [Requirements:] 2H Sword or Polearm, STR 6, AGI 6. 
+	\item [Description:] It’s a rare man who can survive in the Bad War. When two pike formations meet, and the world turns into an infinity of spear points, halberds, katzbalgers and screaming, dying men, they’ll be glad they brought you along. 
+	\item [Effect:] You may use Cleaving Blow with Breaks in addition to Swings. Each time you activate Cleaving Blow, you regain 2 CP. 
+	
+\end{description}
+\paragraph{\label{talent:Stern}Stern}
+\begin{description}
+	\item [Requirements:] Universal, HLT 6. 
+	\item [Description:] Few people can match your physical resolve. 
+	\item [Effect:] Once per Combat, at any Refresh, you may choose to ignore all Pain, and regain your CP as normal. Next Refresh, the Pain returns in full. 
+	
+\end{description}
+\paragraph{\label{talent:Superior Void}Superior Void}
+\begin{description}
+	\item [Requirements:] Universal, AGI 6. 
+	\item [Description:] You don’t even remember what it feels like to fear being hit. 
+	\item [Effect:] You perform all Void maneuvers at -1 TN. 
+	
+\end{description}
+\paragraph{\label{talent:Juggernaut}Juggernaut}
+\begin{description}
+	\item [Requirements:] Universal, END 6. 
+	\item [Description:] ‘Even if one’s head were to be cut off, he should be able to perform one more action with certainty.’ 
+	\item [Effect:] Once per Session, you may elect to delay the full effect of any Wound until the end of the Action. 
+	However, if the Wound inflicted has a “Limb Severed” or “Death” result, halve the CP of any Maneuvers 
+	you currently have declared, but then resolve them as normal. 
+	
+\end{description}
+\paragraph{\label{talent:Jarring Blows}Jarring Blows}
+\begin{description}
+	\item [Requirements:] Universal, STR 6. 
+	\item [Description:] You really know how to hit people, and can throw enemies off their feet with powerful blows. 
+	\item [Effect:] Whenever any Maneuver you perform would cause an opponent to make a Stability test or become Prone (including Overshock) you increase the RS of that test by 2. 
+	
+\end{description}
+\paragraph{\label{talent:Bruiser}Bruiser}
+\begin{description}
+	\item [Requirements:] Universal. 
+	\item [Description:] A veteran of many battles, you know where to strike to offset a foe. 
+	\item [Effect:] Any Wounds you cause with Unarmed or Melee Weapon Attacks inflict +1 Stun per level of the Wound. 
+	
+\end{description}
+\paragraph{\label{talent:Flicker Jab}Flicker Jab}
+\begin{description}
+	\item [Requirements:] Pugilism. AGI 8 
+	\item [Description:] Your jabs are so rapid, and come from such unorthodox angles, that most opponents cannot even perceive them. 
+	\item [Effect:] If you declare a Straight Punch with fewer than 5 CP, your opponent must make a Perception Test at RS 3 in order to perform any sort of Defense against it. You may not in any way increase the CP of the Straight Punch once this Perception Test is made.
+\end{description}
+\paragraph{\label{talent:The Spear that Pierced the Sky}The Spear that Pierced the Sky}
+\begin{description}
+	\item [Requirements:] Spear, Kebab Master Talent 
+	\item [Description:] Your capabilities with the spear are compelling proof that God is a lancer. 
+	\item [Effect:] Range Costs paid by opponents making attacks against you are doubled. 
+\end{description}
+
 \chapter{Magic}
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
@@ -4706,7 +5710,7 @@ by consuming a liter of blood, or a pound of meat.
 
 \subsection{Unkindly Weapons}
 
-\part{The Tools of the Trade}
+\part[Gear and Equipment]{The Tools of the Trade}
 \chapter{Equipment}\label{ch:equipment}
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
@@ -7276,612 +8280,7 @@ Especially intelligent (feature) &Any idiot can learn to scribble on a tablet. T
 Especially strong (feature) &Ever move a piano up a staircase? Don’t worry, you’ll never have to. &Cost $ \times\ 2.5 $\\
 	\end{tabu}
 \end{table}
-\part{The Riddle of Steel}
-\chapter{Proficiencies}\label{ch:proficiencies} 
-\startcontents[chapters]
-\printcontents[chapters]{}{1}{}
-\clearpage
-\begin{quote}
-	\centering
-\emph{“When I was in Illegon, I had an apprentice. I forget his name. A hundred times I showed him the right way to parry, and a hundred times he did it the wrong way. On the hundred and first time, I didn’t hold back. Only in swordsmanship can a man lose an ear, but become a better listener.”}\\
-\hfill -\textbf{Sarah Gizka}, \textit{On Swords}
-\end{quote}
-
-The Proficiency system allows characters to track their combat capabilities. An individual Proficiency 
-determines skill in a broad classification of weapon (for example, 1H Sword, a 2H Sword, and so on), not simply how effective a character is at wielding certain instruments (such as a rapier, broadsword or 
-mace). Proficiency levels directly affect a character’s CP, allowing them to perform more deadly 
-maneuvers, and also providing characters with Talents (\autoref{ch:Talents}), which offer special bonuses to certain actions in combat.
-
-Characters can take and level Proficiencies at Character Creation or during regular play.
-
-\section{Character Creation}
-When purchasing Proficiencies with PCP, you receive a number of Proficiency Points as indicated in \autoref{tab:PCPInvestment}~in \autoref{ch:charcreation}, and may then use those points to purchase and advance one or more Proficiencies.
-
-Characters unlock Maneuver Tiers and Talents as they level their Proficiency. Maneuvers are certain 
-techniques and moves that a character employs in combat (and are further detailed in \autoref{ch:Maneuvers}), and 
-Talents are small bonuses which may be universal, or specific to a Proficiency (refer to Chapter XX). 
-
-\autoref{tab:Proficiency Progression} below indicates how many Proficiency Points are required to gain different Proficiency levels. 
-
-As an example, a character whose Proficiency level is ‘2’ will have unlocked Core Maneuvers for their 
-chosen Proficiency and have access to a Novice Talent, and a character with a Proficiency level 10 can 
-use Tier 2 Maneuvers and has access to up to three Journeyman Talents and two Novice Talents. A 
-character has access to every Maneuver in his Tier, as well as in the Tiers below. 
-
-\begin{longtabu} spread 0pt {X[-2,c] X[c] X[c] X[-1,c]}
-	\caption{Proficiency Progression}
-	\label{tab:Proficiency Progression}\\
-\rowfont[c]{}Proficiency Level&Maneuver Tiers Unlocked&Talents Unlocked (Not available to Missile Proficiencies)&Proficiency Point / Arc Point Cost\\\toprule
-1&	Core Maneuvers&	-&	1\\
-2&	-& 	\hyperref[sec:Novice Talents]{Novice Talent}&	1\\
-3&	-& 	-&	1\\
-4&	-& 	\hyperref[sec:Novice Talents]{Novice Talent}&1\\
-5&	Tier 1 Maneuvers&	-&	2 \\
-6&	-&  	\hyperref[sec:Journeyman Talents]{Journeyman Talent}&2 \\
-7&	-&  	-  	&2 \\
-8&	-&  	\hyperref[sec:Journeyman Talents]{Journeyman Talent}		&2 \\
-9&	-&  	-  	&3 \\
-10&	Tier 2 Maneuvers&	\hyperref[sec:Journeyman Talents]{Journeyman Talent}		&3 \\
-11&	-&  	-  	&3 \\
-12&	-&  	\hyperref[sec:Master Talents]{Master Talent}  	&3 \\
-13&	-&  	-  	&3 \\
-14&	-&  	\hyperref[sec:Master Talents]{Master Talent}  	&6 \\
-15&	\hyperref[sec:Master Talents]{Master Talent}&	-&	6 \\
-16&	-&-&6 \\
-17&	-&-&6 \\
-18&	-&-&8 \\
-19&	-&-&10 \\
-20&	???&  	???  	&10\\
-\end{longtabu}
-
-\subsection{Advancing with Arc}
-
-During play, your character can advance their Proficiencies and gain new Maneuvers and Talents by spending Arc Points (refer to \autoref{ch:arc} for more information on Arc).
-
-When you take a new Proficiency that you didn’t purchase at Character Creation, simply pay the level 1 Arc Point cost (detailed in \autoref{tab:Proficiency Progression}) and then note it on your Character Sheet.
-
-To level a Proficiency from level 1 to level 5, you must purchase levels 2, 3, 4 and 5. Proficiency levels 
-must be bought in order (you cannot buy only level 5 if you are currently level 1, but need to first buy 
-levels 2, 3 and 4). Once you have spent the required Arc Points to level your Proficiency, note it on your 
-Character Sheet. 
-
-\section{Using Proficiencies}
-When in combat, a character determines their CP by combining their Proficiency level with their ADR. 
-The question then is, which Proficiency should the character use? 
-
-A character must use a Proficiency of the type of weapon that they are holding.  
-
-If a character is holding a sword in their dominant hand, then they must use the 1H Sword Proficiency. If 
-the sword is double-handed, then the Proficiency being used will almost always be 2H Sword. If the 
-character is wielding a spear, then they must use the Spear Proficiency. There are a few exceptions to this, 
-such as the Hand-Off rule for some 2H weapons that allows them to be wielded one-handed while still 
-using the 2H Proficiency of their type. 
-\begin{itemize}
-	\item When Dual Wielding, a character must use the Proficiency for the weapon held in their dominant hand. 
-	\item If Ambidextrous and Dual Wielding, the character must decide which hand is being treated as dominant at the beginning of each Round.
-	\item When unarmed, a character must either use Pugilism or Wrestling as their Proficiency. 
-	\item If a character is forced to use a different Proficiency, either by Grappling, Disarming, or other circumstances, they immediately gain or lose CP equal to the difference between their current Proficiency and the one being switched to. If they’re the same level, then nothing is lost. This can result in a character being forced to use a Default from their current Proficiency, often to disastrous results. A character with CP reduced to 0 in this way is not subject to Overshock.
-	\item If a character is eligible to use multiple Proficiencies (i.e. while wielding a 2H Sword in one hand using Hand-Off) they may not change between them except at the beginning of the Round.
-	\item If a character draws a new weapon mid-action, say with Quickdraw, the new Proficiency is immediately applied.
-\end{itemize}
-
-\subsection{Alternate Weapon Usage}
-Many weapons can be used in ways that differ from their primary usage. This includes wielding two 
-weapons at once, one in each hand, and wielding certain two-handed swords in one hand. These have very 
-simple rules for ease of use. 
-
-\subsubsection{Proficiency Defaults}
-If a character ends up wielding a weapon they are not familiar with, and has no appropriate Proficiency to 
-use it with, they can instead ‘Default’ to one of their other Proficiencies at a slight penalty. When 
-Defaulting, the character effectively gains a temporary Proficiency, which is a number of levels lower 
-than the Proficiency being Defaulted from as illustrated in \autoref{tab:Default Matrix}. When Defaulting, a character does 
-not enjoys the benefits of any School bonuses. They can only use the CP and Maneuvers appropriate to 
-the level of the Proficiency they are Defaulting to. 
-
-\begin{quote}
-	\emph{Bale has been disarmed of his sword (1H Sword), and must defend himself with only a hatchet (1H Blunt). He was never trained in the weapon’s use, but he has an alright idea of how it works, and only suffers a -1 penalty with it (using a 1H Blunt weapon when Defaulting from 1H Sword). His 1H Sword level is 5, which allows him access to Tier 1 Maneuvers, but with the -1, his level in 1H Blunt is only 4, meaning he can only use Core Maneuvers. Bad luck Bale! }
-\end{quote}
-
-\begin{table}
-	\centering
-	\caption{Default Matrix}
-	\label{tab:Default Matrix}
-	\begin{tabu} spread 0pt {*{10}{X[-1,c]}}
-&Grappling &Pugilism &Dagger &1H Sword &1H Blunt &2H Blunt &2H Sword &Spear &Polearm\\\toprule
-Grappling &0 &-1 &-1 &-3 &-3 &-4 &-4 &-5 &-5\\
-Pugilism &-1 &0 &-1 &-3 &-3 &-4 &-4 &-5 &-5\\
-Dagger &-1 &-1 &0 &-1 &-1 &-3 &-3 &-4 &-4\\
-1H Sword &-3 &-3 &-1 &0 &-1 &-3 &-2 &-4 &-4\\
-1H Blunt &-3 &-3 &-1 &-1 &0 &-1 &-3 &-3 &-3\\
-2H Blunt &-4 &-4 &-3 &-3 &-1 &0 &-2 &-3 &-3\\
-2H Sword &-4 &-4 &-3 &-2 &-3 &-2 &0 &-3 &-3\\
-Spear &-5 &-5 &-4 &-4 &-3 &-3 &-3 &0 &-1\\
-Polearm &-5 &-5 &-4 &-4 &-3 &-3 &-3 &-1 &0\\
-	\end{tabu}
-\end{table}
-
-\subsubsection{Dual Wielding}
-Dual Wielding involves using a weapon in each hand. This has come up many times throughout history 
-and legend, and is often associated with exceptional skill or prodigious talent. In reality, two-weapon 
-fighting was not merely the province of legendary swordsmen like Miyamoto Musashi, or Pal Kiniszi. 
-Though fighting with two swords was very unusual, fighting with a sword and a smaller companion 
-weapon, like a dagger, was not at all unusual at many points in history. References to double-rapier styles 
-(the infamous ‘Case of Rapiers’) abound, though it was never taken as seriously as the more formal styles 
-of dueling.
-
-The chief advantage of using two weapons instead of a single weapon, or a weapon and a shield, is that 
-the secondary weapon can be used to parry, trap, or bind the opponent’s weapon, or make a counter-attack 
-on its own. The disadvantages range from not having a shield to the awkwardness of using a large weapon 
-in one’s off-hand, or the inability to quickly grasp something with the free hand. 
-\begin{itemize}
-	\item When Dual Wielding, always use the Proficiency of the weapon in your primary hand (if you are 
-Ambidextrous, you may choose which Proficiency you use) for terms of CP and available 
-Maneuvers. 
-	\item Dual Wielding with a dagger or other weapon with Short Reach or less in the off-hand and a 
-another weapon in the primary hand incurs no penalty. 
-	\item Dual Wielding with two larger weapons in each hand incurs a -2 penalty to CP, unless the 
-character is Ambidextrous, in which case no penalty is suffered. 
-\end{itemize}
-
-\subsubsection{Hand-Off Weapons}
-Certain weapons, while designed primarily to be used with two hands, could be wielded in one when the 
-situation demanded it, most often as cavalry swords while mounted, where one hand is needed to control 
-the reins. 
-
-To represent this, certain 2H weapons (generally swords) have an ‘Hand-Off’ rule, and a second profile 
-that is 1H instead of 2H. Use the stats appropriate to the number of hands being used to hold the weapon. 
-
-Switching from the 2H grip of a sword to a 1H grip has no cost, and can be done at the beginning of any 
-Action. Switching back, assuming the other hand is still free (and attached to the body), can be done the 
-same way. 
-
-\section{Schools}
-A School in Song of Swords is a group of Proficiencies that are all leveled up at once for a discounted 
-cost. Schools cost more Arc Points for a character to take, but they’re much cheaper to level up, thus 
-allowing a character to have multiple high-level Proficiencies at a lower cost. 
-
-There are several different kinds of Schools, each with a different structure and unique benefits, as well as 
-their own costs for buying in (either at Character Creation or afterwards) and leveling. 
-
-\paragraph{Becoming part of a School}---\quad
-A character can be part of a School at Character Creation, or can form a School during gameplay, as long 
-as they have access to the proper facilities or training. (Self-Taught schools require no teachers or 
-infrastructure). 
-
-Buying into a School in order to gain its benefits is easy. The base cost in Arc of a School is listed in 
-brackets in its Cost section. After this is paid, a number of Proficiencies can be selected and purchased at 
-level 1 as part of the School. Each Proficiency added to a School must be paid for normally, though 
-Humans, because of their racial characteristic Willing to Learn, purchase Proficiencies for 1 point instead 
-of 2. Some Schools have an additional cost per Proficiency that must be paid to add one to the School. In 
-the case of ‘Primary’ and ‘Secondary’ Proficiencies in Schools, these sometimes have different costs. 
-
-Once Proficiencies are chosen and paid for, the School is complete. All Proficiencies within the School 
-are at level 1. Some Schools have bonuses or penalties for Primary or Secondary Proficiencies, listed in 
-brackets (i.e. 1 Primary [0]) that alter the CP of the Proficiencies in question. 
-
-\begin{quote}
-	\emph{Tosca is part of a Self-Taught School, and he has the School at level 1. His Primary Proficiency is 1H 
-Sword. His Secondary Proficiency is Wrestling.
-Self-Taught Schools have Primary at 0, so his 1H Sword Proficiency’s CP is 1 (1+0). Self-Taught Schools 
-have Secondary at -1, so his Wrestling Proficiency’s CP is actually 0 (1-1), meaning that while he has the 
-School and access to Core Maneuvers, he does not get any CP from the Proficiency when he fights with 
-it.}
-\end{quote}
-\paragraph{Leveling a School}---\quad
-Once you’ve bought into a School, it levels just like any other proficiency, using the same number of 
-points as individual proficiencies. The ‘level’ of the School is tracked independently. The individual 
-proficiencies in the School are listed as ‘-1,’ ‘0,’ or ‘+1,’ this being their level relative to the School’s 
-level, and representing the different focus that the School places on different weapons. 
-
-\begin{quote}
-	\emph{Gallant is part of a Self-Taught School that has 2H Sword at 0, Dagger at -1 and 1H Sword at 1. His School Level is 8, which means that he effectively has 2H Sword at 8 (8+0), Dagger at 7 (8-1) and 1H Sword at 9 (8+1)}
-\end{quote}
-
-\section{School Types}
-
-\subsection{Self-Taught}
-You taught yourself--or learned through hard knocks--that it’s better to have a few Jacks up your sleeve 
-than one Ace. Self-Taught Schools tend to contain few weapons, and practitioners tend to develop bad 
-habits, but at the same time they are also uniquely well-suited for picking up dirty tricks and thinking 
-outside of the box. 
-
-\vspace{-15pt}\subparagraph{Entry Requirements:} Nothing. Who would you pay, yourself?
-\vspace{-15pt}\subparagraph{Who Uses it:} Criminals, peasants, militia without formal training, and bored eccentric nobles. What Weapons: Self-Taught Schools can involve any weapons, but tend to use swords and polearms used afoot, pugilism, wrestling, and perhaps a missile proficiency.
-\vspace{-15pt}\subparagraph{Proficiencies:} 1 Primary [0], 0-2 Secondary [-1]
-\vspace{-15pt}\subparagraph{Bonuses:} Gain Special Move for either Weapon Throw, Blind Toss, or Quickdraw (Special Move means that one time per opponent, you may use a Maneuver at -1 TN and no Activation Cost. You may never use your Special Move against an opponent after you’ve used it once--they’re onto you). 
-\vspace{-15pt}\subparagraph{Penalties:} When you reach a new Tier of Maneuvers (including Core Maneuvers) with any Proficiency within this School, you must pick two non-Universal Maneuvers that you can perform in or before that Tier. You suffer from Poor Form when using those Maneuvers with that Proficiency (Poor Form increases the Activation Cost of the Maneuver when used in combat by 1. An instance of Poor Form can be bought off for 1 Arc Point so that it no longer applies to that Maneuver).
-\vspace{-15pt}\subparagraph{Cost:} [0]+1 per Proficiency at adoption.
-
-\subsection{Noble}
-Noble Schools exist to teach wealthy aristocrats and other interested, affluent parties how to conduct 
-themselves in battle. Noble schools are expensive, and this means they can afford the best tutors to school 
-their charges in how to properly murder their fellow men. The primary advantage of Noble Schools is the 
-exquisite form and speed that comes from constant repetition, constant correction, and no shortage of 
-training equipment. These assets come together to produce excellently practiced fighters with a great 
-technical understanding of combat. 
-
-\vspace{-15pt}\subparagraph{Entry Requirements:} 5 gp upon entry. Additionally, each Tier costs 5 gp to ‘unlock,’ as a member of a Noble School must pay exorbitant dues to his school in order to gain access to their secrets (this also serves to keep poor people out on the street, where they belong).
-\vspace{-15pt}\subparagraph{Who Uses it:} Young aristocrats, the sons of very wealthy merchants, prodigious peasants allowed access because of natural talent.
-\vspace{-15pt}\subparagraph{What Weapons:} Noble Schools tend to include civilized upper-class weapons, like long swords, sabers, lances, rapiers, and perhaps some missile weapons like bows or crossbows. Pugilism and wrestling are generally beneath the dignity of these men, but sometimes are included if dueling in armor is in vogue.
-\vspace{-15pt}\subparagraph{Proficiencies:} 1-2 Primary [+2], 1-5 Secondary [+0] 
-\vspace{-15pt}\subparagraph{Bonuses:} You automatically gain a Novice Talent for your Primary Proficiency at School level 1, a Journeyman Talent at level 5, and a Master Talent at level 10. You may also choose whether the Noble School you attended teaches Armored, Unarmored, or Missile fighting:
-	\begin{description}
-		\item [Armored:] Your END counts as being 2 higher for the purposes of Carry.
-		\item [Unarmored:] For each Primary Proficiency you have in the Noble School, you may choose an individual weapon or shield that is compatible with that Proficiency. When using that weapon or shield with that Proficiency, you reduce the Parry/Block TN of the weapon/shield by 1.
-		\item [Missile:] When taking this School, Choose either Rapid Shot or Power Draw. You gain +2 MP whenever performing that Maneuver.
-	\end{description}
-\vspace{-15pt}\subparagraph{Penalties:} None. You’re just superior. 
-\vspace{-15pt}\subparagraph{Cost:}[2]+2 per Primary, +1 per Secondary
-
-\subsection{Soldier}
-Soldier Schools emphasize quantity and practicality. These schools are intended to instruct large numbers 
-of men on how to use a large variety of weapons, and to confront whatever situation they may be forced 
-into on the battlefield. The methods used are often rough, with less focus on sparring and more on the use 
-of pells, training posts and courses to build strength and skill. 
-
-\vspace{-15pt}\subparagraph{Entry Requirements:} 10 sp upon entry, or 5 sp if the character served in an army, town guard, or militia. 
-\vspace{-15pt}\subparagraph{Who Uses it:} Soldiers, mercenaries, civilian militia with training.
-\vspace{-15pt}\subparagraph{What Weapons:} Soldier Schools can include a broad array of weapons, including swords, daggers, spears, maces, axes, bows, crossbows, javelins and slings, and as well as these, almost certainly including wrestling in their regimen. 
-\vspace{-15pt}\subparagraph{Proficiencies:} 3-9 Primary [+0]
-\vspace{-15pt}\subparagraph{Bonuses:} Tier 1 Maneuvers and Tier 2 Maneuvers cost 1 less for this School. 
-\vspace{-15pt}\subparagraph{Penalties:} Mastery Maneuvers Tier costs 1 more for this School. 
-\vspace{-15pt}\subparagraph{Cost:}[1]+1 per Proficiency at adoption.
-
-\subsection{Officer}
-Officer Schools can be considered as more refined than a Soldier School, but lacking the finesse and 
-prestige of a Noble School. Officers may not necessarily be of noble birth, but they have standards of 
-dignity and decorum to uphold, while also expecting to get their hands dirty from time to time. Officer 
-Schools teach the weapons of a gentleman as well as the weapons of war. 
-
-\vspace{-15pt}\subparagraph{Entry Requirements:} 1 gp upon entry. Additionally, each Tier costs 1 gp to ‘unlock.’ The officer’s corps will generally try to dissuade the unmonied classes from advancing anywhere, but particularly in martial skill. 
-\vspace{-15pt}\subparagraph{Who Uses it:} Officers, the sons of officers, martially-minded aristocrats, the sons of martially-minded aristocrats, janissaries. 
-\vspace{-15pt}\subparagraph{What Weapons:} Officer Schools teach a mix of weapons of both martial and civilian bent, including missile and melee weapons. Many officers will expect to do their fighting mounted even if they command 
-infantry units, and schools that cater to cavalry officers may focus on weapons like sabers, lances, 
-horsebows, carbines, and so on. 
-\vspace{-15pt}\subparagraph{Proficiencies:} 1-3 Primary [+1], 1-6 Secondary [+0] 
-\vspace{-15pt}\subparagraph{Bonuses:} You automatically gain a Novice Talent for your Primary Proficiency at School level 1, a 
-Journeyman Talent at level 5, and a Master Talent at level 10. 
-\vspace{-15pt}\subparagraph{Penalties:} None.
-\vspace{-15pt}\subparagraph{Cost:} [1]+2 per Primary at adoption, +1 per Secondary 
-
-\subsection{Esoteric}
-Esoteric Schools are those in which the chief aim is some intellectual or spiritual goal, where martial 
-prowess and skill at arms is considered a contributor. Martial skill as a pathway to enlightenment, or some 
-deeper understanding of the self, was not a new concept when the first words clawed their way from a 
-human throat. The existential dread brought on by violence and the fear of death have been motivators for 
-introspection since the first spear was knapped from flint. 
-
-Esoteric Schools tend to be minimalistic with how they deal with actual violence, even brutish. The 
-fighter himself must vanish into the technique, because it is the act of performing the technique perfectly 
-that is relevant--not the fighter, not the enemy, not even the fight. A certain fearlessness, born of fatalism 
-and discipline, is born of this sort of style, and it creates unnerving and skilled warriors who are difficult 
-to read, and even more difficult to counter. Archery traditions in Esoteric Schools often involved 
-controlled breathing and a holistic approach to aiming rather than a technical one, and are frequently 
-practiced in conjunction with shouts or chants. 
-\vspace{-15pt}\subparagraph{Entry Requirements:} 1/10th of starting Wealth at Character Creation. Esoteric Schools cannot be entered during regular play without the GM’s approval.
-\vspace{-15pt}\subparagraph{Who Uses It:} Mystics, sword-sages, wandering duelists, Illuminati, and certain religious men. 
-\vspace{-15pt}\subparagraph{What Weapons:} Esoteric Schools tend to focus on civilian weapons, simply because warfare is not 
-usually their element. Swords are most common, but some may practice the quarterstaff, truncheon, spear, or even unarmed combat and wrestling if the culture is right. Bows and sometimes throwing weapons are 
-common in Esoteric Schools, but it is EXTREMELY rare for to see crossbows or firearms included (+2 
-cost when adding to School) 
-\vspace{-15pt}\subparagraph{Proficiencies:} 1-2 Primary [+1], 0-3 Secondary [+0] 
-\vspace{-15pt}\subparagraph{Bonuses:} Any Advanced offensive or defensive maneuver made against you has a +2 Activation Cost. 
-Missile Attacks made while benefiting from Aim may adjust the Hit Location by 1 automatically. 
-\vspace{-15pt}\subparagraph{Penalties:} All Advanced offensive or defensive maneuvers you perform have +2 Activation Cost. 
-\vspace{-15pt}\subparagraph{Cost:} [2]+2 per Primary, +1 per Secondary 
-
-\section*{Proficiency List}
-These are the Proficiencies available to be taken either individually or as part of Schools. Each weapon 
-may be able to be used with more than one Proficiency (e.g. certain pole weapons can be used with both 
-the spear and polearm Proficiencies), so be sure to check which Proficiencies your character’s favored weapons use.
-
-\section{Melee Proficiencies}
-\subsection{Wrestling}
-Grappling, wrestling, and throwing, both in unarmed and armed situations. Very useful in and out of armor, wrestling is one of the few ways to defeat a foe in armor without a heavy armor penetrating weapon.
-
-Wrestling has access to a great number of superior grappling Maneuvers. 
-
-\subsubsection{Core Maneuvers}
-\vspace{-5pt}\begin{itemize}
-	[itemsep=0.5mm]
-	\item \hyperref[man:Clinch (Attack)]{Clinch} [Superior]
-	\item Upgrade one Clinch Maneuver to Superior
-\end{itemize}
-\subsubsection{Tier 1 Maneuvers}
-\vspace{-5pt}\begin{itemize}
-	[itemsep=0.5mm]
-	\item Upgrade one Clinch Maneuver to Superior
-	\item \nameref{man:Disarm} [Superior]
-\end{itemize}
-\subsubsection{Tier 2 Maneuvers}
-All remaining Clinch Maneuvers gain Superior
-
-\subsection{Pugilism}
-Fighting with fists, feet, knees, elbows, and so on. Pugilism is the striking component of unarmed combat, and focuses less on wrestling and grappling, and more on striking the opponent. 
-
-Pugilism has access to a great number of Superior Maneuvers. 
-
-\subsubsection{Core Maneuvers}
-\vspace{-5pt}\begin{itemize}
-	[itemsep=0.5mm]
-	\item Upgrade an Unarmed Maneuver to Superior (choose three: \nameref{man:Kick}, \nameref{man:Straight Punch}, \nameref{man:Hook Punch}, \nameref{man:Elbow}, \nameref{man:Knee}, \nameref{man:Shoulder Charge})
-	\item \nameref{man:One-Two Punch}
-\end{itemize}
-
-\subsubsection{Tier 1 Maneuvers}
-\vspace{-5pt} \begin{itemize}
-	[itemsep=0.5mm]
-	\item Upgrade an Unarmed Maneuver to Superior (choose one: \nameref{man:Kick}, \nameref{man:Straight Punch}, \nameref{man:Hook Punch}, \nameref{man:Elbow}, \nameref{man:Knee}, \nameref{man:Shoulder Charge})
-	\item \nameref{man:Disarm} [Superior]
-	\item \nameref{man:Arm Parry} [Superior]
-\end{itemize}
-\subsubsection{Tier 2 Maneuvers}
-\vspace{-5pt}\begin{itemize}
-	[itemsep=0.5mm]
-	\item Upgrade an Unarmed Maneuver to Superior (choose one: \nameref{man:Kick}, \nameref{man:Straight Punch}, \nameref{man:Hook Punch}, \nameref{man:Elbow}, \nameref{man:Knee}, \nameref{man:Shoulder Charge})
-	\item \hyperref[man:Clinch (Attack)]{Clinch} [Superior]
-\end{itemize}
-
-\subsection{Dagger}
-Fighting with knives, daggers, and other short cutting and stabbing weapons. Certain daggers may tread 
-the line between dagger and sword. Dagger fighting is useful both in a civilian and military setting -- the 
-dagger is often the last line of defense a fighter has, as well as being useful for finishing off grounded 
-opponents. The weapon also has darker applications for assassins and murderers, as its size lends well to 
-easy concealment. Stilettos, Rondel Daggers, Cinquedeas, and Misericordes are all useful daggers for various situations.
-
-Using a dagger allows access to a combination of both armed and unarmed Maneuvers, making it highly 
-versatile. 
-
-\subsubsection{Core Maneuvers}
-\vspace{-5pt}\begin{itemize}
-	[itemsep=0.5mm]
-	\item \nameref{man:Deep Draw Cut}
-	\item \nameref{man:Pommel Strike}
-\end{itemize}
-
-\subsubsection{Tier 1 Maneuvers}
-\vspace{-5pt}\begin{itemize}
-	[itemsep=0.5mm]
-	\item \nameref{man:Dacian Rush}
-	\item \nameref{man:Arm Parry} [Superior]
-	\item \nameref{man:Pommel Strike} [Superior]
-	\item \nameref{man:Disarm} [Superior]
-\end{itemize}
-\subsubsection{Tier 2 Maneuvers}
-Clinch [Superior]
-
-\subsection{1H Sword}
-The single-handed sword has always held a special place in warfare as the companion weapon of the 
-professional soldier. As such, practice with the sword has always been associated with martial virtue and 
-professionalism, from the ascendancy of the Roman Legion to the collapse of Napoleon’s Empire. The 
-Gladius, the Arming Sword, the Rapier, Saber and Backsword, all carry a respectable legacy of violence. 
-
-1H Sword has access to many highly technical Maneuvers, as well as early access to many advanced Maneuvers, including Shield Maneuvers.
-
-\subsubsection{Core Maneuvers}
-\nameref{man:Pommel Strike}
-
-\subsubsection{Tier 1 Maneuvers}
-\vspace{-5pt}\begin{itemize}
-	[itemsep=0.5mm]
-	\item \nameref{man:Shield Bind}
-	\item \nameref{man:Deep Draw Cut}
-	\item \nameref{man:Riposte}
-	\item \nameref{man:Murder-Strike}
-	\item \nameref{man:Half-Sword}
-	\item \nameref{man:Quickdraw}
-	\item \nameref{man:Shield Bash} [Superior]
-	\item \nameref{man:Shield Beat} [Superior]
-	\item \nameref{man:Pommel Strike} [Superior]
-	\item \nameref{man:Simultaneous Parry/Attack}
-\end{itemize}
-\subsubsection{Tier 2 Maneuvers}
-\vspace{-5pt}\begin{itemize}
-	[itemsep=0.5mm]
-	\item \nameref{man:Beat} [Superior]
-	\item \nameref{man:Simultaneous Parry/Attack} [Superior]
-	\item \nameref{man:Disarm} [Superior]
-	\item \nameref{man:Hilt Push} [Superior]
-	\item \nameref{man:Push Cut} [Superior]
-	\item \nameref{man:Riposte} [Superior]
-	\item \nameref{man:Shield Bind} [Superior]
-\end{itemize}
-
-\subsection{2H Sword}
-Two handed swords, though less common than their single-handed cousins throughout 
-history, were frequently weapons of war intended for use in the thick of battle by elite troops. The Landsknechts with their Zweihanders were the defenders of battle standards and were also the bodyguards 
-of generals. Spanish Montante manuals contain detailed plays for the fighting of many foes at once. The 
-more modest Longsword, Bastard Sword and other similar weapons dominated the dueling scene in 
-Europe for centuries as well. 
-
-2H Sword has access to many highly technical Maneuvers, as well as early access to many advanced Maneuvers. 
-
-\subsubsection{Core Maneuvers}
-\vspace{-5pt}\begin{itemize}
-	[itemsep=0.5mm]
-	\item \nameref{man:Pommel Strike}
-	\item \nameref{man:Simultaneous Parry/Attack}
-	\item \nameref{man:Half-Sword}
-	\item \nameref{man:Murder-Strike}
-\end{itemize}
-\subsubsection{Tier 1 Maneuvers}
-\vspace{-5pt}\begin{itemize}
-	[itemsep=0.5mm]
-	\item \nameref{man:Quickdraw}
-	\item \nameref{man:Riposte}
-	\item \nameref{man:Deep Draw Cut}
-	\item \nameref{man:Hilt Push} [Superior]
-	\item \nameref{man:Disarm} [Superior]
-	\item \nameref{man:Pommel Strike} [Superior]
-	\item \nameref{man:Simultaneous Parry/Attack} [Superior]
-	\item \nameref{man:Shield Bash} [Superior]
-	\item \nameref{man:Shield Beat} [Superior]
-\end{itemize}
-\subsubsection{Tier 2 Maneuvers}
-\vspace{-5pt}\begin{itemize}
-	[itemsep=0.5mm]
-	\item \nameref{man:Beat} [Superior]
-	\item \nameref{man:Riposte} [Superior]
-	\item \nameref{man:Break} [Superior]
-	\item \nameref{man:Push Cut} [Superior]
-\end{itemize}
-\subsection{1H Blunt}
-Swords are all well and good, but sometimes you’ve just got to hit someone with an axe. Blunt 
-weapons weren’t always blunt--axes meant for war were actually thinner than wood-splitting axes, and were lighter and sharper. The end-heavy weighting of the weapons does lend them a similar technique. 
-Warhammers, Maces, Battleaxes and Truncheons are more effective against armor than slashing weapons 
-like swords, and were useful tools against plate-armored adversaries. 
-
-1H Blunt has access to fewer Maneuvers than the Sword Proficiencies, but makes up for this with 
-powerful versions of Maneuvers meant to destroy enemy armor, shields, and weapons, as well as Shield Maneuvers.
-
-\subsubsection{Core Maneuvers}
-Universal Maneuvers only
-
-\subsubsection{Tier 1 Maneuvers}
-\vspace{-5pt}\begin{itemize}
-	[itemsep=0.5mm]
-	\item \nameref{man:Shield Bind}
-	\item \nameref{man:Beat} [Superior]
-	\item \nameref{man:Hook} [Superior]
-	\item \nameref{man:Break} [Superior]
-	\item \nameref{man:Hew} [Superior]
-	\item \nameref{man:Shield Bash} [Superior]
-\end{itemize}
-\subsubsection{Tier 2 Maneuvers}
-\vspace{-5pt}\begin{itemize}
-	[itemsep=0.5mm]
-	\item \nameref{man:Riposte}
-	\item \nameref{man:Disarm} [Superior] 
-	\item \nameref{man:Shield Beat} [Superior] 
-	\item \nameref{man:Shield Bind} [Superior] 
-\end{itemize}
-\subsection{2H Blunt}
-Heavy blunt weapons hold a particular place in history, as both the tools of elite warriors and 
-peasants alike. The Dane Axe was used by the Huscarl elite of Scandinavia and England, whereas the 
-Pole-Flail was reportedly used by the peasant armies of the Hussites and the Belgians during their various 
-revolts. The Morningstar and Heavy Mace were often used by professional soldiers as late as the 16th 
-Century. Cheaper than swords, but more effective against heavy armor, these were often the weapons of choice in the age of high chivalry.
-
-2H Blunt has access to fewer Maneuvers than the Sword Proficiencies, but makes up for this with 
-powerful versions of Maneuvers meant to destroy enemy armor, shields, and weapons. 
-
-\subsubsection{Core Maneuvers}
-Universal Maneuvers only
-
-\subsubsection{Tier 1 Maneuvers}
-\vspace{-5pt}\begin{itemize}
-	[itemsep=0.5mm]
-	\item \nameref{man:Beat} [Superior]
-	\item \nameref{man:Shield Bind}
-	\item \nameref{man:Hook} [Superior]
-	\item \nameref{man:Break} [Superior]
-	\item \nameref{man:Hew} [Superior]
-\end{itemize}
-
-\subsubsection{Tier 2 Maneuvers}
-\vspace{-5pt}\begin{itemize}
-	[itemsep=0.5mm]
-	\item \nameref{man:Riposte}
-	\item \nameref{man:Disarm} [Superior]
-\end{itemize}
-\subsection{Spear}
-Spears have always been ubiquitous weapons. Cheap, easy to make, and easy to train with, they 
-were useful for every kind of soldier from the conscript to the professional, and remained the most 
-common weapon for most of history, with only various swords coming anywhere close in terms of 
-deployment. The Spear came in various lengths, from the handy Arming Spear to the extremely long Pike. 
-Certain specialized versions, such as the Ahlspiess, were designed for duties for which the regular spear 
-was unsuited, like penetrating plate. 
-
-Spear has access to many highly technical Maneuvers, just like Sword, but it lacks some of the destructive Maneuvers of the Polearm and Blunt. 
-
-\subsubsection{Core Maneuvers}
-Universal Maneuvers only
-
-\subsubsection{Tier 1 Maneuvers}
-\vspace{-5pt}\begin{itemize}
-	[itemsep=0.5mm]
-	\item \nameref{man:Riposte}
-	\item \nameref{man:Simultaneous Parry/Attack}
-	\item \nameref{man:Shield Bind}
-	\item \nameref{man:Shield Bash} [Superior]
-	\item \nameref{man:Shield Beat} [Superior]
-	\item \nameref{man:Push Cut} [Superior]
-\end{itemize}
-\subsubsection{Tier 2 Maneuvers}
-\begin{itemize}
-	[itemsep=0.5mm]
-	\item \nameref{man:Simultaneous Parry/Attack} [Superior] 
-	\item \nameref{man:Riposte} [Superior] 
-	\item \nameref{man:Shield Bind} [Superior]
-\end{itemize}
-\subsection{Polearm}
-Fighting with Polearms is the most important skill for most soldiers. Polearms were present on 
-battlefields the world over, but especially in the Medieval world. Polearms can thrust, smash through 
-armor, hook foes off horses, and otherwise ruin anyone’s day. The Halberd is the best known polearm, 
-but the Bill, the Voulge, the Glaive and the Lucerne Hammer were equally common. 
-
-Polearm has access to a variety of useful Maneuvers, including a mixture of destructive and technical 
-Maneuvers. It lacks Shield Maneuvers since most polearms were meant to be used two-handed. 
-
-\subsubsection{Core Maneuvers}
-Universal Maneuvers only
-
-\subsubsection{Tier 1 Maneuvers}
-\vspace{-5pt}\begin{itemize}
-	[itemsep=0.5mm]
-	\item \nameref{man:Riposte}
-	\item \nameref{man:Hook} [Superior] 
-	\item \nameref{man:Disarm} [Superior] 
-	\item \nameref{man:Hew} [Superior] 
-	\item \nameref{man:Break} [Superior] 
-\end{itemize}
-\subsubsection{Tier 2 Maneuvers}
-\nameref{man:Simultaneous Parry/Attack}
-
-\section{Missile Proficiencies}
-Missile Proficiencies work very similarly to Melee Proficiencies, but with a few small differences. 
-Notably, Missile Proficiencies have no Defaults (see below, in Alternate Weapon Usage) or Talents 
-available to them. 
-
-\subsection{Bow}
-\subsubsection{Core Maneuvers}
-Universal Maneuvers only 
-
-\subsubsection{Tier 1 Maneuvers}
-\vspace{-5pt}\begin{itemize}
-	[itemsep=0.5mm]
-	\item \nameref{man:Power Draw}
-	\item \nameref{man:Shoot} [Superior]
-\end{itemize}
-\subsubsection{Tier 2 Maneuvers}
-\nameref{man:Rapid Shot} [Superior] OR \nameref{man:Power Draw} [Superior]
-
-\subsection{Crossbow}
-\subsubsection{Core Maneuvers}
-Universal Maneuvers only 
-
-\subsubsection{Tier 1 Maneuvers}
-\vspace{-5pt}\begin{itemize}
-	[itemsep=0.5mm]
-	\item \nameref{man:Aim} [Superior]
-	\item \nameref{man:Shoot} [Superior]
-\end{itemize}
-\subsection{Firearms}
-\subsubsection{Core Maneuvers}
-Universal Maneuvers only
-
-\subsubsection{Tier 1 Maneuvers}
-\vspace{-5pt}\begin{itemize}
-	[itemsep=0.5mm]
-	\item \nameref{man:Aim} [Superior]
-	\item \nameref{man:Shoot} [Superior]
-\end{itemize}
-\subsection{Throwing Weapons}
-\subsubsection{Core Maneuvers}
-Universal Maneuvers only
-
-\subsubsection{Tier 1 Maneuvers}
-\nameref{man:Fling} [Superior]
+\part[Game Mechanics]{The Riddle of Steel}
 
 \chapter{Maneuvers}\label{ch:Maneuvers} %NEED to make some concept photos of possible maneuver layouts. Maneuvers are the most important part of the book, gotta make sure they work! Possibly the actual list of maneuvers should have its own chapter since it's quite extensive? This would also prevent bookmark bloat
 \startcontents[chapters]
@@ -9562,402 +9961,7 @@ This Attack does not end a Grab.
 and suffer Falling Damage as though having fallen Feet equal to [5+Dog Strength+BS.] 
 \end{description}
 
-\chapter{Talents}\label{ch:Talents} %TALENTS NEED DOING
-\startcontents[chapters]
-\printcontents[chapters]{}{1}{}
-\clearpage
-Talents are small improvements to a character’s combat skills that are acquired as the character’s Proficiency score increases. At set intervals in a Proficiency’s progression, a character earns Talents of Novice, Journeyman, or Master rank. These Talents may be chosen from the Talent list at the end of this chapter
 
-\section{Gaining Talents}
-A character gets a Talent whenever a Proficiency or a School reaches a level in which a Talent is 
-rewarded (see \autoref{tab:Proficiency Progression}~for details.)
-
-Proficiencies that are a part of a School do not gain Talents. Instead, the School as a whole gains only one 
-set of Talents, but these Talents apply to all Proficiencies within the School, and can use any Proficiency 
-in the School to satisfy their requirements. 
-
-\subsection{Choosing Talents}
-When your character receives a Talent from a Proficiency level that they’ve just acquired, you may choose any Talent under the Talent rank they have gained (Novice, Journeyman or Master) or lower, provided the character meets the requirements of the Talent. You may take a Novice Talent in a Journeyman Talent slot, but you may not take a Journeyman level Talent in a Novice slot.
-
-Some Talents have Attribute requirements, which your character must match or exceed in order to take the Talent. Others have Proficiency requirements, meaning that they can only be taken as Talents for that Proficiency or a School containing that Proficiency.
-
-Talents cannot be taken multiple times.
-
-\section{Using Talents}
-Any time a Talent would be applicable for activation, simply announce that it is in effect or not in effect.
-If it is simply an automatic improvement to a Maneuver or similar, assume that it is in effect unless you say otherwise. 
-
-Unless the Talent is chosen for a School, Talents can not be used for Proficiencies they are not linked to, or when Defaulting from a Proficiency. 
-
-\section*{Talent List}
-\section{Novice Talents}\label{sec:Novice Talents}
-\paragraph{\label{talent:Accuracy}Accuracy}
-	\begin{description}
-		\item [Requirements:] Universal, AGI 4. 
-		\item [Description:] You have a natural knack for hitting in the right spot. It's not always conscious, but your 
-attacks just seem to find their way to your intended target. 
-		\item [Effect:] Whenever you hit with a melee attack that rolls for Hit Location on a Target Zone, you may modify the Hit Location roll by 1. If your opponent has Rapid Reaction, the effects of both Talents cancel 
-out, and the attack lands normally. 
-Additionally, whenever you perform a Joint Thrust Maneuver, add +1 CP to that attack. 
-	\end{description}
-\paragraph{\label{talent:Boar Piercer}Boar Piercer}
-	\begin{description}
-		\item [Requirements:] STR 5, Throwing 
-		\item [Description:] Either you’ve got a thing for pork, or you just really like throwing spears at things. You can 
-throw a spear like nobody’s business, especially in combat. 
-		\item [Effect:] When making a Melee Throw or Fling with a Spear or any variety of Javelin, you inflict +1 
-damage. 
-	\end{description}
-\paragraph{\label{talent:Bonk!}Bonk!}
-	\begin{description}
-		\item [Requirements:] Str 6, 1H or 2H Blunt 
-		\item [Description:] See Title 
-		\item [Effect:] Whenever you Power Attack with a Blunt weapon, you inflict additional Stun with a successful attack equal to the CP spent to increase damage. 
-	\end{description}
-
-\paragraph{\label{talent:Flourishing Drills}Flourishing Drills}
-	\begin{description}
-		\item [Requirements:] Dagger, Sword or Blunt Proficiency (1H and 2H varieties are both eligible). 
-		\item [Description:] You have practiced a series of tight, circular cutting or striking drills to the point that you can perform them in your sleep. In battle, you are a whirlwind of rapid strikes, each snapping into another faster than the eye can see. 
-		\item [Effect:] Whenever you perform a Swinging Maneuver, if in the previous Action you also performed a Swinging Maneuver, the Maneuver rolls 2 additional dice. 
-	\end{description}
-	
-\paragraph{\label{talent:Good Form}Good Form}
-	\begin{description}
-		\item [Requirements:] Noble School, or high-quality tutelage. 
-		\item [Description:] You have been drilled in the performance of a specific maneuver, and can now execute it 
-flawlessly, every time. This is the hallmark of high-quality training in swordsmanship, and it requires 
-more than just practice, but the careful guidance of more experienced masters who can correct 
-inadequacies as they form. 
-		\item [Effect:] Choose one Maneuver. Reduce that Maneuver’s Non-[X] and Non-Range Activation Cost by 1. 
-
-	\end{description}
-\paragraph{\label{talent:Helm-Splitter}Helm-Splitter}
-	\begin{description}
-		\item [Requirements:] Universal. 
-		\item [Description:] Maybe you've spent a lot of time practicing for helmet-cutting competitions, or maybe 
-you've just chopped a lot of wood. You can hit things REALLY hard, as long as you’re swinging straight 
-down. 
-		\item [Effect:] If you use the Power Attack function of Strike, you may spend 1 more CP to increase damage 
-than normal. 
-
-	\end{description}
-\paragraph{\label{talent:Shield-Breaker}Shield-Breaker}
-	\begin{description}
-		\item [Requirements:] 1H or 2H Blunt. 
-		\item [Description:] You have a knack for smashing shields, and have practiced at sundering them to deprive 
-your enemies of their defenses. 
-		\item [Effect:] You inflict +2 damage when making Hew attacks. When passively inflicting damage to a Shield, 
-increase that damage by 1. 
-
-	\end{description}
-\paragraph{\label{talent:Shield Trick}Shield Trick}
-	\begin{description}
-		\item [Requirements:] Shield, STR 4. 
-		\item [Description:] When using a shield, you know how to hide your weapon behind it so that your movements 
-are concealed until the moment you strike. 
-		\item [Effect:] After making a successful Block, Shield Bash, or other shield-related Maneuver, if you perform a 
-Swinging or Thrusting Maneuver with the weapon in your other hand in the next Action, you gain +1 dice 
-to the attack. This includes Melee Shoot.
-
-	\end{description}
-\paragraph{\label{talent:Slowpoke}Slowpoke}
-	\begin{description}
-		\item [Requirements:] Spear or Polearm 
-		\item [Description:] Getting past the range of a spear is hard. You know how to make it even harder.
-		\item [Effect:] When using a Spear or Polearm, when your opponent makes an attack during which he would 
-have to pay a Range Cost, increase the total Range Cost by 1. 
-
-	\end{description}
-\paragraph{\label{talent:Impaler}Impaler}
-	\begin{description}
-		\item [Requirements:] Spear 
-		\item [Description:] Like ol’ Uncle Vlad, you’ve got a thing for impaling people. 
-		\item [Effect:] If you inflict a Level 5 Wound with a any sort of Thrusting attack, you regain 2 CP. 
-
-	\end{description}
-\paragraph{\label{talent:Special Move}Special Move}
-	\begin{description}
-		\item [Requirements:] Universal. 
-		\item [Description:] You have a very unconventional way of performing a certain move. Those who haven't seen 
-it before are put off by the speed and sureness with which you conduct this strange Maneuver, and, at 
-least the first time, it's much harder to defend against. 
-		\item [Effect:] Choose a Maneuver from the following list: Weapon Throw, Blind Toss, Quickdraw, or Melee Shoot. When you use this Maneuver against an individual for the first time, you perform a Special Move 
-version of that Maneuver. A Special Move has no Activation Cost (this includes Range) and its TN is 
-reduced by 1. If a character witnesses you using a Special Move against someone else, on a PER test at 
-RS 3, he can count as having had it used against him before, and as such you can never gain the bonus 
-against him. 
-
-	\end{description}
-\paragraph{\label{talent:Rapid Reaction}Rapid Reaction}
-	\begin{description}
-		\item [Requirements:] Universal, AGI 4. 
-		\item [Description:] While you might not always be able to move out of the way, you sure know how to take a hit better than most. 
-		\item [Effect:] When you are hit by a melee attack in combat, you may alter the roll to see which location is hit by 1 in either direction. If your opponent has Accuracy, the effects of both Talents cancel out, and the 
-attack lands normally. 
-
-
-	\end{description}
-\paragraph{Specialist}\label{talent:Specialist}
-	\begin{description}
-		\item [Requirements:] Universal.
-		\item [Description:] One Maneuver is just more important to you than the rest. You’ve drilled it for countless hours, and can perform it in your sleep. 
-		\item [Effect:] Choose one Advanced Maneuver. Reduce that Maneuver’s Non-[X] and Non-Range Activation Cost by 1.
-	\end{description}
-\paragraph{Smash Punch}\label{talent:Smash Punch}
-	\begin{description}
-		\item [Requirements:] Universal 
-		\item [Description:] You can deliver a monstrous uppercut. This technique favors hook-heavy infighters. 
-		\item [Effect:] When making a Hook Punch, you may elect to perform a Smash. If you do, you inflict +2 
-damage, and your Hit Location is automatically the Lower Head. However, this attack suffers a -1 penalty 
-to Initiative Rolls. 
-	\end{description}
-\paragraph{Head Guard}\label{talent:Head Guard}
-	\begin{description}
-		\item [Requirements:] Universal. 
-		\item [Description:] You’ve got a good handle on protecting your head. The head is the most commonly 
-armored part of the human body, and for good reason: it’s the obvious place to attack with any sort of 
-weapon, and it’s not far from arm-level, making it convenient as well. 
-		\item [Effect:] Whenever Parrying or making a Parry Maneuver to defend an attack targeting your Head, Face, or 
-Neck, you may add 2 dice to the Parry (this does not let you Parry if you have no CP remaining). 
-
-	\end{description}
-\paragraph{Infighter}\label{talent:Infighter}
-	\begin{description}
-		\item [Requirements:] Universal. 
-		\item [Description:] You’re not afraid to get up close and personal. 
-		\item [Effect:] When fighting an enemy inside your weapon's reach, your penalty to attacks is 1 less than it would be normally. When attacking an enemy within their weapon’s reach, their penalty to attacks and 
-defenses is 1 higher than it would be normally. Multiple people with Infighter cannot stack, and if both a 
-combatant and his current target have Infighter, it cancels out. 
-
-	\end{description}
-\paragraph{Counter Attack}\label{talent:Counter Attack}
-	\begin{description}
-		\item [Requirements:] Universal, AGI 4. 
-		\item [Description:] You know what they say about the best defense... 
-		\item [Effect:] If you attempt to Steal Initiative to launch an attack against an opponent who is already attacking you, you gain a +1 dice bonus to the Initiative test.
-	\end{description}
-
-\section{Journeyman Talents}\label{sec:Journeyman Talents}
-\paragraph{\label{talent:Art of Eight Limbs}Art of Eight Limbs}
-	\begin{description}
-		\item [Requirements:] Pugilism, Wit 6 
-		\item [Description:] How is it even possible to attack from a position like that!? 
-		\item [Effect:] You can Feint from any Unarmed Maneuver into any other Unarmed Maneuver. 
-	\end{description}
-	
-\paragraph{\label{talent:Bear Piercer}Bear Piercer}
-	\begin{description}
-		\item [Requirements:] STR 5, Spear, Boar Piercer 
-		\item [Description:] You’re really good at throwing spears. REALLY good. 
-		\item [Effect:] When making a Melee Throw or Fling with a Spear or any variety of Javelin, any target you hit must make a Stability Test at RS 2+BS or be rendered prone. 
-	\end{description}
-	
-\paragraph{\label{talent:Grappling at the Sword}Grappling at the Sword}
-	\begin{description}
-		\item [Requirements:] Sword or Blunt proficiency (1H or 2H varieties are both eligible). 
-		\item [Description:] You know how to use a sword in the grapple, using the weapon to gain leverage and lock joints, and also how to avoid the weapon getting in your way during a struggle on the ground. 
-		\item [Effect:] You may use an M Reach weapon in a Grapple without dropping it. This includes longer weapons that are being shortened with the Halfsword Maneuver. You may also ignore the Reach Costs for making 
-attacks or defenses using weapons in the Grapple.
-
-	\end{description}
-\paragraph{\label{talent:Swift Sword}Swift Sword}
-	\begin{description}
-		\item [Requirements:] Sword proficiency (1H or 2H varieties are both eligible), AGI 5. 
-		\item [Description:] You’ve got a swift hand when it comes to swords. 
-		\item [Effect:] You gain a +1 bonus to Initiative contests when using a 1H or 2H Sword. 
-
-	\end{description}
-\paragraph{\label{talent:Roll With It}Roll With It}
-	\begin{description}
-		\item [Requirements:] Universal, AGI 5. 
-		\item [Description:] It's natural to cringe from potential injury, but your reactions are much more practical, and you have a natural understanding of how force transfers from one body to another. You instinctively roll 
-away from blows and other sources of harm, and this tends to lessen their effects on you. 
-		\item [Effect:] Once per Round, if you are struck by an attack (missile attacks, including those made in melee, 
-are not eligible) that would inflict damage, and you are not currently Prone, you may immediately become 
-Prone to reduce the damage inflicted by your AGI. This has all the normal effects of being made Prone. 
-
-	\end{description}
-\paragraph{\label{talent:Ground Wrestler}Ground Wrestler}
-	\begin{description}
-		\item [Requirements:] Wrestling. 
-		\item [Description:] You’re more practiced in grappling on the ground than standing. Many fighters fear this 
-kind of fight for how it can go disastrously wrong, but you revel in it. 
-		\item [Effect:] When in a Clinch, and the fight has gone to the ground, you do not suffer the associated 
-Activation Cost penalty for Clinch Maneuvers, and you add 1.5 your Strength instead of 1.0 to your CP 
-(i.e., when you go to Ground, if you have 4 Strength normally, you gain a bonus of 6 to your CP as long 
-as you are on the Ground.) 
-
-	\end{description}
-\paragraph{\label{talent:Stepping Parry}Stepping Parry}
-	\begin{description}
-		\item [Requirements:] MOB 7. 
-		\item [Description:] You have learned to step close, to take the initiative, and most importantly, how to do so 
-through clever manipulation of the opponent’s weapon, and its position relative to you. 
-		\item [Effect:] Add the following section to your Parry or Parrying Maneuver with one Proficiency. 
-		\item [Special:] On success, you may change the range between yourself and your opponent by 1 for every 2 BS.
-
-	\end{description}
-\paragraph{\label{talent:Kebab Master}Kebab Master}
-	\begin{description}
-		\item [Requirements:] Impaler Talent, Spear 
-		\item [Description:] You know a thing or two about skewering things. 
-		\item [Effect:] If you inflict a Piercing Wound with a Thrusting attack, increase the Level of the Wound by 1. 
-
-	\end{description}
-\paragraph{\label{talent:Rapid Strike}Rapid Strike}
-	\begin{description}
-		\item [Requirements:] Universal, AGI 5. 
-		\item [Description:] You're very skilled at attacking with weapons in both hands, striking with one while the other returns to an ideal position to strike from, and repeating this over and over to strike fast, hard, and often.
-		\item [Effect:] Whenever you make a Double Attack, you gain a +1 CP bonus to the Off-Hand attack. Each consecutive Double Attack increases this bonus by +1, to a maximum of 4. 
-
-	\end{description}
-\paragraph{\label{talent:Spartan Sole}Spartan Sole}
-	\begin{description}
-		\item [Requirements:] Pugilism, Str 5 
-		\item [Description:] Talk to the Sandal, ‘cause the shield don’t care. 
-		\item [Effect:] Whenever you force a Stability Test with a Kick to knock your opponent down, increase the RS of that Test by 2. 
-
-	\end{description}
-\paragraph{\label{talent:Slippery}Slippery}
-	\begin{description}
-		\item [Requirements:] Universal, AGI 6. 
-		\item [Description:] You know how to move. In combat you're fast, fluid, and can change direction on a dime. 
-Your enemies often find themselves looking at nothing—and nothing is the last thing they see. 
-		\item [Effect:] As long as you are Unencumbered, you gain a -1 TN when performing the Outmaneuver and Thread the Needle Maneuvers.
-
-	\end{description}
-\paragraph{\label{talent:Quick Reload}Quick Reload}
-	\begin{description}
-		\item [Requirements:] Pistol or Arquebus/Musket, AGI 5. 
-		\item [Description:] A great deal of practice and some finely-tuned muscle memory have made reloading a breech-loading firearm into one quick, fluid motion. 
-		\item [Effect:] When performing the Reload Maneuver, you gain an additional automatic success for every two successes you roll. This may cause your Reload’s total successes exceed the actual number of dice you rolled. 
-
-	\end{description}
-\paragraph{\label{talent:Spear-Sunderer}Spear-Sunderer}
-	\begin{description}
-		\item [Requirements:] Universal, STR 5. 
-		\item [Description:] Cleaving through the shafts of spears, axes, polearms and the like isn’t easy, but it is certainly possible.
-		\item [Effect:] You inflict +2 damage when making Break attacks. 
-
-	\end{description}
-\paragraph{\label{talent:Straight Blast}Straight Blast}
-	\begin{description}
-		\item [Requirements:] Pugilism, AGI 6. 
-		\item [Description:] Commonly associated with Wing Chun and certain styles of boxing, you have mastered a rapid, piston-like punching style that can wear down any defense. Combined with a strong center and 
-good footwork, this technique can be devastating. 
-		\item [Effect:] When making a One-Two Punch with a Straight Punch into another Straight Punch, you may reduce the Activation Cost of the Maneuver chained from the first by 1. 
-
-	\end{description}
-\paragraph{\label{talent:Rolling Hooks}Rolling Hooks}
-	\begin{description}
-		\item [Requirements:] Pugilism, STR 6. 
-		\item [Description:] To the untrained eye, a feral and apelike series of haymakers. But to the trained boxer, this technique is a monstrous culmination of brute strength, skill, and pugilist rhythm. 
-		\item [Effect:] When making a One-Two Punch with a Hook Punch into another Hook Punch, you may reduce the Activation Cost of the Maneuver chained from the first by 1. 
-
-	\end{description}
-\paragraph{\label{talent:Long Jab}Long Jab}
-	\begin{description}
-		\item [Requirements:] Pugilism, INT 5. 
-		\item [Description:] You are a more measured fighter, preferring to fight at longer ranges, peppering opponents with strikes intended to wear them down, and only striking them when they present an opening. 
-		\item [Effect:] Your Straight Punch Maneuvers (not the Hook Punch or One-Two Punch) are made at +1 Reach.
-
-	\end{description}
-\paragraph{\label{talent:Ironwall}Ironwall}
-	\begin{description}
-		\item [Requirements:] Universal, END 5. 
-		\item [Description:] You’re hard to dislodge from your feet. It takes a singular force to put you on the ground.
-		\item [Effect:] You gain +2 bonus dice to Stability tests made to avoid falling over or being shoved, pushed, or dislodged from your position. 
-
-	\end{description}
-\paragraph{\label{talent:Shield Charge}Shield Charge}
-	\begin{description}
-		\item [Requirements:] Shield, STR 5, MOB 8, Superior Shield Bash. 
-		\item [Description:] When slamming a shield properly into someone’s face, you know how to throw your shoulder into it, potentially flinging them from their feet. 
-		\item [Effect:] When you force a Stability test through a Superior Shield Bash, add 1 to the Stability test RS. 
-
-	\end{description}
-\paragraph{\label{talent:Rim Bash}Rim Bash}
-	\begin{description}
-		\item [Requirements:] Shield, STR 5, MOB 8, Superior Shield Bash, Shield Charge 
-		\item [Description:] You know just the right spot to get that extra bit of Oomph out of a shield bash. 
-		\item [Effect:] When you force a Stability test through a Superior Shield Bash, add 1 to the Stability test RS. 
-This is cumulative with Shield Charge. 
-	\end{description}
-\section{Master Talents}\label{sec:Master Talents}
-\paragraph{\label{talent:It Was On Purpose!}It Was On Purpose!}
-	\begin{description}
-		\item [Requirements:] Missile Weapon, WIT 6.
-		\item [Description:] No really, it was totally intentional! You seem to have a skill for putting small missiles 
-through narrow slits and chinks in armor. You’re every knight’s worst nightmare. 
-		\item [Effect:] Whenever a Shoot, Melee Shoot or Fling attack you make hits an opponent on a Hit Location 
-where the target’s armor has a Weak Point, the attack inflicts +2 damage. This does not apply to Scatter 
-damage, except for the primary shot from the weapon. 
-
-	\end{description}
-\paragraph{\label{talent:Whirlwind Defense}Whirlwind Defense}
-	\begin{description}
-		\item [Requirements:] Spear, Polearm, 2H Sword or 2H Blunt, AGI 6 
-		\item [Description:] You can move your weapon in a whirlwind of defensive patterns, intercepting enemy attacks as you do. 
-		\item [Effect:] There is no limit to the number of Parries you can make with a weapon in one Action. After any successful Parry, you regain 2 CP. 
-
-	\end{description}
-\paragraph{\label{talent:Bad War}Bad War}
-	\begin{description}
-		\item [Requirements:] 2H Sword or Polearm, STR 6, AGI 6. 
-		\item [Description:] It’s a rare man who can survive in the Bad War. When two pike formations meet, and the world turns into an infinity of spear points, halberds, katzbalgers and screaming, dying men, they’ll be glad they brought you along. 
-		\item [Effect:] You may use Cleaving Blow with Breaks in addition to Swings. Each time you activate Cleaving Blow, you regain 2 CP. 
-
-	\end{description}
-\paragraph{\label{talent:Stern}Stern}
-	\begin{description}
-		\item [Requirements:] Universal, HLT 6. 
-		\item [Description:] Few people can match your physical resolve. 
-		\item [Effect:] Once per Combat, at any Refresh, you may choose to ignore all Pain, and regain your CP as normal. Next Refresh, the Pain returns in full. 
-
-	\end{description}
-\paragraph{\label{talent:Superior Void}Superior Void}
-	\begin{description}
-		\item [Requirements:] Universal, AGI 6. 
-		\item [Description:] You don’t even remember what it feels like to fear being hit. 
-		\item [Effect:] You perform all Void maneuvers at -1 TN. 
-
-	\end{description}
-\paragraph{\label{talent:Juggernaut}Juggernaut}
-	\begin{description}
-		\item [Requirements:] Universal, END 6. 
-		\item [Description:] ‘Even if one’s head were to be cut off, he should be able to perform one more action with certainty.’ 
-		\item [Effect:] Once per Session, you may elect to delay the full effect of any Wound until the end of the Action. 
-However, if the Wound inflicted has a “Limb Severed” or “Death” result, halve the CP of any Maneuvers 
-you currently have declared, but then resolve them as normal. 
-
-	\end{description}
-\paragraph{\label{talent:Jarring Blows}Jarring Blows}
-	\begin{description}
-		\item [Requirements:] Universal, STR 6. 
-		\item [Description:] You really know how to hit people, and can throw enemies off their feet with powerful blows. 
-		\item [Effect:] Whenever any Maneuver you perform would cause an opponent to make a Stability test or become Prone (including Overshock) you increase the RS of that test by 2. 
-
-	\end{description}
-\paragraph{\label{talent:Bruiser}Bruiser}
-	\begin{description}
-		\item [Requirements:] Universal. 
-		\item [Description:] A veteran of many battles, you know where to strike to offset a foe. 
-		\item [Effect:] Any Wounds you cause with Unarmed or Melee Weapon Attacks inflict +1 Stun per level of the Wound. 
-
-	\end{description}
-\paragraph{\label{talent:Flicker Jab}Flicker Jab}
-	\begin{description}
-		\item [Requirements:] Pugilism. AGI 8 
-		\item [Description:] Your jabs are so rapid, and come from such unorthodox angles, that most opponents cannot even perceive them. 
-		\item [Effect:] If you declare a Straight Punch with fewer than 5 CP, your opponent must make a Perception Test at RS 3 in order to perform any sort of Defense against it. You may not in any way increase the CP of the Straight Punch once this Perception Test is made.
-	\end{description}
-\paragraph{\label{talent:The Spear that Pierced the Sky}The Spear that Pierced the Sky}
-	\begin{description}
-		\item [Requirements:] Spear, Kebab Master Talent 
-		\item [Description:] Your capabilities with the spear are compelling proof that God is a lancer. 
-		\item [Effect:] Range Costs paid by opponents making attacks against you are doubled. 
-	\end{description}
 
 \chapter{Adventuring}\label{ch:adventuring} %ADVENTURING CHAPTER
 \startcontents[chapters]
@@ -10902,7 +10906,7 @@ If a Character goes for over an hour without losing a point of HLT, any remainin
 
 \subsubsection{Treating Wounds}
 In order to stop a wound from bleeding, and to reduce the Pain it causes, the \nameref{skill:Surgery} skill must come into 
-play. A Surgery check made at appropriate difficulty for wound level Treats the wound. Treated wounds 
+play. A \nameref{skill:Surgery} check made at appropriate difficulty for wound level Treats the wound. Treated wounds 
 have their \nameref{sec:Blood Loss} reduced to 0 (unless reopened somehow), and their Pain reduced by half. Treated 
 wounds begin healing immediately. Healing time depends on the character’s maximum normal HLT, and 
 the level of the wound. 
@@ -11442,7 +11446,7 @@ Character is rendered unconscious for 1d10*6 minutes. Increase the RS of any fur
 This Wound suffers an increased~\nameref{sec:Infection}~Risk equal to X.
 
 \vspace{-5pt}\paragraph[Total]{\label{par:Stun: Total}Stun: Total}---\quad
-Automatically reduces Combat Pool to 0, and immediately renders you Prone without a test.
+Automatically reduces Combat Pool to 0, and immediately renders you \nameref{par:Prone} without a test.
 
 \vspace{-5pt}\paragraph[Total]{\label{par:Pain: Total}Pain: Total}---\quad
 Your effective Pain is considered infinite until this Wound has healed.
