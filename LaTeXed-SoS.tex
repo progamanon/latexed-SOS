@@ -3,7 +3,7 @@
 \RequirePackage[l2tabu,orthodox]{nag}
 \documentclass[oneside,11pt,english]{book}
 \usepackage{babel}
-\usepackage[section,below]{placeins}
+\usepackage[section]{placeins}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{xcolor}
@@ -4486,7 +4486,7 @@ In the above \autoref{tab:Social Classes and Wealth}, the number in brackets is 
 	\centering
 	\caption{Wealth/Asset/Gold Chart}
 	\label{tab:Wealth/Asset/Gold Chart}
-	\begin{tabu} spread 0pt {X[-2,c]X[2]X[-1]}
+	\begin{tabu} spread 0pt {X[-2,c]X[2]X[-1,r]}
 \rowfont[c]{}Wealth Spent &Asset Gained &Gold Gained\\\toprule
 1 &Minor Asset &6 gp\\
 2 &Moderate Asset &12 gp\\
@@ -4658,7 +4658,7 @@ cost. Schools cost more Arc Points for a character to take, but they’re much c
 allowing a character to have multiple high-level Proficiencies at a lower cost. 
 
 There are several different kinds of Schools, each with a different structure and unique benefits, as well as 
-their own costs for buying in (either at Character Creation or afterwards) and leveling. 
+their own costs for buying in (either at Character Creation or afterwards) and leveling.
 
 \paragraph{Becoming part of a School}---\quad
 A character can be part of a School at Character Creation, or can form a School during gameplay, as long 
@@ -4694,7 +4694,7 @@ level, and representing the different focus that the School places on different 
 	\emph{Gallant is part of a Self-Taught School that has 2H Sword at 0, Dagger at -1 and 1H Sword at 1. His School Level is 8, which means that he effectively has 2H Sword at 8 (8+0), Dagger at 7 (8-1) and 1H Sword at 9 (8+1)}
 \end{quote}
 
-\section{School Types}
+\section*{School Types}
 
 \subsection{Self-Taught}
 You taught yourself--or learned through hard knocks--that it’s better to have a few Jacks up your sleeve 
@@ -5129,7 +5129,7 @@ Unless the Talent is chosen for a School, Talents can not be used for Proficienc
 
 \section*{Talent List}
 \section{Novice Talents}\label{sec:Novice Talents}
-\paragraph{\label{talent:Accuracy}Accuracy}
+\paragraph{Accuracy}\label{talent:Accuracy}
 \begin{description}
 	\item [Requirements:] Universal, AGI 4. 
 	\item [Description:] You have a natural knack for hitting in the right spot. It's not always conscious, but your 
@@ -5138,7 +5138,7 @@ Unless the Talent is chosen for a School, Talents can not be used for Proficienc
 	out, and the attack lands normally. 
 	Additionally, whenever you perform a Joint Thrust Maneuver, add +1 CP to that attack. 
 \end{description}
-\paragraph{\label{talent:Boar Piercer}Boar Piercer}
+\paragraph{Boar Piercer}\label{talent:Boar Piercer}
 \begin{description}
 	\item [Requirements:] STR 5, Throwing 
 	\item [Description:] Either you’ve got a thing for pork, or you just really like throwing spears at things. You can 
@@ -5146,14 +5146,14 @@ Unless the Talent is chosen for a School, Talents can not be used for Proficienc
 	\item [Effect:] When making a Melee Throw or Fling with a Spear or any variety of Javelin, you inflict +1 
 	damage. 
 \end{description}
-\paragraph{\label{talent:Bonk!}Bonk!}
+\paragraph{Bonk!}\label{talent:Bonk!}
 \begin{description}
 	\item [Requirements:] Str 6, 1H or 2H Blunt 
 	\item [Description:] See Title 
 	\item [Effect:] Whenever you Power Attack with a Blunt weapon, you inflict additional Stun with a successful attack equal to the CP spent to increase damage. 
 \end{description}
 
-\paragraph{\label{talent:Flourishing Drills}Flourishing Drills}
+\paragraph{Flourishing Drills}\label{talent:Flourishing Drills}
 \begin{description}
 	\item [Requirements:] Dagger, Sword or Blunt Proficiency (1H and 2H varieties are both eligible). 
 	\item [Description:] You have practiced a series of tight, circular cutting or striking drills to the point that you can perform them in your sleep. In battle, you are a whirlwind of rapid strikes, each snapping into another faster than the eye can see. 
@@ -5445,7 +5445,6 @@ Unless the Talent is chosen for a School, Talents can not be used for Proficienc
 	\item [Requirements:] 2H Sword or Polearm, STR 6, AGI 6. 
 	\item [Description:] It’s a rare man who can survive in the Bad War. When two pike formations meet, and the world turns into an infinity of spear points, halberds, katzbalgers and screaming, dying men, they’ll be glad they brought you along. 
 	\item [Effect:] You may use Cleaving Blow with Breaks in addition to Swings. Each time you activate Cleaving Blow, you regain 2 CP. 
-	
 \end{description}
 \paragraph{\label{talent:Stern}Stern}
 \begin{description}
@@ -6385,9 +6384,9 @@ have Special qualities which affects whether firearms can be fired with simultan
 firearms are reloaded. 
 
 \clearpage
-\section{Missile Weapons}
-\subsection{Bows}
-Explain how weapons are used/what is required for it. 
+\section*{Missile Weapons}
+\section{Bows}
+Explain how weapons are used/what is required for it.
 \begin{table}[hb]
 	\centering
 	\caption{Bows}
@@ -6403,7 +6402,7 @@ Zellish Wheelbow &Bow &40 &7 &7p &5 &- &3 &5 gp\\
 	\end{tabu}
 \end{table}
 
-\begin{table}
+\begin{table}[hb]
 	\centering
 	\caption{Ammunition for Bows and Crossbows}
 	\label{tab:Ammunition for Bows and Crossbows}
@@ -6420,27 +6419,27 @@ Swallowtail &-1 Required STR, Winged 1 &8/10 &4 sp/20\\
 	\end{tabu}
 \end{table}
 
-\subsection{Crossbows}
+\section{Crossbows}
 Explain how weapons are used/what is required for it. 
-\begin{table} [!hb] %CROSSBOWS LOOKS LIKE SHIT
+\begin{table} [hb] %CROSSBOWS LOOKS LIKE SHIT
 	\centering
 	\caption{Crossbows}
 	\label{tab:Crossbows}
-	\begin{tabu} to \linewidth { X X[-2,c]X[-2,c]X[-2,c]X[-2,c]  X[4] X[-2]X[-2]}
-		Weapon Type & Range & Missile TN           & Damage & Span & Spanning Tool               & Wt & Cost  \\
-		Crossbow    & 20    & 6                    & 10p    & 25   & Crank, Windlass             & 3  & 2 gp  \\
-		Crossbow    & 5     & 5                    & 4p     & 2    & Lever, Screw                & 0  & 5 sp  \\
-		Crossbow    & 15    & 6                    & 8p     & 10   & Hand, Lever, Stirrup, Crank & 2  & 1 gp  \\
-		Crossbow    & 10    & 6                    & 7p     & 6    & Hand, Lever, Stirrup        & 1  & 15 sp \\
-		Crossbow    & 10    & 6                    & 6p     & 4    & Lever                       & 1  & 10 sp \\
-		Crossbow    & 25    & 10(7)\textasciitilde & 15p    & 40   & Winch                       & 5  & 5 gp
+	\begin{tabu} to \linewidth {X X[-1] X[-2,c]X[-2,c]X[-2,c]X[-2,c]  X X[-2]X[-2]}
+		Weapon Name& Weapon Type & Range & Missile TN           & Damage & Span & Spanning Tool               & Wt & Cost  \\\toprule
+		Arbalest&Crossbow    & 20    & 6                    & 10p    & 25   & Crank, Windlass             & 3  & 2 gp  \\
+		Hand Crossbow&Crossbow    & 5     & 5                    & 4p     & 2    & Lever, Screw                & 0  & 5 sp  \\
+		Heavy Crossbow&Crossbow    & 15    & 6                    & 8p     & 10   & Hand, Lever, Stirrup, Crank & 2  & 1 gp  \\
+		Hunting Crossbow&Crossbow    & 10    & 6                    & 7p     & 6    & Hand, Lever, Stirrup        & 1  & 15 sp \\
+		Light Crossbow&Crossbow    & 10    & 6                    & 6p     & 4    & Lever                       & 1  & 10 sp \\
+		Manuballista/Samostrel&Crossbow    & 25    & 10(7)\textasciitilde & 15p    & 40   & Winch                       & 5  & 5 gp
 	\end{tabu}
 \vspace{5pt}	\caption*{\textasciitilde~This weapon’s Missile TN is 10 if it is fired while moving, standing normally, from a horse, and so on. In order to use TN 7, it must be Braced against the ground, a wall, on a stand or rest, and so on.}
 \end{table}
-\subsubsection{Ammunition}
+\subsection{Ammunition}
 Bows and Crossbows use the same ammunition. Refer to \autoref{tab:Ammunition for Bows and Crossbows} under Bow - Ammunition. %COULD MAYBE USE REF TO BOW - AMMUNITION
 
-\begin{table}
+\begin{table}[ht]
 	\centering
 	\caption{Spanning Tools}
 	\label{tab:Spanning Tools}
@@ -6456,7 +6455,7 @@ Bows and Crossbows use the same ammunition. Refer to \autoref{tab:Ammunition for
 	\end{tabu}
 \end{table}
 
-\subsection{Firearms}
+\section{Firearms}
 Explain how weapons are used/what is required for it. 
 \begin{table}[!hb]
 	\caption{Firearms}
@@ -6491,7 +6490,7 @@ Spike &+2 Damage, -1 Missile TN, +3 Range, +10 Load &1/10 &1 cp/Each\\
 	\end{tabu}
 \end{table}
 
-\subsubsection{Ammunition Capacity}
+\subsection{Ammunition Capacity}
 \paragraph{Double}---\quad 2 Shots - Wt +50\% Cost
 
 Can be fired twice before reloading, or both barrels can be fired simultaneously. 
@@ -6511,8 +6510,9 @@ This weapon now has an internal magazine that chambers X rounds (plus the one lo
 After firing a round, the next round can be fired without Reloading until all the rounds in the magazine have been fired. Each purchase of this Capacity increases X by 1, to a maximum of 15.
 
 When performing the Reload Maneuver, it is possible to reload more than 1 round into the magazine. If the successes rolled on the Reload are higher than the Load value of the weapon, then for each time the successes multiply the Load value, an additional round is loaded.
-
-(Example: A Dragon Pistol with a Magazine has a Load value of 10. If a highly capable shooter were to roll 20 successes on a Reload Action, then he could reload 2 rounds into the gun at once!)
+	\begin{quote}
+		\emph{A Dragon Pistol with a Magazine has a Load value of 10. If a highly capable shooter were to roll 20 successes on a Reload Action, then he could reload 2 rounds into the gun at once!}
+	\end{quote}
 
 This weapon can now Rapid Fire.
 
@@ -6539,7 +6539,7 @@ This modification changes the size and power of the weapon’s ammunition instea
 Weapon Damage is increased by X. Missile TN is increased by X.
 
 
-\subsubsection{Firing Mechanism}
+\subsection{Firing Mechanism}
 \begin{table}[hb]
 	\centering
 	\caption{Firing Mechanism}
@@ -6582,7 +6582,7 @@ Wheellock &-1 Missile TN, Wheel Breaks on Critical Failure
 \vspace{5pt}\caption*{\#~These weapons are several centuries more advanced than the rest, and would not be available in any sort of medieval campaign.}
 \end{table}
 
-\begin{table}
+\begin{table}[ht]
 	\centering
 	\caption{Firearm Loading Mechanism}
 	\label{tab:Loading Mechanism}
@@ -6595,7 +6595,7 @@ Papier-Mâché Cartridge &TN 4 &300\% \\
 	\end{tabu}
 \end{table}
 
-\subsection{Throwing Weapons}
+\section{Throwing Weapons}
 Explain how weapons are used/what is required for it.
 
 \begin{table}[!hb]
@@ -6650,7 +6650,7 @@ Shoot Maneuver, roll for Hit Location on appropriate Thrust Table for Melee Shot
 Damage Y. Attacks that hit the same Hit Location combine their Damage before subtracting AV and 
 TOU. 
 
-Hard Armor without the Mail quality halves Scatter damage. 
+Hard Armor without the Mail quality halves Scatter damage.
 
 No special rules apply to these additional attacks unless they are listed after X/Y. Scattered attacks do 
 not gain BS as damage. 
@@ -6663,21 +6663,21 @@ Scatterfire in the Combat chapter)
 Voids made against attacks with Scatter (if they can be made at all, i.e. with Stains of Time) have an 
 additional Activation Cost equal to X. 
 
-Shield Stick 
-
+\vspace{-5pt}\paragraph{Shield Stick}\label{rangequal:Shield Stick}
+---\quad 
 If a Fling attempt made by this missile is blocked, or if it hits an area protected by a shield’s passive 
 AV, it becomes ‘stuck’ in the shield. The shield’s Block TN is increased by 2, and its Weight is 
 increased by 2 as well. Removing the missile is very difficult, requiring several minutes of work that 
 cannot be done in combat. 
 
-Shock [X] 
+\vspace{-5pt}\paragraph[Shock]{Shock [X]}\label{rangequal:Shock [X]}
+---\quad 
 Successful hit inflicts Stun equal to X. 
 
-Winged 
-[X] 
-
+\vspace{-5pt}\paragraph[Winged]{\label{rangequal:Winged [X]}Winged [X]}
+---\quad
 When this weapon hits, it inflicts 1 bonus damage per X BS scored. This damage is not inflicted if the 
-missile hits Hard armor. The Textile quality of armor is negated by a Winged missile. 
+missile hits Hard armor. The Textile quality of armor is negated by a Winged missile.
 
 \chapter{Prosthetics}\label{ch:Prosthetics} %WHOLE PROSTHETICS CHAPTER
 \startcontents[chapters]
@@ -10657,17 +10657,17 @@ Sometimes combat will occur on uneven or otherwise irregular terrain. When fight
 at an RS determined by the nature of the terrain. 
 
 Failure inflicts Stun equal to the amount of successes by which the roll failed. This can cause Overshock and tripping!
+
 \subsubsection{Terrain} %TERRAIN
-Loose Gravel, Light Mud, Slippery Marble
-Deep Mud, Shallow Water, Potholes
-Collapsing Floor, Intense Mud, Deliberate Pitfalls
-Difficult Terrain RS
-4
-6
-8
+%Difficult Terrain RS
+%Loose Gravel, Light Mud, Slippery Marble &4\\
+%Deep Mud, Shallow Water, Potholes &6\\
+%Collapsing Floor, Intense Mud, Deliberate Pitfalls &8\\
+
 Terrain which might provide one character with a defensive bonus (a wall or rampart being defended, an
 overturned table being fought from behind, etc.) the attacker must pay a CP cost to make an attack,
 determined by the size and nature of the defensive work.
+
 Defense
 Overturned Table, Fence
 CP Cost for Attacker
