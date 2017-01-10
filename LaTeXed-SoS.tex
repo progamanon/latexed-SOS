@@ -2853,10 +2853,11 @@ your character creation attribute caps by 4.
 
 Unless specified otherwise, a higher level of a Boon or Bane replaces the effects of its lower levels.
 \clearpage
-\section{Boons List}
-	\begin{longtabu} spread 0pt {XXX[-1,r]}
-			\caption{List of Boons}
-			\label{tab:boons list}\\
+\section{Boons List}\vspace{-15pt}
+	\begin{longtabu} spread 0pt {X X X[-1,r]}
+		\captionsetup{textformat=empty, labelformat=blank}
+		\caption{List of Boons} \vspace{-15pt}
+		\label{tab:boons list}\\
 		\rowfont[c]{}Boon& Description&B\&B Point / Arc Point Cost\\\toprule
 		\nameref{boon:Allies}*&&1/5/10\\
 		\nameref{boon:Ambidextrous}& Character Creation only& 3\\
@@ -2888,9 +2889,11 @@ Unless specified otherwise, a higher level of a Boon or Bane replaces the effect
 		\nameref{boon:True Grit} & Character Creation only &2/4/6\\
 		\nameref{boon:Rich}& Character Creation only &1/3/5\\
 \end{longtabu}
-\section{Banes List}
+\clearpage
+\section{Banes List}\vspace{-15pt}
 	\begin{longtabu} spread 0pt {X[1.5] X X[-2,r]}
-		\caption{List of Banes}
+		\captionsetup{textformat=empty, labelformat=blank}
+		\caption{List of Banes} \vspace{-15pt}
 		\label{tab:Banes List}\\
 \rowfont[c]{}	Bane&Description&B\&B Point / Arc Point Cost\\\toprule
 \nameref{bane:Arrow Magnet}	&&3\\
@@ -2943,9 +2946,9 @@ A character can appeal to one of their Allies for aid, but that is no guarantee 
 will be sufficient for the task at hand. More often, Allies will be able to tie up loose ends, or swoop in to 
 save a character's bacon when things get too hairy. 
 \begin{itemize}
-\item 1: Minor local power. Crime boss, mayor, town sheriff, and so on. 
-\item 5: Moderate regional power. Baron, trade tycoon, colonel in the army, and so on. 
-\item 10: Major international power. King, powerful cardinal, the Pope, and so on. 
+\item [1:] Minor local power. Crime boss, mayor, town sheriff, and so on. 
+\item [5:] Moderate regional power. Baron, trade tycoon, colonel in the army, and so on. 
+\item [10:] Major international power. King, powerful cardinal, the Pope, and so on. 
 \end{itemize}
 \paragraph{\label{boon:Ambidextrous}Ambidextrous}---\quad \textbf{(3)}\par
 \textit{Character Creation only}\par
@@ -2957,9 +2960,9 @@ penalties.
 \paragraph{\label{boon:Animal Affinity}Animal Affinity}\!---\quad \textbf{(2/4/6)}\par
 A character with this ability has an unusual affinity for animals. 
 \begin{itemize}
-	\item 2: Gain a +2 bonus to CHA when interacting with animals, and to Ride checks. 
-	\item 4: As above, and may select one type of domestic animal (i.e. dogs, cats, horses). These animals will always cooperate with you, within reason. 
-	\item 6: As above, and you may select one type of wild animal (i.e. wolves, cougars, bears). These animals will never attack you unprovoked, and may even come to your aid in certain situations. 
+	\item [2:] Gain a +2 bonus to CHA when interacting with animals, and to Ride checks. 
+	\item [4:] As above, and may select one type of domestic animal (i.e. dogs, cats, horses). These animals will always cooperate with you, within reason. 
+	\item [6:] As above, and you may select one type of wild animal (i.e. wolves, cougars, bears). These animals will never attack you unprovoked, and may even come to your aid in certain situations. 
 \end{itemize}
 
 \paragraph{\label{boon:Beautiful}Beautiful}---\quad \textbf{(3/6)}\par
@@ -2967,18 +2970,16 @@ You're pretty. Really pretty. A character with this Boon is easy on the eyes. Th
 and while different cultures have greatly different standards of beauty, for the most part, this is a universal 
 Boon. Beautiful people are generally treated better, as they make a good first impression. 
 
-\begin{itemize}
-\item [2:] You gain a +2 bonus to CHA when dealing with everyone, if your beauty is apparent. You gain a +4 bonus to CHA when dealing with characters who would find you sexually attractive.
-\item [4:] You cause carriage crashes. You gain a +3 bonus to CHA when dealing with everyone, if your beauty is apparent. You gain a +6 bonus to CHA when dealing with characters who would find you sexually attractive. Beauty of this caliber often comes with unwanted attention.
-\end{itemize}
+	\begin{itemize}
+		\item [2:] You gain a +2 bonus to CHA when dealing with everyone, if your beauty is apparent. You gain a +4 bonus to CHA when dealing with characters who would find you sexually attractive.
+		\item [4:] You cause carriage crashes. You gain a +3 bonus to CHA when dealing with everyone, if your beauty is apparent. You gain a +6 bonus to CHA when dealing with characters who would find you sexually attractive. Beauty of this caliber often comes with unwanted attention.
+	\end{itemize}
 \paragraph{\label{boon:Berserker}Berserker}---\quad \textbf{(6/12)}\par
 You are prone to flying into uncontrollable spells of bloodthirsty, shield-gnawing lunacy, during which 
 you cannot be prevented from cleaving every head within arm's reach from its shoulders. 
 
-
 Berserk rages last for 3d10 Rounds. To come down from a berserk rage early, you must initiate a WIL 
 test at RS 5. Success ends the Berserk Rage. This can be attempted once per Round. 
-
 
 How you enter a berserk rage varies depending on the level of this Boon, but the effects of going berserk are generally the same. 
 \begin{itemize}
@@ -3007,29 +3008,26 @@ Your eagerness to join battle has stripped from you any form of hesitation or re
 the kill. Whenever you take an Initiative test brought on by going Red/Red (and only Red/Red – tests forced by maneuvers do NOT count) you gain +2 dice for that test. There is no limit to the number of 
 times this can occur in combat.
 
-
-Any character who faces you in combat will immediately become aware that you have this Boon unless you pass a Subterfuge vs PER contest. 
+Any character who faces you in combat will immediately become aware that you have this Boon unless you pass a Subterfuge vs PER contest.
 \paragraph{\label{boon:Brave}Brave}---\quad\textbf{(3)}\par
 You're courageous and firm of heart. Whenever you would need to make a WIL test vs Fear, you may 
 choose instead to automatically pass the test. This does not apply to any Fear tests involving magic, however you gain +2 dice to your roll.
 \paragraph{\label{boon:Contacts}Contacts}---\quad\textbf{(1/4/6/8)}\par
 You have access to a network of informants, friends of friends, cousins, and entire flocks of talkative little birds that you can call upon for information.
 
-
 You can use Contacts to gain insight and intelligence on any subject you please. Usually this requires the expenditure of a few coins (rarely more than 2-3 sp per RS of the roll, see below), and may take anywhere from ten minutes to a week or so. 
-
 
 Roll your CHA at the TN decided by your level in this Boon, and if you meet the RS, you gain the 
 information you need, with more BS supplying more information. The GM can set the RS from 1 
 (effortless) to 8 (world-shatteringly obscure). If there is absolutely no way that information can be gained 
 through Contacts, it should be evident after the first roll. 
 
-\begin{itemize}
-\item 1: TN 7: You know some guys. 
-\item 4: TN 6: You know some guys who know some guys. 
-\item 6: TN 5: You know some guys in every city and service in the country.
-\item 8: TN 4: You know everyone.
-\end{itemize}
+	\begin{itemize}
+		\item 1: TN 7: You know some guys. 
+		\item 4: TN 6: You know some guys who know some guys. 
+		\item 6: TN 5: You know some guys in every city and service in the country.
+		\item 8: TN 4: You know everyone.
+	\end{itemize}
 \paragraph{\label{boon:Direction Sense}Direction Sense}---\quad\textbf{(3)}\par
 You have an infallible sense of direction. Wherever you are, you can figure out which way is north. Your skill in this regard borders on the supernatural, and grants you a +4 to Navigation tests.
 \paragraph{\label{boon:Estate}Estate}---\quad\textbf{(10)}\\
@@ -3039,7 +3037,6 @@ Taking this Boon grants you an Asset worth 2 Wealth (see the Assets section of C
 details). This Boon can be taken multiple times, either to gain multiple Assets (each valued at 2 Wealth), 
 or to combine them into a bigger, badder Asset. 
 
-
 You cannot acquire Assets with a Wealth value greater than the amount your Social Class granted you. 
 That is, if you are a Lesser Noble, and start the game with 6 Wealth, you could take Estate a maximum of 
 three times for 6 additional Wealth, for a total of 12, but no more. 
@@ -3048,20 +3045,20 @@ Someone owes you a favor. You may take this Boon multiple times, and for each ti
 an additional favor that you can ‘call in’ to get something done. Confer with the GM to see who could 
 potentially owe your character one. Once a Favor is called in, the debt is settled. However, if things are 
 still amicable, there's no reason why another exchange of favors couldn't be arranged. 
-\begin{itemize}
-\item 1: Minor Favor. A serious favor from a regular man, or a trifling favor from someone of power (‘let me hide in your house from the Baron's men,’ or ‘get me off of this larceny charge’).
-\item 3: Major Favor. A serious favor from a powerful individual (‘vouch for my innocence, your majesty’).
-\end{itemize}
+	\begin{itemize}
+		\item [1:] Minor Favor. A serious favor from a regular man, or a trifling favor from someone of power (‘let me hide in your house from the Baron's men,’ or ‘get me off of this larceny charge’).
+		\item [3:] Major Favor. A serious favor from a powerful individual (‘vouch for my innocence, your majesty’).
+	\end{itemize}
 
 \paragraph{\label{boon:Famous}Famous}---\quad\textbf{(2/4)}\par
 People know you. Maybe you killed the Manticore of Marienburg, or saved a princess or something. 
 Whatever the reason, you gain a bonus to CHA when dealing with people overawed by your star-power. 
 This Boon has its drawbacks though—being recognizable makes it hard to hide, and harder still to get 
 away with mischief.
-\begin{itemize}
-\item 2: +2 bonus to CHA, -2 to Disguise or Bluff rolls to avoid recognition. 
-\item 4: +4 bonus to CHA, -4 to Disguise or Bluff rolls to avoid recognition. 
-\end{itemize}
+	\begin{itemize}
+		\item 2: +2 bonus to CHA, -2 to Disguise or Bluff rolls to avoid recognition. 
+		\item 4: +4 bonus to CHA, -4 to Disguise or Bluff rolls to avoid recognition. 
+	\end{itemize}
 \paragraph{\label{boon:Folks Back Home}Folks Back Home}---\quad\textbf{(3/6/8)}\par
 You've got a family, a clan, a tribe or some other social group that you're part of that cares for you. You're 
 probably away from them right now, but they're there, waiting for your return. The level of this Boon 
@@ -3069,36 +3066,28 @@ determines just how influential and wealthy these folks are, and how much they m
 the event that you go to them for aid. Not having this Boon doesn't necessarily mean your character is an 
 orphan or without family, just that the family is scattered, disunited, or otherwise unlikely to be able to 
 provide cohesive aid. 
-\begin{itemize}
-\item 3: Nobody important, but they’re there. 
-\item 6: Well to do, and somewhat influential. 
-\item 8: Powerful, important people.
-\end{itemize}
+	\begin{itemize}
+		\item 3: Nobody important, but they’re there. 
+		\item 6: Well to do, and somewhat influential. 
+		\item 8: Powerful, important people.
+	\end{itemize}
 \paragraph{\label{boon:Follower}Follower}---\quad\textbf{(10)}\par
 You've got a sidekick, a buddy, a comrade, a henchman, or a right-hand-man. Followers can be anything 
 from unusually loyal mercenaries, to childhood friends, and spouses who aren't about to stand by while 
 your character fights heretics, bandits and shoggoths without them. 
-
- 
 
 A Follower is distinguished from Allies or a Retinue member in that the Follower is an actual character. 
 Either you, or your GM, can write up the stats for the Follower (at the GM's discretion), usually of a 
 power level the same as or lower than their PC leader. In some situations, an existing NPC can be drafted 
 as a Follower, at the GM's discretion. 
 
- 
-
 Followers aren't directly under the player's control, in that they are still technically NPCs under the GM's 
 purview, but there's nothing wrong with a player controlling a Follower while his character is injured or 
 tied to an interrogator's chair somewhere. 
 
- 
-
 If the current PC of the Follower dies, the Follower ceases to be a Follower. At the GM's discretion, the 
 Follower may stay of their own volition, leave, or even become a PC under the control of the player 
 whose character died. 
-
- 
 
 Some guidelines for this Boon: it is not advised to let Followers take Follower, Retinue, or Contacts. It 
 just makes things confusing. As well as this, don't let this Boon get out of control, and swell the group to 
@@ -3106,29 +3095,21 @@ double its original number. It is acceptable to limit characters taking this Boo
 altogether, see Optional Rules for more details. See the Followers and Retinue section in Optional 
 Rules for more details. 
 
- 
-
 \paragraph{\label{boon:Good Ears}Good Ears}---\quad\textbf{ (3) }\par
 You've got the ears of a fox. When making a PER check involving your auditory senses, you gain a bonus 
 of +2 to the roll. 
 
-
 A character cannot have Good Ears at the same time as the Bad Ears Bane. 
-
 
 \paragraph{\label{boon:Good Eyes}Good Eyes}---\quad\textbf{(3) }\par
 You've got the eyes of a hawk. When making a PER check involving sight, you gain a bonus of +2 to the roll. 
 
-
 A character cannot have Good Eyes at the same time as the Bad Eyes Bane. 
-
 
 \paragraph{\label{boon:Good Nose}Good Nose}---\quad\textbf{ (3) }\par
 The nose knows. You've got an exceptionally good sense of smell. Whenever making a PER check of any 
 sort, you gain a bonus of +1 to the roll. This does not work underwater, or in situations where an 
 overpowering smell would mask everything around you. If you lose your nose, you lose this Boon. 
-
- 
 
 \paragraph{\label{boon:Hale and Hearty}Hale and Hearty}---\quad\textbf{ (2/4) }\par
 You're really healthy, and you rarely become sick or suffer from poorly-healed wounds. 
@@ -3759,7 +3740,6 @@ Skills are a system within the game that cover things like how well and far a ch
 
 Skills are different from Proficiencies and other systems in that they typically do not often directly affect combat, but they are still very useful both in and out of combat. A knight has to know how to ride his horse, an assassin has to know how to blend into a crowd, and a hunter had better know how to live off the land.
 
-
 Skills List:
 \begin{itemize}
 	[noitemsep]
@@ -3857,7 +3837,6 @@ Skills List:
 
 \subsection{Character Creation}
 At Character Creation, Skills can be purchased by spending Skill Points, given at an amount depending on the invested PCP plus an amount equal to the character’s INT, by purchasing individual skills.
-
 
 SIDENOTE: Skill Descriptions %MAKE this a sidebar?
 A Note to GMs: Though we endeavor to make the skill system as accurate as possible, the reality may be 
@@ -5550,7 +5529,7 @@ tools, hence why Honors are rarely awarded in the field.
 \end{table}
 
 If a character fails the Corruption Roll, he gains a Mutation. Roll on the chart below, and add the 
-character’s current Blood Corruption to the roll. 
+character’s current Blood Corruption to the roll.
 
 \begin{table}[ht]
 	\centering
@@ -10105,7 +10084,7 @@ other characters may raise their ADR in response to any other character doing so
 Beware overusing this option, as the penalties can quickly become so high as to make you useless, even if
 you can act!
 
-\subsection{Actions}
+\subsection{Actions}\label{sec:combat-actions}
 You may perform one Action per phase. Sometimes Actions can span multiple phases if they take longer
 than a single beat in combat.
 
@@ -10124,7 +10103,8 @@ successfully Aim three times at a target in succession, you gain an additional b
 Perception to the attack that follows. If you shift targets, lose sight of the target, or are otherwise
 disrupted, you lose the Aim Bonus.
 
-\paragraph{Missile Attack}---\quad You may perform a Missile Attack Action. There are a few varieties of these. In the event
+\paragraph{Missile Attack}\label{sec:missile-attack}
+---\quad You may perform a Missile Attack Action. There are a few varieties of these. In the event
 that the target you were attempting to shoot at is incapacitated or becomes unavailable before you get to
 resolve your Shoot, you may pick a new target against which to make the attack, but only at half your
 base dice. Other modifiers apply as normal
@@ -10576,14 +10556,14 @@ Maneuver they are defending against. What this means is that if two characters a
 other, the one with Initiative resolves their Maneuver first, and only afterwards does the
 Initiative-less character (if they survive) resolve their Maneuver.
 
-\subsection{Reach}\label{sec:Reach} %SECOND REACH TABLE
+\subsection{Reach}\label{sec:Reach}
 Reach is an important factor in combat. The fighter with longer reach tends to have an advantage, so long as the fight stays at their desired range. Entire philosophies of warfare are built around the simple advantage of having reach over one’s enemies. Of course, a long weapon reach also has its weaknesses.
 
 When the distance is closed, longer weapons lose much of their strength and can become a liability for a fighter without a sidearm or backup weapon!
 
 In combat, there are eight (8) stages of Reach, from Half-Arm to Ludicrously Long.
 
-Table XX Stages of Reach
+Table XX Stages of Reach %SECOND REACH TBALE
 Number
 Stages of Reach
 Example
@@ -11020,7 +11000,7 @@ his organs.
 
 Falling onto certain materials or hazards might justify changing the damage type inflicted from Bludgeoning to Cutting or Piercing damage. Use your judgment, GM.
 
-\subsection{Burning \& Fire Damage}
+\subsection{Burning \& Fire Damage} \label{sec:Fire}
 When characters come into contact with fire, bad things tend to happen. Fire damage is much simpler 
 than damage from blunt, cutting, or piercing weapons. Its table is generic, and any part of the body may suffer a Burn Wound using the same chart, seen below. 
 
@@ -11151,7 +11131,7 @@ Level 5 &Total &Total &- &KO at 4, HET at 3 vs Death\\
 	\end{tabu}
 \end{table}
 
-\subsection{Cold Damage}
+\subsection{Cold Damage}\label{sec:Cold}
 Something something, Cold can target Limbs, TOU reduces, Armor doesn’t, Warm Clothing can slow 
 effects, need rules for Freezing, yadda yadda, what killed the dinosaurs? Get to the Choppa. 
 
@@ -11282,6 +11262,7 @@ Each Target Zone contains three to four Hit Locations, which are listed below. S
 
 If an attack hits, roll 1d10 to decide the Hit Location that the attack actually lands on, and then calculate 
 damage based on the following formula: 
+
 \[\text{Total Damage Done}~(\text{Maneuver Damage}+\text{Miscellaneous}) ~-~ \text{Total Defensive Value}~(\text{TOU}+\text{AV} + \text{Miscellaneous})\]
 
 If the Total Damage exceeds the Total Defense, the result is a Wound of a level equal to the excess 
@@ -11305,6 +11286,8 @@ Alternatively, flip a coin or roll for it. GMs, be sure to be consistent about t
 
 \newpage
 \subsection{Hit Location Tables} %NEED REF TO BACK ATTACKS AND MISSILES?
+\marginpar {\hspace{-3em}\nameref{sec:upper-back}}\par
+\marginpar {\hspace{-3em}\nameref{sec:lower-back}}
 \begin{table}[!hb]
 {	\captionsetup{textformat=empty, labelformat=blank}\vspace{-2em}
 	\caption{Target Hit Locations}
@@ -11419,6 +11402,39 @@ Alternatively, flip a coin or roll for it. GMs, be sure to be consistent about t
 	}
 \end{table}
 \clearpage
+\section{Combat Factors}
+\nameref{par:Catch Chance}
+
+\nameref{par:Pain}
+
+\nameref{par:Prone}
+
+\nameref{par:Stun}
+
+\nameref{par:Bleed}
+
+\nameref{sec:Fire}
+
+\nameref{sec:Cold}
+
+\nameref{tab:Weapon Damage Threshold}
+
+\nameref{tab:Round Structure}
+
+\nameref{tab:Missile Attack Penalties}
+
+\nameref{tab:Reach}
+
+\nameref{sec:Grappling}
+
+\nameref{sec:exhaustion}
+
+\nameref{sec:falling-damage}
+
+\nameref{sec:combat-actions}
+
+\nameref{sec:missile-attack}
+
 \section{Wound Qualities}
 
 \paragraph[Stability vs. ]{\label{par:Stability vs}Stability vs [X] RS}---\quad
@@ -12779,7 +12795,7 @@ Level 4& 13& 5& 3
 \end{table}
 \clearpage
 
-\section{Lower Back}
+\section{Lower Back}\label{sec:lower-back}
 \begin{table}[!hb] %Lower Back - Cutting
 %	\caption{Lower Back - Cutting}\vspace{-3pt}
 %	\label{wound:Lower Back - Cutting}
