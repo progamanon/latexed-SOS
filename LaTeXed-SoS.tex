@@ -6484,7 +6484,7 @@ Spike &+2 Damage, -1 Missile TN, +3 Range, +10 Load &1/10 &1 cp/Each\\
 \end{table}
 
 \subsection{Ammunition Capacity}
-\paragraph{Double}---\quad 2 Shots - Wt +50\% Cost
+\paragraph{Double}---\quad 2 Shots - Wt -- +50\% Cost
 
 Can be fired twice before reloading, or both barrels can be fired simultaneously. 
 Declare a single Shot normally, resolve the second Shot with the same amount of 
@@ -6493,39 +6493,39 @@ reloaded separately.
 This weapon can now use Rapid Shot.
 
 
-\paragraph{Single}---\quad 1 Shot - Wt - Cost
+\paragraph{Single}---\quad 1 Shot - Wt -- Cost
 
 Standard for most weapons.
 
-\paragraph{Magazine (X)}---\quad X+1 Shots 1 Wt +2,000\% Cost base, +50\% per X.
+\paragraph{Magazine (X)}---\quad X+1 Shots - 1 Wt -- +2,000\% Cost base, +50\% per X.
 
 This weapon now has an internal magazine that chambers X rounds (plus the one loaded into the chamber already), and loads them into the weapon one at a time as they are fired.
 After firing a round, the next round can be fired without Reloading until all the rounds in the magazine have been fired. Each purchase of this Capacity increases X by 1, to a maximum of 15.
 
 When performing the Reload Maneuver, it is possible to reload more than 1 round into the magazine. If the successes rolled on the Reload are higher than the Load value of the weapon, then for each time the successes multiply the Load value, an additional round is loaded.
 	\begin{quote}
-		\emph{A Dragon Pistol with a Magazine has a Load value of 10. If a highly capable shooter were to roll 20 successes on a Reload Action, then he could reload 2 rounds into the gun at once!}
+		\emph{A Dragon Pistol with a Magazine has a Load value of 10. If a highly capable shooter were to roll 20 successes on a Reload Action, then he could reload rounds into the gun at once!}
 	\end{quote}
 
 This weapon can now Rapid Fire.
 
 This weapon can only load Brass or Paper Mache cartridges.
 
-\paragraph{Multishot (X)}---\quad X+1 Shots 0.5 Wt +50\% Cost
+\paragraph{Multishot (X)}---\quad X+1 Shots - 0.5 Wt -- +50\% Cost
 
 This weapon now has X additional rounds that fire simultaneously. Declare a single Shot normally, then resolve the other X with the same amount of dice as the first.
 Each attack hits and is resolved separately. However, any attack made with this weapon suffers an MP reduction equal to X due to increased recoil. Each chamber must be reloaded separately. Each purchase of this Capacity increases X by 1, to a maximum of 10.
 
-This weapon cannot use Rapid Shot, as the barrels do not fire sequentially. 
+This weapon cannot use Rapid Shot, as the barrels do not fire sequentially.
 
-\paragraph{Revolver (X)}---\quad X+1 Shots 0.5 Wt +100\% Cost per X
+\paragraph{Revolver (X)}---\quad X+1 Shots - 0.5 Wt -- +100\% Cost per X
 
 Can be fired X additional times before reloading. Each chamber must be reloaded separately. Each purchase of this Capacity increases X by 1, to a maximum of 10. 
 After the first purchase, additional purchases do not further increase the weapon’s Weight. 
 
 This weapon can now use Rapid Shot. 
 
-\paragraph{High Caliber (X)}---\quad 0 Wt +25\% Cost
+\paragraph{High Caliber (X)}---\quad 0 Wt -- +25\% Cost
 
 This modification changes the size and power of the weapon’s ammunition instead of the weapon’s capacity. This can be applied to any weapon, and if combined with other Ammunition Capacity options, affects all loads in the weapon.
 
@@ -7264,7 +7264,7 @@ Kettle Helm& 8& 7& 6& Lower Head*, Upper Head &\nameref{par:Hard}, No AV vs Upwa
 Lamellar Pot Helm& 5& 5& 5& Lower Head, Upper Head &\nameref{par:Hard}& 2 &-1& 8 sp\\
 Leather Pot Helm& 4& 3& 3& Lower Head, Upper Head &-& 1 &-1& 10 cp\\
 Leather Skullcap& 4& 3& 3& Upper Head &-& 0& 0& 6 cp\\
-Morion& 8& 7& 6& Lower Head*, Upper Head &\nameref{par:Hard}, +1 AV vs Downward Swings 1& 0& 1&2 sp\\
+Morion& 8& 7& 6& Lower Head*, Upper Head &\nameref{par:Hard}, +1 AV vs Downward Swings&1& 0& 12 sp\\
 Open Sallet& 8& 7& 6& Lower Head*, Upper Head &\nameref{par:Hard}& 2& 0& 5 sp\\
 Quilted Helmet& 2& 4& 5& Lower Head, Upper Head &\nameref{par:Textile}& 0& 0& 8 cp\\
 Reinforced Roman Helm& 8& 7& 6& Lower Head, Neck*, Shoulders*, Upper Head &\nameref{par:Hard}, +4 AV on Upper Head& 2.5& 0& 1 gp\\
@@ -10163,7 +10163,7 @@ Cover or otherwise circumvent it (you are still vulnerable to flanking attacks, 
 against them.) including Suppression. You cannot move faster than 2 yards per Phase while Taking
 Cover.
 
-\paragraph{\label{par:Reload}Reload}---\quad Useful only for weapons like Firearms or Crossbows which must be loaded prior to being used, the Reload Action allows you to immediately utilize the Reload Maneuver. Moving incurs a -4 penalty to this Reload Roll.
+\paragraph{\label{par:Reload}Reload}---\quad Useful only for weapons like Firearms or Crossbows which must be loaded prior to being used, the Reload Action allows you to immediately utilize the \nameref{man:Reload} Maneuver. Moving incurs a -4 penalty to this Reload Roll.
 
 \paragraph{\label{par:Sprint} Sprint}---\quad You move up to double your Mobility score in yards this Action in lieu of taking any non-Mobility Actions. While sprinting, you gain a +2 bonus to Defense.
 
@@ -10172,7 +10172,8 @@ behind, this counts as a Surprise Attack. If you cannot come within 2m of the ta
 Melee Combat. However, for every Reach category of your melee weapon past L, you may engage an
 opponent from 2 additional yards away. I.E., an EL reach weapon could engage an opponent from 8 yards
 away. (This includes movement of the fighters and is not strictly indicative of the weapon’s length)
-For details on Melee Combat, see below.
+
+For details on \nameref{sec:melee-combat}, see below.
 
 \paragraph{\label{par:Charge} Charge}---\quad Move up to your regular Mobility score in yards, and Enter Melee Combat with a target. This
 Combat lasts for one Melee Round, after which the Phase ends. You gain a +4 bonus to your CP in this
@@ -10195,7 +10196,7 @@ but may hit a shield being carried on the character’s back.
 
 Damage is inflicted in the following manner: $ Base~Weapon~Damage+Bonus~Successes+Misc $~versus the target’s TOU+AV. Excess damage over the target’s total inflicts Wounds as-per melee attacks. The \emph{one} exception is attacks that hit with 0 BS (exactly matching the target’s Defense) which, \emph{unlike melee attacks}, still inflict damage, but can never inflict a Wound higher than Level 1.
 
-\section{Melee Combat}
+\section{Melee Combat}\label{sec:melee-combat}
 Melee Combat occurs when characters are forced to fight up-close and personal. When this happens, the characters enter a Melee Round. This Round occurs very quickly compared to the regular combat, and so is resolved instantly.
 
 During a Melee Round, the characters use Combat Pool, or CP, to perform Melee Maneuvers against each other. A CP normally represents one die to be rolled at a Target Number to try and score successes, to try and overpower an opponent’s defense, inflict more damage, or repel an opponent’s attack. A character only has a certain amount of CP to spend in the Melee Round, and so must conserve it and carefully assign it between the two Actions. At the start of a new Round, the characters’ CP are refreshed to their limits, though these can be reduced by Pain, being rendered Prone, or other inflictions.
@@ -10216,8 +10217,8 @@ Rounds, only the first requires an Orientation roll, since the initiative of the
 	neither party retreated, the combat will continue in the next Phase with another Melee Round.}
 \end{quotation}
 
-\subsection{Round Preparation}
-\subsubsection{Orientation}
+\subsection*{Round Preparation}
+\subsection{Orientation}
 Before the Round begins, each character involved in the Bout must declare their Orientation.
 Orientations set the mood of the Bout by revealing whether characters intend to attack, defend or remain
 cautious in the first Round. There are three types of Orientation to choose from: Aggressive, Cautious or
@@ -10332,20 +10333,6 @@ Defense works similarly, let’s look at the Block Maneuver’s description:
 		\item [Special:] You may declare this Maneuver any number of times per Action, if there are multiple incoming attacks to defend against.
 	\end{description}
 What this means is that when a character declares a Block against an Attack Maneuver aimed at them, he rolls his CP investment in that Maneuver at the Block TN of his shield. If he scores as many as, or more Successes, than the attacker does, than the Attack Maneuver is negated, and the character who Blocked gains the Initiative over his opponent.
-
-\subsubsection{Target Changes}
-After Maneuvers are resolved, Targets may shift if one or more characters were killed. These are thecircumstances in which Targets may change:
-
-If a character was attacked by a character other than his current Target, and successfully defended
-against that attack, the character may switch his Target to the character that attacked him, and
-gain Initiative over that character if his Defense Maneuver granted it.
-
-If a character’s current Target has been rendered un-Targetable, either by being incapacitated,
-dying, or through the use of a Maneuver, the character may choose a new Target, prioritizing
-those who have attacked him this Action.
-
-If a Character’s Maneuver allows them to switch Targets, they may change to a new Target in the
-manner prescribed by the Maneuver.
 
 \subsection{Overwatch Phase}
 The Overwatch Phase is identical in purpose as the Melee Phase, however it is for characters engaged in
@@ -10566,6 +10553,20 @@ The exception to this is that Defensive Maneuvers resolve simultaneously with th
 Maneuver they are defending against. What this means is that if two characters are attacking each
 other, the one with Initiative resolves their Maneuver first, and only afterwards does the
 Initiative-less character (if they survive) resolve their Maneuver.
+
+\subsection{Target Changes}
+After Maneuvers are resolved, Targets may shift if one or more characters were killed. These are the circumstances in which Targets may change:
+
+If a character was attacked by a character other than his current Target, and successfully defended
+against that attack, the character may switch his Target to the character that attacked him, and
+gain Initiative over that character if his Defense Maneuver granted it.
+
+If a character’s current Target has been rendered un-Targetable, either by being incapacitated,
+dying, or through the use of a Maneuver, the character may choose a new Target, prioritizing
+those who have attacked him this Action.
+
+If a Character’s Maneuver allows them to switch Targets, they may change to a new Target in the
+manner prescribed by the Maneuver.
 
 \subsection{Reach}\label{sec:Reach}
 Reach is an important factor in combat. The fighter with longer reach tends to have an advantage, so long as the fight stays at their desired range. Entire philosophies of warfare are built around the simple advantage of having reach over one’s enemies. Of course, a long weapon reach also has its weaknesses.
@@ -11432,6 +11433,8 @@ Alternatively, flip a coin or roll for it. GMs, be sure to be consistent about t
 
 \nameref{tab:Round Structure}
 
+\nameref{tab:Missile Target Zones}
+
 \nameref{tab:Missile Attack Penalties}
 
 \nameref{tab:Reach}
@@ -11442,9 +11445,8 @@ Alternatively, flip a coin or roll for it. GMs, be sure to be consistent about t
 
 \nameref{sec:falling-damage}
 
-\nameref{sec:combat-actions}
+Combat \nameref{sec:combat-actions}
 
-\nameref{sec:missile-attack}
 
 \section{Wound Qualities}
 
