@@ -8647,7 +8647,7 @@ if the Maneuver has a Superior version (‘S’). The cost of the Maneuver is sh
 good idea to read the full text of a Maneuver to understand how it is used and how much it will cost you 
 to activate. Some Maneuvers are categorized by type, and certain types of Maneuvers may be affected by 
 others, or Boons, Banes and Talents.
-\section{Maneuvers List}
+\section{Maneuvers List}\label{sec:maneuvers-list}
 \begin{longtabu} to \linewidth {*{8}{X[-1]}}
 Maneuver& U &A &S &Primary &Secondary &Type &Cost\\\toprule
 \nameref{man:Beat} &U &&S &Attack&Weapon&Swinging& X \\
@@ -10964,30 +10964,35 @@ So, if a weapon has 40 yard range, an attack made at up to 40 yards would be mad
 If you are using a Defense maneuver with Initiative, wait until characters without Initiative have declared
 their Defenses to declare the target of that Defense. If nobody declares attacks against you, you may
 return the Defense Dice to your Combat Pool. Then, resolve maneuvers at Initiative.
-\subsection{Battlefield Terrain}
+\subsection{Battlefield Terrain}\label{sec:battlefield-terrain}
 Sometimes combat will occur on uneven or otherwise irregular terrain. When fighting on rough terrain that might cause a character to fall, trip or stumble, a Mobility Test is required at the start of each Round
 at an RS determined by the nature of the terrain. 
 
 Failure inflicts Stun equal to the amount of successes by which the roll failed. This can cause Overshock and tripping!
-
-\subsubsection{Terrain} %TERRAIN
-%Difficult Terrain RS
-%Loose Gravel, Light Mud, Slippery Marble &4\\
-%Deep Mud, Shallow Water, Potholes &6\\
-%Collapsing Floor, Intense Mud, Deliberate Pitfalls &8\\
+\begin{table}
+	\caption{Difficult Terrain RS}
+	\label{tab:Difficult Terrain RS}
+	\begin{tabu} spread 0pt {X[-1]X[-1]}
+Terrain &RS\\ \toprule
+Loose Gravel, Light Mud, Slippery Marble &4\\
+Deep Mud, Shallow Water, Potholes &6\\
+Collapsing Floor, Intense Mud, Deliberate Pitfalls &8\\
+	\end{tabu}
+\end{table}
 
 Terrain which might provide one character with a defensive bonus (a wall or rampart being defended, an
 overturned table being fought from behind, etc.) the attacker must pay a CP cost to make an attack,
 determined by the size and nature of the defensive work.
-
-Defense
-Overturned Table, Fence
-CP Cost for Attacker
-2
-Low Wall, Makeshift Barricade
-High Wall, Rampart, Crenelations
-4
-6
+\begin{table}[ht]
+	\caption{Defensive Terrain}
+	\label{tab:Defensive Terrain}
+	\begin{tabu} spread 0pt {X[-1]X[-1]}
+Defense & CP Cost for Attacker\\ \toprule
+Overturned Table, Fence&2\\
+Low Wall, Makeshift Barricade&4\\
+High Wall, Rampart, Crenelations&6\\
+	\end{tabu}
+\end{table}
 
 Some terrain might produce an active danger. In this case, treat it as uneven or irregular terrain, but failing by more than X dice (represented as the second number beyond the slash in the table) results in falling, slipping into, or otherwise falling victim to the danger.
 
@@ -10996,7 +11001,7 @@ If characters are caught unawares in an ambush or other surprise attack, they ma
 
 Characters who detect the ambush beforehand may still act normally; only those surprised suffer these penalties.
 
-\subsection{Outflanking}
+\subsection{Outflanking}\label{sec:outflanking}
 Certain situations in combat can result in a character Outflanking another character. When a character Outflanks another character, they gain certain benefits:
 	\begin{itemize}
 		\item The Outflanked character cannot Target or perform Attack Maneuvers against the Outflanking character.
@@ -11017,7 +11022,7 @@ Back Attacks replace the Chest Target Zone with the Upper Back Target Zone, and 
 		\emph{Bobby is Outflanking his enemy, Bill, and declares a Torso Swing on Bill, and hits. The Hit Location roll determines that theattack hits the Chest. However, because Bobby is making a Back Attack, it actually hits Bill’s Upper Back.}
 	\end{quote}
 
-\subsection{Scatterfire} %SCATTERFIRE
+\subsection{Scatterfire}\label{sec:scatterfire} %SCATTERFIRE
 Weapons that use ammunition with the Scatter special rule (Buck and Ball, Heavy Shot, and Shot) can be fired in such a way that multiple enemies are hit at once. Only enemies who are very close to each other (within a yard of one another) can be hit in this way. Targeting a character with two others within a yard’s distance away from them could result in hitting all three characters.
 
 To start, resolve the primary attack against the center Target as normal. If it misses, all of the Scatter shots will miss as well. The primary shot resolves as normal, however the Scatter damage should be randomly divided between the potential Targets (assign numbers on a D10 to each potential Target, favoring the primary one, and roll each scatter die to determine who it hits, then determine Hit Locations as normal) and then resolved separately.
@@ -11026,7 +11031,7 @@ The individuals targeted by these multiple Scatters can benefit from Take Cover 
 
 At the GM’s discretion, this rule may be applied against friendly targets as well. Firing a shotgun into a crowd of mixed friends and enemies is dangerous!
 
-\subsection{Mounted Combat}
+\subsection{Mounted Combat}\label{sec:mounted-combat}
 Characters in combat will often fight on horseback, or else mounted on exotic beasts like elephants or dinosaurs. Fighting in such a manner confers special bonuses in combat, as well as opening up new opportunities for characters to use Mounted Maneuvers.
 
 At the start of combat, most characters who fight mounted will already be mounted. However, in the event that they are not, or if an opportunity presents itself for them to climb onto a horse, it can be done as a Move Action. If the mount is stationary, this requires an easy [RS 2] ride check. If the mount is moving, it requires a routine [RS 3] check.
@@ -11123,7 +11128,7 @@ A Take Cover Maneuver, or any sort of Cover AV, reduces damage from Explosions.
 			\item [Power:] 45
 			\item [Type:] Piercing / Bludgeoning
 		\end{description}
-\subsection{GM Arbitration}
+\subsection*{GM Arbitration}
 In a game like Song of Swords, you must expect the unexpected. With so many possible situations,
 character options and potential playstyles, at some point or another you are bound to find yourself in a situation where something is technically legal by the rules, but just doesn’t make sense.
 
@@ -11732,29 +11737,37 @@ Alternatively, flip a coin or roll for it. GMs, be sure to be consistent about t
 \end{table}
 \clearpage
 \section{Combat Factors}
-\subsubsection{Conditions}
+\subsubsection{Conditions} \vspace{-10pt}
 \nameref{par:Bleed}\\
 \nameref{par:Pain}\\
 \nameref{par:Stun}\\
 \nameref{par:Prone}\\
+\nameref{sec:outflanking}\\
 \nameref{sec:exhaustion}
-\subsubsection{Missile Weapons}
+\subsubsection{Missile Weapons} \vspace{-10pt}
 \nameref{par:Catch Chance}\\
 \nameref{tab:Missile Target Zones}\\
 \nameref{tab:Missile Attack Penalties}\\
+\nameref{sec:scatterfire}\\
 \nameref{sec:missile-attack}
-\subsubsection{Alternate Damage Types}
+\subsubsection{Alternate Damage Types} \vspace{-10pt}
 \nameref{sec:Fire}\\
 \nameref{sec:Cold}\\
+\nameref{sec:Explosions}\\
 \nameref{sec:falling-damage}
-\subsubsection{Weapon Qualities}
+\subsubsection{Weapon Qualities} \vspace{-10pt}
 \nameref{tab:Weapon Damage Threshold}\\
 \nameref{tab:Reach}\\
-\nameref{sec:weapons-special-qualities}
-\subsubsection{Combat Stuff}
+\nameref{sec:weapons-special-qualities}\\
+\nameref{tab:Default Matrix}
+\subsubsection{Combat Stuff} \vspace{-10pt}
 \nameref{sec:Grappling}\\
 \hyperref[sec:combat-actions]{Combat Actions}\\
-\nameref{tab:Round Structure}
+\nameref{tab:Round Structure}\\
+\nameref{sec:mounted-combat}\\
+\nameref{sec:battlefield-terrain}\\
+\nameref{sec:maneuvers-list}
+
 \section{Wound Qualities}
 
 \paragraph[Stability vs. ]{\label{par:Stability vs}Stability vs [X] RS}---\quad
