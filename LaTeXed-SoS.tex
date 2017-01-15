@@ -10505,6 +10505,16 @@ but may hit a shield being carried on the character’s back.
 
 Damage is inflicted in the following manner: $ Base~Weapon~Damage+Bonus~Successes+Misc $~versus the target’s TOU+AV. Excess damage over the target’s total inflicts Wounds as-per melee attacks. The \emph{one} exception is attacks that hit with 0 BS (exactly matching the target’s Defense) which, \emph{unlike melee attacks}, still inflict damage, but can never inflict a Wound higher than Level 1.
 
+\subsection{Overwatch Phase}
+The Overwatch Phase is identical in purpose as the Melee Phase, however it is for characters engaged in
+Overwatch combat in the Bout (that is, characters with ranged weapons who have opted to Overwatch in
+the General Action Phase). The Phase allows Overwatching combatants to take two Actions, including
+Maneuvers.
+
+Overwatching characters may only attack other characters engaged in their Bout. They are not able to fire
+upon unengaged characters, or characters engaged in other Bouts. To do this, they must End the Watch
+and either use the General Action Phase, or engage in another Bout by using the Overwatch Action.
+
 \section{Melee Combat}\label{sec:melee-combat}
 Melee Combat occurs when characters are forced to fight up-close and personal. When this happens, the characters enter a Melee Round. This Round occurs very quickly compared to the regular combat, and so is resolved instantly.
 
@@ -10643,28 +10653,20 @@ Defense works similarly, let’s look at the Block Maneuver’s description:
 	\end{description}
 What this means is that when a character declares a Block against an Attack Maneuver aimed at them, he rolls his CP investment in that Maneuver at the Block TN of his shield. If he scores as many as, or more Successes, than the attacker does, than the Attack Maneuver is negated, and the character who Blocked gains the Initiative over his opponent.
 
-\subsection{Overwatch Phase}
-The Overwatch Phase is identical in purpose as the Melee Phase, however it is for characters engaged in
-Overwatch combat in the Bout (that is, characters with ranged weapons who have opted to Overwatch in
-the General Action Phase). The Phase allows Overwatching combatants to take two Actions, including
-Maneuvers.
+\subsection{Target Changes}
+After Maneuvers are resolved, Targets may shift if one or more characters were killed. These are the circumstances in which Targets may change:
 
-Overwatching characters may only attack other characters engaged in their Bout. They are not able to fire
-upon unengaged characters, or characters engaged in other Bouts. To do this, they must End the Watch
-and either use the General Action Phase, or engage in another Bout by using the Overwatch Action.
+If a character was attacked by a character other than his current Target, and successfully defended
+against that attack, the character may switch his Target to the character that attacked him, and
+gain Initiative over that character if his Defense Maneuver granted it.
 
-\subsection{Round Conclusion}
-At the end of the Round, if Targets are alive and present, whichever character currently has Initiative may
-choose to either Disengage or Lock.
-	\begin{description}
-		\item [Lock:] The characters engaged in the Bout are still `in combat,' and continue fighting in the next Round. As they are still engaged, they may not participate in the General Action Phase between Rounds.
-		\item [Disengage:] The characters are no longer in combat, and the Encounter ends.
-If Targets are unavailable because they are dead, incapacitated, or escaped, then the Encounter ends.
-Characters who were engaged in a Bout that ended due to it being Disengaged or Targets being
-unavailable are able to Engage in other existing Bouts, if they are within move distance. They will be able
-to use the General Action Phase so long as they are unengaged.
-	\end{description}
-	
+If a character’s current Target has been rendered un-Targetable, either by being incapacitated,
+dying, or through the use of a Maneuver, the character may choose a new Target, prioritizing
+those who have attacked him this Action.
+
+If a Character’s Maneuver allows them to switch Targets, they may change to a new Target in the
+manner prescribed by the Maneuver.
+
 \paragraph{Encounter Ends}
 When all Bouts have resolved, through surrender, death or flight, the Encounter ends and characters may
 interact normally.
@@ -10862,20 +10864,6 @@ The exception to this is that Defensive Maneuvers resolve simultaneously with th
 Maneuver they are defending against. What this means is that if two characters are attacking each
 other, the one with Initiative resolves their Maneuver first, and only afterwards does the
 Initiative-less character (if they survive) resolve their Maneuver.
-
-\subsection{Target Changes}
-After Maneuvers are resolved, Targets may shift if one or more characters were killed. These are the circumstances in which Targets may change:
-
-If a character was attacked by a character other than his current Target, and successfully defended
-against that attack, the character may switch his Target to the character that attacked him, and
-gain Initiative over that character if his Defense Maneuver granted it.
-
-If a character’s current Target has been rendered un-Targetable, either by being incapacitated,
-dying, or through the use of a Maneuver, the character may choose a new Target, prioritizing
-those who have attacked him this Action.
-
-If a Character’s Maneuver allows them to switch Targets, they may change to a new Target in the
-manner prescribed by the Maneuver.
 
 \subsection{Reach}\label{sec:Reach}
 Reach is an important factor in combat. The fighter with longer reach tends to have an advantage, so long as the fight stays at their desired range. Entire philosophies of warfare are built around the simple advantage of having reach over one’s enemies. Of course, a long weapon reach also has its weaknesses.
