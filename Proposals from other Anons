@@ -1,5 +1,4 @@
 Ideas for added functionality:
     A section in the footer which returns the reader to the table of contents
     Clicking the Section note in the header returns the reader to the section start
-    A mini-table of contents for each chapter with the sections and subsections for that chapter
-    
+    A flowchart including only a single word per element, linking to relevant section.

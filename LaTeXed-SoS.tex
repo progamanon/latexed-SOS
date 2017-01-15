@@ -1,4 +1,4 @@
-%BEGIN_FOLD%including all packages, settings etc.
+	%BEGIN_FOLD%including all packages, settings etc.
 %LETTRINE and \ornamento are to be learned
 \RequirePackage[l2tabu,orthodox]{nag}
 \documentclass[oneside,11pt,english]{book}
@@ -617,7 +617,7 @@ Kaselreich.
 	\caption{Arc Point Format}
 	\label{tab:ArcPointFormat}
 	\begin{tabu} spread 0pt{X[-1,c]X}
-Arc Category & Description\\ 
+Arc Category & Description\\\toprule
 Saga&Defeat the Kasels and save Tigurnia \\
 Epic &Defeat the Kasel army led by The Red Duke \\
 Belief&Ruvian Genosism (Religion) \\
@@ -906,7 +906,7 @@ decide that they should make a Grit test. This is a \textbf{WIL} check with RS e
 \begin{longtabu} spread 0pt {lXX}
 	\caption{Grit Advancement}
 	\label{tab:GritAdvancement}\\
-Grit&Description&Example Advancement Threshold\\
+Grit&Description&Example Advancement Threshold\\\toprule
 0&Totally innocent and inexperienced. Average child.&Hurting someone’s feelings, or having one’s feelings hurt. \\
 1&Sensitive, sheltered, still learning about the basics of social interaction. Average young person. & Physically hurting someone else (even accidentally), being hurt oneself. \\
 2& Mature person with an understanding of the way the world works. Average adult. &Being confronted with death. \\
@@ -961,7 +961,7 @@ The number of PCP placed into the Race section determines what ‘tier’ of rac
 	\caption{Race Tiers}
 	\label{tab:racetiers} 
 	\begin{tabu}{ccX}
-PCP&Tier&Races\\
+PCP&Tier&Races\\\toprule
 1&Tier 1&\hyperref[sec:humans]{Human}, \hyperref[sec:goblins]{Goblin}\\
 2&Tier 2&\hyperref[sec:dwarves]{Dwarf}, \hyperref[sec:zells]{Zell}\\
 4&Tier 3&\nameref{sec:burdinadin}, \nameref{sec:ohanedin}\\
@@ -2050,7 +2050,7 @@ light they are exposed to.
 	\caption{Shield of Dawn AV}
 	\label{tab:Shield of Dawn AV}
 	\begin{tabu} spread 0pt {Xc}
-		Light Intensity& AV vs Missiles\\
+		Light Intensity& AV vs Missiles\\\toprule
 		Faint luminescence (certain mushrooms, fireflies, the barest light of dying coals)& 1\\
 		Moonlight or Firelight &2\\
 		Overcast day, intense artificial light, Paladin's own radiance& 3\\
@@ -2453,7 +2453,7 @@ the HLT points lost.
 			\vspace{-10pt}\caption{Area Affected by ``From the Depths to the Soil''}
 			\label{tab:sarturflowerpower}
 			\begin{tabu} spread 0pt {cX}
-				Divinity&Area\\
+				Divinity&Area\\\toprule
 				1&1 square yard\\
 				2&10 square yards\\
 				3&100 square yards\\
@@ -2769,7 +2769,7 @@ Boons you are able to take.
 	\caption{Boons and Banes Costs at Character Creation}
 	\label{tabwrap:Boons and Banes CharCreation}
 	\begin{tabu}{X[c]X[c]}
-		PCP&B\&B Points\\
+		PCP&B\&B Points\\\toprule
 		1&-15\\
 		2&-10\\
 		3&-5\\
@@ -2964,8 +2964,8 @@ and while different cultures have greatly different standards of beauty, for the
 Boon. Beautiful people are generally treated better, as they make a good first impression. 
 
 	\begin{itemize}
-		\item [2:] You gain a +2 bonus to CHA when dealing with everyone, if your beauty is apparent. You gain a +4 bonus to CHA when dealing with characters who would find you sexually attractive.
-		\item [4:] You cause carriage crashes. You gain a +3 bonus to CHA when dealing with everyone, if your beauty is apparent. You gain a +6 bonus to CHA when dealing with characters who would find you sexually attractive. Beauty of this caliber often comes with unwanted attention.
+		\item [3:] You gain a +2 bonus to CHA when dealing with everyone, if your beauty is apparent. You gain a +4 bonus to CHA when dealing with characters who would find you sexually attractive.
+		\item [6:] You cause carriage crashes. You gain a +3 bonus to CHA when dealing with everyone, if your beauty is apparent. You gain a +6 bonus to CHA when dealing with characters who would find you sexually attractive. Beauty of this caliber often comes with unwanted attention.
 	\end{itemize}
 \paragraph{\label{boon:Berserker}Berserker}---\quad \textbf{(6/12)}\par
 You are prone to flying into uncontrollable spells of bloodthirsty, shield-gnawing lunacy, during which 
@@ -3196,14 +3196,14 @@ A character cannot have Tall at the same time as the Short Bane.
 You gain +1 to Initiative as you have a slightly longer reach and better vantage over your peers. You gain a +1 bonus to Charisma for the purposes of persuasion, intimidation and leadership.
 \item 12: You dwarf your peers, to the point you have to squeeze yourself through normal doorways. You gain +1 to the effective Reach of all weapons and unarmed Maneuvers you perform, and you gain a +2 bonus to Charisma for the purposes of persuasion, intimidation and leadership.
 \end{itemize}
-\paragraph{\label{boon:True Grit}True Grit}---\quad\textbf{(2/4/6) }\par
-Character Creation only. 
+\paragraph{\label{boon:True Grit}True Grit}---\quad\textbf{(2/4/6) }\\
+\emph{Character Creation only}
+
 Whether by hard experience, early exposure to a grim, violent world, or some natural strength of 
 character, you have an amazing resistance to fear, pain, and shock. Each level of True Grit awards you an 
 additional starting point of Grit. 
 
-
-A character cannot have True Grit at the same time as the Sheltered Bane. 
+A character cannot have True Grit at the same time as the \nameref{bane:Sheltered} Bane.
 \begin{itemize}
 \item 2: Will of Iron: +1 Grit 
 \item 4: Nerves of Steel: +2 Grit 
@@ -3221,6 +3221,7 @@ it, it's gone.
 \end{itemize}
 \paragraph{\label{boon:Tireless Lobster}Tireless Lobster}---\quad\textbf{(6)}\\
 \textit{Only for use with Optional Fatigue Rules}
+
 You’ve gotten so used to wearing armor constantly that it’s basically a second skin for you, and doesn’t tire you out meaningfully anymore. Wearing armor for more than 4 hours no longer causes its Weight to increase by half, and sleeping in armor only increases its effective Weight by half, instead of doubling it.
 
 \section{Banes}
@@ -3311,7 +3312,7 @@ For each instance of Brain Damage you currently suffer from, add +1 RS to all IN
 	\caption{Brain Damage Table}
 	\label{tab:Brain Damage}
 	\begin{tabu} to \linewidth {cX}
-		Roll&Effect\\
+		Roll&Effect\\\toprule
 		1 &Mild Concussion: This Bane fades in 1d10 days \\
 		2 &Concussion: This Bane fades in 2d10 days \\
 		3 &Severe Concussion: This Bane fades in 3d10 days \\
@@ -4452,11 +4453,11 @@ their Liquidated Value, at Character Creation, or through the events of a campai
 	\centering
 	\caption{Assets}
 	\label{tab:Assets}
-	\begin{tabu} spread 0pt {X[-1,l]X[-2,c]X[c]X[4]}
-\rowfont[c]{}Asset Level &Withdraw Amount&Liquidated Value&Example\\\toprule
-Minor &20 sp &6 gp (120 sp) &Small Farm, Small Business, Small Cattle Herd \\
-Moderate &40 sp &12 gp (240 sp) &Large Farm, Respectable Business, Large Cattle Herd \\
-Major &60 sp &18 gp (360 sp) &Huge Farm, Powerful Guild, Large Coaching House, Massive Cattle Herd, Bank\\
+	\begin{tabu} to \linewidth {X[-1,c] X[-1,l]X[-2,c]X[c]X[3]}
+\rowfont[c]{}[W]ealth Spent&Asset Level &Withdraw Amount&Liquidated Value&Example\\\toprule
+1 &Minor &20 sp &6 gp (120 sp) &Small Farm, Small Business, Small Cattle Herd \\
+2 &Moderate &40 sp &12 gp (240 sp) &Large Farm, Respectable Business, Large Cattle Herd \\
+3 &Major &60 sp &18 gp (360 sp) &Huge Farm, Powerful Guild, Large Coaching House, Massive Cattle Herd, Bank\\
 	\end{tabu}
 \end{table}
 
@@ -4473,19 +4474,19 @@ The act of withdrawing Wealth from an Asset generally takes from several hours t
 on the distance from the place and the ease of having the money (or letters of credit) sent over. 
 Liquefaction can take a longer or shorter period of time, at the GM’s discretion. 
 
-In the above \autoref{tab:Social Classes and Wealth}, the number in brackets is a character’s Wealth, which can be used either to acquire additional money or assets, as detailed in \autoref{tab:Wealth/Asset/Gold Chart}, below. These can be purchased multiple times, and Wealth must be spent at Character Creation.
+In the above \autoref{tab:Social Classes and Wealth}, the number in brackets is a character’s Wealth, which can be used either to acquire additional money or assets, as detailed in \autoref{tab:Assets}, below. These can be purchased multiple times, and Wealth must be spent at Character Creation.
 
-\begin{table}[hb] %THIS table seems superfluous, merge with Assets table? Either that or make it a wraptab
-	\centering
-	\caption{Wealth/Asset/Gold Chart}
-	\label{tab:Wealth/Asset/Gold Chart}
-	\begin{tabu} spread 0pt {X[-2,c]X[2]X[-1,r]}
-\rowfont[c]{}Wealth Spent &Asset Gained &Gold Gained\\\toprule
-1 &Minor Asset &6 gp\\
-2 &Moderate Asset &12 gp\\
-3 &Major Asset &18 gp\\
-	\end{tabu}
-\end{table}
+%\begin{table}[hb] %THIS table seems superfluous, merge with Assets table? Either that or make it a wraptab
+%	\centering
+%	\caption{Wealth/Asset/Gold Chart}
+%	\label{tab:Wealth/Asset/Gold Chart}
+%	\begin{tabu} spread 0pt {X[-2,c]X[2]X[-1,r]}
+%\rowfont[c]{}Wealth Spent &Asset Gained &Gold Gained\\\toprule
+%1 &Minor Asset &6 gp\\
+%2 &Moderate Asset &12 gp\\
+%3 &Major Asset &18 gp\\
+%	\end{tabu}
+%\end{table}
 
 \chapter{Proficiencies}\label{ch:proficiencies} 
 \startcontents[chapters]
@@ -5697,11 +5698,326 @@ by consuming a liter of blood, or a pound of meat.
 ---\quad \emph{Requires \nameref{honor:Insight} and at least 10 Perception}
 
 \subsection{Unkindly Weapons}
+\subsubsection{Crow Hook}
+An unusual weapon that is usually carried by Unkindlies as a symbol of their office, the Crow 
+Hook is very much similar to a sickle in appearance, with a very pronounced reinforced point. 
+The purpose of the Crow Hook was to aid the Unkindlies in climbing by digging into 
+surfaces -- inaminate or living -- for a better grip. It is also capable of causing hideous wounds both 
+with its cutting edges (unlike a harvesting sickle it is sharp on the outside as well as the inside) 
+or with its triangular tip.
+
+The Crow Hook is considered more of a tool than a weapon, however, 
+and very few of the Unkindlies reach for it first when the fighting starts--though many wield one 
+in the off-hand as a sort of unusual parrying dagger -- the strange hooked blade does make it 
+useful for some flashy techniques. 
+
+An amusing note: The Unkindlies don’t associate themselves with crows, and the name of the 
+Crow Hook was only accepted begrudgingly after decades of informal lingo. The official title of 
+the weapon is the “Stepping Hook,” and its origins can actually be traced to terrace farming in 
+Kalmacia. 
+
+(A pair of Crow Hooks grant a +4 bonus to \nameref{skill:Climbing} tests)
+\begin{tabu} spread 0pt {*{11}{X[-1]}}
+Crow Hook & Dagger &1H & S &7(+0c/p))&-&7(0) &Draw 2, Light Blade &6/5 &0 &1 sp\\
+\end{tabu}
+
+\subsubsection{Dyne Maul}
+The concept behind the Dyne Maul was not tremendously complex--the execution of it in an 
+easily reproducable, reliable, and most importantly safe (relatively speaking) package is what 
+earned its inventor, the Burdinadin Unkindly “Black Dyne,” the honor of being immortalized in 
+the weapon’s name. Good thing, too, he died in an unfortunate lab explosion a mere six months 
+after completing the prototype. 
+
+The Dyne Maul is a large two-handed hammer with a steel mallet-head. From the face of the 
+mallet, three steel barbed prongs extend. In the middle of the face is a tube, with a depressible 
+ring slightly raised around it. The ring is the trigger mechanism for the miniature cannon inside 
+the mallet’s head. 
+
+The design is fairly simple. When swung hard at the target, the barbs will first be planted into its 
+flesh. This is important, as the recoil from this weapon is so monstrous that if not slowed 
+somewhat by the barbs’ hold on the target’s flesh, it could unbalance or injure the wielder upon 
+discharging. 
+
+When the weapon’s hammerhead actually makes contact with the target, the trigger will be 
+pressed, and a 700 grain powder charge will then ignite, propelling a 2 ounce steel spike out of 
+the barrel, into the target, at a little over 3000 feet per second. 
+
+The effects of this weapon are cataclysmic, and almost impossible to describe. A direct blow 
+from a Dyne Maul can penetrate about an inch and a half of steel. Against flesh--even the flesh 
+of monsters -- it can penetrate seven or eight yards
+before slowing. The round of course begins 
+to tumble only a few inches in, causing an enormous blossoming wound-channel that can liquify
+organs. Often the exit-wound for the round is the size of a large melon. 
+
+The short version is that if this thing hits a person, he’s dead. If it hits a monster smaller than a 
+horse, it’s probably dead. 
+
+Alternate loads are available, including shot, ground glass, poison, and in one curious case, an 
+advanced delivery system that simply pumps several cubic yards of gas into the target. 
+
+	\begin{tabu} to \linewidth {*{11}{X[-1]}}
+		Dyne Hammer & Blunt &2H & M & 9(+3b) & 8(-2b) & 10 & AP Swing 1, Crushing 2, Heavy Weapon, Shock 4, Boom & 10/1 & 2 & 10 gp\\
+	\end{tabu}
+\paragraph{Boom}
+---\quad Upon Striking, Boom activates. Boom hits the same Hit Location as the Strike, but it has automatic successes equal to BS from the Strike. There is no rolling involved, it just succeeds with that many BS. Boom counts as a hit from a Deck Gun loaded with Ball.
+
+\subsubsection{Flip Halberd}
+The Flip Halberd is a curious weapon designed to be carried while scaling a monster, and then 
+unfolded to be swung two-handed at the creature’s weakpoints. 
+\subsubsection{Harpoon Cannon}
+
+\section{Dark Pyromancy} %NEEDS PRETTYING UP
+\begin{quotation}
+	Q: \emph{Restating one of my questions from earlier: How much PCP would Dark Pyromancy on its own cost? Star Vampires have it by default iirc, but what about Human or Din Dark Pyromancers? How much PCP do I need to pay to play one of those?}
+
+	A\footnote{\href{http://boards.4chan.org/tg/thread/48772472\#p48880439} {A post by Jimmy}}:
+\emph{The current model is that Pyromancy will cost 15, whereas Dark Pyromancy will only cost 10, which in PCP terms is 4 and 2 points, respectively.}
+\end{quotation}
+Dark Pyromancy is the use of life force to perform magic. Unlike regular Pyromancy, Dark 
+Pyromancers do not just use their own life force, but that of the world around them, sucking 
+energy directly from nearby living things to power their dark magics. Dark Flame, as it is called, 
+is sentient and malevolent, and despises all life and all living things. Dark Pyromancy will, 
+unless kept closely in check, actively conspire against its user to kill him and to destroy all he 
+holds dear. The exception to this, of course, is Vampires, who have no life force and thus are 
+friends to the Dark Flame. 
+
+	\begin{quotation}
+		\textit{(Development Note: Dark Pyromancy primarily differs from Pyromancy in what you can 
+		do with it and where the Fire comes from.}
+
+		\textit{Regular Pyromancers cannot Draw Fire, they 
+		have a personal Fire stat that determines how much they can use each Round. This is a 
+		disadvantage, but it also means that they don’t have to spend a Phase Drawing every 
+		time they want to perform a spell, so it’s give-take.)}
+	\end{quotation}
+
+\subsection{Dark Pyromancy Stats}
+\paragraph{Lustre}
+---\quad \textbf{[WIP+HLT]}
+
+This is the maximum amount of Fire that the Pyromancer can contain within himself at any given 
+time. If the Pyromancer draws more Fire than their Lustre, they are at risk of Immolation unless 
+they expend it immediately. 
+
+\paragraph{Art}
+---\quad Art is essentially a Pyromancer’s Proficiency at magic. Art starts at 0, but can be purchased 
+using Arc Points just like a Proficiency. Every 4 points of Art gained grants the Pyromancer a Brand. 
+
+\paragraph{Brands}
+---\quad Pyromancers develop Brands through experience and practice, these Brands are abilities or 
+enhancements that have become so familiar to the Pyromancer that they no longer require Fire 
+to perform, they can simply cause the effect to happen through their own power. Brands are one 
+of the chief elements that distinguishes Pyromancers from each other, and once developed, 
+they cannot be changed.
+
+\subsection{Performing Pyromancy}
+\subsubsection{Drawing Fire}
+In order to perform a Spell, a Dark Pyromancer must “Draw Fire” from the environment into 
+himself. Drawing Fire is easier the more life the surrounding area has. The act of Drawing Fire 
+takes a full Phase, and is an Art+Willpower Test rolled at TN determined by the surroundings, 
+as shown on the table below. The amount of Fire drawn is equal to the number of successes on 
+this roll. 
+\begin{table}[ht]
+	\caption{Drawing Fire Examples}
+	\label{tab:Drawing Fire Examples}
+	\begin{tabu} spread 0pt {XX[-1]}
+Surroundings&TN\\\toprule
+Inside an Archtree, Submerged in a Giant  Vat of Algae, In the Ocean (Zell)  &4  \\
+Lush Forest or Jungle, Rich Farmland,  Dense Swamp, In the Water (as a Zell) &5  \\
+Sparse Forest, Green Hills, Mediocre  Farmland, Bog &6  \\
+Town, City with parks and such, Steppeland,  Pine Barrens, Sparse Marsh  &7  \\
+Desert, Ship at Sea, Dense Urban  Environment  &8  \\
+Salt Flats, Iron Glade, Outer Space, Land  of Glass and Sorrow &9\\
+In the Water (Not a Zell), Land Already Ruined by Dark Pyromancy  &10\\
+In the Sea (Not a Zell)  &Instant Death  \\
+	\end{tabu}
+\end{table}
+Drawing Fire causes damage to the environment. Every point of Fire extracted from the area 
+creates a 1 yard region of desolation around the Pyromancer in which nothing will grow for at 
+least 2-3 years. People or animals in this area will become nauseous. Those with weak 
+constitutions may even grow sick. The ill may perish. 
+
+Additional Fire can be drawn using Rituals and Sacrifices. 
+
+\subsubsection{Rituals and Sacrifices}
+Certain vile rituals can allow Dark Pyromancers to tear more life-force out of the world around 
+them for their own depraved uses.\\
+Rituals require multiple Pyromancers, but the effect is not simply additive. Each additional 
+Pyromancer rolls not their own Art+Wip, but that of the strongest Pyromancer in the group, and 
+adds the total to the recipient’s Fire instead of keeping it for themselves. 
+
+However, Rituals are dangerous, because the “acolytes” or lesser pyromancers are essentially 
+drawing in more Fire than they can normally handle. If one of the lesser Pyromancers draws 
+more Fire in this way than their Lustre score, they must immediately make an Immolation Test, 
+regardless of the fact that the Fire is immediately siphoned off to the head of the circle. 
+Whatever happens to the individual Pyromancers participating in the ritual, the Fire they raise 
+still flows to the one actually performing the ritual. 
+
+Sacrifices are much simpler. Living things may be sacrificed to draw power for the Pyromancer 
+to use for his own ends. This takes some time, with proper positioning of the sacrifices, some 
+circles drawn in sterile materials to control the flow of the energies--generally one hour per 
+creature to be sacrificed. Once the preparations are complete, the creatures need only be killed 
+while the Pyromancer is standing in the center of the sacrificial area, and their energy will flow to 
+him for his usage. A Pyromancer may also Draw Fire while the sacrifice is being performed, of 
+course. 
+
+The amount of Fire gained per creature sacrificed is determined by the size and complexity of 
+the creature, and of course, sentient creatures are best. Additionally, there is a limit to how 
+much fire can be gained by sacrificing creatures of a certain type. 
+
+\begin{table}[ht]
+	\caption{Dark Sacrifices}
+	\label{tab:Dark Sacrifices}
+	\begin{tabu} spread 0pt {X[2] *{2}{X[-1]}}
+Sacrifice& Fire Gained& Max \# Sacrificed\\ \toprule
+Squirrel, Rat, Small Bird&1 &5\\
+Dog, Cat, Pig, Lamb, Large Bird &2 &3\\
+Horse, Cow, Bull, Deer&10&15\\
+White Bull, Elephant, Human Child&5&20\\
+Human Being, Din, Dolphin&10&25\\
+Pure Maiden, Pregnant Woman, Ascendant, Orredin&15&30\\
+	\end{tabu}
+\end{table}
+\subsubsection{Performing Pyromancy}
+Once a Pyromancer has drawn Fire, they may maintain an amount up to their Lustre indefinitely, 
+or may use it immediately. Any excess fire over Lustre must be used immediately, or else risk 
+an Immolation.
+
+Pyromancies have a base Fire cost, and then an X cost, the X being however much Fire the 
+Pyromancer devotes to the Pyromancy. The cost is listed next to the name of the Pyromancy. 
+Often the X Cost determines how great the effect or how many dice are rolled for the 
+Pyromancy to determine its effect, and more is generally better. 
+
+Once performed, the Fire is lost and more must be Drawn in order to perform more Pyromancies.\\
+A Dark Pyromancer with stored Fire is very obvious, as they appear to radiate a purplish mist, like steam rising out of a cauldron.
+
+\subsection{Dark Pyromancies}
+\paragraph{Raise Undead}
+---\quad [4+X]
+
+The Dark Pyromancer causes corpses to rise up and become undead. The Pyromancer is not 
+automatically in control of these Undead unless he uses Dominate Undead to force them to 
+obey him. 
+
+The number of undead that can be raised is determined by X, using the table below. Zombies 
+count as 1, Skeletons count as 2, Unique Skeletons count as 3. 
+
+Note that you need corpses to animate in order to raise the undead. These do not have to be new 
+corpses, the buried cadavers in a graveyard will suffice just fine, but obviously you cannot 
+animate bodies unless you have bodies. For mixed piles of bones, a skeleton can be assembled 
+per 2-3 human corpses’ worth of bones, and a unique skeleton for 4 corpse’s worth. The bones 
+do not have to be human. 
+
+\begin{tabu} spread 0pt {X[-1] X[-1]}
+Fire Spent (X) &Undead Raised\\ \toprule
+1-10& X\\
+11-15& X*5\\
+16+& X*10\\
+\end{tabu}
+
+\paragraph{Dominate Undead}
+---\quad [4+X]
+
+The Pyromancer seizes control of the undead, gaining a psychic mastery and control of them. 
+The undead Dominated in this way will obey their new master until destroyed, or until the 
+Domination is disrupted or seized by another figure. 
+
+Against masterless Undead, the Pyromancer must roll X against RS 2 (+1 per 10 Undead there 
+are) to gain control of those within eyesight. 
+Against Undead with a master already, the Pyromancer must roll X against the opponent’s WIP 
+(if the opponent is also a Pyromancer, they can cast this spell in retaliation to add their own X to 
+their WIP for this test) to wrest control away from the current holder.
+Control wrested in this way 
+cannot be contested again for 24 hours. The same goes for a failed attempt to seize control of Undead. 
+
+\paragraph{Drain Life} 
+---\quad [X]
+
+The Necromancer can touch a living thing to drain the Fire out of it, causing it to wither and 
+possibly die. This can be made as a Thrusting Unarmed Attack at TN 5 at Hand Range in 
+melee. 
+
+If successful, the target loses physical attributes (Starting with Strength, followed by Endurance, 
+then Health in that order) equal to [X-Target WIP], and the Pyromancer gains Fire equal to X*2. 
+A character reduced to 0 Health is killed. A character killed in this way will appear to have died 
+of malnutrition, shriveling into an emaciated creature immediately. 
+
+A character who survives this attack will regain their lost Attributes at a rate of 1 point per 
+month, in reverse order of loss. 
+
+\subsubsection{Winds of the Netherworld}
+
+\paragraph{The Black Sun}
+---\quad [10+X] 
+
+This spell creates a gigantic globe of darkness that interposes itself between the Pyromancer 
+and the sun, several miles up in the air. This creates a perpetual twilight that extends about 50 
+miles in every direction. In this area, plants grow sickly and die from lack of light, and Vampires 
+are unaffected by what little light leaks through the sphere. The amount of time that this effect 
+lasts is determined by the amount of Fire spent. 
+
+\begin{table}
+	\caption{Black Sun}
+	\label{tab:Black Sun}
+	\begin{tabu} spread 5pt {X[-1]X[-1]}
+Fire Spent (X) &Duration of Black Sun\\ \toprule
+1-10 &X Phases\\
+11-20 &X Minutes\\
+21-30 &X Hours\\
+31+ &X Days\\
+40 &1 Year\\
+	\end{tabu}
+\end{table}
+
+\paragraph{Dark Lash}
+---\quad [4+X]
+
+The Pyromancer causes a whip of black fire to emerge from his body, lashing at the target. The 
+lash remains for X Rounds, and can be used to make attacks on its own without using the 
+wielder’s CP. 
+The Lash attacks with X CP, it is LL Range, has a Strike TN of 6, and inflicts X + Pyromancer 
+WIP+4 Damage that ignores armor. 
+
+The damage inflicted by the Lash counts as Fire Damage,
+but is really more like intense, instant cancer, with hair, teeth and vestigial eyes forming on the 
+flesh warped by its hideous touch in the case of more extreme injuries. This effect can be 
+reversed by Pyromancy healing, or by an Ascendant’s healing abilities, causing the mutations to 
+slough off and burn away. 
+
+\paragraph{Paralysis}
+---\quad  [X]
+
+With this spell, the Pyromancer can freeze a target in place, effectively petrifying them. 
+This counts as a ranged attack with X at TN 7. If successful, the target must make a WIP test at 
+RS equal to Bonus Successes or be frozen in place. The amount of time the character remains 
+frozen is a number of minutes (each minute is ten Rounds) equal to the amount by which they 
+failed the WIP test. If a character is in imminent danger, they may make another WIP test at RS 
+4 to move for one Phase, but this causes 20 Pain, which fades after 24 hours. 
+
+\paragraph{Call of the Void (Vampires Only)}
+---\quad [20+X]
+
+With this spell, the Vampire tears a hole in the world, through which air is sucked at an intense 
+speed, and summons forth the terrible energies of the void to destroy his enemies. The portal, 
+through which great swirling forms and endless stars (or are they eyes?) are visible, will launch 
+a number of searing white projectiles which cause those hit to bend in upon themselves, 
+crushing them into singularities. 
+
+There are no remains. 
+
+This attack shoots X projectiles, which can be aimed at multiple or the same targets. Each 
+projectile is a Missile Attack made with 10 at TN 7 which can be dodged, but cannot be parried 
+or blocked. A hit inflicts an RS 4 Health test to avoid being obliterated. Failure results in instant 
+death. Success results in 15 Stun. 
+If, for some reason, something is pulled into the portal, it is worse than dead. Far, far worse than 
+dead. 
+
+Every time this power is used, X stars in the sky wink out. 
 
 \part[Gear and Equipment]{The Tools of the Trade}
 \chapter{Equipment}\label{ch:equipment}
-\startcontents[chapters]
-\printcontents[chapters]{}{1}{}
+%\startcontents[parts]
+%\printcontents[parts]{}{0}{\setcounter{tocdepth}{0}}
 \clearpage
 \begin{quotation}
 	\emph{“Imagine walking five hundred miles over the course of two weeks, carrying an arquebus, a bardiche, a stone of grain, another stone of water, ten pounds of shot, your own armor, your tent, whatever amenities you want for yourself, and your lord’s favorite dog. In the rain. In winter. With dysentery. Alright, are you imagining that?}
@@ -5733,7 +6049,7 @@ If you need to learn more about gold and Wealth, refer to \autoref{ch:wealth}. I
 	\hfill Intercepted by Bangle Guard riders near Pishka 
 \end{quote}
 Melee weapons are those intended for close-range and in hand-to-hand combat. Any character who expects to enter 
-combat should carry a melee weapon. 
+combat should carry a melee weapon.
 
 Below you will find a full list of these weapons, as well as information on each of their qualities.
 
@@ -5786,23 +6102,7 @@ The type of the weapon, and thus the Proficiency that it can be used with.
 This specifies the number of hands required to use the weapon, either one (1H) or two (2H). 
 \subsubsection{Reach}
 The weapon’s Reach, as \autoref{tab:Reach} describes. Reach has important effects in combat, which are further explained in \autoref{ch:combat}, \autoref{sec:Reach}
-\begin{table}[!ht]
-	\centering
-	\caption{Reach}
-	\label{tab:Reach}
-	\begin{tabu} spread 0pt {cX[c]X[c]X}
-Number	&\multicolumn{2}{>{\centering\setlength\hsize{2\hsize}}c}{Stages of Reach}&Example\\\toprule
-1 		&Half-Arm 			&HA				&Knee, Elbow, Grapple\\
-2		&Hand				&H				&Dagger, Punch\\
-3		&Short 				&S				&Short Sword, Kick\\
-4		&Medium				&M				&Arming Sword\\
-5		&Long				&L				&Poleaxe, Longsword\\
-6		&Very Long 			&VL				&Arming Spear\\
-7		&Extremely Long 	&EL				&Halberd\\
-8		&Ludicrously Long	&LL				&Pike\\
-	\tabuphantomline
-	\end{tabu}
-\end{table}
+
 \subsubsection{Swing}
 Swing represents the weapon’s use for swinging attacks. The first number is the Swing TN, the number in parenthesis 
 is the weapon’s base damage modifier, and the type of damage (either cutting, piercing or bludgeoning) is represented 
@@ -5836,7 +6136,8 @@ The weapon’s cost. May vary regionally.
 \begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
 	\captionsetup{labelformat=blank,textformat=empty}
 	\caption{Daggers}\vspace{-15pt}\\
-	\label{tab:Daggers List}\\\endfirsthead
+	\label{tab:Daggers List}\\
+		Weapon Name						&Weapon Type	&Hands&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\\toprule\endfirsthead
 Weapon Name						&Weapon Type	&Hands&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\\toprule\endhead
 Ballock Dagger					&Dagger			&1H	&H	&7(-1c)	&6(+1p)	&8(1)	&\nameref{wepqual:Fluid Thrusts}, \nameref{wepqual:Light Blade}				&0	&5 cp\\
 Baselard						&Dagger			&1H	&S	&6(+0c)	&6(+0p)	&7(1)	&\nameref{wepqual:Fluid Thrusts}							&0	&2 sp\\
@@ -5866,7 +6167,8 @@ Tanto							&Dagger			&1H	&H	&7(+0c)	&6(+0p)	&8(1)	&\nameref{wepqual:Draw} 1, \n
 \begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
 	\captionsetup{labelformat=blank,textformat=empty}
 	\caption{One-Handed Swords}\vspace{-15pt}
-	\label{tab:1H Swords}\\\endfirsthead
+	\label{tab:1H Swords}\\
+		Weapon Name						&Weapon Type	&Hands&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\\toprule\endfirsthead
 Weapon Name					&Weapon Type    &Hands   &Reach  &Swing  &Thrust &Defense (Guard)  &Special                                 &Wt  &Cost\\\toprule\endhead
 Arming Sword (Early)        &Sword          &1H      &M      &7(+1c) &7(+0p) &7(1)           &\nameref{wepqual:Draw} 2, \nameref{wepqual:Spatulate Tip} 2                 &0.5 &1 gp\\
 Arming Sword (Chivalric)    &Sword          &1H      &M      &7(+2c) &7(+0p) &7(2)           &-                                       &0.5 &1 gp\\
@@ -5920,7 +6222,8 @@ Yataghan                    &Sword          &1H      &S      &7(+1c) &8(+0p) &7(
 \begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
 	\captionsetup{labelformat=blank,textformat=empty}
 	\caption{Two-handed Swords}\vspace{-15pt}\\
-	\label{tab:2H Swords}\\\endfirsthead
+	\label{tab:2H Swords}\\
+		Weapon Name						&Weapon Type	&Hands&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\\toprule\endfirsthead
 Weapon Name					&Weapon Type	&Hands	&Reach	&Swing	&Thrust	&Defense (Guard)	&Special						&Wt		&Cost\\\toprule\endhead
 Bastard Sword				&Sword			&2H		&L		&7(+1c)	&7(+2p)	&7(2)				&\nameref{wepqual:Hand-Off}, \nameref{wepqual:Heavy Weapon} 			&1		&50 sp\\
 Claymore					&Sword			&2H		&L		&7(+2c)	&7(+0p)	&7(2)	&\nameref{wepqual:Heavy Weapon} &2 &50 sp\\
@@ -5945,7 +6248,8 @@ Zweihander (Grutte) 	&Sword &2H &EL &7(+4c) &8(+3p) &7(2) &\nameref{wepqual:Heav
 \begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
 	\captionsetup{labelformat=blank,textformat=empty}
 	\caption{One-Handed Blunt Weapons}\vspace{-15pt}\\
-	\label{tab:1H Blunt}\\\endfirsthead
+	\label{tab:1H Blunt}\\
+		Weapon Name						&Weapon Type	&Hands&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\\toprule\endfirsthead
 Weapon Name						&Weapon Type	&Hands&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\\toprule\endhead
 Battleaxe* &Blunt &1H &M &7(+2c) &7(-2b) &9(0)& \nameref{wepqual:AP Swing} 1, \nameref{wepqual:Hand-Off}, \nameref{wepqual:Hook}, Thrusting Slot, \nameref{wepqual:Shock} 2, Swinging Slot &1 &6 sp\\
 Bar Mace &Blunt &1H &S &7(+1b) &7(-2b) &7(0)& \nameref{wepqual:AP Swing} 1, \nameref{wepqual:Shock} 1, Thrusting Slot &0 &1 sp\\
@@ -5985,7 +6289,8 @@ Weighted Chain	&Blunt	&1H	&VL	&8(+1b)&-	&8(0)	&\nameref{wepqual:Chain} 3, \namer
 \begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
 	\captionsetup{labelformat=blank,textformat=empty}
 	\caption{Two-Handed Blunt}\vspace{-15pt}
-	\label{tab:2H Blunt}\\\endfirsthead
+	\label{tab:2H Blunt}\\
+		Weapon Name						&Weapon Type	&Hands&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\\toprule\endfirsthead
 Weapon Name				&Weapon Type	&Hands	&Reach	&Swing&Thrust&Defense (Guard)&Special																	&Weight	&Cost\\\toprule\endhead
 Battleaxe				&Blunt			&2H		&M		&7(+3c)&7(-2b)&8(0)&\nameref{wepqual:AP Swing} 1, \nameref{wepqual:Hand-Off}, \nameref{wepqual:Heavy Weapon}, \nameref{wepqual:Hook}, Thrusting Slot, \nameref{wepqual:Shock} 2, Swinging Slot	&1 &6 sp\\
 Club (Large) 			&Blunt			&2H		&M		&6(+1b)&7(-1b)&7(0)&\nameref{wepqual:Heavy Weapon}, \nameref{wepqual:Shock} 1, Swinging Slot, Thrusting Slot								&1 &3 cp\\
@@ -6061,7 +6366,8 @@ Yari (Kata Kama) 				&Polearm, Spear			&2H		&VL		&7(+2p/+2c)	&7(+2p) &7(0)				&\
 \begin{longtabu} to 1\linewidth {X[2,l]XX[-1,c]X[-1,c]XXX[-1,c]X[2,l]X[-3,c]X[-3,r]}
 	\captionsetup{labelformat=blank,textformat=empty}
 	\caption{List of Polearms}\vspace{-15pt}\\
-	\label{tab:Polearms}\\\endfirsthead
+	\label{tab:Polearms}\\
+		Weapon Name						&Weapon Type	&Hands&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\\toprule\endfirsthead
 Weapon Name						&Weapon Type			&Hands	&Reach	&Swing		&Thrust		&Defense (Guard)	&Special																	&Weight	&Cost\\\toprule\endhead
 Ahlspiess						&Polearm, Spear 		&2H		&L		&8(-1b)		&7(+1p)		&7(0)				&\nameref{wepqual:AP Thrust} 3,\nameref{wepqual:Thin Blade}														&5		&4 sp\\
 Bardiche						&Polearm				&2H		&VL		&7(+4c)		&9(-1p)		&8(0)				&\nameref{wepqual:AP Swing} 2, \nameref{wepqual:Crushing} 2, \nameref{wepqual:Heavy Weapon}, \nameref{wepqual:Shock} 2, Swinging Slot				&5		&2 sp\\
@@ -6171,7 +6477,7 @@ When making a Thrusting attack that would inflict Piercing damage with this weap
 This weapon can have a Swinging Weapon Attachment added to its Swing profile. This does not replace the current Swing profile, but can be used instead of it when declaring a Maneuver.
 
 \vspace{-5pt}\paragraph{\label{wepqual:Thin Blade}Thin Blade}---\quad
-When making a Coup de Grace or Joint Thrust attack, this weapon’s Thrust TN is decreased by 1. In addition, against mail armor this weapon gains AP Thrust 3. If the weapon has an AP Thrust quality, this replaces that value, it does not add to it.
+When making a \hyperref[man:Grappling: Coup de Grace]{Coup de Grace} or \nameref{man:Joint Thrust} attack, this weapon’s Thrust TN is decreased by 1. In addition, against mail armor this weapon gains AP Thrust 3. If the weapon has an AP Thrust quality, this replaces that value, it does not add to it.
 
 \vspace{-5pt}\paragraph{\label{wepqual:Thrusting Slot}Thrusting Slot}---\quad
 This weapon can have its Thrust profile replaced with a Thrusting Weapon Attachment.
@@ -6274,7 +6580,7 @@ Integrated Dragon &Firearm &2 &6 &7p &10 &Ball, Shot\\
 \begin{quote}
 \emph{“No person of Albish descent will bear or train with, or own the weapon called the Warbow or Longbow without special dispensation from his Lord. Any who violate this order shall tied to a post and speared.” }
 
---\textit{Text of Krajini Bow Prohibition}
+\hfill --\textit{Text of Krajini Bow Prohibition}
 \end{quote}
 
 \section{Missile Weapon Characteristics}
@@ -6296,7 +6602,6 @@ This is the TN used when making a missile attack with this weapon.
 This is the power (before modification by arrowheads or Maneuvers/Talents) of an attack made by a 
 missile weapon, as well as the damage type of the attack. The damage type of missile weapons is 
 invariably piercing (p) damage. 
-
 
 \subsubsection{Special}
 The weapon’s special qualities, which are further described in \autoref{sec:Missile Special Qualities}.
@@ -6449,7 +6754,7 @@ Bows and Crossbows use the same ammunition. Refer to \autoref{tab:Ammunition for
 \end{table}
 
 \section{Firearms}
-Explain how weapons are used/what is required for it. 
+Explain how weapons are used/what is required for it.
 \begin{table}[!hb]
 	\caption{Firearms}
 	\label{tab:Firearms}
@@ -7985,10 +8290,13 @@ enemy (such as Strike or Thrust), or in contact with a metal weapon that the ene
 \paragraph{Magestone Sight}---\quad[10 gp] \quad (Ranged Weapon only)
 
 A small lens or tube, marked with glowing crosshairs that are painted using a Magestone derivative. 
-Mounted on the weapon, Magestone Sight provides a very visible and useful tool for aiming, even in low-light conditions. When making a shot that benefits from the Aim Maneuver, you gain an additional +2 bonus to the attack. Alternatively, this Enhancement is a piece of Magestone under a collimating lens and half-silvered mirror, making the Magestone appear to be, effectively, a dot on the horizon. The user may operate the gun as though they had already performed an Aim Maneuver. 
-Cost: 10 gp
-Fitted To: Ranged Weapon 
- 
+
+Mounted on the weapon, Magestone Sight provides a very visible and useful tool for aiming, even in low-light conditions. When making a shot that benefits from the Aim Maneuver, you gain an additional +2 bonus to the attack.
+
+Alternatively, this Enhancement is a piece of Magestone under a collimating lens and half-silvered mirror, making the Magestone appear to be, effectively, a dot on the horizon. The user may operate the gun as though they had already performed an Aim Maneuver. 
+\vspace{-15pt}\subparagraph{Cost:} 10 gp
+\vspace{-15pt}\subparagraph{Fitted To:} Ranged Weapon
+
 \chapter{Other Items}\label{ch:Other Items} %OTHER ITEMS NEED DOING
 \startcontents[chapters]
 \printcontents[chapters]{}{1}{}
@@ -8270,6 +8578,8 @@ Especially intelligent (feature) &Any idiot can learn to scribble on a tablet. T
 Especially strong (feature) &Ever move a piano up a staircase? Don’t worry, you’ll never have to. &Cost $ \times\ 2.5 $\\
 	\end{tabu}
 \end{table}
+
+%\stopcontents[parts]
 \part[Game Mechanics]{The Riddle of Steel}
 
 \chapter{Maneuvers}\label{ch:Maneuvers} %NEED to make some concept photos of possible maneuver layouts. Maneuvers are the most important part of the book, gotta make sure they work! Possibly the actual list of maneuvers should have its own chapter since it's quite extensive? This would also prevent bookmark bloat
@@ -8294,7 +8604,6 @@ Some Maneuvers, such as Grappling and Hilt Push, result in a special state in wh
 \section{\label{sec:Maneuvers}The Anatomy of a Maneuver}
 All Maneuvers follow this format:
 
-
 \paragraph{\large Maneuver Name}---\quad [\large Cost]
 		\vspace{-10pt}\begin{description}
 		\item [Type:] This is the type of the maneuver, for reference to how it can be used. If the proficiency is tagged as ‘Universal,’ it can be used with any Proficiency. If it is tagged as ‘Advanced’ instead, the entry will also list which Proficiencies receive the Maneuver. Some Maneuvers are tagged as being ‘Instant’ and specify their base type, such as ‘Swinging’ or ‘Thrusting.’
@@ -8311,7 +8620,7 @@ if the Maneuver has a Superior version (‘S’). The cost of the Maneuver is sh
 good idea to read the full text of a Maneuver to understand how it is used and how much it will cost you 
 to activate. Some Maneuvers are categorized by type, and certain types of Maneuvers may be affected by 
 others, or Boons, Banes and Talents.
-\subsection{Maneuvers List}
+\section{Maneuvers List}
 \begin{longtabu} to \linewidth {*{8}{X[-1]}}
 Maneuver& U &A &S &Primary &Secondary &Type &Cost\\\toprule
 \nameref{man:Beat} &U &&S &Attack&Weapon&Swinging& X \\
@@ -10575,42 +10884,23 @@ When the distance is closed, longer weapons lose much of their strength and can 
 
 In combat, there are eight (8) stages of Reach, from Half-Arm to Ludicrously Long.
 
-Table XX Stages of Reach %SECOND REACH TBALE
-Number
-Stages of Reach
-Example
-1
-Half-Arm
-HA
-Knee, Elbow, Grapple
-2
-Hand
-H
-Dagger
-3
-Short
-S
-Short Sword
-4
-Medium
-M
-Arming Sword
-5
-Long
-L
-Poleaxe
-6
-Very Long
-VL
-Arming Spear
-7
-Extremely Long
-EL
-Halberd
-8
-Ludicrously Long
-LL
-Pike
+\begin{table}[!ht]
+	\centering
+	\caption{Reach}
+	\label{tab:Reach}
+	\begin{tabu} spread 0pt {cX[c]X[c]X}
+		Number	&\multicolumn{2}{>{\centering\setlength\hsize{2\hsize}}c}{Stages of Reach}&Example\\\toprule
+		1 		&Half-Arm 			&HA				&Knee, Elbow, Grapple\\
+		2		&Hand				&H				&Dagger, Punch\\
+		3		&Short 				&S				&Short Sword, Kick\\
+		4		&Medium				&M				&Arming Sword\\
+		5		&Long				&L				&Poleaxe, Longsword\\
+		6		&Very Long 			&VL				&Arming Spear\\
+		7		&Extremely Long 	&EL				&Halberd\\
+		8		&Ludicrously Long	&LL				&Pike\\
+		\tabuphantomline
+	\end{tabu}
+\end{table}
 
 Here are some important notes on Reach and how it affects combat:
 
@@ -11415,49 +11705,39 @@ Alternatively, flip a coin or roll for it. GMs, be sure to be consistent about t
 \end{table}
 \clearpage
 \section{Combat Factors}
-\nameref{par:Catch Chance}
-
-\nameref{par:Pain}
-
-\nameref{par:Prone}
-
-\nameref{par:Stun}
-
-\nameref{par:Bleed}
-
-\nameref{sec:Fire}
-
-\nameref{sec:Cold}
-
-\nameref{tab:Weapon Damage Threshold}
-
-\nameref{tab:Round Structure}
-
-\nameref{tab:Missile Target Zones}
-
-\nameref{tab:Missile Attack Penalties}
-
-\nameref{tab:Reach}
-
-\nameref{sec:Grappling}
-
+\subsubsection{Conditions}
+\nameref{par:Bleed}\\
+\nameref{par:Pain}\\
+\nameref{par:Stun}\\
+\nameref{par:Prone}\\
 \nameref{sec:exhaustion}
-
+\subsubsection{Missile Weapons}
+\nameref{par:Catch Chance}\\
+\nameref{tab:Missile Target Zones}\\
+\nameref{tab:Missile Attack Penalties}\\
+\nameref{sec:missile-attack}
+\subsubsection{Alternate Damage Types}
+\nameref{sec:Fire}\\
+\nameref{sec:Cold}\\
 \nameref{sec:falling-damage}
-
-Combat \nameref{sec:combat-actions}
-
-
+\subsubsection{Weapon Qualities}
+\nameref{tab:Weapon Damage Threshold}\\
+\nameref{tab:Reach}\\
+\nameref{sec:weapons-special-qualities}
+\subsubsection{Combat Stuff}
+\nameref{sec:Grappling}\\
+\hyperref[sec:combat-actions]{Combat Actions}\\
+\nameref{tab:Round Structure}
 \section{Wound Qualities}
 
 \paragraph[Stability vs. ]{\label{par:Stability vs}Stability vs [X] RS}---\quad
 You must make a \nameref{par:Stability}~(AGI+Misc) test at X RS or be rendered \nameref{par:Prone}.
 
-\vspace{-8pt}\paragraph[Disarm vs. ]{\label{par:Disarm vs}Disarm vs [X] RS}---\quad
-You must make a Disarm (AGI+Misc) test at X RS or drop anything held in the affected arm.
+\vspace{-8pt}\paragraph[Disarm vs. ]{Disarm vs [X] RS}\label{par:Disarm vs}
+---\quad You must make a Disarm (AGI+Misc) test at X RS or drop anything held in the affected arm.
 
-\vspace{-5pt}\paragraph[KO vs. ]{\label{par:KO vs}KO vs [X] RS }---\quad
-You must make a \nameref{par:Knockout}~(END+Misc) test at X RS or be rendered unconscious for 1d10 minutes.
+\vspace{-5pt}\paragraph[KO vs. ]{KO vs [X] RS }\label{par:KO vs}
+---\quad You must make a \nameref{par:Knockout}~(END+Misc) test at X RS or be rendered unconscious for 1d10 minutes.
 
 \vspace{-5pt}\paragraph[Surgery vs. ]{\label{par:Surgery vs}[X] Surgery vs [Y]}---\quad
 You immediately gain Y Bane, which cannot be removed without a successful Surgery test at X difficulty before the wound heals. If the wound heals (or the surgery test fails) then Y Bane becomes permanent.
