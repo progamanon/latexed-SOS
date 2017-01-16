@@ -2994,8 +2994,10 @@ depression, alcoholism, and schizophrenia.
 \begin{itemize}
 \item 6: Any frustration or irritation, physical pain, insult, or vexation requires that the character make a WIL check at RS 4 or fly into a berserk rage. He can voluntarily fly into such a rage at will, though only when not Exhausted, by taking a few seconds (one Round) to roar, gnaw upon their shield, and generally work 
 themselves into a fury.
-\item 12: As above, however involuntarily entering a berserk rage requires a WIL check at RS 2. The character can voluntarily enter a berserk rage at will, though only when not Exhausted. In the case that a character enters a berserk rage as a result of an attack, any effects the Wound causes happen before the rage is entered.
+\item 12: As above, however involuntarily entering a berserk rage requires a WIL check at RS 2. The character can voluntarily enter a berserk rage at will, though only when not Exhausted.
 \end{itemize}
+In the case that a character enters a berserk rage as a result of an attack, any effects the Wound causes happen before the rage is entered.
+
 \paragraph{\label{boon:Bloodthirsty}Bloodthirsty}---\quad \textbf{ (4)}\par
 Your eagerness to join battle has stripped from you any form of hesitation or restraint when moving in for 
 the kill. Whenever you take an Initiative test brought on by going Red/Red (and only Red/Red – tests forced by maneuvers do NOT count) you gain +2 dice for that test. There is no limit to the number of 
@@ -3026,7 +3028,7 @@ You have an infallible sense of direction. Wherever you are, you can figure out 
 \paragraph{\label{boon:Estate}Estate}---\quad\textbf{(10)}\\
 \textit{Character Creation only}\par
 You own lands, businesses, or other static wealth that provides you with a steady stream of income. 
-Taking this Boon grants you an Asset worth 2 Wealth (see the Assets section of Chapter 5 for more 
+Taking this Boon grants you an Asset worth 2 Wealth (see the Assets section of \autoref{ch:wealth} for more 
 details). This Boon can be taken multiple times, either to gain multiple Assets (each valued at 2 Wealth), 
 or to combine them into a bigger, badder Asset. 
 
@@ -5744,6 +5746,7 @@ the weapon is the “Stepping Hook,” and its origins can actually be traced to
 Kalmacia. 
 
 (A pair of Crow Hooks grant a +4 bonus to \nameref{skill:Climbing} tests)
+
 \begin{tabu} spread 0pt {*{11}{X[-1]}}
 Crow Hook & Dagger &1H & S &7(+0c/p))&-&7(0) &Draw 2, Light Blade &6/5 &0 &1 sp\\
 \end{tabu}
@@ -5840,9 +5843,9 @@ they cannot be changed.
 In order to perform a Spell, a Dark Pyromancer must “Draw Fire” from the environment into 
 himself. Drawing Fire is easier the more life the surrounding area has. The act of Drawing Fire 
 takes a full Phase, and is an Art+Willpower Test rolled at TN determined by the surroundings, 
-as shown on the table below. The amount of Fire drawn is equal to the number of successes on 
-this roll. 
+as shown on \autoref{tab:Drawing Fire Examples} below. The amount of Fire drawn is equal to the number of successes on this roll. 
 \begin{table}[ht]
+	\centering
 	\caption{Drawing Fire Examples}
 	\label{tab:Drawing Fire Examples}
 	\begin{tabu} spread 0pt {XX[-1]}
@@ -5891,6 +5894,7 @@ the creature, and of course, sentient creatures are best. Additionally, there is
 much fire can be gained by sacrificing creatures of a certain type. 
 
 \begin{table}[ht]
+	\centering
 	\caption{Dark Sacrifices}
 	\label{tab:Dark Sacrifices}
 	\begin{tabu} spread 0pt {X[2] *{2}{X[-1]}}
@@ -5933,12 +5937,14 @@ animate bodies unless you have bodies. For mixed piles of bones, a skeleton can 
 per 2-3 human corpses’ worth of bones, and a unique skeleton for 4 corpse’s worth. The bones 
 do not have to be human. 
 
-\begin{tabu} spread 0pt {X[-1] X[-1]}
-Fire Spent (X) &Undead Raised\\ \toprule
-1-10& X\\
-11-15& X*5\\
-16+& X*10\\
-\end{tabu}
+\begin{center}
+	\begin{tabu} spread 0pt {X[-1] X[-1]}
+		Fire Spent (X) &Undead Raised\\ \toprule
+		1-10& X\\
+		11-15& X*5\\
+		16+& X*10\\
+	\end{tabu}
+\end{center}
 
 \paragraph{Dominate Undead}
 ---\quad [4+X]
@@ -5981,7 +5987,8 @@ miles in every direction. In this area, plants grow sickly and die from lack of 
 are unaffected by what little light leaks through the sphere. The amount of time that this effect 
 lasts is determined by the amount of Fire spent. 
 
-\begin{table}
+\begin{table}[ht]
+	\centering
 	\caption{Black Sun}
 	\label{tab:Black Sun}
 	\begin{tabu} spread 5pt {X[-1]X[-1]}
@@ -6200,7 +6207,7 @@ Arming Sword (Chivalric)    &Sword          &1H      &M      &7(+2c) &7(+0p) &7(
 Arming Sword (Late)         &Sword          &1H      &M      &7(+0c) &7(+2p) &7(2)           &-                                       &0.5 &1 gp\\
 Backsword (Standard)        &Sword          &1H      &M      &7(+1c) &7(+1p) &7(4)           &-                                       &0.5 &1 gp\\
 Backsword (Heavy)           &Sword          &1H      &L      &7(+2c) &8(+1p) &8(3)           &-                                       &0.5 &25 sp\\
-Bastard Sword*              &Sword          &1H      &L      &7(+0c) &7(+1p) &8(2)           &\nameref{wepqual:Heavy Weapon}                            &1   &50 sp\\
+{Bastard Sword\  \label{wep:bastard-sword-1h}}\hyperref[wep:bastard-sword-2h]{$ \dagger $}              &Sword          &1H      &L      &7(+0c) &7(+1p) &8(2)           &\nameref{wepqual:Heavy Weapon}                            &1   &50 sp\\
 Cinquedea                   &Dagger, Sword  &1H      &S      &6(+0c) &7(+2p) &8(0)           &-                                       &0   &3 sp\\
 Claymore (Basket Hilted)	&Sword		&1H      &M      &7(+1c) &7(+0p) &7(4)           &\nameref{wepqual:Tight Grip} 2                           &0.5 &1 gp\\
 Cutlass						&Sword          &1H      &S      &7(+1c) &8(+0p) &7(3)           &-                                       &0.5 &1 sp\\
@@ -6211,16 +6218,16 @@ Falcata                     &Sword          &1H      &S      &6(+1c) &8(-1p) &8(
 Falchion                    &Sword          &1H      &M      &7(+2c) &8(+0p) &8(2)           &-                                       &0.5 &18 cp\\
 Gladius                     &Sword          &1H      &S      &7(+1c) &7(+1p) &7(0)           &-                                       &0   &1 sp\\
 Karthacki Dueling Sword     &Sword          &1H      &M      &6(-1b) &6(+0p) &7(0)           &\nameref{wepqual:Fluid Thrusts}, \nameref{wepqual:Light Blade}, \nameref{wepqual:Thin Blade}  &0.5 &10 sp\\
-Katana*                     &Sword          &1H      &M      &7(+1c) &8(+1p) &8(1)           &\nameref{wepqual:Draw} 3, \nameref{wepqual:Heavy Weapon}                    &1   &50 sp\\
+{Katana \hyperref[wep:katana-2h]{$ \dagger $}\label{wep:katana-1h}}                     &Sword          &1H      &M      &7(+1c) &8(+1p) &8(1)           &\nameref{wepqual:Draw} 3, \nameref{wepqual:Heavy Weapon}                    &1   &50 sp\\
 Katzbalger                  &Sword          &1H      &S      &7(+1c) &8(+0p) &7(2)           &\nameref{wepqual:Spatulate Tip} 2                         &0.5 &4 sp\\
 Katzbalger (Short)          &Dagger, Sword  &1H      &S      &7(+0c) &7(+0p) &7(1)           &\nameref{wepqual:Spatulate Tip} 2                         &0   &6 sp\\
 Khyber Knife                &Dagger, Sword  &1H      &S      &7(+0c) &7(+1p) &7(0)           &\nameref{wepqual:Draw} 2, \nameref{wepqual:Thin Blade}                      &0   &10 cp\\
 Kilij                       &Sword          &1H      &M      &7(+1c) &8(+0p) &7(2)           &\nameref{wepqual:Draw} 2, \nameref{wepqual:Cavalry Sword}                   &0.5 &30 sp\\
 Koncerz                     &Sword          &1H      &VL     &7(-2c) &8(+2p) &8(3)           &\nameref{wepqual:AP Thrust} 2, \nameref{wepqual:Couched Charge}             &0.5 &25 sp\\
 Khopesh                     &Sword, Blunt   &1H      &S      &6(+1c) &9(-1p) &8(0)           &\nameref{wepqual:Forward Swept}, \nameref{wepqual:Hook}                     &0.5 &1 sp\\
-Kriegsmesser*               &Sword          &1H      &M      &7(+1c) &8(+0p) &8(2)           &\nameref{wepqual:Draw} 2, \nameref{wepqual:Heavy Weapon}                    &1   &10 sp\\
+{Kriegsmesser \hyperref[wep:kriegsmesser-2h]{$ \dagger $}\label{wep:kriegsmesser-1h}}               &Sword          &1H      &M      &7(+1c) &8(+0p) &8(2)           &\nameref{wepqual:Draw} 2, \nameref{wepqual:Heavy Weapon}                    &1   &10 sp\\
 Langes Messer               &Sword          &1H      &M      &7(+1c) &7(+0p) &8(2)           &\nameref{wepqual:Draw} 2                                  &0.5 &1 sp\\
-Longsword*                  &Sword          &1H      &L      &7(+1c) &7(+0p) &8(2)           &\nameref{wepqual:Heavy Weapon}                            &1   &50 sp\\
+{Longsword \hyperref[wep:longsword-2h]{$ \dagger $}\label{wep:longsword-1h}}                  &Sword          &1H      &L      &7(+1c) &7(+0p) &8(2)           &\nameref{wepqual:Heavy Weapon}                            &1   &50 sp\\
 Pallasch                    &Sword          &1H      &L      &7(+1c) &8(+1p) &7(3)           &\nameref{wepqual:Cavalry Sword}                           &0.5 &35 sp\\
 Rapier                      &Sword          &1H      &L      &6(-1c) &6(+0p) &7(3)           &\nameref{wepqual:Fluid Thrusts}, \nameref{wepqual:Thin Blade}               &0.5 &30 sp\\
 Saber (Early)               &Sword          &1H      &M      &7(+0c) &7(+0p) &8(1)           &\nameref{wepqual:Draw} 2, \nameref{wepqual:Cavalry Sword}                   &0.5 &10 sp\\
@@ -6250,7 +6257,7 @@ Yataghan                    &Sword          &1H      &S      &7(+1c) &8(+0p) &7(
 	\label{tab:2H Swords}\\
 		Weapon Name						&Weapon Type	&Hands&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\\toprule\endfirsthead
 Weapon Name					&Weapon Type	&Hands	&Reach	&Swing	&Thrust	&Defense (Guard)	&Special						&Wt		&Cost\\\toprule\endhead
-Bastard Sword				&Sword			&2H		&L		&7(+1c)	&7(+2p)	&7(2)				&\nameref{wepqual:Hand-Off}, \nameref{wepqual:Heavy Weapon} 			&1		&50 sp\\
+{Bastard Sword\ \hyperref[wep:bastard-sword-1h]{$ \ddagger $}\label{wep:bastard-sword-2h}}				&Sword			&2H		&L		&7(+1c)	&7(+2p)	&7(2)				&\nameref{wepqual:Hand-Off}, \nameref{wepqual:Heavy Weapon} 			&1		&50 sp\\
 Claymore					&Sword			&2H		&L		&7(+2c)	&7(+0p)	&7(2)	&\nameref{wepqual:Heavy Weapon} &2 &50 sp\\
 Estoc						&Sword 			&2H		&L		&8(+0b)	&6(+2p)	&7(2)	&\nameref{wepqual:AP Thrust} 1, \nameref{wepqual:Thin Blade}, \nameref{wepqual:Fluid Thrusts}			&1		&45 sp\\
 Flammenschwert				&Sword			&2H		&VL		&7(+2c)	&8(+3p)	&7(3)	&\nameref{wepqual:Draw} 1, \nameref{wepqual:Crushing} 1, \nameref{wepqual:Heavy Weapon}				&2		&4 gp\\
@@ -6276,18 +6283,18 @@ Zweihander (Grutte) 	&Sword &2H &EL &7(+4c) &8(+3p) &7(2) &\nameref{wepqual:Heav
 	\label{tab:1H Blunt}\\
 		Weapon Name						&Weapon Type	&Hands&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\\toprule\endfirsthead
 Weapon Name						&Weapon Type	&Hands&Reach&Swing&Thrust&Defense (Guard)&Special						&Weight	&Cost\\\toprule\endhead
-Battleaxe* &Blunt &1H &M &7(+2c) &7(-2b) &9(0)& \nameref{wepqual:AP Swing} 1, \nameref{wepqual:Hand-Off}, \nameref{wepqual:Hook}, Thrusting Slot, \nameref{wepqual:Shock} 2, Swinging Slot &1 &6 sp\\
+{Battleaxe \hyperref[wep:battleaxe-2h]{$ \dagger $}\label{wep:battleaxe-1h}} &Blunt &1H &M &7(+2c) &7(-2b) &9(0)& \nameref{wepqual:AP Swing} 1, \nameref{wepqual:Hand-Off}, \nameref{wepqual:Hook}, Thrusting Slot, \nameref{wepqual:Shock} 2, Swinging Slot &1 &6 sp\\
 Bar Mace &Blunt &1H &S &7(+1b) &7(-2b) &7(0)& \nameref{wepqual:AP Swing} 1, \nameref{wepqual:Shock} 1, Thrusting Slot &0 &1 sp\\
 Club (Short)/Truncheon &Blunt &1H &S &6(+0b) &7(-2b) &6(0)& Swinging Slot, Thrusting Slot &0 &1 cp\\
 Club (Medium)/Rod &Blunt &1H &M &7(+0b) &7(-1b) &6(0)& Swinging Slot, Thrusting Slot &0 &1 cp\\
 Double-Headed Flail &Blunt &1H &M &8(+1b) &8(-2b) &10(0)& \nameref{wepqual:Chain} 1, \nameref{wepqual:Multi-Hit} Swing 2, \nameref{wepqual:Shock} 2 &1 &9 cp\\
 Hand Axe/ Hatchet &Blunt &1H &S &7(+2c) &7(-2b) &8(0)& \nameref{wepqual:AP Swing} 1, \nameref{wepqual:Hook}, \nameref{wepqual:Shock} 1, Swing Slot, Thrusting Slot &0 &6 cp\\
-Khopesh Sword, &Blunt &1H &S &6(+1c) &9(-1p) &8(0)& \nameref{wepqual:Forward Swept}, \nameref{wepqual:Hook} 0.&5 &1 sp\\
+Khopesh Sword, &Blunt &1H &S &6(+1c) &9(-1p) &8(0)& \nameref{wepqual:Forward Swept}, \nameref{wepqual:Hook} &0.5 &1 sp\\
 Light Flail &Blunt &1H &M &7(+2b) &8(-2b) &9(0)& \nameref{wepqual:Chain} 2, \nameref{wepqual:Shock} 2 &1 &6 sp\\
 Light Mace (Flanged) &Blunt &1H &S &7(+2b) &7(-2b) &7(0)& \nameref{wepqual:AP Swing} 2, \nameref{wepqual:Crushing} 1, \nameref{wepqual:Shock} 2, Thrusting Slot &0 &3 sp\\
 Light Mace (Knobbed) &Blunt &1H &S &7(+2b) &7(-2b) &7(0)& \nameref{wepqual:AP Swing} 1, \nameref{wepqual:Shock} 2, Thrusting Slot &0 &4 cp\\
 Light Mace (Spiked) &Blunt &1H &S &7(+2b) &7(-2b) &7(0)& \nameref{wepqual:Bleed} 2, \nameref{wepqual:Shock} 2, Thrusting Slot &0 &8 cp\\
-Tabarzin* &Blunt &1H &L &7(+2c) &8(+0p) &9(0)& \nameref{wepqual:AP Swing} 1, \nameref{wepqual:Hand-Off}, \nameref{wepqual:Hook}, \nameref{wepqual:Shock} 1, Swinging Slot, Thrusting Slot &2 &10 sp\\
+{Tabarzin \hyperref[wep:tabarzin-2h]{$ \dagger $}\label{wep:tabarzin-1h}} &Blunt &1H &L &7(+2c) &8(+0p) &9(0)& \nameref{wepqual:AP Swing} 1, \nameref{wepqual:Hand-Off}, \nameref{wepqual:Hook}, \nameref{wepqual:Shock} 1, Swinging Slot, Thrusting Slot &2 &10 sp\\
 Warhammer (Standard) &Blunt &1H &S &7(+2b) &7(-2b) &8(0)& \nameref{wepqual:AP Swing} 1, \nameref{wepqual:Crushing} 1, Reverse Slot, \nameref{wepqual:Shock} 1, Thrusting Slot &0 &6 cp\\
 War Pick &Blunt &1H &S &7(+2p) &7(-2b) &8(0)& \nameref{wepqual:AP Swing} 2, \nameref{wepqual:Hook}, Reverse Slot, Thrusting Slot, \nameref{wepqual:Thin Blade} &0 &2 sp\\
 	\\
@@ -6351,8 +6358,8 @@ Weapon Name						&Weapon Type			&Hands	&Reach	&Swing		&Thrust	&Defense (Guard)	&
 Ahlspiess 						&Polearm, Spear			&2H		&L		&8(-1b)		&7(+1p) &7(0)				&\nameref{wepqual:AP Thrust} 3,\nameref{wepqual:Thin Blade} 													&5		&4 sp\\
 Fauchard 						&Polearm, Spear			&2H		&VL 	&7(+2c)		&8(+1p) &7(0)				&\nameref{wepqual:Forward Swept}, \nameref{wepqual:Heavy Weapon}, Swinging Slot,								&4		&1 sp\\
 Ge (Chinese Dagger-Axe Halberd)	&Polearm, Spear			&2H		&VL 	&7(+3p)		&7(+2p) &7(0)				&\nameref{wepqual:AP Swing} 1, \nameref{wepqual:Heavy Weapon}, \nameref{wepqual:Hook}											&5		&1 sp\\
-Half-Pike*						&Spear					&1H		&L		&8(-2c)		&7(+1p) &8(0)				&\nameref{wepqual:Fluid Thrusts}																&-		&-\\
-Half-Pike 						&Spear 					&2H		&L		&7(-1c)		&6(+2p) &7(0)				&\nameref{wepqual:Fluid Thrusts}, \nameref{wepqual:Hand-Off} 													&4		&1 sp\\
+Half-Pike {$ \dagger $}						&Spear					&1H		&L		&8(-2c)		&7(+1p) &8(0)				&\nameref{wepqual:Fluid Thrusts}																&-		&-\\
+Half-Pike {$ \ddagger $} 						&Spear 					&2H		&L		&7(-1c)		&6(+2p) &7(0)				&\nameref{wepqual:Fluid Thrusts}, \nameref{wepqual:Hand-Off} 													&4		&1 sp\\
 Lance (Light) 					&Spear 					&1H		&VL		&10(-1c)	&8(+2p) &10(0)				&\nameref{wepqual:Couched Charge}, \nameref{wepqual:Heavy Weapon} 												&4		&1 cp\\
 Lance (Heavy) 					&Spear 					&1H		&EL		&10(-1c)	&9(+3p) &10(0)				&\nameref{wepqual:Couched Charge}, \nameref{wepqual:Heavy Weapon} 												&6		&1 sp\\
 Lance (Hollow) 					&Spear 					&1H		&LL		&10(-1c)	&9(+3p) &10(0)				&\nameref{wepqual:Couched Charge}, \nameref{wepqual:Heavy Weapon} 												&8		&4 sp\\
@@ -6365,15 +6372,15 @@ Pike 							&Spear 					&2H		&LL		&10(-2c)	&8(+3p) &9(0)				&Brace														
 Poleaxe 						&Polearm, Spear, Blunt	&2H		&L		&7(+2c)		&7(+2p) &7(0)				&\nameref{wepqual:AP Swing} 1, \nameref{wepqual:AP Thrust} 1, \nameref{wepqual:Heavy Weapon}, \nameref{wepqual:Shock} 2, Swinging Slot, \nameref{wepqual:Thin Blade}	&5		&8 sp\\
 Quarterstaff 					&Polearm, Spear			&2H		&VL		&6(+0b)		&6(-1b) &6(0)				&\nameref{wepqual:Fluid Thrusts}, \nameref{wepqual:Heavy Weapon}												&4		&3 cp\\
 Ranseur 						&Polearm, Spear			&2H		&EL		&8(+0c)		&7(+2p) &7(0)				&																			&5		&1 sp\\
-Spear (Arming)* 				&Spear					&1H		&VL		&9(-1c)		&7(+1p) &9(0)				&																			&4		&6 cp\\
-Spear (Arming) 					&Spear					&2H		&VL		&7(+0c)		&7(+2p) &7(0)				&\nameref{wepqual:Fluid Thrusts}, \nameref{wepqual:Hand-Off},													&4		&6 cp\\
+Spear (Arming) {$ \dagger $} 				&Spear					&1H		&VL		&9(-1c)		&7(+1p) &9(0)				&																			&4		&6 cp\\
+Spear (Arming){$ \ddagger $} 					&Spear					&2H		&VL		&7(+0c)		&7(+2p) &7(0)				&\nameref{wepqual:Fluid Thrusts}, \nameref{wepqual:Hand-Off},													&4		&6 cp\\
 Spear (Short) 					&Spear					&1H		&M		&8(+0c)		&7(+2p) &8(0)				&\nameref{wepqual:Fluid Thrusts} 																&0		&3 cp\\
-Spear (Standard)* 				&Spear					&1H		&EL		&9(+0c)		&7(+2p) &9(0)				&																			&4		&8 cp\\
-Spear (Standard) 				&Spear					&2H		&EL		&8(+0c)		&7(+3p) &8(0)				&\nameref{wepqual:Fluid Thrusts}, \nameref{wepqual:Hand-Off}, 													&4		&8 cp\\
+Spear (Standard) {$ \dagger $}				&Spear					&1H		&EL		&9(+0c)		&7(+2p) &9(0)				&																			&4		&8 cp\\
+Spear (Standard){$ \ddagger $} 				&Spear					&2H		&EL		&8(+0c)		&7(+3p) &8(0)				&\nameref{wepqual:Fluid Thrusts}, \nameref{wepqual:Hand-Off}, 													&4		&8 cp\\
 Spetum 							&Polearm, Spear			&2H		&VL		&8(+1c)		&7(+2p) &7(0)				&\nameref{wepqual:Fluid Thrusts}, 															&4		&2 sp\\
 Swordstaff 						&Polearm, Spear			&2H		&EL		&8(+3c)		&7(+3p) &8(0)				&																			&8		&3 sp\\
-Trident* 						&Polearm, Spear			&1H		&L		&10(-1c)	&8(-1p) &9(0)				&\nameref{wepqual:Multi-Hit} Thrust 3, 														&4		&5 cp\\
-Trident 						&Polearm, Spear			&2H		&L		&9(+0c)		&7(+0p) &7(0)				&\nameref{wepqual:Hand-Off}, \nameref{wepqual:Multi-Hit} Thrust 3, 												&4		&5 cp\\
+Trident {$ \dagger $}						&Polearm, Spear			&1H		&L		&10(-1c)	&8(-1p) &9(0)				&\nameref{wepqual:Multi-Hit} Thrust 3, 														&4		&5 cp\\
+Trident {$ \ddagger $}						&Polearm, Spear			&2H		&L		&9(+0c)		&7(+0p) &7(0)				&\nameref{wepqual:Hand-Off}, \nameref{wepqual:Multi-Hit} Thrust 3, 												&4		&5 cp\\
 Yari (Jumonji) 					&Polearm, Spear			&2H		&VL		&7(+2c)		&7(+2p) &7(0)				&\nameref{wepqual:Heavy Weapon}, 																&4		&2 sp\\
 Yari (Bishamon) 				&Polearm, Spear			&2H		&VL		&7(+3c)		&7(+2p) &7(0)				&\nameref{wepqual:AP Swing} 1, 																&4		&3 sp\\
 Yari (Kata Kama) 				&Polearm, Spear			&2H		&VL		&7(+2p/+2c)	&7(+2p) &7(0)				&\nameref{wepqual:AP Swing} 1, \nameref{wepqual:Heavy Weapon}, \nameref{wepqual:Hook}, 											&4		&3 sp\\
@@ -6418,8 +6425,8 @@ Quarterstaff					&Polearm, Spear			&2H		&VL		&6(+0b)		&6(-1b) 	&6(0)				&\namere
 Saber-Halberd					&Polearm				&2H		&VL		&7(+3c)		&8(+0p) 	&7(0)				&\nameref{wepqual:AP Swing} 1, \nameref{wepqual:Crushing} 1, \nameref{wepqual:Draw} 2, \nameref{wepqual:Heavy Weapon}, Swinging Slot				&5		&15 sp\\
 Spetum							&Polearm, Spear			&2H		&VL		&8(+1c)		&7(+2p) 	&7(0)				&\nameref{wepqual:Fluid Thrusts}																&4		&2 sp\\
 Swordstaff						&Polearm, Spear			&2H		&EL		&8(+3c)		&7(+3p) 	&8(0)				&																			&8		&3 sp\\
-Trident*						&Polearm, Spear			&1H		&L		&10(-1c)	&8(-1p) 	&9(0)				&\nameref{wepqual:Multi-Hit} Thrust 3															&		&\\
-Trident							&Polearm, Spear			&2H		&L		&9(+0c)		&7(+0p) 	&7(0)				&\nameref{wepqual:Hand-Off}, \nameref{wepqual:Multi-Hit} Thrust 3												&4		&5 cp\\
+Trident{$ \dagger $}						&Polearm, Spear			&1H		&L		&10(-1c)	&8(-1p) 	&9(0)				&\nameref{wepqual:Multi-Hit} Thrust 3															&		&\\
+Trident{$ \ddagger $}							&Polearm, Spear			&2H		&L		&9(+0c)		&7(+0p) 	&7(0)				&\nameref{wepqual:Hand-Off}, \nameref{wepqual:Multi-Hit} Thrust 3												&4		&5 cp\\
 War-Scythe						&Polearm				&2H		&VL		&7(+3c)		&9(+0p) 	&8(0)				&\nameref{wepqual:Forward Swept}, \nameref{wepqual:Heavy Weapon},												&4		&4 cp\\
 Yari (Jumonji)					&Polearm, Spear			&2H		&VL		&7(+2c)		&7(+2p) 	&7(0)				&\nameref{wepqual:Heavy Weapon},																&4		&2 sp\\
 Yari (Bishamon) 				&Polearm, Spear			&2H		&VL		&7(+3c)		&7(+2p) 	&7(0)				&\nameref{wepqual:AP Swing} 1,																&4		&3 sp\\
