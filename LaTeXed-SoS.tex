@@ -438,7 +438,7 @@ PCP & Race & Attributes & Skills & Profs & Social Class/Wealth & Magic\footnote[
 3&-&96&6&6&Poor Freeman/(3 gp)&15 & -5 \\
 4&Tier 3&108&9&9&Freeman/(5 gp, [1W])&20 & 0 \\
 5&-&124&12&12&High Freeman/(10 gp, [2W])&25&5\\
-6&Tier 4\footnote[1]&140&15&15&Minor Noble/(100 gp, [3W])&30&10\\
+6&Tier 4&140&15&15&Minor Noble/(100 gp, [3W])&30&10\\
 7&-&160&18&18&Landed Noble/(250 gp, [6W])&35&15\\
 8&Tier 5\footnote[1]&180&21&21&High Noble/(500 gp, [10W])&40&20\\
 9&-&200&24&24&Royalty/(1000 gp, [15W])&45&25\\
@@ -8775,7 +8775,7 @@ which when referenced should be denoted with Attack (i.e. an Unarmed Maneuver in
 Unarmed Attack, a Weapon Maneuver in this category is a Weapon Attack, etc.) 
 
 \subsection{Weapon Attack Maneuvers}
-\paragraph{\large\label{man:Beat}Beat}---\quad{\large[X]}
+\paragraph{\large Beat \label{man:Beat}}---\quad{\large[X]}
 \vspace{-10pt}\begin{description}
 \item [Type:] Universal, Swinging
 \item [Requirements:] Have a weapon with a Swing TN. It must be the Round immediately after Orientation Declaration, and you must have declared Aggressive.
@@ -8787,7 +8787,7 @@ Unarmed Attack, a Weapon Maneuver in this category is a Weapon Attack, etc.)
 \emph{Vladock is having trouble getting past his opponent’s spear. He declares a Beat with 8 dice. His opponent declares a Void with 7. Vladock gets 3 BS to his opponent’s 2, and so beats aside his opponent’s weapon and costs him 1 Stun. Vladock can now make an attack in the next Action without fear of being counter-attacked by the spear, since it cannot be used for anything. He’ll still have to pay Range costs, but at least it’s a safe bet instead of a dangerous move. }
 \end{quotation}
 
-\paragraph{\large\label{man:Break}Break}---\quad{\large[X$ + $2]}
+\paragraph{\large Break \label{man:Break}}---\quad{\large[X$ + $2]}
 	\vspace{-10pt}
 \begin{description}
 	\item[Type:] Universal, Swinging
@@ -9344,14 +9344,15 @@ against an Opponent attack.
 \item [Success:] Opponent attack negated. Gain Initiative if any BS are scored. 
 \item [Special:] You may only declare this Maneuver once per Action with a weapon. If you have two weapons, 
 you may declare a Parry and an Off-Hand Parry simultaneously, against two separate attacks. 
-Optional [Handguards]: If you successfully defend against a Swinging or Thrusting Weapon Attack 
+
+\item [\emph{Optional --} Handguards:] If you successfully defend against a Swinging or Thrusting Weapon Attack 
 Maneuver made by an Opponent, but do not have any BS, your opponent resolves a Swing or Thrust at 0 
 BS against the hand holding the weapon you used to Parry (if the weapon was two-handed, or if you are 
 Half-Swording, roll odd/even to decide which hand is hit). The Guard value of the weapon reduces this 
-damage as normal, unless you are Half-Swording, in which case the forward hand is not protected. The 
-Parrying party still gains Initiative, and Reach does not change despite the attack being resolved. It counts 
-in all ways as the Parrying party being successful, except that the extra hit to the hand resolves. Multi-Hit 
-does not apply here. 
+damage as normal, unless you are Half-Swording, in which case the forward hand is not protected. 
+
+The Parrying party still gains Initiative, and Reach does not change despite the attack being resolved. It counts 
+in all ways as the Parrying party being successful, except that the extra hit to the hand resolves. Multi-Hit does not apply here. 
 \end{description}
 
 \paragraph{\large\label{man:Quick Defense}Quick Defense}---\quad{\large[2]}
@@ -9406,6 +9407,7 @@ of Superior.
 \end{description}
 
 \paragraph{\large\label{man:Clinch (Defense)}Clinch (Defense)}---\quad{[X]}
+
 Refer to \nameref{man:Clinch (Attack)}, as the Maneuver is mechanically the same.
 
 \paragraph{\large\label{man:Missile Catch}Missile Catch}---\quad{\large[2+X]}
@@ -9818,7 +9820,7 @@ countered with the Missile Catch Maneuver.
 increase damage by XX damage per MP spent. 
 \end{description}
 \section{Grapple Maneuvers}\label{sec:Grappling}
-Any Maneuver Grapple with the Advantage tag may only be defended against using a Maneuver with the Disadvantage tag.
+Any Maneuver Grapple with the Advantage tag may only be defended against using a Maneuver with the Disadvantage tag. See the \nameref{man:Clinch (Attack)} maneuver
 
 \subsection{Advantage Grapple Maneuvers}
 \paragraph{\large\label{man:Grappling: Choke}Grappling: Choke}---\quad{\large[X]}
@@ -10042,16 +10044,16 @@ The following Maneuvers act exactly as their normal versions, but count as separ
 Hilt Push Maneuvers marked with a * end the Push if they are successful. 
 	\begin{itemize}
 		[noitemsep]
-		\item Hilt Push: Cut 
-		\item Hilt Push: Draw Cut 
-		\item Hilt Push: Thrust 
-		\item Hilt Push: Push Cut 
-		\item Hilt Push: Joint Thrust 
-		\item Hilt Push: Pommel Strike* 
-		\item Hilt Push: Disarm* 
-		\item Hilt Push: Grapple 
-		\item Hilt Push: Butt-Strike* 
-		\item Hilt Push: Shoulder Charge 
+		\item Hilt Push: \nameref{man:Swing}
+		\item Hilt Push: \nameref{man:Deep Draw Cut}
+		\item Hilt Push: \nameref{man:Thrust}
+		\item Hilt Push: \nameref{man:Push Cut}
+		\item Hilt Push: \nameref{man:Joint Thrust}
+		\item Hilt Push: \nameref{man:Pommel Strike}*
+		\item Hilt Push: \nameref{man:Disarm}*
+		\item Hilt Push: \nameref{man:Clinch (Attack)}
+		\item Hilt Push: \nameref{man:Butt-Strike}*
+		\item Hilt Push: \nameref{man:Shoulder Charge}
 	\end{itemize}
 \end{description}
 \paragraph{\large\label{man:Hilt Push: Lever Down}Hilt Push: Lever Down}---\quad{\large[2+X]}
